@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Location" format=3 uid="uid://c5t7f5l883j8j"]
+
+[ext_resource type="Texture2D" uid="uid://dqvftrnu3ctxs" path="res://assets/img/tradepost.png" id="1_0rab4"]
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_gvkq6"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="2_1xhgw"]
+[ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="2_3veny"]
+[ext_resource type="Script" uid="uid://co4871x76a7qo" path="res://data/locations/location.gd" id="2_5ho7t"]
+[ext_resource type="Resource" uid="uid://c1j5rc8dheoqc" path="res://data/events/shady_pony_deal/shady_pony_deal1.tres" id="3_q1dao"]
+[ext_resource type="Resource" uid="uid://b8yrmk282tpxh" path="res://data/events/pony_offering/pony_offering_1.tres" id="4_cp2w7"]
+[ext_resource type="Resource" uid="uid://btdewgxsffs25" path="res://data/events/cattle_drive/cattle_drive_end.tres" id="5_3veny"]
+
+[resource]
+script = ExtResource("2_5ho7t")
+title = "Trading Post"
+image = ExtResource("1_0rab4")
+description = "A few sturdy-looking buildings, a well-kept stable, a solid wall, and grim-faced guards. The tiny outpost isn’t much to write home about, but it is well defended and secure. Out here, most people are used to the sight of a goblin warband, so no one even looks twice at you or your ponygirls.  You’re just another trader and your she-beasts is nothing but cattle."
+expensive_items = Array[ExtResource("1_gvkq6")]([ExtResource("2_3veny")])
+random_events = Array[ExtResource("2_1xhgw")]([ExtResource("3_q1dao"), ExtResource("4_cp2w7")])
+quest_events = Array[ExtResource("2_1xhgw")]([ExtResource("5_3veny")])
+metadata/_custom_type_script = "uid://co4871x76a7qo"

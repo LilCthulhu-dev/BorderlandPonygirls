@@ -1,0 +1,60 @@
+extends CanvasLayer
+
+@onready var label_titel: Label = %LabelTitel
+@onready var label_description: Label = %LabelDescription
+@onready var label_results: Label = %LabelResults
+@onready var content_container: VBoxContainer = %ContentContainer
+@onready var content_image: TextureRect = %ContentImage
+
+const EVENT_BTN = preload("uid://boeoqj8wswe7u")
+const EVENT_CHECK = preload("uid://dheu6x3a5wmi3")
+const EVENT_TEXT = preload("uid://desp1eu87yxct")
+
+func _ready() -> void:
+	GameData.game_state = Enums.GAME_STATES.EVENT
+	GlobalSignals.update_event.connect(_update_content)
+	_update_content()
+
+func _update_content():
+	label_titel.text = LocationManager.current_event.titel
+	label_titel.visible = label_titel.text != ""
+
+	label_description.text = LocationManager.current_event.description
+	label_description.visible = label_description.text != ""
+
+	label_results.text = ""
+	if !LocationManager.current_event.open_actions.is_empty():
+		for action in LocationManager.current_event.open_actions:
+			var result_txt = action.get_result()
+			if result_txt == "": continue
+			if label_results.text != "":
+				label_results.text += "\n"
+			label_results.text += result_txt
+			if action is AddDescription:
+				label_results.text += "\n"
+	label_results.visible = label_results.text != ""
+
+	content_image.texture = LocationManager.current_event.img if content_image else null
+
+	for child in content_container.get_children():
+		child.queue_free()
+
+	var added_content := 0
+
+	for content in LocationManager.current_event.content:
+		if !content.hard_requierments_met(): continue
+		var n = null
+		if content is EventBtn:
+			n = EVENT_BTN.instantiate()
+		elif content is EventCheck:
+			n = EVENT_CHECK.instantiate()
+		else:
+			n = EVENT_TEXT.instantiate()
+		n.content = content
+		content_container.add_child(n)
+		added_content += 1
+
+	if added_content == 0:
+		var back_button := EVENT_BTN.instantiate()
+		back_button.content = null
+		content_container.add_child(back_button)

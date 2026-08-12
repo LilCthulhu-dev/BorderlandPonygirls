@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="Combat" format=3 uid="uid://ctspr37v025ef"]
+
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="1_8jvnc"]
+[ext_resource type="Resource" uid="uid://cmgxha4wyvbcs" path="res://data/combats/farmwork/farmwork1.tres" id="2_2b7wu"]
+[ext_resource type="Script" uid="uid://ct66od486dv7w" path="res://data/combats/combat.gd" id="2_c2ouk"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="3_2b7wu"]
+[ext_resource type="Resource" uid="uid://bj5pfgsvtrnrp" path="res://data/combats/farmwork/farmwork2.tres" id="3_kgcrn"]
+[ext_resource type="Resource" uid="uid://b8wa43gc46bja" path="res://data/combats/farmwork/farmwork3.tres" id="4_2ds8v"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="4_c2ouk"]
+[ext_resource type="Resource" uid="uid://diydmx8ug20xc" path="res://data/combats/farmwork/farmwork4.tres" id="5_nxhum"]
+[ext_resource type="Resource" uid="uid://spbt7fk5o2pr" path="res://data/combats/farmwork/farmwork5.tres" id="6_objfe"]
+[ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="7_xelfj"]
+
+[sub_resource type="Resource" id="Resource_2ds8v"]
+script = ExtResource("4_c2ouk")
+amount = "{BAD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_nxhum"]
+script = ExtResource("7_xelfj")
+amount = 10
+target = 2
+metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[sub_resource type="Resource" id="Resource_ice6s"]
+script = ExtResource("4_c2ouk")
+amount = "+{GOOD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_1hj28"]
+script = ExtResource("7_xelfj")
+amount = 10
+target = 2
+metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[resource]
+script = ExtResource("2_c2ouk")
+title = "Farmwork"
+scenes = Array[ExtResource("1_8jvnc")]([ExtResource("2_2b7wu"), ExtResource("3_kgcrn"), ExtResource("4_2ds8v"), ExtResource("5_nxhum"), ExtResource("6_objfe")])
+enemy_descriptors = Array[String](["Exhausting", "Grueling", "Arduous", "Dirty", "Demanding", "Strenuous"])
+enemy_names = Array[String](["Fieldwork", "Harvest", "Labor", "Work", "Farmwork"])
+victory_actions = Array[ExtResource("3_2b7wu")]([SubResource("Resource_ice6s"), SubResource("Resource_1hj28")])
+defeat_actions = Array[ExtResource("3_2b7wu")]([SubResource("Resource_2ds8v"), SubResource("Resource_nxhum")])
+victory_txt = "The work takes several hard days, but your warband gets plenty done. The farmer is impressed by the results and pays you generously."
+defeat_txt = "The work is slow and arduous, and little gets accomplished. Disappointed by your performance, the farmer pays you only a meager wage."
+metadata/_custom_type_script = "uid://ct66od486dv7w"

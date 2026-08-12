@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://bj5pfgsvtrnrp"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_1hj28"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_f5gbg"]
+
+[sub_resource type="Resource" id="Resource_dt1kr"]
+script = ExtResource("1_1hj28")
+txt = "Deny the Pause"
+ability = 1
+success_description = "You take up your crop, step behind the lazy mare, and work over her ass and thighs until she is pulling hard and eagerly again."
+fail_description = "You strike {PONYNAME} with your crop, but it motivates her only briefly. Before long, exhaustion overwhelms her, and she collapses to her knees.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_sdmun"]
+script = ExtResource("1_1hj28")
+txt = "Short Pause"
+ability = 3
+success_description = "You lead {PONYNAME} into the shade and rinse her down with cool water. It is a brief but well-deserved break, and she returns to work with renewed strength.
+
+"
+fail_description = "You give {PONYNAME} a brief rest in the shade, but she balks when the work resumes. The pause only seems to have made her even more resistant."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_1riha"]
+script = ExtResource("1_1hj28")
+txt = "Reassure and Guide"
+ability = 3
+success_description = "You give {PONYNAME} a few sips of water, take the reins, and guide her forward with calm praise. Your presence steadies her, and she begins pulling the plow again."
+fail_description = "You give {PONYNAME} some water and try to guide her onward, but she is too exhausted to continue. You have no choice but to stop and let her rest properly."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_f5gbg")
+flavor_lines = Array[String](["The scent of hay and fresh soil hangs heavy in the air.", "The sun beats down from a cloudless sky.", "A brief breeze brushes past you, cooling your skin, if only for a moment."])
+description = "{PONYNAME} has worked the field for hours now. She is drenched in sweat, her bosom heaving with every breath, and her pussy basically slobbering her crotchstrap. She needs a pause, but the work is far from finished."
+actions = Array[ExtResource("1_1hj28")]([SubResource("Resource_dt1kr"), SubResource("Resource_sdmun"), SubResource("Resource_1riha")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

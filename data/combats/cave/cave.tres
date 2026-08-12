@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="Combat" format=3 uid="uid://x34kho7r1pxd"]
+
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="1_6sfwx"]
+[ext_resource type="Texture2D" uid="uid://cmvieigkj0jv5" path="res://assets/img/caveDefeat.png" id="1_sua3i"]
+[ext_resource type="Script" uid="uid://ct66od486dv7w" path="res://data/combats/combat.gd" id="2_6eojs"]
+[ext_resource type="Resource" uid="uid://c12wcp1svtde1" path="res://data/combats/cave/cave1.tres" id="2_vaug7"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="3_vaug7"]
+[ext_resource type="Resource" uid="uid://ctly2atyk1myi" path="res://data/combats/cave/cave2.tres" id="3_xcoxp"]
+[ext_resource type="Resource" uid="uid://rmmdap81r2v5" path="res://data/combats/cave/cave3.tres" id="4_3yeml"]
+[ext_resource type="Resource" uid="uid://0hmnpumjtufr" path="res://data/combats/cave/cave4.tres" id="5_1q0bk"]
+[ext_resource type="Resource" uid="uid://cf14l86o3fphu" path="res://data/combats/cave/cave5.tres" id="6_1q0bk"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="6_j38u4"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="7_pul65"]
+[ext_resource type="Resource" uid="uid://df3sldftfrxov" path="res://data/combats/cave/cave6.tres" id="7_rm7kp"]
+[ext_resource type="Resource" uid="uid://b6r2cthxncgua" path="res://data/combats/cave/cave7.tres" id="8_suwa0"]
+[ext_resource type="Texture2D" uid="uid://wtucdn1g3v66" path="res://assets/img/caveVictory.png" id="14_aasxy"]
+
+[sub_resource type="Resource" id="Resource_vaug7"]
+script = ExtResource("6_j38u4")
+amount = "{GOOD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_xcoxp"]
+script = ExtResource("7_pul65")
+amount = 2
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[resource]
+script = ExtResource("2_6eojs")
+title = "Mysterious Cave"
+scenes = Array[ExtResource("1_6sfwx")]([ExtResource("2_vaug7"), ExtResource("3_xcoxp"), ExtResource("4_3yeml"), ExtResource("5_1q0bk"), ExtResource("6_1q0bk"), ExtResource("7_rm7kp"), ExtResource("8_suwa0")])
+enemy_descriptors = Array[String](["Wild", "Savage", "Feral", "Hungry", "Territorial", "Cunning", "Diseased", "Bloodthirsty"])
+enemy_names = Array[String](["Orks", "Trolls", "Ogres", "Kobolds", "Lizardmen"])
+victory_actions = Array[ExtResource("3_vaug7")]([SubResource("Resource_vaug7"), SubResource("Resource_xcoxp")])
+victory_img = ExtResource("14_aasxy")
+defeat_img = ExtResource("1_sua3i")
+victory_txt = "You emerge bruised and exhausted, but victorious. The bags carried by your ponygirls are heavy with loot and treasure.
+
+It was a good day."
+defeat_txt = "Your warband breaks and scatters. Some flee deeper into the tunnels, while others desperately search for the way back.
+
+You should return to your village and see how many of your warriors managed to survive - and if they still see you as their {TITLE}."
+metadata/_custom_type_script = "uid://ct66od486dv7w"

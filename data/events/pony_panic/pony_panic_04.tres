@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://c6417sg4jmh1o"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_i5nr4"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_cfrdg"]
+[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="3_7ibth"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_py6u4"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="4_xu5w2"]
+
+[sub_resource type="Resource" id="Resource_nisjn"]
+script = ExtResource("3_7ibth")
+amount = -2
+target = 2
+metadata/_custom_type_script = "uid://cy0fnw6jwovce"
+
+[sub_resource type="Resource" id="Resource_0jdp1"]
+script = ExtResource("4_xu5w2")
+amount = 5
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[resource]
+script = ExtResource("3_py6u4")
+titel = "Pony Panic"
+description = "You give {PONYNAME} a good while to calm down, almost gently stroking her tits, before you order your men to find an inn with stables - enough drama for one day. A bit of rest should be enough to calm her and the rest of the ponies down.
+
+Your men seem somewhat displeased, clearly expecting you to punish the rebellious cunt, but the onlookers seem relieved that you have shown mercy."
+open_actions = Array[ExtResource("1_i5nr4")]([SubResource("Resource_nisjn"), SubResource("Resource_0jdp1")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://caiu0v7elmd13"]
+
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="1_a5vsh"]
+
+[resource]
+script = ExtResource("1_a5vsh")
+metadata/_custom_type_script = "uid://cm8dinv8ax8bq"

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c2ujkab6mm8br"]
+
+[ext_resource type="Theme" uid="uid://04rp7i4kdutn" path="res://main_window/tab_btn.tres" id="1_70ab0"]
+[ext_resource type="Script" uid="uid://d38j6bxf6gipn" path="res://main_window/tab_btn.gd" id="1_jlrl2"]
+
+[node name="StoryTabBtn" type="Button" unique_id=252616323]
+custom_minimum_size = Vector2(120, 0)
+offset_right = 120.0
+offset_bottom = 19.0
+theme = ExtResource("1_70ab0")
+toggle_mode = true
+shortcut_feedback = false
+shortcut_in_tooltip = false
+text = "???"
+script = ExtResource("1_jlrl2")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]

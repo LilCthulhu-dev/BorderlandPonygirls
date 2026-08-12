@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://1lfi6t3n061y"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_n1lec"]
+
+[resource]
+script = ExtResource("1_n1lec")
+description = "Outside this standard exist the dwarfs. They too are an overwhelmingly male people, though their way of life differs drastically from that of the wild-folk. Rather than living wild or tribal lives, dwarfs dwell underground and are obsessed with craftsmanship and mining. Despite this, they also produce mighty warriors and maintain a long-standing protective alliance with the Empire."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

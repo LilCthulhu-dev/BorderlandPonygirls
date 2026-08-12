@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://bojvhw67gi61f"]
+
+[ext_resource type="Texture2D" uid="uid://bbblr86f7p0ir" path="res://assets/img/borderlands.png" id="1_j7jrd"]
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_mpmxv"]
+
+[resource]
+script = ExtResource("1_mpmxv")
+description = "The Borderlands are a wild, untamed land on the eastern edge of the Empire. Civilization is confined to a handful of well-defended cities and outposts, but beyond their walls lies a primitive and dangerous wilderness, crawling with monsters, scoundrels, and wild beasts.
+
+The region is also home to fierce goblin tribes, who share an ancient pact with the Empire. The goblins guard the wilderness and defend the trading routes, while the Empire, in turn, respects their way of life - especially their tradition of enslaving tall folk as ponygirls - and allows them to enter its cities and trade openly."
+img = ExtResource("1_j7jrd")
+metadata/_custom_type_script = "uid://bkxhc74auednr"

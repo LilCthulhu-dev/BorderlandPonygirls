@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://grvg54i0pqei"]
+
+[ext_resource type="Script" uid="uid://cajibaneetvil" path="res://options/options.gd" id="1_jtqf2"]
+[ext_resource type="Theme" uid="uid://dv867lswsiis5" path="res://templates/black_background_theme.tres" id="2_dwof0"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="3_g3cjn"]
+[ext_resource type="PackedScene" uid="uid://dm15atwwhd883" path="res://options/new_game.tscn" id="4_tns5w"]
+[ext_resource type="PackedScene" uid="uid://cskt8722aterg" path="res://options/save_load.tscn" id="5_dwof0"]
+[ext_resource type="PackedScene" uid="uid://cdn2amsf41mkc" path="res://options/credits.tscn" id="6_g3cjn"]
+
+[node name="Options" type="CanvasLayer" unique_id=1897691462]
+process_mode = 3
+layer = 500
+script = ExtResource("1_jtqf2")
+
+[node name="Content" type="Control" parent="." unique_id=700879949]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="Content" unique_id=1769485484]
+custom_minimum_size = Vector2(1300, 0)
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.03876, 0.03876, 0.07846785, 0.90000004)
+
+[node name="Content" type="MarginContainer" parent="Content" unique_id=1618845247]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Content/Content" unique_id=496200142]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Content/Content/HBoxContainer" unique_id=1038697315]
+layout_mode = 2
+theme = ExtResource("2_dwof0")
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="Label" type="Label" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=1109989071]
+layout_mode = 2
+theme_type_variation = &"GraphFrameTitleLabel"
+text = "Borderland Ponygirls"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=2123906869]
+layout_mode = 2
+
+[node name="NewGameBtn" type="Button" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=320993771]
+layout_mode = 2
+text = "New Game"
+script = ExtResource("3_g3cjn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="SaveBtn" type="Button" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=111078888]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Save / Load"
+script = ExtResource("3_g3cjn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="CreditsBtn" type="Button" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=1152939396]
+layout_mode = 2
+text = "Credits"
+script = ExtResource("3_g3cjn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="CloseBtn" type="Button" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=1606310845]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Close Menu"
+script = ExtResource("3_g3cjn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Control" type="Control" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=2087170308]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="LinkButton" type="LinkButton" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=282030394]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Join Discord"
+underline = 1
+uri = "https://discord.gg/KxESzENa7"
+
+[node name="SubMenues" type="Control" parent="Content/Content/HBoxContainer" unique_id=671890097]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(480, -1)
+custom_maximum_size = Vector2(480, -1)
+layout_mode = 2
+
+[node name="NewGame" parent="Content/Content/HBoxContainer/SubMenues" unique_id=1463370876 instance=ExtResource("4_tns5w")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -272.0
+offset_right = 240.0
+offset_bottom = 272.0
+size_flags_vertical = 4
+
+[node name="SaveLoad" parent="Content/Content/HBoxContainer/SubMenues" unique_id=1517967566 instance=ExtResource("5_dwof0")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -272.0
+offset_right = 240.0
+offset_bottom = 272.0
+
+[node name="Credits" parent="Content/Content/HBoxContainer/SubMenues" unique_id=1020658468 instance=ExtResource("6_g3cjn")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="Content/Content/HBoxContainer/VBoxContainer/NewGameBtn" to="." method="_on_new_game_btn_pressed"]
+[connection signal="pressed" from="Content/Content/HBoxContainer/VBoxContainer/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="Content/Content/HBoxContainer/VBoxContainer/CreditsBtn" to="." method="_on_credits_btn_pressed"]
+[connection signal="pressed" from="Content/Content/HBoxContainer/VBoxContainer/CloseBtn" to="." method="_on_close_btn_pressed"]

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://je75uyt8bsbm"]
+
+[ext_resource type="Script" uid="uid://cxraj5geb7xid" path="res://main_window/page_template.gd" id="1_1xbiv"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_slbrd"]
+
+[node name="PageTemplate" type="Control" unique_id=1948255639]
+custom_minimum_size = Vector2(1152, 648)
+custom_maximum_size = Vector2(1152, 648)
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+theme = ExtResource("1_slbrd")
+script = ExtResource("1_1xbiv")

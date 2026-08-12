@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://b8wa43gc46bja"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_adtis"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_r3y65"]
+
+[sub_resource type="Resource" id="Resource_c2pym"]
+script = ExtResource("1_adtis")
+txt = "Dig Out the Rock"
+ability = 1
+success_description = "You call over a few of your men. Before long, the rock is dug out of the earth and hauled aside.
+"
+fail_description = "You call over a few of your men to dig out the rock, but it is much larger than expected. You waste several hours before finally giving up."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_anv62"]
+script = ExtResource("1_adtis")
+txt = "Make Your Pony Pull Harder"
+ability = 3
+success_description = "You give the reins a sharp yank and click your tongue. {PONYNAME} leans hard into her harness. The rock begins to shift, then suddenly tears free from the soil.
+"
+fail_description = "You give the reins a sharp yank and click your tongue. {PONYNAME} pulls as hard as she can, sweat beading on her temples, but it is no use. The plow remains firmly stuck.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_k0ltc"]
+script = ExtResource("1_adtis")
+txt = "Pull Back and Go Around"
+ability = 1
+success_description = "You rock the plow back and forth until it finally comes loose. Once it is free, you steer around the obstacle and leave the rocky patch untouched.
+"
+fail_description = "You pull and rock the plow, but it refuses to budge. You spend hours digging, tugging, and wrenching at it before finally getting it free."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_r3y65")
+flavor_lines = Array[String](["{PONYNAME} is huffing heavily from exhaustion.", "The smell of freshly plowed earth hangs in the air.", "The sun beats down on you and your beast."])
+description = "You are plowing the field with {PONYNAME} when the plow abruptly stops. She whinnies in pain and shock as her crotch strap is yanked tight.
+After a quick inspection, you find the cause: the plow has caught on a heavy rock buried beneath the soil."
+actions = Array[ExtResource("1_adtis")]([SubResource("Resource_c2pym"), SubResource("Resource_anv62"), SubResource("Resource_k0ltc")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

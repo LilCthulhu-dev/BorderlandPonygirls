@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bllsr017dv3ly"]
+
+[ext_resource type="Script" uid="uid://dxg0xdpuabgeg" path="res://singeltons/audio_manager/audio_manager.gd" id="1_h1eg0"]
+[ext_resource type="AudioStream" uid="uid://d2hq1b8knnb6l" path="res://assets/sound/coin.mp3" id="2_xlbhv"]
+[ext_resource type="AudioStream" uid="uid://cucepoh3u4lq6" path="res://assets/sound/page1.wav" id="3_6b4u2"]
+[ext_resource type="AudioStream" uid="uid://cx7bwhecwkwlj" path="res://assets/sound/page3.wav" id="3_xlbhv"]
+[ext_resource type="AudioStream" uid="uid://dryur0v6w3yoj" path="res://assets/sound/dice2.mp3" id="5_s2ubd"]
+[ext_resource type="AudioStream" uid="uid://bi3aqcwjve3d" path="res://assets/sound/fail1.mp3" id="6_73yup"]
+[ext_resource type="AudioStream" uid="uid://wgnu1280yyb1" path="res://assets/sound/fail2.mp3" id="7_hkcit"]
+[ext_resource type="AudioStream" uid="uid://dbkowm67c5xlw" path="res://assets/sound/success1.mp3" id="14_hkcit"]
+[ext_resource type="AudioStream" uid="uid://u384v5n4hbi0" path="res://assets/sound/success2.mp3" id="15_au3m6"]
+[ext_resource type="AudioStream" uid="uid://djw4qypxlflrh" path="res://assets/sound/success3.mp3" id="16_xjfmd"]
+[ext_resource type="AudioStream" uid="uid://4y308yhikimr" path="res://assets/sound/success4.mp3" id="17_v2loo"]
+
+[node name="AudioManager" type="Node" unique_id=1191873024]
+process_mode = 3
+script = ExtResource("1_h1eg0")
+
+[node name="coin" type="AudioStreamPlayer" parent="." unique_id=619005167]
+unique_name_in_owner = true
+stream = ExtResource("2_xlbhv")
+
+[node name="page1" type="AudioStreamPlayer" parent="." unique_id=1015423628]
+stream = ExtResource("3_6b4u2")
+
+[node name="page3" type="AudioStreamPlayer" parent="." unique_id=569318583]
+stream = ExtResource("3_xlbhv")
+
+[node name="click" type="AudioStreamPlayer" parent="." unique_id=1197291705]
+stream = ExtResource("3_6b4u2")
+
+[node name="hover" type="AudioStreamPlayer" parent="." unique_id=574288815]
+stream = ExtResource("3_xlbhv")
+
+[node name="dice" type="AudioStreamPlayer" parent="." unique_id=1699058568]
+stream = ExtResource("5_s2ubd")
+volume_db = -7.5
+
+[node name="fail1" type="AudioStreamPlayer" parent="." unique_id=1274234395]
+stream = ExtResource("6_73yup")
+
+[node name="fail2" type="AudioStreamPlayer" parent="." unique_id=1906722339]
+stream = ExtResource("7_hkcit")
+volume_db = -5.0
+
+[node name="success1" type="AudioStreamPlayer" parent="." unique_id=525658019]
+stream = ExtResource("14_hkcit")
+
+[node name="success2" type="AudioStreamPlayer" parent="." unique_id=425732256]
+stream = ExtResource("15_au3m6")
+volume_db = -1.5
+
+[node name="success3" type="AudioStreamPlayer" parent="." unique_id=662870398]
+stream = ExtResource("16_xjfmd")
+
+[node name="success4" type="AudioStreamPlayer" parent="." unique_id=229822531]
+stream = ExtResource("17_v2loo")
+volume_db = -5.0

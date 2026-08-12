@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://djr1qygj1g1uj"]
+
+[ext_resource type="Script" uid="uid://3s678ie4o5uu" path="res://main_window/map/location_marker.gd" id="1_p4u30"]
+[ext_resource type="Theme" uid="uid://dv867lswsiis5" path="res://templates/black_background_theme.tres" id="2_c8ah7"]
+[ext_resource type="Texture2D" uid="uid://dgelbmqpgkt3h" path="res://assets/icons/disc.png" id="3_lrfmo"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="4_0v12h"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="5_ps3kl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0kc5u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0v12h"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0v12h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_50yph"]
+radius = 21.0
+
+[node name="LocationMarker" type="Node2D" unique_id=1755482019]
+script = ExtResource("1_p4u30")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=596401209]
+modulate = Color(0.03529412, 0.039215688, 0.078431375, 1)
+position = Vector2(-4.7683716e-07, -4.7683716e-07)
+scale = Vector2(0.32000002, 0.32000002)
+texture = ExtResource("3_lrfmo")
+
+[node name="SymbolLabel" type="Label" parent="." unique_id=1049203918]
+offset_left = -32.0
+offset_top = -14.0
+offset_right = 33.0
+offset_bottom = 16.0
+theme = ExtResource("2_c8ah7")
+theme_override_font_sizes/font_size = 30
+text = "X"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitelLabel" type="Label" parent="." unique_id=123355464]
+offset_left = -80.0
+offset_top = 16.0
+offset_right = 80.0
+offset_bottom = 48.0
+theme = ExtResource("4_0v12h")
+text = "????"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TravelBtn" type="Button" parent="." unique_id=1157197722]
+unique_name_in_owner = true
+offset_left = -21.0
+offset_top = -21.0
+offset_right = 21.0
+offset_bottom = 21.0
+mouse_filter = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0kc5u")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0v12h")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_0v12h")
+script = ExtResource("5_ps3kl")
+click_sound = "coin"
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1961410608]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=719664644]
+shape = SubResource("CircleShape2D_50yph")

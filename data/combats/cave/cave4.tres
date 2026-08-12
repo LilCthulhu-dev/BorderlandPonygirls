@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://0hmnpumjtufr"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_4w6sk"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_h7lk5"]
+
+[sub_resource type="Resource" id="Resource_g0foh"]
+script = ExtResource("1_4w6sk")
+txt = "Charge!"
+ability = 1
+success_description = "You crash into the ritual circle and scatter the defenders before they react.
+"
+fail_description = "The {ENEMY_NAME} folk recover quickly and force you into retreat.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_vg333"]
+script = ExtResource("1_4w6sk")
+txt = "Sneak attack"
+ability = 4
+success_description = "You strike silently and cut down the ritual leaders before the others react.
+"
+fail_description = "A misstep alerts them and the defenders rally.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_2sgct"]
+script = ExtResource("1_4w6sk")
+txt = "Coordinated attack"
+ability = 3
+success_description = "Your warband strikes together and overwhelms the shrine defenders.
+"
+fail_description = "The attack falters and the defenders rally, forcing you back.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_uncfq"]
+script = ExtResource("1_4w6sk")
+txt = "Perfect moment"
+success_description = "You strike when the ritual reaches its peak and shatter it instantly.
+"
+fail_description = "You hesitate too long and the defenders are ready when you attack.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_h7lk5")
+flavor_lines = Array[String](["Strange symbols glow faintly in the torchlight.", "The air smells of ash and old blood.", "A skull hangs above the shrine entrance."])
+description = "A faint glow flickers ahead. Around the bend stands a crude shrine carved into the cave wall, surrounded by bones and smeared symbols. Several  {ENEMY_NAME} kneel before a smoldering fire.
+"
+actions = Array[ExtResource("1_4w6sk")]([SubResource("Resource_g0foh"), SubResource("Resource_vg333"), SubResource("Resource_2sgct"), SubResource("Resource_uncfq")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

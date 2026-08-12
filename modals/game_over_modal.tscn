@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://c0vk0v4thw6ao"]
+
+[ext_resource type="PackedScene" uid="uid://b1v7of17rvrix" path="res://modals/modal_template.tscn" id="1_oog8r"]
+[ext_resource type="Script" uid="uid://bp5tcnnyrj1qo" path="res://modals/game_over_modal.gd" id="2_kggim"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="2_q0uk8"]
+[ext_resource type="Texture2D" uid="uid://bpsxp1047uwhn" path="res://assets/icons/skull_and_bone.png" id="4_t1s7p"]
+
+[node name="GameOverModal" unique_id=1384488452 instance=ExtResource("1_oog8r")]
+script = ExtResource("2_kggim")
+
+[node name="Label" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="0" unique_id=1096551446]
+layout_mode = 2
+theme = ExtResource("2_q0uk8")
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=2034877002]
+modulate = Color(0.03529412, 0.039215688, 0.078431375, 1)
+custom_minimum_size = Vector2(250, 250)
+layout_mode = 2
+texture = ExtResource("4_t1s7p")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Description" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=991869542]
+unique_name_in_owner = true
+layout_mode = 2
+text = "You have done the one thing a {TITLE} must never do: run out of money. Your men abandon you, and your reign as Boss comes to an end."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="3" unique_id=1383237332]
+layout_mode = 2
+text = "Back to Start"
+
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

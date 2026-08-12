@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://dtc5bf8lca3ta"]
+
+[ext_resource type="Script" uid="uid://6c33etnh18td" path="res://event_window/event_window.gd" id="1_cyydl"]
+[ext_resource type="PackedScene" uid="uid://il0uvefv3nrc" path="res://templates/double_page.tscn" id="2_g5xrc"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="3_kcbun"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="3_ksy1x"]
+[ext_resource type="PackedScene" uid="uid://bvm5rv6wc627l" path="res://templates/attribute_node.tscn" id="4_6nn1j"]
+
+[node name="Event" type="CanvasLayer" unique_id=1787028999]
+script = ExtResource("1_cyydl")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1707347307]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[node name="DoublePage" parent="." unique_id=525338114 instance=ExtResource("2_g5xrc")]
+position = Vector2(576, 352)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1376608039]
+offset_left = 80.0
+offset_top = 112.0
+offset_right = 560.0
+offset_bottom = 592.0
+theme = ExtResource("3_kcbun")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1189494290]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 25
+
+[node name="LabelTitel" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=694407939]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_ksy1x")
+autowrap_mode = 2
+
+[node name="LabelDescription" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=958906634]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="LabelResults" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=2101030372]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="ContentContainer" type="VBoxContainer" parent="ScrollContainer/VBoxContainer" unique_id=343888890]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme = ExtResource("3_kcbun")
+
+[node name="DoublePage2" parent="." unique_id=967414368 instance=ExtResource("2_g5xrc")]
+position = Vector2(576, -208)
+
+[node name="ContentImage" type="TextureRect" parent="." unique_id=2005740755]
+unique_name_in_owner = true
+offset_left = 608.0
+offset_top = 128.0
+offset_right = 1056.0
+offset_bottom = 576.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Header" type="HBoxContainer" parent="." unique_id=1422170013]
+offset_right = 1152.0
+offset_bottom = 48.0
+mouse_filter = 2
+theme = ExtResource("3_kcbun")
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="AttributeNode6" parent="Header" unique_id=483871864 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 6
+
+[node name="AttributeNode7" parent="Header" unique_id=1243731058 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 8
+
+[node name="AttributeNode8" parent="Header" unique_id=1320109580 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 7
+
+[node name="VSeparator" type="VSeparator" parent="Header" unique_id=786026999]
+layout_mode = 2
+
+[node name="AttributeNode" parent="Header" unique_id=1467268307 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+
+[node name="AttributeNode2" parent="Header" unique_id=1539002621 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 2
+
+[node name="AttributeNode3" parent="Header" unique_id=2072811963 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 3
+
+[node name="AttributeNode4" parent="Header" unique_id=2056659741 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 4
+
+[node name="AttributeNode5" parent="Header" unique_id=1862170023 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 5

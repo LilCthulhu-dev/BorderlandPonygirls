@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://ctly2atyk1myi"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_u6je1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_tdw0o"]
+
+[sub_resource type="Resource" id="Resource_w1yvj"]
+script = ExtResource("1_u6je1")
+txt = "Charge!"
+ability = 1
+success_description = " You burst from cover and slam into them before they react, throwing the chamber into chaos."
+fail_description = "Your attack lands hard but not clean and the beast folk rally, turning the fight brutal."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_xubai"]
+script = ExtResource("1_u6je1")
+txt = "Sneak attack "
+ability = 4
+success_description = "You move unseen and silently drop their strongest fighters before the alarm spreads.
+"
+fail_description = "A loose stone betrays you and the beast folk leap to their feet, forcing you to retreat.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_sm8a6"]
+script = ExtResource("1_u6je1")
+txt = "Wait for the right moment"
+ability = 4
+success_description = "You strike while they argue over food and overwhelm them before they react.
+"
+fail_description = "You hesitate too long and one of them notices movement in the shadows.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_bk4wi"]
+script = ExtResource("1_u6je1")
+txt = "Coordinated attack"
+ability = 3
+success_description = "Your warband strikes as one and crushes the beast folk before they can organize."
+fail_description = "The timing slips and the beast folk recover quickly, driving you back."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_tdw0o")
+flavor_lines = Array[String](["Bones crunch under careless feet.", "A crude drum beats somewhere deeper in the cave."])
+description = "Your group sneaks to a cave entrance and peers into a wide chamber. {ENEMY_NAME} gather around a massive cauldron of foul stew, laughing and feasting. They do not notice you."
+actions = Array[ExtResource("1_u6je1")]([SubResource("Resource_w1yvj"), SubResource("Resource_xubai"), SubResource("Resource_sm8a6"), SubResource("Resource_bk4wi")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

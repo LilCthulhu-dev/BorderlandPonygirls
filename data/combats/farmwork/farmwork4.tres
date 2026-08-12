@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://diydmx8ug20xc"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_kb3tf"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_q7oqb"]
+
+[sub_resource type="Resource" id="Resource_dk2h2"]
+script = ExtResource("1_kb3tf")
+txt = "Finish Plowing One Last Section"
+ability = 1
+success_description = "You push {PONYNAME} to pull harder. She whinnies in protest, but you manage to finish one last section before the field turns to mud.
+"
+fail_description = "You push {PONYNAME} to pull harder, but the soil quickly turns to mud. You are forced to unstrap your she-beast and lead her back to the barn.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_q8jc6"]
+script = ExtResource("1_kb3tf")
+txt = "Get Everything Inside"
+ability = 3
+success_description = "You coordinate your men, and they manage to bring all the tools, ponygirls, and supplies inside before the storm grows too severe.
+"
+fail_description = "You try to coordinate your men, but the storm arrives too quickly. Rain pours down, drenching most of your men and ponygirls before you can get them inside."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_g4jtg"]
+script = ExtResource("1_kb3tf")
+txt = "Focus on Indoor Work"
+ability = 3
+success_description = "You organize your men and ponygirls, putting them to work turning the large millstone in the barn instead of simply waiting out the rain.
+"
+fail_description = "You organize your men and ponygirls and assign them work inside, but you soon run out of useful things to do. All you can do now is wait for the weather to clear.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_q7oqb")
+flavor_lines = Array[String](["Thunder rumbles somewhere beyond the hills.", "The first drops darken the dry soil.", "The ponygirls shift uneasily in their harnesses.", "Tools and loose supplies begin to rattle in the rising wind.", "Mud begins to cling to boots and hooves."])
+description = "Dark clouds gather overhead, and the first drops of rain soon begin to fall - despite how much work remains unfinished.
+"
+actions = Array[ExtResource("1_kb3tf")]([SubResource("Resource_dk2h2"), SubResource("Resource_q8jc6"), SubResource("Resource_g4jtg")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

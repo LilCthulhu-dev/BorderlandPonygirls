@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://dss5v8owxhftx"]
+
+[ext_resource type="Script" uid="uid://b2ohiwmqiq3dp" path="res://main_window/map/player_marker.gd" id="1_piu5f"]
+[ext_resource type="Resource" uid="uid://cphvtkk0gf5dk" path="res://data/locations/wilderness.tres" id="2_efi2p"]
+[ext_resource type="Texture2D" uid="uid://ddgauk5llms2p" path="res://assets/dash.png" id="3_sampu"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="4_av4ur"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="5_xqoyf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50yph"]
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+corner_radius_top_left = 500
+corner_radius_top_right = 500
+corner_radius_bottom_right = 500
+corner_radius_bottom_left = 500
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0kc5u"]
+radius = 16.0
+
+[node name="PlayerMarker" type="Node2D" unique_id=1371709513]
+script = ExtResource("1_piu5f")
+wilderness = ExtResource("2_efi2p")
+
+[node name="PathLine" type="Line2D" parent="." unique_id=230548690]
+unique_name_in_owner = true
+texture_filter = 1
+texture_repeat = 2
+points = PackedVector2Array(0, 0, 192, 0)
+width = 4.0
+default_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+texture = ExtResource("3_sampu")
+texture_mode = 1
+
+[node name="Player" type="Node2D" parent="." unique_id=2079232047]
+unique_name_in_owner = true
+
+[node name="Button2" type="Button" parent="Player" unique_id=1513581137]
+offset_left = -12.0
+offset_top = -12.0
+offset_right = 12.0
+offset_bottom = 12.75
+mouse_filter = 2
+theme = ExtResource("4_av4ur")
+theme_override_colors/font_disabled_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+theme_override_styles/disabled = SubResource("StyleBoxFlat_50yph")
+disabled = true
+text = "v"
+
+[node name="PlayerArea" type="Area2D" parent="Player" unique_id=1792067728]
+unique_name_in_owner = true
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/PlayerArea" unique_id=918771764]
+shape = SubResource("CircleShape2D_0kc5u")
+
+[node name="NavAgent" type="NavigationAgent2D" parent="Player" unique_id=253621386]
+unique_name_in_owner = true
+
+[node name="Target" type="Node2D" parent="." unique_id=477888408]
+unique_name_in_owner = true
+position = Vector2(192, 0)
+
+[node name="TravelBtn" type="Button" parent="Target" unique_id=124746612]
+unique_name_in_owner = true
+offset_left = -112.0
+offset_top = 16.0
+offset_right = 112.0
+offset_bottom = 54.0
+size_flags_horizontal = 3
+theme = ExtResource("4_av4ur")
+text = "Go"
+script = ExtResource("5_xqoyf")
+click_sound = "coin"
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Button" type="Button" parent="Target" unique_id=785628492]
+offset_left = -11.0
+offset_top = -12.0
+offset_right = 13.0
+offset_bottom = 12.75
+mouse_filter = 2
+theme = ExtResource("4_av4ur")
+theme_override_colors/font_disabled_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+theme_override_styles/disabled = SubResource("StyleBoxFlat_50yph")
+disabled = true
+text = "X"
+
+[connection signal="pressed" from="Target/TravelBtn" to="." method="_on_travel_btn_pressed"]

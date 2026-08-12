@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://dkclnrgmlsj6m"]
+
+[ext_resource type="PackedScene" uid="uid://b1v7of17rvrix" path="res://modals/modal_template.tscn" id="1_uagkt"]
+[ext_resource type="Script" uid="uid://l6kxw18626c3" path="res://modals/care_modal.gd" id="2_uagkt"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="3_spywj"]
+[ext_resource type="PackedScene" uid="uid://bvm5rv6wc627l" path="res://templates/attribute_node.tscn" id="4_3p1nf"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="5_u7bfb"]
+
+[node name="CareModal" unique_id=1384488452 instance=ExtResource("1_uagkt")]
+script = ExtResource("2_uagkt")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="0" unique_id=258950060]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" index="0" unique_id=1363478749]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("3_spywj")
+text = "Care for Ponygirl"
+
+[node name="AttributeNode" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" index="1" unique_id=483871864 instance=ExtResource("4_3p1nf")]
+layout_mode = 2
+attribute = 6
+
+[node name="NameLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=193062634]
+unique_name_in_owner = true
+layout_mode = 2
+text = "test"
+autowrap_mode = 2
+
+[node name="AttributesManagerLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=1790746545]
+unique_name_in_owner = true
+layout_mode = 2
+text = "test"
+autowrap_mode = 2
+
+[node name="Label6" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="3" unique_id=2076366418]
+layout_mode = 2
+text = "Time for one's Ponygirls is what separates a good warboss from a bad one. Keep them happy, horny, but not desperate, train them regularly, and allow them to cum every once in a while, and they will serve you well.
+"
+autowrap_mode = 2
+
+[node name="GridContainer2" type="GridContainer" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="4" unique_id=1056461222]
+layout_mode = 2
+columns = 2
+
+[node name="TrainingBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" index="0" unique_id=1248662298]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Training
+"
+alignment = 0
+script = ExtResource("5_u7bfb")
+show_tooltip_if_disabled = true
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="TeasingBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" index="1" unique_id=1236650366]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Teasing
+"
+alignment = 0
+script = ExtResource("5_u7bfb")
+show_tooltip_if_disabled = true
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="ClimaxBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" index="2" unique_id=1963616293]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Climax
+"
+alignment = 0
+script = ExtResource("5_u7bfb")
+show_tooltip_if_disabled = true
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="GridContainer" type="GridContainer" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="5" unique_id=1651884238]
+layout_mode = 2
+
+[node name="BackToPonyBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer" index="0" unique_id=2144605221]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back to Ponygirl"
+alignment = 0
+script = ExtResource("5_u7bfb")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="BackToStableBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer" index="1" unique_id=1123031894]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back to Stable"
+alignment = 0
+script = ExtResource("5_u7bfb")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/TrainingBtn" to="." method="_on_training_btn_pressed"]
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/TeasingBtn" to="." method="_on_teasing_btn_pressed"]
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/ClimaxBtn" to="." method="_on_climax_btn_pressed"]
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer/BackToPonyBtn" to="." method="_on_back_to_pony_btn_pressed"]
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer/BackToStableBtn" to="." method="_on_back_to_stable_btn_pressed"]

@@ -1,0 +1,66 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dhy2jwrirw8un"]
+
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="1_yipd7"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2_ktc0q"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3_ds03l"]
+[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_q3ihl"]
+[ext_resource type="Resource" uid="uid://di2ke0th4h8tx" path="res://data/ponygirls/unloyal_pony.tres" id="8_pwvun"]
+[ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="9_ogsu3"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="11_fqc60"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="12_1ddbn"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="13_bfuw7"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="15_b3gjr"]
+
+[sub_resource type="Resource" id="Resource_xybms"]
+script = ExtResource("3_ds03l")
+txt = "She looks helpless and miserable but makes no attempt to resist. You add her to your stable."
+
+[sub_resource type="Resource" id="Resource_c5gay"]
+script = ExtResource("9_ogsu3")
+ponygirl = ExtResource("8_pwvun")
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
+
+[sub_resource type="Resource" id="Resource_noxkn"]
+script = ExtResource("11_fqc60")
+amount = -5
+hide_tooltip = true
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_pwvun"]
+script = ExtResource("12_1ddbn")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_ktc0q"]
+script = ExtResource("13_bfuw7")
+txt = "Add her to your stable."
+actions = Array[ExtResource("2_ktc0q")]([SubResource("Resource_xybms"), SubResource("Resource_c5gay"), SubResource("Resource_noxkn"), SubResource("Resource_pwvun")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_6flpc"]
+script = ExtResource("3_ds03l")
+txt = "She looks shocked as you undo her bindings and remove the gag. Just as you suspected, she had been kidnapped and forced into slavery.
+
+She thanks you profusely for setting her free and promises to tell everyone what a good man you are."
+
+[sub_resource type="Resource" id="Resource_ltrtu"]
+script = ExtResource("11_fqc60")
+amount = 5
+hide_tooltip = true
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_gxoki"]
+script = ExtResource("12_1ddbn")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_tb6qg"]
+script = ExtResource("13_bfuw7")
+txt = "Let her go."
+actions = Array[ExtResource("2_ktc0q")]([SubResource("Resource_6flpc"), SubResource("Resource_ltrtu"), SubResource("Resource_gxoki")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("15_b3gjr")
+titel = "Unexpected Deal"
+description = "The goblin grins, takes the gold, and leaves you with your new ponygirl. She looks at you pleadingly but is too afraid to speak."
+content = Array[ExtResource("1_yipd7")]([SubResource("Resource_ktc0q"), SubResource("Resource_tb6qg")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

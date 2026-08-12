@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://8u2ga71kr7sg"]
+
+[ext_resource type="PackedScene" uid="uid://je75uyt8bsbm" path="res://main_window/page_template.tscn" id="1_wbho8"]
+[ext_resource type="PackedScene" uid="uid://c1u885uy5uxeb" path="res://templates/singel_page.tscn" id="3_0j7dv"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="3_b4yq7"]
+[ext_resource type="Script" uid="uid://c5ux8oiblplig" path="res://main_window/inventory/inventory.gd" id="3_no061"]
+[ext_resource type="PackedScene" uid="uid://bvm5rv6wc627l" path="res://templates/attribute_node.tscn" id="4_8pfpj"]
+[ext_resource type="Theme" uid="uid://dv867lswsiis5" path="res://templates/black_background_theme.tres" id="5_gj2l2"]
+[ext_resource type="Script" uid="uid://bx5nby33xvbqc" path="res://main_window/inventory/amount_btn.gd" id="6_8pfpj"]
+
+[node name="Inventory" unique_id=1948255639 instance=ExtResource("1_wbho8")]
+script = ExtResource("3_no061")
+btn_text = "Stock"
+shortcut_key_string = "i"
+
+[node name="SingelPage" parent="." index="0" unique_id=234162319 instance=ExtResource("3_0j7dv")]
+position = Vector2(288.00006, 352)
+
+[node name="SingelPage2" parent="." index="1" unique_id=99468429 instance=ExtResource("3_0j7dv")]
+position = Vector2(864.00006, 352)
+
+[node name="Player" type="VBoxContainer" parent="." index="2" unique_id=1647124453]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 80.0
+offset_top = 96.0
+offset_right = 496.0
+offset_bottom = 608.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Player" index="0" unique_id=172635821]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Player/HBoxContainer" index="0" unique_id=1346448364]
+layout_mode = 2
+theme = ExtResource("3_b4yq7")
+text = "Warband Inventory"
+
+[node name="Control" type="Control" parent="Player/HBoxContainer" index="1" unique_id=2008302779]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AttributeNode" parent="Player/HBoxContainer" index="2" unique_id=483871864 instance=ExtResource("4_8pfpj")]
+layout_mode = 2
+attribute = 6
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Player" index="1" unique_id=559932880]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PlayerGrid" type="GridContainer" parent="Player/ScrollContainer" index="0" unique_id=2097833764]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="3" unique_id=595024229]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 112.0
+offset_right = 608.0
+offset_bottom = 592.0
+mouse_filter = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="Amount1" type="Button" parent="VBoxContainer" index="0" unique_id=2105321795]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("5_gj2l2")
+toggle_mode = true
+text = "?"
+script = ExtResource("6_8pfpj")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Amount2" type="Button" parent="VBoxContainer" index="1" unique_id=1050055677]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("5_gj2l2")
+toggle_mode = true
+text = "?"
+script = ExtResource("6_8pfpj")
+amount = 5
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Amount3" type="Button" parent="VBoxContainer" index="2" unique_id=1174159265]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("5_gj2l2")
+toggle_mode = true
+text = "?"
+script = ExtResource("6_8pfpj")
+amount = 10
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Amount4" type="Button" parent="VBoxContainer" index="3" unique_id=1078863491]
+custom_minimum_size = Vector2(64, 64)
+custom_maximum_size = Vector2(64, 64)
+layout_mode = 2
+theme = ExtResource("5_gj2l2")
+toggle_mode = true
+text = "?"
+script = ExtResource("6_8pfpj")
+amount = 999
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Shop" type="VBoxContainer" parent="." index="4" unique_id=1358516782]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 656.0
+offset_top = 96.0
+offset_right = 1072.0
+offset_bottom = 608.0
+
+[node name="ShopHeader" type="Label" parent="Shop" index="0" unique_id=1148714290]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_b4yq7")
+text = "Shop"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Shop" index="1" unique_id=2139088750]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ShopGrid" type="GridContainer" parent="Shop/ScrollContainer" index="0" unique_id=1092336915]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 6

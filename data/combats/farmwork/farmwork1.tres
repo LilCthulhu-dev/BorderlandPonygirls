@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cmgxha4wyvbcs"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_4l4ku"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_d5b4i"]
+
+[sub_resource type="Resource" id="Resource_ds2vs"]
+script = ExtResource("1_4l4ku")
+txt = "Finger fuck"
+ability = 2
+success_description = "You stroke {PONYNAME}’s back, speak softly and massage her cunt, until she moans in helpless lust. You chuckle, and give her one last smack on the ass before you let go - the rebellion is over."
+fail_description = "You run your hand over {PONYNAME} cunt, and while she starts shivering, she seems not to give up her resistance so easily."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_tq801"]
+script = ExtResource("1_4l4ku")
+txt = "Wipe her"
+ability = 1
+success_description = "You snap the crop sharply, hit the she-beasts ass, which makes her jump forward, hauling the wagon up the road.
+"
+fail_description = "You strike the girl’s ass multiple times, but it digs in its hooves, growing stubborn and unwilling to move.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_lhp0p"]
+script = ExtResource("1_4l4ku")
+txt = "Blindfold"
+ability = 3
+success_description = "You attach a blindfold to the girl, and lead her by the reins. After a while it stops resisting, and just follows your lead."
+fail_description = "You attach a blindfold to make the cunt focus on its leg, but it backfires. The girl grows slow and clumsy until you remove the blindfold again."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_2cxbd"]
+script = ExtResource("1_4l4ku")
+txt = "Second ponygirl"
+ability = 3
+success_description = "You harness a second, more relaxed pony to the wagon. This calms {PONYNAME}, and soon the wagon moves steadily.
+"
+fail_description = "You harness a second ponycunt to the wagon, hoping this would calm {PONYNAME}. Instead they both start to resist, slowing work to a crawl.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_d5b4i")
+flavor_lines = Array[String](["A cool wind moves through the fields and rattles the empty wagon boards.", "The road up the hill is steep and worn from years of hauling grain.", "The scent of hay and fresh soil hangs heavy in the air."])
+description = "You harness {PONYNAME} to a wagon, giving her ass a playful smack, but you can see it. The rebellion. The cunt seems not at all keen on hauling grain and straw to the barn up the hill."
+actions = Array[ExtResource("1_4l4ku")]([SubResource("Resource_ds2vs"), SubResource("Resource_tq801"), SubResource("Resource_lhp0p"), SubResource("Resource_2cxbd")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

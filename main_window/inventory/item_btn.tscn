@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dsletyanr45si"]
+
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_tljr1"]
+[ext_resource type="Script" uid="uid://c0bc5qp4wsgm8" path="res://main_window/inventory/item_btn.gd" id="2_36sus"]
+[ext_resource type="Theme" uid="uid://dv867lswsiis5" path="res://templates/black_background_theme.tres" id="3_yuj33"]
+
+[node name="MerchBtn" type="Button" unique_id=973613030]
+custom_minimum_size = Vector2(75, 75)
+custom_maximum_size = Vector2(75, 75)
+offset_right = 75.0
+offset_bottom = 75.0
+size_flags_horizontal = 3
+theme = ExtResource("1_tljr1")
+script = ExtResource("2_36sus")
+click_sound = "coin"
+show_tooltip_if_disabled = true
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="ContentContainer" type="MarginContainer" parent="." unique_id=142586440]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("3_yuj33")
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ContentContainer" unique_id=198918456]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="PriceLabel" type="Label" parent="ContentContainer/VBoxContainer" unique_id=1288988548]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 0
+text = "123"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Texture" type="TextureRect" parent="ContentContainer/VBoxContainer" unique_id=2099815526]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AmountLabel" type="Label" parent="ContentContainer/VBoxContainer" unique_id=1916861005]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "x3"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

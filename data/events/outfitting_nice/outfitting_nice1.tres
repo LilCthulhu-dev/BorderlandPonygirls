@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://bipt7ieq52q6a"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_w1ioj"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_6d7cx"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_emfqr"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_lwcuq"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_16cbu"]
+
+[sub_resource type="Resource" id="Resource_2ugw7"]
+script = ExtResource("3_emfqr")
+event_path = "uid://cr30p5vxm428k"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_jfgcl"]
+script = ExtResource("4_16cbu")
+txt = "Next"
+actions = Array[ExtResource("1_w1ioj")]([SubResource("Resource_2ugw7")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3_lwcuq")
+titel = "Outfitting"
+description = "You bring the girl into the stable. It’s only you, your shaman, and the girl. You order her to strip. Of course she flusters, but you reassure her and give her time. It’s the last few moments of her being a person. There is no need to rush.
+
+She stands naked before you, cheeks flush and trying to hide her shame with her hands. You chuckle, and order her to put her hands away. “You're gonna be a ponygirl and ponygirls don’t wear clothes.”"
+content = Array[ExtResource("2_6d7cx")]([SubResource("Resource_jfgcl")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

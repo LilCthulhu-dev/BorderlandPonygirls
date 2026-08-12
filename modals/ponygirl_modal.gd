@@ -1,0 +1,56 @@
+extends Modal
+
+@onready var titel_label: Label = %TitelLabel
+@onready var portrait: TextureRect = %portrait
+@onready var attributes_label: Label = %AttributesManagerLabel
+@onready var background_label: Label = %BackgroundLabel
+@onready var perks_container: VBoxContainer = %PerksContainer
+
+const PERK_LABEL = preload("uid://bham5by4ws0kl")
+var ponygirl : Ponygirl
+var pony_mod_bonus : int
+
+func _ready() -> void:
+	super()
+	PonygirlManager.focused_ponygirl = ponygirl
+	_update()
+
+func _update() -> void:
+	pony_mod_bonus = ponygirl.get_mod_bonus()
+	titel_label.text = "%s (Level %s %s)" % [
+		ponygirl.name,
+		ponygirl.level,
+		ponygirl.race
+	]
+	portrait.visible = ponygirl.portrait != null
+	if ponygirl.portrait:
+		portrait.texture = ponygirl.portrait
+	attributes_label.text = "XP: %s / Arousal: %s / Loyalty: %s" % [
+		ponygirl.xp,
+		ponygirl.arousal,
+		ponygirl.loyalty
+	]
+	background_label.text = "Eyes: %s / Hair: %s / Skin: %s" % [
+		ponygirl.eye_color,
+		ponygirl.hair_color,
+		ponygirl.skin_tone
+	]
+	for child in perks_container.get_children():
+		perks_container.remove_child(child)
+		child.queue_free()
+	for perk in ponygirl.perks:
+		var label := Label.new()
+		var descriptions := perk.get_full_description(ponygirl)
+		label.text = "%s: %s" % [
+			perk.name,
+			" / ".join(descriptions)
+		]
+		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		perks_container.add_child(label)
+
+func _on_care_for_btn_pressed() -> void:
+	ModalManager.open_care_modal(ponygirl)
+
+func _on_back_btn_pressed() -> void:
+	close()

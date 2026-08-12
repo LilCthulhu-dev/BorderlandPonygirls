@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://gk888spgyysa"]
+
+[ext_resource type="PackedScene" uid="uid://grvg54i0pqei" path="res://options/options.tscn" id="1_qdmhb"]
+[ext_resource type="Script" uid="uid://du7i6ohffw8f7" path="res://start_menu/start_menu.gd" id="1_xloss"]
+
+[node name="StartMenu" type="CanvasLayer" unique_id=292623787]
+script = ExtResource("1_xloss")
+
+[node name="Options" parent="." unique_id=1897691462 instance=ExtResource("1_qdmhb")]

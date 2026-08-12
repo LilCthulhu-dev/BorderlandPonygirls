@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bvm5rv6wc627l"]
+
+[ext_resource type="Script" uid="uid://c1px0axfryivo" path="res://templates/attribute_node.gd" id="1_4qy53"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="2_k8s0a"]
+[ext_resource type="Texture2D" uid="uid://ck01ntuoxed8n" path="res://assets/icons/dagger.png" id="2_u1lma"]
+
+[node name="AttributeNode" type="HBoxContainer" unique_id=483871864]
+offset_right = 104.0
+offset_bottom = 40.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 5
+alignment = 2
+script = ExtResource("1_4qy53")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=206698380]
+unique_name_in_owner = true
+self_modulate = Color(0.03529412, 0.039215688, 0.078431375, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("2_u1lma")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Value" type="Label" parent="." unique_id=1372473688]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("2_k8s0a")
+theme_override_font_sizes/font_size = 25
+text = "123"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

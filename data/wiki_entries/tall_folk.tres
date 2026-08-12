@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://cx1hjnpv8nenl"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_qq7bo"]
+
+[resource]
+script = ExtResource("1_qq7bo")
+description = "The tall-folk consist primarily of humans and elves. They are the most civilized peoples of the known world and the undisputed masters of the Empire. Tall-folk societies are overwhelmingly female - only one in ten births produces a male child.
+
+However, they can interbreed with almost all other folk. Such unions have an equal chance of producing a child of either parent’s race."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

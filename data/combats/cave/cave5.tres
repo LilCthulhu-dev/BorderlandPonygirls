@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cf14l86o3fphu"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_l6ef7"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_yda4m"]
+
+[sub_resource type="Resource" id="Resource_y26au"]
+script = ExtResource("1_l6ef7")
+txt = "Coordinated defense"
+ability = 3
+success_description = "Your warriors lock shields and force the ambushers back.
+"
+fail_description = "The formation breaks and the ambushers slip through.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_nhw4o"]
+script = ExtResource("1_l6ef7")
+txt = "Charge!"
+ability = 1
+success_description = "You smash into their line and scatter the attackers.
+"
+fail_description = "The ambushers resist fiercely and drive you back.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_tadkw"]
+script = ExtResource("1_l6ef7")
+txt = "Slip into the shadows"
+ability = 4
+success_description = "Darkness blinds the ambushers and you slip free of the trap.
+"
+fail_description = "You stumble in the dark and the ambushers press the attack.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_yihxe"]
+script = ExtResource("1_l6ef7")
+txt = "Rally your troops"
+ability = 3
+success_description = "Your roar ignites your warriors and they surge forward.
+"
+fail_description = "Your voice vanishes beneath savage howls as the ambushers overwhelm you.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_yda4m")
+flavor_lines = Array[String](["Loose stones shift under your boots.", "The tunnel walls are scarred with old weapon marks.", "A cold wind blows through the passage."])
+description = "The tunnel narrows until you must move in single file. Whispered voices echo ahead. Suddenly javelins fly from cracks in the stone and ambushers rush the passage.
+"
+actions = Array[ExtResource("1_l6ef7")]([SubResource("Resource_y26au"), SubResource("Resource_nhw4o"), SubResource("Resource_tadkw"), SubResource("Resource_yihxe")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

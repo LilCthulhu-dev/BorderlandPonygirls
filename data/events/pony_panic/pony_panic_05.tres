@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://bb5r4xcvh77y5"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_c625b"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_g1i61"]
+[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="3_83c18"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_arf2b"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="4_ee54g"]
+
+[sub_resource type="Resource" id="Resource_6y87a"]
+script = ExtResource("3_83c18")
+amount = 2
+target = 2
+metadata/_custom_type_script = "uid://cy0fnw6jwovce"
+
+[sub_resource type="Resource" id="Resource_m0k2t"]
+script = ExtResource("4_ee54g")
+amount = -5
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[resource]
+script = ExtResource("3_arf2b")
+titel = "Pony Panic"
+description = "You give her a few moments to calm down, then you announce the punishment: five lashes.
+
+{PONYNAME} whimpers helplessly, looks pleadingly at you. Your men bring a whip, and bent {PONYNAME} over an empty barrel. You aim for her juicy arse and lower back, every hit followed by a painful wail.
+
+The onlookering townsfolk watch with a mix of terror and fascination."
+open_actions = Array[ExtResource("1_c625b")]([SubResource("Resource_6y87a"), SubResource("Resource_m0k2t")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

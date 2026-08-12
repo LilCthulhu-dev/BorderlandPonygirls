@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cqgu3wr30hgby"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_ajbkw"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_3woib"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="2_kj11q"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="3_xmyxq"]
+[ext_resource type="Resource" uid="uid://bvvoxsch0suvl" path="res://data/flags/outfitting_tattoo.tres" id="4_aydpu"]
+[ext_resource type="Resource" uid="uid://dq25t5mji4x1v" path="res://data/flags/outfitting_armbinder.tres" id="4_kj11q"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_xmyxq"]
+[ext_resource type="Resource" uid="uid://c467ye5kn63rl" path="res://data/flags/outfitting_boots.tres" id="6_2gnyc"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="6_kj11q"]
+[ext_resource type="Resource" uid="uid://caiu0v7elmd13" path="res://data/flags/outfitting_dildos.tres" id="7_2gnyc"]
+[ext_resource type="Resource" uid="uid://hm48f6ppndlr" path="res://data/flags/outfitting_bridle.tres" id="7_14dmc"]
+[ext_resource type="Resource" uid="uid://cp6bse7x0ootq" path="res://data/flags/outfitting_piercings.tres" id="8_14dmc"]
+[ext_resource type="Resource" uid="uid://d1o18vt8fh57k" path="res://data/flags/outfitting_harness.tres" id="9_flkly"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9_nq545"]
+
+[sub_resource type="Resource" id="Resource_6gd3n"]
+script = ExtResource("5_xmyxq")
+remove_flag = Array[ExtResource("2_kj11q")]([ExtResource("4_kj11q"), ExtResource("6_2gnyc"), ExtResource("7_14dmc"), ExtResource("7_2gnyc"), ExtResource("9_flkly"), ExtResource("8_14dmc"), ExtResource("4_aydpu")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_w686w"]
+script = ExtResource("3_xmyxq")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_gwlau"]
+script = ExtResource("5_xmyxq")
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_npo4k"]
+script = ExtResource("5_xmyxq")
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_23hgn"]
+script = ExtResource("5_xmyxq")
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_a5u37"]
+script = ExtResource("5_xmyxq")
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_i7qai"]
+script = ExtResource("5_xmyxq")
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_algvs"]
+script = ExtResource("5_xmyxq")
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_wnaew"]
+script = ExtResource("5_xmyxq")
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_5jfom"]
+script = ExtResource("6_kj11q")
+txt = "Back to Main"
+actions = Array[ExtResource("1_ajbkw")]([SubResource("Resource_w686w"), SubResource("Resource_gwlau"), SubResource("Resource_npo4k"), SubResource("Resource_23hgn"), SubResource("Resource_a5u37"), SubResource("Resource_i7qai"), SubResource("Resource_algvs"), SubResource("Resource_wnaew")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("9_nq545")
+titel = "Outfitting"
+description = "You order the girl to sit back up, before you fasten the last item to her - a nice metal collar. You fit it around her throat and with an ominous click it seals the transformation.
+
+“Now, one last thing,” you say almost solemnly, “you need a new name, then you are done.” You pause, share a glance with the shaman. Then you look back at her. “{PONYNAME} sounds fitting.”
+
+She looks at her, growing even more red than before, but nods slowly. “Perfect,” you exclaim, “{PONYNAME} it is. Now let’s get out and meet with the others.”
+"
+content = Array[ExtResource("2_3woib")]([SubResource("Resource_5jfom")])
+close_actions = Array[ExtResource("1_ajbkw")]([SubResource("Resource_6gd3n")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

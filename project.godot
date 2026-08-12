@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="BorderlandPonygirls"
+run/main_scene="uid://gk888spgyysa"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="uid://0tj1bax7qhb2"
+
+[autoload]
+
+GameData="*uid://dgufvigkamnub"
+GlobalSignals="*uid://c1tyk5la1p5c"
+TooltipManager="*uid://cjfhktqg0y42b"
+ModalManager="*uid://c04hc4f0cwyjw"
+AudioManager="*uid://bllsr017dv3ly"
+SceneManager="*uid://d4n0dv3k16ejg"
+Utils="*uid://ckvbwas3biqbw"
+
+[debug]
+
+gdscript/warnings/unused_signal=0
+
+[layer_names]
+
+2d_physics/layer_2="Map"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

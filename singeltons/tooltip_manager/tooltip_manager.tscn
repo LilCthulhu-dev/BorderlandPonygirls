@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cjfhktqg0y42b"]
+
+[ext_resource type="Script" uid="uid://c38blitjb6j12" path="res://singeltons/tooltip_manager/tooltip_manager.gd" id="1_gqef3"]
+
+[node name="TooltipManager" type="CanvasLayer" unique_id=1374090174]
+process_mode = 3
+layer = 99999
+script = ExtResource("1_gqef3")

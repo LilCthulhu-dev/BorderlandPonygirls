@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://c1j5rc8dheoqc"]
+
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="1_f80rk"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2_hlxsl"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_hlxsl"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="4_givku"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="4_l7e35"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="8_1r30c"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="9_5ena5"]
+[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="11_xybms"]
+
+[sub_resource type="Resource" id="Resource_mqmyc"]
+script = ExtResource("11_xybms")
+ability = 5
+modifier = 10
+txt = "Examine the she-beast"
+succes_txt = "She is skittish, terrified, and clumsy on her hooves. Combined with the fresh whip marks across her back, this strongly suggests that she was recently kidnapped and forced into slavery.
+
+She certainly won’t be loyal, and if you buy her, word will spread that you purchase forcefully enslaved ponygirls."
+fail_txt = "She looks healthy, perhaps a little skittish, but that is to be expected. It is difficult to discern anything else."
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_6wf88"]
+script = ExtResource("4_l7e35")
+amount = "-{COST_CHEAP_PONYGIRL}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_ds03l"]
+script = ExtResource("9_5ena5")
+event_path = "uid://dhy2jwrirw8un"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_cskxl"]
+script = ExtResource("8_1r30c")
+txt = "Accept"
+actions = Array[ExtResource("2_hlxsl")]([SubResource("Resource_6wf88"), SubResource("Resource_ds03l")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_u5muq"]
+script = ExtResource("4_givku")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_5pobu"]
+script = ExtResource("8_1r30c")
+txt = "Decline"
+actions = Array[ExtResource("2_hlxsl")]([SubResource("Resource_u5muq")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3_hlxsl")
+titel = "Unexpected Deal"
+description = "A shady-looking goblin with an eyepatch approaches you, leading a skittish ponygirl by the reins.
+
+“Hey, you’re a warband boss, right? I got this mare for a bargain. You interested?”"
+content = Array[ExtResource("1_f80rk")]([SubResource("Resource_mqmyc"), SubResource("Resource_cskxl"), SubResource("Resource_5pobu")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://chupthwmfqefv"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_4d3gt"]
+[ext_resource type="Texture2D" uid="uid://chr44qcrepok6" path="res://assets/icons/grain.png" id="1_7uohb"]
+
+[resource]
+script = ExtResource("1_4d3gt")
+title = "Grain"
+price = 20
+icon = ExtResource("1_7uohb")
+metadata/_custom_type_script = "uid://b571u1d6tbexa"

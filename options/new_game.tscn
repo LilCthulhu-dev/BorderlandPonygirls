@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://dm15atwwhd883"]
+
+[ext_resource type="Script" uid="uid://bjb8un1s5hg4q" path="res://options/new_game.gd" id="1_6jeh2"]
+[ext_resource type="PackedScene" uid="uid://c1u885uy5uxeb" path="res://templates/singel_page.tscn" id="2_cfh6p"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="3_ow46j"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="4_dlf3w"]
+[ext_resource type="Texture2D" uid="uid://rmhtqljr1v1r" path="res://assets/icons/dice.png" id="5_nplip"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="6_632j0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0kc5u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_50yph"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_icxsn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nfj8f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b5ymj"]
+
+[node name="NewGame" type="Control" unique_id=1463370876]
+custom_minimum_size = Vector2(480, 544)
+custom_maximum_size = Vector2(480, 544)
+layout_mode = 3
+anchor_right = 0.41700003
+anchor_bottom = 0.84000003
+offset_right = -0.3840332
+offset_bottom = -0.32000732
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_6jeh2")
+
+[node name="SingelPage" parent="." unique_id=234162319 instance=ExtResource("2_cfh6p")]
+position = Vector2(240, 272)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=749833002]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 512.0
+theme = ExtResource("3_ow46j")
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1731541607]
+layout_mode = 2
+theme = ExtResource("4_dlf3w")
+text = "New Game"
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=904445689]
+layout_mode = 2
+text = "The warriors of your tribe have formed a new warband and chosen you as their leader.
+
+To get you started, they have given you a pouch of gold and a reliable, loyal she-beast to serve as your personal ponygirl.
+
+Remember: your warriors fight for gold, and gold alone. If your coffers run dry, they will abandon you."
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer" unique_id=1372517759]
+layout_mode = 2
+text = "- NO GOLD MEANS GAME OVER -"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1256340195]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=1980933803]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Name: "
+
+[node name="NameLine" type="LineEdit" parent="VBoxContainer/HBoxContainer2" unique_id=1353912741]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="RngNameBtn" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1284034093]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+theme_override_colors/icon_pressed_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+theme_override_colors/icon_hover_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0kc5u")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_50yph")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_icxsn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj8f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b5ymj")
+icon = ExtResource("5_nplip")
+expand_icon = true
+script = ExtResource("6_632j0")
+click_sound = "dice"
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1038335302]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=1536742327]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Titel: "
+
+[node name="WarbandLine" type="LineEdit" parent="VBoxContainer/HBoxContainer" unique_id=532137941]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="RngTitelBtn" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1727361180]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+theme_override_colors/icon_pressed_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+theme_override_colors/icon_hover_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0kc5u")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_50yph")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_icxsn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nfj8f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_b5ymj")
+icon = ExtResource("5_nplip")
+expand_icon = true
+script = ExtResource("6_632j0")
+click_sound = "dice"
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="StartGameBtn" type="Button" parent="VBoxContainer" unique_id=1945858960]
+layout_mode = 2
+text = "> Start Game"
+alignment = 0
+script = ExtResource("6_632j0")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/RngNameBtn" to="." method="_on_rng_name_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/RngTitelBtn" to="." method="_on_rng_titel_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartGameBtn" to="." method="_on_start_game_btn_pressed"]

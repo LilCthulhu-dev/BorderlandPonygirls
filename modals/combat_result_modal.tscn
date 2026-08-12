@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://lqj1gkl1ug7q"]
+
+[ext_resource type="PackedScene" uid="uid://b1v7of17rvrix" path="res://modals/modal_template.tscn" id="1_hah01"]
+[ext_resource type="Script" uid="uid://bjuhw38ceps47" path="res://modals/combat_result_modal.gd" id="2_4l3iq"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="3_jd7w2"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="3_jkrhy"]
+
+[node name="CombatResultModal" unique_id=1384488452 instance=ExtResource("1_hah01")]
+script = ExtResource("2_4l3iq")
+
+[node name="Header" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="0" unique_id=538355050]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_jd7w2")
+autowrap_mode = 2
+
+[node name="Description" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=1446941019]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="NextBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=1891143806]
+layout_mode = 2
+text = "Next"
+script = ExtResource("3_jkrhy")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/NextBtn" to="." method="_on_next_btn_pressed"]

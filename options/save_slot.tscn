@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cuas0xxpv81qk"]
+
+[ext_resource type="Script" uid="uid://bqnmobtol4d2d" path="res://options/save_slot.gd" id="1_gabrh"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="1_srxr2"]
+
+[node name="SaveSlot" type="HBoxContainer" unique_id=1331562523]
+script = ExtResource("1_gabrh")
+
+[node name="NameLabel" type="Label" parent="." unique_id=1633836649]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Slot 1
+"
+
+[node name="SaveBtn" type="Button" parent="." unique_id=1900952635]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Save"
+script = ExtResource("1_srxr2")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="LoadBtn" type="Button" parent="." unique_id=1461873208]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Load"
+script = ExtResource("1_srxr2")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="LoadBtn" to="." method="_on_load_btn_pressed"]

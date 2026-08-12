@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://q2vd1if8ju13"]
+
+[ext_resource type="PackedScene" uid="uid://il0uvefv3nrc" path="res://templates/double_page.tscn" id="1_anjgm"]
+[ext_resource type="Script" uid="uid://dqq2kp8qw5gtj" path="res://combat_window/combat_window.gd" id="1_mw2a7"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="2_mwvoh"]
+[ext_resource type="PackedScene" uid="uid://bvm5rv6wc627l" path="res://templates/attribute_node.tscn" id="3_78w6y"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="4_78w6y"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="6_aecdi"]
+[ext_resource type="Texture2D" uid="uid://diru7gmg31mhw" path="res://assets/icons/heart.png" id="7_aecdi"]
+
+[node name="CombatWindow" type="CanvasLayer" unique_id=1202580382]
+script = ExtResource("1_mw2a7")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1670935932]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[node name="DoublePage" parent="." unique_id=525338114 instance=ExtResource("1_anjgm")]
+position = Vector2(576, 352)
+
+[node name="DoublePage2" parent="." unique_id=377380644 instance=ExtResource("1_anjgm")]
+position = Vector2(576, -208)
+
+[node name="Header" type="HBoxContainer" parent="." unique_id=1029981493]
+offset_right = 1152.0
+offset_bottom = 48.0
+mouse_filter = 2
+theme = ExtResource("2_mwvoh")
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="AttributeNode8" parent="Header" unique_id=483871864 instance=ExtResource("3_78w6y")]
+layout_mode = 2
+attribute = 7
+
+[node name="VSeparator" type="VSeparator" parent="Header" unique_id=1378899592]
+layout_mode = 2
+
+[node name="AttributeNode" parent="Header" unique_id=1777478685 instance=ExtResource("3_78w6y")]
+layout_mode = 2
+
+[node name="AttributeNode2" parent="Header" unique_id=1767845814 instance=ExtResource("3_78w6y")]
+layout_mode = 2
+attribute = 2
+
+[node name="AttributeNode3" parent="Header" unique_id=1031878137 instance=ExtResource("3_78w6y")]
+layout_mode = 2
+attribute = 3
+
+[node name="AttributeNode4" parent="Header" unique_id=798395159 instance=ExtResource("3_78w6y")]
+layout_mode = 2
+attribute = 4
+
+[node name="AttributeNode5" parent="Header" unique_id=1912537056 instance=ExtResource("3_78w6y")]
+layout_mode = 2
+attribute = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1456088769]
+offset_left = 80.0
+offset_top = 112.0
+offset_right = 1072.0
+offset_bottom = 592.0
+theme = ExtResource("2_mwvoh")
+theme_override_constants/separation = 50
+
+[node name="Left" type="VBoxContainer" parent="HBoxContainer" unique_id=428643978]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/Left" unique_id=1396736705]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Left/ScrollContainer" unique_id=164981536]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 25
+
+[node name="SceneTitle" type="Label" parent="HBoxContainer/Left/ScrollContainer/VBoxContainer" unique_id=1654528518]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("4_78w6y")
+text = "Titel"
+autowrap_mode = 2
+
+[node name="SceneDescription" type="Label" parent="HBoxContainer/Left/ScrollContainer/VBoxContainer" unique_id=1625798262]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Description"
+autowrap_mode = 2
+
+[node name="ActionsContainer" type="VBoxContainer" parent="HBoxContainer/Left/ScrollContainer/VBoxContainer" unique_id=1148097696]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="EndCombatBtn" type="Button" parent="HBoxContainer/Left/ScrollContainer/VBoxContainer" unique_id=1154368090]
+unique_name_in_owner = true
+layout_mode = 2
+text = "End Battle"
+alignment = 0
+script = ExtResource("6_aecdi")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Right" type="VBoxContainer" parent="HBoxContainer" unique_id=1821982964]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Right" unique_id=353793777]
+layout_mode = 2
+
+[node name="EnemyNameLabel" type="Label" parent="HBoxContainer/Right/HBoxContainer" unique_id=1403156866]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("4_78w6y")
+text = "Enemy Name"
+
+[node name="EnemyHealthLabel" type="Label" parent="HBoxContainer/Right/HBoxContainer" unique_id=1169745353]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "3/3"
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Right/HBoxContainer" unique_id=1990233373]
+self_modulate = Color(0.03529412, 0.039215688, 0.078431375, 1)
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+texture = ExtResource("7_aecdi")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ContentImage" type="TextureRect" parent="HBoxContainer/Right" unique_id=197243756]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="HBoxContainer/Left/ScrollContainer/VBoxContainer/EndCombatBtn" to="." method="_on_end_combat_btn_pressed"]

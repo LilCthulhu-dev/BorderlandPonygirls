@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Location" format=3 uid="uid://cyblobl03abfb"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_nwqgs"]
+[ext_resource type="Script" uid="uid://co4871x76a7qo" path="res://data/locations/location.gd" id="1_r76jd"]
+[ext_resource type="Texture2D" uid="uid://3aq1mde14sj" path="res://assets/img/harbor_town.png" id="1_v1mis"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="2_icx0v"]
+[ext_resource type="Resource" uid="uid://cid630t62lxb" path="res://data/item/fish.tres" id="2_jvg1u"]
+[ext_resource type="Resource" uid="uid://b8yrmk282tpxh" path="res://data/events/pony_offering/pony_offering_1.tres" id="3_7x03v"]
+[ext_resource type="Resource" uid="uid://dnm7ycxn38yvh" path="res://data/item/salt.tres" id="3_ot8nl"]
+[ext_resource type="Resource" uid="uid://chupthwmfqefv" path="res://data/item/grain.tres" id="4_o5trf"]
+[ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="5_cx0qs"]
+[ext_resource type="Resource" uid="uid://cx4xaaaw3fqgl" path="res://data/events/one_pagers/pony_on_display_01.tres" id="9_jvg1u"]
+
+[resource]
+script = ExtResource("1_r76jd")
+title = "Harbor Town"
+image = ExtResource("1_v1mis")
+description = "Harbortown is the largest city in the region. Its tall walls, fine buildings, and ever-watchful guard make it both prosperous and well protected.
+
+The market is always bustling, overflowing with goods from across the Imperium. Shops crowd the streets and alleys, offering weapons, tools, reagents, and trade goods from every corner of the world.
+
+Humans are the most common sight, but far from the only one. Elves, kobolds, goblins, and even the occasional orc move through the crowds without drawing so much as a second glance."
+cheap_items = Array[ExtResource("1_nwqgs")]([ExtResource("2_jvg1u"), ExtResource("3_ot8nl")])
+expensive_items = Array[ExtResource("1_nwqgs")]([ExtResource("4_o5trf"), ExtResource("5_cx0qs")])
+random_events = Array[ExtResource("2_icx0v")]([ExtResource("3_7x03v"), ExtResource("9_jvg1u")])
+metadata/_custom_type_script = "uid://co4871x76a7qo"

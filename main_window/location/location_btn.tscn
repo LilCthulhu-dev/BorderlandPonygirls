@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://opy75q5d44yi"]
+
+[ext_resource type="Script" uid="uid://clfoqd8cgjqk7" path="res://main_window/location/location_btn.gd" id="1_b5glr"]
+
+[node name="LocationBtn" type="Button" unique_id=2129430982]
+custom_minimum_size = Vector2(0, 50)
+text = "> ???"
+alignment = 0
+icon_alignment = 2
+expand_icon = true
+script = ExtResource("1_b5glr")
+add_tooltip_icon = true
+show_tooltip_if_disabled = true
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

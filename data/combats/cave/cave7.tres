@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://b6r2cthxncgua"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_inugk"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_xu0ge"]
+
+[sub_resource type="Resource" id="Resource_qpd6y"]
+script = ExtResource("1_inugk")
+txt = "Coordinated defense"
+ability = 3
+success_description = "Your warband locks ranks and the monster crashes against your line.
+"
+fail_description = "The ground shakes and the beast breaks through, devouring two warriors.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_83r4r"]
+script = ExtResource("1_inugk")
+txt = "Slip into the shadows"
+ability = 4
+success_description = "You vanish into darkness and just find another way."
+fail_description = "The torches go out too late and the monster crashes into your line."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_r8whf"]
+script = ExtResource("1_inugk")
+txt = "Charge!"
+ability = 1
+success_description = "You lead the charge and your warriors bring the beast down."
+fail_description = "The monster meets your charge head on and throws you back."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_xu0ge")
+flavor_lines = Array[String](["Heavy chains lie scattered across the cavern floor.", "Bones crunch beneath your boots."])
+description = "You enter a vast cavern where the ceiling disappears into darkness. A deep rumble shakes the ground as a massive worm like creature rises among piles of bones while a beast folk handler shouts commands.
+"
+actions = Array[ExtResource("1_inugk")]([SubResource("Resource_qpd6y"), SubResource("Resource_83r4r"), SubResource("Resource_r8whf")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

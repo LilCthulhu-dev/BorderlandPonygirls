@@ -1,0 +1,46 @@
+[gd_resource type="Theme" format=3 uid="uid://04rp7i4kdutn"]
+
+[ext_resource type="FontFile" uid="uid://diat7k5cy2hwq" path="res://assets/fonts/lastman.ttf" id="1_lmqsc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oftyk"]
+content_margin_left = 15.0
+content_margin_right = 15.0
+bg_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+expand_margin_top = 50.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0kc5u"]
+content_margin_left = 15.0
+content_margin_right = 15.0
+bg_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+expand_margin_top = 50.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lmqsc"]
+content_margin_left = 15.0
+content_margin_right = 15.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+expand_margin_top = 50.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yob3j"]
+content_margin_left = 15.0
+content_margin_right = 15.0
+bg_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+expand_margin_top = 50.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h67eu"]
+content_margin_left = 15.0
+content_margin_right = 15.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+expand_margin_top = 50.0
+
+[resource]
+default_font = ExtResource("1_lmqsc")
+Button/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+Button/colors/font_disabled_color = Color(0.22352941, 0.2901961, 0.3137255, 1)
+Button/colors/font_hover_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+Button/colors/font_hover_pressed_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/colors/font_pressed_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/styles/disabled = SubResource("StyleBoxFlat_oftyk")
+Button/styles/hover = SubResource("StyleBoxFlat_0kc5u")
+Button/styles/hover_pressed = SubResource("StyleBoxFlat_lmqsc")
+Button/styles/normal = SubResource("StyleBoxFlat_yob3j")
+Button/styles/pressed = SubResource("StyleBoxFlat_h67eu")

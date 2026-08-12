@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://c12wcp1svtde1"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_5yb0e"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_th5m0"]
+
+[sub_resource type="Resource" id="Resource_5yb0e"]
+script = ExtResource("1_5yb0e")
+txt = "Charge!"
+ability = 1
+success_description = "You smash into the first wave before they form ranks and scatter them through the tunnels."
+fail_description = "Your charge stalls against heavy resistance and you are forced to retreat."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_6jgsa"]
+script = ExtResource("1_5yb0e")
+txt = "Form ranks"
+ability = 3
+success_description = "Your warband locks shields and holds firm as attackers crash against your line."
+fail_description = "The formation buckles and the enemy breaks through, forcing you to retreat."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_5qqof"]
+script = ExtResource("1_5yb0e")
+txt = "Slip into the darkness"
+ability = 4
+success_description = "You extinguish the torches and vanish into darkness while the enemy searches blindly."
+fail_description = "You stumble in the dark and several warriors fall to wild strikes."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_th5m0")
+flavor_lines = Array[String](["Water drips steadily from the cave ceiling.", "The tunnels stink of wet fur and rot.", "Something snarls in the darkness ahead."])
+description = "You rush through twisting tunnels when a guard spots you and raises the alarm. An arrow silences him, but too late. The cave erupts with guttural screams as enemies rush from every passage."
+actions = Array[ExtResource("1_5yb0e")]([SubResource("Resource_5yb0e"), SubResource("Resource_6jgsa"), SubResource("Resource_5qqof")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

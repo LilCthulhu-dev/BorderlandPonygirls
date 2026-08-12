@@ -1,0 +1,124 @@
+[gd_resource type="Theme" format=3 uid="uid://c4wacko7ihktc"]
+
+[ext_resource type="FontFile" uid="uid://ep1ivek4dvad" path="res://assets/fonts/Baby Doll.otf" id="1_ftmte"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_erdsu"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ftmte"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.08235294, 0.11372549, 0.15686275, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cky1e"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5nwjc"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_78w6y"]
+color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+grow_begin = -1.0
+grow_end = -1.0
+thickness = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efixo"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.75)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_efixo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owrg4"]
+bg_color = Color(1, 1, 1, 0)
+border_width_bottom = 2
+border_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0kc5u"]
+content_margin_left = 15.0
+content_margin_top = 15.0
+content_margin_right = 15.0
+content_margin_bottom = 15.0
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sd5i7"]
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sqwfb"]
+content_margin_left = 4.0
+content_margin_right = 4.0
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_mwvoh"]
+color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+grow_begin = -1.0
+grow_end = -1.0
+thickness = 2
+vertical = true
+
+[resource]
+default_font = ExtResource("1_ftmte")
+default_font_size = 18
+Button/colors/font_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/colors/font_disabled_color = Color(0.5058824, 0.5921569, 0.5882353, 1)
+Button/colors/font_hover_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/colors/font_pressed_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/colors/icon_disabled_color = Color(0.5058824, 0.5921569, 0.5882353, 1)
+Button/colors/icon_hover_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/colors/icon_normal_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/colors/icon_pressed_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Button/styles/disabled = SubResource("StyleBoxFlat_erdsu")
+Button/styles/hover = SubResource("StyleBoxFlat_ftmte")
+Button/styles/normal = SubResource("StyleBoxFlat_cky1e")
+Button/styles/pressed = SubResource("StyleBoxFlat_5nwjc")
+HSeparator/styles/separator = SubResource("StyleBoxLine_78w6y")
+Label/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+Label/colors/font_outline_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Label/constants/line_spacing = 3
+Label/constants/outline_size = 15
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/constants/shadow_outline_size = 1
+Label/font_sizes/font_size = 18
+Label/styles/focus = SubResource("StyleBoxFlat_efixo")
+Label/styles/normal = SubResource("StyleBoxEmpty_efixo")
+LineEdit/colors/caret_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+LineEdit/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+LineEdit/styles/normal = SubResource("StyleBoxFlat_owrg4")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_0kc5u")
+VBoxContainer/constants/separation = 15
+VScrollBar/constants/padding_left = 0
+VScrollBar/constants/padding_right = 0
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_sd5i7")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_sqwfb")
+VSeparator/styles/separator = SubResource("StyleBoxLine_mwvoh")

@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://bq4x3er517fsi"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_j2mad"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_t0nvu"]
+[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="3_07am2"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="4_10d22"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="4_deepy"]
+[ext_resource type="Script" uid="uid://dc1bca6pcahfr" path="res://data/actions/change_xp.gd" id="5_xag81"]
+
+[sub_resource type="Resource" id="Resource_2m2l3"]
+script = ExtResource("3_07am2")
+amount = -2
+target = 0
+metadata/_custom_type_script = "uid://cy0fnw6jwovce"
+
+[sub_resource type="Resource" id="Resource_xb5im"]
+script = ExtResource("4_deepy")
+amount = -2
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_nnt7c"]
+script = ExtResource("5_xag81")
+amount = 4
+target = 0
+metadata/_custom_type_script = "uid://dc1bca6pcahfr"
+
+[resource]
+script = ExtResource("4_10d22")
+titel = "Pony Panic"
+description = "“Enough! Stop at once!”
+
+You uncoil your whip and {PONYNAME} eyes go wide. She knows what is coming and staggers back, but you are too fast. You let the whip crack, smack her back and ass, until she collapses into a whimpering pile.
+
+Your men pull her up onto her knees, and you give her five more lashes as punishment, before you turn to the rest of the warband. “I don’t tolerate outbursts like that! Understood?”"
+open_actions = Array[ExtResource("1_j2mad")]([SubResource("Resource_2m2l3"), SubResource("Resource_xb5im"), SubResource("Resource_nnt7c")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

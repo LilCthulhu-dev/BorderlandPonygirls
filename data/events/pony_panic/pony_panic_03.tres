@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://bmurfdrxe6v8b"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_b3oik"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_657yl"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_e1g5l"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_fc0np"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_nqjhc"]
+
+[sub_resource type="Resource" id="Resource_qyh01"]
+script = ExtResource("3_e1g5l")
+event_path = "uid://c6417sg4jmh1o"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_nqjhc"]
+script = ExtResource("4_nqjhc")
+txt = "Let it slide"
+actions = Array[ExtResource("1_b3oik")]([SubResource("Resource_qyh01")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_dqyld"]
+script = ExtResource("3_e1g5l")
+event_path = "uid://bb5r4xcvh77y5"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_k0p1p"]
+script = ExtResource("4_nqjhc")
+txt = "Punish her"
+actions = Array[ExtResource("1_b3oik")]([SubResource("Resource_dqyld")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3_fc0np")
+titel = "Pony Panic"
+description = "You approach {PONYNAME} slowly and with open hands. She is huffing into her bit-gag and shifts nervously from foot to foot, but after a few moments you manage to take hold of her reins.
+
+“Easy, girl,” you murmur while stroking her flank until the panic fades. Finally the anger is gone, and she drops to her knees, leaning her head against you and whimpering."
+content = Array[ExtResource("2_657yl")]([SubResource("Resource_nqjhc"), SubResource("Resource_k0p1p")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

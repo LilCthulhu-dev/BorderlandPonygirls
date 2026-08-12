@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://clyshy2qvbhd3"]
+
+[ext_resource type="PackedScene" uid="uid://je75uyt8bsbm" path="res://main_window/page_template.tscn" id="1_s71ub"]
+[ext_resource type="Script" uid="uid://btnx33umewa5m" path="res://main_window/location/location_page.gd" id="2_s71ub"]
+[ext_resource type="PackedScene" uid="uid://il0uvefv3nrc" path="res://templates/double_page.tscn" id="3_i6fhe"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="4_dkrt8"]
+[ext_resource type="PackedScene" uid="uid://opy75q5d44yi" path="res://main_window/location/location_btn.tscn" id="6_ice6s"]
+[ext_resource type="Texture2D" uid="uid://dtiaslv1vkgme" path="res://assets/icons/coin.png" id="6_s71ub"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="7_dmaue"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="7_i6fhe"]
+[ext_resource type="PackedScene" uid="uid://bvm5rv6wc627l" path="res://templates/attribute_node.tscn" id="7_lkv00"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="8_dkrt8"]
+[ext_resource type="Script" uid="uid://cy7ce6eobmeis" path="res://data/actions/heal.gd" id="9_dkrt8"]
+[ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="10_0en0c"]
+[ext_resource type="Script" uid="uid://274w71urhl54" path="res://data/actions/force_randome_event.gd" id="11_ice6s"]
+
+[sub_resource type="Resource" id="Resource_xybms"]
+script = ExtResource("7_dmaue")
+event_path = "uid://cm06qa1machn3"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_i6fhe"]
+script = ExtResource("8_dkrt8")
+amount = "-{COST_REST}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_dkrt8"]
+script = ExtResource("9_dkrt8")
+metadata/_custom_type_script = "uid://cy7ce6eobmeis"
+
+[sub_resource type="Resource" id="Resource_ice6s"]
+script = ExtResource("10_0en0c")
+amount = -10
+target = 3
+metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[sub_resource type="Resource" id="Resource_0en0c"]
+script = ExtResource("11_ice6s")
+metadata/_custom_type_script = "uid://274w71urhl54"
+
+[node name="LocationPage" unique_id=1948255639 instance=ExtResource("1_s71ub")]
+script = ExtResource("2_s71ub")
+btn_text = "Location"
+shortcut_key_string = "l"
+
+[node name="DoublePage" parent="." index="0" unique_id=525338114 instance=ExtResource("3_i6fhe")]
+position = Vector2(576, 352)
+
+[node name="Control" type="Control" parent="." index="1" unique_id=1430724618]
+anchors_preset = 0
+offset_left = 96.0
+offset_top = 96.0
+offset_right = 1056.0
+offset_bottom = 576.0
+metadata/_edit_lock_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control" index="0" unique_id=2128799350]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = 16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/HBoxContainer" index="0" unique_id=155669076]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/HBoxContainer/ScrollContainer" index="0" unique_id=2038216290]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_right = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer/ScrollContainer/MarginContainer" index="0" unique_id=2036218413]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TitelLabel" type="Label" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="0" unique_id=1186227744]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("4_dkrt8")
+text = "Titel"
+autowrap_mode = 2
+
+[node name="DescriptionLabel" type="Label" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="1" unique_id=1332306040]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="TestBtn" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="2" unique_id=2129430982 instance=ExtResource("6_ice6s")]
+unique_name_in_owner = true
+layout_mode = 2
+actions = Array[ExtResource("7_i6fhe")]([SubResource("Resource_xybms")])
+tooltip = "Test Button"
+
+[node name="RestBtn" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="3" unique_id=847848422 instance=ExtResource("6_ice6s")]
+layout_mode = 2
+text = "> Rest ({COST_REST} Gold)"
+icon = ExtResource("6_s71ub")
+actions = Array[ExtResource("7_i6fhe")]([SubResource("Resource_i6fhe"), SubResource("Resource_dkrt8"), SubResource("Resource_ice6s")])
+click_sound = "coin"
+add_tooltip_icon = false
+
+[node name="ExploreBtn" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="4" unique_id=1068527218 instance=ExtResource("6_ice6s")]
+layout_mode = 2
+text = "> Explore the area"
+icon = ExtResource("6_s71ub")
+actions = Array[ExtResource("7_i6fhe")]([SubResource("Resource_0en0c")])
+
+[node name="QuestBtns" type="VBoxContainer" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="5" unique_id=1197455834]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/HBoxContainer" index="1" unique_id=1011533691]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/HBoxContainer/VBoxContainer2" index="0" unique_id=1710633]
+layout_mode = 2
+theme_override_constants/separation = 50
+alignment = 2
+
+[node name="AttributeNode" parent="Control/HBoxContainer/VBoxContainer2/HBoxContainer" index="0" unique_id=483871864 instance=ExtResource("7_lkv00")]
+layout_mode = 2
+attribute = 7
+
+[node name="AttributeNode2" parent="Control/HBoxContainer/VBoxContainer2/HBoxContainer" index="1" unique_id=2115923959 instance=ExtResource("7_lkv00")]
+layout_mode = 2
+attribute = 6
+
+[node name="Image" type="TextureRect" parent="Control/HBoxContainer/VBoxContainer2" index="1" unique_id=369234751]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 5

@@ -1,0 +1,59 @@
+[gd_resource type="Theme" format=3 uid="uid://dv867lswsiis5"]
+
+[ext_resource type="FontFile" uid="uid://ep1ivek4dvad" path="res://assets/fonts/Baby Doll.otf" id="1_dv0c7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0j7dv"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0p05"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1njuq"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8pfpj"]
+content_margin_left = 10.0
+content_margin_top = 11.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_x6gm5"]
+color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+grow_begin = 25.0
+grow_end = 25.0
+thickness = 3
+
+[resource]
+default_font = ExtResource("1_dv0c7")
+Button/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+Button/colors/font_hover_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+Button/colors/font_hover_pressed_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+Button/colors/font_pressed_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+Button/styles/hover = SubResource("StyleBoxFlat_0j7dv")
+Button/styles/hover_pressed = SubResource("StyleBoxFlat_r0p05")
+Button/styles/normal = SubResource("StyleBoxFlat_1njuq")
+Button/styles/pressed = SubResource("StyleBoxFlat_8pfpj")
+HSeparator/styles/separator = SubResource("StyleBoxLine_x6gm5")
+Label/colors/font_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+Label/constants/outline_size = 0

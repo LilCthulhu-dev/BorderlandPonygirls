@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d4n0dv3k16ejg"]
+
+[ext_resource type="Script" uid="uid://dpjn3ljjcd38w" path="res://singeltons/scene_manager/scene_manager.gd" id="1_wvau0"]
+
+[node name="SceneLoader" type="CanvasLayer" unique_id=1266578921]
+process_mode = 3
+layer = 99999
+script = ExtResource("1_wvau0")
+
+[node name="Background" type="ColorRect" parent="." unique_id=510157267]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

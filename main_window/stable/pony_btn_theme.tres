@@ -1,0 +1,32 @@
+[gd_resource type="Theme" format=3 uid="uid://b450uk3l87kjx"]
+
+[ext_resource type="FontFile" uid="uid://ep1ivek4dvad" path="res://assets/fonts/Baby Doll.otf" id="1_mqmyc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8hsts"]
+content_margin_left = 5.0
+content_margin_top = 6.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_872a7"]
+content_margin_left = 5.0
+content_margin_top = 6.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mqmyc"]
+content_margin_left = 5.0
+content_margin_top = 6.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+
+[resource]
+default_font = ExtResource("1_mqmyc")
+default_font_size = 18
+Button/font_sizes/font_size = 22
+Button/styles/hover = SubResource("StyleBoxFlat_8hsts")
+Button/styles/normal = SubResource("StyleBoxFlat_872a7")
+Button/styles/pressed = SubResource("StyleBoxFlat_mqmyc")

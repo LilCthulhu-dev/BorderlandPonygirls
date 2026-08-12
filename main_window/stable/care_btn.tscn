@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://t05scylbl4ox"]
+
+[ext_resource type="Theme" uid="uid://b450uk3l87kjx" path="res://main_window/stable/pony_btn_theme.tres" id="1_4ky4a"]
+[ext_resource type="Script" uid="uid://djn6hi4l2xni4" path="res://main_window/stable/care_btn.gd" id="1_5i4j3"]
+
+[node name="CareBtn" type="Button" unique_id=1128637825]
+custom_minimum_size = Vector2(-1, 80)
+custom_maximum_size = Vector2(-1, 80)
+offset_right = 8.0
+offset_bottom = 8.0
+theme = ExtResource("1_4ky4a")
+script = ExtResource("1_5i4j3")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"

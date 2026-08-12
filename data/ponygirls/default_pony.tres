@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Ponygirl" format=3 uid="uid://cb5lg1c5twolq"]
+
+[ext_resource type="Script" uid="uid://b54fl41egas4m" path="res://data/ponygirls/ponygirl.gd" id="1_ag6bd"]
+
+[resource]
+script = ExtResource("1_ag6bd")
+metadata/_custom_type_script = "uid://b54fl41egas4m"

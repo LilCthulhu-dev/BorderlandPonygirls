@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://h6vp6e7wdoup"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_ie7op"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_42mhs"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_7nfr3"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3_42mhs"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_xfjde"]
+[ext_resource type="Script" uid="uid://dowpdpue1to3q" path="res://data/actions/focuse_ponygirl.gd" id="5_7nfr3"]
+
+[sub_resource type="Resource" id="Resource_xymmp"]
+script = ExtResource("3_7nfr3")
+event_path = "uid://bq4x3er517fsi"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_7nfr3"]
+script = ExtResource("3_42mhs")
+txt = "Whip her into submission"
+actions = Array[ExtResource("1_ie7op")]([SubResource("Resource_xymmp")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_72he3"]
+script = ExtResource("3_7nfr3")
+event_path = "uid://bmurfdrxe6v8b"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_twx8p"]
+script = ExtResource("3_42mhs")
+txt = "Calm her with words"
+actions = Array[ExtResource("1_ie7op")]([SubResource("Resource_72he3")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_fmbxr"]
+script = ExtResource("3_7nfr3")
+event_path = "uid://dwgspdodj2cqk"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_4b7ge"]
+script = ExtResource("3_42mhs")
+txt = "Let her exhaust herself"
+actions = Array[ExtResource("1_ie7op")]([SubResource("Resource_fmbxr")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_xfjde"]
+script = ExtResource("5_7nfr3")
+
+[resource]
+script = ExtResource("3_xfjde")
+titel = "Pony Panic"
+description = "You’re in the middle of a busy road, as suddenly {PONYNAME} begins to buckle and thrash like a furious bull. Her rider is thrown off, but your men react fast and form a ring around her.
+
+She kicks and screams, fights against her bondage with desperation while tears well up her eyes. You have seen it before: pony panic. The person surfaces, and struggles against her new life as your beast."
+content = Array[ExtResource("2_42mhs")]([SubResource("Resource_7nfr3"), SubResource("Resource_twx8p"), SubResource("Resource_4b7ge")])
+open_actions = Array[ExtResource("1_ie7op")]([SubResource("Resource_xfjde")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

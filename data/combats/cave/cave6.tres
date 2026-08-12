@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://df3sldftfrxov"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_ic8tj"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_m76fo"]
+
+[sub_resource type="Resource" id="Resource_0mqa3"]
+script = ExtResource("1_ic8tj")
+txt = "Coordinated defense"
+ability = 3
+success_description = "Your warband closes ranks and drives the creatures back beneath the water.
+"
+fail_description = "The footing breaks your formation and the creatures overwhelm you.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_d056r"]
+script = ExtResource("1_ic8tj")
+txt = "Shieldwall"
+ability = 3
+success_description = "You form a tight defensive ring and repel the attackers.
+"
+fail_description = "The circle breaks and the creatures slip through.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_vhjpj"]
+script = ExtResource("1_ic8tj")
+txt = "Countercharge"
+ability = 1
+success_description = "You strike fast and drive the creatures back into the depths.
+"
+fail_description = "The charge falters in the deep water and you are forced to retreat.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_m76fo")
+flavor_lines = Array[String](["Cold water seeps into your boots.", "Something brushes past your leg in the water.", "Bubbles rise slowly from the depths."])
+description = "You wade through a flooded tunnel when ripples spread across the black water. Fish men rise from the depths with crude spears and surround you.
+"
+actions = Array[ExtResource("1_ic8tj")]([SubResource("Resource_0mqa3"), SubResource("Resource_d056r"), SubResource("Resource_vhjpj")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

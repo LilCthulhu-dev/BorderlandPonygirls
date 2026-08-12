@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://cid630t62lxb"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_54md7"]
+[ext_resource type="Texture2D" uid="uid://cvf4u0pn4ibg6" path="res://assets/icons/fish.png" id="1_jdlgv"]
+
+[resource]
+script = ExtResource("1_54md7")
+title = "Fish"
+price = 20
+icon = ExtResource("1_jdlgv")
+metadata/_custom_type_script = "uid://b571u1d6tbexa"

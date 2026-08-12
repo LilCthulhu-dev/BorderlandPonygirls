@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c04hc4f0cwyjw"]
+
+[ext_resource type="Script" uid="uid://do3ip23u61gsr" path="res://singeltons/modal_manager/modal_manager.gd" id="1_ug2ux"]
+
+[node name="ModalManager" type="CanvasLayer" unique_id=2140293104]
+process_mode = 3
+layer = 100
+script = ExtResource("1_ug2ux")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1279469060]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.35000002)
+
+[node name="BackgroundBtn" type="Button" parent="." unique_id=285315853]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+flat = true
+
+[connection signal="pressed" from="BackgroundBtn" to="." method="_on_background_btn_pressed"]

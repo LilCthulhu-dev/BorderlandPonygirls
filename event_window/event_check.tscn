@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dheu6x3a5wmi3"]
+
+[ext_resource type="PackedScene" uid="uid://boeoqj8wswe7u" path="res://event_window/event_btn.tscn" id="1_21wja"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="2_80wbo"]
+[ext_resource type="Script" uid="uid://bcykmc1qqegfa" path="res://event_window/event_check.gd" id="2_quldi"]
+
+[node name="EventCheck" unique_id=2021887780 instance=ExtResource("1_21wja")]
+theme = ExtResource("2_80wbo")
+script = ExtResource("2_quldi")
+click_sound = "dice"
+show_tooltip_if_disabled = false

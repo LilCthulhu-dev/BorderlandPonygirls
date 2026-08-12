@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bjtiwwiuuraev"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_jmk01"]
+[ext_resource type="Texture2D" uid="uid://bab1kqlhnauk" path="res://assets/icons/barrel.png" id="1_xxf1g"]
+
+[resource]
+script = ExtResource("1_jmk01")
+title = "Wine"
+price = 40
+icon = ExtResource("1_xxf1g")
+metadata/_custom_type_script = "uid://b571u1d6tbexa"

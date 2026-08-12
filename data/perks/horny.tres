@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Perk" format=3 uid="uid://drxumqcm77tim"]
+
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="1_lay68"]
+
+[resource]
+script = ExtResource("1_lay68")
+description = "+2 to all Perks / Applied when arousal is above 25 and below 75"
+background = true
+metadata/_custom_type_script = "uid://08pb1wingorc"

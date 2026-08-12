@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Perk" format=3 uid="uid://c7unu3a2cw6gk"]
+
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="1_w642o"]
+
+[resource]
+script = ExtResource("1_w642o")
+description = "Applied when loyalty is above 70"
+bonus = 8
+background = true
+metadata/_custom_type_script = "uid://08pb1wingorc"

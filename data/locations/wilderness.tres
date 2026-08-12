@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Location" format=3 uid="uid://cphvtkk0gf5dk"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_oftyk"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="1_yp2nt"]
+[ext_resource type="Script" uid="uid://co4871x76a7qo" path="res://data/locations/location.gd" id="2_kjoh8"]
+[ext_resource type="Resource" uid="uid://bxddfr1mh6quw" path="res://data/events/one_pagers/cave_01.tres" id="3_oftyk"]
+
+[resource]
+script = ExtResource("2_kjoh8")
+title = "Wilderness"
+description = "Big, empty wildernes"
+random_event_chance = 5
+random_events = Array[ExtResource("1_yp2nt")]([ExtResource("3_oftyk")])
+metadata/_custom_type_script = "uid://co4871x76a7qo"

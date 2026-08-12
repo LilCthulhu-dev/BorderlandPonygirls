@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://il0uvefv3nrc"]
+
+[ext_resource type="Script" uid="uid://bjskmcpnd4yb0" path="res://templates/double_page.gd" id="1_bubbd"]
+
+[node name="DoublePage" type="Polygon2D" unique_id=525338114]
+color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+polygon = PackedVector2Array(-528, -256, -512, -272, -293.4385, -272, -286, -264, -266, -270, -234.45099, -272, -7, -272, 0, -240, 4, -272, 127.33609, -272, 243, -268, 350.4952, -272, 511.428, -272, 509, -260, 518, -272, 528, -272, 528, -179.33566, 525, -110, 528, -56.177734, 528, -3, 502, 0, 524, 6, 528, 12, 528, 272, 287.55112, 272, 245, 262, 178.88992, 272, 6.020447, 272, 0, 266, -9.911102, 272, -136.77051, 272, -176, 267, -318.7083, 272, -516.0861, 272, -528, 264, -528, 217, -522, 169, -528.00006, 110.47261, -528, 2, -512, 0, -528, -3)
+script = ExtResource("1_bubbd")
+metadata/_edit_lock_ = true
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1164414401]
+position = Vector2(-575, -335)
+points = PackedVector2Array(575, 95, 575, 159)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D2" type="Line2D" parent="." unique_id=934092414]
+position = Vector2(-575, -335)
+points = PackedVector2Array(575, 601, 575, 576)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="Line2D7" type="Line2D" parent="." unique_id=1617611993]
+position = Vector2(-575, -463)
+points = PackedVector2Array(575, 640, 575, 576)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D3" type="Line2D" parent="." unique_id=1178630691]
+position = Vector2(-575, -335)
+points = PackedVector2Array(575, 288, 575, 383)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D4" type="Line2D" parent="." unique_id=1569798511]
+position = Vector2(-559, -335)
+points = PackedVector2Array(608, 335, 511, 335)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D5" type="Line2D" parent="." unique_id=1186878144]
+position = Vector2(-831, -335)
+points = PackedVector2Array(593, 335, 511, 335)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D9" type="Line2D" parent="." unique_id=1047940472]
+position = Vector2(-1023, -335)
+points = PackedVector2Array(594, 335, 544, 335)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D6" type="Line2D" parent="." unique_id=699527552]
+position = Vector2(-191, -335)
+points = PackedVector2Array(560, 335, 496, 335)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D10" type="Line2D" parent="." unique_id=342875100]
+position = Vector2(-47, -335)
+points = PackedVector2Array(541, 335, 490, 335)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)
+
+[node name="Line2D8" type="Line2D" parent="." unique_id=903121730]
+position = Vector2(-335, -335)
+points = PackedVector2Array(512, 335, 495, 335)
+width = 1.0
+default_color = Color(0.34064347, 0.44672376, 0.4661066, 0.307)

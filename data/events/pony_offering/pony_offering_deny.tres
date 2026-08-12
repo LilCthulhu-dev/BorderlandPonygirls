@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dh8kvbwwlrcwq"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_5puq6"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_8w8ia"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="3_4yni6"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_vxg5c"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="5_2801i"]
+
+[sub_resource type="Resource" id="Resource_78ph0"]
+script = ExtResource("3_4yni6")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_x2t0o"]
+script = ExtResource("4_vxg5c")
+txt = "Back to Main"
+actions = Array[ExtResource("1_5puq6")]([SubResource("Resource_78ph0")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("5_2801i")
+titel = "Offering"
+description = "She looks disappointed. For a moment she opens her mouth, and you almost expect her to offer herself for free, but she stops and instead turns around and runs off. Poor cunt, but you’re sure she will find a proper master eventually."
+content = Array[ExtResource("2_8w8ia")]([SubResource("Resource_x2t0o")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c1u885uy5uxeb"]
+
+[ext_resource type="Script" uid="uid://bdq5s4bpy7djb" path="res://templates/singel_page.gd" id="1_7ycy2"]
+
+[node name="SingelPage" type="Polygon2D" unique_id=234162319]
+color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+polygon = PackedVector2Array(-240, -256, -216.44576, -272, -128, -272, -102, -267, -64, -272, -6, -272, 0, -257, 1.625885, -265.1294, 12, -272, 233.08757, -272, 240, -222, 239.99997, -67.20401, 236, -48, 239.99994, -31.282951, 239.99991, -8.703995, 219, 0, 240, 9, 240, 68.226746, 235, 113, 240.00002, 150.33202, 240, 272, 197, 272, 169, 268, 144, 270, 112.910706, 272, 21, 272, 0, 269, -12.363159, 272.00003, -95.62335, 272, -119, 267, -149, 266, -168.89207, 272, -240, 272, -240.00002, 187.95245, -235, 154, -240.00003, 95.49919, -240.00006, 7.253067, -216, 0, -237, -6, -240.00003, -14.413826, -240.00003, -76.169846, -236, -122, -230, -148, -240.00002, -170.54988)
+script = ExtResource("1_7ycy2")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1042236341]
+points = PackedVector2Array(-208, 0, -80, 0)
+width = 1.0
+default_color = Color(0.65882355, 0.70980394, 0.69803923, 1)
+
+[node name="Line2D2" type="Line2D" parent="." unique_id=1577443641]
+position = Vector2(288, 0)
+points = PackedVector2Array(-176, 0, -80, 0)
+width = 1.0
+default_color = Color(0.65882355, 0.70980394, 0.69803923, 1)
+
+[node name="Line2D3" type="Line2D" parent="." unique_id=1986485631]
+position = Vector2(144, 0)
+points = PackedVector2Array(-160, 0, -128, 0)
+width = 1.0
+default_color = Color(0.65882355, 0.70980394, 0.69803923, 1)

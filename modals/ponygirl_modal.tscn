@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://dtb1ip2vbvogd"]
+
+[ext_resource type="PackedScene" uid="uid://b1v7of17rvrix" path="res://modals/modal_template.tscn" id="1_m34h2"]
+[ext_resource type="Script" uid="uid://dte8vgtxj4dmq" path="res://modals/ponygirl_modal.gd" id="2_esk35"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="3_jl802"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="4_i33ek"]
+
+[node name="PonygirlModal" unique_id=1384488452 instance=ExtResource("1_m34h2")]
+script = ExtResource("2_esk35")
+
+[node name="ScrollContainer" parent="ContentContainer" parent_id_path=PackedInt32Array(1958101441) index="1" unique_id=617773875]
+custom_minimum_size = Vector2(416, 496)
+custom_maximum_size = Vector2(416, 496)
+
+[node name="TitelLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="0" unique_id=250034374]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_jl802")
+
+[node name="portrait" type="TextureRect" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=188546925]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 250)
+custom_maximum_size = Vector2(250, 250)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="HSeparator" type="HSeparator" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=716297443]
+layout_mode = 2
+
+[node name="AttributesManagerLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="3" unique_id=267330958]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BackgroundLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="4" unique_id=330806127]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HSeparator2" type="HSeparator" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="5" unique_id=462757881]
+layout_mode = 2
+
+[node name="PerksContainer" type="VBoxContainer" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="6" unique_id=607299873]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="7" unique_id=1881200298]
+layout_mode = 2
+
+[node name="CareForBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer" index="0" unique_id=1873830364]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Care for Ponygirl"
+alignment = 0
+script = ExtResource("4_i33ek")
+show_tooltip_if_disabled = true
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="BackBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer" index="1" unique_id=1942100891]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Back to Stable"
+alignment = 0
+script = ExtResource("4_i33ek")
+show_tooltip_if_disabled = true
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer/CareForBtn" to="." method="_on_care_for_btn_pressed"]
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/GridContainer/BackBtn" to="." method="_on_back_btn_pressed"]

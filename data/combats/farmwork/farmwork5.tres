@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://spbt7fk5o2pr"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_jty1q"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_xp332"]
+
+[sub_resource type="Resource" id="Resource_rbjk3"]
+script = ExtResource("1_jty1q")
+txt = "Pause"
+ability = 3
+success_description = "You stop {PONYNAME}, give her some water, and pat her sweaty rump while she catches her breath. The short break works, and she soon returns to the millstone with renewed energy."
+fail_description = "You stop {PONYNAME}, give her water, and let her rest, but quickly realize that she is beyond exhausted. Even after several minutes, she can barely continue.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_eopxh"]
+script = ExtResource("1_jty1q")
+txt = "Use the Whip"
+ability = 1
+success_description = "You crack the whip and bark sharp commands, forcing {PONYNAME} to redouble her efforts.
+"
+fail_description = "You crack the whip and bark orders, but it is no use. {PONYNAME} is exhausted, and despite your efforts, she stumbles before finally dropping to her knees, unable to continue.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_1euaa"]
+script = ExtResource("1_jty1q")
+txt = "Cheer Her On"
+ability = 3
+success_description = "You praise {PONYNAME} for her hard work and cheer her on. Encouraged by your approval, she redoubles her efforts.
+"
+fail_description = "You praise {PONYNAME} and urge her onward. She tries to pull harder, but exhaustion soon overwhelms her, and she is forced to stop.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_mhwq8"]
+script = ExtResource("1_jty1q")
+txt = "Working Song"
+ability = 3
+success_description = "You begin a work song, and several of your men soon join in. Morale rises, and {PONYNAME} finds her rhythm again, pulling with renewed effort.
+"
+fail_description = "You begin a work song, but no one joins in. {PONYNAME} continues to slow until she finally comes to a complete stop.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_fdexf"]
+script = ExtResource("1_jty1q")
+txt = "Teasing"
+ability = 2
+success_description = "You stop {PONYNAME} and rub her already wet cleft, before tightening her crotchstrap. With lust glistening in her eyes she gets back to work.
+"
+fail_description = "You stop {PONYNAME}, rub her wet cleft, and praise her good work, but even then her knees keep on shaking. She is simply too tired to go on.
+"
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_xp332")
+flavor_lines = Array[String](["Fine flour dust hangs in the warm air.", "The harness creaks with every heavy step.", "Sweat glistens across {PONYNAME}'s back and shoulders.", "The endless circle has worn a deep track into the ground.", "Loose strands of hair cling to {PONYNAME}'s damp face."])
+description = "Grain must be milled into flour, so you strap {PONYNAME} to the heavy millstone. She works dutifully, huffing in rhythm as she trudges in endless circles, but eventually begins to slow.
+"
+actions = Array[ExtResource("1_jty1q")]([SubResource("Resource_rbjk3"), SubResource("Resource_eopxh"), SubResource("Resource_1euaa"), SubResource("Resource_mhwq8"), SubResource("Resource_fdexf")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

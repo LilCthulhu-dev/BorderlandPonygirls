@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://dxlcoaqo0dmee"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_niklb"]
+[ext_resource type="Resource" uid="uid://c4276pqbjv1da" path="res://data/wiki_entries/beast_folk.tres" id="2_qkd2a"]
+[ext_resource type="Resource" uid="uid://1lfi6t3n061y" path="res://data/wiki_entries/dwarfs.tres" id="3_onj7v"]
+[ext_resource type="Resource" uid="uid://cx1hjnpv8nenl" path="res://data/wiki_entries/tall_folk.tres" id="4_o22mp"]
+[ext_resource type="Resource" uid="uid://1rlweade06yh" path="res://data/wiki_entries/wild_folk.tres" id="5_cxrn5"]
+
+[resource]
+script = ExtResource("1_niklb")
+sub_entries = Array[ExtResource("1_niklb")]([ExtResource("4_o22mp"), ExtResource("2_qkd2a"), ExtResource("5_cxrn5"), ExtResource("3_onj7v")])
+description = "Many races roam the Borderlands, but they are generally divided into three major groups: the tall-folk, the wild-folk, and the beast-folk - at least, that is how imperial scholars classify them."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

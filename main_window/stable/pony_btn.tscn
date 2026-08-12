@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ck8d7c8olwxhh"]
+
+[ext_resource type="Script" uid="uid://mok8qrlfsq63" path="res://main_window/stable/pony_btn.gd" id="1_6vuyg"]
+[ext_resource type="Theme" uid="uid://b450uk3l87kjx" path="res://main_window/stable/pony_btn_theme.tres" id="1_dew0m"]
+
+[node name="PonyBtn" type="Button" unique_id=750017166]
+custom_minimum_size = Vector2(0, 48)
+clip_contents = true
+offset_right = 10.0
+offset_bottom = 48.0
+size_flags_horizontal = 3
+theme = ExtResource("1_dew0m")
+expand_icon = true
+script = ExtResource("1_6vuyg")
+click_sound = ""
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

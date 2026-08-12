@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cskt8722aterg"]
+
+[ext_resource type="PackedScene" uid="uid://c1u885uy5uxeb" path="res://templates/singel_page.tscn" id="2_cuoxj"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="3_2vatg"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="4_v1ygb"]
+[ext_resource type="PackedScene" uid="uid://cuas0xxpv81qk" path="res://options/save_slot.tscn" id="5_33xkp"]
+
+[node name="SaveLoad" type="Control" unique_id=1517967566]
+custom_minimum_size = Vector2(480, 544)
+custom_maximum_size = Vector2(480, 544)
+layout_mode = 3
+anchor_right = 0.41700003
+anchor_bottom = 0.84000003
+offset_right = -0.3840332
+offset_bottom = -0.32000732
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SingelPage" parent="." unique_id=234162319 instance=ExtResource("2_cuoxj")]
+position = Vector2(240, 272)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1078904908]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 512.0
+theme = ExtResource("3_2vatg")
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=887188341]
+layout_mode = 2
+theme = ExtResource("4_v1ygb")
+text = "Save / Load"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1119248575]
+layout_mode = 2
+
+[node name="SaveSlot0" parent="VBoxContainer" unique_id=1331562523 instance=ExtResource("5_33xkp")]
+layout_mode = 2
+
+[node name="SaveSlot1" parent="VBoxContainer" unique_id=611213858 instance=ExtResource("5_33xkp")]
+layout_mode = 2
+slot_number = 1
+
+[node name="SaveSlot2" parent="VBoxContainer" unique_id=1506869012 instance=ExtResource("5_33xkp")]
+layout_mode = 2
+slot_number = 2
+
+[node name="SaveSlot3" parent="VBoxContainer" unique_id=910841415 instance=ExtResource("5_33xkp")]
+layout_mode = 2
+slot_number = 3
+
+[node name="SaveSlot4" parent="VBoxContainer" unique_id=1848723644 instance=ExtResource("5_33xkp")]
+layout_mode = 2
+slot_number = 4
+
+[node name="SaveSlot5" parent="VBoxContainer" unique_id=1121183769 instance=ExtResource("5_33xkp")]
+layout_mode = 2
+slot_number = 5

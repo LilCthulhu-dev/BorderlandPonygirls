@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Ponygirl" format=3 uid="uid://yjbidp1jrcj2"]
+
+[ext_resource type="Script" uid="uid://b54fl41egas4m" path="res://data/ponygirls/ponygirl.gd" id="1_8i2tt"]
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="1_drdou"]
+
+[resource]
+script = ExtResource("1_8i2tt")
+name = "Lula"
+_race = 2
+xp = 25
+loyalty = 100
+arousal = 25
+metadata/_custom_type_script = "uid://b54fl41egas4m"

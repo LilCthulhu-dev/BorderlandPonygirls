@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://81o40hsg8i6j"]
+
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_5kpp6"]
+[ext_resource type="Script" uid="uid://bj4yha2dgfmrx" path="res://combat_window/combat_btn.gd" id="2_5kpp6"]
+[ext_resource type="Texture2D" uid="uid://bxvit21wsferl" path="res://assets/icons/questionmark.png" id="2_305y4"]
+
+[node name="CombatBtn" type="Button" unique_id=656739115]
+custom_minimum_size = Vector2(0, 50)
+offset_right = 192.0
+offset_bottom = 50.0
+theme = ExtResource("1_5kpp6")
+theme_override_constants/h_separation = 15
+text = "Test 123"
+icon = ExtResource("2_305y4")
+alignment = 0
+autowrap_mode = 2
+expand_icon = true
+script = ExtResource("2_5kpp6")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

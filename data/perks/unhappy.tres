@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Perk" format=3 uid="uid://f6qtp4a0l7wd"]
+
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="1_wmfx4"]
+
+[resource]
+script = ExtResource("1_wmfx4")
+description = "Applied when loyalty is below 30"
+malus = 8
+background = true
+metadata/_custom_type_script = "uid://08pb1wingorc"

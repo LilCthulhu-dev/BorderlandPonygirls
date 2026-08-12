@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://desp1eu87yxct"]
+
+[ext_resource type="Script" uid="uid://480qvntxrltr" path="res://event_window/event_text.gd" id="1_blc0r"]
+
+[node name="EventText" type="Label" unique_id=1273474532]
+offset_right = 368.0
+offset_bottom = 128.0
+script = ExtResource("1_blc0r")

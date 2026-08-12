@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dmwl3pk0780xx"]
+
+[ext_resource type="Texture2D" uid="uid://ddgauk5llms2p" path="res://assets/dash.png" id="1_8cu5j"]
+
+[node name="ConnectionLine" type="Line2D" unique_id=658737349]
+modulate = Color(0.03529412, 0.039215688, 0.078431375, 1)
+texture_repeat = 2
+width = 5.0
+texture = ExtResource("1_8cu5j")
+texture_mode = 1

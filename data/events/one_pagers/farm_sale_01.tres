@@ -1,0 +1,79 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://5r27fxrdpbyg"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_opuqo"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_c1u7w"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="3_dpavh"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_rhcrj"]
+[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="4_opyfm"]
+[ext_resource type="Resource" uid="uid://chupthwmfqefv" path="res://data/item/grain.tres" id="5_opyfm"]
+[ext_resource type="Script" uid="uid://csfcc37sdbhhw" path="res://data/actions/buy_item.gd" id="6_f8o6y"]
+[ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="8_udevw"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="9_h1io6"]
+
+[sub_resource type="Resource" id="Resource_ups56"]
+script = ExtResource("3_dpavh")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_0kc5u"]
+script = ExtResource("6_f8o6y")
+item = ExtResource("5_opyfm")
+amount = 5
+price = 0
+metadata/_custom_type_script = "uid://csfcc37sdbhhw"
+
+[sub_resource type="Resource" id="Resource_dpavh"]
+script = ExtResource("3_dpavh")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_nv1yq"]
+script = ExtResource("4_opyfm")
+ability = 2
+succes_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_0kc5u"), SubResource("Resource_dpavh")])
+fail_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_ups56")])
+txt = "Buy Grain"
+succes_txt = "You manage to pick up some fresh produce - and at a very good price, too!"
+fail_txt = "You try to make a deal, but arrive too late. All the best bargains are already gone."
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_mqmyc"]
+script = ExtResource("3_dpavh")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_50yph"]
+script = ExtResource("6_f8o6y")
+item = ExtResource("8_udevw")
+amount = 5
+price = 0
+metadata/_custom_type_script = "uid://csfcc37sdbhhw"
+
+[sub_resource type="Resource" id="Resource_3qs4w"]
+script = ExtResource("3_dpavh")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_opyfm"]
+script = ExtResource("4_opyfm")
+ability = 2
+succes_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_50yph"), SubResource("Resource_3qs4w")])
+fail_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_mqmyc")])
+txt = "Buy Wine"
+succes_txt = "You manage to pick up some fresh produce - and at a very good price, too!"
+fail_txt = "You try to make a deal, but arrive too late. All the best bargains are already gone."
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_khxe1"]
+script = ExtResource("3_dpavh")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_03ver"]
+script = ExtResource("9_h1io6")
+txt = "Don’t bother"
+actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_khxe1")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3_rhcrj")
+titel = "Market Sale"
+description = "The market is alive with unusual hustle and bustle. Before long, you discover the reason: a major sale is underway. You might find a real bargain - if you hurry.
+"
+content = Array[ExtResource("2_c1u7w")]([SubResource("Resource_nv1yq"), SubResource("Resource_opyfm"), SubResource("Resource_03ver")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

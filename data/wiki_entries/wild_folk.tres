@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://1rlweade06yh"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_b1nds"]
+
+[resource]
+script = ExtResource("1_b1nds")
+description = "The wild-folk are primarily goblins, kobolds, and halflings, though in other regions different species may also be counted among them. They usually live in tribal societies and often serve as defenders of the Empire.
+
+In contrast to the tall-folk, wild-folk populations are overwhelmingly male, with even fewer deviations. This imbalance forces them to interbreed with tall-folk to ensure offspring and is, in many ways, the primary reason they are so closely entwined with the Empire."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

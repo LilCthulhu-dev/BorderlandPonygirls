@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bdmekv7h3uf1f"]
+
+[ext_resource type="Script" uid="uid://datmip5x741s8" path="res://main_window/map/tree.gd" id="1_recj1"]
+[ext_resource type="Texture2D" uid="uid://dbacpxt5tcl6x" path="res://assets/icons/tree1.png" id="2_28y30"]
+
+[node name="Tree1" type="Node2D" unique_id=929460268]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_recj1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2069239458]
+position = Vector2(2.0000005, -3)
+scale = Vector2(1.26, 1.2)
+texture = ExtResource("2_28y30")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8x0m483ggdhk"]
+
+[ext_resource type="Script" uid="uid://df3qohruk6dqe" path="res://mountain.gd" id="1_46lnc"]
+[ext_resource type="Texture2D" uid="uid://c2bivto8sehw3" path="res://assets/icons/mountain1.png" id="2_eoaqf"]
+
+[node name="Mountain" type="Sprite2D" unique_id=592996653]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_eoaqf")
+script = ExtResource("1_46lnc")

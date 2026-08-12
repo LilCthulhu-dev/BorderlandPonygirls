@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://boeoqj8wswe7u"]
+
+[ext_resource type="Script" uid="uid://b0fnsev6ei2sv" path="res://event_window/event_btn.gd" id="1_017jh"]
+
+[node name="EventBtn" type="Button" unique_id=2021887780]
+custom_minimum_size = Vector2(0, 50)
+offset_right = 256.0
+offset_bottom = 48.0
+focus_mode = 0
+alignment = 0
+script = ExtResource("1_017jh")
+show_tooltip_if_disabled = true
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

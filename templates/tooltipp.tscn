@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cvjv7h4gri1vv"]
+
+[ext_resource type="Theme" uid="uid://dv867lswsiis5" path="res://templates/black_background_theme.tres" id="1_kvuep"]
+[ext_resource type="Script" uid="uid://ijtugorjhxum" path="res://templates/tooltipp.gd" id="2_1hbe6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kvuep"]
+content_margin_left = 15.0
+content_margin_top = 9.0
+content_margin_right = 15.0
+content_margin_bottom = 8.0
+bg_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+shadow_color = Color(0.92168134, 0.92947316, 0.9138015, 1)
+shadow_size = 5
+
+[node name="Tooltipps" type="Node2D" unique_id=56454723]
+script = ExtResource("2_1hbe6")
+
+[node name="Label" type="Label" parent="." unique_id=2026981813]
+unique_name_in_owner = true
+custom_maximum_size = Vector2(350, -1)
+offset_right = 87.0
+offset_bottom = 33.0
+theme = ExtResource("1_kvuep")
+theme_override_styles/normal = SubResource("StyleBoxFlat_kvuep")
+text = "test 123"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

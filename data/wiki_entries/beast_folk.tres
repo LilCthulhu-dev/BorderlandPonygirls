@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://c4276pqbjv1da"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_3okor"]
+
+[resource]
+script = ExtResource("1_3okor")
+description = "All other roughly humanoid peoples, capable of speech and reason, are grouped together as beast-folk: for example, reptiloids, gnolls, and minotaurs. They are usually wild and unpredictable, often hostile toward both tall-folk and wild-folk, and far less involved with the affairs of either."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

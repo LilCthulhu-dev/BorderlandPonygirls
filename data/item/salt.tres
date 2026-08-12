@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://dnm7ycxn38yvh"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_mint0"]
+[ext_resource type="Texture2D" uid="uid://gsoblln4510x" path="res://assets/icons/spice.png" id="1_rmlvp"]
+
+[resource]
+script = ExtResource("1_mint0")
+title = "Salt"
+price = 30
+weight = 2
+icon = ExtResource("1_rmlvp")
+metadata/_custom_type_script = "uid://b571u1d6tbexa"

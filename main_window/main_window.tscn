@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cb0bgl6grptph"]
+
+[ext_resource type="Script" uid="uid://dbuutk3tas5yv" path="res://main_window/main_window.gd" id="1_w6ft6"]
+[ext_resource type="PackedScene" uid="uid://8u2ga71kr7sg" path="res://main_window/inventory/inventory.tscn" id="2_w6fyg"]
+[ext_resource type="PackedScene" uid="uid://cqsoj3w5aqjqo" path="res://main_window/map/map.tscn" id="3_xpn2j"]
+[ext_resource type="PackedScene" uid="uid://clyshy2qvbhd3" path="res://main_window/location/location_page.tscn" id="4_xpn2j"]
+[ext_resource type="PackedScene" uid="uid://bha6354l57vqg" path="res://main_window/stable/stable.tscn" id="5_xsxqp"]
+[ext_resource type="PackedScene" uid="uid://dnk4vqcolcbq0" path="res://main_window/wiki/wiki.tscn" id="6_erdsu"]
+
+[node name="Main" type="CanvasLayer" unique_id=1338739459]
+script = ExtResource("1_w6ft6")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=184779389]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[node name="Tabs" type="HBoxContainer" parent="." unique_id=1716967479]
+unique_name_in_owner = true
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 48.0
+grow_horizontal = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="Pages" type="HBoxContainer" parent="." unique_id=1248211792]
+unique_name_in_owner = true
+offset_right = 2308.0
+offset_bottom = 648.0
+mouse_filter = 2
+
+[node name="Location" parent="Pages" unique_id=1679748004 instance=ExtResource("4_xpn2j")]
+layout_mode = 2
+
+[node name="Inventory" parent="Pages" unique_id=1948255639 instance=ExtResource("2_w6fyg")]
+layout_mode = 2
+btn_text = "Inventory"
+
+[node name="Map" parent="Pages" unique_id=606574942 instance=ExtResource("3_xpn2j")]
+layout_mode = 2
+theme = null
+
+[node name="Stable" parent="Pages" unique_id=926222599 instance=ExtResource("5_xsxqp")]
+layout_mode = 2
+theme = null
+
+[node name="Wiki" parent="Pages" unique_id=745648148 instance=ExtResource("6_erdsu")]
+layout_mode = 2

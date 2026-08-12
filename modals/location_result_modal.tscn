@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://8utfmm5jg16r"]
+
+[ext_resource type="PackedScene" uid="uid://b1v7of17rvrix" path="res://modals/modal_template.tscn" id="1_yd1y1"]
+[ext_resource type="Script" uid="uid://b23ecbp0m67e2" path="res://modals/location_result_modal.gd" id="2_qi6p1"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="3_qb6x6"]
+
+[node name="LocationResultModal" unique_id=1384488452 instance=ExtResource("1_yd1y1")]
+script = ExtResource("2_qi6p1")
+
+[node name="TitelLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="0" unique_id=1267933660]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("3_qb6x6")
+text = "Results"
+autowrap_mode = 2
+
+[node name="ResultsLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=1695839002]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=1968900189]
+layout_mode = 2
+text = "Accept"
+
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

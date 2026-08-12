@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://bha6354l57vqg"]
+
+[ext_resource type="PackedScene" uid="uid://je75uyt8bsbm" path="res://main_window/page_template.tscn" id="1_3bi1d"]
+[ext_resource type="Script" uid="uid://grp1u2sta8i4" path="res://main_window/stable/stable.gd" id="2_ynkwm"]
+[ext_resource type="PackedScene" uid="uid://il0uvefv3nrc" path="res://templates/double_page.tscn" id="3_u4d78"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="4_cmcbo"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="5_10lfa"]
+[ext_resource type="PackedScene" uid="uid://bvm5rv6wc627l" path="res://templates/attribute_node.tscn" id="6_85wuu"]
+[ext_resource type="PackedScene" uid="uid://t05scylbl4ox" path="res://main_window/stable/care_btn.tscn" id="6_ffwm5"]
+
+[node name="Stable" unique_id=1948255639 instance=ExtResource("1_3bi1d")]
+script = ExtResource("2_ynkwm")
+btn_text = "Stable"
+shortcut_key_string = "s"
+
+[node name="DoublePage" parent="." index="0" unique_id=525338114 instance=ExtResource("3_u4d78")]
+position = Vector2(576, 352)
+
+[node name="Content" type="HBoxContainer" parent="." index="1" unique_id=2023351632]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 112.0
+offset_right = 1072.0
+offset_bottom = 592.0
+theme = ExtResource("4_cmcbo")
+theme_override_constants/separation = 50
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Content" index="0" unique_id=543448560]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("4_cmcbo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Content/ScrollContainer" index="0" unique_id=259315282]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label2" type="Label" parent="Content/ScrollContainer/VBoxContainer" index="0" unique_id=1457641299]
+layout_mode = 2
+theme = ExtResource("5_10lfa")
+text = "Active Ponygirls"
+
+[node name="ActiveList" type="GridContainer" parent="Content/ScrollContainer/VBoxContainer" index="1" unique_id=963328623]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 2
+
+[node name="Control2" type="Control" parent="Content/ScrollContainer/VBoxContainer" index="2" unique_id=1607051680]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label3" type="Label" parent="Content/ScrollContainer/VBoxContainer" index="3" unique_id=1373180067]
+layout_mode = 2
+theme = ExtResource("5_10lfa")
+text = "Resting Ponygirls"
+
+[node name="RestingList" type="GridContainer" parent="Content/ScrollContainer/VBoxContainer" index="4" unique_id=964619921]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+columns = 2
+
+[node name="Control" type="Control" parent="Content/ScrollContainer/VBoxContainer" index="5" unique_id=185585482]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label4" type="Label" parent="Content/ScrollContainer/VBoxContainer" index="6" unique_id=2026659436]
+layout_mode = 2
+theme = ExtResource("5_10lfa")
+text = "Care Actions"
+
+[node name="GridContainer2" type="GridContainer" parent="Content/ScrollContainer/VBoxContainer" index="7" unique_id=68203356]
+layout_mode = 2
+columns = 3
+
+[node name="CareBtn" parent="Content/ScrollContainer/VBoxContainer/GridContainer2" index="0" unique_id=1128637825 instance=ExtResource("6_ffwm5")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "XP"
+show_tooltip_if_disabled = true
+
+[node name="CareBtn2" parent="Content/ScrollContainer/VBoxContainer/GridContainer2" index="1" unique_id=330571830 instance=ExtResource("6_ffwm5")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Teasing"
+care_type = 1
+show_tooltip_if_disabled = true
+
+[node name="CareBtn4" parent="Content/ScrollContainer/VBoxContainer/GridContainer2" index="2" unique_id=2129236411 instance=ExtResource("6_ffwm5")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Climax"
+care_type = 2
+show_tooltip_if_disabled = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Content" index="1" unique_id=890519546]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TitelLabel" type="Label" parent="Content/VBoxContainer2" index="0" unique_id=574478374]
+unique_name_in_owner = true
+layout_mode = 2
+theme = ExtResource("5_10lfa")
+text = "Warband"
+
+[node name="HSeparator" type="HSeparator" parent="Content/VBoxContainer2" index="1" unique_id=107452672]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HFlowContainer" parent="Content/VBoxContainer2" index="2" unique_id=1921747914]
+layout_mode = 2
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 15
+alignment = 1
+
+[node name="AttributeNode6" parent="Content/VBoxContainer2/HBoxContainer" index="0" unique_id=483871864 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 6
+
+[node name="AttributeNode7" parent="Content/VBoxContainer2/HBoxContainer" index="1" unique_id=403421632 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 7
+
+[node name="AttributeNode" parent="Content/VBoxContainer2/HBoxContainer" index="2" unique_id=897811727 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 8
+
+[node name="AttributeNode2" parent="Content/VBoxContainer2/HBoxContainer" index="3" unique_id=2026209392 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="AttributeNode3" parent="Content/VBoxContainer2/HBoxContainer" index="4" unique_id=2144575517 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 2
+
+[node name="AttributeNode4" parent="Content/VBoxContainer2/HBoxContainer" index="5" unique_id=896818453 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 3
+
+[node name="AttributeNode5" parent="Content/VBoxContainer2/HBoxContainer" index="6" unique_id=996749142 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 4
+
+[node name="AttributeNode8" parent="Content/VBoxContainer2/HBoxContainer" index="7" unique_id=1133987895 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 5
+
+[node name="HSeparator2" type="HSeparator" parent="Content/VBoxContainer2" index="3" unique_id=628818769]
+layout_mode = 2

@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://b8yrmk282tpxh"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_ydr5t"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_7wsu0"]
+[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_7wsu0"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3_raskp"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_ilrj4"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="8_bhq7w"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9_rw3tq"]
+
+[sub_resource type="Resource" id="Resource_k3uj4"]
+script = ExtResource("3_raskp")
+txt = "She looks young, healthy, and strong. Nervous, certainly, but that is normal. You also noticed the hunger in her eyes - the idea of becoming a pony clearly turns her on. She will probably struggle for a bit, but otherwise make a fine mare."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_74dt0"]
+script = ExtResource("4_ilrj4")
+txt = "Take a closer look"
+actions = Array[ExtResource("1_ydr5t")]([SubResource("Resource_k3uj4")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_ukw7e"]
+script = ExtResource("8_bhq7w")
+event_path = "uid://br6hm7hj10gus"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_owt7r"]
+script = ExtResource("4_ilrj4")
+txt = "Accept"
+actions = Array[ExtResource("1_ydr5t")]([SubResource("Resource_ukw7e")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_bc6de"]
+script = ExtResource("8_bhq7w")
+event_path = "uid://dh8kvbwwlrcwq"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_pgr8y"]
+script = ExtResource("4_ilrj4")
+txt = "Deny"
+actions = Array[ExtResource("1_ydr5t")]([SubResource("Resource_bc6de")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("9_rw3tq")
+titel = "Offering"
+description = "A young woman approaches you, practically trembling with nervous excitement.
+
+“Excuse me, {TITLE}. You are the leader of this warband, right?” She draws a steadying breath. “I would like to offer myself as a ponygirl. Pay my family a fair price, and I am yours.”"
+content = Array[ExtResource("2_7wsu0")]([SubResource("Resource_74dt0"), SubResource("Resource_owt7r"), SubResource("Resource_pgr8y")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

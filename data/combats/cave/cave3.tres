@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://rmmdap81r2v5"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_phrii"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_j5avj"]
+
+[sub_resource type="Resource" id="Resource_uvox7"]
+script = ExtResource("1_phrii")
+txt = "Charge!"
+ability = 1
+success_description = "You surge forward and smash into the patrol before they form ranks.
+"
+fail_description = "The patrol braces in time and the clash forces you to retreat."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_ycy6f"]
+script = ExtResource("1_phrii")
+txt = "Slip into the shadows"
+ability = 4
+success_description = "Your warriors vanish into darkness and the patrol hesitates in confusion."
+fail_description = "A scout spots movement and the patrol presses forward, forcing you back."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_mxnvk"]
+script = ExtResource("1_phrii")
+txt = "Hold formation"
+ability = 3
+success_description = "Your warband advances as one and slowly forces the patrol to break.
+"
+fail_description = "Your line falters and the patrol pushes you back."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_j5avj")
+flavor_lines = Array[String](["The tunnel walls glisten with damp moss.", "A distant howl echoes through the cave."])
+description = "You round a corner and suddenly face an enemy patrol in the tunnel. Both sides freeze for a heartbeat. Then you shout the order."
+actions = Array[ExtResource("1_phrii")]([SubResource("Resource_uvox7"), SubResource("Resource_ycy6f"), SubResource("Resource_mxnvk")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

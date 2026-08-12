@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dst8n1tcmvat1"]
+
+[ext_resource type="PackedScene" uid="uid://b1v7of17rvrix" path="res://modals/modal_template.tscn" id="1_4bfyr"]
+[ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="2_irrnc"]
+[ext_resource type="Script" uid="uid://y4kmiefnc78s" path="res://modals/care_result_modal.gd" id="2_iv2ag"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="3_8chqy"]
+
+[node name="CareResultModal" unique_id=1384488452 instance=ExtResource("1_4bfyr")]
+script = ExtResource("2_iv2ag")
+
+[node name="Label" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="0" unique_id=1313650877]
+layout_mode = 2
+theme = ExtResource("2_irrnc")
+text = "Ponycare"
+
+[node name="LabelDescription" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=1027481576]
+unique_name_in_owner = true
+layout_mode = 2
+text = "test123"
+autowrap_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=430534252]
+layout_mode = 2
+
+[node name="AcceptBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" index="0" unique_id=876049955]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Accept"
+script = ExtResource("3_8chqy")
+click_sound = "coin"
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="DeclineBtn" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" index="1" unique_id=1312725429]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Decline"
+script = ExtResource("3_8chqy")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/AcceptBtn" to="." method="_on_accept_btn_pressed"]
+[connection signal="pressed" from="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/DeclineBtn" to="." method="_on_decline_btn_pressed"]
