@@ -19,6 +19,30 @@ The complete CC0 1.0 legal text is available at:
 
 https://creativecommons.org/publicdomain/zero/1.0/legalcode
 
+## Grok / xAI-Generated Images
+
+**Contributor:** Frozenhunter  
+**Generation tool:** Grok / xAI Imagine  
+**License:** CC0 1.0, to the extent applicable  
+**Attribution:** Generated using Grok by xAI
+
+The contributor confirmed that they generated the artwork, had the necessary
+rights to contribute it, and dedicated all copyright and related rights they
+may hold in the artwork to the public domain under CC0 1.0.
+
+The following images were contributed by **Frozenhunter** and generated using
+Grok by xAI, including its Imagine image-generation tools:
+
+- `assets/img/elf_01.png`
+- `assets/img/elf_02.png`
+- `assets/img/elf_03.png`
+- `assets/img/elf_04.png`
+- `assets/img/human_01.png`
+- `assets/img/human_02.png`
+- `assets/img/human_08.png`
+- `assets/img/human_09.png`
+- `assets/img/tiefling_01.png`
+
 ## Exceptions
 
 ### Wonderdraft Map
