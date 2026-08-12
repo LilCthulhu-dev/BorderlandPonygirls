@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://2bxxrb2c2tgc"]
-
-[ext_resource type="PackedScene" uid="uid://8x0m483ggdhk" path="res://main_window/map/mountain.tscn" id="1_lysfv"]
-[ext_resource type="Texture2D" uid="uid://b1ue4bdcjkhre" path="res://assets/icons/mountain2.png" id="2_0fsq5"]
-
-[node name="Mountain2" unique_id=875007701 instance=ExtResource("1_lysfv")]
-texture = ExtResource("2_0fsq5")
