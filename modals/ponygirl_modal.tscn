@@ -19,10 +19,12 @@ theme = ExtResource("3_jl802")
 
 [node name="portrait" type="TextureRect" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=188546925]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(250, 250)
-custom_maximum_size = Vector2(250, 250)
+custom_minimum_size = Vector2(-1, 250)
+custom_maximum_size = Vector2(-1, 250)
 layout_mode = 2
 size_flags_horizontal = 4
+expand_mode = 2
+stretch_mode = 5
 
 [node name="HSeparator" type="HSeparator" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=716297443]
 layout_mode = 2
