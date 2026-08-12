@@ -101,3 +101,15 @@ This repository contains adult material and is not intended for minors.
 The game explores consensual ponyplay alongside fictional themes of servitude, coercion, slavery, and abuse of power. The presence of these themes does not constitute endorsement of them.
 
 All characters depicted in sexual situations are adults.
+
+## License
+
+Borderland Ponygirls uses separate licenses for source code and game content:
+
+* The source code is licensed under the [GNU General Public License v3.0 or later](LICENSE).
+* Original written content, icons, and eligible media are dedicated to the public domain under [CC0 1.0](LICENSE-CONTENT.md).
+* Some assets are subject to exceptions or additional terms. See [Asset Sources](ASSET-SOURCES.md) for details.
+
+In short: you may use, modify, and redistribute the game and its content, including commercially. Modified or redistributed versions of the GPL-covered source code must remain available under the GPL.
+
+The Wonderdraft map is not covered by CC0.
