@@ -76,6 +76,9 @@ const PORTRAITS := {
 	Enums.PONYGIRL_RACES.HUMAN: [
 		preload("res://assets/img/human_01.png"),
 		preload("res://assets/img/human_02.png"),
+		preload("res://assets/img/human_03.png"),
+		preload("res://assets/img/human_04.png"),
+		preload("res://assets/img/human_05.png"),
 		preload("res://assets/img/human_08.png"),
 		preload("res://assets/img/human_09.png")
 	],
@@ -86,7 +89,8 @@ const PORTRAITS := {
 		preload("res://assets/img/elf_04.png")
 	],
 	Enums.PONYGIRL_RACES.TIEFLING: [
-		preload("res://assets/img/tiefling_01.png")
+		preload("res://assets/img/tiefling_01.png"),
+		preload("res://assets/img/tiefling_02.png")
 	],
 }
 const MAX_ACTIVE := 4
@@ -160,6 +164,9 @@ static func slots_free() -> bool:
 	return ponygirls.size() < MAX_TOTAL
 
 static func add_ponygirl(pony: Ponygirl) -> void:
+	if pony == null:
+		push_error("PonygirlManager.add_ponygirl: pony is null")
+		return
 	if not slots_free():
 		return
 	var new_pony := pony.duplicate(true) as Ponygirl
@@ -167,3 +174,17 @@ static func add_ponygirl(pony: Ponygirl) -> void:
 	new_pony.active = active_slots_free()
 	ponygirls.append(new_pony)
 	focused_ponygirl = new_pony
+
+
+## Fully configured instance (no second init). Used by archetype AddPonygirl.
+static func add_ponygirl_instance(pony: Ponygirl) -> void:
+	if pony == null:
+		push_error("PonygirlManager.add_ponygirl_instance: pony is null")
+		return
+	if not slots_free():
+		return
+	if pony.id.is_empty():
+		pony.id = str(ResourceUID.create_id())
+	pony.active = active_slots_free()
+	ponygirls.append(pony)
+	focused_ponygirl = pony
