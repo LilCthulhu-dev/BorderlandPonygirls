@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestfishst01"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="5"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6"]
+[ext_resource type="Resource" uid="uid://cflagtidefish1" path="res://data/flags/tide_fish_01.tres" id="7"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
+[ext_resource type="Texture2D" uid="uid://cimgquefish01" path="res://assets/img/tide_fish.png" id="10"]
+
+[sub_resource type="Resource" id="Resource_inspect_txt"]
+script = ExtResource("3")
+txt = "The barrels are packed in wet straw, still cold from the morning tide. Silver-backed fish, good inland eating.
+
+They will not last two hot days on the road. Speed matters more than comfort."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_inspect"]
+script = ExtResource("4")
+txt = "Inspect the barrels"
+actions = Array[ExtResource("1")]([SubResource("Resource_inspect_txt")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_to_accept"]
+script = ExtResource("5")
+event_path = "res://data/events/tide_fish/tide_fish_accept.tres"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_add_flag"]
+script = ExtResource("8")
+add_flag = Array[ExtResource("6")]([ExtResource("7")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_accept"]
+script = ExtResource("4")
+txt = "Accept"
+actions = Array[ExtResource("1")]([SubResource("Resource_to_accept"), SubResource("Resource_add_flag")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_to_decline"]
+script = ExtResource("5")
+event_path = "res://data/events/tide_fish/tide_fish_decline.tres"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_decline"]
+script = ExtResource("4")
+txt = "Decline"
+actions = Array[ExtResource("1")]([SubResource("Resource_to_decline")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_gate"]
+script = ExtResource("8")
+forbidden_flag = Array[ExtResource("6")]([ExtResource("7")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[resource]
+script = ExtResource("9")
+titel = "Tide Fish"
+img = ExtResource("10")
+description = "A fishmonger with scale-flecked arms blocks your path at the docks.
+
+“{TITLE}. Halfling Village wants a load of tide-fish before it turns. Fast wagon, wet straw, pay on delivery. Your mares look like they can make the road.”"
+content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_accept"), SubResource("Resource_decline")])
+open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

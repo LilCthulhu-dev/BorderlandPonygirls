@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestrironac1"]
+
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cimgqueiron01" path="res://assets/img/iron_tithe.png" id="2"]
+
+[resource]
+script = ExtResource("1")
+titel = "Iron Tithe"
+img = ExtResource("2")
+description = "The elder raps the wagon once. “Trading Post smiths. They know the mark. Don’t stop for every pretty tack-stall on the way.”
+
+Your mares lean into the traces. The iron sings softly whenever a wheel hits a stone."
+metadata/_custom_type_script = "uid://47s8j4k2usde"

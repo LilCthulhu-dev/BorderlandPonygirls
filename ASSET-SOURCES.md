@@ -40,6 +40,20 @@ Files located in `docs/screenshots/` are screenshots of Borderland Ponygirls.
 
 Screenshots may contain code, CC0 content, AI-generated images, and the excluded Wonderdraft map. Their individual elements remain subject to their respective licenses.
 
+## Travel quest plates
+
+Monochrome ink event plates for six travel quests:
+
+* `assets/img/salt_run.png`
+* `assets/img/iron_tithe.png`
+* `assets/img/missing_mare.png`
+* `assets/img/harvest_cask.png`
+* `assets/img/tide_fish.png`
+* `assets/img/bone_charm.png`
+
+**Source:** Imagine (xAI), with a later Bloom 2 face-recovery pass  
+**License:** AI-generated; CC0 to the extent applicable (same as other AI plates in this folder)
+
 ## Contributions
 
 Future contributed assets must be documented here with:
