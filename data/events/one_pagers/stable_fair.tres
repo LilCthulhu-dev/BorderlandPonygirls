@@ -1,0 +1,201 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://c7stablefair01"]
+
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="1"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="2"]
+[ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="3"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="4"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="6"]
+
+[sub_resource type="Resource" id="Resource_loyal_desc"]
+script = ExtResource("1")
+txt = "The handler presents a calm, well-bonded mare. High loyalty, settled nerves - she will settle into your line without fuss."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_loyal_gold"]
+script = ExtResource("2")
+amount = "-{COST_PONYGIRL}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_loyal_add"]
+script = ExtResource("3")
+randomize_name = true
+randomize_appearance = true
+force_loyalty = 80
+force_arousal = 25
+force_xp = 15
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
+
+[sub_resource type="Resource" id="Resource_loyal_back"]
+script = ExtResource("4")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_btn_loyal"]
+script = ExtResource("5")
+txt = "Buy a loyal mare"
+actions = [SubResource("Resource_loyal_desc"), SubResource("Resource_loyal_gold"), SubResource("Resource_loyal_add"), SubResource("Resource_loyal_back")]
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_needy_desc"]
+script = ExtResource("1")
+txt = "This one is already flushed and restless in her tack. Average loyalty, high arousal - she needs a firm hand and regular work."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_needy_gold"]
+script = ExtResource("2")
+amount = "-{COST_PONYGIRL}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_needy_add"]
+script = ExtResource("3")
+randomize_name = true
+randomize_appearance = true
+force_loyalty = 50
+force_arousal = 70
+force_xp = 10
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
+
+[sub_resource type="Resource" id="Resource_needy_back"]
+script = ExtResource("4")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_btn_needy"]
+script = ExtResource("5")
+txt = "Buy a needy mare"
+actions = [SubResource("Resource_needy_desc"), SubResource("Resource_needy_gold"), SubResource("Resource_needy_add"), SubResource("Resource_needy_back")]
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_green_desc"]
+script = ExtResource("1")
+txt = "A skittish green filly, barely broken to the bit. Low loyalty, low training - cheap, but she will test you."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_green_gold"]
+script = ExtResource("2")
+amount = "-{COST_CHEAP_PONYGIRL}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_green_add"]
+script = ExtResource("3")
+randomize_name = true
+randomize_appearance = true
+force_loyalty = 25
+force_arousal = 35
+force_xp = 0
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
+
+[sub_resource type="Resource" id="Resource_green_back"]
+script = ExtResource("4")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_btn_green"]
+script = ExtResource("5")
+txt = "Buy a green filly (cheap)"
+actions = [SubResource("Resource_green_desc"), SubResource("Resource_green_gold"), SubResource("Resource_green_add"), SubResource("Resource_green_back")]
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_sub_desc"]
+script = ExtResource("1")
+txt = "The auctioneer boasts of her soft mouth and ready obedience. Solid loyalty, trained submissive streak - a dependable worker."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_sub_gold"]
+script = ExtResource("2")
+amount = "-{COST_PONYGIRL}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_sub_add"]
+script = ExtResource("3")
+randomize_name = true
+randomize_appearance = true
+force_loyalty = 65
+force_arousal = 40
+force_xp = 20
+guarantee_perk_ids = PackedStringArray("submissive")
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
+
+[sub_resource type="Resource" id="Resource_sub_back"]
+script = ExtResource("4")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_btn_sub"]
+script = ExtResource("5")
+txt = "Buy a submissive mare"
+actions = [SubResource("Resource_sub_desc"), SubResource("Resource_sub_gold"), SubResource("Resource_sub_add"), SubResource("Resource_sub_back")]
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_strong_desc"]
+script = ExtResource("1")
+txt = "A seasoned puller with thick legs and a hard stare. Expensive, well-trained muscle - high XP and the Strong perk."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_strong_gold"]
+script = ExtResource("2")
+amount = "-{COST_TRAINING}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_strong_add"]
+script = ExtResource("3")
+randomize_name = true
+randomize_appearance = true
+force_loyalty = 55
+force_arousal = 45
+force_xp = 45
+guarantee_perk_ids = PackedStringArray("strong", "hardy")
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
+
+[sub_resource type="Resource" id="Resource_strong_back"]
+script = ExtResource("4")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_btn_strong"]
+script = ExtResource("5")
+txt = "Buy a trained strong mare (expensive)"
+actions = [SubResource("Resource_strong_desc"), SubResource("Resource_strong_gold"), SubResource("Resource_strong_add"), SubResource("Resource_strong_back")]
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_wild_desc"]
+script = ExtResource("1")
+txt = "She stamps and rolls her eyes at the crowd. Wild temper, high spirit - costly, but she has fire and the Wild perk."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_wild_gold"]
+script = ExtResource("2")
+amount = "-{COST_TRAINING}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_wild_add"]
+script = ExtResource("3")
+randomize_name = true
+randomize_appearance = true
+force_loyalty = 35
+force_arousal = 55
+force_xp = 30
+guarantee_perk_ids = PackedStringArray("wild", "brat")
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
+
+[sub_resource type="Resource" id="Resource_wild_back"]
+script = ExtResource("4")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_btn_wild"]
+script = ExtResource("5")
+txt = "Buy a wild mare (expensive)"
+actions = [SubResource("Resource_wild_desc"), SubResource("Resource_wild_gold"), SubResource("Resource_wild_add"), SubResource("Resource_wild_back")]
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_btn_leave"]
+script = ExtResource("5")
+txt = "Leave the fair"
+actions = []
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("6")
+titel = "Stable Fair"
+description = "A traveling stable fair has set up pens at the edge of the post. Handlers walk trained ponygirls in tight circles so buyers can judge gait, loyalty, and spirit.
+
+Mares are offered by type - loyalty, training, and temper - not by famous names. Each visit brings different stock."
+img = null
+content = [SubResource("Resource_btn_loyal"), SubResource("Resource_btn_needy"), SubResource("Resource_btn_green"), SubResource("Resource_btn_sub"), SubResource("Resource_btn_strong"), SubResource("Resource_btn_wild"), SubResource("Resource_btn_leave")]
+metadata/_custom_type_script = "uid://47s8j4k2usde"

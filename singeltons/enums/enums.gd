@@ -51,6 +51,14 @@ static func enum_to_name(enum_dict: Dictionary, value: int) -> String:
 		return ""
 	return str(key).capitalize()
 
+
+static func ability_enum_to_name(ability: ABILITIES) -> String:
+	return enum_to_name(ABILITIES, ability)
+
+
+static func attribute_enum_to_name(attribute: ATTRIBUTES) -> String:
+	return enum_to_name(ATTRIBUTES, attribute)
+
 static func ability_to_attribute(ability: ABILITIES) -> ATTRIBUTES:
 	match ability:
 		ABILITIES.MUSCLE:

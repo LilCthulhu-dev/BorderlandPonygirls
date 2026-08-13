@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2_ktc0q"]
 [ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3_ds03l"]
 [ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_q3ihl"]
-[ext_resource type="Resource" uid="uid://di2ke0th4h8tx" path="res://data/ponygirls/unloyal_pony.tres" id="8_pwvun"]
 [ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="9_ogsu3"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="11_fqc60"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="12_1ddbn"]
@@ -17,7 +16,11 @@ txt = "She looks helpless and miserable but makes no attempt to resist. You add 
 
 [sub_resource type="Resource" id="Resource_c5gay"]
 script = ExtResource("9_ogsu3")
-ponygirl = ExtResource("8_pwvun")
+randomize_name = true
+randomize_appearance = true
+force_loyalty = 0
+force_arousal = 40
+force_xp = 5
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_noxkn"]

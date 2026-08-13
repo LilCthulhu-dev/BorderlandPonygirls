@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="Event" format=3 uid="uid://c1j5rc8dheoqc"]
 
-[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="1_f80rk"]
-[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2_hlxsl"]
-[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_hlxsl"]
-[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="4_givku"]
-[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="4_l7e35"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="8_1r30c"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="9_5ena5"]
-[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="11_xybms"]
+[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="1"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="2"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="5"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="6"]
+[ext_resource type="Resource" uid="uid://bub8d5f1vioce" path="res://data/flags/shady_pony_deal.tres" id="7"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
 
 [sub_resource type="Resource" id="Resource_mqmyc"]
-script = ExtResource("11_xybms")
+script = ExtResource("1")
 ability = 5
 modifier = 10
 txt = "Examine the she-beast"
@@ -21,36 +21,44 @@ fail_txt = "She looks healthy, perhaps a little skittish, but that is to be expe
 metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
 
 [sub_resource type="Resource" id="Resource_6wf88"]
-script = ExtResource("4_l7e35")
+script = ExtResource("2")
 amount = "-{COST_CHEAP_PONYGIRL}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_ds03l"]
-script = ExtResource("9_5ena5")
+script = ExtResource("3")
 event_path = "uid://dhy2jwrirw8un"
 metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_cskxl"]
-script = ExtResource("8_1r30c")
+script = ExtResource("4")
 txt = "Accept"
-actions = Array[ExtResource("2_hlxsl")]([SubResource("Resource_6wf88"), SubResource("Resource_ds03l")])
+actions = [SubResource("Resource_6wf88"), SubResource("Resource_ds03l")]
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_u5muq"]
-script = ExtResource("4_givku")
+script = ExtResource("5")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_5pobu"]
-script = ExtResource("8_1r30c")
+script = ExtResource("4")
 txt = "Decline"
-actions = Array[ExtResource("2_hlxsl")]([SubResource("Resource_u5muq")])
+actions = [SubResource("Resource_u5muq")]
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
+[sub_resource type="Resource" id="Resource_shady_once"]
+script = ExtResource("8")
+add_flag = [ExtResource("7")]
+forbidden_flag = [ExtResource("7")]
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
 [resource]
-script = ExtResource("3_hlxsl")
+script = ExtResource("6")
 titel = "Unexpected Deal"
 description = "A shady-looking goblin with an eyepatch approaches you, leading a skittish ponygirl by the reins.
 
 “Hey, you’re a warband boss, right? I got this mare for a bargain. You interested?”"
-content = Array[ExtResource("1_f80rk")]([SubResource("Resource_mqmyc"), SubResource("Resource_cskxl"), SubResource("Resource_5pobu")])
+img = null
+content = [SubResource("Resource_mqmyc"), SubResource("Resource_cskxl"), SubResource("Resource_5pobu")]
+open_actions = [SubResource("Resource_shady_once")]
 metadata/_custom_type_script = "uid://47s8j4k2usde"
