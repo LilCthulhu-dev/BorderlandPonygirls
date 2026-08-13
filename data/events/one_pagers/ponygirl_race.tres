@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://ceventprace01"]
+
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="1"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3"]
+[ext_resource type="Resource" uid="uid://ccomponyrace01" path="res://data/combats/ponygirl_race/ponygirl_race.tres" id="4"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5"]
+[ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="6"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://cimgracestrt01" path="res://assets/img/ponygirl_race_start.png" id="8"]
+
+[sub_resource type="Resource" id="Resource_start"]
+script = ExtResource("6")
+combat = ExtResource("4")
+metadata/_custom_type_script = "uid://bnjeril1f2cy8"
+
+[sub_resource type="Resource" id="Resource_enter"]
+script = ExtResource("5")
+txt = "Enter the race"
+actions = Array[ExtResource("2")]([SubResource("Resource_start")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_back"]
+script = ExtResource("7")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_pass"]
+script = ExtResource("5")
+txt = "Watch from the rail"
+actions = Array[ExtResource("2")]([SubResource("Resource_back")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3")
+titel = "Ponygirl Race"
+img = ExtResource("8")
+description = "Harbor race-day. A dirt oval, a rope start, a purse nailed to a board, and a field of warband mares already hot in the traces.
+
+A steward looks your string over. “{TITLE}. One mare, one rider. No drawing blades on the track. Purse to first. Appearance coin if you finish on your feet.”"
+content = Array[ExtResource("1")]([SubResource("Resource_enter"), SubResource("Resource_pass")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

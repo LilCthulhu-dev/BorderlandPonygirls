@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="Combat" format=3 uid="uid://ccomponyrace01"]
+
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct66od486dv7w" path="res://data/combats/combat.gd" id="2"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="3"]
+[ext_resource type="Resource" uid="uid://cscenprace01" path="res://data/combats/ponygirl_race/ponygirl_race_01.tres" id="4"]
+[ext_resource type="Resource" uid="uid://cscenprace02" path="res://data/combats/ponygirl_race/ponygirl_race_02.tres" id="5"]
+[ext_resource type="Resource" uid="uid://cscenprace03" path="res://data/combats/ponygirl_race/ponygirl_race_03.tres" id="6"]
+[ext_resource type="Resource" uid="uid://cscenprace04" path="res://data/combats/ponygirl_race/ponygirl_race_04.tres" id="7"]
+[ext_resource type="Resource" uid="uid://cscenprace05" path="res://data/combats/ponygirl_race/ponygirl_race_05.tres" id="8"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="9"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="10"]
+[ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="11"]
+[ext_resource type="Texture2D" uid="uid://cimgracestrt01" path="res://assets/img/ponygirl_race_start.png" id="12"]
+
+[sub_resource type="Resource" id="Resource_vgold"]
+script = ExtResource("9")
+amount = "+{GOOD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_vrep"]
+script = ExtResource("10")
+amount = 2
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_varo"]
+script = ExtResource("11")
+amount = 15
+target = 2
+metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[sub_resource type="Resource" id="Resource_dgold"]
+script = ExtResource("9")
+amount = "{BAD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_daro"]
+script = ExtResource("11")
+amount = 10
+target = 2
+metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[resource]
+script = ExtResource("2")
+title = "Ponygirl Race"
+difficulty_penalty = 0
+scenes = Array[ExtResource("1")]([ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("8")])
+enemy_descriptors = Array[String](["Fierce", "Tough", "Skilled", "Determined", "Experienced", "Relentless"])
+enemy_names = Array[String](["Rivals", "Racers", "Competitors", "Opponents"])
+victory_actions = Array[ExtResource("3")]([SubResource("Resource_vgold"), SubResource("Resource_vrep"), SubResource("Resource_varo")])
+defeat_actions = Array[ExtResource("3")]([SubResource("Resource_dgold"), SubResource("Resource_daro")])
+victory_txt = "The ribbon hits {PONYNAME}’s chest. For a moment the roar is only for you. Stewards count the purse into your hand while your mare stands blowing, eyes bright, still wanting another furlong.
+
+It was a good race. The field will remember the name on her bit-ring."
+victory_img = ExtResource("12")
+defeat_txt = "You fade before the post. {PONYNAME} still finishes - she is too proud not to - but the fierce ones are already being walked out under wreaths.
+
+The stewards pay appearance coin and look past you. Soft loss. No one died. The next meet will not wait."
+metadata/_custom_type_script = "uid://ct66od486dv7w"

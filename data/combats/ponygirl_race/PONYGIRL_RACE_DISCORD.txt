@@ -1,0 +1,45 @@
+**Proposal:** Ponygirl Race combat (questline start)
+
+**From:** Lil Cthulhu WIP + Aksa scene note
+
+Work in Progress → playable first slice
+
+**Combat**
+- title: Ponygirl Race
+- difficulty_penalty: 0
+- enemy_descriptors: Fierce, Tough, Skilled, Determined, Experienced, Relentless
+- enemy_names: Rivals, Racers, Competitors, Opponents
+- Soft contest (like Farmwork): no village-rout on defeat
+
+**victory_txt:** Purse, roar, mare still wanting another furlong
+**victory_actions:** +{GOOD_WAGE}, +2 repute, all active +15 arousal
+**defeat_txt:** You fade, she still finishes, appearance coin
+**defeat_actions:** {BAD_WAGE}, all active +10 arousal
+
+**Scenes**
+1. Tight Turn — pack shoulder to shoulder; force the outside lane
+2. Grueling Stretch — long uphill; less-conditioned mares drop
+3. Over the Edge (Aksa) — too much carrot / worked too high; one mare cums; the field must hold focus or follow
+4. Crowded Start — rope, false twitch, messy break
+5. Final Straight — last kick for the ribbon
+
+**Event**
+Harbor Town random: “Ponygirl Race”
+- Enter the race → start combat
+- Watch from the rail → leave
+
+**Art**
+- Event / start scene: `assets/img/ponygirl_race_start.png`
+- Hill scene: `assets/img/ponygirl_race_hill.png`
+- Tight-turn / finish plates blocked by image moderation (text scenes still play)
+
+**Files**
+- `data/combats/ponygirl_race/ponygirl_race.tres`
+- `data/combats/ponygirl_race/ponygirl_race_01.tres` … `_05.tres`
+- `data/events/one_pagers/ponygirl_race.tres`
+- Harbor `random_events`
+
+**Design notes**
+- No named mares. Focused pony is whoever CombatManager picks (random active).
+- AI used: Yes (structuring Lil/Aksa notes into resources)
+- Credits: Lil Cthulhu (spec), Aksa (over-the-edge scene)
