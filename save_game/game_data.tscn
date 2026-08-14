@@ -22,6 +22,17 @@
 [ext_resource type="Resource" uid="uid://f6qtp4a0l7wd" path="res://data/perks/unhappy.tres" id="13_gwnvk"]
 [ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/wild.tres" id="14_gp8wl"]
 
+[sub_resource type="Resource" id="Resource_cq4wx"]
+script = ExtResource("3_fd73u")
+amount = "-{COST_DEATH}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_e6y42"]
+script = ExtResource("5_gd741")
+amount = -10
+target = 3
+metadata/_custom_type_script = "uid://cy0fnw6jwovce"
+
 [sub_resource type="Resource" id="Resource_872a7"]
 script = ExtResource("6_efdwm")
 text = "You decide to work {PONYNAME} on the lunge. You mount a long leash to her reins, crack the whip, and soon she prances in circles around you, every step digging the crotchstrap deep into her hungry pussy. 
@@ -138,6 +149,7 @@ metadata/_custom_type_script = "uid://cy0fnw6jwovce"
 
 [node name="GameData" type="Node" unique_id=1927241300]
 script = ExtResource("1_21oog")
+combat_defeat_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_cq4wx"), SubResource("Resource_e6y42")])
 training_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_mqmyc"), SubResource("Resource_0j7dv"), SubResource("Resource_at000"), SubResource("Resource_hlpe4")])
 teasing_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_nx3u7"), SubResource("Resource_girl5"), SubResource("Resource_mnk8w"), SubResource("Resource_u4d3l")])
 climax_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_tkrab"), SubResource("Resource_ps30a"), SubResource("Resource_fdpya"), SubResource("Resource_ckcii")])
