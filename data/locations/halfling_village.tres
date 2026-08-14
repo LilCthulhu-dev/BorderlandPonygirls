@@ -16,6 +16,7 @@
 [ext_resource type="Resource" uid="uid://cv08b45k61b5" path="res://data/events/one_pagers/traveling_tinker.tres" id="13_aj1b6"]
 [ext_resource type="Resource" uid="uid://dotjgayh1kg3y" path="res://data/events/harvest_cask/harvest_cask_start.tres" id="14_cask"]
 [ext_resource type="Resource" uid="uid://dotjf77il5agy" path="res://data/events/tide_fish/tide_fish_end.tres" id="15_fish"]
+[ext_resource type="Resource" uid="uid://cquesthaywst01" path="res://data/events/hay_wain/hay_wain_start.tres" id="16_hay"]
 
 [resource]
 script = ExtResource("3_silry")
@@ -23,6 +24,6 @@ title = "Halfling Village"
 description = "An idyllic halfling village surrounded by green fields, orchards, and gently rolling hills. Cozy farmhouses line the narrow lanes, and the air smells of fresh bread, hay, and woodsmoke."
 cheap_items = Array[ExtResource("1_al1pc")]([ExtResource("2_6eo28"), ExtResource("3_a48tm")])
 expensive_items = Array[ExtResource("1_al1pc")]([ExtResource("4_aj1b6"), ExtResource("5_028d7"), ExtResource("6_t0ekb")])
-random_events = Array[ExtResource("2_f1d78")]([ExtResource("8_1opi7"), ExtResource("9_h5cyg"), ExtResource("10_y5aox"), ExtResource("11_3b2u2"), ExtResource("12_a48tm"), ExtResource("13_aj1b6"), ExtResource("14_cask")])
+random_events = Array[ExtResource("2_f1d78")]([ExtResource("8_1opi7"), ExtResource("9_h5cyg"), ExtResource("10_y5aox"), ExtResource("11_3b2u2"), ExtResource("12_a48tm"), ExtResource("13_aj1b6"), ExtResource("14_cask"), ExtResource("16_hay")])
 quest_events = Array[ExtResource("2_f1d78")]([ExtResource("15_fish")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

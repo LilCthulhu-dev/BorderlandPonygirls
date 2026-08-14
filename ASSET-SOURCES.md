@@ -50,6 +50,10 @@ Monochrome ink event plates for six travel quests:
 * `assets/img/harvest_cask.png`
 * `assets/img/tide_fish.png`
 * `assets/img/bone_charm.png`
+* `assets/img/grain_levy.png`
+* `assets/img/hay_wain.png`
+* `assets/img/night_dispatch.png`
+* `assets/img/cave_salvage.png`
 
 **Source:** Imagine (xAI), with a later Bloom 2 face-recovery pass  
 **License:** AI-generated; CC0 to the extent applicable (same as other AI plates in this folder)
