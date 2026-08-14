@@ -79,6 +79,33 @@ text = "Credits"
 script = ExtResource("3_g3cjn")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
+[node name="LangLabel" type="Label" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=1152939400]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Language"
+horizontal_alignment = 1
+
+[node name="LangRow" type="HBoxContainer" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=1152939401]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 12
+
+[node name="LangEnBtn" type="Button" parent="Content/Content/HBoxContainer/VBoxContainer/LangRow" unique_id=1152939402]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "English"
+script = ExtResource("3_g3cjn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="LangDeBtn" type="Button" parent="Content/Content/HBoxContainer/VBoxContainer/LangRow" unique_id=1152939403]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Deutsch"
+script = ExtResource("3_g3cjn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
 [node name="CloseBtn" type="Button" parent="Content/Content/HBoxContainer/VBoxContainer" unique_id=1606310845]
 unique_name_in_owner = true
 layout_mode = 2

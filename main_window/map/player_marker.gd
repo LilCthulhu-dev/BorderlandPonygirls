@@ -82,7 +82,11 @@ func _update_target_point():
 	distance = _calculate_path_distance(navigation_path)
 	price = floori(distance * GameData.COSTS.travel)
 
-	travel_btn.text = "Cost: %s Gold" % price
+	if travel_btn.has_method("set_source_text"):
+		travel_btn._source_text = "Cost: %s Gold"
+		travel_btn.text = Utils.translate("Cost: %s Gold") % price
+	else:
+		travel_btn.text = Utils.translate("Cost: %s Gold") % price
 	travel_btn.visible = true
 
 	target_pos = to_local(nav_agent.get_final_position())

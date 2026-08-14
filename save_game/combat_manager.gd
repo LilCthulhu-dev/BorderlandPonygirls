@@ -70,23 +70,22 @@ static func defeat() -> void:
 	LocationManager.current_location = LocationManager.home_location
 
 static func get_victory_txt() -> String:
-	var txt := current_combat.victory_txt
+	var txt: String = Utils.translate(current_combat.victory_txt)
 	txt += "\n"
 	for action in current_combat.victory_actions:
 		txt += "\n" + action.get_result()
-	return Utils.translate(txt)
+	return txt
 
 static func get_defeat_txt() -> String:
-	var txt := current_combat.defeat_txt
+	var txt: String = Utils.translate(current_combat.defeat_txt)
 	txt += "\n"
 	if current_combat.defeat_actions.is_empty():
-		txt += "\n- Lose %s Gold" % GameData.COSTS.death
+		txt += "\n" + (Utils.translate("- Lose %s Gold") % GameData.COSTS.death)
 	else:
 		for action in current_combat.defeat_actions:
 			var result := action.get_result()
-
 			if not result.is_empty():
 				txt += "\n" + result
-	txt += "\n- All ponygirls lose %s loyalty" % 10
-	txt += "\n- Retreat back to your Home Village."
-	return Utils.translate(txt)
+	txt += "\n" + (Utils.translate("- All ponygirls lose %s loyalty") % 10)
+	txt += "\n" + Utils.translate("- Retreat back to your Home Village.")
+	return txt

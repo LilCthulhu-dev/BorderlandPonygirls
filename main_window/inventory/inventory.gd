@@ -27,7 +27,7 @@ func _update_warband():
 		_add_item_btn(item, false)
 
 func _update_shop():
-	shop_header.text = LocationManager.current_location.title
+	Utils.set_dynamic_label(shop_header, LocationManager.current_location.title)
 	for child in shop_grid.get_children():
 		child.queue_free()
 	for item in LocationManager.current_location.cheap_items:

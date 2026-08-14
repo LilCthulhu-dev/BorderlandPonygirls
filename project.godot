@@ -19,6 +19,7 @@ config/icon="uid://0tj1bax7qhb2"
 
 GameData="*uid://dgufvigkamnub"
 GlobalSignals="*uid://c1tyk5la1p5c"
+Settings="*res://singeltons/settings/settings.gd"
 TooltipManager="*uid://cjfhktqg0y42b"
 ModalManager="*uid://c04hc4f0cwyjw"
 AudioManager="*uid://bllsr017dv3ly"

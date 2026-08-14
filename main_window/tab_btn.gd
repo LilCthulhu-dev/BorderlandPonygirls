@@ -15,7 +15,8 @@ func _ready():
 	_adjust_position()
 	await get_tree().physics_frame
 	if index == 0:
-		GlobalSignals.tab_clicked.emit(index, text)
+		# Always emit English source title — listeners compare against EN keys (e.g. "Map").
+		GlobalSignals.tab_clicked.emit(index, _tab_title_key())
 
 func _add_shortcut() -> void:
 	var key_event := InputEventKey.new()
@@ -42,9 +43,16 @@ func _tween_pos(target_pos):
 	var tween = create_tween()
 	tween.parallel().tween_property(self, 'position', target_pos, 0.1)
 
+func _tab_title_key() -> String:
+	## Locale-stable page id (English btn_text), not the displayed label.
+	if not _source_text.is_empty():
+		return _source_text
+	return text
+
+
 func _on_pressed() -> void:
 	if GameData.game_state != Enums.GAME_STATES.MAIN: return
-	GlobalSignals.tab_clicked.emit(index, text)
+	GlobalSignals.tab_clicked.emit(index, _tab_title_key())
 
 func _on_mouse_entered() -> void:
 	if GameData.game_state != Enums.GAME_STATES.MAIN: return

@@ -7,15 +7,10 @@ class_name EventCheck
 @export var fail_actions: Array[Action]
 var used = false
 
-@export var txt := "":
-	get:
-		return Utils.translate(txt)
-@export_multiline var succes_txt := "":
-	get:
-		return Utils.translate(succes_txt)
-@export_multiline var fail_txt := "":
-	get:
-		return Utils.translate(fail_txt)
+## English sources; localize at display via Utils.translate.
+@export var txt := ""
+@export_multiline var succes_txt := ""
+@export_multiline var fail_txt := ""
 
 func reset():
 	used = false

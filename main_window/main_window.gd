@@ -49,7 +49,10 @@ func _add_tab_btn():
 		if page is not StoryPage: continue
 		page.index = index
 		var btn = TAB_BTN.instantiate()
-		btn.text = page.btn_text
+		if btn.has_method("set_source_text"):
+			btn.set_source_text(page.btn_text)
+		else:
+			btn.text = page.btn_text
 		btn.shortcut_key_string = page.shortcut_key_string
 		btn.index = index
 		tabs.add_child(btn)

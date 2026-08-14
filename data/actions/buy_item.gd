@@ -15,11 +15,10 @@ func use():
 func _get_txt() -> String:
 	var local_price = InventoryManager.get_local_price(item)
 	if amount > 0:
-		var txt = ""
-		txt += "Gain %s %s." % [abs(amount), item.title]
+		var item_name: String = Utils.translate(item.title) if item else ""
+		var txt: String = Utils.translate("Gain %s %s.") % [abs(amount), item_name]
 		txt += "\n"
-		txt += "Lose %s Gold." % local_price
-		txt = Utils.translate(txt)
+		txt += Utils.translate("Lose %s Gold.") % local_price
 		return txt
 	else:
 		return ""

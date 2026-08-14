@@ -12,8 +12,10 @@ func use():
 
 func _get_txt() -> String:
 	if amount > 0:
-		return Utils.translate("Gain %s %s." % [abs(amount), item.title])
+		var item_name: String = Utils.translate(item.title) if item else ""
+		return Utils.translate("Gain %s %s.") % [abs(amount), item_name]
 	elif amount < 0:
-		return Utils.translate("Lose %s %s." % [abs(amount), item.title])
+		var item_name: String = Utils.translate(item.title) if item else ""
+		return Utils.translate("Lose %s %s.") % [abs(amount), item_name]
 	else:
 		return ""

@@ -1,9 +1,8 @@
 extends _EventContent
 class_name EventBtn
 
-@export var txt := "":
-	get:
-		return Utils.translate(txt)
+## English source; localize at display via Utils.translate / DefaultBtn.
+@export var txt := ""
 @export var actions : Array[Action]
 @export var single_use = false
 @export var used = false

@@ -16,10 +16,10 @@ func _ready() -> void:
 	_update_content()
 
 func _update_content():
-	label_titel.text = LocationManager.current_event.titel
+	label_titel.text = Utils.translate(LocationManager.current_event.titel)
 	label_titel.visible = label_titel.text != ""
 
-	label_description.text = LocationManager.current_event.description
+	label_description.text = Utils.translate(LocationManager.current_event.description)
 	label_description.visible = label_description.text != ""
 
 	label_results.text = ""

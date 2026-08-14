@@ -10,14 +10,16 @@ const LOCATION_BTN = preload("uid://opy75q5d44yi")
 
 func _ready() -> void:
 	super()
+	if GlobalSignals and not GlobalSignals.language_changed.is_connected(_on):
+		GlobalSignals.language_changed.connect(_on)
 	_on()
 
 func _on() -> void:
 	super()
 	if not LocationManager.current_location: return
 	test_btn.visible = GameData.TESTING
-	titel_label.text = "%s" % LocationManager.current_location.title
-	description_label.text = "%s" % LocationManager.current_location.description
+	Utils.set_dynamic_label(titel_label, LocationManager.current_location.title)
+	Utils.set_dynamic_label(description_label, LocationManager.current_location.description)
 	image.texture = LocationManager.current_location.image
 	_update_quest_btns()
 
@@ -28,7 +30,12 @@ func _update_quest_btns() -> void:
 		if not e.requirements_are_met(): continue
 
 		var b := LOCATION_BTN.instantiate()
-		b.text = "> Quest: %s" % e.titel
+		var qtitle: String = Utils.translate(e.titel)
+		if b.has_method("set_source_text"):
+			b._source_text = "> Quest: %s"
+			b.text = Utils.translate("> Quest: %s") % qtitle
+		else:
+			b.text = Utils.translate("> Quest: %s") % qtitle
 		quest_btns.add_child(b)
 
 		var ce := ChangeEvent.new()

@@ -9,8 +9,8 @@ func use():
 
 func _get_txt() -> String:
 	if amount > 0:
-		return Utils.translate("Gain %s repute." % abs(amount))
+		return Utils.translate("Gain %s repute.") % abs(amount)
 	elif amount < 0:
-		return Utils.translate("Lose %s repute." % abs(amount))
+		return Utils.translate("Lose %s repute.") % abs(amount)
 	else:
 		return ""
