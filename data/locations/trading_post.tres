@@ -8,8 +8,7 @@
 [ext_resource type="Resource" uid="uid://c1j5rc8dheoqc" path="res://data/events/shady_pony_deal/shady_pony_deal1.tres" id="3_q1dao"]
 [ext_resource type="Resource" uid="uid://b8yrmk282tpxh" path="res://data/events/pony_offering/pony_offering_1.tres" id="4_cp2w7"]
 [ext_resource type="Resource" uid="uid://btdewgxsffs25" path="res://data/events/cattle_drive/cattle_drive_end.tres" id="5_3veny"]
-
-[ext_resource type="Resource" uid="uid://c7stablefair01" path="res://data/events/one_pagers/stable_fair.tres" id="6_fair"]
+[ext_resource type="Resource" uid="uid://b7mx4huk81b5" path="res://data/events/one_pagers/stable_fair.tres" id="6_fair"]
 [ext_resource type="Resource" uid="uid://cv08b45k61b5" path="res://data/events/one_pagers/traveling_tinker.tres" id="8_n2epe"]
 
 [resource]
