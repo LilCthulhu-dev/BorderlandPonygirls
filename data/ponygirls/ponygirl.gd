@@ -15,7 +15,12 @@ const LEVEL_BONUS_THRESHOLDS = [4, 5];
 @export var hair_color := ""
 @export var eye_color := ""
 @export var skin_tone := ""
-@export var portrait : Texture2D
+@export var _portrait : Texture2D
+var portrait: Texture2D:
+	set(value):
+		_portrait = value
+	get:
+		return get_display_texture()
 @export var xp := 0:
 	set(value):
 		xp = value
@@ -119,3 +124,62 @@ func _toggle_perk(perk_id: String, enable: bool):
 	var perk = PonygirlManager.get_perk_by_name(perk_id)
 	perks.erase(perk)
 	if enable && perk: perks.append(perk)
+
+# ======================================================= portraits (race_NN state lineart)
+func get_loyalty_state_key() -> String:
+	if loyalty <= LOYALTY_THRESHOLDS[0]:
+		return "unhappy"
+	if loyalty >= LOYALTY_THRESHOLDS[1]:
+		return "happy"
+	return "neutral"
+
+func get_arousal_state_key() -> String:
+	if arousal >= AROUSAL_THRESHOLDS[1]:
+		return "desperately_horny"
+	if arousal >= AROUSAL_THRESHOLDS[0]:
+		return "horny"
+	return "calm"
+
+func get_portrait_state_key() -> String:
+	return "%s_%s" % [get_loyalty_state_key(), get_arousal_state_key()]
+
+## Prefer portrait asset basename (elf_01, human_02) so state linearts match race pool.
+func get_portrait_slug() -> String:
+	if _portrait != null:
+		var path := _portrait.resource_path
+		if not path.is_empty():
+			return path.get_file().get_basename().to_lower()
+	return name.strip_edges().to_lower().replace("-", "_").replace(" ", "_")
+
+## State lineart by race id, then race base under assets/img/, then portrait export.
+func get_display_texture() -> Texture2D:
+	var base := get_portrait_slug()
+	if base.is_empty():
+		return _portrait
+	var state_key := get_portrait_state_key()
+	var candidates: Array[String] = [
+		"res://assets/img/ponygirls/states/lineart/%s_%s.png" % [base, state_key],
+		"res://assets/img/ponygirls/%s.png" % base,
+		"res://assets/img/%s.png" % base,
+	]
+	for path in candidates:
+		var tex := _load_portrait_texture(path)
+		if tex != null:
+			return tex
+	return _portrait
+
+func _load_portrait_texture(path: String) -> Texture2D:
+	if path.is_empty():
+		return null
+	if ResourceLoader.exists(path):
+		var res := load(path)
+		if res is Texture2D:
+			return res as Texture2D
+	if not FileAccess.file_exists(path):
+		return null
+	var loaded := Image.new()
+	if loaded.load(path) != OK:
+		return null
+	if loaded.get_format() != Image.FORMAT_RGBA8:
+		loaded.convert(Image.FORMAT_RGBA8)
+	return ImageTexture.create_from_image(loaded)

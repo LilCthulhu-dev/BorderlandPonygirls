@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Ponygirl" format=3 uid="uid://di2ke0th4h8tx"]
-
-[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="1_cfa52"]
-[ext_resource type="Script" uid="uid://b54fl41egas4m" path="res://data/ponygirls/ponygirl.gd" id="2_8oplb"]
-
-[resource]
-script = ExtResource("2_8oplb")
-loyalty = 0
-metadata/_custom_type_script = "uid://b54fl41egas4m"

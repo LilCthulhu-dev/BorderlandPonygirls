@@ -74,19 +74,23 @@ const SKIN_TONES := [
 ]
 const PORTRAITS := {
 	Enums.PONYGIRL_RACES.HUMAN: [
-		preload("res://assets/img/human_01.png"),
-		preload("res://assets/img/human_02.png"),
-		preload("res://assets/img/human_08.png"),
-		preload("res://assets/img/human_09.png")
+		preload("res://assets/img/ponygirls/human_01.png"),
+		preload("res://assets/img/ponygirls/human_02.png"),
+		preload("res://assets/img/ponygirls/human_03.png"),
+		preload("res://assets/img/ponygirls/human_04.png"),
+		preload("res://assets/img/ponygirls/human_05.png"),
+		preload("res://assets/img/ponygirls/human_08.png"),
+		preload("res://assets/img/ponygirls/human_09.png")
 	],
 	Enums.PONYGIRL_RACES.ELF: [
-		preload("res://assets/img/elf_01.png"),
-		preload("res://assets/img/elf_02.png"),
-		preload("res://assets/img/elf_03.png"),
-		preload("res://assets/img/elf_04.png")
+		preload("res://assets/img/ponygirls/elf_01.png"),
+		preload("res://assets/img/ponygirls/elf_02.png"),
+		preload("res://assets/img/ponygirls/elf_03.png"),
+		preload("res://assets/img/ponygirls/elf_04.png")
 	],
 	Enums.PONYGIRL_RACES.TIEFLING: [
-		preload("res://assets/img/tiefling_01.png")
+		preload("res://assets/img/ponygirls/tiefling_01.png"),
+		preload("res://assets/img/ponygirls/tiefling_02.png")
 	],
 }
 const MAX_ACTIVE := 4
@@ -160,6 +164,9 @@ static func slots_free() -> bool:
 	return ponygirls.size() < MAX_TOTAL
 
 static func add_ponygirl(pony: Ponygirl) -> void:
+	if pony == null:
+		push_error("PonygirlManager.add_ponygirl: pony is null")
+		return
 	if not slots_free():
 		return
 	var new_pony := pony.duplicate(true) as Ponygirl
