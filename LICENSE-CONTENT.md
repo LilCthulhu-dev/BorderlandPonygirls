@@ -4,12 +4,12 @@ Except where explicitly stated otherwise, the original non-code content in Borde
 
 This includes, where created by LilCthulhu or contributed under compatible terms:
 
-* Written game content
-* Dialogue and descriptions
-* Original icons and artwork
-* Eligible AI-generated images
-* Audio and other media
-* Documentation
+- Written game content
+- Dialogue and descriptions
+- Original icons and artwork
+- Eligible AI-generated images
+- Audio and other media
+- Documentation
 
 To the extent that copyright or related rights exist in this material, the respective rights holders waive those rights under CC0 1.0.
 
@@ -33,15 +33,7 @@ may hold in the artwork to the public domain under CC0 1.0.
 The following images were contributed by **Frozenhunter** and generated using
 Grok by xAI, including its Imagine image-generation tools:
 
-- `assets/img/elf_01.png`
-- `assets/img/elf_02.png`
-- `assets/img/elf_03.png`
-- `assets/img/elf_04.png`
-- `assets/img/human_01.png`
-- `assets/img/human_02.png`
-- `assets/img/human_08.png`
-- `assets/img/human_09.png`
-- `assets/img/tiefling_01.png`
+- all image files contained in: `assets/img/ponygirls/`
 
 ## Exceptions
 
