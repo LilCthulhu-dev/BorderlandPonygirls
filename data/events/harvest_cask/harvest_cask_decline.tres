@@ -1,19 +1,13 @@
-[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestharvdc01"]
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjgayh03x3y"]
 
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="1"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_7pphk"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3"]
-[ext_resource type="Texture2D" uid="uid://cimgquecask01" path="res://assets/img/harvest_cask.png" id="4"]
-
-[sub_resource type="Resource" id="Resource_return"]
-script = ExtResource("1")
-txt = "Return"
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[ext_resource type="Texture2D" uid="uid://xgvuvrgpuog3" path="res://assets/img/harvest_cask.png" id="4"]
 
 [resource]
 script = ExtResource("3")
 titel = "Harvest Cask"
-img = ExtResource("4")
 description = "The farmer sighs into his mug. “Then it’ll sit in the cellar another week, {TITLE}. Wine doesn’t mind waiting. Innkeepers do.”"
-content = Array[ExtResource("2")]([SubResource("Resource_return")])
+img = ExtResource("4")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

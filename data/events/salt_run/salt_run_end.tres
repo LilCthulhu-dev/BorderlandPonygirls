@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestrsaltend"]
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjglhyqk0qb"]
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="2"]
-[ext_resource type="Resource" uid="uid://cflagsaltrun01" path="res://data/flags/salt_run_01.tres" id="3"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_h8ywh"]
+[ext_resource type="Resource" uid="uid://d0wr582bl7wea" path="res://data/flags/salt_run_01.tres" id="3"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="4"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="5"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="6"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="7"]
-[ext_resource type="Texture2D" uid="uid://cimgquesalt01" path="res://assets/img/salt_run.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cmwowqe86ua5p" path="res://assets/img/salt_run.png" id="8"]
 
 [sub_resource type="Resource" id="Resource_flag"]
 script = ExtResource("4")
@@ -28,9 +29,9 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("7")
 titel = "Salt Run"
-img = ExtResource("8")
 description = "A village quartermaster pries the crate, sniffs, and grins. “Harbor salt. Good. The cooks will stop threatening to boil boots.”
 
 He counts coin into your palm without looking up. “Tell the clerk we got it dry.”"
+img = ExtResource("8")
 open_actions = Array[ExtResource("1")]([SubResource("Resource_flag"), SubResource("Resource_gold"), SubResource("Resource_repute")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

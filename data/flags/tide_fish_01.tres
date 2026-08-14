@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://cflagtidefish1"]
+[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://d0wr7hst8u1ua"]
 
 [ext_resource type="Texture2D" uid="uid://f1guc4u3mljh" path="res://assets/icons/horseshoe.png" id="1_icon"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="1_script"]

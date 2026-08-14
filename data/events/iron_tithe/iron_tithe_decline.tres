@@ -1,19 +1,13 @@
-[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestrirondc1"]
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjgk7hteyfy"]
 
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="1"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_ojt6v"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3"]
-[ext_resource type="Texture2D" uid="uid://cimgqueiron01" path="res://assets/img/iron_tithe.png" id="4"]
-
-[sub_resource type="Resource" id="Resource_return"]
-script = ExtResource("1")
-txt = "Return"
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[ext_resource type="Texture2D" uid="uid://h8k5oxtskpre" path="res://assets/img/iron_tithe.png" id="4"]
 
 [resource]
 script = ExtResource("3")
 titel = "Iron Tithe"
-img = ExtResource("4")
 description = "The elder snorts. “Then someone else will drag it. Don’t complain when your bits start rusting, {TITLE}.”"
-content = Array[ExtResource("2")]([SubResource("Resource_return")])
+img = ExtResource("4")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

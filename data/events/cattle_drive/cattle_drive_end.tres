@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_x8c6f"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="6_ltxn4"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="6_torkx"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="7_qk8t2"]
 
 [sub_resource type="Resource" id="Resource_x814x"]
 script = ExtResource("5_x8c6f")
@@ -19,6 +20,11 @@ script = ExtResource("6_ltxn4")
 amount = "{MEDIUM_WAGE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
+[sub_resource type="Resource" id="Resource_wv51q"]
+script = ExtResource("7_qk8t2")
+amount = 1
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
 [resource]
 script = ExtResource("6_torkx")
 titel = "Cattle Drive"
@@ -27,5 +33,5 @@ description = "You meet with the farmer’s contact, a stout halfling merchant.
 “He hired a whole warband to move his cattle? The old man really needs to accept that he’s getting too old for this kind of work. Shame he has no sons to take over the business.”
 
 The halfling shakes his head, then waves over a few of his men. “Anyhow, enough dawdling. My men will take over the hu-cows from here. Thanks for your help, {TITLE}.”"
-open_actions = Array[ExtResource("1_2uss4")]([SubResource("Resource_x814x"), SubResource("Resource_lkv00")])
+open_actions = Array[ExtResource("1_2uss4")]([SubResource("Resource_x814x"), SubResource("Resource_lkv00"), SubResource("Resource_wv51q")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
