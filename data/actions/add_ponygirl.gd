@@ -3,18 +3,22 @@ class_name AddPonygirl
 
 @export var ponygirl: Ponygirl = preload("res://data/ponygirls/default_pony.tres")
 
+@export var force_name = ""
 @export var force_race := Enums.PONYGIRL_RACES.UNKNOWN
-@export_range(-1, 100, 1) var force_loyalty: int = -1
-@export_range(-1, 100, 1) var force_arousal: int = -1
-@export_range(-1, 200, 1) var force_xp: int = -1
+@export var force_hair_color := ""
+@export var force_eye_color := ""
+@export var force_skin_tone := ""
+@export var force_portrait : Texture2D
+
+@export_range(0, 100, 1) var force_loyalty: int = 0
+@export_range(0, 100, 1) var force_arousal: int = 0
+@export_range(0, 80, 1) var force_xp: int = 0
 @export var perks :Array[Perk] = []
 
-@export var guarantee_perk_ids: PackedStringArray = []
-
-var _pending_name: String = ""
+var _pending_name: String = Ponygirl.get_random_name()
 
 func use() -> void:
-	var instance: Ponygirl = _spawn_instance()
+	var instance: Ponygirl = _get_instance()
 	PonygirlManager.add_ponygirl(instance)
 
 func requirement_met() -> bool:
@@ -26,20 +30,23 @@ func get_tooltip() -> String:
 func get_result() -> String:
 	return Utils.translate("- Add ponygirl %s to your stable") % _pending_name
 
-func _source_name_hint() -> String:
-	if ponygirl != null and not ponygirl.name.is_empty():
-		return ponygirl.name
-	return Ponygirl.get_random_name()
-
-func _spawn_instance() -> Ponygirl:
+func _get_instance() -> Ponygirl:
 	var p : Ponygirl = ponygirl if ponygirl != null else load("res://data/ponygirls/default_pony.tres")
 	p = p.duplicate(true)
 
 	p.id = ""
-	if _pending_name.is_empty():
-		_pending_name = Ponygirl.get_random_name()
-	p.name = _pending_name
+	if force_name != "":
+		p.name =force_name
+	else:
+		p.name = _pending_name
+
 	p._race = force_race
+	p.hair_color = force_hair_color
+	p.eye_color = force_eye_color
+	p.skin_tone = force_skin_tone
+	if force_portrait != null:
+		p.portrait = force_portrait
+
 	p.xp = force_xp
 	p.loyalty = force_loyalty
 	p.arousal = force_arousal
