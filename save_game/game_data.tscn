@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="3_fd73u"]
 [ext_resource type="Resource" uid="uid://djvanp6euqmm0" path="res://data/perks/big_tits.tres" id="3_fuc7p"]
 [ext_resource type="Script" uid="uid://dc1bca6pcahfr" path="res://data/actions/change_xp.gd" id="4_efdwm"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="4_gd741"]
 [ext_resource type="Resource" uid="uid://bgcens45256st" path="res://data/perks/brat.tres" id="4_nofhj"]
 [ext_resource type="Resource" uid="uid://3gwi3hkmfik7" path="res://data/perks/cock_hungry.tres" id="5_0asnj"]
 [ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="5_gd741"]
@@ -22,6 +23,16 @@
 [ext_resource type="Resource" uid="uid://f6qtp4a0l7wd" path="res://data/perks/unhappy.tres" id="13_gwnvk"]
 [ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/wild.tres" id="14_gp8wl"]
 
+[sub_resource type="Resource" id="Resource_mqmyc"]
+script = ExtResource("3_fd73u")
+amount = "{MEDIUM_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_872a7"]
+script = ExtResource("4_gd741")
+amount = 2
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
 [sub_resource type="Resource" id="Resource_cq4wx"]
 script = ExtResource("3_fd73u")
 amount = "-{COST_DEATH}"
@@ -33,7 +44,7 @@ amount = -10
 target = 3
 metadata/_custom_type_script = "uid://cy0fnw6jwovce"
 
-[sub_resource type="Resource" id="Resource_872a7"]
+[sub_resource type="Resource" id="Resource_0v50s"]
 script = ExtResource("6_efdwm")
 text = "You decide to work {PONYNAME} on the lunge. You mount a long leash to her reins, crack the whip, and soon she prances in circles around you, every step digging the crotchstrap deep into her hungry pussy. 
 
@@ -56,9 +67,9 @@ Once all is prepared, you let the whip crack above her head, and soon the horny 
 You keep her walking until she barely thinks anymore, just stomping blindly along, back straight, tits out, cunt dripping."
 metadata/_custom_type_script = "uid://ckie55vduhbok"
 
-[sub_resource type="Resource" id="Resource_mqmyc"]
+[sub_resource type="Resource" id="Resource_ur0se"]
 script = ExtResource("7_gd741")
-rng_text = Array[ExtResource("6_efdwm")]([SubResource("Resource_872a7"), SubResource("Resource_0gr2t"), SubResource("Resource_te0br")])
+rng_text = Array[ExtResource("6_efdwm")]([SubResource("Resource_0v50s"), SubResource("Resource_0gr2t"), SubResource("Resource_te0br")])
 metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_0j7dv"]
@@ -149,8 +160,9 @@ metadata/_custom_type_script = "uid://cy0fnw6jwovce"
 
 [node name="GameData" type="Node" unique_id=1927241300]
 script = ExtResource("1_21oog")
+combat_victory_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_mqmyc"), SubResource("Resource_872a7")])
 combat_defeat_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_cq4wx"), SubResource("Resource_e6y42")])
-training_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_mqmyc"), SubResource("Resource_0j7dv"), SubResource("Resource_at000"), SubResource("Resource_hlpe4")])
+training_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_ur0se"), SubResource("Resource_0j7dv"), SubResource("Resource_at000"), SubResource("Resource_hlpe4")])
 teasing_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_nx3u7"), SubResource("Resource_girl5"), SubResource("Resource_mnk8w"), SubResource("Resource_u4d3l")])
 climax_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_tkrab"), SubResource("Resource_ps30a"), SubResource("Resource_fdpya"), SubResource("Resource_ckcii")])
 list_of_perks = Array[ExtResource("2_8acbl")]([ExtResource("3_fuc7p"), ExtResource("4_nofhj"), ExtResource("5_0asnj"), ExtResource("6_khn66"), ExtResource("7_ajtu8"), ExtResource("8_pwmmk"), ExtResource("9_tdxlw"), ExtResource("10_6tarp"), ExtResource("11_vnpa2"), ExtResource("12_2owb6"), ExtResource("13_gwnvk"), ExtResource("14_gp8wl")])
