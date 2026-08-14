@@ -10,6 +10,12 @@
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="6"]
 [ext_resource type="Resource" uid="uid://cb5lg1c5twolq" path="res://data/ponygirls/default_pony.tres" id="6_4iw1d"]
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="6_svys2"]
+[ext_resource type="Resource" uid="uid://ccqonjmkfn23v" path="res://data/perks/submissive.tres" id="7_sub"]
+[ext_resource type="Resource" uid="uid://bb6t5y2nu83pj" path="res://data/perks/strong.tres" id="8_strong"]
+[ext_resource type="Resource" uid="uid://2vmtjdwwxxth" path="res://data/perks/hardy.tres" id="9_hardy"]
+[ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/wild.tres" id="10_wild"]
+[ext_resource type="Resource" uid="uid://bgcens45256st" path="res://data/perks/brat.tres" id="11_brat"]
 
 [sub_resource type="Resource" id="Resource_loyal_desc"]
 script = ExtResource("1")
@@ -79,7 +85,6 @@ metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 script = ExtResource("3")
 force_loyalty = 25
 force_arousal = 35
-force_xp = 0
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_green_back"]
@@ -107,6 +112,7 @@ script = ExtResource("3")
 force_loyalty = 65
 force_arousal = 40
 force_xp = 20
+perks = Array[ExtResource("6_svys2")]([ExtResource("7_sub")])
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_sub_back"]
@@ -126,7 +132,7 @@ metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_strong_gold"]
 script = ExtResource("2")
-amount = "-{COST_TRAINING}"
+amount = "-{COST_EXPENSIVE_PONYGIRL}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_strong_add"]
@@ -134,6 +140,7 @@ script = ExtResource("3")
 force_loyalty = 55
 force_arousal = 45
 force_xp = 45
+perks = Array[ExtResource("6_svys2")]([ExtResource("8_strong"), ExtResource("9_hardy")])
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_strong_back"]
@@ -153,7 +160,7 @@ metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_wild_gold"]
 script = ExtResource("2")
-amount = "-{COST_TRAINING}"
+amount = "-{COST_EXPENSIVE_PONYGIRL}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_wild_add"]
@@ -161,6 +168,7 @@ script = ExtResource("3")
 force_loyalty = 35
 force_arousal = 55
 force_xp = 30
+perks = Array[ExtResource("6_svys2")]([ExtResource("10_wild"), ExtResource("11_brat")])
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_wild_back"]
