@@ -50,3 +50,8 @@ func translate(text : String) -> String:
 
 func roll_dice(max_number := 100):
 	return rng.randi_range(1, max_number)
+
+func clear_container(container: Container) -> void:
+	for child in container.get_children():
+		container.remove_child(child)
+		child.queue_free()

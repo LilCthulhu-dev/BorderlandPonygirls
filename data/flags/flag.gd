@@ -6,3 +6,6 @@ var id: StringName:
 		return StringName(resource_path.get_file().get_basename())
 @export var image : Texture2D
 @export_multiline var description = ""
+
+func add_quest_icon():
+	return image != null and description != ""
