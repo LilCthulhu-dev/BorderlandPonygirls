@@ -1,13 +1,14 @@
 [gd_resource type="Resource" script_class="Ponygirl" format=3 uid="uid://yjbidp1jrcj2"]
 
 [ext_resource type="Script" uid="uid://b54fl41egas4m" path="res://data/ponygirls/ponygirl.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://biygo2g6lyxsa" path="res://assets/img/elf_01.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://w5keaffpkj62" path="res://assets/img/ponygirls/elf_01.png" id="1_36c3i"]
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="2_oc43r"]
 
 [resource]
 script = ExtResource("1")
 name = "Lula"
 _race = 2
-portrait = ExtResource("2")
+_portrait = ExtResource("1_36c3i")
 xp = 25
 loyalty = 100
 arousal = 25

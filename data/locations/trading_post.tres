@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://btdewgxsffs25" path="res://data/events/cattle_drive/cattle_drive_end.tres" id="5_3veny"]
 
 [ext_resource type="Resource" uid="uid://c7stablefair01" path="res://data/events/one_pagers/stable_fair.tres" id="6_fair"]
+[ext_resource type="Resource" uid="uid://cv08b45k61b5" path="res://data/events/one_pagers/traveling_tinker.tres" id="8_n2epe"]
 
 [resource]
 script = ExtResource("2_5ho7t")
@@ -17,6 +18,6 @@ title = "Trading Post"
 image = ExtResource("1_0rab4")
 description = "A few sturdy-looking buildings, a well-kept stable, a solid wall, and grim-faced guards. The tiny outpost isn’t much to write home about, but it is well defended and secure. Out here, most people are used to the sight of a goblin warband, so no one even looks twice at you or your ponygirls.  You’re just another trader and your she-beasts is nothing but cattle."
 expensive_items = Array[ExtResource("1_gvkq6")]([ExtResource("2_3veny")])
-random_events = Array[ExtResource("2_1xhgw")]([ExtResource("3_q1dao"), ExtResource("4_cp2w7"), ExtResource("6_fair")])
+random_events = Array[ExtResource("2_1xhgw")]([ExtResource("3_q1dao"), ExtResource("4_cp2w7"), ExtResource("6_fair"), ExtResource("8_n2epe")])
 quest_events = Array[ExtResource("2_1xhgw")]([ExtResource("5_3veny")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

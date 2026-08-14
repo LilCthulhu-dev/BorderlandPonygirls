@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddreko2x7puul"
-path="res://.godot/imported/human_08.png-f4383118b6f052b81680aaacb844b24b.ctex"
+uid="uid://b7wl3kdpddtt1"
+path="res://.godot/imported/traveling_tinker.png-ece120118e3500b16569a017914e5a75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/human_08.png"
-dest_files=["res://.godot/imported/human_08.png-f4383118b6f052b81680aaacb844b24b.ctex"]
+source_file="res://assets/img/traveling_tinker.png"
+dest_files=["res://.godot/imported/traveling_tinker.png-ece120118e3500b16569a017914e5a75.ctex"]
 
 [params]
 
