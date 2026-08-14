@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://c3jxucw5l3to6"]
+
+[ext_resource type="Script" uid="uid://cb0vyk5dylni8" path="res://main_window/stable/quest_icon.gd" id="1_diljl"]
+[ext_resource type="Texture2D" uid="uid://f1guc4u3mljh" path="res://assets/icons/horseshoe.png" id="1_xrlfp"]
+
+[node name="QuestIcon" type="ColorRect" unique_id=1141224428]
+custom_minimum_size = Vector2(75, 75)
+color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+script = ExtResource("1_diljl")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=932446201]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=2021780360]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("1_xrlfp")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
