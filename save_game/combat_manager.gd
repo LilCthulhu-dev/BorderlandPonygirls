@@ -9,7 +9,7 @@ const ENEMY_MAX_HEALTH: = 3
 @export var _current_scene: CombatScene
 @export var _last_scene: CombatScene
 
-
+# ================================================== set/get
 static var current_combat: Combat:
 	set(value):
 		GameData.combat_manager._current_combat = value
@@ -36,54 +36,53 @@ static var last_scene: CombatScene:
 	get:
 		return GameData.combat_manager._last_scene
 
-
-static func start_combat() -> void :
+# ================================================== helper
+static func start_combat() -> void:
 	enemy_name = current_combat.get_enemy_name()
 	enemy_health = ENEMY_MAX_HEALTH
 	PonygirlManager.focused_ponygirl = PonygirlManager.get_random_active_ponygirl()
 	current_scene = null
 	last_scene = null
 
-static func select_next_scene() -> void :
+static func select_next_scene() -> void:
 	PonygirlManager.focused_ponygirl = PonygirlManager.get_random_active_ponygirl()
 	last_scene = current_scene
 	current_scene = current_combat.get_next_scene(last_scene)
 
-static func action_success() -> void :
+static func action_success() -> void:
 	enemy_health -= 1
 
-static func action_failure() -> void :
+static func action_failure() -> void:
 	AttributesManager.current_health -= 1
 
-static func victory() -> void :
+static func victory() -> void:
 	for action in current_combat.victory_actions:
 		action.use()
 
-static func defeat() -> void :
-	# Custom defeat_actions = soft failure (e.g. farmwork): only those rewards/penalties.
-	# Empty defeat_actions = hard combat rout: death gold, loyalty hit, retreat home.
+static func defeat() -> void:
 	if current_combat.defeat_actions.is_empty():
 		AttributesManager.gold -= GameData.COSTS.death
 		for pony in PonygirlManager.ponygirls:
-			pony.loyalty -= 10
+			if pony.active:
+				pony.loyalty -= 10
 		LocationManager.current_location = LocationManager.home_location
 	else:
 		for action in current_combat.defeat_actions:
 			action.use()
 
 static func get_victory_txt() -> String:
-	var txt: = current_combat.victory_txt
+	var txt : = current_combat.victory_txt
 	txt += "\n"
 	for action in current_combat.victory_actions:
 		txt += "\n" + action.get_result()
 	return Utils.translate(txt)
 
 static func get_defeat_txt() -> String:
-	var txt: = current_combat.defeat_txt
+	var txt : = current_combat.defeat_txt
 	txt += "\n"
 	if current_combat.defeat_actions.is_empty():
 		txt += "\n- Lose %s Gold" % GameData.COSTS.death
-		txt += "\n- All ponygirls lose %s loyalty" % 10
+		txt += "\n- All active ponygirls lose %s loyalty" % 10
 		txt += "\n- Retreat back to your Home Village."
 	else:
 		for action in current_combat.defeat_actions:
