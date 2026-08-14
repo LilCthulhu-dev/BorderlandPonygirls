@@ -14,8 +14,8 @@
 [ext_resource type="Resource" uid="uid://cx4xaaaw3fqgl" path="res://data/events/one_pagers/pony_on_display_01.tres" id="11_3b2u2"]
 [ext_resource type="Resource" uid="uid://cm06qa1machn3" path="res://data/events/cattle_drive/cattle_drive_start.tres" id="12_a48tm"]
 [ext_resource type="Resource" uid="uid://cv08b45k61b5" path="res://data/events/one_pagers/traveling_tinker.tres" id="13_aj1b6"]
-[ext_resource type="Resource" uid="uid://cquestharvst01" path="res://data/events/harvest_cask/harvest_cask_start.tres" id="14_cask"]
-[ext_resource type="Resource" uid="uid://cquestfishend1" path="res://data/events/tide_fish/tide_fish_end.tres" id="15_fish"]
+[ext_resource type="Resource" uid="uid://dotjgayh1kg3y" path="res://data/events/harvest_cask/harvest_cask_start.tres" id="14_cask"]
+[ext_resource type="Resource" uid="uid://dotjf77il5agy" path="res://data/events/tide_fish/tide_fish_end.tres" id="15_fish"]
 
 [resource]
 script = ExtResource("3_silry")

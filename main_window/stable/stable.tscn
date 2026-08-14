@@ -7,6 +7,7 @@
 [ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="5_10lfa"]
 [ext_resource type="PackedScene" uid="uid://bvm5rv6wc627l" path="res://templates/attribute_node.tscn" id="6_85wuu"]
 [ext_resource type="PackedScene" uid="uid://t05scylbl4ox" path="res://main_window/stable/care_btn.tscn" id="6_ffwm5"]
+[ext_resource type="PackedScene" uid="uid://c3jxucw5l3to6" path="res://main_window/stable/quest_icon.tscn" id="8_qt5k6"]
 
 [node name="Stable" unique_id=1948255639 instance=ExtResource("1_3bi1d")]
 script = ExtResource("2_ynkwm")
@@ -69,7 +70,7 @@ size_flags_vertical = 3
 [node name="Label4" type="Label" parent="Content/ScrollContainer/VBoxContainer" index="6" unique_id=2026659436]
 layout_mode = 2
 theme = ExtResource("5_10lfa")
-text = "Care Actions"
+text = "Care Actions (Drag & Drop)"
 
 [node name="GridContainer2" type="GridContainer" parent="Content/ScrollContainer/VBoxContainer" index="7" unique_id=68203356]
 layout_mode = 2
@@ -154,4 +155,33 @@ size_flags_horizontal = 8
 attribute = 5
 
 [node name="HSeparator2" type="HSeparator" parent="Content/VBoxContainer2" index="3" unique_id=628818769]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Content/VBoxContainer2" index="4" unique_id=537679949]
+layout_mode = 2
+theme = ExtResource("5_10lfa")
+text = "Quests"
+
+[node name="QuestIcons" type="GridContainer" parent="Content/VBoxContainer2" index="5" unique_id=1827064211]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+columns = 6
+
+[node name="QuestIcon" parent="Content/VBoxContainer2/QuestIcons" index="0" unique_id=1141224428 instance=ExtResource("8_qt5k6")]
+layout_mode = 2
+
+[node name="QuestIcon2" parent="Content/VBoxContainer2/QuestIcons" index="1" unique_id=421697757 instance=ExtResource("8_qt5k6")]
+layout_mode = 2
+
+[node name="QuestIcon3" parent="Content/VBoxContainer2/QuestIcons" index="2" unique_id=1020433561 instance=ExtResource("8_qt5k6")]
+layout_mode = 2
+
+[node name="QuestIcon4" parent="Content/VBoxContainer2/QuestIcons" index="3" unique_id=1752592139 instance=ExtResource("8_qt5k6")]
+layout_mode = 2
+
+[node name="QuestIcon5" parent="Content/VBoxContainer2/QuestIcons" index="4" unique_id=1597171219 instance=ExtResource("8_qt5k6")]
+layout_mode = 2
+
+[node name="QuestIcon6" parent="Content/VBoxContainer2/QuestIcons" index="5" unique_id=1831026836 instance=ExtResource("8_qt5k6")]
 layout_mode = 2
