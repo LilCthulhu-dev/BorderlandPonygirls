@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nujd6380d3jy"
-path="res://.godot/imported/human_09_neutral_calm.png-bc6056525a49f8a591439662c6d89fa9.ctex"
+uid="uid://c1ll5kx7slxd"
+path="res://.godot/imported/elf_05.png-0c138466a320665563444786e0698a19.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirls/states/lineart/human_09_neutral_calm.png"
-dest_files=["res://.godot/imported/human_09_neutral_calm.png-bc6056525a49f8a591439662c6d89fa9.ctex"]
+source_file="res://assets/img/ponygirls/elf_05.png"
+dest_files=["res://.godot/imported/elf_05.png-0c138466a320665563444786e0698a19.ctex"]
 
 [params]
 

@@ -80,13 +80,13 @@ const PORTRAITS := {
 		preload("res://assets/img/ponygirls/human_04.png"),
 		preload("res://assets/img/ponygirls/human_05.png"),
 		preload("res://assets/img/ponygirls/human_08.png"),
-		preload("res://assets/img/ponygirls/human_09.png")
 	],
 	Enums.PONYGIRL_RACES.ELF: [
 		preload("res://assets/img/ponygirls/elf_01.png"),
 		preload("res://assets/img/ponygirls/elf_02.png"),
 		preload("res://assets/img/ponygirls/elf_03.png"),
-		preload("res://assets/img/ponygirls/elf_04.png")
+		preload("res://assets/img/ponygirls/elf_04.png"),
+		preload("res://assets/img/ponygirls/elf_05.png"),
 	],
 	Enums.PONYGIRL_RACES.TIEFLING: [
 		preload("res://assets/img/ponygirls/tiefling_01.png"),
