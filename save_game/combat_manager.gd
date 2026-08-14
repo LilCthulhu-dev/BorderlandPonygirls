@@ -3,11 +3,11 @@ class_name CombatManager
 
 const ENEMY_MAX_HEALTH: = 3
 
-@export var _current_combat: Combat
-@export var _enemy_name: = ""
-@export var _enemy_health: = 0
-@export var _current_scene: CombatScene
-@export var _last_scene: CombatScene
+@export var _current_combat : Combat
+@export var _enemy_name : = ""
+@export var _enemy_health : = 0
+@export var _current_scene : CombatScene
+@export var _last_scene : CombatScene
 
 # ================================================== set/get
 static var current_combat: Combat:
