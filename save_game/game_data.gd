@@ -1,6 +1,6 @@
 extends Node
 
-const TESTING = true
+# ================================================== game balance values
 const COSTS = {
 	rest = 25,
 	travel = 0.1, # per pixel
@@ -16,10 +16,17 @@ const COSTS = {
 	climax = 50
 }
 
+@export_group("Actions")
+@export var combat_victory_actions : Array[Action]
+@export var combat_defeat_actions : Array[Action]
+
 @export var training_actions : Array[Action]
 @export var teasing_actions : Array[Action]
 @export var climax_actions : Array[Action]
 @export var list_of_perks :Array[Perk] = []
+
+# ================================================== game state
+const TESTING = true
 
 var old_game_state = Enums.GAME_STATES.NONE
 var game_state = Enums.GAME_STATES.START:
