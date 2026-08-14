@@ -3,16 +3,9 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_h5bs3"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_nsj6j"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_mvd6v"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3_nsj6j"]
-
-[sub_resource type="Resource" id="Resource_dc5d1"]
-script = ExtResource("3_nsj6j")
-txt = "Return"
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]
 script = ExtResource("3_mvd6v")
 titel = "Cattle Drive"
 description = "“What a shame,” the old farmer says, shaking his head. “But I respect your decision, {TITLE}.”"
-content = Array[ExtResource("2_nsj6j")]([SubResource("Resource_dc5d1")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
