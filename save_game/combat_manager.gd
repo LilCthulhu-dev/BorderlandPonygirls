@@ -62,12 +62,13 @@ static func victory() -> void:
 static func defeat() -> void:
 	if current_combat.defeat_actions.is_empty():
 		AttributesManager.gold -= GameData.COSTS.death
+		for pony in PonygirlManager.ponygirls:
+			if pony.active:
+				pony.loyalty -= 10
+		LocationManager.current_location = LocationManager.home_location
 	else:
 		for action in current_combat.defeat_actions:
 			action.use()
-	for pony in PonygirlManager.ponygirls:
-		pony.loyalty -= 10
-	LocationManager.current_location = LocationManager.home_location
 
 static func get_victory_txt() -> String:
 	var txt: String = Utils.translate(current_combat.victory_txt)
@@ -81,11 +82,11 @@ static func get_defeat_txt() -> String:
 	txt += "\n"
 	if current_combat.defeat_actions.is_empty():
 		txt += "\n" + (Utils.translate("- Lose %s Gold") % GameData.COSTS.death)
+		txt += "\n" + (Utils.translate("- All active ponygirls lose %s loyalty") % 10)
+		txt += "\n" + Utils.translate("- Retreat back to your Home Village.")
 	else:
 		for action in current_combat.defeat_actions:
 			var result := action.get_result()
 			if not result.is_empty():
 				txt += "\n" + result
-	txt += "\n" + (Utils.translate("- All ponygirls lose %s loyalty") % 10)
-	txt += "\n" + Utils.translate("- Retreat back to your Home Village.")
 	return txt

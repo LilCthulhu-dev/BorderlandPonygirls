@@ -13,6 +13,9 @@
 [ext_resource type="Resource" uid="uid://h6vp6e7wdoup" path="res://data/events/pony_panic/pony_panic_01.tres" id="9_to240"]
 [ext_resource type="Resource" uid="uid://cv08b45k61b5" path="res://data/events/one_pagers/traveling_tinker.tres" id="12_s0q40"]
 [ext_resource type="Resource" uid="uid://cx4xaaaw3fqgl" path="res://data/events/one_pagers/pony_on_display_01.tres" id="13_t7dvf"]
+[ext_resource type="Resource" uid="uid://cquestrironst1" path="res://data/events/iron_tithe/iron_tithe_start.tres" id="14_iron"]
+[ext_resource type="Resource" uid="uid://cquestrsaltend" path="res://data/events/salt_run/salt_run_end.tres" id="15_salt"]
+[ext_resource type="Resource" uid="uid://cquestboneend1" path="res://data/events/bone_charm/bone_charm_end.tres" id="16_bone"]
 
 [resource]
 script = ExtResource("1_s87no")
@@ -23,6 +26,7 @@ description = "Your home village. Its a sprawling maze of huts and raised walkwa
 At the center stand the large stables, sheltering both the residents’ ponygirls and the she-beasts from visiting warbands. Stablehands tend to the ponycunts with quiet dedication, ensuring they are fed, watered, and kept properly horny."
 cheap_items = Array[ExtResource("1_to240")]([ExtResource("2_e3v7j"), ExtResource("3_0h381")])
 expensive_items = Array[ExtResource("1_to240")]([ExtResource("4_s0q40"), ExtResource("5_t7dvf"), ExtResource("6_ye50s")])
-random_event_chance = 0
-random_events = Array[ExtResource("2_ukn7i")]([ExtResource("9_to240"), ExtResource("3_ukn7i"), ExtResource("13_t7dvf"), ExtResource("12_s0q40")])
+random_event_chance = 25
+random_events = Array[ExtResource("2_ukn7i")]([ExtResource("9_to240"), ExtResource("3_ukn7i"), ExtResource("13_t7dvf"), ExtResource("12_s0q40"), ExtResource("14_iron")])
+quest_events = Array[ExtResource("2_ukn7i")]([ExtResource("15_salt"), ExtResource("16_bone")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjgk7hte0qb"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="2"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_3li8m"]
+[ext_resource type="Resource" uid="uid://eb6basc8ex8s" path="res://data/flags/iron_tithe_01.tres" id="3"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="4"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="5"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="6"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://h8k5oxtskpre" path="res://assets/img/iron_tithe.png" id="8"]
+
+[sub_resource type="Resource" id="Resource_flag"]
+script = ExtResource("4")
+remove_flag = Array[ExtResource("2")]([ExtResource("3")])
+required_flag = Array[ExtResource("2")]([ExtResource("3")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_gold"]
+script = ExtResource("5")
+amount = "{MEDIUM_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_repute"]
+script = ExtResource("6")
+amount = 1
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[resource]
+script = ExtResource("7")
+titel = "Iron Tithe"
+description = "The post smith checks the village mark, hefts a bar, and nods. “Good iron. We’ll turn it into bits and buckle-tongues before the week is out.”
+
+He pays the tithe-fee without haggling. “Tell the elder the next batch can wait until the rains stop.”"
+img = ExtResource("8")
+open_actions = Array[ExtResource("1")]([SubResource("Resource_flag"), SubResource("Resource_gold"), SubResource("Resource_repute")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

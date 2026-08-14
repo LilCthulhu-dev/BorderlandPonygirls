@@ -79,6 +79,7 @@ func translate(text : String) -> String:
 		"{COST_TRAVEL}": GameData.COSTS.travel,
 		"{COST_CHEAP_PONYGIRL}": GameData.COSTS.ponygirl_cheap,
 		"{COST_PONYGIRL}": GameData.COSTS.ponygirl_normal,
+		"{COST_EXPENSIVE_PONYGIRL}": GameData.COSTS.ponygirl_expensive,
 		"{COST_TRAINING}": GameData.COSTS.training,
 		"{COST_TEASING}": GameData.COSTS.teasing,
 		"{COST_CLIMAX}": GameData.COSTS.climax,

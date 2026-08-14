@@ -7,6 +7,7 @@ const COSTS = {
 	death = 200,
 	ponygirl_cheap = 60,
 	ponygirl_normal = 80,
+	ponygirl_expensive = 100,
 	good_wage = 300,
 	medium_wage = 250,
 	bad_wage = 200,
