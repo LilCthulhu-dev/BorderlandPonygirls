@@ -55,38 +55,43 @@ static func action_success() -> void:
 static func action_failure() -> void:
 	AttributesManager.current_health -= 1
 
+# ================================================== victory/defeat
 static func victory() -> void:
-	for action in current_combat.victory_actions:
-		action.use()
+	if current_combat.victory_actions.is_empty():
+		_use_actions(GameData.combat_victory_actions)
+	else:
+		_use_actions(current_combat.victory_actions)
 
 static func defeat() -> void:
 	if current_combat.defeat_actions.is_empty():
-		AttributesManager.gold -= GameData.COSTS.death
-		for pony in PonygirlManager.ponygirls:
-			if pony.active:
-				pony.loyalty -= 10
-		LocationManager.current_location = LocationManager.home_location
+		_use_actions(GameData.combat_defeat_actions)
 	else:
-		for action in current_combat.defeat_actions:
-			action.use()
+		_use_actions(current_combat.defeat_actions)
+
+static func _use_actions(actions : Array[Action]):
+	for action in actions:
+		action.use()
+
+static func _get_actions_txt(actions : Array[Action]):
+	var txt = ""
+	for action in actions:
+		txt += "\n" + action.get_result()
+	return txt
 
 static func get_victory_txt() -> String:
 	var txt: String = Utils.translate(current_combat.victory_txt)
 	txt += "\n"
-	for action in current_combat.victory_actions:
-		txt += "\n" + action.get_result()
+	if current_combat.victory_actions.is_empty():
+		txt += _get_actions_txt(GameData.combat_victory_actions)
+	else:
+		txt += _get_actions_txt(current_combat.victory_actions)
 	return txt
 
 static func get_defeat_txt() -> String:
 	var txt: String = Utils.translate(current_combat.defeat_txt)
 	txt += "\n"
 	if current_combat.defeat_actions.is_empty():
-		txt += "\n" + (Utils.translate("- Lose %s Gold") % GameData.COSTS.death)
-		txt += "\n" + (Utils.translate("- All active ponygirls lose %s loyalty") % 10)
-		txt += "\n" + Utils.translate("- Retreat back to your Home Village.")
+		txt += _get_actions_txt(GameData.combat_defeat_actions)
 	else:
-		for action in current_combat.defeat_actions:
-			var result := action.get_result()
-			if not result.is_empty():
-				txt += "\n" + result
+		txt += _get_actions_txt(current_combat.defeat_actions)
 	return txt

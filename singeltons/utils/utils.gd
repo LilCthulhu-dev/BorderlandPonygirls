@@ -75,6 +75,8 @@ func translate(text : String) -> String:
 		"{GOOD_WAGE}": GameData.COSTS.good_wage,
 		"{MEDIUM_WAGE}": GameData.COSTS.medium_wage,
 		"{BAD_WAGE}": GameData.COSTS.bad_wage,
+
+		"{COST_DEATH}": GameData.COSTS.death,
 		"{COST_REST}": GameData.COSTS.rest,
 		"{COST_TRAVEL}": GameData.COSTS.travel,
 		"{COST_CHEAP_PONYGIRL}": GameData.COSTS.ponygirl_cheap,
@@ -152,3 +154,8 @@ func set_dynamic_label(label: Label, english_source: String) -> void:
 
 func roll_dice(max_number := 100):
 	return rng.randi_range(1, max_number)
+
+func clear_container(container: Container) -> void:
+	for child in container.get_children():
+		container.remove_child(child)
+		child.queue_free()

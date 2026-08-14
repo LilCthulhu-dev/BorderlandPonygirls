@@ -9,9 +9,9 @@
 [ext_resource type="Resource" uid="uid://b8yrmk282tpxh" path="res://data/events/pony_offering/pony_offering_1.tres" id="4_cp2w7"]
 [ext_resource type="Resource" uid="uid://btdewgxsffs25" path="res://data/events/cattle_drive/cattle_drive_end.tres" id="5_3veny"]
 [ext_resource type="Resource" uid="uid://b7mx4huk81b5" path="res://data/events/one_pagers/stable_fair.tres" id="6_fair"]
-[ext_resource type="Resource" uid="uid://cquestrmareast1" path="res://data/events/missing_mare/missing_mare_start.tres" id="7_mare"]
+[ext_resource type="Resource" uid="uid://vbcvmfc6tm13" path="res://data/events/missing_mare/missing_mare_start.tres" id="7_mare"]
 [ext_resource type="Resource" uid="uid://cv08b45k61b5" path="res://data/events/one_pagers/traveling_tinker.tres" id="8_n2epe"]
-[ext_resource type="Resource" uid="uid://cquestrironend" path="res://data/events/iron_tithe/iron_tithe_end.tres" id="9_iron"]
+[ext_resource type="Resource" uid="uid://dotjgk7hte0qb" path="res://data/events/iron_tithe/iron_tithe_end.tres" id="9_iron"]
 
 [resource]
 script = ExtResource("2_5ho7t")
