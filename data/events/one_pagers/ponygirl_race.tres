@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5"]
 [ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="6"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="7"]
-[ext_resource type="Texture2D" uid="uid://cimgracestrt01" path="res://assets/img/ponygirl_race_start.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/ponygirl_race_start.png" id="8"]
 
 [sub_resource type="Resource" id="Resource_start"]
 script = ExtResource("6")
