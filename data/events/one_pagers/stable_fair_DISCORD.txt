@@ -10,8 +10,8 @@ Random names + race portrait pool + forced loyalty/arousal/xp/perks.
 | Buy a needy mare | {COST_PONYGIRL} | loyalty 50, arousal 70, xp 10 |
 | Buy a green filly (cheap) | {COST_CHEAP_PONYGIRL} | loyalty 25, arousal 35, xp 0 |
 | Buy a submissive mare | {COST_PONYGIRL} | loyalty 65, perk submissive |
-| Buy a trained strong mare (expensive) | {COST_TRAINING} | xp 45, strong+hardy |
-| Buy a wild mare (expensive) | {COST_TRAINING} | wild+brat |
+| Buy a trained strong mare (expensive) | {COST_EXPENSIVE_PONYGIRL} | xp 45, strong+hardy |
+| Buy a wild mare (expensive) | {COST_EXPENSIVE_PONYGIRL} | wild+brat |
 | Leave the fair | — | |
 
 Only fixed named pony in game: **Lula** on New Game (`starter_pony.tres`).

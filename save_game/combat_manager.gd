@@ -71,7 +71,7 @@ static func defeat() -> void:
 			action.use()
 
 static func get_victory_txt() -> String:
-	var txt := current_combat.defeat_txt
+	var txt := current_combat.victory_txt
 	txt += "\n"
 	for action in current_combat.victory_actions:
 		txt += "\n" + action.get_result()
