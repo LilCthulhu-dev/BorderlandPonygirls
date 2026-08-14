@@ -1,7 +1,7 @@
 extends Action
 class_name AddPonygirl
 
-@export var ponygirl: Ponygirl = preload("res://data/ponygirls/default_pony.tres")
+@export var ponygirl : Ponygirl = preload("res://data/ponygirls/default_pony.tres")
 
 @export var force_name = ""
 @export var force_race := Enums.PONYGIRL_RACES.UNKNOWN
