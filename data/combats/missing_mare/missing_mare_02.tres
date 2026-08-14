@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cscenmare02"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7yp1n4asbypw" path="res://assets/img/missing_mare.png" id="3"]
+
+[sub_resource type="Resource" id="Resource_a"]
+script = ExtResource("1")
+txt = "Break the handler"
+ability = 1
+success_description = "You take the handler off his feet. The lead goes slack. The mare shies but does not run - the bit still owns her mouth."
+fail_description = "He is wiry and mean. He gets a knife across your sleeve before you shove him back."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_b"]
+script = ExtResource("1")
+txt = "Talk through the gag"
+ability = 2
+success_description = "You keep your voice low. She stops thrashing. The crew lose their living shield when she will not rear into you."
+fail_description = "She only hears the bit. She slams sideways and nearly puts you into the fire."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_c"]
+script = ExtResource("1")
+txt = "Read the camp"
+ability = 5
+success_description = "You spot the spare rope and the second knife. You kick both into the dark before they matter."
+fail_description = "You miss the man behind the cart. His club finds your shoulder."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2")
+img = ExtResource("3")
+flavor_lines = Array[String](["The mare’s eyes are white around the bit.", "Someone already took her boots off. The hooves are raw.", "A wax mark on the cart matches no village you know."])
+description = "They try to keep her between you and them. She is not fighting for them. She is only trying not to be touched."
+actions = Array[ExtResource("1")]([SubResource("Resource_a"), SubResource("Resource_b"), SubResource("Resource_c")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

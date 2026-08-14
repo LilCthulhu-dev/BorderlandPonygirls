@@ -1,0 +1,76 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestmarengt1"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4"]
+[ext_resource type="Resource" uid="uid://cflagmarekept01" path="res://data/flags/missing_mare_kept.tres" id="5"]
+[ext_resource type="Resource" uid="uid://cflagmarenight1" path="res://data/flags/missing_mare_night.tres" id="6"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="7"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8"]
+[ext_resource type="Texture2D" uid="uid://b7yp1n4asbypw" path="res://assets/img/missing_mare.png" id="9"]
+[ext_resource type="Script" uid="uid://l5qqa8f4kms1" path="res://data/actions/focus_quest_ponygirl.gd" id="10"]
+[ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="11"]
+[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="12"]
+[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="13"]
+
+[sub_resource type="Resource" id="Resource_gate"]
+script = ExtResource("7")
+required_flag = Array[ExtResource("4")]([ExtResource("5")])
+forbidden_flag = Array[ExtResource("4")]([ExtResource("6")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_focus"]
+script = ExtResource("10")
+
+[sub_resource type="Resource" id="Resource_night_done"]
+script = ExtResource("7")
+add_flag = Array[ExtResource("4")]([ExtResource("6")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_loy"]
+script = ExtResource("12")
+amount = 8
+target = 0
+metadata/_custom_type_script = "uid://cy0fnw6jwovce"
+
+[sub_resource type="Resource" id="Resource_aro"]
+script = ExtResource("11")
+amount = -10
+target = 0
+metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[sub_resource type="Resource" id="Resource_command"]
+script = ExtResource("13")
+ability = 3
+txt = "Hold the bit"
+succes_txt = "You do not hit her. You put the bit back, talk her through it, and stay until the shaking stops. {QUEST_PONY} hates you a little less than the crew who sold her."
+fail_txt = "You bark. She fights. The bit goes back in anyway. She will remember the night, not the words."
+succes_actions = Array[ExtResource("1")]([SubResource("Resource_loy"), SubResource("Resource_aro"), SubResource("Resource_night_done")])
+fail_actions = Array[ExtResource("1")]([SubResource("Resource_night_done")])
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_sway"]
+script = ExtResource("13")
+ability = 2
+txt = "Talk her down"
+succes_txt = "You sit in the straw and let her hear a voice that is not buying or selling. {QUEST_PONY} does not forgive the bit. She stops trying to spit it tonight."
+fail_txt = "Your softness sounds like another trick. She will not meet your eyes."
+succes_actions = Array[ExtResource("1")]([SubResource("Resource_loy"), SubResource("Resource_night_done")])
+fail_actions = Array[ExtResource("1")]([SubResource("Resource_night_done")])
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_leave"]
+script = ExtResource("3")
+txt = "Leave her to the straw"
+actions = Array[ExtResource("1")]([SubResource("Resource_night_done")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("8")
+titel = "Missing Mare"
+img = ExtResource("9")
+description = "First night in your stables. {QUEST_PONY} has the bit halfway out and blood on the ring. She is not trying to look pretty. She is trying to be a person again."
+content = Array[ExtResource("2")]([SubResource("Resource_command"), SubResource("Resource_sway"), SubResource("Resource_leave")])
+open_actions = Array[ExtResource("1")]([SubResource("Resource_gate"), SubResource("Resource_focus")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

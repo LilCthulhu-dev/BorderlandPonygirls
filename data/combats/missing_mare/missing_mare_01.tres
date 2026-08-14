@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cscenmare01"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7yp1n4asbypw" path="res://assets/img/missing_mare.png" id="3"]
+
+[sub_resource type="Resource" id="Resource_a"]
+script = ExtResource("1")
+txt = "Rush the fire"
+ability = 1
+success_description = "You hit the firelight before they get blades up. One slaver goes down hard; the rest scatter toward the trees."
+fail_description = "A pot lid takes you in the teeth. The camp is awake now, and they know you came for the mare."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_b"]
+script = ExtResource("1")
+txt = "Cut the picket"
+ability = 4
+success_description = "You slip the picket line. Their spare tack dumps into the dark. Two of them trip over their own straps."
+fail_description = "The line snaps loud. A sentry yells. You get a boot in the ribs for the trouble."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_c"]
+script = ExtResource("1")
+txt = "Call them out"
+ability = 3
+success_description = "You bark like you own the road. They hesitate - warband, not watch - and that pause is enough to close."
+fail_description = "They laugh. Nobody here is impressed by a boss with one string of mares."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2")
+img = ExtResource("3")
+flavor_lines = Array[String](["A low fire, three shapes, and a muffled sound from the cart.", "Cheap tack creaks. Someone is trying not to breathe.", "The inland road is a black cut through the trees."])
+description = "The kidnap camp is sloppy: one fire, a cart, a mare gagged in the traces. The crew looks like they expected a buyer, not a warband."
+actions = Array[ExtResource("1")]([SubResource("Resource_a"), SubResource("Resource_b"), SubResource("Resource_c")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

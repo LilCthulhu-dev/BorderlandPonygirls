@@ -16,6 +16,7 @@
 [ext_resource type="Resource" uid="uid://dotjgk7htffwy" path="res://data/events/iron_tithe/iron_tithe_start.tres" id="14_iron"]
 [ext_resource type="Resource" uid="uid://dotjglhyqk0qb" path="res://data/events/salt_run/salt_run_end.tres" id="15_salt"]
 [ext_resource type="Resource" uid="uid://dotjf4edi5agy" path="res://data/events/bone_charm/bone_charm_end.tres" id="16_bone"]
+[ext_resource type="Resource" uid="uid://cquestmarengt1" path="res://data/events/missing_mare/missing_mare_night.tres" id="17_night"]
 
 [resource]
 script = ExtResource("1_s87no")
@@ -27,5 +28,5 @@ At the center stand the large stables, sheltering both the residents’ ponygirl
 cheap_items = Array[ExtResource("1_to240")]([ExtResource("2_e3v7j"), ExtResource("3_0h381")])
 expensive_items = Array[ExtResource("1_to240")]([ExtResource("4_s0q40"), ExtResource("5_t7dvf"), ExtResource("6_ye50s")])
 random_events = Array[ExtResource("2_ukn7i")]([ExtResource("9_to240"), ExtResource("3_ukn7i"), ExtResource("13_t7dvf"), ExtResource("12_s0q40"), ExtResource("14_iron")])
-quest_events = Array[ExtResource("2_ukn7i")]([ExtResource("15_salt"), ExtResource("16_bone")])
+quest_events = Array[ExtResource("2_ukn7i")]([ExtResource("15_salt"), ExtResource("16_bone"), ExtResource("17_night")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

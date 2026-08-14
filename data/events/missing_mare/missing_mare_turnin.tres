@@ -1,0 +1,101 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestmaretrn1"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4"]
+[ext_resource type="Resource" uid="uid://cflagmareheld01" path="res://data/flags/missing_mare_held.tres" id="5"]
+[ext_resource type="Resource" uid="uid://cflagmaredone01" path="res://data/flags/missing_mare_done.tres" id="6"]
+[ext_resource type="Resource" uid="uid://eca1ew40cu8s" path="res://data/flags/missing_mare_01.tres" id="7"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
+[ext_resource type="Texture2D" uid="uid://b7yp1n4asbypw" path="res://assets/img/missing_mare.png" id="10"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="11"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="12"]
+[ext_resource type="Script" uid="uid://bcvi68bq46lqc" path="res://data/actions/clear_quest_ponygirl.gd" id="13"]
+[ext_resource type="Script" uid="uid://cnjmqq8t85is4" path="res://data/actions/commit_quest_ponygirl.gd" id="14"]
+[ext_resource type="Resource" uid="uid://cflagmarekept01" path="res://data/flags/missing_mare_kept.tres" id="15"]
+[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="16"]
+[ext_resource type="Script" uid="uid://l5qqa8f4kms1" path="res://data/actions/focus_quest_ponygirl.gd" id="17"]
+
+[sub_resource type="Resource" id="Resource_gate"]
+script = ExtResource("8")
+required_flag = Array[ExtResource("4")]([ExtResource("5")])
+forbidden_flag = Array[ExtResource("4")]([ExtResource("6")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_focus"]
+script = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_pay"]
+script = ExtResource("11")
+amount = "+{GOOD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_rep_good"]
+script = ExtResource("12")
+amount = 2
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_done"]
+script = ExtResource("8")
+add_flag = Array[ExtResource("4")]([ExtResource("6")])
+remove_flag = Array[ExtResource("4")]([ExtResource("5"), ExtResource("7")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_clear"]
+script = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_commit"]
+script = ExtResource("14")
+
+[sub_resource type="Resource" id="Resource_kept"]
+script = ExtResource("8")
+add_flag = Array[ExtResource("4")]([ExtResource("15"), ExtResource("6")])
+remove_flag = Array[ExtResource("4")]([ExtResource("5"), ExtResource("7")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_rep_bad"]
+script = ExtResource("12")
+amount = -5
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_hand"]
+script = ExtResource("3")
+txt = "Hand her over"
+actions = Array[ExtResource("1")]([SubResource("Resource_pay"), SubResource("Resource_rep_good"), SubResource("Resource_clear"), SubResource("Resource_done")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_walk"]
+script = ExtResource("3")
+txt = "Walk her away"
+actions = Array[ExtResource("1")]([SubResource("Resource_commit"), SubResource("Resource_rep_bad"), SubResource("Resource_kept")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_sway"]
+script = ExtResource("16")
+ability = 2
+txt = "Shame him in the yard"
+succes_txt = "You say it loud enough for the stalls: fresh tack, gag marks, a crew on the inland road. The merchant’s smile dies. He still wants her. The yard will remember he bought a kidnapping."
+fail_txt = "He talks over you. A boss with a string of mares accusing a buyer of theft - the yard laughs it off."
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_trick"]
+script = ExtResource("16")
+ability = 4
+txt = "Squeeze him for more"
+succes_txt = "You mention the buyer-wax and the second crew. He pays extra to make you quiet. The extra is already in the purse."
+fail_txt = "He goes stiff. No extra coin. He will still take her if you hand her over."
+succes_actions = Array[ExtResource("1")]([SubResource("Resource_pay")])
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[resource]
+script = ExtResource("9")
+titel = "Missing Mare"
+img = ExtResource("10")
+description = "The merchant sees {QUEST_PONY} and reaches for the lead like she is a crate.
+
+“Good. Good. I’ll take her.” He does not ask if she ran. He does not look at the gag-sores. The wax on his sketch matches the token from the camp."
+content = Array[ExtResource("2")]([SubResource("Resource_sway"), SubResource("Resource_trick"), SubResource("Resource_hand"), SubResource("Resource_walk")])
+open_actions = Array[ExtResource("1")]([SubResource("Resource_gate"), SubResource("Resource_focus")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"
