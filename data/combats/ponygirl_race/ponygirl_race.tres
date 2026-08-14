@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="10"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="11"]
 [ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/ponygirl_race_start.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dwj5t8vqwvex8" path="res://assets/img/ponygirl_race_defeat.png" id="13"]
 
 [sub_resource type="Resource" id="Resource_vgold"]
 script = ExtResource("9")
@@ -53,6 +54,7 @@ victory_txt = "The ribbon hits {PONYNAME}’s chest. For a moment the roar is on
 
 It was a good race. The field will remember the name on her bit-ring."
 victory_img = ExtResource("12")
+defeat_img = ExtResource("13")
 defeat_txt = "You fade before the post. {PONYNAME} still finishes - she is too proud not to - but the fierce ones are already being walked out under wreaths.
 
 The stewards pay appearance coin and look past you. Soft loss. No one died. The next meet will not wait."

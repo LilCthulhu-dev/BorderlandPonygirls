@@ -55,6 +55,7 @@ Monochrome ink plates for travel quests, generated for this recovery project and
 * `assets/img/ponygirl_race_turn.png`
 * `assets/img/ponygirl_race_edge.png`
 * `assets/img/ponygirl_race_finish.png`
+* `assets/img/ponygirl_race_defeat.png`
 * `assets/img/grain_levy.png`
 * `assets/img/hay_wain.png`
 * `assets/img/night_dispatch.png`

@@ -34,6 +34,7 @@ Harbor Town random: “Ponygirl Race”
 - Hill: `assets/img/ponygirl_race_hill.png`
 - Over the edge: `assets/img/ponygirl_race_edge.png`
 - Final straight: `assets/img/ponygirl_race_finish.png`
+- Defeat: `assets/img/ponygirl_race_defeat.png`
 
 **Files**
 - `data/combats/ponygirl_race/ponygirl_race.tres`
