@@ -51,8 +51,6 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [sub_resource type="Resource" id="Resource_8xjib"]
 script = ExtResource("6")
 force_loyalty = 70
-force_arousal = 55
-force_xp = 10
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_iugqv"]
