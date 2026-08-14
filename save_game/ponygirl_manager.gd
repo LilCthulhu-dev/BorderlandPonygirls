@@ -174,3 +174,18 @@ static func add_ponygirl(pony: Ponygirl) -> void:
 	new_pony.active = active_slots_free()
 	ponygirls.append(new_pony)
 	focused_ponygirl = new_pony
+
+
+## Already-built instance. AddPonygirl archetypes call init() then force loyalty/arousal;
+## add_ponygirl() would init() again and wipe those values.
+static func add_ponygirl_instance(pony: Ponygirl) -> void:
+	if pony == null:
+		push_error("PonygirlManager.add_ponygirl_instance: pony is null")
+		return
+	if not slots_free():
+		return
+	if pony.id.is_empty():
+		pony.id = str(ResourceUID.create_id())
+	pony.active = active_slots_free()
+	ponygirls.append(pony)
+	focused_ponygirl = pony
