@@ -1,13 +1,13 @@
 extends Resource
 class_name CombatManager
 
-const ENEMY_MAX_HEALTH: = 3
+const ENEMY_MAX_HEALTH := 3
 
-@export var _current_combat : Combat
-@export var _enemy_name : = ""
-@export var _enemy_health : = 0
-@export var _current_scene : CombatScene
-@export var _last_scene : CombatScene
+@export var _current_combat: Combat
+@export var _enemy_name := ""
+@export var _enemy_health := 0
+@export var _current_scene: CombatScene
+@export var _last_scene: CombatScene
 
 # ================================================== set/get
 static var current_combat: Combat:
@@ -71,7 +71,7 @@ static func defeat() -> void:
 			action.use()
 
 static func get_victory_txt() -> String:
-	var txt : = current_combat.victory_txt
+	var txt := current_combat.defeat_txt
 	txt += "\n"
 	for action in current_combat.victory_actions:
 		txt += "\n" + action.get_result()
@@ -86,7 +86,7 @@ static func get_defeat_txt() -> String:
 		txt += "\n- Retreat back to your Home Village."
 	else:
 		for action in current_combat.defeat_actions:
-			var result: = action.get_result()
+			var result := action.get_result()
 			if not result.is_empty():
 				txt += "\n" + result
 	return Utils.translate(txt)
