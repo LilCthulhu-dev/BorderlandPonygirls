@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="6"]
 [ext_resource type="Resource" uid="uid://cb5lg1c5twolq" path="res://data/ponygirls/default_pony.tres" id="6_4iw1d"]
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="6_svys2"]
 
 [sub_resource type="Resource" id="Resource_loyal_desc"]
 script = ExtResource("1")
@@ -79,7 +80,6 @@ metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 script = ExtResource("3")
 force_loyalty = 25
 force_arousal = 35
-force_xp = 0
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_green_back"]
@@ -126,7 +126,7 @@ metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_strong_gold"]
 script = ExtResource("2")
-amount = "-{COST_TRAINING}"
+amount = "-{COST_EXPENSIVE_PONYGIRL}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_strong_add"]
@@ -153,7 +153,7 @@ metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_wild_gold"]
 script = ExtResource("2")
-amount = "-{COST_TRAINING}"
+amount = "-{COST_EXPENSIVE_PONYGIRL}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_wild_add"]
