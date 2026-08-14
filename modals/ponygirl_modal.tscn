@@ -19,8 +19,9 @@ theme = ExtResource("3_jl802")
 
 [node name="portrait" type="TextureRect" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="1" unique_id=188546925]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 0)
-custom_maximum_size = Vector2(320, 200)
+texture_filter = 2
+custom_minimum_size = Vector2(360, 220)
+custom_maximum_size = Vector2(360, 220)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
