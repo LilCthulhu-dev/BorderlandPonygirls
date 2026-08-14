@@ -6,7 +6,6 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2_hlxsl"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
-[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="5"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="6"]
 [ext_resource type="Resource" uid="uid://bub8d5f1vioce" path="res://data/flags/shady_pony_deal.tres" id="7"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
@@ -39,14 +38,9 @@ txt = "Accept"
 actions = Array[ExtResource("2_hlxsl")]([SubResource("Resource_6wf88"), SubResource("Resource_ds03l")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
-[sub_resource type="Resource" id="Resource_u5muq"]
-script = ExtResource("5")
-metadata/_custom_type_script = "uid://b0g16xoo4jggg"
-
 [sub_resource type="Resource" id="Resource_5pobu"]
 script = ExtResource("4")
 txt = "Decline"
-actions = Array[ExtResource("2_hlxsl")]([SubResource("Resource_u5muq")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_shady_once"]
