@@ -29,9 +29,11 @@ Harbor Town random: “Ponygirl Race”
 - Watch from the rail → leave
 
 **Art**
-- Event / start scene: `assets/img/ponygirl_race_start.png`
-- Hill scene: `assets/img/ponygirl_race_hill.png`
-- Tight-turn / finish plates blocked by image moderation (text scenes still play)
+- Event / start / win: `assets/img/ponygirl_race_start.png`
+- Tight turn: `assets/img/ponygirl_race_turn.png`
+- Hill: `assets/img/ponygirl_race_hill.png`
+- Over the edge: `assets/img/ponygirl_race_edge.png`
+- Final straight: `assets/img/ponygirl_race_finish.png`
 
 **Files**
 - `data/combats/ponygirl_race/ponygirl_race.tres`

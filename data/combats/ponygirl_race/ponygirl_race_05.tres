@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://lh7k7vwalr0w" path="res://assets/img/ponygirl_race_finish.png" id="3"]
 
 [sub_resource type="Resource" id="Resource_a"]
 script = ExtResource("1")
@@ -29,6 +30,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("2")
+img = ExtResource("3")
 flavor_lines = Array[String](["The finish-post is a white tooth in the dust.", "The crowd has gone from chatter to one long roar.", "A rival’s breath is right on {PONYNAME}’s hip.", "Your crop is still clean. You have been saving it."])
 description = "The last straight. Two, maybe three mares still in it. {PONYNAME}’s mouth is white with foam. Whoever asks right now owns the purse."
 actions = Array[ExtResource("1")]([SubResource("Resource_a"), SubResource("Resource_b"), SubResource("Resource_c")])

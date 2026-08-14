@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dyt603mfawukk" path="res://assets/img/ponygirl_race_edge.png" id="3"]
 
 [sub_resource type="Resource" id="Resource_a"]
 script = ExtResource("1")
@@ -37,6 +38,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("2")
+img = ExtResource("3")
 flavor_lines = Array[String](["Someone used the carrot too freely before the start.", "A moan rolls down the field; several pairs of ears flick back.", "The scent of heat is thicker than dust.", "{PONYNAME}’s stride has gone uneven, hungry."])
 description = "A rider ahead used too much carrot - or worked their mare too high before the start. She goes over the edge mid-race, climaxing hard enough that the others can hear it. Now every racer has to find the mental focus to keep running, or give in and try to finish too. {PONYNAME} is right on that same knife-edge."
 actions = Array[ExtResource("1")]([SubResource("Resource_a"), SubResource("Resource_b"), SubResource("Resource_c"), SubResource("Resource_d")])
