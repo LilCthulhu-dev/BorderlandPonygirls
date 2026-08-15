@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h8k5oxtskpre"
-path="res://.godot/imported/iron_tithe.png-e4ad6aded9f88078b0ce329f4d7ebaf8.ctex"
+uid="uid://bv8qhybro06bg"
+path="res://.godot/imported/LyrianEmpire.png-e404563b3ee8405fda99c11997065bb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/iron_tithe.png"
-dest_files=["res://.godot/imported/iron_tithe.png-e4ad6aded9f88078b0ce329f4d7ebaf8.ctex"]
+source_file="res://assets/img/lil_cthulhu/LyrianEmpire.png"
+dest_files=["res://.godot/imported/LyrianEmpire.png-e404563b3ee8405fda99c11997065bb0.ctex"]
 
 [params]
 

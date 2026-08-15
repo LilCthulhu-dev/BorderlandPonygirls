@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmwowqe86ua5p"
-path="res://.godot/imported/salt_run.png-04cf64d8067a76b451e811564601b9c8.ctex"
+uid="uid://0xf34ryurqj5"
+path="res://.godot/imported/WildNorth.png-ce33941dd669207f65701e961196f60e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/salt_run.png"
-dest_files=["res://.godot/imported/salt_run.png-04cf64d8067a76b451e811564601b9c8.ctex"]
+source_file="res://assets/img/lil_cthulhu/WildNorth.png"
+dest_files=["res://.godot/imported/WildNorth.png-ce33941dd669207f65701e961196f60e.ctex"]
 
 [params]
 

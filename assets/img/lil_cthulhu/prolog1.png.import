@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbblr86f7p0ir"
-path="res://.godot/imported/borderlands.png-3e309ab5d2ee3d8ee5868ae5dd33d21b.ctex"
+uid="uid://ddpr7hlw47uqr"
+path="res://.godot/imported/prolog1.png-3b8c1c7c5a520fd7b00e4da2a165f2a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/borderlands.png"
-dest_files=["res://.godot/imported/borderlands.png-3e309ab5d2ee3d8ee5868ae5dd33d21b.ctex"]
+source_file="res://assets/img/lil_cthulhu/prolog1.png"
+dest_files=["res://.godot/imported/prolog1.png-3b8c1c7c5a520fd7b00e4da2a165f2a8.ctex"]
 
 [params]
 
