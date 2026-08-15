@@ -1,15 +1,14 @@
 [gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://bry3e7fujogpt"]
 
 [ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_28xga"]
+[ext_resource type="Texture2D" uid="uid://dbnltifwyfc7o" path="res://assets/img/lil_cthulhu/WorldSeamMountains.png" id="1_ey14n"]
 
 [resource]
 script = ExtResource("1_28xga")
-titel = "World Seam Mountains"
-description = "The World Seam Mountains form the western border of the Borderlands and are home to many dangerous monsters, including harpies, wyrms, and giants.
+description = "The World Seam Mountains form the western border of the known world and are home to many dangerous monsters, including harpies, wyrms, and giants. Yet their mighty flanks offer shelter to dwarfs, who delve deep into the stone in search of riches.
 
-Yet their mighty flanks are also home to dwarfs, who delve deep into the stone in search of riches.
+The mountains seem to stretch endlessly north and south, separating the Empire and its neighbours from the mysterious western realms beyond their peaks.
 
-The mountains seem to stretch endlessly into the north and south, separating the Empire and its neighbours from the mysterious realms beyond.
-
-Some say another rich land lies beyond the mountains, while others claim there is nothing but a dead wasteland. Most people spare little thought for a mystery they will never solve. The fact remains that nobody has ever crossed the range and returned to tell the tale."
+Some say another rich land lies beyond the mountains, while others claim there is nothing but a dead wasteland. Most people, however, spare little thought for a mystery they will never solve. The fact remains that nobody has ever crossed the range and returned to tell the tale."
+img = ExtResource("1_ey14n")
 metadata/_custom_type_script = "uid://bkxhc74auednr"

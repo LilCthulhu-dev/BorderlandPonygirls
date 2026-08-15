@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbyphclebjyff"
-path="res://.godot/imported/testImage.png-7d0ee9e35eaaa1037bc47641e7e77ff2.ctex"
+uid="uid://c2uuwsskd80ei"
+path="res://.godot/imported/AncientForest.png-8af9de693ccbc7911ea4212628767eb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/testImage.png"
-dest_files=["res://.godot/imported/testImage.png-7d0ee9e35eaaa1037bc47641e7e77ff2.ctex"]
+source_file="res://assets/img/lil_cthulhu/AncientForest.png"
+dest_files=["res://.godot/imported/AncientForest.png-8af9de693ccbc7911ea4212628767eb8.ctex"]
 
 [params]
 

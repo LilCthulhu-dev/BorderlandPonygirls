@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7yp1n4asbypw"
-path="res://.godot/imported/missing_mare.png-5787307056b6d7e70cc02f7455d7996d.ctex"
+uid="uid://bbblr86f7p0ir"
+path="res://.godot/imported/geography.png-a1f5eab1c53e34a0c2ea0884a8996992.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/missing_mare.png"
-dest_files=["res://.godot/imported/missing_mare.png-5787307056b6d7e70cc02f7455d7996d.ctex"]
+source_file="res://assets/img/lil_cthulhu/geography.png"
+dest_files=["res://.godot/imported/geography.png-a1f5eab1c53e34a0c2ea0884a8996992.ctex"]
 
 [params]
 

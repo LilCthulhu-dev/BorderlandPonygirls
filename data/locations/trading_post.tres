@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Location" format=3 uid="uid://c5t7f5l883j8j"]
 
-[ext_resource type="Texture2D" uid="uid://dqvftrnu3ctxs" path="res://assets/img/tradepost.png" id="1_0rab4"]
+[ext_resource type="Texture2D" uid="uid://dqvftrnu3ctxs" path="res://assets/img/lil_cthulhu/tradepost.png" id="1_0rab4"]
 [ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_gvkq6"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="2_1xhgw"]
 [ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="2_3veny"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6yeudhiravxp"
-path="res://.godot/imported/bone_charm.png-0cfaf51896d23b28fb2224f8cf5c8a47.ctex"
+uid="uid://b7yp1n4asbypw"
+path="res://.godot/imported/missing_mare.png-0c361a82c1b8f86552e0498060c1e00a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/bone_charm.png"
-dest_files=["res://.godot/imported/bone_charm.png-0cfaf51896d23b28fb2224f8cf5c8a47.ctex"]
+source_file="res://assets/img/frozenhunter/missing_mare.png"
+dest_files=["res://.godot/imported/missing_mare.png-0c361a82c1b8f86552e0498060c1e00a.ctex"]
 
 [params]
 
