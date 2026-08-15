@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://mqsy220odxor"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_6rqj8"]
+
+[resource]
+script = ExtResource("1_6rqj8")
+titel = "Ancient Forest"
+description = "The northeastern Borderlands are covered by an ancient, untamed forest. It is home to countless wild beasts, and tales of strange magic and angry nature spirits make it a dangerous and treacherous place to navigate.
+
+Sensible folk avoid the forest, but a coven of witches has settled along its edge. Many claim they commune with the spirits of the land and sell all manner of strange goods and unusual services."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

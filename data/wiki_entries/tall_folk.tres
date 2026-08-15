@@ -4,7 +4,12 @@
 
 [resource]
 script = ExtResource("1_qq7bo")
-description = "The tall-folk consist primarily of humans and elves. They are the most civilized peoples of the known world and the undisputed masters of the Empire. Tall-folk societies are overwhelmingly female - only one in ten births produces a male child.
+titel = "Tall-Folk"
+description = "Tall-folk is an Imperial category used by scholars to group the civilized, predominantly female races of the world.
 
-However, they can interbreed with almost all other folk. Such unions have an equal chance of producing a child of either parent’s race."
+Tall-folk populations are overwhelmingly female, with only one in ten births producing a male child. However, they can interbreed with almost all other folk. Such unions have an equal chance of producing a child of either parent’s race. This has led to constant conflict between tall-folk and many other species, who seek to kidnap them and use them for breeding.
+
+Most tall-folk are humans or elves, whose tall, slender forms gave the category its name. Together, they are the undisputed masters of the Lyrian Empire. Tieflings are much rarer, but are also considered tall-folk.
+
+Dwarfs are predominantly male, but because they are highly civilized and possess no tradition of slavery, they are usually categorised as tall-folk too - despite the somewhat ill-fitting name."
 metadata/_custom_type_script = "uid://bkxhc74auednr"

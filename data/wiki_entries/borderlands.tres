@@ -2,11 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://bbblr86f7p0ir" path="res://assets/img/borderlands.png" id="1_j7jrd"]
 [ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_mpmxv"]
+[ext_resource type="Resource" uid="uid://mqsy220odxor" path="res://data/wiki_entries/ancient_forest.tres" id="3_id1ow"]
+[ext_resource type="Resource" uid="uid://c0u1ym1ajvcpx" path="res://data/wiki_entries/wild_north.tres" id="4_n2yxm"]
+[ext_resource type="Resource" uid="uid://bry3e7fujogpt" path="res://data/wiki_entries/world_seam_mountains.tres" id="5_5kpcm"]
 
 [resource]
 script = ExtResource("1_mpmxv")
-description = "The Borderlands are a wild, untamed land on the eastern edge of the Empire. Civilization is confined to a handful of well-defended cities and outposts, but beyond their walls lies a primitive and dangerous wilderness, crawling with monsters, scoundrels, and wild beasts.
+sub_entries = Array[ExtResource("1_mpmxv")]([ExtResource("3_id1ow"), ExtResource("4_n2yxm"), ExtResource("5_5kpcm")])
+description = "The Borderlands are a wild, untamed region along the northern edge of the Empire. Civilization is confined to a handful of well-defended cities and outposts. Beyond their walls lies a primitive and dangerous wilderness crawling with monsters, scoundrels, and savage beasts.
 
-The region is also home to fierce goblin tribes, who share an ancient pact with the Empire. The goblins guard the wilderness and defend the trading routes, while the Empire, in turn, respects their way of life - especially their tradition of enslaving tall folk as ponygirls - and allows them to enter its cities and trade openly."
+The region is also home to fierce goblin tribes bound to the Empire by an ancient pact. They patrol the wilderness and protect the trade routes. In return, the Empire respects their way of life — including their tradition of enslaving tall folk as ponygirls—and allows them to enter its cities and trade openly."
 img = ExtResource("1_j7jrd")
 metadata/_custom_type_script = "uid://bkxhc74auednr"

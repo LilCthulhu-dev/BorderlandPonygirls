@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://c0u1ym1ajvcpx"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_3nq8p"]
+
+[resource]
+script = ExtResource("1_3nq8p")
+titel = "Wild North"
+description = "To the north of the Borderlands lies a vast, untamed wilderness—an endless expanse of grassland swept by harsh, cold winds.
+
+The Wild North is home to feral orks, goblins, ogres, and other beastfolk who do not abide by the treaties made between the Empire and the wildfolk of the Borderlands. They regularly raid south in search of plunder and a good fight, making them a constant threat. The Borderlands serve as the Empire’s primary bulwark against these invaders."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

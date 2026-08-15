@@ -4,5 +4,12 @@
 
 [resource]
 script = ExtResource("1_3okor")
-description = "All other roughly humanoid peoples, capable of speech and reason, are grouped together as beast-folk: for example, reptiloids, gnolls, and minotaurs. They are usually wild and unpredictable, often hostile toward both tall-folk and wild-folk, and far less involved with the affairs of either."
+titel = "Beast Folk"
+description = "Many roughly humanoid creatures are capable of speech and at least a semblance of reason. Imperial scholars categorize them as beast-folk - a broad, catch-all term for creatures considered neither wild-folk nor tall-folk.
+
+Most beast-folk are overwhelmingly male and depend upon tall-folk for reproduction. However, exceptions exist, such as the exclusively female harpies.
+
+Most possess only a Stone Age level of civilization and are openly hostile toward both tall-folk and wild-folk.
+
+Examples: Reptiloids, gnolls, ogres, and harpies."
 metadata/_custom_type_script = "uid://bkxhc74auednr"
