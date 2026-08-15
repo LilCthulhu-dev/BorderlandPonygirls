@@ -62,17 +62,25 @@ offset_bottom = 592.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/margin_right = 15
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2/MarginContainer" index="0" unique_id=1685171354]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="EntryHeader" type="Label" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="0" unique_id=328016162]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="0" unique_id=518638016]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="EntryHeader" type="Label" parent="ScrollContainer2/MarginContainer/VBoxContainer/VBoxContainer" index="0" unique_id=328016162]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("8_m67ac")
 autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="ScrollContainer2/MarginContainer/VBoxContainer/VBoxContainer" index="1" unique_id=92268770]
+layout_mode = 2
 
 [node name="EntryImage" type="TextureRect" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="1" unique_id=1976486223]
 unique_name_in_owner = true
