@@ -22,10 +22,25 @@ func _ready() -> void:
 			list_container.add_child(sub_btn)
 	_on_entry_selected(wiki_entries[0])
 
-
 func _on_entry_selected(wiki_entry : WikiEntry):
 	entry_header.text = wiki_entry.titel
 	entry_image.visible = wiki_entry.img is Texture2D
 	if entry_image.visible:
 		entry_image.texture = wiki_entry.img
 	entry_description.text = wiki_entry.description
+
+func _on_wiki_search_text_changed(new_text: String) -> void:
+	var search_text := new_text.strip_edges().to_lower()
+	for child in list_container.get_children():
+		if child is not WikiBtn: continue
+		var title: String = child.wiki_entry.titel.to_lower()
+		var has_fitting_sub_entry := false
+		for sub_entry in child.wiki_entry.sub_entries:
+			if sub_entry.titel.to_lower().contains(search_text):
+				has_fitting_sub_entry = true
+				break
+		child.visible = (
+			search_text.is_empty()
+			or title.contains(search_text)
+			or has_fitting_sub_entry
+		)

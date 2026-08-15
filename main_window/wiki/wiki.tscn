@@ -22,19 +22,37 @@ position = Vector2(304, 352)
 [node name="SingelPage2" parent="." index="1" unique_id=1725481516 instance=ExtResource("2_j6m04")]
 position = Vector2(848, 352)
 
-[node name="ScrollContainer" type="ScrollContainer" parent="." index="2" unique_id=1747140271]
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="2" unique_id=351031465]
 layout_mode = 0
 offset_left = 96.0
 offset_top = 112.0
 offset_right = 512.0
 offset_bottom = 592.0
-
-[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" index="0" unique_id=1341316071]
-layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ListContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer" index="0" unique_id=1221585982]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" index="0" unique_id=424933248]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" index="0" unique_id=598325443]
+layout_mode = 2
+text = "Search:"
+
+[node name="WikiSearch" type="LineEdit" parent="VBoxContainer/HBoxContainer" index="1" unique_id=1806772764]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" index="1" unique_id=1747140271]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer" index="0" unique_id=1341316071]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_right = 15
+
+[node name="ListContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/MarginContainer" index="0" unique_id=1221585982]
 unique_name_in_owner = true
 layout_mode = 2
 
@@ -71,3 +89,5 @@ stretch_mode = 5
 unique_name_in_owner = true
 layout_mode = 2
 autowrap_mode = 2
+
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer/WikiSearch" to="." method="_on_wiki_search_text_changed"]
