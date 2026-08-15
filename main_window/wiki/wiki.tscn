@@ -3,16 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://je75uyt8bsbm" path="res://main_window/page_template.tscn" id="1_4v0x0"]
 [ext_resource type="PackedScene" uid="uid://c1u885uy5uxeb" path="res://templates/singel_page.tscn" id="2_j6m04"]
 [ext_resource type="Script" uid="uid://ckpbsef2mlvg8" path="res://main_window/wiki/wiki.gd" id="2_pg6rj"]
-[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="3_2bjhm"]
-[ext_resource type="Resource" uid="uid://cdhcgjw2bjlhb" path="res://data/wiki_entries/game_pitch.tres" id="4_4qe80"]
-[ext_resource type="Resource" uid="uid://bojvhw67gi61f" path="res://data/wiki_entries/borderlands.tres" id="4_ht33j"]
-[ext_resource type="Resource" uid="uid://vyoggkey3iuy" path="res://data/wiki_entries/ponygirls.tres" id="4_ki773"]
-[ext_resource type="Resource" uid="uid://dxlcoaqo0dmee" path="res://data/wiki_entries/races.tres" id="6_m67ac"]
 [ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="8_m67ac"]
 
 [node name="Wiki" unique_id=1948255639 instance=ExtResource("1_4v0x0")]
 script = ExtResource("2_pg6rj")
-wiki_entries = Array[ExtResource("3_2bjhm")]([ExtResource("4_4qe80"), ExtResource("4_ht33j"), ExtResource("4_ki773"), ExtResource("6_m67ac")])
+wiki_entries_folder = "res://data/wiki_entries/"
 btn_text = "Wiki"
 shortcut_key_string = "w"
 

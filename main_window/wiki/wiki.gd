@@ -5,12 +5,48 @@ extends StoryPage
 @onready var entry_image: TextureRect = %EntryImage
 @onready var entry_description: Label = %EntryDescription
 
-@export var wiki_entries : Array[WikiEntry]
-var wiki_btn_bp = preload("uid://chkoq2y0c64um")
+@export_dir var wiki_entries_folder := "res://data/wiki_entries/"
+var wiki_entries : Array[WikiEntry] = []
+var wiki_btn_bp: PackedScene = preload("uid://chkoq2y0c64um")
 
 func _ready() -> void:
 	super()
 	GlobalSignals.wiki_entry_selected.connect(_on_entry_selected)
+	_get_all_entries()
+	_remove_sub_entries(wiki_entries)
+	_sort_entries(wiki_entries)
+	_add_entries()
+	if not wiki_entries.is_empty():
+		_on_entry_selected(wiki_entries[0])
+
+func _get_all_entries() -> void:
+	wiki_entries.clear()
+	for file_name in ResourceLoader.list_directory(wiki_entries_folder):
+		if file_name.ends_with("/"):
+			continue
+		if file_name.get_extension() not in ["tres", "res"]:
+			continue
+		var path := wiki_entries_folder.path_join(file_name)
+		var resource := ResourceLoader.load(path)
+		if resource is WikiEntry:
+			wiki_entries.append(resource)
+
+func _remove_sub_entries(entries: Array[WikiEntry]) -> void:
+	var sub_entries: Array[WikiEntry] = []
+	for entry in entries:
+		for sub_entry in entry.sub_entries:
+			if not sub_entries.has(sub_entry):
+				sub_entries.append(sub_entry)
+	for sub_entry in sub_entries:
+		entries.erase(sub_entry)
+
+func _sort_entries(entries: Array[WikiEntry]) -> void:
+	entries.sort_custom(
+		func(a: WikiEntry, b: WikiEntry) -> bool:
+			return a.titel.naturalnocasecmp_to(b.titel) < 0
+	)
+
+func _add_entries() -> void:
 	for wiki_entry in wiki_entries:
 		var btn = wiki_btn_bp.instantiate()
 		btn.wiki_entry = wiki_entry
@@ -20,14 +56,12 @@ func _ready() -> void:
 			sub_btn.wiki_entry = sub_entry
 			sub_btn.sub_btn = true
 			list_container.add_child(sub_btn)
-	_on_entry_selected(wiki_entries[0])
 
-func _on_entry_selected(wiki_entry : WikiEntry):
+func _on_entry_selected(wiki_entry: WikiEntry) -> void:
 	entry_header.text = wiki_entry.titel
-	entry_image.visible = wiki_entry.img is Texture2D
-	if entry_image.visible:
-		entry_image.texture = wiki_entry.img
 	entry_description.text = wiki_entry.description
+	entry_image.texture = wiki_entry.img
+	entry_image.visible = wiki_entry.img is Texture2D
 
 func _on_wiki_search_text_changed(new_text: String) -> void:
 	var search_text := new_text.strip_edges().to_lower()
