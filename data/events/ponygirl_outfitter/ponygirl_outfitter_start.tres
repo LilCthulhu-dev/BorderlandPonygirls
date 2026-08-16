@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://c3qc7ucuap654"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_te7kq"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_74r5s"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_8k4q2"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="3_db5am"]
+[ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="4_cgds2"]
+[ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="5_eiwa2"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="6_nhep5"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="7_wnjsw"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="8_pn6nq"]
+
+[sub_resource type="Resource" id="Resource_m5l12"]
+script = ExtResource("6_nhep5")
+required_flag = Array[ExtResource("3_db5am")]([ExtResource("5_eiwa2")])
+forbidden_flag = Array[ExtResource("3_db5am")]([ExtResource("4_cgds2")])
+hard_requierment = true
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_qrynd"]
+script = ExtResource("7_wnjsw")
+event_path = "uid://d3oabe38sdvyi"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_q6xwx"]
+script = ExtResource("8_pn6nq")
+txt = "Racing Gear"
+actions = Array[ExtResource("1_te7kq")]([SubResource("Resource_m5l12"), SubResource("Resource_qrynd")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_77dvc"]
+script = ExtResource("8_pn6nq")
+txt = "Leave"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3_8k4q2")
+titel = "Ponygirl outfitter"
+description = "Tucked away behind an unassuming storefront is a surprisingly large shop filled with the rich scents of leather and oiled steel. Bridles, crops, whips, harnesses, saddles, and countless straps cover the walls and display tables. Every piece appears to be of exceptional quality.
+
+An open doorway at the back leads into a busy workshop. Tools move amid the flicker of a faint magical glow, suggesting that more than ordinary craftsmanship goes into the merchandise sold here.
+
+Behind the counter stands the proprietor: an elderly goblin with weathered features and an eyepatch, watching you with his single sharp eye."
+content = Array[ExtResource("2_74r5s")]([SubResource("Resource_q6xwx"), SubResource("Resource_77dvc")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"
