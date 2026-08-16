@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="9_ysng2"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="10_puwl5"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="11_7ehs2"]
+[ext_resource type="Script" uid="uid://dc1bca6pcahfr" path="res://data/actions/change_xp.gd" id="12_vhi4r"]
 
 [sub_resource type="Resource" id="Resource_xicot"]
 script = ExtResource("9_ysng2")
@@ -19,7 +20,7 @@ metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_xmjim"]
 script = ExtResource("10_puwl5")
-amount = 5
+amount = 2
 metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 
 [sub_resource type="Resource" id="Resource_jj2a4"]
@@ -27,6 +28,12 @@ script = ExtResource("11_7ehs2")
 amount = 25
 target = 0
 metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[sub_resource type="Resource" id="Resource_8d81t"]
+script = ExtResource("12_vhi4r")
+amount = 5
+target = 0
+metadata/_custom_type_script = "uid://dc1bca6pcahfr"
 
 [resource]
 script = ExtResource("8_j87iw")
@@ -40,7 +47,7 @@ victory_txt = "{PONYNAME} is drenched in sweat, her naked tits heaving with exha
 The race master comes over after you have bathed in the applause for a while, grinning as he hands you a big pouch with coin.
 
 It was a good race. The field will remember both you and {PONYNAME}."
-victory_actions = Array[ExtResource("1_wt712")]([SubResource("Resource_xicot"), SubResource("Resource_xmjim"), SubResource("Resource_jj2a4")])
+victory_actions = Array[ExtResource("1_wt712")]([SubResource("Resource_xicot"), SubResource("Resource_xmjim"), SubResource("Resource_jj2a4"), SubResource("Resource_8d81t")])
 defeat_txt = "You drive {PONYNAME} across the finish line, but the others were faster. They are already bathing in the crowd’s adoration.
 
 You can only watch with envy as the winner receives the prize money. Still, it was a clean loss. You and your ponygirl are exhausted, but unharmed. Next time you will be the one celebrating!"

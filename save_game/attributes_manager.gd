@@ -1,7 +1,7 @@
 extends Resource
 class_name AttributesManager
 
-const MAX_HEALTH := 10
+const MAX_HEALTH := 5
 const BASE_ABILITY_VALUE := 60
 
 @export var _boss_title: String = ""

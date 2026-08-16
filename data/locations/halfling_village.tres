@@ -9,6 +9,7 @@
 [ext_resource type="Resource" uid="uid://td7k6mipb45a" path="res://data/item/iron.tres" id="5_028d7"]
 [ext_resource type="Resource" uid="uid://dnm7ycxn38yvh" path="res://data/item/salt.tres" id="6_t0ekb"]
 [ext_resource type="Resource" uid="uid://h6vp6e7wdoup" path="res://data/events/pony_panic/pony_panic_01.tres" id="8_1opi7"]
+[ext_resource type="Resource" uid="uid://dvn4ujnggtvyk" path="res://data/events/halfling_village_race/halfling_village_race_start.tres" id="9_1opi7"]
 [ext_resource type="Resource" uid="uid://cv7n44sq2g63j" path="res://data/events/one_pagers/farmwork_halfling.tres" id="9_h5cyg"]
 [ext_resource type="Resource" uid="uid://5r27fxrdpbyg" path="res://data/events/one_pagers/farm_sale_01.tres" id="10_y5aox"]
 [ext_resource type="Resource" uid="uid://cx4xaaaw3fqgl" path="res://data/events/one_pagers/pony_on_display_01.tres" id="11_3b2u2"]
@@ -28,5 +29,5 @@ Humans and elves are the most common sight, but far from the only one. Tieflings
 cheap_items = Array[ExtResource("1_al1pc")]([ExtResource("2_6eo28"), ExtResource("3_a48tm")])
 expensive_items = Array[ExtResource("1_al1pc")]([ExtResource("4_aj1b6"), ExtResource("5_028d7"), ExtResource("6_t0ekb")])
 random_events = Array[ExtResource("2_f1d78")]([ExtResource("8_1opi7"), ExtResource("9_h5cyg"), ExtResource("10_y5aox"), ExtResource("11_3b2u2"), ExtResource("12_a48tm"), ExtResource("13_aj1b6"), ExtResource("14_cask")])
-quest_events = Array[ExtResource("2_f1d78")]([ExtResource("15_fish")])
+quest_events = Array[ExtResource("2_f1d78")]([ExtResource("15_fish"), ExtResource("9_1opi7")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"
