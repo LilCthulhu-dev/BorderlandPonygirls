@@ -1,13 +1,15 @@
-[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestboneac01"]
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjf4edi0x3y"]
 
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://cimgquebone01" path="res://assets/img/bone_charm.png" id="2"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_an2ij"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_n103e"]
+[ext_resource type="Texture2D" uid="uid://b6yeudhiravxp" path="res://assets/img/frozenhunter/bone_charm.png" id="3_1edpr"]
 
 [resource]
 script = ExtResource("1")
 titel = "Bone Charm"
-img = ExtResource("2")
 description = "You wrap the charm in cloth and tuck it into a saddlebag. The bone is warm, as if it had been held a moment ago.
 
 The village shaman will want it before dusk-talk starts."
+img = ExtResource("3_1edpr")
 metadata/_custom_type_script = "uid://47s8j4k2usde"
