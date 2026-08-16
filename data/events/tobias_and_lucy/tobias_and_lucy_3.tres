@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dlnm3ege3ycfd"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_s66r5"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_7swbf"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_5j8y8"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_pk4yw"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8_whhgj"]
+
+[sub_resource type="Resource" id="Resource_3o568"]
+script = ExtResource("3_5j8y8")
+event_path = "uid://cqjba8wwd2pc3"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_lu3ck"]
+script = ExtResource("4_pk4yw")
+txt = "Learn more"
+actions = Array[ExtResource("1_s66r5")]([SubResource("Resource_3o568")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("8_whhgj")
+titel = "Tobias and Lucy"
+description = "“Yes, races,” Tobias exclaims before taking a deep drink of his beer. “Don’t tell me you’ve never been to one! Well, to be fair, the sport is still rather new, but back in the Empire, it’s the hottest thing around.”
+
+“People pay good money to watch,” Lucy adds. You still can’t help but feel strange being addressed so casually by a ponygirl. “The racers have to pay an entry fee, but the winner takes home a hefty pouch of coin.”
+
+“Word is, there’s a new league here in the Borderlands. Fresh blood, fewer rules, and it hasn’t been dominated by professional jockeys and mares yet. That’s why we’re trying our luck.”"
+content = Array[ExtResource("2_7swbf")]([SubResource("Resource_lu3ck")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"
