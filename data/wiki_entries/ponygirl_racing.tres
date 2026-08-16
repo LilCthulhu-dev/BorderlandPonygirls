@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://gygsosta50ac"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_u3hke"]
+
+[resource]
+script = ExtResource("1_u3hke")
+description = "Ponygirl racing is a new but rapidly growing sport in which jockeys ride their ponygirls around a closed track. The rules are simple: each jockey enters with one mare, all racers begin at the same signal, and whoever crosses the finish line first wins.
+
+Competitors must pay an entry fee, while the winner receives a considerable purse funded by admission fees and wagers. The sport is already enormously popular in the Lyrian Empire, where professional jockeys and specially trained racing mares dominate the larger events. The newly founded Borderlands league is less established, with fewer rules and better opportunities for inexperienced competitors.
+
+Race regulations require every mare to enter fully equipped, naked, and bound. Ordinary ponygear is not permitted. Each racer needs a specially made harness and saddle designed to support the rider’s weight without unnecessarily restricting the ponygirl’s movement or endangering her during a fall.
+
+Racing gear also includes extra stimulating inserts and magical enchantments that suppress the inhibitor built into a ponygirl’s womb tattoo. As a result, mares can become overwhelmed and climax during a race. A skilled jockey must therefore manage both the mare’s pace and her arousal. Pushing her too little may cost valuable time, while pushing her too far can leave her cumming and faltering - in front of the crowd.
+
+Deliberate attacks against other competitors are forbidden. However, races are physical, and jockeys frequently crowd rivals, contest narrow openings, or force opposing mares onto slower sections of the track. Bruises, falls, and other minor injuries are considered part of the sport, provided nobody is caught intentionally striking another racer."
+metadata/_custom_type_script = "uid://bkxhc74auednr"
