@@ -28,7 +28,7 @@ script = ExtResource("3_un2lo")
 titel = "Harbortown Circuit"
 description = "The old goblin accepts your payment, counts the coins twice, and records your entry in a thick ledger.
 
-“You’re registered, {TITEL}. Choose your mare and get her ready in the preparation area. An attendant will inspect her equipment and assign you a starting stall.”
+“You’re registered, {TITLE}. Choose your mare and get her ready in the preparation area. An attendant will inspect her equipment and assign you a starting stall.”
 
 He hands you a numbered ribbon before immediately turning his attention to the next racer."
 content = Array[ExtResource("2_aa0wh")]([SubResource("Resource_wf3nh")])

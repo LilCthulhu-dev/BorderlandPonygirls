@@ -27,7 +27,7 @@ script = ExtResource("3_w1lic")
 titel = "Harbortown Circuit"
 description = "The registration official, an old goblin with eyepatch, barely looks up as you approach his crowded desk.
 
-“Name, warband, and...” He pauses when he recognizes you. “Ah, {TITEL} {NAME}. Here to enter the race, I assume?”
+“Name, warband, and...” He pauses when he recognizes you. “Ah, {TITLE} {NAME}. Here to enter the race, I assume?”
 
 He glances at your racing gear and marks something on his list.
 

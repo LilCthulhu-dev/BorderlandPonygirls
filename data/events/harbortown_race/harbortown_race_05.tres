@@ -25,6 +25,6 @@ description = "You enter the preparation area and find it bustling with activity
 
 You select your mare and help fit her racing gear. An official examines every buckle and fastening before attaching your numbered ribbon to the harness.
 
-“Everything is in order, {TITEL},” he says. “Take your place at the starting stalls when you’re ready.”"
+“Everything is in order, {TITLE},” he says. “Take your place at the starting stalls when you’re ready.”"
 content = Array[ExtResource("2_2q3su")]([SubResource("Resource_aimwn")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
