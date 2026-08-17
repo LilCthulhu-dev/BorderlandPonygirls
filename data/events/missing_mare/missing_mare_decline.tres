@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3"]
-[ext_resource type="Texture2D" uid="uid://cimgmmarepost" path="res://assets/img/missing_mare_post.png" id="4"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_0awjk"]
+[ext_resource type="Texture2D" uid="uid://cimgmmarepost" path="res://assets/img/frozenhunter/missing_mare_post.png" id="4"]
 
 [sub_resource type="Resource" id="Resource_return"]
 script = ExtResource("1")
@@ -13,7 +14,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3")
 titel = "Missing Mare"
-img = ExtResource("4")
 description = "The merchant spits into the dust. “Then I’ll ask the next warband, {TITLE}. Someone always wants coin.”"
+img = ExtResource("4")
 content = Array[ExtResource("2")]([SubResource("Resource_return")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

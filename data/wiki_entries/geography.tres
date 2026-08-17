@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://bojvhw67gi61f"]
+
+[ext_resource type="Texture2D" uid="uid://bbblr86f7p0ir" path="res://assets/img/lil_cthulhu/geography.png" id="1_v4l6x"]
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="2_ro3xn"]
+[ext_resource type="Resource" uid="uid://mqsy220odxor" path="res://data/wiki_entries/ancient_forest.tres" id="3_0pfnc"]
+[ext_resource type="Resource" uid="uid://wb535qoga2yg" path="res://data/wiki_entries/borderlands.tres" id="4_0pfnc"]
+[ext_resource type="Resource" uid="uid://c0u1ym1ajvcpx" path="res://data/wiki_entries/wild_north.tres" id="4_24ddp"]
+[ext_resource type="Resource" uid="uid://b3h427sbxxyog" path="res://data/wiki_entries/lyrian_empire.tres" id="5_24ddp"]
+[ext_resource type="Resource" uid="uid://bry3e7fujogpt" path="res://data/wiki_entries/world_seam_mountains.tres" id="5_j3uip"]
+
+[resource]
+script = ExtResource("2_ro3xn")
+sub_entries = Array[ExtResource("2_ro3xn")]([ExtResource("3_0pfnc"), ExtResource("4_0pfnc"), ExtResource("5_24ddp"), ExtResource("4_24ddp"), ExtResource("5_j3uip")])
+description = "The known world lies along the eastern coast of a vast continent, bounded by the Sea of Stars to the east and the World Seam Mountains to the west. Beyond those mountains lie mysterious lands that remain entirely unknown.
+
+To the south and southeast lie the Isilian Grasslands and the Kharak Desert, home to gnolls and numerous other beast-folk and wild-folk adapted to the hot climate. To the north and northeast stretches the Wild North, inhabited by goblins, orks, ogres, and other hostile peoples."
+img = ExtResource("1_v4l6x")
+metadata/_custom_type_script = "uid://bkxhc74auednr"

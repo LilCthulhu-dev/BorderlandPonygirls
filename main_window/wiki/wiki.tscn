@@ -3,16 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://je75uyt8bsbm" path="res://main_window/page_template.tscn" id="1_4v0x0"]
 [ext_resource type="PackedScene" uid="uid://c1u885uy5uxeb" path="res://templates/singel_page.tscn" id="2_j6m04"]
 [ext_resource type="Script" uid="uid://ckpbsef2mlvg8" path="res://main_window/wiki/wiki.gd" id="2_pg6rj"]
-[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="3_2bjhm"]
-[ext_resource type="Resource" uid="uid://cdhcgjw2bjlhb" path="res://data/wiki_entries/game_pitch.tres" id="4_4qe80"]
-[ext_resource type="Resource" uid="uid://bojvhw67gi61f" path="res://data/wiki_entries/borderlands.tres" id="4_ht33j"]
-[ext_resource type="Resource" uid="uid://vyoggkey3iuy" path="res://data/wiki_entries/ponygirls.tres" id="4_ki773"]
-[ext_resource type="Resource" uid="uid://dxlcoaqo0dmee" path="res://data/wiki_entries/races.tres" id="6_m67ac"]
 [ext_resource type="Theme" uid="uid://g3ipvocd8bth" path="res://theme/header_theme.tres" id="8_m67ac"]
 
 [node name="Wiki" unique_id=1948255639 instance=ExtResource("1_4v0x0")]
 script = ExtResource("2_pg6rj")
-wiki_entries = Array[ExtResource("3_2bjhm")]([ExtResource("4_4qe80"), ExtResource("4_ht33j"), ExtResource("4_ki773"), ExtResource("6_m67ac")])
+wiki_entries_folder = "res://data/wiki_entries/"
 btn_text = "Wiki"
 shortcut_key_string = "w"
 
@@ -22,19 +17,37 @@ position = Vector2(304, 352)
 [node name="SingelPage2" parent="." index="1" unique_id=1725481516 instance=ExtResource("2_j6m04")]
 position = Vector2(848, 352)
 
-[node name="ScrollContainer" type="ScrollContainer" parent="." index="2" unique_id=1747140271]
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="2" unique_id=351031465]
 layout_mode = 0
 offset_left = 96.0
 offset_top = 112.0
 offset_right = 512.0
 offset_bottom = 592.0
-
-[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" index="0" unique_id=1341316071]
-layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="ListContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer" index="0" unique_id=1221585982]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" index="0" unique_id=424933248]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" index="0" unique_id=598325443]
+layout_mode = 2
+text = "Search:"
+
+[node name="WikiSearch" type="LineEdit" parent="VBoxContainer/HBoxContainer" index="1" unique_id=1806772764]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" index="1" unique_id=1747140271]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer" index="0" unique_id=1341316071]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_right = 15
+
+[node name="ListContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/MarginContainer" index="0" unique_id=1221585982]
 unique_name_in_owner = true
 layout_mode = 2
 
@@ -49,17 +62,25 @@ offset_bottom = 592.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/margin_right = 15
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2/MarginContainer" index="0" unique_id=1685171354]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="EntryHeader" type="Label" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="0" unique_id=328016162]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="0" unique_id=518638016]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="EntryHeader" type="Label" parent="ScrollContainer2/MarginContainer/VBoxContainer/VBoxContainer" index="0" unique_id=328016162]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("8_m67ac")
 autowrap_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="ScrollContainer2/MarginContainer/VBoxContainer/VBoxContainer" index="1" unique_id=92268770]
+layout_mode = 2
 
 [node name="EntryImage" type="TextureRect" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="1" unique_id=1976486223]
 unique_name_in_owner = true
@@ -71,3 +92,5 @@ stretch_mode = 5
 unique_name_in_owner = true
 layout_mode = 2
 autowrap_mode = 2
+
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer/WikiSearch" to="." method="_on_wiki_search_text_changed"]

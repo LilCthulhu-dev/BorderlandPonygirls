@@ -9,7 +9,7 @@
 [ext_resource type="Resource" uid="uid://cflagmaredone01" path="res://data/flags/missing_mare_done.tres" id="7"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
-[ext_resource type="Texture2D" uid="uid://cimgmmarewild" path="res://assets/img/missing_mare_wilderness.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://cimgmmarewild" path="res://assets/img/frozenhunter/missing_mare_wilderness.png" id="10"]
 [ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="11"]
 [ext_resource type="Resource" uid="uid://ccommarecamp01" path="res://data/combats/missing_mare/missing_mare.tres" id="12"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="13"]

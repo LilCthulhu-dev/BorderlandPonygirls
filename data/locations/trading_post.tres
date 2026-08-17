@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Location" format=3 uid="uid://c5t7f5l883j8j"]
 
-[ext_resource type="Texture2D" uid="uid://dqvftrnu3ctxs" path="res://assets/img/tradepost.png" id="1_0rab4"]
+[ext_resource type="Texture2D" uid="uid://dqvftrnu3ctxs" path="res://assets/img/lil_cthulhu/tradepost.png" id="1_0rab4"]
 [ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_gvkq6"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="2_1xhgw"]
 [ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="2_3veny"]
@@ -18,7 +18,11 @@
 script = ExtResource("2_5ho7t")
 title = "Trading Post"
 image = ExtResource("1_0rab4")
-description = "A few sturdy-looking buildings, a well-kept stable, a solid wall, and grim-faced guards. The tiny outpost isn’t much to write home about, but it is well defended and secure. Out here, most people are used to the sight of a goblin warband, so no one even looks twice at you or your ponygirls.  You’re just another trader and your she-beasts is nothing but cattle."
+description = "A handful of sturdy buildings, a well-kept stable, and grim-faced guards - this lonely trading post marks the gateway between the Empire to the south and the wild borderlands to the north.
+
+Nearly all goods entering the Empire from the north or leaving it in that direction pass through this small outpost, making it one of the most important places in the region.
+
+The post was built beside a stream that flows north toward Harbortown. As a result, its tiny pier is far busier than its modest size would suggest."
 expensive_items = Array[ExtResource("1_gvkq6")]([ExtResource("2_3veny")])
 random_events = Array[ExtResource("2_1xhgw")]([ExtResource("3_q1dao"), ExtResource("4_cp2w7"), ExtResource("6_fair"), ExtResource("8_n2epe"), ExtResource("7_mare")])
 quest_events = Array[ExtResource("2_1xhgw")]([ExtResource("5_3veny"), ExtResource("9_iron"), ExtResource("10_mare")])
