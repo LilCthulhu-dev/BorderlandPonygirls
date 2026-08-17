@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Location" format=3 uid="uid://cyidn12h5dwag"]
 
-[ext_resource type="Texture2D" uid="uid://cuylo2ixlfq6e" path="res://assets/img/goblinVillage1.png" id="1_dqvud"]
+[ext_resource type="Texture2D" uid="uid://cuylo2ixlfq6e" path="res://assets/img/lil_cthulhu/goblinVillage1.png" id="1_dqvud"]
 [ext_resource type="Script" uid="uid://co4871x76a7qo" path="res://data/locations/location.gd" id="1_s87no"]
 [ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_to240"]
 [ext_resource type="Resource" uid="uid://chupthwmfqefv" path="res://data/item/grain.tres" id="2_e3v7j"]

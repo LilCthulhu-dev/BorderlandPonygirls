@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cadushsnrgtvk"
-path="res://.godot/imported/hay_wain.png-67fa1b1a2c2f895949373aa7351aef8d.ctex"
+uid="uid://c2uuwsskd80ei"
+path="res://.godot/imported/AncientForest.png-8af9de693ccbc7911ea4212628767eb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/hay_wain.png"
-dest_files=["res://.godot/imported/hay_wain.png-67fa1b1a2c2f895949373aa7351aef8d.ctex"]
+source_file="res://assets/img/lil_cthulhu/AncientForest.png"
+dest_files=["res://.godot/imported/AncientForest.png-8af9de693ccbc7911ea4212628767eb8.ctex"]
 
 [params]
 

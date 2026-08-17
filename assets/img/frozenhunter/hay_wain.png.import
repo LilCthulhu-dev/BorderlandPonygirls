@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnrjya8ab0cbb"
-path="res://.godot/imported/night_dispatch.png-ab2ed950f9aa8521ea8dee8cb0bd84b9.ctex"
+uid="uid://cadushsnrgtvk"
+path="res://.godot/imported/hay_wain.png-67fa1b1a2c2f895949373aa7351aef8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/night_dispatch.png"
-dest_files=["res://.godot/imported/night_dispatch.png-ab2ed950f9aa8521ea8dee8cb0bd84b9.ctex"]
+source_file="res://assets/img/frozenhunter/hay_wain.png"
+dest_files=["res://.godot/imported/hay_wain.png-67fa1b1a2c2f895949373aa7351aef8d.ctex"]
 
 [params]
 

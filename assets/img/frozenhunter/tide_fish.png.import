@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://btp003vx4cmr3"
-path="res://.godot/imported/cave_salvage.png-6f7bce251f6a571e50ded6fe225e5c73.ctex"
+uid="uid://dkkrsw20f7cso"
+path="res://.godot/imported/tide_fish.png-55fa624c9322a3010e32ac582399567c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/cave_salvage.png"
-dest_files=["res://.godot/imported/cave_salvage.png-6f7bce251f6a571e50ded6fe225e5c73.ctex"]
+source_file="res://assets/img/frozenhunter/tide_fish.png"
+dest_files=["res://.godot/imported/tide_fish.png-55fa624c9322a3010e32ac582399567c.ctex"]
 
 [params]
 

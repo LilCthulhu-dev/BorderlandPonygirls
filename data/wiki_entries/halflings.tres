@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://bw5wx85icbscp"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_whex8"]
+
+[resource]
+script = ExtResource("1_whex8")
+titel = "Halflings"
+description = "Halflings are a strange exception to almost every rule, occupying a place somewhere between tall-folk and wild-folk (though most scholars now classify them as wild-folk).
+
+They are a civilized people who build farms and settlements much like humans and elves. However, they are small, overwhelmingly male, and share the goblin practice of keeping tall-folk as cattle.
+
+Halflings are rarely involved in high politics, and only a handful of halfling nobles are known to exist. However, they maintain good relations with all manner of creatures, trading and negotiating with folk whom most others would consider hostile.
+
+Within the Empire, halflings make up most of the male population. Their ancient tradition of keeping tall-folk as hu-cows and ponygirls predates the Empire’s acceptance of similar goblin practices by thousands of years.
+
+They are far gentler with their cattle than goblins are, but ultimately still reduce them to livestock."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

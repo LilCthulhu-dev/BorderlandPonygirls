@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3aq1mde14sj"
-path="res://.godot/imported/harbor_town.png-9f4b684f92b3ff988bd89eefb2ef5159.ctex"
+uid="uid://b7yp1n4asbypw"
+path="res://.godot/imported/missing_mare.png-0c361a82c1b8f86552e0498060c1e00a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/harbor_town.png"
-dest_files=["res://.godot/imported/harbor_town.png-9f4b684f92b3ff988bd89eefb2ef5159.ctex"]
+source_file="res://assets/img/frozenhunter/missing_mare.png"
+dest_files=["res://.godot/imported/missing_mare.png-0c361a82c1b8f86552e0498060c1e00a.ctex"]
 
 [params]
 

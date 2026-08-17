@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkkrsw20f7cso"
-path="res://.godot/imported/tide_fish.png-c164d3dd2c94e0d0135012597deaa510.ctex"
+uid="uid://xgvuvrgpuog3"
+path="res://.godot/imported/harvest_cask.png-a1411183e3a6a656dc06d1979ba218b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/tide_fish.png"
-dest_files=["res://.godot/imported/tide_fish.png-c164d3dd2c94e0d0135012597deaa510.ctex"]
+source_file="res://assets/img/frozenhunter/harvest_cask.png"
+dest_files=["res://.godot/imported/harvest_cask.png-a1411183e3a6a656dc06d1979ba218b6.ctex"]
 
 [params]
 

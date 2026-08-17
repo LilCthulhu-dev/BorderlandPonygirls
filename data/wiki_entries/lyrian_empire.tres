@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://b3h427sbxxyog"]
+
+[ext_resource type="Texture2D" uid="uid://bv8qhybro06bg" path="res://assets/img/lil_cthulhu/LyrianEmpire.png" id="1_1p0ut"]
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_2uyj3"]
+
+[resource]
+script = ExtResource("1_2uyj3")
+description = "The Lyrian Empire lies in the temperate regions of the known world, forming both its geographical and political centre.
+
+Humans and elves make up most of its female population, while halflings account for the majority of its men. Political power rests primarily in the hands of elven nobles.
+
+The Empire is an ancient realm, founded by tall-folk seeking protection from the wild-folk and beast-folk of the north and south. Even after its founding, it remained under constant threat and frequently struggled to defend its borders.
+
+Over the last few centuries, however, the Empire has adopted a more pragmatic approach. It has made peace with many wild-folk tribes along its borders, granting them free passage and trading rights while respecting their traditions.
+
+Despite presenting itself as enlightened and civilized, the Empire has never abolished slavery. Halflings have kept hu-cows and ponygirls for thousands of years, similar practices among allied wild-folk are tolerated, and the Empire regularly raids hostile wildlands to its north and south in search of male breeding slaves."
+img = ExtResource("1_1p0ut")
+metadata/_custom_type_script = "uid://bkxhc74auednr"

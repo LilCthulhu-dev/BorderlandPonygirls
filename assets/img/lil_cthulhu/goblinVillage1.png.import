@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqvftrnu3ctxs"
-path="res://.godot/imported/tradepost.png-2545563d78d81cdd1af3c61a007d7ddc.ctex"
+uid="uid://cuylo2ixlfq6e"
+path="res://.godot/imported/goblinVillage1.png-e8be29ffa6fc70eb2a4a99b8bc0eadfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/tradepost.png"
-dest_files=["res://.godot/imported/tradepost.png-2545563d78d81cdd1af3c61a007d7ddc.ctex"]
+source_file="res://assets/img/lil_cthulhu/goblinVillage1.png"
+dest_files=["res://.godot/imported/goblinVillage1.png-e8be29ffa6fc70eb2a4a99b8bc0eadfd.ctex"]
 
 [params]
 

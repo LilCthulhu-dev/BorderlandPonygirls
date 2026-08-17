@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wtucdn1g3v66"
-path="res://.godot/imported/caveVictory.png-60b7e0b2be9ffbc68a0191978d337423.ctex"
+uid="uid://b7wl3kdpddtt1"
+path="res://.godot/imported/traveling_tinker.png-476657aee3d97bd14bcec56700d14afb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/caveVictory.png"
-dest_files=["res://.godot/imported/caveVictory.png-60b7e0b2be9ffbc68a0191978d337423.ctex"]
+source_file="res://assets/img/frozenhunter/traveling_tinker.png"
+dest_files=["res://.godot/imported/traveling_tinker.png-476657aee3d97bd14bcec56700d14afb.ctex"]
 
 [params]
 

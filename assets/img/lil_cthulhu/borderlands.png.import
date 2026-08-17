@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckg3uqw6ae6va"
-path="res://.godot/imported/grain_levy.png-2fba6889e4a35010080b6c93bdbbad00.ctex"
+uid="uid://bj72r1xpy7ot1"
+path="res://.godot/imported/borderlands.png-ddf0de226b797613cd08b207f832e24c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/grain_levy.png"
-dest_files=["res://.godot/imported/grain_levy.png-2fba6889e4a35010080b6c93bdbbad00.ctex"]
+source_file="res://assets/img/lil_cthulhu/borderlands.png"
+dest_files=["res://.godot/imported/borderlands.png-ddf0de226b797613cd08b207f832e24c.ctex"]
 
 [params]
 

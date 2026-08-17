@@ -9,7 +9,7 @@
 [ext_resource type="Resource" uid="uid://cflaggrainlv01" path="res://data/flags/grain_levy_01.tres" id="7"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
-[ext_resource type="Texture2D" uid="uid://ckg3uqw6ae6va" path="res://assets/img/grain_levy.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://ckg3uqw6ae6va" path="res://assets/img/frozenhunter/grain_levy.png" id="10"]
 
 [sub_resource type="Resource" id="Resource_inspect_txt"]
 script = ExtResource("3")

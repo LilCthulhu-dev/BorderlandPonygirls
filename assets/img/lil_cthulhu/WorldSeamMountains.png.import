@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7wl3kdpddtt1"
-path="res://.godot/imported/traveling_tinker.png-ece120118e3500b16569a017914e5a75.ctex"
+uid="uid://dbnltifwyfc7o"
+path="res://.godot/imported/WorldSeamMountains.png-cacc41bae989504e72b441ff04f2e85c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/traveling_tinker.png"
-dest_files=["res://.godot/imported/traveling_tinker.png-ece120118e3500b16569a017914e5a75.ctex"]
+source_file="res://assets/img/lil_cthulhu/WorldSeamMountains.png"
+dest_files=["res://.godot/imported/WorldSeamMountains.png-cacc41bae989504e72b441ff04f2e85c.ctex"]
 
 [params]
 

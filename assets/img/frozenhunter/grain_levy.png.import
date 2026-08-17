@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6yeudhiravxp"
-path="res://.godot/imported/bone_charm.png-0cfaf51896d23b28fb2224f8cf5c8a47.ctex"
+uid="uid://ckg3uqw6ae6va"
+path="res://.godot/imported/grain_levy.png-2fba6889e4a35010080b6c93bdbbad00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/bone_charm.png"
-dest_files=["res://.godot/imported/bone_charm.png-0cfaf51896d23b28fb2224f8cf5c8a47.ctex"]
+source_file="res://assets/img/frozenhunter/grain_levy.png"
+dest_files=["res://.godot/imported/grain_levy.png-2fba6889e4a35010080b6c93bdbbad00.ctex"]
 
 [params]
 
