@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmwowqe86ua5p"
-path="res://.godot/imported/salt_run.png-04cf64d8067a76b451e811564601b9c8.ctex"
+uid="uid://dkkrsw20f7cso"
+path="res://.godot/imported/tide_fish.png-55fa624c9322a3010e32ac582399567c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/salt_run.png"
-dest_files=["res://.godot/imported/salt_run.png-04cf64d8067a76b451e811564601b9c8.ctex"]
+source_file="res://assets/img/frozenhunter/tide_fish.png"
+dest_files=["res://.godot/imported/tide_fish.png-55fa624c9322a3010e32ac582399567c.ctex"]
 
 [params]
 

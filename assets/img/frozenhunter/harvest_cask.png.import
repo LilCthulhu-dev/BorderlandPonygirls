@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xgvuvrgpuog3"
-path="res://.godot/imported/harvest_cask.png-3a0bb7aa5a0a8c9f9fd9e19eb9b24967.ctex"
+path="res://.godot/imported/harvest_cask.png-a1411183e3a6a656dc06d1979ba218b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/harvest_cask.png"
-dest_files=["res://.godot/imported/harvest_cask.png-3a0bb7aa5a0a8c9f9fd9e19eb9b24967.ctex"]
+source_file="res://assets/img/frozenhunter/harvest_cask.png"
+dest_files=["res://.godot/imported/harvest_cask.png-a1411183e3a6a656dc06d1979ba218b6.ctex"]
 
 [params]
 

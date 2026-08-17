@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuylo2ixlfq6e"
-path="res://.godot/imported/goblinVillage1.png-7a0d731696d2bec77b6faee63afaa225.ctex"
+uid="uid://b7wl3kdpddtt1"
+path="res://.godot/imported/traveling_tinker.png-476657aee3d97bd14bcec56700d14afb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/goblinVillage1.png"
-dest_files=["res://.godot/imported/goblinVillage1.png-7a0d731696d2bec77b6faee63afaa225.ctex"]
+source_file="res://assets/img/frozenhunter/traveling_tinker.png"
+dest_files=["res://.godot/imported/traveling_tinker.png-476657aee3d97bd14bcec56700d14afb.ctex"]
 
 [params]
 

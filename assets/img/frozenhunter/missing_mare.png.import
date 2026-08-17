@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmvieigkj0jv5"
-path="res://.godot/imported/caveDefeat.png-6566634b4063ac05b85106a6615551d6.ctex"
+uid="uid://b7yp1n4asbypw"
+path="res://.godot/imported/missing_mare.png-0c361a82c1b8f86552e0498060c1e00a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/caveDefeat.png"
-dest_files=["res://.godot/imported/caveDefeat.png-6566634b4063ac05b85106a6615551d6.ctex"]
+source_file="res://assets/img/frozenhunter/missing_mare.png"
+dest_files=["res://.godot/imported/missing_mare.png-0c361a82c1b8f86552e0498060c1e00a.ctex"]
 
 [params]
 

@@ -10,7 +10,7 @@ metadata={
 
 [deps]
 
-source_file="res://assets/img/ponygirl_race_hill.png"
+source_file="res://assets/img/frozenhunter/ponygirl_race_hill.png"
 dest_files=["res://.godot/imported/ponygirl_race_hill.png-8be69c0ef856b1b4b62c442c98eda650.ctex"]
 
 [params]

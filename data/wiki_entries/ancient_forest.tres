@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://mqsy220odxor"]
+
+[ext_resource type="Texture2D" uid="uid://c2uuwsskd80ei" path="res://assets/img/lil_cthulhu/AncientForest.png" id="1_2ksfp"]
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_6rqj8"]
+
+[resource]
+script = ExtResource("1_6rqj8")
+description = "The northeastern Borderlands are covered by an ancient, untamed forest. It is home to countless wild beasts, while strange magic and angry nature spirits make it a dangerous and treacherous place to navigate.
+
+Its dangers keep sensible folk away and make the forest a natural barrier against many creatures of the Wild North, forcing those who wish to reach the Lyrian Empire through the narrow, passable heart of the Borderlands.
+
+However, several covens of witches live along the forest’s edge. Many claim they commune with the spirits of the land and sell all manner of strange goods and unusual services."
+img = ExtResource("1_2ksfp")
+metadata/_custom_type_script = "uid://bkxhc74auednr"

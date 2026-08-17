@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://c0u1ym1ajvcpx"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_3nq8p"]
+[ext_resource type="Texture2D" uid="uid://0xf34ryurqj5" path="res://assets/img/lil_cthulhu/WildNorth.png" id="1_mta8b"]
+
+[resource]
+script = ExtResource("1_3nq8p")
+description = "To the north of the Borderlands lies a vast, untamed wilderness - an endless expanse of grassland swept by harsh, cold winds.
+
+The Wild North is home to feral orks, goblins, ogres, and other wild-folk and beast-folk who do not abide by the treaties between the Empire and the inhabitants of the Borderlands. They regularly raid south in search of plunder, slaves, and a good fight."
+img = ExtResource("1_mta8b")
+metadata/_custom_type_script = "uid://bkxhc74auednr"

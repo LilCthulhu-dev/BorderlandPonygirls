@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwj5t8vqwvex8"
-path="res://.godot/imported/ponygirl_race_defeat.png-0b86c20fe439070e35ba29f9fbf4e0f7.ctex"
+uid="uid://h8k5oxtskpre"
+path="res://.godot/imported/iron_tithe.png-eccffba7e91968f4a08eb2cfc6d586a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirl_race_defeat.png"
-dest_files=["res://.godot/imported/ponygirl_race_defeat.png-0b86c20fe439070e35ba29f9fbf4e0f7.ctex"]
+source_file="res://assets/img/frozenhunter/iron_tithe.png"
+dest_files=["res://.godot/imported/iron_tithe.png-eccffba7e91968f4a08eb2cfc6d586a6.ctex"]
 
 [params]
 

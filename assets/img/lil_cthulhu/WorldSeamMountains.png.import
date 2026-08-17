@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3aq1mde14sj"
-path="res://.godot/imported/harbor_town.png-9f4b684f92b3ff988bd89eefb2ef5159.ctex"
+uid="uid://dbnltifwyfc7o"
+path="res://.godot/imported/WorldSeamMountains.png-cacc41bae989504e72b441ff04f2e85c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/harbor_town.png"
-dest_files=["res://.godot/imported/harbor_town.png-9f4b684f92b3ff988bd89eefb2ef5159.ctex"]
+source_file="res://assets/img/lil_cthulhu/WorldSeamMountains.png"
+dest_files=["res://.godot/imported/WorldSeamMountains.png-cacc41bae989504e72b441ff04f2e85c.ctex"]
 
 [params]
 

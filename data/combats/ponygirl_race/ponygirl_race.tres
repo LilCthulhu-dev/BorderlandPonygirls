@@ -11,8 +11,8 @@
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="9"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="10"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="11"]
-[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/ponygirl_race_start.png" id="12"]
-[ext_resource type="Texture2D" uid="uid://dwj5t8vqwvex8" path="res://assets/img/ponygirl_race_defeat.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/frozenhunter/ponygirl_race_start.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dwj5t8vqwvex8" path="res://assets/img/frozenhunter/ponygirl_race_defeat.png" id="13"]
 
 [sub_resource type="Resource" id="Resource_vgold"]
 script = ExtResource("9")

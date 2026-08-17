@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqhidh7iut34u"
-path="res://.godot/imported/ponygirl_race_start.png-927649368c597f1eeb516f3406e79838.ctex"
+uid="uid://ddpr7hlw47uqr"
+path="res://.godot/imported/prolog1.png-3b8c1c7c5a520fd7b00e4da2a165f2a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirl_race_start.png"
-dest_files=["res://.godot/imported/ponygirl_race_start.png-927649368c597f1eeb516f3406e79838.ctex"]
+source_file="res://assets/img/lil_cthulhu/prolog1.png"
+dest_files=["res://.godot/imported/prolog1.png-3b8c1c7c5a520fd7b00e4da2a165f2a8.ctex"]
 
 [params]
 

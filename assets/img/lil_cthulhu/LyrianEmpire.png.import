@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7wl3kdpddtt1"
-path="res://.godot/imported/traveling_tinker.png-ece120118e3500b16569a017914e5a75.ctex"
+uid="uid://bv8qhybro06bg"
+path="res://.godot/imported/LyrianEmpire.png-e404563b3ee8405fda99c11997065bb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/traveling_tinker.png"
-dest_files=["res://.godot/imported/traveling_tinker.png-ece120118e3500b16569a017914e5a75.ctex"]
+source_file="res://assets/img/lil_cthulhu/LyrianEmpire.png"
+dest_files=["res://.godot/imported/LyrianEmpire.png-e404563b3ee8405fda99c11997065bb0.ctex"]
 
 [params]
 

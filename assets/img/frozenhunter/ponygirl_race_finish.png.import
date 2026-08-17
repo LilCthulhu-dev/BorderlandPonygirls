@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyt603mfawukk"
-path="res://.godot/imported/ponygirl_race_edge.png-8b8b139ead4c3fab5366463a5e0dd4d0.ctex"
+uid="uid://lh7k7vwalr0w"
+path="res://.godot/imported/ponygirl_race_finish.png-61310abcd55880929bd1e4907b96b8bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirl_race_edge.png"
-dest_files=["res://.godot/imported/ponygirl_race_edge.png-8b8b139ead4c3fab5366463a5e0dd4d0.ctex"]
+source_file="res://assets/img/frozenhunter/ponygirl_race_finish.png"
+dest_files=["res://.godot/imported/ponygirl_race_finish.png-61310abcd55880929bd1e4907b96b8bb.ctex"]
 
 [params]
 

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://klqnhq2f0ndm"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_p8jwl"]
+
+[resource]
+script = ExtResource("1_p8jwl")
+titel = "Goblins"
+description = "Goblins are a wild and proud people who often live deep in the wilderness or along the edges of civilized lands. Outsiders commonly dismiss them as savage and barely intelligent, but they possess a rich history. Their raids have remained a constant threat to civilized folk, no matter how often those folk call them primitive.
+
+Goblins are overwhelmingly male, with only one female born for every ten births, but they can interbreed with tall-folk such as humans and elves. This has led to a long tradition of raiding and enslaving tall-folk, keeping them as cattle, ponygirls, and breeding stock.
+
+Over the last few centuries, the Lyrian Empire has begun making peace with the goblin tribes along its borders. Through carefully negotiated treaties of protection and trade, the Empire allows them to preserve their traditions and keep their ponygirls, provided they protect the trade routes."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

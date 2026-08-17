@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6yeudhiravxp"
-path="res://.godot/imported/bone_charm.png-0cfaf51896d23b28fb2224f8cf5c8a47.ctex"
+uid="uid://cuylo2ixlfq6e"
+path="res://.godot/imported/goblinVillage1.png-e8be29ffa6fc70eb2a4a99b8bc0eadfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/bone_charm.png"
-dest_files=["res://.godot/imported/bone_charm.png-0cfaf51896d23b28fb2224f8cf5c8a47.ctex"]
+source_file="res://assets/img/lil_cthulhu/goblinVillage1.png"
+dest_files=["res://.godot/imported/goblinVillage1.png-e8be29ffa6fc70eb2a4a99b8bc0eadfd.ctex"]
 
 [params]
 
