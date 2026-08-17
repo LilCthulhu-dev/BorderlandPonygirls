@@ -37,7 +37,7 @@ metadata/_custom_type_script = "uid://dc1bca6pcahfr"
 
 [resource]
 script = ExtResource("8_j87iw")
-title = "Ponygirl Race"
+title = "Halfling Village Derby"
 scenes = Array[ExtResource("2_vhi4r")]([ExtResource("3_gfntq"), ExtResource("4_qqaxa"), ExtResource("5_vmy3k"), ExtResource("6_aut3k"), ExtResource("7_fak8y")])
 keep_focused_ponygirl = true
 enemy_descriptors = Array[String](["Fierce", "Tough", "Skilled", "Determined", "Experienced", "Relentless"])

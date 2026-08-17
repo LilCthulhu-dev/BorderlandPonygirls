@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_k0miw"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4_rdqxi"]
 [ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="5_qw2up"]
+[ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="6_rdqxi"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="6_wt7a3"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_0vik8"]
 
@@ -16,7 +17,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_qw2up"]
 script = ExtResource("6_wt7a3")
-add_flag = Array[ExtResource("4_rdqxi")]([ExtResource("5_qw2up")])
+add_flag = Array[ExtResource("4_rdqxi")]([ExtResource("5_qw2up"), ExtResource("6_rdqxi")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_lu3ck"]

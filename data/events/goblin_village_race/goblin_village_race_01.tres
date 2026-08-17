@@ -1,0 +1,94 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://b0srqqpainf6k"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_f0xq1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_eda28"]
+[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_cxp3n"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_lqno4"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="4_kwfdy"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5_u0bws"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6_emkm8"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="6_kwfdy"]
+[ext_resource type="Resource" uid="uid://dxorkitwvi3mx" path="res://data/flags/entered_first_race.tres" id="7_qpkn5"]
+[ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="8_cw7d1"]
+[ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="9_uf0eq"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="10_g4eg8"]
+[ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="10_kwfdy"]
+
+[sub_resource type="Resource" id="Resource_wfqit"]
+script = ExtResource("4_kwfdy")
+txt = "The course circles the village’s old training ground. It is a rough mixture of packed earth, mud, and trampled grass, bordered by wooden fences assembled from whatever materials were available.
+
+The smell of mares in heat hangs heavy in the air, and there is more then one cunt being breed somewhere on the edge of the track.
+
+The track is wide enough for aggressive overtaking, but its sharp bends, shallow ditches, and uneven ground promise a rough race."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_svp2w"]
+script = ExtResource("5_u0bws")
+txt = "Look over the track"
+actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_wfqit")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_mkbk7"]
+script = ExtResource("4_kwfdy")
+txt = "The stands are packed with goblins from the village and several nearby warbands. They drink, shout advice, exchange bets, and loudly mock any racer unfortunate enough to stumble during practice.
+
+Food stalls sell grilled meat, strong mushroom beer, and a variety of snacks best left unidentified. The atmosphere is chaotic, but undeniably cheerful."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_tbie3"]
+script = ExtResource("5_u0bws")
+txt = "Observe the crowd"
+actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_mkbk7")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_te1ec"]
+script = ExtResource("4_kwfdy")
+txt = "Most of the competing mares belong to goblin warbands and look strong, disciplined, and accustomed to rough treatment. The heavy wetness between their legs also shows how excited they are to run in front of the crowd.
+
+Their jockeys appear equally sturdy and experienced.
+
+Few possess any formal racing experience, but goblins have taken to the sport with alarming enthusiasm. Judging by their confident grins, they consider bruises an unavoidable part of the fun."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_f46yg"]
+script = ExtResource("5_u0bws")
+txt = "Study the competition"
+actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_te1ec")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_ktihw"]
+script = ExtResource("6_kwfdy")
+event_path = "uid://caosp2co4v404"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_u0bws"]
+script = ExtResource("10_g4eg8")
+required_flag = Array[ExtResource("6_emkm8")]([ExtResource("9_uf0eq")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_0hriv"]
+script = ExtResource("5_u0bws")
+txt = "Enter the race"
+actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_ktihw"), SubResource("Resource_u0bws")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_ds2kd"]
+script = ExtResource("5_u0bws")
+txt = "Leave"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_kndiu"]
+script = ExtResource("10_g4eg8")
+required_flag = Array[ExtResource("6_emkm8")]([ExtResource("8_cw7d1"), ExtResource("10_kwfdy"), ExtResource("7_qpkn5")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[resource]
+script = ExtResource("3_lqno4")
+titel = "Goblin Village Scramble"
+description = "ou hear the racetrack long before you see it. Goblins shout, drums pound, and an excited crowd roars whenever a ponygirl passes the crude wooden stands.
+
+The village has turned an old training ground into its own racing circuit, and almost everyone has come to watch."
+content = Array[ExtResource("2_eda28")]([SubResource("Resource_svp2w"), SubResource("Resource_tbie3"), SubResource("Resource_f46yg"), SubResource("Resource_0hriv"), SubResource("Resource_ds2kd")])
+open_actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_kndiu")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

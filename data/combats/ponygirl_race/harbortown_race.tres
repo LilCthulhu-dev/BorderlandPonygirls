@@ -37,7 +37,7 @@ metadata/_custom_type_script = "uid://dc1bca6pcahfr"
 
 [resource]
 script = ExtResource("8_emu32")
-title = "Ponygirl Race"
+title = "Harbortown Circuit"
 difficulty_penalty = 5
 scenes = Array[ExtResource("2_oy52t")]([ExtResource("3_iawjh"), ExtResource("4_mm7vj"), ExtResource("5_af2uy"), ExtResource("6_eefgr"), ExtResource("7_inrk7")])
 keep_focused_ponygirl = true

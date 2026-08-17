@@ -29,6 +29,12 @@ Utils="*uid://ckvbwas3biqbw"
 
 gdscript/warnings/unused_signal=0
 
+[file_customization]
+
+folder_colors={
+"res://data/": "red"
+}
+
 [layer_names]
 
 2d_physics/layer_2="Map"

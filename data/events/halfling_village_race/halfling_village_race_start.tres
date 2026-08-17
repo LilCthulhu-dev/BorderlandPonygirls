@@ -11,6 +11,7 @@
 [ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="9_2xjis"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="10_em653"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="11_4v8sr"]
+[ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="11_rw0fj"]
 
 [sub_resource type="Resource" id="Resource_4inwj"]
 script = ExtResource("4_pdny1")
@@ -61,10 +62,15 @@ script = ExtResource("6_1as17")
 event_path = "uid://ct21rebgp5bbx"
 metadata/_custom_type_script = "uid://low1eg5crao3"
 
+[sub_resource type="Resource" id="Resource_cxp3n"]
+script = ExtResource("10_em653")
+required_flag = Array[ExtResource("7_cioj3")]([ExtResource("9_2xjis")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
 [sub_resource type="Resource" id="Resource_1fkpw"]
 script = ExtResource("5_gm5k8")
 txt = "Enroll for the race"
-actions = Array[ExtResource("1_qfde6")]([SubResource("Resource_dladj")])
+actions = Array[ExtResource("1_qfde6")]([SubResource("Resource_dladj"), SubResource("Resource_cxp3n")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_pxexv"]
@@ -74,7 +80,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_ok1ty"]
 script = ExtResource("10_em653")
-required_flag = Array[ExtResource("7_cioj3")]([ExtResource("8_l8i5q"), ExtResource("9_2xjis")])
+required_flag = Array[ExtResource("7_cioj3")]([ExtResource("8_l8i5q"), ExtResource("11_rw0fj")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [resource]
