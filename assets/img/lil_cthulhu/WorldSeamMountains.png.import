@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddpr7hlw47uqr"
-path="res://.godot/imported/prolog1.png-bfc43311abccd3761355328f824d2160.ctex"
+uid="uid://dbnltifwyfc7o"
+path="res://.godot/imported/WorldSeamMountains.png-cacc41bae989504e72b441ff04f2e85c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/prolog1.png"
-dest_files=["res://.godot/imported/prolog1.png-bfc43311abccd3761355328f824d2160.ctex"]
+source_file="res://assets/img/lil_cthulhu/WorldSeamMountains.png"
+dest_files=["res://.godot/imported/WorldSeamMountains.png-cacc41bae989504e72b441ff04f2e85c.ctex"]
 
 [params]
 

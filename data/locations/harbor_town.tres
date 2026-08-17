@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_nwqgs"]
 [ext_resource type="Script" uid="uid://co4871x76a7qo" path="res://data/locations/location.gd" id="1_r76jd"]
-[ext_resource type="Texture2D" uid="uid://3aq1mde14sj" path="res://assets/img/harbor_town.png" id="1_v1mis"]
+[ext_resource type="Texture2D" uid="uid://3aq1mde14sj" path="res://assets/img/lil_cthulhu/harbor_town.png" id="1_v1mis"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="2_icx0v"]
 [ext_resource type="Resource" uid="uid://cid630t62lxb" path="res://data/item/fish.tres" id="2_jvg1u"]
 [ext_resource type="Resource" uid="uid://b8yrmk282tpxh" path="res://data/events/pony_offering/pony_offering_1.tres" id="3_7x03v"]

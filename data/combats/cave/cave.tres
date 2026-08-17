@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Combat" format=3 uid="uid://x34kho7r1pxd"]
 
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="1_6sfwx"]
-[ext_resource type="Texture2D" uid="uid://cmvieigkj0jv5" path="res://assets/img/caveDefeat.png" id="1_sua3i"]
+[ext_resource type="Texture2D" uid="uid://cmvieigkj0jv5" path="res://assets/img/lil_cthulhu/caveDefeat.png" id="1_sua3i"]
 [ext_resource type="Script" uid="uid://ct66od486dv7w" path="res://data/combats/combat.gd" id="2_6eojs"]
 [ext_resource type="Resource" uid="uid://c12wcp1svtde1" path="res://data/combats/cave/cave1.tres" id="2_vaug7"]
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="3_vaug7"]
@@ -13,7 +13,7 @@
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="7_pul65"]
 [ext_resource type="Resource" uid="uid://df3sldftfrxov" path="res://data/combats/cave/cave6.tres" id="7_rm7kp"]
 [ext_resource type="Resource" uid="uid://b6r2cthxncgua" path="res://data/combats/cave/cave7.tres" id="8_suwa0"]
-[ext_resource type="Texture2D" uid="uid://wtucdn1g3v66" path="res://assets/img/caveVictory.png" id="14_aasxy"]
+[ext_resource type="Texture2D" uid="uid://wtucdn1g3v66" path="res://assets/img/lil_cthulhu/caveVictory.png" id="14_aasxy"]
 
 [sub_resource type="Resource" id="Resource_vaug7"]
 script = ExtResource("6_j38u4")

@@ -4,10 +4,13 @@
 [ext_resource type="Resource" uid="uid://c4276pqbjv1da" path="res://data/wiki_entries/beast_folk.tres" id="2_qkd2a"]
 [ext_resource type="Resource" uid="uid://1lfi6t3n061y" path="res://data/wiki_entries/dwarfs.tres" id="3_onj7v"]
 [ext_resource type="Resource" uid="uid://cx1hjnpv8nenl" path="res://data/wiki_entries/tall_folk.tres" id="4_o22mp"]
+[ext_resource type="Resource" uid="uid://bw5wx85icbscp" path="res://data/wiki_entries/halflings.tres" id="4_onj7v"]
 [ext_resource type="Resource" uid="uid://1rlweade06yh" path="res://data/wiki_entries/wild_folk.tres" id="5_cxrn5"]
+[ext_resource type="Resource" uid="uid://klqnhq2f0ndm" path="res://data/wiki_entries/goblins.tres" id="7_o22mp"]
 
 [resource]
 script = ExtResource("1_niklb")
-sub_entries = Array[ExtResource("1_niklb")]([ExtResource("4_o22mp"), ExtResource("2_qkd2a"), ExtResource("5_cxrn5"), ExtResource("3_onj7v")])
-description = "Many races roam the Borderlands, but they are generally divided into three major groups: the tall-folk, the wild-folk, and the beast-folk - at least, that is how imperial scholars classify them."
+titel = "Races"
+sub_entries = Array[ExtResource("1_niklb")]([ExtResource("2_qkd2a"), ExtResource("3_onj7v"), ExtResource("4_onj7v"), ExtResource("4_o22mp"), ExtResource("5_cxrn5"), ExtResource("7_o22mp")])
+description = "Many races roam the Borderlands, but they are generally divided into three major groups: the tall-folk, the wild-folk, and the beast-folk - at least, that is how imperial scholars classify them. "
 metadata/_custom_type_script = "uid://bkxhc74auednr"

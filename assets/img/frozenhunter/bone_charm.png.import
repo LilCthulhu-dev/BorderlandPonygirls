@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmvieigkj0jv5"
-path="res://.godot/imported/caveDefeat.png-6566634b4063ac05b85106a6615551d6.ctex"
+uid="uid://b6yeudhiravxp"
+path="res://.godot/imported/bone_charm.png-744f4607626500408e08875c46ef20e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/caveDefeat.png"
-dest_files=["res://.godot/imported/caveDefeat.png-6566634b4063ac05b85106a6615551d6.ctex"]
+source_file="res://assets/img/frozenhunter/bone_charm.png"
+dest_files=["res://.godot/imported/bone_charm.png-744f4607626500408e08875c46ef20e1.ctex"]
 
 [params]
 

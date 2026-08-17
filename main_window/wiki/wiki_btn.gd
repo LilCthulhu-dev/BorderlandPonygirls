@@ -1,4 +1,5 @@
 extends HBoxContainer
+class_name WikiBtn
 
 @onready var buffer: Control = %Buffer
 @onready var button: Button = %Button

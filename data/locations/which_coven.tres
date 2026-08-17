@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Location" format=3 uid="uid://bxjq62a1k4ax6"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_1hyvp"]
+[ext_resource type="Resource" uid="uid://cid630t62lxb" path="res://data/item/fish.tres" id="2_c8xtr"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="2_fib0n"]
+[ext_resource type="Script" uid="uid://co4871x76a7qo" path="res://data/locations/location.gd" id="3_li3rk"]
+[ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="3_xhmke"]
+[ext_resource type="Resource" uid="uid://chupthwmfqefv" path="res://data/item/grain.tres" id="4_ax8sw"]
+[ext_resource type="Resource" uid="uid://dnm7ycxn38yvh" path="res://data/item/salt.tres" id="5_7knee"]
+
+[resource]
+script = ExtResource("3_li3rk")
+title = "Which Coven"
+description = "You enter a clearing in the swampy forest. Half-dead trees and a dense thorn hedge guard the narrow border between the marsh and the depths of the ancient woods to the northeast.
+
+A heavy fog limits your vision, but a path lit by flickering lanterns leads toward a small village perched on an island in the middle of the marsh.
+
+Its buildings are round, built from grey stone and topped with thatched roofs. Charms and wind chimes hang from the windows and wooden beams, swaying gently in the damp breeze."
+cheap_items = Array[ExtResource("1_1hyvp")]([ExtResource("2_c8xtr"), ExtResource("3_xhmke")])
+expensive_items = Array[ExtResource("1_1hyvp")]([ExtResource("4_ax8sw"), ExtResource("5_7knee")])
+metadata/_custom_type_script = "uid://co4871x76a7qo"
