@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://bruh4b2frxpll"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_106s6"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_78vks"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_w1lic"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_x01w3"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_2rrc2"]
+
+[sub_resource type="Resource" id="Resource_jhnx8"]
+script = ExtResource("3_x01w3")
+event_path = "uid://dxqdkh63idi5c"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_djj5w"]
+script = ExtResource("4_2rrc2")
+txt = "Pay the entry fee"
+actions = Array[ExtResource("1_106s6")]([SubResource("Resource_jhnx8")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_xm42m"]
+script = ExtResource("4_2rrc2")
+txt = "Leave"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3_w1lic")
+titel = "Harbortown Circuit"
+description = "The registration official, an old goblin with eyepatch, barely looks up as you approach his crowded desk.
+
+“Name, warband, and...” He pauses when he recognizes you. “Ah, {TITEL} {NAME}. Here to enter the race, I assume?”
+
+He glances at your racing gear and marks something on his list.
+
+“Everything appears to be in order. The entry fee is {RACE_ENTRY_FEE} gold. Pay here, and report to the preparation area before the starting bell.”"
+content = Array[ExtResource("2_78vks")]([SubResource("Resource_djj5w"), SubResource("Resource_xm42m")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"
