@@ -32,7 +32,8 @@ gdscript/warnings/unused_signal=0
 [file_customization]
 
 folder_colors={
-"res://data/": "red"
+"res://assets/": "yellow",
+"res://data/": "purple"
 }
 
 [layer_names]
