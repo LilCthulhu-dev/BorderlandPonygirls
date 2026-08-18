@@ -38,7 +38,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [sub_resource type="Resource" id="Resource_keep_pony"]
 script = ExtResource("8")
 force_race = 1
-force_loyalty = 25
+force_submission = 25
 force_arousal = 40
 force_xp = 5
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
@@ -67,7 +67,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("10")
 titel = "Missing Mare"
-description = "You find her behind a net-shed: bit still in, harness twisted, loyalty gone. She flinches when you take the lead.
+description = "You find her behind a net-shed: bit still in, harness twisted, submission gone. She flinches when you take the lead.
 
 The merchant’s sketch matches. You can walk her back to the post for the reward - or put her in your own line and live with the talk."
 img = ExtResource("11")

@@ -17,10 +17,10 @@ func _add_tooltips() -> void:
 		ponygirl.level,
 		ponygirl.race]
 	tooltip += "\n\n"
-	tooltip += "XP: %s / Arousal: %s / Loyalty: %s" % [
+	tooltip += "XP: %s / Arousal: %s / Submission: %s" % [
 		ponygirl.xp,
 		ponygirl.arousal,
-		ponygirl.loyalty]
+		ponygirl.submission]
 	tooltip += "\n"
 	tooltip += "Eyes: %s / Hair: %s / Skin: %s" % [
 		ponygirl.eye_color,
