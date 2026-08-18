@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c1u885uy5uxeb" path="res://templates/singel_page.tscn" id="2_efaio"]
 [ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="3_rmsxx"]
 [ext_resource type="PackedScene" uid="uid://byymksw3q27g7" path="res://options/game_options/volumne_slider.tscn" id="4_itfqk"]
+[ext_resource type="PackedScene" uid="uid://d3f212rh4ek64" path="res://options/game_options/testing_slider.tscn" id="4_u45vj"]
 
 [node name="GameOptions" type="Control" unique_id=1463370876]
 custom_minimum_size = Vector2(480, 544)
@@ -60,3 +61,6 @@ bus_name = "SFX"
 [node name="VolumneSlider3" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" unique_id=540516562 instance=ExtResource("4_itfqk")]
 layout_mode = 2
 bus_name = "Music"
+
+[node name="TestingSlider" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" unique_id=1330536631 instance=ExtResource("4_u45vj")]
+layout_mode = 2
