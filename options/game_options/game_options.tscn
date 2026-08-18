@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://c76rfu6pvctrx"]
+
+[ext_resource type="PackedScene" uid="uid://c1u885uy5uxeb" path="res://templates/singel_page.tscn" id="2_efaio"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="3_rmsxx"]
+[ext_resource type="PackedScene" uid="uid://byymksw3q27g7" path="res://options/game_options/volumne_slider.tscn" id="4_itfqk"]
+
+[node name="GameOptions" type="Control" unique_id=1463370876]
+custom_minimum_size = Vector2(480, 544)
+custom_maximum_size = Vector2(480, 544)
+layout_mode = 3
+anchor_right = 0.41700003
+anchor_bottom = 0.84000003
+offset_right = -0.3840332
+offset_bottom = -0.32000732
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="SingelPage" parent="." unique_id=234162319 instance=ExtResource("2_efaio")]
+position = Vector2(240, 272)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=749833002]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 448.0
+offset_bottom = 512.0
+theme = ExtResource("3_rmsxx")
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=1716586196]
+layout_mode = 2
+text = "Game Options"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1502827785]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=598227772]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ScrollContainer" unique_id=736488754]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_right = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/ScrollContainer/MarginContainer" unique_id=1969642490]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VolumneSlider" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" unique_id=636691510 instance=ExtResource("4_itfqk")]
+layout_mode = 2
+bus_name = "Master"
+
+[node name="VolumneSlider2" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" unique_id=611146561 instance=ExtResource("4_itfqk")]
+layout_mode = 2
+bus_name = "SFX"
+
+[node name="VolumneSlider3" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" unique_id=540516562 instance=ExtResource("4_itfqk")]
+layout_mode = 2
+bus_name = "Music"
