@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnrjya8ab0cbb"
-path="res://.godot/imported/night_dispatch.png-ab2ed950f9aa8521ea8dee8cb0bd84b9.ctex"
+path="res://.godot/imported/night_dispatch.png-e73de3c5b5d398e3e9e647498286f942.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/img/frozenhunter/night_dispatch.png"
-dest_files=["res://.godot/imported/night_dispatch.png-ab2ed950f9aa8521ea8dee8cb0bd84b9.ctex"]
+dest_files=["res://.godot/imported/night_dispatch.png-e73de3c5b5d398e3e9e647498286f942.ctex"]
 
 [params]
 

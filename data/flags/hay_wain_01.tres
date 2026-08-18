@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://cflaghaywain01"]
+[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://d0wruagd3uwea"]
 
 [ext_resource type="Texture2D" uid="uid://dbacpxt5tcl6x" path="res://assets/icons/tree1.png" id="1_icon"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="1_script"]

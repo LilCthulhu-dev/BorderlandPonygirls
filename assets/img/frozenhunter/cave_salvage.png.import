@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btp003vx4cmr3"
-path="res://.godot/imported/cave_salvage.png-6f7bce251f6a571e50ded6fe225e5c73.ctex"
+path="res://.godot/imported/cave_salvage.png-2543837ecb08235ca18450ffd36de551.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/img/frozenhunter/cave_salvage.png"
-dest_files=["res://.godot/imported/cave_salvage.png-6f7bce251f6a571e50ded6fe225e5c73.ctex"]
+dest_files=["res://.godot/imported/cave_salvage.png-2543837ecb08235ca18450ffd36de551.ctex"]
 
 [params]
 
