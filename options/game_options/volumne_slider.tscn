@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://byymksw3q27g7"]
+
+[ext_resource type="Script" uid="uid://d0gs1eiqvdxmm" path="res://options/game_options/volumne_slider.gd" id="1_3prua"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_8kfel"]
+
+[node name="VolumneSlider" type="HBoxContainer" unique_id=636691510]
+offset_right = 365.0
+offset_bottom = 23.0
+theme = ExtResource("1_8kfel")
+script = ExtResource("1_3prua")
+
+[node name="SoundLabel" type="Label" parent="." unique_id=1822853456]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Name"
+
+[node name="SoundSlider" type="HSlider" parent="." unique_id=2086231446]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.001
+
+[connection signal="value_changed" from="SoundSlider" to="." method="_on_h_slider_value_changed"]
