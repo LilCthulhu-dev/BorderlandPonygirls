@@ -25,6 +25,17 @@ txt = "Pick through the crate"
 actions = Array[ExtResource("1")]([SubResource("Resource_inspect_txt")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
+[sub_resource type="Resource" id="Resource_to_inside"]
+script = ExtResource("5")
+event_path = "res://data/events/cave_salvage/cave_salvage_inside.tres"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_enter"]
+script = ExtResource("4")
+txt = "Enter the cave"
+actions = Array[ExtResource("1")]([SubResource("Resource_to_inside")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
 [sub_resource type="Resource" id="Resource_to_accept"]
 script = ExtResource("5")
 event_path = "res://data/events/cave_salvage/cave_salvage_accept.tres"
@@ -64,6 +75,6 @@ description = "At a cave mouth off the track you find a spilled crate: rusted ho
 
 A charcoal arrow on the lid points south. Someone meant this for the Trading Post smiths and did not finish the walk."
 img = ExtResource("10")
-content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_accept"), SubResource("Resource_decline")])
+content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_enter"), SubResource("Resource_accept"), SubResource("Resource_decline")])
 open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
