@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://4nc4i7ra5iio"]
+
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="1_80b2a"]
+[ext_resource type="Texture2D" uid="uid://f1guc4u3mljh" path="res://assets/icons/horseshoe.png" id="1_v7jm1"]
+
+[resource]
+script = ExtResource("1_80b2a")
+image = ExtResource("1_v7jm1")
+description = "You own a fancy set of racing ponygear. It is well crafted, polished, lightweight, and radiates a strange magic that suppresses the inhibitor in a mare’s womb tattoo. With this gear, you can enter ponygirl races throughout the region."
+metadata/_custom_type_script = "uid://cm8dinv8ax8bq"

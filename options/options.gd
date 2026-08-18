@@ -12,6 +12,7 @@ const TWEEN_TIME := 0.35
 @onready var sub_menues: Control = %SubMenues
 @onready var new_game: Control = %NewGame
 @onready var save_load: Control = %SaveLoad
+@onready var game_options: Control = %GameOptions
 @onready var credits: Control = %Credits
 
 func _ready() -> void:
@@ -40,6 +41,8 @@ func _close() -> void:
 	await animation(false)
 	get_tree().paused = false
 	GameData.game_state = GameData.old_game_state
+	GlobalSignals.update_location.emit()
+	GlobalSignals.update_attribute.emit()
 	queue_free()
 
 func _hide_options():
@@ -84,6 +87,10 @@ func _on_new_game_btn_pressed() -> void:
 func _on_save_btn_pressed() -> void:
 	_hide_options()
 	_fade_in(save_load)
+
+func _on_options_btn_pressed() -> void:
+	_hide_options()
+	_fade_in(game_options)
 
 func _on_credits_btn_pressed() -> void:
 	_hide_options()

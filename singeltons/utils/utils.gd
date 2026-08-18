@@ -45,6 +45,10 @@ func translate(text : String) -> String:
 		"{COST_TRAINING}": GameData.COSTS.training,
 		"{COST_TEASING}": GameData.COSTS.teasing,
 		"{COST_CLIMAX}": GameData.COSTS.climax,
+
+		"{COST_RACING_GEAR}": GameData.COSTS.racing_gear,
+		"{RACE_ENTRY_FEE}": GameData.COSTS.race_entry_fee,
+		"{RACE_PRICE_MONEY}": GameData.COSTS.race_price_money,
 	}
 	for key in replacements:
 		text = text.replace(key, str(replacements[key]))

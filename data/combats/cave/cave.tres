@@ -31,13 +31,13 @@ title = "Mysterious Cave"
 scenes = Array[ExtResource("1_6sfwx")]([ExtResource("2_vaug7"), ExtResource("3_xcoxp"), ExtResource("4_3yeml"), ExtResource("5_1q0bk"), ExtResource("6_1q0bk"), ExtResource("7_rm7kp"), ExtResource("8_suwa0")])
 enemy_descriptors = Array[String](["Wild", "Savage", "Feral", "Hungry", "Territorial", "Cunning", "Diseased", "Bloodthirsty"])
 enemy_names = Array[String](["Orks", "Trolls", "Ogres", "Kobolds", "Lizardmen"])
-victory_actions = Array[ExtResource("3_vaug7")]([SubResource("Resource_vaug7"), SubResource("Resource_xcoxp")])
-victory_img = ExtResource("14_aasxy")
-defeat_img = ExtResource("1_sua3i")
 victory_txt = "You emerge bruised and exhausted, but victorious. The bags carried by your ponygirls are heavy with loot and treasure.
 
 It was a good day."
+victory_img = ExtResource("14_aasxy")
+victory_actions = Array[ExtResource("3_vaug7")]([SubResource("Resource_vaug7"), SubResource("Resource_xcoxp")])
 defeat_txt = "Your warband breaks and scatters. Some flee deeper into the tunnels, while others desperately search for the way back.
 
 You should return to your village and see how many of your warriors managed to survive - and if they still see you as their {TITLE}."
+defeat_img = ExtResource("1_sua3i")
 metadata/_custom_type_script = "uid://ct66od486dv7w"
