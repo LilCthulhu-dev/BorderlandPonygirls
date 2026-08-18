@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_02lps"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="2"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_lacbe"]
-[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="3"]
+[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_submission.gd" id="3"]
 [ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_hg3cw"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="4"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5"]
@@ -23,7 +23,7 @@ script = ExtResource("2")
 amount = "-{COST_REST}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
-[sub_resource type="Resource" id="Resource_pay_loyalty"]
+[sub_resource type="Resource" id="Resource_pay_submission"]
 script = ExtResource("3")
 amount = 5
 target = 2
@@ -36,7 +36,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 [sub_resource type="Resource" id="Resource_btn_pay"]
 script = ExtResource("5")
 txt = "Pay for tack service"
-actions = Array[ExtResource("1_02lps")]([SubResource("Resource_pay_desc"), SubResource("Resource_pay_gold"), SubResource("Resource_pay_loyalty"), SubResource("Resource_pay_back")])
+actions = Array[ExtResource("1_02lps")]([SubResource("Resource_pay_desc"), SubResource("Resource_pay_gold"), SubResource("Resource_pay_submission"), SubResource("Resource_pay_back")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_sway_repute_fail"]
