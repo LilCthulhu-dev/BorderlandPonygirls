@@ -24,16 +24,17 @@ Will you seek adventure, work as a merchant, or undertake diplomatic missions? I
 Most of the core systems are implemented, and the game is technically playable. However, large parts of the world still lack quests, events, encounters, and other content.Expect unfinished areas, placeholder content, balancing issues, bugs, and breaking changes between versions.
 
 ## Features
-* Lead and develop your own goblin warband.
-* Acquire, manage, and train human and elven ponygirls.
-* Manage each mare’s arousal, loyalty, training, and happiness.
-* Travel through an open fantasy world.
-* Earn money through trade, work, quests, and other activities.
-* Encounter text-based events with different choices and outcomes.
-* Fight enemies and overcome challenges through a textbased combat system.
-* Decide whether to honor the alliance between your peoples or return to the old ways.
-* Shape your warband through your own priorities and decisions.
-* Expand the game with new events, quests, characters, and encounters.
+
+- Lead and develop your own goblin warband.
+- Acquire, manage, and train human and elven ponygirls.
+- Manage each mare’s arousal, submission, training, and happiness.
+- Travel through an open fantasy world.
+- Earn money through trade, work, quests, and other activities.
+- Encounter text-based events with different choices and outcomes.
+- Fight enemies and overcome challenges through a textbased combat system.
+- Decide whether to honor the alliance between your peoples or return to the old ways.
+- Shape your warband through your own priorities and decisions.
+- Expand the game with new events, quests, characters, and encounters.
 
 ## Screenshots
 
@@ -79,14 +80,14 @@ Borderland Ponygirls is intended to grow with help from its community. The main 
 
 Contributions may include:
 
-* Quests and storylines
-* Random events and encounters
-* Combat scenes
-* Characters and dialogue
-* Locations
-* Bug reports
-* Balance suggestions
-* Code improvements
+- Quests and storylines
+- Random events and encounters
+- Combat scenes
+- Characters and dialogue
+- Locations
+- Bug reports
+- Balance suggestions
+- Code improvements
 
 Please discuss larger additions on Discord before beginning substantial work. This helps ensure that the contribution fits the game’s setting, tone, structure, and current development plans.
 
@@ -106,9 +107,9 @@ All characters depicted in sexual situations are adults.
 
 Borderland Ponygirls uses separate licenses for source code and game content:
 
-* The source code is licensed under the [GNU General Public License v3.0 or later](LICENSE).
-* Original written content, icons, and eligible media are dedicated to the public domain under [CC0 1.0](LICENSE-CONTENT.md).
-* Some assets are subject to exceptions or additional terms. See [Asset Sources](ASSET-SOURCES.md) for details.
+- The source code is licensed under the [GNU General Public License v3.0 or later](LICENSE).
+- Original written content, icons, and eligible media are dedicated to the public domain under [CC0 1.0](LICENSE-CONTENT.md).
+- Some assets are subject to exceptions or additional terms. See [Asset Sources](ASSET-SOURCES.md) for details.
 
 In short: you may use, modify, and redistribute the game and its content, including commercially. Modified or redistributed versions of the GPL-covered source code must remain available under the GPL.
 
