@@ -13,7 +13,11 @@ const COSTS = {
 	bad_wage = 200,
 	training = 300,
 	teasing = 25,
-	climax = 50
+	climax = 50,
+
+	racing_gear = 500,
+	race_entry_fee = 200,
+	race_price_money = 400
 }
 
 @export_group("Actions")

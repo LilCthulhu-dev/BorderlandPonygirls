@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://b6l62xmesuta"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_d5ai7"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_gm165"]
+
+[sub_resource type="Resource" id="Resource_v7ss7"]
+script = ExtResource("1_d5ai7")
+txt = "Hold her on the edge"
+ability = 3
+success_description = "You shorten the reins and refuse to give her any release. {PONYNAME} sobs around the bit, her body trembling, but she keeps running."
+fail_description = "{PONYNAME} is already too far gone. She locks up mid-stride as the climax tears through her."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_7b08a"]
+script = ExtResource("1_d5ai7")
+txt = "Let her cum"
+ability = 2
+success_description = "You slow down and let {PONYNAME} cum, never really stopping while the other mares are distracted."
+fail_description = "{PONYNAME}'s moan passes through the pack like a spark. Two rivals give in at once, turning the track into a tangle of buckling knees and broken strides."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_xogs0"]
+script = ExtResource("1_d5ai7")
+txt = "Snap her out of it"
+ability = 1
+success_description = "A sharp pull on the bit shocks {PONYNAME} back to her senses. She gasps and her eyes clear."
+fail_description = "You pull {PONYNAME}'s bit to snap her out, but the sharp pull only pushes her over the edge. She cries out as her knees buckle, wasting precious seconds."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_gipnr"]
+script = ExtResource("1_d5ai7")
+txt = "Ride the wave"
+ability = 4
+success_description = "You do not fight her trembling body. Instead, you time {PONYNAME}’s strides to its rhythm, carrying her through the worst of it without breaking pace."
+fail_description = "You misjudge the rhythm. The climax hits {PONYNAME} at the wrong moment, making her stumble while the rival beside her takes the gap."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_gm165")
+flavor_lines = Array[String](["A moan rolls through the field, making several racers falter.", "The scent of heat hangs in the air.", "{PONYNAME}’s stride grows uneven as the need builds inside her."])
+description = "A rider ahead seemingly has worked his mare too hard before the race. She goes over the edge mid-race, climaxing loudly enough for the entire field to hear. Like an infection the other mares begin to buckle too, most already trembling on the edge."
+actions = Array[ExtResource("1_d5ai7")]([SubResource("Resource_v7ss7"), SubResource("Resource_7b08a"), SubResource("Resource_xogs0"), SubResource("Resource_gipnr")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

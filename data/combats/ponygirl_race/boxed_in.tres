@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://c7wrfot1626jk"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_m1ldo"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_udhqb"]
+
+[sub_resource type="Resource" id="Resource_gipnr"]
+script = ExtResource("1_m1ldo")
+txt = "Shoulder out"
+ability = 1
+success_description = "You drive {PONYNAME} hard into the mare on the inside. The rival gives half a length; the pocket opens just enough to breathe."
+fail_description = "The other mare is heavier. {PONYNAME} bounces off and loses ground while the walls of the pack close again."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_muyjc"]
+script = ExtResource("1_m1ldo")
+txt = "Wait the gap"
+ability = 4
+success_description = "You hold the line and watch the rhythm. When the outside rival drifts a half-step, you snatch the opening and slip {PONYNAME} free."
+fail_description = "The gap never comes. You wait too long; the pack tightens and {PONYNAME} is forced to check her stride."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_er5t8"]
+script = ExtResource("1_m1ldo")
+txt = "Hold the pocket"
+ability = 3
+success_description = "You bark her into a rigid lane. {PONYNAME} locks her shoulders and refuses to yield. The rivals bounce off her instead of the other way around."
+fail_description = "Your call is drowned by the noise. {PONYNAME} hesitates; both flanks squeeze in and she has to fight just to keep her feet."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_0rdl1"]
+script = ExtResource("1_m1ldo")
+txt = "Tease the rival"
+ability = 2
+success_description = "You let {PONYNAME} brush deliberately against the mare beside her — heat, scent, a low sound. The rival’s attention fractures for a stride and the pocket loosens."
+fail_description = "The rival is too far gone on her own need to notice. Your tease costs {PONYNAME} focus instead, and the walls stay shut."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_udhqb")
+flavor_lines = Array[String](["Hooves hammer so close the impacts blur together.", "A rival’s hip bumps {PONYNAME}’s with every stride.", "The air between the mares is hot and short of breath.", "Someone’s crop cracks just behind your shoulder."])
+description = "The field compresses. Rivals press in from both flanks until {PONYNAME} is running in a tight pocket of sweat, harness leather, and flying dirt. There is nowhere to go but forward - or into someone else’s shoulder."
+actions = Array[ExtResource("1_m1ldo")]([SubResource("Resource_gipnr"), SubResource("Resource_muyjc"), SubResource("Resource_er5t8"), SubResource("Resource_0rdl1")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

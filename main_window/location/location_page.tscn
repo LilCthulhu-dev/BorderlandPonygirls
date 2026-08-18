@@ -14,9 +14,9 @@
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="10_0en0c"]
 [ext_resource type="Script" uid="uid://274w71urhl54" path="res://data/actions/force_randome_event.gd" id="11_ice6s"]
 
-[sub_resource type="Resource" id="Resource_qnh8r"]
+[sub_resource type="Resource" id="Resource_75en0"]
 script = ExtResource("7_dmaue")
-event_path = "uid://dotjf77imkg3y"
+event_path = "uid://bg2hw6ifuq5s3"
 metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_i6fhe"]
@@ -96,7 +96,7 @@ autowrap_mode = 2
 [node name="TestBtn" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="2" unique_id=2129430982 instance=ExtResource("6_ice6s")]
 unique_name_in_owner = true
 layout_mode = 2
-actions = Array[ExtResource("7_i6fhe")]([SubResource("Resource_qnh8r")])
+actions = Array[ExtResource("7_i6fhe")]([SubResource("Resource_75en0")])
 tooltip = "Test Button"
 
 [node name="RestBtn" parent="Control/HBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" index="3" unique_id=847848422 instance=ExtResource("6_ice6s")]

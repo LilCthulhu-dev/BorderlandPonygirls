@@ -10,10 +10,13 @@
 [ext_resource type="Resource" uid="uid://chupthwmfqefv" path="res://data/item/grain.tres" id="4_o5trf"]
 [ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="5_cx0qs"]
 [ext_resource type="Resource" uid="uid://cx4xaaaw3fqgl" path="res://data/events/one_pagers/pony_on_display_01.tres" id="9_jvg1u"]
+[ext_resource type="Resource" uid="uid://c3qc7ucuap654" path="res://data/events/ponygirl_outfitter/ponygirl_outfitter_start.tres" id="10_eiox1"]
 [ext_resource type="Resource" uid="uid://dotjglhyqlfwy" path="res://data/events/salt_run/salt_run_start.tres" id="10_salt"]
 [ext_resource type="Resource" uid="uid://dotjglbyv40qb" path="res://data/events/missing_mare/missing_mare_end.tres" id="11_mare"]
+[ext_resource type="Resource" uid="uid://ctaythq7frd7k" path="res://data/events/harbortown_race/harbortown_race_01.tres" id="11_tvl0y"]
 [ext_resource type="Resource" uid="uid://dotjf77imkg3y" path="res://data/events/tide_fish/tide_fish_start.tres" id="12_fish"]
 [ext_resource type="Resource" uid="uid://dotjgayh05agy" path="res://data/events/harvest_cask/harvest_cask_end.tres" id="13_cask"]
+[ext_resource type="Resource" uid="uid://bg2hw6ifuq5s3" path="res://data/events/one_pagers/race_announcement.tres" id="16_v0f2l"]
 
 [resource]
 script = ExtResource("1_r76jd")
@@ -26,6 +29,6 @@ The market is always bustling, overflowing with goods from across the Imperium. 
 Humans are the most common sight, but far from the only one. Elves, kobolds, goblins, and even the occasional orc move through the crowds without drawing so much as a second glance."
 cheap_items = Array[ExtResource("1_nwqgs")]([ExtResource("2_jvg1u"), ExtResource("3_ot8nl")])
 expensive_items = Array[ExtResource("1_nwqgs")]([ExtResource("4_o5trf"), ExtResource("5_cx0qs")])
-random_events = Array[ExtResource("2_icx0v")]([ExtResource("3_7x03v"), ExtResource("9_jvg1u"), ExtResource("10_salt"), ExtResource("12_fish")])
-quest_events = Array[ExtResource("2_icx0v")]([ExtResource("11_mare"), ExtResource("13_cask")])
+random_events = Array[ExtResource("2_icx0v")]([ExtResource("3_7x03v"), ExtResource("9_jvg1u"), ExtResource("10_salt"), ExtResource("12_fish"), ExtResource("16_v0f2l")])
+quest_events = Array[ExtResource("2_icx0v")]([ExtResource("11_mare"), ExtResource("13_cask"), ExtResource("10_eiox1"), ExtResource("11_tvl0y")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"
