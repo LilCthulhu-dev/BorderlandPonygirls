@@ -30,7 +30,7 @@ const COSTS = {
 @export var list_of_perks :Array[Perk] = []
 
 # ================================================== game state
-const TESTING = true
+var TESTING = false
 
 var old_game_state = Enums.GAME_STATES.NONE
 var game_state = Enums.GAME_STATES.START:

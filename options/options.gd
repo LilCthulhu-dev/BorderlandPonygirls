@@ -41,6 +41,8 @@ func _close() -> void:
 	await animation(false)
 	get_tree().paused = false
 	GameData.game_state = GameData.old_game_state
+	GlobalSignals.update_location.emit()
+	GlobalSignals.update_attribute.emit()
 	queue_free()
 
 func _hide_options():

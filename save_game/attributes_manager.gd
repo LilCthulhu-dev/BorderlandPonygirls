@@ -6,7 +6,7 @@ const BASE_ABILITY_VALUE := 60
 
 @export var _boss_title: String = ""
 @export var _boss_name: String = ""
-@export var _gold: int = 2500
+@export var _gold: int = 250
 @export var _repute: int = 50
 @export var _current_health: int = MAX_HEALTH
 
@@ -30,6 +30,8 @@ static var gold : int:
 		if GameData.attributes_manager._gold < 0:
 			ModalManager.open_game_over_modal()
 	get:
+		if GameData.TESTING:
+			return 99999
 		return GameData.attributes_manager._gold
 static var repute : int:
 	set(value):
