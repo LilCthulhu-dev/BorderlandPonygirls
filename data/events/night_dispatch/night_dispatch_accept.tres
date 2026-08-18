@@ -1,15 +1,45 @@
 [gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestdispac01"]
 
-[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="1"]
-[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_nrmlb"]
-[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_cj45v"]
-[ext_resource type="Texture2D" uid="uid://bnrjya8ab0cbb" path="res://assets/img/frozenhunter/night_dispatch.png" id="3_f71yy"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="4"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://bnrjya8ab0cbb" path="res://assets/img/frozenhunter/night_dispatch.png" id="6"]
+
+[sub_resource type="Resource" id="Resource_ride"]
+script = ExtResource("3")
+txt = "Night road"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_to_break"]
+script = ExtResource("4")
+event_path = "res://data/events/night_dispatch/night_dispatch_broken.tres"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_break"]
+script = ExtResource("3")
+txt = "Break the seal"
+actions = Array[ExtResource("1")]([SubResource("Resource_to_break")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_to_sell"]
+script = ExtResource("4")
+event_path = "res://data/events/night_dispatch/night_dispatch_sell.tres"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_sell"]
+script = ExtResource("3")
+txt = "Find a buyer"
+actions = Array[ExtResource("1")]([SubResource("Resource_to_sell")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]
-script = ExtResource("1")
+script = ExtResource("5")
 titel = "Night Dispatch"
 description = "The guard presses the packet into your palm and closes your fingers over the wax. \"Goblin Village. Elder or quartermaster. If the seal is cracked, you were never here.\"
 
-The lantern light does not follow you past the gate."
-img = ExtResource("3_f71yy")
+The lantern light does not follow you past the gate. The wax is still warm."
+img = ExtResource("6")
+content = Array[ExtResource("2")]([SubResource("Resource_ride"), SubResource("Resource_break"), SubResource("Resource_sell")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

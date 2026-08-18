@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cquestsalvsc01"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="3"]
+
+[sub_resource type="Resource" id="Resource_muscle"]
+script = ExtResource("1")
+txt = "Drive them back"
+ability = 1
+success_description = "You hit the first shape before it finds its feet and the rest recoil into the dark."
+fail_description = "The first rush knocks you into the crate. Iron spills. Something laughs."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_command"]
+script = ExtResource("1")
+txt = "Hold the chamber"
+ability = 3
+success_description = "Your line fills the choke. Whatever lives here tests it once and thinks better of a second try."
+fail_description = "The line buckles. Torches go out. You give ground toward the mouth."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_trick"]
+script = ExtResource("1")
+txt = "Throw the lantern"
+ability = 4
+success_description = "Cheap oil blooms. The thing in the back shrieks and the inner crate is yours for a breath."
+fail_description = "The lantern dies in the wet. You fight by sound and lose the extra crate in the scramble."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2")
+img = ExtResource("3")
+flavor_lines = Array[String](["Water ticks off the ceiling.", "The inner crate still smells of oil and old leather.", "Something large shifts past the next bend."])
+description = "Past the first bend the cave opens into a low chamber. A second crate sits half-packed against the wall. The dark behind it is not empty."
+actions = Array[ExtResource("1")]([SubResource("Resource_muscle"), SubResource("Resource_command"), SubResource("Resource_trick")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"
