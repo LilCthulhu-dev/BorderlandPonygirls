@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://d0wrtqpyhx5ea"]
+
+[ext_resource type="Texture2D" uid="uid://chr44qcrepok6" path="res://assets/icons/grain.png" id="1_icon"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+image = ExtResource("1_icon")
+description = "Haul surplus village grain to the Harbor Town millers."
+metadata/_custom_type_script = "uid://cm8dinv8ax8bq"
