@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cquestsalvsc02"]
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://dotjglyb1jx30"]
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
@@ -15,7 +15,6 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 [sub_resource type="Resource" id="Resource_wits"]
 script = ExtResource("1")
 txt = "Watch the walls"
-ability = 5
 success_description = "You catch the second rush on the turn and keep the iron moving."
 fail_description = "A side tunnel opens that was not there. You drop weight to stay alive."
 metadata/_custom_type_script = "uid://c62fr7oiolt4o"

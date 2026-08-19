@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cquestsalvsc01"]
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://dotjglyb1jx3y"]
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
