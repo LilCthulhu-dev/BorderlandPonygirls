@@ -36,7 +36,7 @@ func translate(text : String) -> String:
 		"{MEDIUM_WAGE}": GameData.REWARDS.medium_wage,
 		"{BAD_WAGE}": GameData.REWARDS.bad_wage,
 		"{VICTORY_REWARD}": GameData.REWARDS.victory,
-		"{RACE_REWARD}": GameData.COSTS.race_price_money,
+		"{RACE_REWARD}": GameData.REWARDS.price_money,
 
 		"{COST_DEATH}": GameData.COSTS.death,
 		"{COST_REST}": GameData.COSTS.rest,
