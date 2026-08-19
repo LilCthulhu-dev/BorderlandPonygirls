@@ -35,6 +35,6 @@ description = "The goblin racemaster stands behind a scarred wooden table covere
 
 “Another challenger! Good, good. More racers make for a better scramble.” He leans sideways to inspect your equipment.
 
-“You’ve got proper racing gear, so that’s one less thing to argue about. Entry costs {RACE_ENTRY_FEE} gold. Pay up, and we’ll put your name on the list.”"
+“You’ve got proper racing gear, so that’s one less thing to argue about. Entry costs {COST_RACE_FEE} gold. Pay up, and we’ll put your name on the list.”"
 content = Array[ExtResource("2_h0xh0")]([SubResource("Resource_u0bws"), SubResource("Resource_emkm8")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

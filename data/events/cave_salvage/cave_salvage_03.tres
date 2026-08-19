@@ -1,97 +1,100 @@
-[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjglyb00x3y"]
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://drgvn3c3coca0"]
 
-[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_qxr2l"]
-[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_wg2h7"]
-[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="3_8rfyy"]
-[ext_resource type="Resource" uid="uid://dotjglyb1i4ff" path="res://data/flags/cave_salvage_02.tres" id="4_5d21m"]
-[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_0acgm"]
-[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="6_reu6l"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_5exre"]
-[ext_resource type="Resource" uid="uid://d0wrpacummuaa" path="res://data/flags/cave_salvage_01.tres" id="8_08p15"]
-[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="8_wg2h7"]
-[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="9_7v6p3"]
-[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="10_s4j8q"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_w4e4u"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="2_pn22d"]
+[ext_resource type="Resource" uid="uid://d0wrpacummuaa" path="res://data/flags/cave_salvage_01.tres" id="3_w80cg"]
+[ext_resource type="Resource" uid="uid://dotjglyb1i4ff" path="res://data/flags/cave_salvage_02.tres" id="4_iin7u"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_onhqs"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="6_0as8r"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="7_m40hn"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="8_vd3r1"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="9_6pk6w"]
+[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="10_kccds"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="11_cj73r"]
 
 [sub_resource type="Resource" id="Resource_s5ama"]
-script = ExtResource("5_0acgm")
-remove_flag = Array[ExtResource("3_8rfyy")]([ExtResource("8_08p15"), ExtResource("4_5d21m")])
+script = ExtResource("5_onhqs")
+remove_flag = Array[ExtResource("2_pn22d")]([ExtResource("3_w80cg"), ExtResource("4_iin7u")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_2thkh"]
-script = ExtResource("5_0acgm")
-forbidden_flag = Array[ExtResource("3_8rfyy")]([ExtResource("4_5d21m")])
+script = ExtResource("5_onhqs")
+forbidden_flag = Array[ExtResource("2_pn22d")]([ExtResource("4_iin7u")])
+hard_requierment = true
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_llgf3"]
-script = ExtResource("6_reu6l")
+script = ExtResource("7_m40hn")
 amount = "{MEDIUM_WAGE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_qxr2l"]
-script = ExtResource("8_wg2h7")
+script = ExtResource("8_vd3r1")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_0k4vp"]
-script = ExtResource("7_5exre")
+script = ExtResource("9_6pk6w")
 txt = "Continue."
-actions = Array[ExtResource("1_qxr2l")]([SubResource("Resource_2thkh"), SubResource("Resource_llgf3"), SubResource("Resource_qxr2l")])
+actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_2thkh"), SubResource("Resource_llgf3"), SubResource("Resource_qxr2l")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_dx1qd"]
-script = ExtResource("5_0acgm")
-forbidden_flag = Array[ExtResource("3_8rfyy")]([ExtResource("8_08p15")])
+script = ExtResource("5_onhqs")
+forbidden_flag = Array[ExtResource("2_pn22d")]([ExtResource("3_w80cg")])
+hard_requierment = true
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_n67lb"]
-script = ExtResource("6_reu6l")
+script = ExtResource("7_m40hn")
 amount = "{MEDIUM_WAGE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_wg2h7"]
-script = ExtResource("8_wg2h7")
+script = ExtResource("8_vd3r1")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_r687m"]
-script = ExtResource("7_5exre")
+script = ExtResource("9_6pk6w")
 txt = "Continue."
-actions = Array[ExtResource("1_qxr2l")]([SubResource("Resource_dx1qd"), SubResource("Resource_n67lb"), SubResource("Resource_wg2h7")])
+actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_dx1qd"), SubResource("Resource_n67lb"), SubResource("Resource_wg2h7")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_s2a0r"]
-script = ExtResource("6_reu6l")
+script = ExtResource("7_m40hn")
 amount = "{GOOD_WAGE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_oof3e"]
-script = ExtResource("5_0acgm")
-required_flag = Array[ExtResource("3_8rfyy")]([ExtResource("8_08p15"), ExtResource("4_5d21m")])
+script = ExtResource("5_onhqs")
+required_flag = Array[ExtResource("2_pn22d")]([ExtResource("3_w80cg"), ExtResource("4_iin7u")])
+hard_requierment = true
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_8rfyy"]
-script = ExtResource("8_wg2h7")
+script = ExtResource("8_vd3r1")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_3gffg"]
-script = ExtResource("7_5exre")
+script = ExtResource("9_6pk6w")
 txt = "Continue."
-actions = Array[ExtResource("1_qxr2l")]([SubResource("Resource_s2a0r"), SubResource("Resource_oof3e"), SubResource("Resource_8rfyy")])
+actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_s2a0r"), SubResource("Resource_oof3e"), SubResource("Resource_8rfyy")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_trsao"]
-script = ExtResource("5_0acgm")
-requires_one_flag = Array[ExtResource("3_8rfyy")]([ExtResource("8_08p15"), ExtResource("4_5d21m")])
+script = ExtResource("5_onhqs")
+requires_one_flag = Array[ExtResource("2_pn22d")]([ExtResource("3_w80cg"), ExtResource("4_iin7u")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [resource]
-script = ExtResource("10_s4j8q")
+script = ExtResource("11_cj73r")
 titel = "Cave Salvage"
 description = "Your men unload the salvaged goods while you speak with the guard captain and explain what you found.
 
 “Again?” she growls, shaking her head. “Smuggling has really been getting out of hand lately. Anyhow, thanks for returning the stolen goods - and for giving me a heads-up.”
 
 She barks a few orders, and a short while later, the recovered goods are carried into the guardhouse. In return, you receive a pouch of freshly minted imperial coins."
-img = ExtResource("9_7v6p3")
-content = Array[ExtResource("2_wg2h7")]([SubResource("Resource_0k4vp"), SubResource("Resource_r687m"), SubResource("Resource_3gffg")])
-open_actions = Array[ExtResource("1_qxr2l")]([SubResource("Resource_trsao")])
-close_actions = Array[ExtResource("1_qxr2l")]([SubResource("Resource_s5ama")])
+img = ExtResource("10_kccds")
+content = Array[ExtResource("6_0as8r")]([SubResource("Resource_0k4vp"), SubResource("Resource_r687m"), SubResource("Resource_3gffg")])
+open_actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_trsao")])
+close_actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_s5ama")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

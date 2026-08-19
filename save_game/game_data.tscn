@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="4_gd741"]
 [ext_resource type="Resource" uid="uid://bgcens45256st" path="res://data/perks/brat.tres" id="4_nofhj"]
 [ext_resource type="Resource" uid="uid://3gwi3hkmfik7" path="res://data/perks/cock_hungry.tres" id="5_0asnj"]
-[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_submission.gd" id="5_gd741"]
+[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="5_gd741"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="6_0v50s"]
 [ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="6_efdwm"]
 [ext_resource type="Resource" uid="uid://d6nbm6jaxsip" path="res://data/perks/desperately_horny.tres" id="6_khn66"]
@@ -25,7 +25,7 @@
 
 [sub_resource type="Resource" id="Resource_mqmyc"]
 script = ExtResource("3_fd73u")
-amount = "{MEDIUM_WAGE}"
+amount = "{BATTLE_VICTORY}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_872a7"]
@@ -43,6 +43,11 @@ script = ExtResource("5_gd741")
 amount = -10
 target = 3
 metadata/_custom_type_script = "uid://cy0fnw6jwovce"
+
+[sub_resource type="Resource" id="Resource_imhph"]
+script = ExtResource("4_gd741")
+amount = -5
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 
 [sub_resource type="Resource" id="Resource_0v50s"]
 script = ExtResource("6_efdwm")
@@ -161,7 +166,7 @@ metadata/_custom_type_script = "uid://cy0fnw6jwovce"
 [node name="GameData" type="Node" unique_id=1927241300]
 script = ExtResource("1_21oog")
 combat_victory_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_mqmyc"), SubResource("Resource_872a7")])
-combat_defeat_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_cq4wx"), SubResource("Resource_e6y42")])
+combat_defeat_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_cq4wx"), SubResource("Resource_e6y42"), SubResource("Resource_imhph")])
 training_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_ur0se"), SubResource("Resource_0j7dv"), SubResource("Resource_at000"), SubResource("Resource_hlpe4")])
 teasing_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_nx3u7"), SubResource("Resource_girl5"), SubResource("Resource_mnk8w"), SubResource("Resource_u4d3l")])
 climax_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_tkrab"), SubResource("Resource_ps30a"), SubResource("Resource_fdpya"), SubResource("Resource_ckcii")])

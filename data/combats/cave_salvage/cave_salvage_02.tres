@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://dotjglyb1jx30"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="3"]
+
+[sub_resource type="Resource" id="Resource_iygc4"]
+script = ExtResource("1")
+txt = "Stand your ground."
+ability = 1
+success_description = "You brace your spear and drive it deep into the beast as it crashes into you."
+fail_description = "Your weapon glances off its hide, and the impact sends you sprawling across the cave floor."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_3x1em"]
+script = ExtResource("1")
+txt = "Dodge aside."
+ability = 4
+success_description = "You and your men leap clear at the last moment, and the beast crashes headfirst into the cave wall."
+fail_description = "You avoid the full force of the attack, but one of your men is smashed by a tentacle."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_3ojus"]
+script = ExtResource("1")
+txt = "Dive beneath it."
+ability = 4
+success_description = "You duck beneath the lunging creature and slash its vulnerable underside as it passes."
+fail_description = "You crawl out of the way, but one of your men is less lucky. He gets crushed by the creature."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2")
+img = ExtResource("3")
+flavor_lines = Array[String](["The beast’s rubbery hide glistens with blood and foul-smelling slime.", "Your men tighten their formation, keeping their spears pointed at the creature."])
+description = "The beast leans back, tensing its muscles, then lunges straight at you."
+actions = Array[ExtResource("1")]([SubResource("Resource_iygc4"), SubResource("Resource_3x1em"), SubResource("Resource_3ojus")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

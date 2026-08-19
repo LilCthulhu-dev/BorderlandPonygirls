@@ -31,7 +31,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("8_2l0mv")
 titel = "Tobias and Lucy"
-description = "You talk a little longer with Tobias and Lucy, and they explain the rules. They are fairly simple: one rider on the back of one ponygirl. The racers wait for the starting signal, then race around the track. Whoever crosses the finish line first wins. Entering costs {RACE_ENTRY_FEE}, but the winner receives {RACE_PRICE_MONEY}.
+description = "You talk a little longer with Tobias and Lucy, and they explain the rules. They are fairly simple: one rider on the back of one ponygirl. The racers wait for the starting signal, then race around the track. Whoever crosses the finish line first wins. Entering costs {COST_RACE_FEE}, but the winner receives {RACE_REWARD}.
 
 “Oh, and one more thing,” Tobias adds. “There are rules about what equipment is allowed, but to put it simply, you’ll need a proper racing harness and saddle. Otherwise your cunt needs to be fully equipped, naked, and bound, so Lucy will have to strip and be tied for the race. She’s into it, though,” Tobias says with a grin, making Lucy roll her eyes.
 

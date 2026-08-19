@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_uf0eq"]
 script = ExtResource("5_4w7ek")
-amount = "-{RACE_ENTRY_FEE}"
+amount = "-{COST_RACE_FEE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [resource]

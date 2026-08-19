@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://du5io267h1t63"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_bfk2x"]
+[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="2_iantc"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="3_3inou"]
+
+[sub_resource type="Resource" id="Resource_anygy"]
+script = ExtResource("1_bfk2x")
+txt = "Duck!"
+ability = 4
+success_description = "You tackle one of your men to the ground. As if by some miracle, the tentacles pass overhead without injuring anyone."
+fail_description = "You throw yourself to the ground, but two of your men react too slowly. The tentacles slam them against the wall with the sickening sound of cracking bone."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_qdx0h"]
+script = ExtResource("1_bfk2x")
+txt = "Fall back!"
+ability = 3
+success_description = "You order everyone back, putting your warband safely beyond the beast’s reach."
+fail_description = "You shout the order, but it is already too late. A tentacle grabs one of your men and flings him across the cave like a doll."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_qtwuh"]
+script = ExtResource("1_bfk2x")
+txt = "Counterattack!"
+ability = 1
+success_description = "You snatch a spear from one of your men and drive it through an approaching tentacle, forcing the beast to recoil."
+fail_description = "You snatch a spear and try to drive the creature back, but the attack only enrages it. The beast surges forward, crushing one of your men beneath its bulk."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_5wt7o"]
+script = ExtResource("1_bfk2x")
+txt = "Press the attack!"
+ability = 1
+success_description = "You charge through the flailing tentacles and strike the spear buried in the beast’s side, driving it deeper."
+fail_description = "You force the beast back, but one of its tentacles catches you across the chest as it retreats."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("3_3inou")
+img = ExtResource("2_iantc")
+flavor_lines = Array[String](["The land-squid circles you warily, its tentacles twisting through the air.", "{PONYNAME} pulls against her reins, terrified by the creature’s scent."])
+description = "One of your men drives his spear into the beast’s side. It recoils with a deafening shriek before sweeping its tentacles across the cave in a blind rage."
+actions = Array[ExtResource("1_bfk2x")]([SubResource("Resource_anygy"), SubResource("Resource_qdx0h"), SubResource("Resource_qtwuh"), SubResource("Resource_5wt7o")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"
