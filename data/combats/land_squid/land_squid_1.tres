@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://dotjglyb1jx3y"]
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_p1e33"]
-[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="2_4thi6"]
+[ext_resource type="Texture2D" uid="uid://ckdc6bcl2shs0" path="res://assets/img/lil_cthulhu/land_squid_01.png" id="2_p1e33"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="3_msdfw"]
 
 [sub_resource type="Resource" id="Resource_at68l"]
@@ -38,7 +38,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("3_msdfw")
-img = ExtResource("2_4thi6")
+img = ExtResource("2_p1e33")
 flavor_lines = Array[String](["The cave echoes with shouts, screeches, and the wet slap of tentacles against stone.", "Your torchlight throws frantic shadows across the walls as the battle rages."])
 description = "The malformed beast lashes its tentacles at your men. They manage to leap aside, but one coils around {PONYNAME}’s leg, who screeches as the creature hoists her off the ground.
 "

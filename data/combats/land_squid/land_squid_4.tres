@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://dctuf3ejruwiv"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_4i2ep"]
+[ext_resource type="Texture2D" uid="uid://ckdc6bcl2shs0" path="res://assets/img/lil_cthulhu/land_squid_01.png" id="2_4i2ep"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="3_fbx75"]
+
+[sub_resource type="Resource" id="Resource_phjlb"]
+script = ExtResource("1_4i2ep")
+txt = "Scatter!"
+ability = 4
+success_description = "Your warning comes just in time. Men and ponygirls dive aside as the boulder crashes harmlessly between them."
+fail_description = "Panic breaks out as everyone scrambles for safety. The boulder strikes one of your men and sends him tumbling across the cave."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_gi8cu"]
+script = ExtResource("1_4i2ep")
+txt = "Take cover!"
+ability = 4
+success_description = "Your warband ducks behind a rocky ledge moments before the boulder shatters against it."
+fail_description = "The boulder smashes through your cover, showering everyone behind it with sharp fragments."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_l0cp6"]
+script = ExtResource("1_4i2ep")
+txt = "Push {PONYNAME} aside!"
+ability = 1
+success_description = "You shove {PONYNAME} out of the boulder’s path and leap clear just before it strikes."
+fail_description = "You get {PONYNAME} to safety, but the boulder clips you and throws you violently to the ground."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_sb3x0"]
+script = ExtResource("1_4i2ep")
+txt = "Charge the beast!"
+ability = 1
+success_description = "You rush forward while the beast is distracted, driving your weapon into its exposed side before the boulder lands."
+fail_description = "You avoid the boulder, but the beast catches you with a tentacle and hurls you back toward your men."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("3_fbx75")
+img = ExtResource("2_4i2ep")
+flavor_lines = Array[String](["The land-squid circles you warily, its tentacles twisting through the air.", "{PONYNAME} pulls against her reins, terrified by the creature’s scent."])
+description = "The beast coils its tentacles around a rocky outcrop, tears it loose, and hurls it at your men and ponygirls."
+actions = Array[ExtResource("1_4i2ep")]([SubResource("Resource_phjlb"), SubResource("Resource_gi8cu"), SubResource("Resource_l0cp6"), SubResource("Resource_sb3x0")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

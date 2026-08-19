@@ -25,7 +25,7 @@
 
 [sub_resource type="Resource" id="Resource_mqmyc"]
 script = ExtResource("3_fd73u")
-amount = "{BATTLE_VICTORY}"
+amount = "{VICTORY_REWARD}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_872a7"]

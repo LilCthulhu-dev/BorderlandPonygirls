@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ckdc6bcl2shs0" path="res://assets/img/lil_cthulhu/land_squid_01.png" id="2_gvto6"]
 
 [sub_resource type="Resource" id="Resource_iygc4"]
 script = ExtResource("1")
@@ -30,7 +30,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("2")
-img = ExtResource("3")
+img = ExtResource("2_gvto6")
 flavor_lines = Array[String](["The beast’s rubbery hide glistens with blood and foul-smelling slime.", "Your men tighten their formation, keeping their spears pointed at the creature."])
 description = "The beast leans back, tensing its muscles, then lunges straight at you."
 actions = Array[ExtResource("1")]([SubResource("Resource_iygc4"), SubResource("Resource_3x1em"), SubResource("Resource_3ojus")])
