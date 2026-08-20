@@ -1,6 +1,14 @@
 extends Node
 
 # ================================================== game balance values
+const REWARDS = {
+	good_wage = 300,
+	medium_wage = 250,
+	bad_wage = 200,
+	price_money = 400,
+	victory = 250,
+}
+
 const COSTS = {
 	rest = 25,
 	travel = 0.1, # per pixel
@@ -8,12 +16,11 @@ const COSTS = {
 	ponygirl_cheap = 60,
 	ponygirl_normal = 80,
 	ponygirl_expensive = 100,
-	good_wage = 300,
-	medium_wage = 250,
-	bad_wage = 200,
 	training = 300,
 	teasing = 25,
-	climax = 50
+	climax = 50,
+	racing_gear = 500,
+	race_fee = 200,
 }
 
 @export_group("Actions")
@@ -26,7 +33,7 @@ const COSTS = {
 @export var list_of_perks :Array[Perk] = []
 
 # ================================================== game state
-const TESTING = true
+var TESTING = false
 
 var old_game_state = Enums.GAME_STATES.NONE
 var game_state = Enums.GAME_STATES.START:

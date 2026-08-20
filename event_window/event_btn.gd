@@ -35,7 +35,11 @@ func _on_pressed() -> void:
 	if content == null or content.actions.is_empty():
 		LocationManager.current_event = null
 		SceneManager.change_scene(SceneManager.MAIN_WINDOW)
-	elif not _get_result_text().is_empty():
+		return
+	if content.single_use:
+		content.used = true
+	var result_text := _get_result_text()
+	if not result_text.is_empty():
 		ModalManager.open_event_result_modal(content.actions)
 	else:
 		for action in content.actions:

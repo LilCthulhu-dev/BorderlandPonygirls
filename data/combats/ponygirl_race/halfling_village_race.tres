@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="Combat" format=3 uid="uid://cfyo12htfl52l"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_wt712"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_vhi4r"]
+[ext_resource type="Resource" uid="uid://c7wrfot1626jk" path="res://data/combats/ponygirl_race/boxed_in.tres" id="3_gfntq"]
+[ext_resource type="Resource" uid="uid://wk6rbgmnv48b" path="res://data/combats/ponygirl_race/foul_play.tres" id="4_qqaxa"]
+[ext_resource type="Resource" uid="uid://b6l62xmesuta" path="res://data/combats/ponygirl_race/on_the_edge.tres" id="5_vmy3k"]
+[ext_resource type="Resource" uid="uid://vy2eth6u4yg3" path="res://data/combats/ponygirl_race/sharp_bend.tres" id="6_aut3k"]
+[ext_resource type="Resource" uid="uid://bxsm4u83tan0u" path="res://data/combats/ponygirl_race/uphill_stretch.tres" id="7_fak8y"]
+[ext_resource type="Script" uid="uid://ct66od486dv7w" path="res://data/combats/combat.gd" id="8_j87iw"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="9_ysng2"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="10_puwl5"]
+[ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="11_7ehs2"]
+[ext_resource type="Script" uid="uid://dc1bca6pcahfr" path="res://data/actions/change_xp.gd" id="12_vhi4r"]
+
+[sub_resource type="Resource" id="Resource_xicot"]
+script = ExtResource("9_ysng2")
+amount = "{RACE_REWARD}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_xmjim"]
+script = ExtResource("10_puwl5")
+amount = 2
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_jj2a4"]
+script = ExtResource("11_7ehs2")
+amount = 25
+target = 0
+metadata/_custom_type_script = "uid://batgxym44h4w3"
+
+[sub_resource type="Resource" id="Resource_8d81t"]
+script = ExtResource("12_vhi4r")
+amount = 5
+target = 0
+metadata/_custom_type_script = "uid://dc1bca6pcahfr"
+
+[resource]
+script = ExtResource("8_j87iw")
+title = "Halfling Village Derby"
+scenes = Array[ExtResource("2_vhi4r")]([ExtResource("3_gfntq"), ExtResource("4_qqaxa"), ExtResource("5_vmy3k"), ExtResource("6_aut3k"), ExtResource("7_fak8y")])
+keep_focused_ponygirl = true
+enemy_descriptors = Array[String](["Fierce", "Tough", "Skilled", "Determined", "Experienced", "Relentless"])
+enemy_names = Array[String](["Rivals", "Racers", "Competitors", "Opponents"])
+victory_txt = "{PONYNAME} is drenched in sweat, her naked tits heaving with exhaustion - but you won! The finishing ribbon snaps onto her chest harnish as the crowd erupts in celebration.
+
+The race master comes over after you have bathed in the applause for a while, grinning as he hands you a big pouch with coin.
+
+It was a good race. The field will remember both you and {PONYNAME}."
+victory_actions = Array[ExtResource("1_wt712")]([SubResource("Resource_xicot"), SubResource("Resource_xmjim"), SubResource("Resource_jj2a4"), SubResource("Resource_8d81t")])
+defeat_txt = "You drive {PONYNAME} across the finish line, but the others were faster. They are already bathing in the crowd’s adoration.
+
+You can only watch with envy as the winner receives the prize money. Still, it was a clean loss. You and your ponygirl are exhausted, but unharmed. Next time you will be the one celebrating!"
+metadata/_custom_type_script = "uid://ct66od486dv7w"

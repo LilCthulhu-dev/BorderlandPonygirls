@@ -7,12 +7,13 @@
 [ext_resource type="Resource" uid="uid://dotjf4edjkg3y" path="res://data/events/bone_charm/bone_charm_start.tres" id="4_bone"]
 [ext_resource type="Resource" uid="uid://cquestmarecmp1" path="res://data/events/missing_mare/missing_mare_camp.tres" id="5_camp"]
 [ext_resource type="Resource" uid="uid://cquestmaretlk1" path="res://data/events/missing_mare/missing_mare_talk.tres" id="6_talk"]
+[ext_resource type="Resource" uid="uid://dotjglyb1kg3y" path="res://data/events/cave_salvage/cave_salvage_01.tres" id="5_salv"]
 
 [resource]
 script = ExtResource("2_kjoh8")
 title = "Wilderness"
 description = "Big, empty wildernes"
 random_event_chance = 10
-random_events = Array[ExtResource("1_yp2nt")]([ExtResource("3_oftyk"), ExtResource("4_bone")])
+random_events = Array[ExtResource("1_yp2nt")]([ExtResource("3_oftyk"), ExtResource("4_bone"), ExtResource("5_salv")])
 quest_events = Array[ExtResource("1_yp2nt")]([ExtResource("5_camp"), ExtResource("6_talk")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

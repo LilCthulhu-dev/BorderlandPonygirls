@@ -33,9 +33,11 @@ func translate(text : String) -> String:
 		"{QUEST_PONY}": FlagsManager.quest_ponygirl_name() if GameData.flags_manager else "",
 		"{ENEMY_NAME}": CombatManager.enemy_name,
 
-		"{GOOD_WAGE}": GameData.COSTS.good_wage,
-		"{MEDIUM_WAGE}": GameData.COSTS.medium_wage,
-		"{BAD_WAGE}": GameData.COSTS.bad_wage,
+		"{GOOD_WAGE}": GameData.REWARDS.good_wage,
+		"{MEDIUM_WAGE}": GameData.REWARDS.medium_wage,
+		"{BAD_WAGE}": GameData.REWARDS.bad_wage,
+		"{VICTORY_REWARD}": GameData.REWARDS.victory,
+		"{RACE_REWARD}": GameData.REWARDS.price_money,
 
 		"{COST_DEATH}": GameData.COSTS.death,
 		"{COST_REST}": GameData.COSTS.rest,
@@ -46,6 +48,8 @@ func translate(text : String) -> String:
 		"{COST_TRAINING}": GameData.COSTS.training,
 		"{COST_TEASING}": GameData.COSTS.teasing,
 		"{COST_CLIMAX}": GameData.COSTS.climax,
+		"{COST_RACING_GEAR}": GameData.COSTS.racing_gear,
+		"{COST_RACE_FEE}": GameData.COSTS.race_fee,
 	}
 	for key in replacements:
 		text = text.replace(key, str(replacements[key]))

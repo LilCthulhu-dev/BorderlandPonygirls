@@ -11,7 +11,7 @@
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="9"]
 [ext_resource type="Resource" uid="uid://cflagmareheld01" path="res://data/flags/missing_mare_held.tres" id="10"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="11"]
-[ext_resource type="Script" path="res://data/actions/spawn_quest_ponygirl.gd" id="12"]
+[ext_resource type="Script" uid="uid://b65yldi5810ct" path="res://data/actions/spawn_quest_ponygirl.gd" id="12"]
 [ext_resource type="Texture2D" uid="uid://cvv0c6sji73ko" path="res://assets/img/frozenhunter/missing_mare_camp_victory.png" id="13"]
 [ext_resource type="Texture2D" uid="uid://dbhehe2jm58u3" path="res://assets/img/frozenhunter/missing_mare_camp_defeat.png" id="14"]
 

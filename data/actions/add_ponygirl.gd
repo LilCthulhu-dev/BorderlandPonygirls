@@ -10,7 +10,7 @@ class_name AddPonygirl
 @export var force_skin_tone := ""
 @export var force_portrait : Texture2D
 
-@export_range(0, 100, 1) var force_loyalty: int = 0
+@export_range(0, 100, 1) var force_submission: int = 0
 @export_range(0, 100, 1) var force_arousal: int = 0
 @export_range(0, 80, 1) var force_xp: int = 0
 @export var perks :Array[Perk] = []
@@ -48,7 +48,7 @@ func _get_instance() -> Ponygirl:
 		p.portrait = force_portrait
 
 	p.xp = force_xp
-	p.loyalty = force_loyalty
+	p.submission = force_submission
 	p.arousal = force_arousal
 	p.perks = perks
 	return p

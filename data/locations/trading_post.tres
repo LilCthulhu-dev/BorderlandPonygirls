@@ -9,10 +9,14 @@
 [ext_resource type="Resource" uid="uid://b8yrmk282tpxh" path="res://data/events/pony_offering/pony_offering_1.tres" id="4_cp2w7"]
 [ext_resource type="Resource" uid="uid://btdewgxsffs25" path="res://data/events/cattle_drive/cattle_drive_end.tres" id="5_3veny"]
 [ext_resource type="Resource" uid="uid://b7mx4huk81b5" path="res://data/events/one_pagers/stable_fair.tres" id="6_fair"]
+[ext_resource type="Resource" uid="uid://da63tqoj4f0a6" path="res://data/events/tobias_and_lucy/tobias_and_lucy_1.tres" id="7_ia4uo"]
 [ext_resource type="Resource" uid="uid://vbcvmfc6tm13" path="res://data/events/missing_mare/missing_mare_start.tres" id="7_mare"]
 [ext_resource type="Resource" uid="uid://cv08b45k61b5" path="res://data/events/one_pagers/traveling_tinker.tres" id="8_n2epe"]
+[ext_resource type="Resource" uid="uid://drgvn3c3coca0" path="res://data/events/cave_salvage/cave_salvage_03.tres" id="8_nulis"]
 [ext_resource type="Resource" uid="uid://dotjgk7hte0qb" path="res://data/events/iron_tithe/iron_tithe_end.tres" id="9_iron"]
 [ext_resource type="Resource" uid="uid://cquestmaretrn1" path="res://data/events/missing_mare/missing_mare_turnin.tres" id="10_mare"]
+[ext_resource type="Resource" uid="uid://dotjf57iukg3y" path="res://data/events/night_dispatch/night_dispatch_start.tres" id="10_disp"]
+[ext_resource type="Resource" uid="uid://bg2hw6ifuq5s3" path="res://data/events/one_pagers/race_announcement.tres" id="13_nx16n"]
 
 [resource]
 script = ExtResource("2_5ho7t")
@@ -24,6 +28,6 @@ Nearly all goods entering the Empire from the north or leaving it in that direct
 
 The post was built beside a stream that flows north toward Harbortown. As a result, its tiny pier is far busier than its modest size would suggest."
 expensive_items = Array[ExtResource("1_gvkq6")]([ExtResource("2_3veny")])
-random_events = Array[ExtResource("2_1xhgw")]([ExtResource("3_q1dao"), ExtResource("4_cp2w7"), ExtResource("6_fair"), ExtResource("8_n2epe"), ExtResource("7_mare")])
-quest_events = Array[ExtResource("2_1xhgw")]([ExtResource("5_3veny"), ExtResource("9_iron"), ExtResource("10_mare")])
+random_events = Array[ExtResource("2_1xhgw")]([ExtResource("3_q1dao"), ExtResource("4_cp2w7"), ExtResource("6_fair"), ExtResource("8_n2epe"), ExtResource("7_mare"), ExtResource("10_disp"), ExtResource("13_nx16n")])
+quest_events = Array[ExtResource("2_1xhgw")]([ExtResource("5_3veny"), ExtResource("9_iron"), ExtResource("7_ia4uo"), ExtResource("8_nulis"), ExtResource("10_mare")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

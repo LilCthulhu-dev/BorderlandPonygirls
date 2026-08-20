@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://vy2eth6u4yg3"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_y2tgd"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_eh3wh"]
+
+[sub_resource type="Resource" id="Resource_twfuc"]
+script = ExtResource("1_y2tgd")
+txt = "Shoulder them wide"
+ability = 1
+success_description = "You lean {PONYNAME} into the rival’s flank. Dust flies. The other mare is forced onto the slow outside dirt, and you take the bend clean."
+fail_description = "You try to bully the inside, but the rival is heavier. {PONYNAME} stumbles toward the rail and loses a length."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_dmpo5"]
+script = ExtResource("1_y2tgd")
+txt = "Cut the inside"
+ability = 4
+success_description = "You wait half a breath, then snatch the gap. {PONYNAME}’s hooves bite the short line. The pack curses behind you."
+fail_description = "The gap closes. {PONYNAME} clips a hoof and has to check, eating grit from the mare in front."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_7qxbw"]
+script = ExtResource("1_y2tgd")
+txt = "Call the line"
+ability = 3
+success_description = "You bark the turn. {PONYNAME} answers the bit and holds her lane. The rival who tried to squeeze you has to sit up or crash."
+fail_description = "Your call comes late. {PONYNAME} hesitates, and two rivals pin her to the fence through the whole bend."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_k2p1h"]
+script = ExtResource("1_y2tgd")
+txt = "Feint wide"
+ability = 4
+success_description = "You show the outside, then snatch the reins in. The rival commits wide. {PONYNAME} slips through on the rail."
+fail_description = "The rival does not buy it. She stays glued to your girth, and the feint only costs you stride. "
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_eh3wh")
+flavor_lines = Array[String](["Dust hangs in a low cloud over the packed track.", "The crowd leans over the fence as the racers bunch together.", "Feet pound against the dirt while harness leather creaks under the strain."])
+description = "The racers charge into a sharp bend, nearly shoulder to shoulder. Rivals press close, trying to force one another onto the slower outside lane. {PONYNAME} tenses and instinctively tries to slow down, but a sharp flick of your crop urges her forward instead."
+actions = Array[ExtResource("1_y2tgd")]([SubResource("Resource_twfuc"), SubResource("Resource_dmpo5"), SubResource("Resource_7qxbw"), SubResource("Resource_k2p1h")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

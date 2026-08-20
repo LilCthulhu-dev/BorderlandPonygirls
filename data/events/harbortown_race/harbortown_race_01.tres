@@ -1,0 +1,99 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://ctaythq7frd7k"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_gd47x"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_pkmrc"]
+[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_lhalu"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="4_walxc"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5_jy5xc"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="6_7xd1p"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="7_tmosh"]
+[ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="8_fmgka"]
+[ext_resource type="Resource" uid="uid://dxorkitwvi3mx" path="res://data/flags/entered_first_race.tres" id="9_56bo3"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="10_26lh7"]
+[ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="11_n3r3q"]
+[ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="12_yfc08"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="13_nxofj"]
+
+[sub_resource type="Resource" id="Resource_uyx4y"]
+script = ExtResource("4_walxc")
+txt = "The course winds through an old freight yard near the docks. Packed dirt covers most of the track, though several stretches still run across uneven cobblestones.
+
+Wooden barriers separate the course from the spectators. Stacked crates, warehouses, and tall loading cranes loom beyond them, giving the circuit a distinctly urban character."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_loak1"]
+script = ExtResource("5_jy5xc")
+txt = "Look over the track"
+actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_uyx4y")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_bgi72"]
+script = ExtResource("4_walxc")
+txt = "Dockworkers, merchants, sailors, mercenaries, and travellers crowd the stands. Hawkers weave between them, selling beer, fried fish, racing ribbons, and hastily printed betting sheets.
+
+The sport may still be new, but Harbortown has embraced it eagerly. Every merchant seems determined to find some way of making money from the spectacle."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_elyge"]
+script = ExtResource("5_jy5xc")
+txt = "Observe the crowd"
+actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_bgi72")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_jv4t2"]
+script = ExtResource("4_walxc")
+txt = "The competition looks serious and invested. Several mares wear polished racing gear, and a few of the jockeys carry themselves with obvious confidence.
+
+Most are still converted work or warband ponygirls rather than dedicated racers, but word of the sport is spreading quickly. Some competitors have clearly begun training specifically for the track."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_78x5n"]
+script = ExtResource("5_jy5xc")
+txt = "Study the competition"
+actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_jv4t2")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_thshj"]
+script = ExtResource("4_walxc")
+txt = "A row of sturdy starting stalls stands beneath a large painted sign bearing the emblem of Harbortown. Officials in matching blue coats inspect equipment, register competitors, and argue with bookmakers attempting to approach the jockeys."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_ohnjp"]
+script = ExtResource("5_jy5xc")
+txt = "Inspect the starting area"
+actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_thshj")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_efmu1"]
+script = ExtResource("6_7xd1p")
+event_path = "uid://bruh4b2frxpll"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_u0bws"]
+script = ExtResource("10_26lh7")
+required_flag = Array[ExtResource("7_tmosh")]([ExtResource("8_fmgka")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_6tbqf"]
+script = ExtResource("5_jy5xc")
+txt = "Enter the race"
+actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_efmu1"), SubResource("Resource_u0bws")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_dfvfa"]
+script = ExtResource("5_jy5xc")
+txt = "Leave"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_ma5mm"]
+script = ExtResource("10_26lh7")
+required_flag = Array[ExtResource("7_tmosh")]([ExtResource("11_n3r3q"), ExtResource("12_yfc08"), ExtResource("9_56bo3")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[resource]
+script = ExtResource("13_nxofj")
+titel = "Harbortown Circuit"
+description = "You arrive at Harbortown’s racetrack to find the old freight yard transformed. Colorful banners hang between the warehouses, temporary stands rise along the course, and a large crowd has gathered to witness the city’s latest sensation."
+content = Array[ExtResource("2_pkmrc")]([SubResource("Resource_loak1"), SubResource("Resource_elyge"), SubResource("Resource_78x5n"), SubResource("Resource_ohnjp"), SubResource("Resource_6tbqf"), SubResource("Resource_dfvfa")])
+open_actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_ma5mm")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -38,10 +38,10 @@ func _spawn() -> Ponygirl:
 	p.skin_tone = ""
 	p.portrait = null
 	p.xp = 5
-	p.loyalty = 0
+	p.submission = 0
 	p.arousal = 35
 	p.init()
-	p.loyalty = 0
+	p.submission = 0
 	p.arousal = 35
 	var wild: Perk = PonygirlManager.get_perk_by_name("Wild")
 	if wild != null and not p.perks.has(wild):
