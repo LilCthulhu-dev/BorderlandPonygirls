@@ -1,5 +1,5 @@
 extends Action
-class_name ChangeLoyalty
+class_name ChangeSubmission
 
 enum TARGET {
 	FOCUSED,
@@ -15,7 +15,7 @@ var affected_ponygirls: Array[Ponygirl] = []
 func use() -> void:
 	affected_ponygirls = get_target_ponygirls()
 	for ponygirl in affected_ponygirls:
-		ponygirl.loyalty += amount
+		ponygirl.submission += amount
 
 func requirement_met() -> bool:
 	return not get_target_ponygirls().is_empty()
@@ -42,13 +42,13 @@ func _get_txt() -> String:
 	var verb_p: String = Utils.translate("gain") if amount > 0 else Utils.translate("lose")
 	match target:
 		TARGET.FOCUSED:
-			return Utils.translate("Selected Ponygirl %s %s Loyalty") % [verb_s, amt]
+			return Utils.translate("Selected Ponygirl %s %s Submission") % [verb_s, amt]
 		TARGET.RANDOM:
-			return Utils.translate("A random active ponygirl %s %s Loyalty") % [verb_s, amt]
+			return Utils.translate("A random active ponygirl %s %s Submission") % [verb_s, amt]
 		TARGET.ACTIVE:
-			return Utils.translate("All active ponygirls %s %s Loyalty") % [verb_p, amt]
+			return Utils.translate("All active ponygirls %s %s Submission") % [verb_p, amt]
 		TARGET.ALL:
-			return Utils.translate("All ponygirls %s %s Loyalty") % [verb_p, amt]
+			return Utils.translate("All ponygirls %s %s Submission") % [verb_p, amt]
 	return ""
 
 func get_tooltip() -> String:
@@ -61,14 +61,8 @@ func get_result() -> String:
 	var verb_s: String = Utils.translate("gains") if amount > 0 else Utils.translate("loses")
 	var text := _get_txt()
 	if target == TARGET.FOCUSED:
-		text = Utils.translate("{PONYNAME} %s %s Loyalty") % [verb_s, amt]
+		text = Utils.translate("{PONYNAME} %s %s Submission") % [verb_s, amt]
 	if target == TARGET.RANDOM and not affected_ponygirls.is_empty():
-		text = Utils.translate("%s %s %s Loyalty") % [affected_ponygirls[0].name, verb_s, amt]
+		text = Utils.translate("%s %s %s Submission") % [affected_ponygirls[0].name, verb_s, amt]
 	if text.is_empty(): return ""
 	return "- " + text
-
-func _get_singular_verb() -> String:
-	return "gains" if amount > 0 else "loses"
-
-func _get_plural_verb() -> String:
-	return "gain" if amount > 0 else "lose"

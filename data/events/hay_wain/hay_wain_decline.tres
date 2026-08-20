@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjgayo13x3y"]
+
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="1"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_fg5br"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://cadushsnrgtvk" path="res://assets/img/frozenhunter/hay_wain.png" id="4"]
+
+[sub_resource type="Resource" id="Resource_return"]
+script = ExtResource("1")
+txt = "Return"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3")
+titel = "Hay Wain"
+description = "The farmer wipes his brow and looks past you at the next cart. \"Fodder doesn't wait, {TITLE}. Come back if you grow a conscience for hungry ponies.\""
+img = ExtResource("4")
+content = Array[ExtResource("2")]([SubResource("Resource_return")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

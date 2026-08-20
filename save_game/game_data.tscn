@@ -25,7 +25,7 @@
 
 [sub_resource type="Resource" id="Resource_mqmyc"]
 script = ExtResource("3_fd73u")
-amount = "{MEDIUM_WAGE}"
+amount = "{VICTORY_REWARD}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_872a7"]
@@ -43,6 +43,11 @@ script = ExtResource("5_gd741")
 amount = -10
 target = 3
 metadata/_custom_type_script = "uid://cy0fnw6jwovce"
+
+[sub_resource type="Resource" id="Resource_imhph"]
+script = ExtResource("4_gd741")
+amount = -5
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 
 [sub_resource type="Resource" id="Resource_0v50s"]
 script = ExtResource("6_efdwm")
@@ -131,7 +136,7 @@ metadata/_custom_type_script = "uid://cy0fnw6jwovce"
 script = ExtResource("6_efdwm")
 text = "You call {PONYNAME} into your tent, before ordering your men to leave. You order her to lay down on a big bear fur, spread out on the flor, and spread her legs.
 
-She huffs nervously, watching with wide eyes as you undress, and steps up to her. You praise her loyalty, as you lean down, and sink your shaft into her.
+She huffs nervously, watching with wide eyes as you undress, and steps up to her. You praise her submission, as you lean down, and sink your shaft into her.
 
 You take your time, fuck her hard, and let her straddle her orgasm for minutes, before you say the magic words: “You may cum.”"
 metadata/_custom_type_script = "uid://ckie55vduhbok"
@@ -161,7 +166,7 @@ metadata/_custom_type_script = "uid://cy0fnw6jwovce"
 [node name="GameData" type="Node" unique_id=1927241300]
 script = ExtResource("1_21oog")
 combat_victory_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_mqmyc"), SubResource("Resource_872a7")])
-combat_defeat_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_cq4wx"), SubResource("Resource_e6y42")])
+combat_defeat_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_cq4wx"), SubResource("Resource_e6y42"), SubResource("Resource_imhph")])
 training_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_ur0se"), SubResource("Resource_0j7dv"), SubResource("Resource_at000"), SubResource("Resource_hlpe4")])
 teasing_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_nx3u7"), SubResource("Resource_girl5"), SubResource("Resource_mnk8w"), SubResource("Resource_u4d3l")])
 climax_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_tkrab"), SubResource("Resource_ps30a"), SubResource("Resource_fdpya"), SubResource("Resource_ckcii")])

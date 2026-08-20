@@ -26,6 +26,7 @@ static func new_game(new_boss_name: String, new_boss_title: String) -> void:
 	GameData.location_manager = LocationManager.new()
 	GameData.ponygirl_manager = PonygirlManager.new()
 
+	PonygirlManager.init()
 	AttributesManager.boss_name = new_boss_name
 	AttributesManager.boss_title = new_boss_title
 	PonygirlManager.add_ponygirl(start_pony)

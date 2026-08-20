@@ -5,4 +5,5 @@
 [node name="EventText" type="Label" unique_id=1273474532]
 offset_right = 368.0
 offset_bottom = 128.0
+autowrap_mode = 2
 script = ExtResource("1_blc0r")

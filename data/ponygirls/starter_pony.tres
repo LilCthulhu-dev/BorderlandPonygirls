@@ -10,6 +10,6 @@ name = "Lula"
 _race = 2
 _portrait = ExtResource("1_36c3i")
 xp = 25
-loyalty = 100
+submission = 100
 arousal = 25
 metadata/_custom_type_script = "uid://b54fl41egas4m"

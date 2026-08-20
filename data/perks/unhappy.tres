@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_wmfx4")
-description = "Applied when loyalty is below 30"
+description = "Applied when submission is below 30"
 malus = 8
 background = true
 metadata/_custom_type_script = "uid://08pb1wingorc"

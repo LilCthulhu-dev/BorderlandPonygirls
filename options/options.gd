@@ -8,13 +8,11 @@ const TWEEN_TIME := 0.35
 @onready var content: Control = %Content
 @onready var save_btn: DefaultBtn = %SaveBtn
 @onready var close_btn: DefaultBtn = %CloseBtn
-@onready var lang_label: Label = %LangLabel
-@onready var lang_en_btn: DefaultBtn = %LangEnBtn
-@onready var lang_de_btn: DefaultBtn = %LangDeBtn
 
 @onready var sub_menues: Control = %SubMenues
 @onready var new_game: Control = %NewGame
 @onready var save_load: Control = %SaveLoad
+@onready var game_options: Control = %GameOptions
 @onready var credits: Control = %Credits
 
 func _ready() -> void:
@@ -27,34 +25,14 @@ func _ready() -> void:
 	if GameData.game_state != Enums.GAME_STATES.START:
 		GameData.game_state = Enums.GAME_STATES.OPTIONS
 	_refresh_language_ui()
-	if lang_en_btn and not lang_en_btn.pressed.is_connected(_on_lang_en_pressed):
-		lang_en_btn.pressed.connect(_on_lang_en_pressed)
-	if lang_de_btn and not lang_de_btn.pressed.is_connected(_on_lang_de_pressed):
-		lang_de_btn.pressed.connect(_on_lang_de_pressed)
 	if GlobalSignals and not GlobalSignals.language_changed.is_connected(_refresh_language_ui):
 		GlobalSignals.language_changed.connect(_refresh_language_ui)
-
-
-func _on_lang_en_pressed() -> void:
-	if Settings:
-		Settings.set_language("en")
-
-
-func _on_lang_de_pressed() -> void:
-	if Settings:
-		Settings.set_language("de")
 
 
 func _refresh_language_ui() -> void:
 	if Utils:
 		Utils.localize_tree(self)
-	if lang_label and Utils:
-		lang_label.text = Utils.translate("Language")
-	if not lang_en_btn or not lang_de_btn or not Settings:
-		return
-	var is_de := Settings.is_german()
-	lang_en_btn.disabled = not is_de
-	lang_de_btn.disabled = is_de
+
 
 func _input(event: InputEvent) -> void:
 	if not event is InputEventKey:
@@ -72,6 +50,8 @@ func _close() -> void:
 	await animation(false)
 	get_tree().paused = false
 	GameData.game_state = GameData.old_game_state
+	GlobalSignals.update_location.emit()
+	GlobalSignals.update_attribute.emit()
 	queue_free()
 
 func _hide_options():
@@ -118,6 +98,10 @@ func _on_new_game_btn_pressed() -> void:
 func _on_save_btn_pressed() -> void:
 	_hide_options()
 	_fade_in(save_load)
+
+func _on_options_btn_pressed() -> void:
+	_hide_options()
+	_fade_in(game_options)
 
 func _on_credits_btn_pressed() -> void:
 	_hide_options()

@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource("1_w642o")
-description = "Applied when loyalty is above 70"
+description = "Applied when submission is above 70"
 bonus = 8
 background = true
 metadata/_custom_type_script = "uid://08pb1wingorc"

@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://bg2hw6ifuq5s3"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_5w5r2"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_q0iyf"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_6x70x"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="3_vlgk8"]
+[ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="4_oohyi"]
+[ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="5_gjll1"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="6_grxs5"]
+[ext_resource type="Script" uid="uid://ccm3riyfg6rfl" path="res://data/events/event_random_text.gd" id="7_10abt"]
+[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="8_lvu3u"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="9_oohyi"]
+
+[sub_resource type="Resource" id="Resource_5fsgt"]
+script = ExtResource("6_grxs5")
+add_flag = Array[ExtResource("3_vlgk8")]([ExtResource("4_oohyi")])
+required_flag = Array[ExtResource("3_vlgk8")]([ExtResource("5_gjll1")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_dmaue"]
+script = ExtResource("8_lvu3u")
+text = "As you walk through the streets, you overhear two locals discussing an upcoming ponygirl race. You stop to ask for details and learn that races have been announced at tracks throughout the region."
+metadata/_custom_type_script = "uid://ckie55vduhbok"
+
+[sub_resource type="Resource" id="Resource_rnl8d"]
+script = ExtResource("8_lvu3u")
+text = "A newly posted notice at the local tavern catches your attention. It announces another round of ponygirl races, with events being held at every established track in the region.
+
+All properly equipped racers are invited to enter."
+metadata/_custom_type_script = "uid://ckie55vduhbok"
+
+[sub_resource type="Resource" id="Resource_6qnyu"]
+script = ExtResource("8_lvu3u")
+text = "A town crier stands at a busy crossroads, loudly announcing the next series of ponygirl races. According to him, every racetrack in the region is accepting competitors."
+metadata/_custom_type_script = "uid://ckie55vduhbok"
+
+[sub_resource type="Resource" id="Resource_8rwv6"]
+script = ExtResource("8_lvu3u")
+text = "You pass a group of excited locals debating which ponygirl race they should attend. When you ask what they are talking about, they explain that new races have been announced across the region."
+metadata/_custom_type_script = "uid://ckie55vduhbok"
+
+[sub_resource type="Resource" id="Resource_pypi1"]
+script = ExtResource("8_lvu3u")
+text = "A travelling race promoter is handing out notices and enthusiastically advertising the latest ponygirl races. Events are being organized at tracks throughout the region, and anyone with a proper mare and gear may enter."
+metadata/_custom_type_script = "uid://ckie55vduhbok"
+
+[sub_resource type="Resource" id="Resource_lkv00"]
+script = ExtResource("7_10abt")
+txt_elements = Array[ExtResource("8_lvu3u")]([SubResource("Resource_dmaue"), SubResource("Resource_rnl8d"), SubResource("Resource_6qnyu"), SubResource("Resource_8rwv6"), SubResource("Resource_pypi1")])
+actions = Array[ExtResource("1_5w5r2")]([SubResource("Resource_5fsgt")])
+metadata/_custom_type_script = "uid://ccm3riyfg6rfl"
+
+[sub_resource type="Resource" id="Resource_blc0r"]
+script = ExtResource("9_oohyi")
+txt = "Back to Main"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_gjll1"]
+script = ExtResource("6_grxs5")
+add_flag = Array[ExtResource("3_vlgk8")]([ExtResource("4_oohyi")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[resource]
+script = ExtResource("3_6x70x")
+titel = "Ponygirl Race Announced"
+content = Array[ExtResource("2_q0iyf")]([SubResource("Resource_lkv00"), SubResource("Resource_blc0r")])
+open_actions = Array[ExtResource("1_5w5r2")]([SubResource("Resource_gjll1")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

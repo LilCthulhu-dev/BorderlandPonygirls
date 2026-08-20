@@ -19,40 +19,52 @@ script = ExtResource("1_h1eg0")
 [node name="coin" type="AudioStreamPlayer" parent="." unique_id=619005167]
 unique_name_in_owner = true
 stream = ExtResource("2_xlbhv")
+bus = &"SFX"
 
 [node name="page1" type="AudioStreamPlayer" parent="." unique_id=1015423628]
 stream = ExtResource("3_6b4u2")
+bus = &"SFX"
 
 [node name="page3" type="AudioStreamPlayer" parent="." unique_id=569318583]
 stream = ExtResource("3_xlbhv")
+bus = &"SFX"
 
 [node name="click" type="AudioStreamPlayer" parent="." unique_id=1197291705]
 stream = ExtResource("3_6b4u2")
+bus = &"SFX"
 
 [node name="hover" type="AudioStreamPlayer" parent="." unique_id=574288815]
 stream = ExtResource("3_xlbhv")
+bus = &"SFX"
 
 [node name="dice" type="AudioStreamPlayer" parent="." unique_id=1699058568]
 stream = ExtResource("5_s2ubd")
 volume_db = -7.5
+bus = &"SFX"
 
 [node name="fail1" type="AudioStreamPlayer" parent="." unique_id=1274234395]
 stream = ExtResource("6_73yup")
+bus = &"SFX"
 
 [node name="fail2" type="AudioStreamPlayer" parent="." unique_id=1906722339]
 stream = ExtResource("7_hkcit")
 volume_db = -5.0
+bus = &"SFX"
 
 [node name="success1" type="AudioStreamPlayer" parent="." unique_id=525658019]
 stream = ExtResource("14_hkcit")
+bus = &"SFX"
 
 [node name="success2" type="AudioStreamPlayer" parent="." unique_id=425732256]
 stream = ExtResource("15_au3m6")
 volume_db = -1.5
+bus = &"SFX"
 
 [node name="success3" type="AudioStreamPlayer" parent="." unique_id=662870398]
 stream = ExtResource("16_xjfmd")
+bus = &"SFX"
 
 [node name="success4" type="AudioStreamPlayer" parent="." unique_id=229822531]
 stream = ExtResource("17_v2loo")
 volume_db = -5.0
+bus = &"SFX"

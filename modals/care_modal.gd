@@ -16,10 +16,10 @@ func _ready() -> void:
 		ponygirl.level,
 		Utils.translate(str(ponygirl.race)),
 	]
-	attributes_label.text = Utils.translate("XP: %s / Arousal: %s / Loyalty: %s") % [
+	attributes_label.text = Utils.translate("XP: %s / Arousal: %s / Submission: %s") % [
 		ponygirl.xp,
 		ponygirl.arousal,
-		ponygirl.loyalty,
+		ponygirl.submission,
 	]
 	var btns = [training_btn, teasing_btn, climax_btn]
 	var array_of_actions = [

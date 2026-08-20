@@ -1,0 +1,82 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjglyb1aavy"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_2yvm8"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_yokwc"]
+[ext_resource type="Resource" uid="uid://dotjglyb028ey" path="res://data/combats/land_squid/land_squid.tres" id="3_kasgf"]
+[ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="4_i6dqv"]
+[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="5_hvbpj"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6_jasdj"]
+[ext_resource type="Resource" uid="uid://dotjglyb1i4ff" path="res://data/flags/cave_salvage_02.tres" id="7_qbxqp"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8_2n0tw"]
+[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="9_kasgf"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="9_xtgw8"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="10_i6dqv"]
+[ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="10_mlicy"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="11_081s4"]
+
+[sub_resource type="Resource" id="Resource_4wduo"]
+script = ExtResource("4_i6dqv")
+combat = ExtResource("3_kasgf")
+metadata/_custom_type_script = "uid://bnjeril1f2cy8"
+
+[sub_resource type="Resource" id="Resource_kc2dl"]
+script = ExtResource("8_2n0tw")
+add_flag = Array[ExtResource("6_jasdj")]([ExtResource("7_qbxqp")])
+forbidden_flag = Array[ExtResource("6_jasdj")]([ExtResource("7_qbxqp")])
+hard_requierment = true
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_tkrab"]
+script = ExtResource("5_hvbpj")
+ability = 3
+succes_actions = Array[ExtResource("1_2yvm8")]([SubResource("Resource_kc2dl")])
+fail_actions = Array[ExtResource("1_2yvm8")]([SubResource("Resource_4wduo")])
+txt = "Salvage crate."
+succes_txt = "You hush your men, then quietly order them to retrieve the crate and strap it to the back of one of their ponygirls.
+
+One of your men knocks a loose stone across the cave floor. Everyone freezes as the sound echoes through the tunnels.
+
+Thankfully, the beast does not seem to have noticed. Your men finish securing the crate."
+fail_txt = "Your men do their best to work quietly, but suddenly, the sounds from deeper within the cave fall silent.
+
+You order them to halt. A moment later, a hulking land-squid bursts from the tunnel and into the light of your torches, screeching as its tentacles lash out at your men."
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_pn22d"]
+script = ExtResource("10_i6dqv")
+txt = "You signal your men to remain quiet and slowly lead them deeper into the tunnel. The sickening sounds of something large feeding grow louder with every step.
+
+Eventually, you spot the creature ahead: a giant land-squid squatting in the middle of the tunnel, chewing on the carcass of a dead goblin.
+
+You hold your breath, wondering whether you truly want to challenge it. Then one of your she-beasts lets out a terrified whine.
+
+The land-squid looks up. Now you have to fight."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_w80cg"]
+script = ExtResource("4_i6dqv")
+combat = ExtResource("3_kasgf")
+metadata/_custom_type_script = "uid://bnjeril1f2cy8"
+
+[sub_resource type="Resource" id="Resource_2q2b3"]
+script = ExtResource("9_xtgw8")
+txt = "Attack the beast."
+actions = Array[ExtResource("1_2yvm8")]([SubResource("Resource_pn22d"), SubResource("Resource_w80cg")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_nm15e"]
+script = ExtResource("9_xtgw8")
+txt = "Leave."
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("11_081s4")
+titel = "Cave Salvage"
+description = "You dismount and take your ponygirl by the reins as your men follow you into the darkness of the cave.
+
+The air inside is cold and damp. From somewhere deep below comes the sound of a large creature noisily slurping and crunching its way through a meal.
+
+You weigh your options, unsure whether venturing deeper is worth the risk. Then you notice another mostly intact crate lying just inside the nearest tunnel."
+img = ExtResource("10_mlicy")
+content = Array[ExtResource("2_yokwc")]([SubResource("Resource_tkrab"), SubResource("Resource_2q2b3"), SubResource("Resource_nm15e")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

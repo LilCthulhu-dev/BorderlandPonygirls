@@ -2,7 +2,7 @@ extends Resource
 class_name Ponygirl
 
 const XP_THRESHOLDS = [0, 10, 20, 40, 80]
-const LOYALTY_THRESHOLDS = [30, 70]
+const SUBMISSION_THRESHOLDS = [30, 70]
 const AROUSAL_THRESHOLDS = [25, 75];
 const LEVEL_BONUS_THRESHOLDS = [4, 5];
 
@@ -26,9 +26,9 @@ var portrait: Texture2D:
 		xp = value
 		_update_normal_perks()
 @export var perks :Array[Perk] = []
-@export var loyalty := 50:
+@export var submission := 50:
 	set(value):
-		loyalty = clamp(value, 0, 100)
+		submission = clamp(value, 0, 100)
 		_update_background_perks()
 @export var arousal := 0:
 	set(value):
@@ -115,8 +115,8 @@ func get_amount_of_normal_perks() -> int:
 	return amount
 
 func _update_background_perks() -> void:
-	_toggle_perk("Unhappy", loyalty <= LOYALTY_THRESHOLDS[0])
-	_toggle_perk("Happy", loyalty >= LOYALTY_THRESHOLDS[1])
+	_toggle_perk("Unhappy", submission <= SUBMISSION_THRESHOLDS[0])
+	_toggle_perk("Happy", submission >= SUBMISSION_THRESHOLDS[1])
 	_toggle_perk("Horny", arousal >= AROUSAL_THRESHOLDS[0] && arousal < AROUSAL_THRESHOLDS[1])
 	_toggle_perk("Desperately Horny", arousal >= AROUSAL_THRESHOLDS[1])
 
@@ -126,10 +126,10 @@ func _toggle_perk(perk_id: String, enable: bool):
 	if enable && perk: perks.append(perk)
 
 # ======================================================= portraits (race_NN state lineart)
-func get_loyalty_state_key() -> String:
-	if loyalty <= LOYALTY_THRESHOLDS[0]:
+func get_submission_state_key() -> String:
+	if submission <= SUBMISSION_THRESHOLDS[0]:
 		return "unhappy"
-	if loyalty >= LOYALTY_THRESHOLDS[1]:
+	if submission >= SUBMISSION_THRESHOLDS[1]:
 		return "happy"
 	return "neutral"
 
@@ -141,7 +141,7 @@ func get_arousal_state_key() -> String:
 	return "calm"
 
 func get_portrait_state_key() -> String:
-	return "%s_%s" % [get_loyalty_state_key(), get_arousal_state_key()]
+	return "%s_%s" % [get_submission_state_key(), get_arousal_state_key()]
 
 ## Prefer portrait asset basename (elf_01, human_02) so state linearts match race pool.
 func get_portrait_slug() -> String:

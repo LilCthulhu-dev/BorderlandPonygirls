@@ -36,10 +36,10 @@ func _update_portrait():
 	portrait.visible = tex != null
 
 func _update_attributes():
-	attributes_label.text = Utils.translate("XP: %s / Arousal: %s / Loyalty: %s") % [
+	attributes_label.text = Utils.translate("XP: %s / Arousal: %s / Submission: %s") % [
 		ponygirl.xp,
 		ponygirl.arousal,
-		ponygirl.loyalty,
+		ponygirl.submission,
 	]
 
 func _update_backgrounds():

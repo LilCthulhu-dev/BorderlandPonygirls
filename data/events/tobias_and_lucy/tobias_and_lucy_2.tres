@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://d200mp1thkv1x"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_cxpcb"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_1hyxp"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_n6fnm"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4_hoomr"]
+[ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="5_5qqdk"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="6_u6s8j"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_mnei8"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8_nytj0"]
+
+[sub_resource type="Resource" id="Resource_3o568"]
+script = ExtResource("3_n6fnm")
+event_path = "uid://dlnm3ege3ycfd"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_lu3ck"]
+script = ExtResource("7_mnei8")
+txt = "Races?"
+actions = Array[ExtResource("1_cxpcb")]([SubResource("Resource_3o568")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_mm5oj"]
+script = ExtResource("6_u6s8j")
+forbidden_flag = Array[ExtResource("4_hoomr")]([ExtResource("5_5qqdk")])
+hard_requierment = true
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[resource]
+script = ExtResource("8_nytj0")
+titel = "Tobias and Lucy"
+description = "Curiosity gets the better of you, and you walk over to greet the pair. You address the halfling first, hesitating briefly before nodding to the unusual ponygirl.
+
+The pair chuckle at your uncertainty, but return your greeting and invite you to sit down and share a beer with them.
+
+“Don’t worry, {TITLE},” the halfling says. “You’re not the first to get confused. I’m Tobias, and this pretty filly is Lucy. She’s a free woman, and I’m her jockey. We’re here to enter a few races and see if we can win some prize money.”"
+content = Array[ExtResource("2_1hyxp")]([SubResource("Resource_lu3ck")])
+open_actions = Array[ExtResource("1_cxpcb")]([SubResource("Resource_mm5oj")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

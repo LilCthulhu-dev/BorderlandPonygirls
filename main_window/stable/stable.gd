@@ -33,20 +33,12 @@ func _add_quest_icons() -> void:
 		quest_icons.add_child(icon)
 
 func _add_ponygirls() -> void:
-	for pony in PonygirlManager.ponygirls:
+	for slot in range(PonygirlManager.MAX_TOTAL):
+		var ponygirl = PonygirlManager.ponygirls[slot]
 		var btn := PONY_BTN.instantiate()
-		btn.ponygirl = pony
-		if pony.active:
-			btn.active_btn = true
+		btn.ponygirl = ponygirl
+		btn.slot_index = slot
+		if slot < PonygirlManager.MAX_ACTIVE:
 			active_list.add_child(btn)
 		else:
-			btn.active_btn = false
 			resting_list.add_child(btn)
-	while active_list.get_child_count() < PonygirlManager.MAX_ACTIVE:
-		var btn := PONY_BTN.instantiate()
-		btn.active_btn = true
-		active_list.add_child(btn)
-	while resting_list.get_child_count() < PonygirlManager.MAX_RESTING:
-		var btn := PONY_BTN.instantiate()
-		btn.active_btn = false
-		resting_list.add_child(btn)
