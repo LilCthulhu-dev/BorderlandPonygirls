@@ -1,0 +1,106 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestmaretlk1"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4"]
+[ext_resource type="Resource" uid="uid://cflagmareheld01" path="res://data/flags/missing_mare_held.tres" id="5"]
+[ext_resource type="Resource" uid="uid://cflagmaredone01" path="res://data/flags/missing_mare_done.tres" id="6"]
+[ext_resource type="Resource" uid="uid://eca1ew40cu8s" path="res://data/flags/missing_mare_01.tres" id="7"]
+[ext_resource type="Resource" uid="uid://cflagmarekept01" path="res://data/flags/missing_mare_kept.tres" id="8"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="9"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="10"]
+[ext_resource type="Texture2D" uid="uid://cimgmmaretalk" path="res://assets/img/frozenhunter/missing_mare_talk.png" id="11"]
+[ext_resource type="Script" uid="uid://cnjmqq8t85is4" path="res://data/actions/commit_quest_ponygirl.gd" id="12"]
+[ext_resource type="Script" uid="uid://bcvi68bq46lqc" path="res://data/actions/clear_quest_ponygirl.gd" id="13"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="14"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="15"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="16"]
+[ext_resource type="Script" uid="uid://l5qqa8f4kms1" path="res://data/actions/focus_quest_ponygirl.gd" id="17"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="18"]
+
+[sub_resource type="Resource" id="Resource_gate"]
+script = ExtResource("9")
+required_flag = Array[ExtResource("4")]([ExtResource("5")])
+forbidden_flag = Array[ExtResource("4")]([ExtResource("6")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_focus"]
+script = ExtResource("17")
+
+[sub_resource type="Resource" id="Resource_done"]
+script = ExtResource("9")
+add_flag = Array[ExtResource("4")]([ExtResource("6")])
+remove_flag = Array[ExtResource("4")]([ExtResource("5"), ExtResource("7")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_kept"]
+script = ExtResource("9")
+add_flag = Array[ExtResource("4")]([ExtResource("8"), ExtResource("6")])
+remove_flag = Array[ExtResource("4")]([ExtResource("5"), ExtResource("7")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_commit"]
+script = ExtResource("12")
+
+[sub_resource type="Resource" id="Resource_clear"]
+script = ExtResource("13")
+
+[sub_resource type="Resource" id="Resource_rep_keep"]
+script = ExtResource("15")
+amount = -4
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_rep_free"]
+script = ExtResource("15")
+amount = 3
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_gold_free"]
+script = ExtResource("14")
+amount = "-{BAD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_back"]
+script = ExtResource("16")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_return_txt"]
+script = ExtResource("18")
+txt = "You leave the gag out but keep the lead. {QUEST_PONY} goes quiet. The Trading Post is the next argument - and she knows it."
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_return"]
+script = ExtResource("3")
+txt = "Take her back to the merchant"
+actions = Array[ExtResource("1")]([SubResource("Resource_return_txt")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_keep"]
+script = ExtResource("3")
+txt = "Keep her for your stable"
+actions = Array[ExtResource("1")]([SubResource("Resource_commit"), SubResource("Resource_rep_keep"), SubResource("Resource_kept")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_free"]
+script = ExtResource("3")
+txt = "Cut her free"
+actions = Array[ExtResource("1")]([SubResource("Resource_clear"), SubResource("Resource_gold_free"), SubResource("Resource_rep_free"), SubResource("Resource_done")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_later"]
+script = ExtResource("3")
+txt = "Not yet"
+actions = Array[ExtResource("1")]([SubResource("Resource_back")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("10")
+titel = "Missing Mare"
+img = ExtResource("11")
+description = "You pull the gag. {QUEST_PONY}’s mouth is raw. She does not thank you.
+
+“I never took the bit,” she says, voice torn. “They took me off the road. That merchant - if he wants me back, he bought a kidnapping. Please. Don’t walk me to him.”"
+content = Array[ExtResource("2")]([SubResource("Resource_return"), SubResource("Resource_keep"), SubResource("Resource_free"), SubResource("Resource_later")])
+open_actions = Array[ExtResource("1")]([SubResource("Resource_gate"), SubResource("Resource_focus")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

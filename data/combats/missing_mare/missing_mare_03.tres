@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://cscenmare03"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://4cl8u58i7w0q" path="res://assets/img/frozenhunter/missing_mare_camp_03.png" id="3"]
+
+[sub_resource type="Resource" id="Resource_a"]
+script = ExtResource("1")
+txt = "Finish it fast"
+ability = 1
+success_description = "You put the last slaver down and cut the cart-traces. The camp is yours. The mare stands shaking, still bit-bound."
+fail_description = "You rush. He gets away into the trees with a purse. The mare is still here. The fight is not clean."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_b"]
+script = ExtResource("1")
+txt = "Offer them the road"
+ability = 3
+success_description = "You tell them to run. They do. Pride is cheaper than a warband’s crop."
+fail_description = "They spit and come again. You pay for the speech in bruises."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_c"]
+script = ExtResource("1")
+txt = "Loot the marks"
+ability = 4
+success_description = "You take their buyer-token: the same cheap wax the Trading Post merchant used on his sketch."
+fail_description = "The token is already gone. Someone expected a pickup tonight."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2")
+img = ExtResource("3")
+flavor_lines = Array[String](["The fire is kicked to ash.", "Night insects start up again.", "The mare’s breath fogs the bit-ring."])
+description = "The crew is breaking. One more push and the camp is done - and you have to decide what the mare is to you."
+actions = Array[ExtResource("1")]([SubResource("Resource_a"), SubResource("Resource_b"), SubResource("Resource_c")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

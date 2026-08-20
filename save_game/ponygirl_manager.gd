@@ -202,6 +202,24 @@ static func add_ponygirl(pony: Ponygirl) -> void:
 		return
 	push_warning("PonygirlManager.add_ponygirl: no free slots")
 
+
+## Fully configured instance (no second init). Used by quest-mare keep.
+static func add_ponygirl_instance(pony: Ponygirl) -> void:
+	if pony == null:
+		push_error("PonygirlManager.add_ponygirl_instance: pony is null")
+		return
+	for slot in range(MAX_TOTAL):
+		if ponygirls[slot] != null:
+			continue
+		if pony.id.is_empty():
+			pony.id = str(ResourceUID.create_id())
+		pony.active = slot < MAX_ACTIVE
+		ponygirls[slot] = pony
+		focused_ponygirl = pony
+		return
+	push_warning("PonygirlManager.add_ponygirl_instance: no free slots")
+
+
 static func swap_slots(first_slot: int, second_slot: int) -> void:
 	if first_slot == second_slot:
 		return

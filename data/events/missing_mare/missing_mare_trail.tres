@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestmaretrl1"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4"]
+[ext_resource type="Resource" uid="uid://eca1ew40cu8s" path="res://data/flags/missing_mare_01.tres" id="5"]
+[ext_resource type="Resource" uid="uid://cflagmaretrail1" path="res://data/flags/missing_mare_trail.tres" id="6"]
+[ext_resource type="Resource" uid="uid://cflagmaredone01" path="res://data/flags/missing_mare_done.tres" id="7"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
+[ext_resource type="Texture2D" uid="uid://b7yp1n4asbypw" path="res://assets/img/frozenhunter/missing_mare.png" id="10"]
+[ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="11"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="12"]
+
+[sub_resource type="Resource" id="Resource_gate"]
+script = ExtResource("8")
+required_flag = Array[ExtResource("4")]([ExtResource("5")])
+forbidden_flag = Array[ExtResource("4")]([ExtResource("6"), ExtResource("7")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_watch"]
+script = ExtResource("12")
+txt = "A watchman with fish-scales on his boots jerks a thumb inland.
+
+“Second goblin crew last night. Not a local string. They had a dark-haired mare in new tack, gagged. Didn’t stop at the sheds. Took the wilderness road.”"
+metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+
+[sub_resource type="Resource" id="Resource_ask"]
+script = ExtResource("3")
+txt = "Ask the watch"
+actions = Array[ExtResource("1")]([SubResource("Resource_watch")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_wits"]
+script = ExtResource("11")
+ability = 5
+txt = "Search the net-sheds"
+succes_txt = "No mare. There is a torn blinder in the mud and a buyer-wax drip on a post - the same stamp as the merchant’s sketch. She was never waiting here to be collected. She was moved."
+fail_txt = "The sheds stink of tar and old rope. If she was here, the rain took the rest."
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_add_trail"]
+script = ExtResource("8")
+add_flag = Array[ExtResource("4")]([ExtResource("6")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_follow"]
+script = ExtResource("3")
+txt = "Follow the inland road"
+actions = Array[ExtResource("1")]([SubResource("Resource_add_trail")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("9")
+titel = "Missing Mare"
+img = ExtResource("10")
+description = "The net-sheds behind the harbor are empty. No runaway waits in the tar and rain. Whoever took her did not leave her for the watch."
+content = Array[ExtResource("2")]([SubResource("Resource_ask"), SubResource("Resource_wits"), SubResource("Resource_follow")])
+open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

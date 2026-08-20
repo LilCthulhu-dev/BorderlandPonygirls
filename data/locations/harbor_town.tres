@@ -12,7 +12,7 @@
 [ext_resource type="Resource" uid="uid://cx4xaaaw3fqgl" path="res://data/events/one_pagers/pony_on_display_01.tres" id="9_jvg1u"]
 [ext_resource type="Resource" uid="uid://c3qc7ucuap654" path="res://data/events/ponygirl_outfitter/ponygirl_outfitter_start.tres" id="10_eiox1"]
 [ext_resource type="Resource" uid="uid://dotjglhyqlfwy" path="res://data/events/salt_run/salt_run_start.tres" id="10_salt"]
-[ext_resource type="Resource" uid="uid://dotjglbyv40qb" path="res://data/events/missing_mare/missing_mare_end.tres" id="11_mare"]
+[ext_resource type="Resource" uid="uid://cquestmaretrl1" path="res://data/events/missing_mare/missing_mare_trail.tres" id="11_mare"]
 [ext_resource type="Resource" uid="uid://ctaythq7frd7k" path="res://data/events/harbortown_race/harbortown_race_01.tres" id="11_tvl0y"]
 [ext_resource type="Resource" uid="uid://dotjf77imkg3y" path="res://data/events/tide_fish/tide_fish_start.tres" id="12_fish"]
 [ext_resource type="Resource" uid="uid://dotjgayh05agy" path="res://data/events/harvest_cask/harvest_cask_end.tres" id="13_cask"]

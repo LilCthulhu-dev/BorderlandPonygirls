@@ -21,6 +21,7 @@
 [ext_resource type="Resource" uid="uid://cquesthaywend1" path="res://data/events/hay_wain/hay_wain_end.tres" id="18_hay"]
 [ext_resource type="Resource" uid="uid://cquestdispend1" path="res://data/events/night_dispatch/night_dispatch_end.tres" id="19_disp"]
 [ext_resource type="Resource" uid="uid://cquestdispendc" path="res://data/events/night_dispatch/night_dispatch_end_cracked.tres" id="20_disp"]
+[ext_resource type="Resource" uid="uid://cquestmarengt1" path="res://data/events/missing_mare/missing_mare_night.tres" id="21_night"]
 [ext_resource type="Resource" uid="uid://bg2hw6ifuq5s3" path="res://data/events/one_pagers/race_announcement.tres" id="17_bps6k"]
 
 [resource]
@@ -33,5 +34,5 @@ At the center stand the large stables, sheltering both the residents’ ponygirl
 cheap_items = Array[ExtResource("1_to240")]([ExtResource("2_e3v7j"), ExtResource("3_0h381")])
 expensive_items = Array[ExtResource("1_to240")]([ExtResource("4_s0q40"), ExtResource("5_t7dvf"), ExtResource("6_ye50s")])
 random_events = Array[ExtResource("2_ukn7i")]([ExtResource("9_to240"), ExtResource("3_ukn7i"), ExtResource("13_t7dvf"), ExtResource("12_s0q40"), ExtResource("14_iron"), ExtResource("17_grain"), ExtResource("17_bps6k")])
-quest_events = Array[ExtResource("2_ukn7i")]([ExtResource("15_salt"), ExtResource("16_bone"), ExtResource("18_hay"), ExtResource("19_disp"), ExtResource("20_disp"), ExtResource("11_pa2kj")])
+quest_events = Array[ExtResource("2_ukn7i")]([ExtResource("15_salt"), ExtResource("16_bone"), ExtResource("18_hay"), ExtResource("19_disp"), ExtResource("20_disp"), ExtResource("11_pa2kj"), ExtResource("21_night")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"
