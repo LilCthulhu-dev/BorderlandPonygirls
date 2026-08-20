@@ -5,19 +5,29 @@ var content : EventBtn
 func _ready() -> void:
 	super()
 	if content == null:
-		text = "> Return to Main"
+		set_source_text("Return to Main")
 		disabled = false
 	else:
-		text = "> " + content.txt
+		set_source_text(content.txt)
 		if !content.soft_requirements_met():
 			disabled = true
 		if content.single_use && content.used:
 			disabled = true
 		_prep_tooltip()
 
+
+func _apply_locale() -> void:
+	if Utils == null:
+		return
+	var label: String = Utils.translate(_source_text)
+	text = "> " + label
+	if not _source_tooltip.is_empty():
+		tooltip = Utils.translate(_source_tooltip)
+
+
 func _prep_tooltip() -> void:
 	if content == null: return
-	var tip_array := TooltipManager.get_tooltips(content.actions)
+	var tip_array: Array = TooltipManager.get_tooltips(content.actions)
 	tooltip = "\n".join(tip_array)
 	if not tooltip.is_empty():
 		add_questionmark()

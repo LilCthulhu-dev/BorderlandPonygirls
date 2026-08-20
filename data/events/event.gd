@@ -5,9 +5,8 @@ class_name Event
 var id: StringName:
 	get:
 		return Utils.string_to_id(titel)
-@export_multiline var description : String:
-	get:
-		return Utils.translate(description)
+## English source; localize at display via Utils.translate.
+@export_multiline var description : String
 @export var img : Texture2D
 @export var content : Array[_EventContent]
 @export var open_actions : Array[Action]

@@ -1,9 +1,8 @@
 extends _EventContent
 class_name EventText
 
-@export_multiline var txt := "":
-	get:
-		return Utils.translate(txt)
+## English source; localize at display via Utils.translate.
+@export_multiline var txt := ""
 @export var actions : Array[Action]
 
 func soft_requirements_met() -> bool:

@@ -7,7 +7,7 @@ var pony_mod_bonus = 0
 
 func _ready() -> void:
 	pony_mod_bonus = ponygirl.get_mod_bonus()
-	text += perk.name
+	text += Utils.translate(perk.name)
 	if not last_element:
 		text += ", "
 
@@ -23,12 +23,12 @@ func _bonus_text() -> String:
 	if perk.bonus:
 		if txt != "": txt += "\n"
 		var attribute_name = Enums.ATTRIBUTES.keys()[perk.bonus].capitalize()
-		txt += "+%s %s" % [pony_mod_bonus, attribute_name]
+		txt += "+%s %s" % [pony_mod_bonus, Utils.translate(attribute_name)]
 	if perk.malus:
 		if txt != "": txt += "\n"
 		var attribute_name = Enums.ATTRIBUTES.keys()[perk.malus].capitalize()
-		txt += "-5 %s" % attribute_name
+		txt += "-5 %s" % Utils.translate(attribute_name)
 	if perk.description:
 		if txt != "": txt += "\n"
-		txt += "%s" % perk.description
+		txt += "%s" % Utils.translate(perk.description)
 	return txt

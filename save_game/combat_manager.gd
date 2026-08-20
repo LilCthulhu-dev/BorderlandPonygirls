@@ -80,19 +80,19 @@ static func _get_actions_txt(actions : Array[Action]):
 	return txt
 
 static func get_victory_txt() -> String:
-	var txt := current_combat.victory_txt
+	var txt: String = Utils.translate(current_combat.victory_txt)
 	txt += "\n"
 	if current_combat.victory_actions.is_empty():
 		txt += _get_actions_txt(GameData.combat_victory_actions)
 	else:
 		txt += _get_actions_txt(current_combat.victory_actions)
-	return Utils.translate(txt)
+	return txt
 
 static func get_defeat_txt() -> String:
-	var txt := current_combat.defeat_txt
+	var txt: String = Utils.translate(current_combat.defeat_txt)
 	txt += "\n"
 	if current_combat.defeat_actions.is_empty():
 		txt += _get_actions_txt(GameData.combat_defeat_actions)
 	else:
 		txt += _get_actions_txt(current_combat.defeat_actions)
-	return Utils.translate(txt)
+	return txt

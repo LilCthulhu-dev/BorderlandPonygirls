@@ -35,8 +35,8 @@ func _update_content():
 	price_label.text = "%s G" % local_price
 
 func _add_tooltip():
-	tooltip = item.title
-	tooltip += "\nLocal price: %s" % local_price
+	tooltip = Utils.translate(item.title)
+	tooltip += "\n" + (Utils.translate("Local price: %s") % local_price)
 
 func _on_pressed() -> void:
 	var trade_amount = InventoryManager.trade_amount

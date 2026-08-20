@@ -11,15 +11,15 @@ var ponygirl : Ponygirl
 func _ready() -> void:
 	super()
 	if ponygirl is not Ponygirl: queue_free()
-	name_label.text = "%s (Level %s %s)" % [
+	name_label.text = Utils.translate("%s (Level %s %s)") % [
 		ponygirl.name,
 		ponygirl.level,
-		ponygirl.race
+		Utils.translate(str(ponygirl.race)),
 	]
-	attributes_label.text = "XP: %s / Arousal: %s / Submission: %s" % [
+	attributes_label.text = Utils.translate("XP: %s / Arousal: %s / Submission: %s") % [
 		ponygirl.xp,
 		ponygirl.arousal,
-		ponygirl.submission
+		ponygirl.submission,
 	]
 	var btns = [training_btn, teasing_btn, climax_btn]
 	var array_of_actions = [
