@@ -31,6 +31,6 @@ description = "The registration official, an old goblin with eyepatch, barely lo
 
 He glances at your racing gear and marks something on his list.
 
-“Everything appears to be in order. The entry fee is {RACE_ENTRY_FEE} gold. Pay here, and report to the preparation area before the starting bell.”"
+“Everything appears to be in order. The entry fee is {COST_RACE_FEE} gold. Pay here, and report to the preparation area before the starting bell.”"
 content = Array[ExtResource("2_78vks")]([SubResource("Resource_djj5w"), SubResource("Resource_xm42m")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
