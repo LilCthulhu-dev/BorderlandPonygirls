@@ -1,7 +1,7 @@
 extends DefaultBtn
 
 var ponygirl : Ponygirl
-var active_btn = false
+var slot_index := -1
 
 func _ready() -> void:
 	super()
@@ -47,22 +47,21 @@ func _get_drag_data(_at_position: Vector2) -> Variant:
 	preview.modulate.a = 0.5
 	preview_root.add_child(preview)
 	set_drag_preview(preview_root)
-	return ponygirl
+	return {
+		"ponygirl": ponygirl,
+		"slot_index": slot_index
+	}
 
 func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
-	if data is not Ponygirl: return false
-	var pony := data as Ponygirl
-	if active_btn:
-		if pony.active:
-			return false
-		return PonygirlManager.active_slots_free()
-	if not pony.active:
-		return false
-	return PonygirlManager.resting_slots_free()
+	return (
+		data is Dictionary
+		and data.has("slot_index")
+		and data.slot_index != slot_index
+	)
 
 func _drop_data(_at_position: Vector2, data: Variant) -> void:
-	var pony := data as Ponygirl
-	pony.active = active_btn
+	var source_slot: int = data.slot_index
+	PonygirlManager.swap_slots(source_slot, slot_index)
 	GlobalSignals.update_ponygirls.emit()
 
 func _on_pressed() -> void:

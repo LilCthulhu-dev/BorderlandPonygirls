@@ -93,6 +93,7 @@ static func get_modifier(att : Enums.ATTRIBUTES) -> int:
 		return 0
 	var modifier = 0
 	for pony in PonygirlManager.ponygirls:
+		if pony == null: continue
 		if not pony.active: continue
 		modifier += pony.get_modifier(att)
 	return modifier
