@@ -65,6 +65,7 @@ static func load(slot_number: int = 0) -> SaveGame:
 	GameData.inventory_manager = save_game.inventory_manager
 	GameData.location_manager = save_game.location_manager
 	GameData.ponygirl_manager = save_game.ponygirl_manager
+	PonygirlManager.init()
 	return save_game
 
 static func load_info(slot_number: int) -> SaveInfo:

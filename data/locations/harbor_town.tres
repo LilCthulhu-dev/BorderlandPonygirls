@@ -16,7 +16,7 @@
 [ext_resource type="Resource" uid="uid://ctaythq7frd7k" path="res://data/events/harbortown_race/harbortown_race_01.tres" id="11_tvl0y"]
 [ext_resource type="Resource" uid="uid://dotjf77imkg3y" path="res://data/events/tide_fish/tide_fish_start.tres" id="12_fish"]
 [ext_resource type="Resource" uid="uid://dotjgayh05agy" path="res://data/events/harvest_cask/harvest_cask_end.tres" id="13_cask"]
-[ext_resource type="Resource" uid="uid://cquestgrainend" path="res://data/events/grain_levy/grain_levy_end.tres" id="14_grain"]
+[ext_resource type="Resource" uid="uid://dotjgagyne0qb" path="res://data/events/grain_levy/grain_levy_end.tres" id="14_grain"]
 [ext_resource type="Resource" uid="uid://bg2hw6ifuq5s3" path="res://data/events/one_pagers/race_announcement.tres" id="16_v0f2l"]
 
 [resource]
