@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://c8r3f7khse4qb"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_h065r"]
+[ext_resource type="Resource" uid="uid://ct8mk2j213n43" path="res://data/wiki_entries/land-squid.tres" id="2_4jwhy"]
+
+[resource]
+script = ExtResource("1_h065r")
+sub_entries = Array[ExtResource("1_h065r")]([ExtResource("2_4jwhy")])
+description = "The Borderlands are home to countless wild creatures and dangerous monsters, from common predators to terrifying beasts lurking far from civilization."
+metadata/_custom_type_script = "uid://bkxhc74auednr"

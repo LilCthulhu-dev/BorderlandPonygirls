@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://dotjglyb1jx3y"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_p1e33"]
+[ext_resource type="Texture2D" uid="uid://ckdc6bcl2shs0" path="res://assets/img/lil_cthulhu/land_squid_01.png" id="2_p1e33"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="3_msdfw"]
+
+[sub_resource type="Resource" id="Resource_at68l"]
+script = ExtResource("1_p1e33")
+txt = "Hack at the tentacle."
+ability = 1
+success_description = "Your blade bites deep into the tentacle, forcing the beast to drop {PONYNAME}."
+fail_description = "The beast drops {PONYNAME}, but another tentacle slams into you before you can retreat."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_wp81t"]
+script = ExtResource("1_p1e33")
+txt = "Pull her free."
+ability = 1
+success_description = "You grab {PONYNAME} and wrench her from the creature’s grasp."
+fail_description = "You pull {PONYNAME} free, but the beast drags you close enough to rake you with its beak."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_wom08"]
+script = ExtResource("1_p1e33")
+txt = "Order your men to attack."
+ability = 3
+success_description = "A flurry of spears distracts the beast, causing its grip to loosen. {PONYNAME} slips free and scrambles away."
+fail_description = "The beast releases {PONYNAME}, but its other tentacles sweep your men aside before they can retreat."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_dbq17"]
+script = ExtResource("1_p1e33")
+txt = "Strike it in the eye."
+ability = 4
+success_description = "Your attack finds its mark. The beast recoils with a shriek and releases {PONYNAME}."
+fail_description = "You miss its eye but strike the tentacle holding {PONYNAME}. It drops her before lashing out and knocking you aside."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("3_msdfw")
+img = ExtResource("2_p1e33")
+flavor_lines = Array[String](["The cave echoes with shouts, screeches, and the wet slap of tentacles against stone.", "Your torchlight throws frantic shadows across the walls as the battle rages."])
+description = "The malformed beast lashes its tentacles at your men. They manage to leap aside, but one coils around {PONYNAME}’s leg, who screeches as the creature hoists her off the ground.
+"
+actions = Array[ExtResource("1_p1e33")]([SubResource("Resource_at68l"), SubResource("Resource_wp81t"), SubResource("Resource_wom08"), SubResource("Resource_dbq17")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://d1r2664pycyfv"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_f4eel"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_ckeqf"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_663uw"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_ggnxr"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_dniiw"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="5_4w7ek"]
+
+[sub_resource type="Resource" id="Resource_mkbk7"]
+script = ExtResource("3_ggnxr")
+event_path = "uid://chfma4mdo8av"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_g4eg8"]
+script = ExtResource("4_dniiw")
+txt = "Enter the preparation area"
+actions = Array[ExtResource("1_f4eel")]([SubResource("Resource_mkbk7")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_uf0eq"]
+script = ExtResource("5_4w7ek")
+amount = "-{COST_RACE_FEE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[resource]
+script = ExtResource("3_663uw")
+titel = "Goblin Village Scramble"
+description = "The racemaster accepts your coins and drops them into a battered iron box.
+
+“You’re in, {TITLE} {NAME}. Pick your mare and take her to the preparation area. The attendants will inspect her gear and tell you which starting stall is yours.”
+
+He marks your name on his list, then shouts at someone attempting to enter without paying."
+content = Array[ExtResource("2_ckeqf")]([SubResource("Resource_g4eg8")])
+open_actions = Array[ExtResource("1_f4eel")]([SubResource("Resource_uf0eq")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

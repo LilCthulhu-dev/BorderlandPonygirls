@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://bxsm4u83tan0u"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_wt8mo"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_1iw82"]
+
+[sub_resource type="Resource" id="Resource_6ajbb"]
+script = ExtResource("1_wt8mo")
+txt = "Drive hard"
+ability = 1
+success_description = "You lean forward and drive {PONYNAME} onward. Her thighs tremble as she fights her way up the hill, but she refuses to break."
+fail_description = "You push her too hard, too soon. {PONYNAME}’s stride shortens as the hill takes its toll."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_utola"]
+script = ExtResource("1_wt8mo")
+txt = "Pace the hill"
+ability = 4
+success_description = "You settle {PONYNAME} into a steady, punishing rhythm, conserving her energy before surging ahead at the crest of the hill."
+fail_description = "You hold {PONYNAME} back for too long, leaving her unable to make good use of her reserves at the top of the hill."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_qoo3j"]
+script = ExtResource("1_wt8mo")
+txt = "Cheer"
+ability = 2
+success_description = "You cheer {PONYNAME} up the slope, your words equal parts filthy and affectionate."
+fail_description = "Your encouragement becomes meaningless noise. {PONYNAME} is too exhausted to listen; all she can hear is her own ragged breathing."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_qxi5k"]
+script = ExtResource("1_wt8mo")
+txt = "Crop the slacker"
+ability = 3
+success_description = "You wield the crop aggressively, working {PONYNAME}’s thighs hard and forcing her forward."
+fail_description = "You overdo it. {PONYNAME} recoils from the crop and fights against the reins, wasting the strength she needs to reach the crest."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_1iw82")
+flavor_lines = Array[String](["The hill is much longer than it looked from the starting line.", "Sweat darkens the straps of {PONYNAME}’s harness.", "{PONYNAME} gasps for breath with every punishing step."])
+description = "The course opens into a long uphill stretch. Muscles burn, breathing grows ragged, and the less-conditioned racers begin to fall behind. {PONYNAME}’s chest heaves as she fights the slope."
+actions = Array[ExtResource("1_wt8mo")]([SubResource("Resource_6ajbb"), SubResource("Resource_utola"), SubResource("Resource_qoo3j"), SubResource("Resource_qxi5k")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

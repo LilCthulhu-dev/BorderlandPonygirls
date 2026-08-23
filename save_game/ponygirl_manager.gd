@@ -114,9 +114,14 @@ static var focused_ponygirl: Ponygirl:
 		return GameData.ponygirl_manager._focused_ponygirl
 
 # ================================================== helper
+static func init() -> void:
+	if ponygirls.size() < MAX_TOTAL:
+		ponygirls.resize(MAX_TOTAL)
+
 static func get_active_ponygirls() -> Array[Ponygirl]:
 	var active_ponygirls: Array[Ponygirl] = []
 	for pony in ponygirls:
+		if pony == null: continue
 		if pony.active:
 			active_ponygirls.append(pony)
 	return active_ponygirls
@@ -124,9 +129,17 @@ static func get_active_ponygirls() -> Array[Ponygirl]:
 static func get_resting_ponygirls() -> Array[Ponygirl]:
 	var resting_ponygirls: Array[Ponygirl] = []
 	for pony in ponygirls:
+		if pony == null: continue
 		if not pony.active:
 			resting_ponygirls.append(pony)
 	return resting_ponygirls
+
+static func get_all_ponygirls() -> Array[Ponygirl]:
+	var all_ponygirls: Array[Ponygirl] = []
+	for pony in ponygirls:
+		if pony == null: continue
+		all_ponygirls.append(pony)
+	return all_ponygirls
 
 static func get_random_active_ponygirl() -> Ponygirl:
 	var active_ponygirls := get_active_ponygirls()
@@ -147,30 +160,59 @@ static func get_perk_by_name(perk_name: StringName) -> Perk:
 	return null
 
 static func active_slots_free() -> bool:
-	var number := 0
-	for pony in ponygirls:
-		if pony.active:
-			number += 1
-	return number < MAX_ACTIVE
+	return get_active_ponygirls().size() < MAX_ACTIVE
 
 static func resting_slots_free() -> bool:
-	var number := 0
-	for pony in ponygirls:
-		if not pony.active:
-			number += 1
-	return number < MAX_RESTING
+	return get_resting_ponygirls().size() < MAX_RESTING
 
 static func slots_free() -> bool:
-	return ponygirls.size() < MAX_TOTAL
+	return ponygirls.any(func(pony: Ponygirl) -> bool:
+		return pony == null
+	)
+
+static func add_ponygirl_to_slot(pony: Ponygirl, slot: int) -> bool:
+	if pony == null:
+		push_error("PonygirlManager.add_ponygirl_to_slot: pony is null")
+		return false
+	if slot < 0 or slot >= MAX_TOTAL:
+		push_error("PonygirlManager.add_ponygirl_to_slot: invalid slot")
+		return false
+	if ponygirls[slot] != null:
+		return false
+	var new_pony := pony.duplicate(true) as Ponygirl
+	new_pony.init()
+	new_pony.active = slot < MAX_ACTIVE
+	ponygirls[slot] = new_pony
+	focused_ponygirl = new_pony
+	return true
 
 static func add_ponygirl(pony: Ponygirl) -> void:
 	if pony == null:
 		push_error("PonygirlManager.add_ponygirl: pony is null")
 		return
-	if not slots_free():
+	for slot in range(MAX_TOTAL):
+		if ponygirls[slot] != null:
+			continue
+		var new_pony := pony.duplicate(true) as Ponygirl
+		new_pony.init()
+		new_pony.active = slot < MAX_ACTIVE
+		ponygirls[slot] = new_pony
+		focused_ponygirl = new_pony
 		return
-	var new_pony := pony.duplicate(true) as Ponygirl
-	new_pony.init()
-	new_pony.active = active_slots_free()
-	ponygirls.append(new_pony)
-	focused_ponygirl = new_pony
+	push_warning("PonygirlManager.add_ponygirl: no free slots")
+
+static func swap_slots(first_slot: int, second_slot: int) -> void:
+	if first_slot == second_slot:
+		return
+	if first_slot < 0 or first_slot >= MAX_TOTAL:
+		return
+	if second_slot < 0 or second_slot >= MAX_TOTAL:
+		return
+	var first_pony := ponygirls[first_slot]
+	var second_pony := ponygirls[second_slot]
+	ponygirls[first_slot] = second_pony
+	ponygirls[second_slot] = first_pony
+	if ponygirls[first_slot] != null:
+		ponygirls[first_slot].active = first_slot < MAX_ACTIVE
+	if ponygirls[second_slot] != null:
+		ponygirls[second_slot].active = second_slot < MAX_ACTIVE

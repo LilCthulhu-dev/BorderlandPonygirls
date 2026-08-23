@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://wk6rbgmnv48b"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_tpilm"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_3qvwy"]
+
+[sub_resource type="Resource" id="Resource_gipnr"]
+script = ExtResource("1_tpilm")
+txt = "Answer with muscle"
+ability = 1
+success_description = "You meet the lean with equal force. {PONYNAME} holds her ground; the rival is the one who has to correct or risk a tangle."
+fail_description = "The other mare hits harder. {PONYNAME} stumbles sideways and the foul costs you a clear length."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_km0ag"]
+script = ExtResource("1_tpilm")
+txt = "Slip the contact"
+ability = 4
+success_description = "You ease the reins a fraction, let the rival over-commit, then cut back inside the moment his weight is wrong. The foul becomes his problem."
+fail_description = "You misjudge the timing. {PONYNAME} takes the contact full on and has to scramble to recover her stride."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_ubyto"]
+script = ExtResource("1_tpilm")
+txt = "Call the foul"
+ability = 3
+success_description = "You shout it loud enough for the nearest stewards and the pack to hear. The rival flinches; his next move is half-hearted and {PONYNAME} keeps her line."
+fail_description = "No one is listening in the noise. Your protest changes nothing; the interference continues and {PONYNAME} pays for it."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_gv75r"]
+script = ExtResource("1_tpilm")
+txt = "Turn the heat back"
+ability = 2
+success_description = "Instead of fighting the contact, you let {PONYNAME} answer it with her body — a deliberate press, a sound that is not pain. The rival’s mare shivers and loses a step; the foul collapses into distraction."
+fail_description = "The rival’s mare is already past caring. Your answer only pulls {PONYNAME} deeper into the tangle, and both of you lose ground together."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2_3qvwy")
+flavor_lines = Array[String](["Leather snaps too close to {PONYNAME}’s flank.", "The rival’s shoulder keeps drifting in, testing.", "Dust and curses fly between the two of you.", "{PONYNAME}’s ears pin flat as the interference continues."])
+description = "A rider on your outside decides the clean race is over. His crop reaches across the gap, or his mare leans in with deliberate weight, trying to break {PONYNAME}’s rhythm before the next bend."
+actions = Array[ExtResource("1_tpilm")]([SubResource("Resource_gipnr"), SubResource("Resource_km0ag"), SubResource("Resource_ubyto"), SubResource("Resource_gv75r")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

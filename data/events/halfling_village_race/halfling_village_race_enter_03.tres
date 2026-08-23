@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://civlsbabixdtv"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_ggdhs"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_khsgh"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="3_8d81t"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_ujtvx"]
+[ext_resource type="Resource" uid="uid://dxorkitwvi3mx" path="res://data/flags/entered_first_race.tres" id="4_0dqrv"]
+[ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="5_0dqrv"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_c5djf"]
+[ext_resource type="Resource" uid="uid://cfyo12htfl52l" path="res://data/combats/ponygirl_race/halfling_village_race.tres" id="6_mwvh4"]
+[ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="7_wnhcf"]
+[ext_resource type="Script" uid="uid://ceventponysel1" path="res://data/events/event_pony_select.gd" id="8_pick"]
+
+[sub_resource type="Resource" id="Resource_jj418"]
+script = ExtResource("5_c5djf")
+add_flag = Array[ExtResource("3_8d81t")]([ExtResource("4_0dqrv")])
+remove_flag = Array[ExtResource("3_8d81t")]([ExtResource("5_0dqrv")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_45ipw"]
+script = ExtResource("7_wnhcf")
+combat = ExtResource("6_mwvh4")
+metadata/_custom_type_script = "uid://bnjeril1f2cy8"
+
+[sub_resource type="Resource" id="Resource_wd02l"]
+script = ExtResource("8_pick")
+button_txt = "Race with %s"
+actions = Array[ExtResource("1_ggdhs")]([SubResource("Resource_jj418"), SubResource("Resource_45ipw")])
+metadata/_custom_type_script = "uid://ceventponysel1"
+
+[resource]
+script = ExtResource("3_ujtvx")
+titel = "Halfling Village Derby"
+description = "You enter the preparation area, only to run straight into Tobias and Lucy - the latter now properly naked and secured in her racing harness.
+
+“Hey, {TITLE} {NAME}! Good to see you again!” the halfling greets you. Holding Lucy’s reins in one hand, he eagerly shakes yours with the other. “So, you decided to try ponygirl racing? Good for you! But don’t think we’ll go easy on you just because we shared a few beers.”
+
+You exchange a few more friendly words before parting ways. Pick the mare you want under you."
+content = Array[ExtResource("2_khsgh")]([SubResource("Resource_wd02l")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

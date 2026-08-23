@@ -1,5 +1,5 @@
 extends Action
-class_name ChangeLoyalty
+class_name ChangeSubmission
 
 enum TARGET {
 	FOCUSED,
@@ -15,7 +15,7 @@ var affected_ponygirls: Array[Ponygirl] = []
 func use() -> void:
 	affected_ponygirls = get_target_ponygirls()
 	for ponygirl in affected_ponygirls:
-		ponygirl.loyalty += amount
+		ponygirl.submission += amount
 
 func requirement_met() -> bool:
 	return not get_target_ponygirls().is_empty()
@@ -33,19 +33,19 @@ func get_target_ponygirls() -> Array[Ponygirl]:
 		TARGET.ACTIVE:
 			target_ponygirls = PonygirlManager.get_active_ponygirls()
 		TARGET.ALL:
-			target_ponygirls = PonygirlManager.ponygirls
+			target_ponygirls = PonygirlManager.get_all_ponygirls()
 	return target_ponygirls
 
 func _get_txt() -> String:
 	match target:
 		TARGET.FOCUSED:
-			return "Selected Ponygirl %s %s Loyalty" % [_get_singular_verb(), abs(amount)]
+			return "Selected Ponygirl %s %s Submission" % [_get_singular_verb(), abs(amount)]
 		TARGET.RANDOM:
-			return "A random active ponygirl %s %s Loyalty" % [_get_singular_verb(), abs(amount)]
+			return "A random active ponygirl %s %s Submission" % [_get_singular_verb(), abs(amount)]
 		TARGET.ACTIVE:
-			return "All active ponygirls %s %s Loyalty" % [_get_plural_verb(), abs(amount)]
+			return "All active ponygirls %s %s Submission" % [_get_plural_verb(), abs(amount)]
 		TARGET.ALL:
-			return "All ponygirls %s %s Loyalty" % [_get_plural_verb(), abs(amount)]
+			return "All ponygirls %s %s Submission" % [_get_plural_verb(), abs(amount)]
 	return ""
 
 func get_tooltip() -> String:
@@ -56,9 +56,9 @@ func get_result() -> String:
 	if hide_description: return ""
 	var text := _get_txt()
 	if target == TARGET.FOCUSED:
-		text = "{PONYNAME} %s %s Loyalty" % [_get_singular_verb(), abs(amount)]
+		text = "{PONYNAME} %s %s Submission" % [_get_singular_verb(), abs(amount)]
 	if target == TARGET.RANDOM and not affected_ponygirls.is_empty():
-		text = "%s %s %s Loyalty" % [affected_ponygirls[0].name, _get_singular_verb(), abs(amount)]
+		text = "%s %s %s Submission" % [affected_ponygirls[0].name, _get_singular_verb(), abs(amount)]
 	if text.is_empty(): return ""
 	return Utils.translate("- " + text)
 

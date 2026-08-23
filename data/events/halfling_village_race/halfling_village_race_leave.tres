@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dfb11lp8lhd48"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_75en0"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_e2rry"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_uvcmw"]
+
+[resource]
+script = ExtResource("3_uvcmw")
+titel = "Halfling Village Derby"
+description = "“No worries, {TITLE},” the racemaster says cheerfully. “These races are becoming incredibly popular. I’m certain there’ll be another one for you to enter soon.”
+
+He gives you a friendly nod before returning to his preparations."
+metadata/_custom_type_script = "uid://47s8j4k2usde"

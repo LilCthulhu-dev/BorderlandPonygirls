@@ -5,11 +5,12 @@
 [ext_resource type="Script" uid="uid://co4871x76a7qo" path="res://data/locations/location.gd" id="2_kjoh8"]
 [ext_resource type="Resource" uid="uid://bxddfr1mh6quw" path="res://data/events/one_pagers/cave_01.tres" id="3_oftyk"]
 [ext_resource type="Resource" uid="uid://dotjf4edjkg3y" path="res://data/events/bone_charm/bone_charm_start.tres" id="4_bone"]
+[ext_resource type="Resource" uid="uid://dotjglyb1kg3y" path="res://data/events/cave_salvage/cave_salvage_01.tres" id="5_salv"]
 
 [resource]
 script = ExtResource("2_kjoh8")
 title = "Wilderness"
-description = "Big, empty wildernes"
+description = "A thin road cuts through trees and empty grassland. Few maps bother with names out here. Camps, wrecks, and worse sit off the track if you look for them."
 random_event_chance = 10
-random_events = Array[ExtResource("1_yp2nt")]([ExtResource("3_oftyk"), ExtResource("4_bone")])
+random_events = Array[ExtResource("1_yp2nt")]([ExtResource("3_oftyk"), ExtResource("4_bone"), ExtResource("5_salv")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

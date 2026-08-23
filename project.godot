@@ -24,10 +24,18 @@ ModalManager="*uid://c04hc4f0cwyjw"
 AudioManager="*uid://bllsr017dv3ly"
 SceneManager="*uid://d4n0dv3k16ejg"
 Utils="*uid://ckvbwas3biqbw"
+Settings="*res://singeltons/settings/settings.gd"
 
 [debug]
 
 gdscript/warnings/unused_signal=0
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "yellow",
+"res://data/": "purple"
+}
 
 [layer_names]
 

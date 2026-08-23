@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://caosp2co4v404"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_yvxgg"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_h0xh0"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_8mmhc"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_rmi63"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_xd1id"]
+
+[sub_resource type="Resource" id="Resource_cw7d1"]
+script = ExtResource("3_8mmhc")
+event_path = "uid://d1r2664pycyfv"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_u0bws"]
+script = ExtResource("4_xd1id")
+txt = "Pay the entry fee"
+actions = Array[ExtResource("1_yvxgg")]([SubResource("Resource_cw7d1")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_qpkn5"]
+script = ExtResource("3_8mmhc")
+event_path = "uid://jo21s5qj6f60"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_emkm8"]
+script = ExtResource("4_xd1id")
+txt = "Leave"
+actions = Array[ExtResource("1_yvxgg")]([SubResource("Resource_qpkn5")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[resource]
+script = ExtResource("3_rmi63")
+titel = "Goblin Village Scramble"
+description = "The goblin racemaster stands behind a scarred wooden table covered in lists, coins, and half-empty mugs. He grins when you ask to enter.
+
+“Another challenger! Good, good. More racers make for a better scramble.” He leans sideways to inspect your equipment.
+
+“You’ve got proper racing gear, so that’s one less thing to argue about. Entry costs {COST_RACE_FEE} gold. Pay up, and we’ll put your name on the list.”"
+content = Array[ExtResource("2_h0xh0")]([SubResource("Resource_u0bws"), SubResource("Resource_emkm8")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

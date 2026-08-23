@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://ct8mk2j213n43"]
+
+[ext_resource type="Texture2D" uid="uid://ckdc6bcl2shs0" path="res://assets/img/lil_cthulhu/land_squid_01.png" id="1_bc41g"]
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_nx14r"]
+
+[resource]
+script = ExtResource("1_nx14r")
+description = "Land-squids are terrestrial squids roughly the size and weight of an small elephant. They inhabit caves and other dark, sheltered places, where they use their natural camouflage to remain hidden among the rocks.
+
+Land-squids are ambush predators. They remain motionless until prey comes within reach, then attack with their powerful tentacles. Despite their enormous size, they can move with surprising speed over short distances."
+img = ExtResource("1_bc41g")
+metadata/_custom_type_script = "uid://bkxhc74auednr"

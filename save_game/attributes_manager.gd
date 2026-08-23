@@ -1,7 +1,7 @@
 extends Resource
 class_name AttributesManager
 
-const MAX_HEALTH := 10
+const MAX_HEALTH := 5
 const BASE_ABILITY_VALUE := 60
 
 @export var _boss_title: String = ""
@@ -30,6 +30,8 @@ static var gold : int:
 		if GameData.attributes_manager._gold < 0:
 			ModalManager.open_game_over_modal()
 	get:
+		if GameData.TESTING:
+			return 99999
 		return GameData.attributes_manager._gold
 static var repute : int:
 	set(value):
@@ -91,6 +93,7 @@ static func get_modifier(att : Enums.ATTRIBUTES) -> int:
 		return 0
 	var modifier = 0
 	for pony in PonygirlManager.ponygirls:
+		if pony == null: continue
 		if not pony.active: continue
 		modifier += pony.get_modifier(att)
 	return modifier

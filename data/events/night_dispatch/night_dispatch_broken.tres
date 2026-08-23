@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestdispbrk1"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="4"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5"]
+[ext_resource type="Resource" uid="uid://cquestdispopen" path="res://data/flags/night_dispatch_opened.tres" id="6"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="7"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8"]
+[ext_resource type="Texture2D" uid="uid://bnrjya8ab0cbb" path="res://assets/img/frozenhunter/night_dispatch.png" id="9"]
+
+[sub_resource type="Resource" id="Resource_ride"]
+script = ExtResource("3")
+txt = "Deliver it anyway"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_to_sell"]
+script = ExtResource("4")
+event_path = "res://data/events/night_dispatch/night_dispatch_sell.tres"
+metadata/_custom_type_script = "uid://low1eg5crao3"
+
+[sub_resource type="Resource" id="Resource_sell"]
+script = ExtResource("3")
+txt = "Sell the letter"
+actions = Array[ExtResource("1")]([SubResource("Resource_to_sell")])
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
+
+[sub_resource type="Resource" id="Resource_opened"]
+script = ExtResource("7")
+add_flag = Array[ExtResource("5")]([ExtResource("6")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[resource]
+script = ExtResource("8")
+titel = "Night Dispatch"
+description = "The wax parts clean. Inside: a short hand, no seal-name.
+
+The post still honors the protection pact. No raiding parties south of the stream this moon. The millers will pay the levy. The village will keep its horseshoe tax.
+
+You can press the wax back down. It will not fool fingers that know wax."
+img = ExtResource("9")
+content = Array[ExtResource("2")]([SubResource("Resource_ride"), SubResource("Resource_sell")])
+open_actions = Array[ExtResource("1")]([SubResource("Resource_opened")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

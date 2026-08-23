@@ -67,6 +67,8 @@ static func has_location_valid_random_events() -> bool:
 static func check_for_random_event(chance: int = -1) -> bool:
 	if current_location == null:
 		return false
+	if chance < 100 and GameData.TESTING:
+		return false
 	var event := current_location.get_random_event(chance)
 	if event == null:
 		return false
