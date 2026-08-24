@@ -7,4 +7,5 @@
 script = ExtResource("1_script")
 image = ExtResource("1_6fq7u")
 description = "Deliver a harvest wine cask from the Halfling Village to Harbor Town."
+weight = 5
 metadata/_custom_type_script = "uid://cm8dinv8ax8bq"

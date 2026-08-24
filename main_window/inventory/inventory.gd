@@ -38,6 +38,8 @@ func _add_quest_icons() -> void:
 	for flag: Flag in FlagsManager.flags.values():
 		if not flag.add_quest_icon():
 			continue
+		if flag.weight == 0:
+			continue
 		var icon = QUEST_ICON.instantiate()
 		icon.flag = flag
 		quest_item_grid.add_child(icon)
