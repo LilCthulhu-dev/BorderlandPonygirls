@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpan5kpiun365"
-path="res://.godot/imported/tiefling_01.png-9eb5bce72f5cc36ca5c09635548ac270.ctex"
+uid="uid://cc1v656lw8lct"
+path="res://.godot/imported/demonblood_01_happy_calm.png-ff87b184a886b49e291938c6511d9d47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirls/tiefling_01.png"
-dest_files=["res://.godot/imported/tiefling_01.png-9eb5bce72f5cc36ca5c09635548ac270.ctex"]
+source_file="res://assets/img/ponygirls/states/lineart/demonblood_01_happy_calm.png"
+dest_files=["res://.godot/imported/demonblood_01_happy_calm.png-ff87b184a886b49e291938c6511d9d47.ctex"]
 
 [params]
 
