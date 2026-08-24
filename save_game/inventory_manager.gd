@@ -10,7 +10,7 @@ const PRICE_FACTOR : Dictionary = {
 	Enums.PRICE_TIER.NORMAL: 1.0,
 	Enums.PRICE_TIER.EXPENSIVE: 1.15,
 }
-const MAX_WEIGHT = 20
+const MAX_WEIGHT = 40
 
 @export var _inventory: Dictionary[StringName, Item] = {}
 @export var _trade_amount: int = 1
