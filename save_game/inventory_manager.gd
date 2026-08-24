@@ -27,6 +27,8 @@ static var current_weight : int:
 		var weight = 0
 		for item: Item in inventory.values():
 			weight += item.amount * item.weight
+		for flag: Flag in FlagsManager.flags.values():
+			weight += flag.weight
 		return weight
 
 static var trade_amount: int:
