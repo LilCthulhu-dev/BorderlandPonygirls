@@ -116,6 +116,8 @@ static func get_attribute_icon(id : Enums.ATTRIBUTES) -> Texture2D:
 			return preload("res://assets/icons/heart.png")
 		Enums.ATTRIBUTES.REPUTE:
 			return preload("res://assets/icons/star.png")
+		Enums.ATTRIBUTES.WEIGHT:
+			return preload("res://assets/icons/weight.png")
 		_:
 			return preload("res://assets/icons/questionmark.png")
 

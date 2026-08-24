@@ -7,5 +7,6 @@
 script = ExtResource("1_1236a")
 title = "Pony Berry"
 price = 20
+weight = 1
 icon = ExtResource("1_n7kxn")
 metadata/_custom_type_script = "uid://b571u1d6tbexa"
