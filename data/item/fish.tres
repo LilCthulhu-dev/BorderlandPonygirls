@@ -5,7 +5,6 @@
 
 [resource]
 script = ExtResource("1_54md7")
-title = "Fish"
 price = 20
 icon = ExtResource("1_jdlgv")
 metadata/_custom_type_script = "uid://b571u1d6tbexa"

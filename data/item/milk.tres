@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://cuhgpkflhppvl"]
+
+[ext_resource type="Texture2D" uid="uid://c4ugnnqvph54g" path="res://assets/icons/milk.png" id="1_83fir"]
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_rtuhe"]
+
+[resource]
+script = ExtResource("1_rtuhe")
+title = "Milk"
+price = 20
+icon = ExtResource("1_83fir")
+metadata/_custom_type_script = "uid://b571u1d6tbexa"
