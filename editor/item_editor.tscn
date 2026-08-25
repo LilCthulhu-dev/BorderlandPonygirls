@@ -49,28 +49,55 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="IconPreview" type="TextureRect" parent="." unique_id=594702517]
+[node name="IconFileDialog" type="FileDialog" parent="." unique_id=2062039109]
+oversampling_override = 1.0
+title = "Open a File"
+file_mode = 0
+root_subfolder = "res://assets/icons"
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1344428518]
+layout_mode = 2
+
+[node name="IconPreview" type="TextureRect" parent="HBoxContainer" unique_id=594702517]
 unique_name_in_owner = true
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
+size_flags_horizontal = 3
 expand_mode = 1
 stretch_mode = 5
 
-[node name="SaveBtn" type="Button" parent="." unique_id=62762741]
+[node name="GridContainer2" type="GridContainer" parent="." unique_id=437167275]
+layout_mode = 2
+columns = 3
+
+[node name="AddIconBtn" type="Button" parent="GridContainer2" unique_id=1805084986]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Icon"
+script = ExtResource("3_03at4")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="SaveBtn" type="Button" parent="GridContainer2" unique_id=62762741]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
 text = "Save"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
-[node name="NewBtn" type="Button" parent="." unique_id=119692595]
+[node name="NewBtn" type="Button" parent="GridContainer2" unique_id=119692595]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
 text = "New"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
 [connection signal="item_selected" from="ItemDropdown" to="." method="_on_item_dropdown_item_selected"]
-[connection signal="pressed" from="SaveBtn" to="." method="_on_save_btn_pressed"]
-[connection signal="pressed" from="NewBtn" to="." method="_on_new_btn_pressed"]
+[connection signal="file_selected" from="IconFileDialog" to="." method="_on_icon_file_dialog_file_selected"]
+[connection signal="pressed" from="GridContainer2/AddIconBtn" to="." method="_on_add_icon_btn_pressed"]
+[connection signal="pressed" from="GridContainer2/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="GridContainer2/NewBtn" to="." method="_on_new_btn_pressed"]

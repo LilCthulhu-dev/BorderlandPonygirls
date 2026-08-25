@@ -5,6 +5,7 @@ extends VBoxContainer
 @onready var price_spin: SpinBox = %PriceSpin
 @onready var weight_spin: SpinBox = %WeightSpin
 @onready var icon_preview: TextureRect = %IconPreview
+@onready var icon_file_dialog: FileDialog = $IconFileDialog
 
 const ITEM_FOLDER := "res://data/item/"
 var list_of_items: Array[Item] = []
@@ -15,6 +16,12 @@ func _ready() -> void:
 	_update_editor()
 	_new_item()
 
+func _on_item_dropdown_item_selected(index: int) -> void:
+	if index == 0:
+		_new_item()
+	else:
+		load_item(list_of_items[index - 1])
+
 func _on_save_btn_pressed() -> void:
 	_save_item()
 	_update_editor()
@@ -23,12 +30,15 @@ func _on_new_btn_pressed() -> void:
 	item_dropdown.select(0)
 	_new_item()
 
-func _on_item_dropdown_item_selected(index: int) -> void:
-	if index == 0:
-		_new_item()
-	else:
-		load_item(list_of_items[index - 1])
+func _on_add_icon_btn_pressed() -> void:
+	icon_file_dialog.popup_centered_ratio(0.8)
 
+func _on_icon_file_dialog_file_selected(path: String) -> void:
+	var texture := load(path) as Texture2D
+	if texture == null: return
+	icon_preview.texture = texture
+
+# ================================================== helper
 func _update_editor():
 	_load_item_list()
 	_update_dropdown()
@@ -71,6 +81,7 @@ func _new_item():
 	load_item(current_item)
 
 func _save_item():
+	if title_line.text == "": return
 	current_item.title = title_line.text
 	current_item.price = int(price_spin.value)
 	current_item.weight = int(weight_spin.value)
