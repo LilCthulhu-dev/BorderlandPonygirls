@@ -33,7 +33,7 @@ func get_target_ponygirls() -> Array[Ponygirl]:
 		TARGET.ACTIVE:
 			target_ponygirls = PonygirlManager.get_active_ponygirls()
 		TARGET.ALL:
-			target_ponygirls = PonygirlManager.ponygirls
+			target_ponygirls = PonygirlManager.get_all_ponygirls()
 	return target_ponygirls
 
 func _get_txt() -> String:

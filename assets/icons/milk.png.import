@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tb5oickuaa0q"
-path="res://.godot/imported/tiefling_02_neutral_calm.png-064554d3bf25b0991dad2b195d144c33.ctex"
+uid="uid://c4ugnnqvph54g"
+path="res://.godot/imported/milk.png-06d5b122e5d755dbb093a44e73af64f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirls/states/lineart/tiefling_02_neutral_calm.png"
-dest_files=["res://.godot/imported/tiefling_02_neutral_calm.png-064554d3bf25b0991dad2b195d144c33.ctex"]
+source_file="res://assets/icons/milk.png"
+dest_files=["res://.godot/imported/milk.png-06d5b122e5d755dbb093a44e73af64f9.ctex"]
 
 [params]
 

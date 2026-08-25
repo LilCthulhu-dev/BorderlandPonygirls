@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://b7vmcwnbxge0e" path="res://data/events/event_check.gd" id="4_opyfm"]
 [ext_resource type="Resource" uid="uid://chupthwmfqefv" path="res://data/item/grain.tres" id="5_opyfm"]
 [ext_resource type="Script" uid="uid://csfcc37sdbhhw" path="res://data/actions/buy_item.gd" id="6_f8o6y"]
+[ext_resource type="Resource" uid="uid://cuhgpkflhppvl" path="res://data/item/milk.tres" id="8_01ffy"]
 [ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="8_udevw"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="9_h1io6"]
 
@@ -18,7 +19,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 script = ExtResource("6_f8o6y")
 item = ExtResource("5_opyfm")
 amount = 5
-price = 0
+price_factor = 0
 metadata/_custom_type_script = "uid://csfcc37sdbhhw"
 
 [sub_resource type="Resource" id="Resource_dpavh"]
@@ -43,7 +44,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 script = ExtResource("6_f8o6y")
 item = ExtResource("8_udevw")
 amount = 5
-price = 0
+price_factor = 0
 metadata/_custom_type_script = "uid://csfcc37sdbhhw"
 
 [sub_resource type="Resource" id="Resource_3qs4w"]
@@ -56,6 +57,31 @@ ability = 2
 succes_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_50yph"), SubResource("Resource_3qs4w")])
 fail_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_mqmyc")])
 txt = "Buy Wine"
+succes_txt = "You manage to pick up some fresh produce - and at a very good price, too!"
+fail_txt = "You try to make a deal, but arrive too late. All the best bargains are already gone."
+metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
+
+[sub_resource type="Resource" id="Resource_xdwoc"]
+script = ExtResource("3_dpavh")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_01ffy"]
+script = ExtResource("6_f8o6y")
+item = ExtResource("8_01ffy")
+amount = 5
+price_factor = 0
+metadata/_custom_type_script = "uid://csfcc37sdbhhw"
+
+[sub_resource type="Resource" id="Resource_ygywq"]
+script = ExtResource("3_dpavh")
+metadata/_custom_type_script = "uid://b0g16xoo4jggg"
+
+[sub_resource type="Resource" id="Resource_f8o6y"]
+script = ExtResource("4_opyfm")
+ability = 2
+succes_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_01ffy"), SubResource("Resource_ygywq")])
+fail_actions = Array[ExtResource("1_opuqo")]([SubResource("Resource_xdwoc")])
+txt = "Buy Milk"
 succes_txt = "You manage to pick up some fresh produce - and at a very good price, too!"
 fail_txt = "You try to make a deal, but arrive too late. All the best bargains are already gone."
 metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
@@ -75,5 +101,5 @@ script = ExtResource("3_rhcrj")
 titel = "Market Sale"
 description = "The market is alive with unusual hustle and bustle. Before long, you discover the reason: a major sale is underway. You might find a real bargain - if you hurry.
 "
-content = Array[ExtResource("2_c1u7w")]([SubResource("Resource_nv1yq"), SubResource("Resource_opyfm"), SubResource("Resource_03ver")])
+content = Array[ExtResource("2_c1u7w")]([SubResource("Resource_nv1yq"), SubResource("Resource_opyfm"), SubResource("Resource_f8o6y"), SubResource("Resource_03ver")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

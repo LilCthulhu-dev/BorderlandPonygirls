@@ -33,6 +33,12 @@ script = ExtResource("8_pn6nq")
 txt = "Leave"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
+[sub_resource type="Resource" id="Resource_open"]
+script = ExtResource("6_nhep5")
+required_flag = Array[ExtResource("3_db5am")]([ExtResource("5_eiwa2")])
+forbidden_flag = Array[ExtResource("3_db5am")]([ExtResource("4_cgds2")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
 [resource]
 script = ExtResource("3_8k4q2")
 titel = "Ponygirl outfitter"
@@ -42,4 +48,5 @@ An open doorway at the back leads into a busy workshop. Tools move amid the flic
 
 Behind the counter stands the proprietor: an elderly goblin with weathered features and an eyepatch, watching you with his single sharp eye."
 content = Array[ExtResource("2_74r5s")]([SubResource("Resource_q6xwx"), SubResource("Resource_77dvc")])
+open_actions = Array[ExtResource("1_te7kq")]([SubResource("Resource_open")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

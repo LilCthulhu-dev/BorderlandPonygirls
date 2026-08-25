@@ -42,7 +42,7 @@ scenes = Array[ExtResource("2_vhi4r")]([ExtResource("3_gfntq"), ExtResource("4_q
 keep_focused_ponygirl = true
 enemy_descriptors = Array[String](["Fierce", "Tough", "Skilled", "Determined", "Experienced", "Relentless"])
 enemy_names = Array[String](["Rivals", "Racers", "Competitors", "Opponents"])
-victory_txt = "{PONYNAME} is drenched in sweat, her naked tits heaving with exhaustion - but you won! The finishing ribbon snaps onto her chest harnish as the crowd erupts in celebration.
+victory_txt = "{PONYNAME} is drenched in sweat, her naked tits heaving with exhaustion - but you won! The finishing ribbon snaps onto her chest harness as the crowd erupts in celebration.
 
 The race master comes over after you have bathed in the applause for a while, grinning as he hands you a big pouch with coin.
 

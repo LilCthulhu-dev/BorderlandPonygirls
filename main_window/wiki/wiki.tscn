@@ -88,9 +88,11 @@ layout_mode = 2
 expand_mode = 4
 stretch_mode = 5
 
-[node name="EntryDescription" type="Label" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="2" unique_id=471401869]
+[node name="EntryDescription" type="RichTextLabel" parent="ScrollContainer2/MarginContainer/VBoxContainer" index="2" unique_id=1026042337]
 unique_name_in_owner = true
 layout_mode = 2
+bbcode_enabled = true
+fit_content = true
 autowrap_mode = 2
 
 [connection signal="text_changed" from="VBoxContainer/HBoxContainer/WikiSearch" to="." method="_on_wiki_search_text_changed"]

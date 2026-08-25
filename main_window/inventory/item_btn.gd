@@ -45,9 +45,18 @@ func _on_pressed() -> void:
 			trade_amount,
 			floori(AttributesManager.gold / float(local_price))
 		)
-		if affordable_amount <= 0: return
-		AttributesManager.gold -= local_price * affordable_amount
-		InventoryManager.set_inventory(item, affordable_amount)
+		var remaining_weight := InventoryManager.MAX_WEIGHT - InventoryManager.current_weight
+		var carriable_amount: int = min(
+			trade_amount,
+			floori(remaining_weight / float(item.weight))
+		)
+		var actual_amount: int = min(
+			affordable_amount,
+			carriable_amount
+		)
+		if actual_amount <= 0: return
+		InventoryManager.set_inventory(item, actual_amount)
+		AttributesManager.gold -= local_price * actual_amount
 	else:
 		var inventory_item: Item = InventoryManager.inventory.get(item.id)
 		if inventory_item == null: return
@@ -55,5 +64,5 @@ func _on_pressed() -> void:
 			trade_amount,
 			inventory_item.amount
 		)
-		AttributesManager.gold += local_price * actual_amount
 		InventoryManager.set_inventory(item, actual_amount * -1)
+		AttributesManager.gold += local_price * actual_amount

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgtoq5v0041bs"
-path="res://.godot/imported/tiefling_01_happy_horny.png-bc9f4bc48dbc6709bd35d90b47efb2e2.ctex"
+uid="uid://kijtbu6jdwdv"
+path="res://.godot/imported/pony_berry.png-f6b645110ce7136c57e7846e8d12614a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirls/states/lineart/tiefling_01_happy_horny.png"
-dest_files=["res://.godot/imported/tiefling_01_happy_horny.png-bc9f4bc48dbc6709bd35d90b47efb2e2.ctex"]
+source_file="res://assets/icons/pony_berry.png"
+dest_files=["res://.godot/imported/pony_berry.png-f6b645110ce7136c57e7846e8d12614a.ctex"]
 
 [params]
 

@@ -43,6 +43,9 @@ func _update_content():
 
 	for content in LocationManager.current_event.content:
 		if !content.hard_requierments_met(): continue
+		if content is EventPonySelect:
+			added_content += _add_pony_select(content)
+			continue
 		var n = null
 		if content is EventBtn:
 			n = EVENT_BTN.instantiate()
@@ -58,3 +61,22 @@ func _update_content():
 		var back_button := EVENT_BTN.instantiate()
 		back_button.content = null
 		content_container.add_child(back_button)
+
+
+func _add_pony_select(select: EventPonySelect) -> int:
+	var count := 0
+	for pony in PonygirlManager.get_active_ponygirls():
+		var ebtn := EventBtn.new()
+		ebtn.txt = Utils.translate(select.button_txt) % pony.name
+		var focus := SetFocusedPonygirl.new()
+		focus.pony = pony
+		focus.hide_tooltip = true
+		focus.hide_description = true
+		var acts: Array[Action] = [focus]
+		acts.append_array(select.actions)
+		ebtn.actions = acts
+		var n := EVENT_BTN.instantiate()
+		n.content = ebtn
+		content_container.add_child(n)
+		count += 1
+	return count
