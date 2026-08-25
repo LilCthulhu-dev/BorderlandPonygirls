@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bs8lduo07rxiw"]
+
+[ext_resource type="Script" uid="uid://b571u1d6tbexa" path="res://data/item/item.gd" id="1_1236a"]
+[ext_resource type="Texture2D" uid="uid://kijtbu6jdwdv" path="res://assets/icons/pony_berry.png" id="1_n7kxn"]
+
+[resource]
+script = ExtResource("1_1236a")
+title = "Pony Berry"
+price = 20
+weight = 1
+icon = ExtResource("1_n7kxn")
+metadata/_custom_type_script = "uid://b571u1d6tbexa"
