@@ -119,20 +119,16 @@ static func init() -> void:
 		ponygirls.resize(MAX_TOTAL)
 
 static func get_active_ponygirls() -> Array[Ponygirl]:
-	var active_ponygirls: Array[Ponygirl] = []
-	for pony in ponygirls:
-		if pony == null: continue
-		if pony.active:
-			active_ponygirls.append(pony)
-	return active_ponygirls
+	var list: Array[Ponygirl] = []
+	for pony in get_all_ponygirls():
+		if pony.active: list.push_back(pony)
+	return list
 
 static func get_resting_ponygirls() -> Array[Ponygirl]:
-	var resting_ponygirls: Array[Ponygirl] = []
-	for pony in ponygirls:
-		if pony == null: continue
-		if not pony.active:
-			resting_ponygirls.append(pony)
-	return resting_ponygirls
+	var list: Array[Ponygirl] = []
+	for pony in get_all_ponygirls():
+		if not pony.active: list.push_back(pony)
+	return list
 
 static func get_all_ponygirls() -> Array[Ponygirl]:
 	var all_ponygirls: Array[Ponygirl] = []
