@@ -5,6 +5,8 @@ class_name EventBtn
 	get:
 		return Utils.translate(txt)
 @export var actions : Array[Action]
+
+@export_group('uses')
 @export var single_use = false
 @export var used = false
 
