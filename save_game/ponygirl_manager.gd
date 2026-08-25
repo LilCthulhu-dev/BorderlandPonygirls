@@ -159,12 +159,6 @@ static func get_perk_by_name(perk_name: StringName) -> Perk:
 			return perk
 	return null
 
-static func active_slots_free() -> bool:
-	return get_active_ponygirls().size() < MAX_ACTIVE
-
-static func resting_slots_free() -> bool:
-	return get_resting_ponygirls().size() < MAX_RESTING
-
 static func slots_free() -> bool:
 	return ponygirls.any(func(pony: Ponygirl) -> bool:
 		return pony == null
