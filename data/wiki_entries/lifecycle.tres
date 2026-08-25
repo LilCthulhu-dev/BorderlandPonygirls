@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://c75cx0yn7abwo"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_qyyyu"]
+
+[resource]
+script = ExtResource("1_qyyyu")
+description = "Different to what some people might think, getting enslaved by Goblins is not permanent. Ponygirls usually serve two to four years in bondage, before they get set free again. In that time they go through the following three phases:
+
+[b]1.) Filly[/b]
+This phase comes right after a tall-folk woman got kidnapped, bought, or offered herself she becomes a filly.
+She gets stripped naked, put into ponygear, and a specific goblin gets determined as her new handler and owner. The chosen goblin then mates with the ponygirl, marking the first exposure to goblin sperm: giving a first taste of the addictive substance and enhancing the girl's libido drastically.
+After that the filly gets broken in, which means a couple of weeks of training. The handler puts the ponygirl through a rough and extremely exhausting daily training regime, strengthening its muscles while breaking its will.
+During this time the filly usually is deprived of sex, until she shows the proper obedience and sex is reintroduced as a reward.
+
+[b]2.) Mare[/b]
+Once the ponygirl is obedient and strong enough, the mount or pony phase follows. It lasts for up to three years, during which the ponygirl serves as a mount and beast of burden for its owner.
+In some rare cases the mount phase can last much longer. Typically this happens if a Goblin and their Pony grow especially close. It's unusual, but happens, especially with long lived slaves like elves.
+
+[b]3.) Breeder[/b]
+The Breeder phase is the last part of the life cycle. It lasts about a year and means a goblin master starts to breed his ponygirl deliberately for pregnancy. It starts when the ponygirl gets too old or a host of fresh stock becomes available.
+A pregnancy lasts only two to three months and produces twins or triplets. The first few pregnancies almost always lead to goblin births, and the old mare is set free and sent home to her kin once she produces a litter of her own race.
+Breeders are usually kept inside a village and while they are expected to work, they are used for less demanding activities and kept available for mating instead.
+The short breeder phase is probably linked to the fact that Goblins only take about a year to grow into adults. So a ponygirl is set free, before her first set of offspring enters their mature phase.
+
+— Excerpt from “Ponygirls of the Borderlands: An Essay on Goblins and Their Mounts,” by Scholar Lula of Trisa Academy"
+metadata/_custom_type_script = "uid://bkxhc74auednr"
