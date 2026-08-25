@@ -34,6 +34,17 @@ content_margin_right = 10.0
 content_margin_bottom = 10.0
 bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvj1l"]
+bg_color = Color(0.03529412, 0.039215688, 0.078431375, 0.15686275)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wuf2l"]
+bg_color = Color(0.03529412, 0.039215688, 0.078431375, 0.15686275)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k8did"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0ov0"]
+bg_color = Color(0.03529412, 0.039215688, 0.078431375, 0.15686275)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sqwfb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5nwjc"]
@@ -58,7 +69,7 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wuf2l"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ulcby"]
 bg_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
 border_width_left = 1
 border_width_top = 1
@@ -148,7 +159,19 @@ border_width_top = 2
 border_width_right = 2
 border_color = Color(0.8, 0.8, 0.8, 0)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0ov0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_540gm"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k8did"]
 bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jo72m"]
@@ -178,6 +201,14 @@ Button/styles/disabled = SubResource("StyleBoxFlat_erdsu")
 Button/styles/hover = SubResource("StyleBoxFlat_ftmte")
 Button/styles/normal = SubResource("StyleBoxFlat_cky1e")
 Button/styles/pressed = SubResource("StyleBoxFlat_5nwjc")
+CheckBox/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+CheckBox/colors/font_hover_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+CheckBox/colors/font_hover_pressed_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+CheckBox/colors/font_pressed_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+CheckBox/styles/hover = SubResource("StyleBoxFlat_rvj1l")
+CheckBox/styles/hover_pressed = SubResource("StyleBoxFlat_wuf2l")
+CheckBox/styles/normal = SubResource("StyleBoxEmpty_k8did")
+CheckBox/styles/pressed = SubResource("StyleBoxFlat_m0ov0")
 CheckButton/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
 CheckButton/colors/font_focus_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
 CheckButton/colors/font_hover_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
@@ -195,7 +226,7 @@ HSeparator/styles/separator = SubResource("StyleBoxLine_78w6y")
 HSlider/icons/grabber = ExtResource("1_cky1e")
 HSlider/icons/grabber_highlight = ExtResource("2_5nwjc")
 HSlider/styles/grabber_area = SubResource("StyleBoxFlat_8kfel")
-HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_wuf2l")
+HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_ulcby")
 HSlider/styles/slider = SubResource("StyleBoxFlat_3prua")
 Label/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
 Label/colors/font_outline_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
@@ -224,9 +255,12 @@ TabContainer/styles/panel = SubResource("StyleBoxFlat_fjngd")
 TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_sqwfb")
 TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_sd5i7")
 TabContainer/styles/tab_unselected = SubResource("StyleBoxFlat_jdeg7")
+TextEdit/colors/caret_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+TextEdit/colors/font_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
+TextEdit/styles/normal = SubResource("StyleBoxFlat_540gm")
 VBoxContainer/constants/separation = 15
 VScrollBar/constants/padding_left = 0
 VScrollBar/constants/padding_right = 0
-VScrollBar/styles/grabber = SubResource("StyleBoxFlat_m0ov0")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_k8did")
 VScrollBar/styles/scroll = SubResource("StyleBoxFlat_jo72m")
 VSeparator/styles/separator = SubResource("StyleBoxLine_mwvoh")

@@ -7,28 +7,26 @@ extends TabBar
 @onready var icon_preview: TextureRect = %IconPreview
 @onready var icon_file_dialog: FileDialog = %IconFileDialog
 
-const ITEM_FOLDER := "res://data/item/"
-var list_of_items: Array[Item] = []
+const FOLDER := "res://data/item/"
+var list: Array[Item] = []
 var current_item: Item
-var current_item_path := ""
 
 func _ready() -> void:
-	_update_editor()
-	_new_item()
+	_update()
+	_new()
 
 func _on_item_dropdown_item_selected(index: int) -> void:
 	if index == 0:
-		_new_item()
+		_new()
 	else:
-		load_item(list_of_items[index - 1])
+		load_item(list[index - 1])
 
 func _on_save_btn_pressed() -> void:
-	_save_item()
-	_update_editor()
+	_save()
 
 func _on_new_btn_pressed() -> void:
 	item_dropdown.select(0)
-	_new_item()
+	_new()
 
 func _on_add_icon_btn_pressed() -> void:
 	icon_file_dialog.popup_centered_ratio(0.8)
@@ -39,26 +37,26 @@ func _on_icon_file_dialog_file_selected(path: String) -> void:
 	icon_preview.texture = texture
 
 # ================================================== helper
-func _update_editor():
-	_load_item_list()
+func _update():
+	_load_list()
 	_update_dropdown()
 	item_dropdown.select(0)
 
 
-func _load_item_list() -> void:
-	list_of_items.clear()
+func _load_list() -> void:
+	list.clear()
 
-	var dir := DirAccess.open(ITEM_FOLDER)
+	var dir := DirAccess.open(FOLDER)
 	if dir == null: return
 	dir.list_dir_begin()
 
 	var file_name := dir.get_next()
 	while not file_name.is_empty():
 		if not dir.current_is_dir() and file_name.get_extension() == "tres":
-			var path := ITEM_FOLDER + file_name
+			var path := FOLDER + file_name
 			var item := load(path) as Item
 			if item == null: continue
-			list_of_items.push_back(item)
+			list.push_back(item)
 		file_name = dir.get_next()
 
 	dir.list_dir_end()
@@ -66,7 +64,7 @@ func _load_item_list() -> void:
 func _update_dropdown() -> void:
 	item_dropdown.clear()
 	item_dropdown.add_item('unknown/new')
-	for item in list_of_items:
+	for item in list:
 		item_dropdown.add_item(item.title)
 
 func load_item(item: Item) -> void:
@@ -76,18 +74,20 @@ func load_item(item: Item) -> void:
 	weight_spin.value = current_item.weight
 	icon_preview.texture = current_item.icon
 
-func _new_item():
+func _new():
 	current_item = Item.new()
-	current_item_path = ""
 	load_item(current_item)
 
-func _save_item():
-	if title_line.text == "": return
+func _save():
+	if current_item == null:
+		return
+	if title_line.text.is_empty():
+		return
 	current_item.title = title_line.text
 	current_item.price = int(price_spin.value)
 	current_item.weight = int(weight_spin.value)
 	current_item.icon = icon_preview.texture
 	var path := current_item.resource_path
 	if path.is_empty():
-		path = ITEM_FOLDER + current_item.id + ".tres"
+		path = FOLDER + current_item.id + ".tres"
 	ResourceSaver.save(current_item, path)

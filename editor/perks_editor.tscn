@@ -39,6 +39,14 @@ layout_mode = 2
 layout_mode = 2
 columns = 2
 
+[node name="Label5" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1660745533]
+layout_mode = 2
+text = "Name: "
+
+[node name="NameLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=848538602]
+unique_name_in_owner = true
+layout_mode = 2
+
 [node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1894735971]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
@@ -46,6 +54,7 @@ text = "Description: "
 
 [node name="DescriptionEdit" type="TextEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=617003110]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 75)
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -84,39 +93,11 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Background"
 
-[node name="IconFileDialog" type="FileDialog" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2120937073]
-unique_name_in_owner = true
-oversampling_override = 1.0
-title = "Open a File"
-file_mode = 0
-root_subfolder = "res://assets/icons"
-filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=342798159]
-layout_mode = 2
-
-[node name="IconPreview" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1659343862]
-unique_name_in_owner = true
-modulate = Color(0, 0, 0, 1)
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-size_flags_horizontal = 3
-expand_mode = 1
-stretch_mode = 5
-
 [node name="GridContainer2" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1568543225]
 layout_mode = 2
 size_flags_vertical = 0
 theme_override_constants/h_separation = 25
-columns = 3
-
-[node name="AddIconBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=54880484]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-text = "Icon"
-script = ExtResource("1_3s5i0")
-metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+columns = 2
 
 [node name="SaveBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=282890825]
 unique_name_in_owner = true
@@ -133,3 +114,7 @@ size_flags_horizontal = 3
 text = "New"
 script = ExtResource("1_3s5i0")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="item_selected" from="ScrollContainer/MarginContainer/VBoxContainer/Dropdown" to="." method="_on_dropdown_item_selected"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/NewBtn" to="." method="_on_new_btn_pressed"]
