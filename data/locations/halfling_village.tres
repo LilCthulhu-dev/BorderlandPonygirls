@@ -28,8 +28,8 @@ description = "Harbortown is the largest city in the region and the northernmost
 
 Tall walls and watchful guards keep it well protected, while well-stocked shops and a bustling market offer both local goods and rare imports from the south.
 
-Humans and elves are the most common sight, but far from the only one. Tieflings, kobolds, goblins, and even the occasional orc move through the crowds without drawing so much as a second glance."
-cheap_items = Array[ExtResource("1_al1pc")]([ExtResource("2_6eo28"), ExtResource("3_a48tm"), ExtResource("4_3b2u2")])
+Humans and elves are the most common sight, but far from the only one. Demonbloods, kobolds, goblins, and even the occasional orc move through the crowds without drawing so much as a second glance."
+cheap_items = Array[ExtResource("1_al1pc")]([ExtResource("2_6eo28"), ExtResource("3_a48tm")])
 expensive_items = Array[ExtResource("1_al1pc")]([ExtResource("4_aj1b6"), ExtResource("5_028d7"), ExtResource("6_t0ekb")])
 random_events = Array[ExtResource("2_f1d78")]([ExtResource("8_1opi7"), ExtResource("9_h5cyg"), ExtResource("10_y5aox"), ExtResource("11_3b2u2"), ExtResource("12_a48tm"), ExtResource("13_aj1b6"), ExtResource("14_cask"), ExtResource("16_hay"), ExtResource("17_h5cyg")])
 quest_events = Array[ExtResource("2_f1d78")]([ExtResource("15_fish"), ExtResource("9_1opi7")])

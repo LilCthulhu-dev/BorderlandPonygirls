@@ -1,7 +1,7 @@
 extends Resource
 class_name Perk
 
-enum GROUPS { NONE, TITS, TEMPER, KINK }
+enum GROUPS { NONE, TITS, TEMPER }
 
 var name := "":
 	get:
@@ -20,7 +20,6 @@ var id: StringName:
 @export var bonus := Enums.ATTRIBUTES.NONE
 
 @export var group : GROUPS
-@export var narrative_tags : String
 @export var background := false
 
 func get_bonus_descriptions(ponygirl : Ponygirl) -> Array[String]:
