@@ -11,22 +11,19 @@
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="9"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="10"]
 [ext_resource type="Texture2D" uid="uid://cimgmmaretalk" path="res://assets/img/frozenhunter/missing_mare_talk.png" id="11"]
-[ext_resource type="Script" uid="uid://cnjmqq8t85is4" path="res://data/actions/commit_quest_ponygirl.gd" id="12"]
-[ext_resource type="Script" uid="uid://bcvi68bq46lqc" path="res://data/actions/clear_quest_ponygirl.gd" id="13"]
-[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="14"]
-[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="15"]
-[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="16"]
-[ext_resource type="Script" uid="uid://l5qqa8f4kms1" path="res://data/actions/focus_quest_ponygirl.gd" id="17"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="18"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="12"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="13"]
+[ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="14"]
+[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="15"]
+[ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="16"]
+[ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="17"]
+[ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/stubborn.tres" id="18"]
 
 [sub_resource type="Resource" id="Resource_gate"]
 script = ExtResource("9")
 required_flag = Array[ExtResource("4")]([ExtResource("5")])
 forbidden_flag = Array[ExtResource("4")]([ExtResource("6")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
-
-[sub_resource type="Resource" id="Resource_focus"]
-script = ExtResource("17")
 
 [sub_resource type="Resource" id="Resource_done"]
 script = ExtResource("9")
@@ -40,34 +37,37 @@ add_flag = Array[ExtResource("4")]([ExtResource("8"), ExtResource("6")])
 remove_flag = Array[ExtResource("4")]([ExtResource("5"), ExtResource("7")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_commit"]
-script = ExtResource("12")
-
-[sub_resource type="Resource" id="Resource_clear"]
-script = ExtResource("13")
+[sub_resource type="Resource" id="Resource_add"]
+script = ExtResource("16")
+force_race = 1
+force_submission = 0
+force_arousal = 35
+force_xp = 5
+perks = Array[ExtResource("17")]([ExtResource("18")])
+metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_rep_keep"]
-script = ExtResource("15")
+script = ExtResource("13")
 amount = -4
 metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 
 [sub_resource type="Resource" id="Resource_rep_free"]
-script = ExtResource("15")
+script = ExtResource("13")
 amount = 3
 metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 
 [sub_resource type="Resource" id="Resource_gold_free"]
-script = ExtResource("14")
+script = ExtResource("12")
 amount = "-{BAD_WAGE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
 [sub_resource type="Resource" id="Resource_back"]
-script = ExtResource("16")
+script = ExtResource("14")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_return_txt"]
-script = ExtResource("18")
-txt = "You leave the gag out but keep the lead. {QUEST_PONY} goes quiet. The Trading Post is the next argument - and she knows it."
+script = ExtResource("15")
+txt = "You leave the gag out but keep the lead. She goes quiet. The Trading Post is the next argument - and she knows it."
 metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_return"]
@@ -79,13 +79,13 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [sub_resource type="Resource" id="Resource_keep"]
 script = ExtResource("3")
 txt = "Keep her for your stable"
-actions = Array[ExtResource("1")]([SubResource("Resource_commit"), SubResource("Resource_rep_keep"), SubResource("Resource_kept")])
+actions = Array[ExtResource("1")]([SubResource("Resource_add"), SubResource("Resource_rep_keep"), SubResource("Resource_kept")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_free"]
 script = ExtResource("3")
 txt = "Cut her free"
-actions = Array[ExtResource("1")]([SubResource("Resource_clear"), SubResource("Resource_gold_free"), SubResource("Resource_rep_free"), SubResource("Resource_done")])
+actions = Array[ExtResource("1")]([SubResource("Resource_gold_free"), SubResource("Resource_rep_free"), SubResource("Resource_done")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_later"]
@@ -98,9 +98,9 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 script = ExtResource("10")
 titel = "Missing Mare"
 img = ExtResource("11")
-description = "You pull the gag. {QUEST_PONY}’s mouth is raw. She does not thank you.
+description = "You pull the gag. Her mouth is raw. She does not thank you.
 
 “I never took the bit,” she says, voice torn. “They took me off the road. That merchant - if he wants me back, he bought a kidnapping. Please. Don’t walk me to him.”"
 content = Array[ExtResource("2")]([SubResource("Resource_return"), SubResource("Resource_keep"), SubResource("Resource_free"), SubResource("Resource_later")])
-open_actions = Array[ExtResource("1")]([SubResource("Resource_gate"), SubResource("Resource_focus")])
+open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -30,7 +30,6 @@ func translate(text : String) -> String:
 		"{TITLE}": AttributesManager.boss_title,
 		"{NAME}": AttributesManager.boss_name,
 		"{PONYNAME}": pony_name,
-		"{QUEST_PONY}": FlagsManager.quest_ponygirl_name() if GameData.flags_manager else "",
 		"{ENEMY_NAME}": CombatManager.enemy_name,
 
 		"{GOOD_WAGE}": GameData.REWARDS.good_wage,
