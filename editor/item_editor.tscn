@@ -74,18 +74,6 @@ file_mode = 0
 root_subfolder = "res://assets/icons"
 filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1344428518]
-layout_mode = 2
-
-[node name="IconPreview" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=594702517]
-unique_name_in_owner = true
-modulate = Color(0, 0, 0, 1)
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-size_flags_horizontal = 3
-expand_mode = 1
-stretch_mode = 5
-
 [node name="GridContainer2" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=437167275]
 layout_mode = 2
 size_flags_vertical = 0
@@ -115,6 +103,15 @@ size_flags_horizontal = 3
 text = "New"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="IconPreview" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=594702517]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+expand_mode = 1
+stretch_mode = 5
 
 [connection signal="item_selected" from="ScrollContainer/MarginContainer/VBoxContainer/ItemDropdown" to="." method="_on_item_dropdown_item_selected"]
 [connection signal="file_selected" from="ScrollContainer/MarginContainer/VBoxContainer/IconFileDialog" to="." method="_on_icon_file_dialog_file_selected"]

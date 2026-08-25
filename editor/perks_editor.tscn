@@ -1,9 +1,16 @@
 [gd_scene format=3 uid="uid://y6wjgpsof7rw"]
 
 [ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="1_3s5i0"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_jdeg7"]
 [ext_resource type="Script" uid="uid://d17ac53wwgx7m" path="res://editor/perks_editor.gd" id="1_vbpt5"]
 
 [node name="Perks" type="TabBar" unique_id=1865565266]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_jdeg7")
 script = ExtResource("1_vbpt5")
 metadata/_tab_index = 1
 
@@ -24,7 +31,7 @@ theme_override_constants/margin_right = 5
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer" unique_id=646344574]
 layout_mode = 2
 
-[node name="ItemDropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=602267627]
+[node name="Dropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=602267627]
 unique_name_in_owner = true
 layout_mode = 2
 
@@ -35,9 +42,9 @@ columns = 2
 [node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1894735971]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
-text = "Title: "
+text = "Description: "
 
-[node name="TitleLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1254338003]
+[node name="DescriptionEdit" type="TextEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=617003110]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -45,9 +52,9 @@ size_flags_horizontal = 3
 [node name="Label2" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=444383739]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
-text = "Price: "
+text = "Malus: "
 
-[node name="PriceSpin" type="SpinBox" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1101483347]
+[node name="MalusDropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1967086435]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -55,12 +62,27 @@ size_flags_horizontal = 3
 [node name="Label3" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1607850599]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
-text = "Weight: "
+text = "Bonus: "
 
-[node name="WeightSpin" type="SpinBox" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=754306161]
+[node name="BonusDropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1588028306]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="Label4" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1619642294]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Group: "
+
+[node name="GroupDropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=816243138]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackgroundCheck" type="CheckBox" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1101584185]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Background"
 
 [node name="IconFileDialog" type="FileDialog" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2120937073]
 unique_name_in_owner = true

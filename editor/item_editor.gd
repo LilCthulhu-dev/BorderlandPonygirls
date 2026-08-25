@@ -44,11 +44,6 @@ func _update_editor():
 	_update_dropdown()
 	item_dropdown.select(0)
 
-func _update_dropdown() -> void:
-	item_dropdown.clear()
-	item_dropdown.add_item('unknown/new')
-	for item in list_of_items:
-		item_dropdown.add_item(item.title)
 
 func _load_item_list() -> void:
 	list_of_items.clear()
@@ -67,6 +62,12 @@ func _load_item_list() -> void:
 		file_name = dir.get_next()
 
 	dir.list_dir_end()
+
+func _update_dropdown() -> void:
+	item_dropdown.clear()
+	item_dropdown.add_item('unknown/new')
+	for item in list_of_items:
+		item_dropdown.add_item(item.title)
 
 func load_item(item: Item) -> void:
 	current_item = item
