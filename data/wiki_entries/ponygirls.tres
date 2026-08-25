@@ -1,19 +1,21 @@
 [gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://vyoggkey3iuy"]
 
 [ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_17jgt"]
+[ext_resource type="Resource" uid="uid://c75cx0yn7abwo" path="res://data/wiki_entries/lifecycle.tres" id="2_8hjw6"]
+[ext_resource type="Resource" uid="uid://wkw00in0jhum" path="res://data/wiki_entries/retirees.tres" id="3_usrih"]
+[ext_resource type="Resource" uid="uid://ddr10t03ou13m" path="res://data/wiki_entries/bondage_gear.tres" id="4_ry7kk"]
+[ext_resource type="Resource" uid="uid://kb8w34medha6" path="res://data/wiki_entries/womb_tattoo.tres" id="5_08v16"]
+[ext_resource type="Resource" uid="uid://bmtixy11kxw8f" path="res://data/wiki_entries/dildos.tres" id="6_7ppmk"]
+[ext_resource type="Resource" uid="uid://ctjdfqwbgt4l5" path="res://data/wiki_entries/subjugation_and_training.tres" id="7_m3r05"]
+[ext_resource type="Resource" uid="uid://bnc4nc1my70ij" path="res://data/wiki_entries/goblin_sperm.tres" id="8_67fjc"]
 
 [resource]
 script = ExtResource("1_17jgt")
-titel = "Ponygirls"
-description = "Ponygirls, Whorses, She-Beasts, or Ponycunts. There are many ways to call them, but in essence, they are tall women (mostly elves or humans), who arestripped naked and forced to serve as mounts and sextoys for their goblin masters.
+sub_entries = Array[ExtResource("1_17jgt")]([ExtResource("2_8hjw6"), ExtResource("3_usrih"), ExtResource("4_ry7kk"), ExtResource("5_08v16"), ExtResource("6_7ppmk"), ExtResource("7_m3r05"), ExtResource("8_67fjc")])
+description = "Ponygirls, Whorses, She-Beasts, or Ponycunts. There are many names for them, but in essence, they are tall-folk - mostly elves and humans - who are stripped naked and made to serve as mounts for their goblin masters.
+In the past, ponygirls were literal slaves, kidnapped during raids or bought and sold at markets.
+Today, things are different. Goblins are allies of the Empire, and being bred by a strong, potent goblin is considered a reliable way to become pregnant. Besides, almost everyone knows that goblin seed is extraordinarily healthy. It can supposedly cure almost anything, and some even claim it reverses aging.
+On top of that, many tall-folk women seem to possess an inexplicable fascination with serving as ponycunts - though most would never openly admit it.
 
-Ponygirls are kept mostly naked, except for hoofed ponyboots, armbinders, and a harness made of leather stripes.
-
-A bit-gag, tailplug and often a dildo are very common additions too, and some goblins like to decorate their ponygirls with piercings or warpaint.
-
-In the past Ponygirls were literal slaves. Kidnapped and forced into service through raids or sold on markets.
-
-Today it's different. Goblins are allies of the empire and getting bred by strong and potent goblins is a good way to get pregnant. Besides, almost everybody knows that goblin cum is extremely healthy, can cure almost everything, and some say even it de-ages you.
-
-On top of that, many tall-folk women have an inexplicable fascination with serving as ponycunts - though most wouldn’t openly admit it."
+— Excerpt from “Ponygirls of the Borderlands: An Essay on Goblins and Their Mounts,” by Scholar Lula of Trisa Academy"
 metadata/_custom_type_script = "uid://bkxhc74auednr"

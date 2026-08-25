@@ -6,6 +6,6 @@
 [resource]
 script = ExtResource("1_4d3gt")
 title = "Grain"
-price = 20
+price = 10
 icon = ExtResource("1_7uohb")
 metadata/_custom_type_script = "uid://b571u1d6tbexa"

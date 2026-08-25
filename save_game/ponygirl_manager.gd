@@ -88,9 +88,9 @@ const PORTRAITS := {
 		preload("res://assets/img/ponygirls/elf_03.png"),
 		preload("res://assets/img/ponygirls/elf_04.png")
 	],
-	Enums.PONYGIRL_RACES.TIEFLING: [
-		preload("res://assets/img/ponygirls/tiefling_01.png"),
-		preload("res://assets/img/ponygirls/tiefling_02.png")
+	Enums.PONYGIRL_RACES.DEMONBLOOD: [
+		preload("res://assets/img/ponygirls/demonblood_01.png"),
+		preload("res://assets/img/ponygirls/demonblood_02.png")
 	],
 }
 const MAX_ACTIVE := 4
