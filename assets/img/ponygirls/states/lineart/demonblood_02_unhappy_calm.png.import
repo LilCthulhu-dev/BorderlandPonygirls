@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0kletygnq115"
-path="res://.godot/imported/tiefling_02_happy_desperately_horny.png-4465c015f52b0f17b2cd0f4061aff775.ctex"
+uid="uid://c3c5d2ri60xur"
+path="res://.godot/imported/demonblood_02_unhappy_calm.png-41145b6396a353de97bab16ce8c6eff4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/ponygirls/states/lineart/tiefling_02_happy_desperately_horny.png"
-dest_files=["res://.godot/imported/tiefling_02_happy_desperately_horny.png-4465c015f52b0f17b2cd0f4061aff775.ctex"]
+source_file="res://assets/img/ponygirls/states/lineart/demonblood_02_unhappy_calm.png"
+dest_files=["res://.godot/imported/demonblood_02_unhappy_calm.png-41145b6396a353de97bab16ce8c6eff4.ctex"]
 
 [params]
 
