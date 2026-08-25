@@ -19,7 +19,7 @@ var _pending_name: String = Ponygirl.get_random_name()
 @export var force_skin_tone := ""
 @export var force_portrait : Texture2D
 
-@export_range(0, 100, 1) var force_submission: int = 0
+@export_range(0, 100, 1) var force_submission: int = 50
 @export_range(0, 100, 1) var force_arousal: int = 0
 @export_range(0, 80, 1) var force_xp: int = 0
 @export var perks :Array[Perk] = []
@@ -43,15 +43,18 @@ func get_tooltip() -> String:
 func get_result() -> String:
 	var txt := [
 		"- Lose %s gold." % price,
-		"- Add a ponygirl to your stable."
+		"- Add ponygirl %s to your stable." % _get_name()
 	]
 	if not description.is_empty():
 		txt.push_front(description)
 	return "\n".join(txt)
 
+func _get_name():
+	return force_name if force_name != "" else _pending_name
+
 func _get_instance() -> Ponygirl:
 	var p : Ponygirl = ponygirl.duplicate(true)
-	p.name = force_name if force_name != "" else _pending_name
+	p.name = _get_name()
 	p.id = ""
 	p._race = force_race
 	p.hair_color = force_hair_color
