@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="1"]
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_nrmlb"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_cj45v"]
-[ext_resource type="Texture2D" uid="uid://cimgmmarepost" path="res://assets/img/frozenhunter/missing_mare_post.png" id="3_f71yy"]
+[ext_resource type="Texture2D" uid="uid://cimgmmareaccept" path="res://assets/img/frozenhunter/missing_mare_accept.png" id="3_accept"]
 
 [resource]
 script = ExtResource("1")
@@ -11,5 +11,5 @@ titel = "Missing Mare"
 description = "The merchant presses a cheap sketch into your hand: a dark-haired human mare, bit-scarred, last seen on the harbor road.
 
 “Harbor first. If the watch has her, pay the fine and bring her. If someone else has her… I still want her. I’ll pay well. Keep her and I’ll make sure every stall on this post hears about it.”"
-img = ExtResource("3_f71yy")
+img = ExtResource("3_accept")
 metadata/_custom_type_script = "uid://47s8j4k2usde"
