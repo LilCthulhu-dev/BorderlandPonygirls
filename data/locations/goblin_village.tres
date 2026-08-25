@@ -28,7 +28,7 @@
 script = ExtResource("1_s87no")
 title = "Goblin Village"
 image = ExtResource("1_dqvud")
-description = "Your home village. Its a sprawling maze of huts and raised walkways, built from rough wood and stone. Thin plumes of smoke rise from countless cookfires, carrying the sharp scent of burned fat and spices.
+description = "Your home village. It's a sprawling maze of huts and raised walkways, built from rough wood and stone. Thin plumes of smoke rise from countless cookfires, carrying the sharp scent of burned fat and spices.
 
 At the center stand the large stables, sheltering both the residents’ ponygirls and the she-beasts from visiting warbands. Stablehands tend to the ponycunts with quiet dedication, ensuring they are fed, watered, and kept properly horny."
 cheap_items = Array[ExtResource("1_to240")]([ExtResource("2_e3v7j"), ExtResource("3_0h381"), ExtResource("4_k4c0f")])

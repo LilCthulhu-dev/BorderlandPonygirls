@@ -24,11 +24,11 @@
 [resource]
 script = ExtResource("3_silry")
 title = "Halfling Village"
-description = "Harbortown is the largest city in the region and the northernmost settlement in the Empire.
+description = "Low stone walls, thatched roofs, and well-tended fields mark this halfling settlement. Smoke from cookfires hangs over the lanes, and the smell of cattle and hay is never far away.
 
-Tall walls and watchful guards keep it well protected, while well-stocked shops and a bustling market offer both local goods and rare imports from the south.
+The village is smaller than Harbortown, but it is busy. Halfling farmers trade grain and livestock, visiting warbands water their mares at the public stable, and on race days the old pasture fills with shouting and bets.
 
-Humans and elves are the most common sight, but far from the only one. Demonbloods, kobolds, goblins, and even the occasional orc move through the crowds without drawing so much as a second glance."
+Most of the folk here are male. Their hu-cows and ponygirls work the fields and the track - kept as livestock, though more gently than a goblin would keep them."
 cheap_items = Array[ExtResource("1_al1pc")]([ExtResource("2_6eo28"), ExtResource("3_a48tm")])
 expensive_items = Array[ExtResource("1_al1pc")]([ExtResource("4_aj1b6"), ExtResource("5_028d7"), ExtResource("6_t0ekb")])
 random_events = Array[ExtResource("2_f1d78")]([ExtResource("8_1opi7"), ExtResource("9_h5cyg"), ExtResource("10_y5aox"), ExtResource("11_3b2u2"), ExtResource("12_a48tm"), ExtResource("13_aj1b6"), ExtResource("14_cask"), ExtResource("16_hay"), ExtResource("17_h5cyg")])

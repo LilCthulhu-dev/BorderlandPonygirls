@@ -119,20 +119,23 @@ static func init() -> void:
 		ponygirls.resize(MAX_TOTAL)
 
 static func get_active_ponygirls() -> Array[Ponygirl]:
-	var active_ponygirls: Array[Ponygirl] = []
-	for pony in ponygirls:
-		if pony == null: continue
-		if pony.active:
-			active_ponygirls.append(pony)
-	return active_ponygirls
+	var list: Array[Ponygirl] = []
+	for pony in get_all_ponygirls():
+		if pony.active: list.push_back(pony)
+	return list
 
 static func get_resting_ponygirls() -> Array[Ponygirl]:
-	var resting_ponygirls: Array[Ponygirl] = []
+	var list: Array[Ponygirl] = []
+	for pony in get_all_ponygirls():
+		if not pony.active: list.push_back(pony)
+	return list
+
+static func get_all_ponygirls() -> Array[Ponygirl]:
+	var all_ponygirls: Array[Ponygirl] = []
 	for pony in ponygirls:
 		if pony == null: continue
-		if not pony.active:
-			resting_ponygirls.append(pony)
-	return resting_ponygirls
+		all_ponygirls.append(pony)
+	return all_ponygirls
 
 static func get_random_active_ponygirl() -> Ponygirl:
 	var active_ponygirls := get_active_ponygirls()
@@ -151,20 +154,6 @@ static func get_perk_by_name(perk_name: StringName) -> Perk:
 		if perk.name == perk_name:
 			return perk
 	return null
-
-static func active_slots_free() -> bool:
-	var number := 0
-	for pony in ponygirls:
-		if pony.active:
-			number += 1
-	return number < MAX_ACTIVE
-
-static func resting_slots_free() -> bool:
-	var number := 0
-	for pony in ponygirls:
-		if not pony.active:
-			number += 1
-	return number < MAX_RESTING
 
 static func slots_free() -> bool:
 	return ponygirls.any(func(pony: Ponygirl) -> bool:

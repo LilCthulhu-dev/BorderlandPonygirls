@@ -40,7 +40,14 @@ static var last_scene: CombatScene:
 static func start_combat() -> void:
 	enemy_name = current_combat.get_enemy_name()
 	enemy_health = ENEMY_MAX_HEALTH
-	PonygirlManager.focused_ponygirl = PonygirlManager.get_random_active_ponygirl()
+	var focused := PonygirlManager.focused_ponygirl
+	var keep_focus := (
+		current_combat.keep_focused_ponygirl
+		and focused != null
+		and focused.active
+	)
+	if not keep_focus:
+		PonygirlManager.focused_ponygirl = PonygirlManager.get_random_active_ponygirl()
 	current_scene = null
 	last_scene = null
 

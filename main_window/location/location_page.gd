@@ -25,6 +25,7 @@ func _update_quest_btns() -> void:
 	for c in quest_btns.get_children():
 		c.queue_free()
 	for e in LocationManager.current_location.quest_events:
+		if e == null: continue
 		if not e.requirements_are_met(): continue
 
 		var b := LOCATION_BTN.instantiate()
