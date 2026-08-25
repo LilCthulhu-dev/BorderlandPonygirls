@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cx66tjqvb1pxc"]
+
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_ycap1"]
+[ext_resource type="PackedScene" uid="uid://51iwg1hse8t4" path="res://editor/editor_container.tscn" id="2_fjngd"]
+
+[node name="Editor" type="CanvasLayer" unique_id=292291383]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1261794154]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1381694384]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ycap1")
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1682103883]
+layout_mode = 2
+
+[node name="EditorContainer" parent="MarginContainer/HBoxContainer" unique_id=697777003 instance=ExtResource("2_fjngd")]
+layout_mode = 2
+
+[node name="EditorContainer2" parent="MarginContainer/HBoxContainer" unique_id=272952406 instance=ExtResource("2_fjngd")]
+layout_mode = 2
+
+[node name="EditorContainer3" parent="MarginContainer/HBoxContainer" unique_id=589097985 instance=ExtResource("2_fjngd")]
+layout_mode = 2

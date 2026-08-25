@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bdcerv6msbk3d"]
+
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_af6am"]
+[ext_resource type="Script" uid="uid://ecvk1ets6knn" path="res://editor/item_editor.gd" id="2_b7ylv"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="3_03at4"]
+
+[node name="ItemEditor" type="VBoxContainer" unique_id=404111430]
+offset_right = 424.0
+offset_bottom = 382.0
+size_flags_horizontal = 3
+theme = ExtResource("1_af6am")
+script = ExtResource("2_b7ylv")
+
+[node name="ItemDropdown" type="OptionButton" parent="." unique_id=1444857856]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TitleLine" type="LineEdit" parent="." unique_id=999779281]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="PriceSpin" type="SpinBox" parent="." unique_id=818812050]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="WeightSpin" type="SpinBox" parent="." unique_id=1981189813]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="IconPreview" type="TextureRect" parent="." unique_id=594702517]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SaveBtn" type="Button" parent="." unique_id=62762741]
+unique_name_in_owner = true
+layout_mode = 2
+text = "New"
+script = ExtResource("3_03at4")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="NewBtn" type="Button" parent="." unique_id=119692595]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Save"
+script = ExtResource("3_03at4")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="item_selected" from="ItemDropdown" to="." method="_on_item_dropdown_item_selected"]
+[connection signal="pressed" from="SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="NewBtn" to="." method="_on_new_btn_pressed"]
