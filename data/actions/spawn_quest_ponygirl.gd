@@ -43,9 +43,9 @@ func _spawn() -> Ponygirl:
 	p.init()
 	p.submission = 0
 	p.arousal = 35
-	var wild: Perk = PonygirlManager.get_perk_by_name("Wild")
-	if wild != null and not p.perks.has(wild):
-		p.perks.append(wild)
+	var stubborn: Perk = PonygirlManager.get_perk_by_name("Stubborn")
+	if stubborn != null and not p.perks.has(stubborn):
+		p.perks.append(stubborn)
 	if p.portrait == null and PonygirlManager.PORTRAITS.has(p._race):
 		p.portrait = PonygirlManager.PORTRAITS[p._race].pick_random()
 	return p

@@ -7,6 +7,8 @@
 [ext_resource type="Resource" uid="uid://bjtiwwiuuraev" path="res://data/item/wine.tres" id="3_xhmke"]
 [ext_resource type="Resource" uid="uid://chupthwmfqefv" path="res://data/item/grain.tres" id="4_ax8sw"]
 [ext_resource type="Resource" uid="uid://dnm7ycxn38yvh" path="res://data/item/salt.tres" id="5_7knee"]
+[ext_resource type="Resource" uid="uid://bs8lduo07rxiw" path="res://data/item/pony_berry.tres" id="6_ax8sw"]
+[ext_resource type="Resource" uid="uid://cuhgpkflhppvl" path="res://data/item/milk.tres" id="7_7knee"]
 
 [resource]
 script = ExtResource("3_li3rk")
@@ -17,5 +19,5 @@ A heavy fog limits your vision, but a path lit by flickering lanterns leads towa
 
 Its buildings are round, built from grey stone and topped with thatched roofs. Charms and wind chimes hang from the windows and wooden beams, swaying gently in the damp breeze."
 cheap_items = Array[ExtResource("1_1hyvp")]([ExtResource("2_c8xtr"), ExtResource("3_xhmke")])
-expensive_items = Array[ExtResource("1_1hyvp")]([ExtResource("4_ax8sw"), ExtResource("5_7knee")])
+expensive_items = Array[ExtResource("1_1hyvp")]([ExtResource("4_ax8sw"), ExtResource("5_7knee"), ExtResource("6_ax8sw"), ExtResource("7_7knee")])
 metadata/_custom_type_script = "uid://co4871x76a7qo"

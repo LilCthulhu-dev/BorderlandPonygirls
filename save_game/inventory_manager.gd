@@ -10,6 +10,7 @@ const PRICE_FACTOR : Dictionary = {
 	Enums.PRICE_TIER.NORMAL: 1.0,
 	Enums.PRICE_TIER.EXPENSIVE: 1.15,
 }
+const MAX_WEIGHT = 25
 
 @export var _inventory: Dictionary[StringName, Item] = {}
 @export var _trade_amount: int = 1
@@ -20,6 +21,15 @@ static var inventory: Dictionary[StringName, Item]:
 		GameData.inventory_manager._inventory = value
 	get:
 		return GameData.inventory_manager._inventory
+
+static var current_weight : int:
+	get:
+		var weight = 0
+		for item: Item in inventory.values():
+			weight += item.amount * item.weight
+		for flag: Flag in FlagsManager.flags.values():
+			weight += flag.weight
+		return weight
 
 static var trade_amount: int:
 	set(value):

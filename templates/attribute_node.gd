@@ -28,6 +28,8 @@ func _update_value():
 			value.text = "%s" % AttributesManager.trickery
 		Enums.ATTRIBUTES.WITS:
 			value.text = "%s" % AttributesManager.wits
+		Enums.ATTRIBUTES.WEIGHT:
+			value.text = "%s/%s" % [InventoryManager.current_weight, InventoryManager.MAX_WEIGHT]
 
 func _on_mouse_entered() -> void:
 	var txt = Enums.ATTRIBUTES.keys()[attribute].capitalize()

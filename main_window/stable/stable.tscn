@@ -120,36 +120,41 @@ layout_mode = 2
 size_flags_horizontal = 8
 attribute = 6
 
-[node name="AttributeNode7" parent="Content/VBoxContainer2/HBoxContainer" index="1" unique_id=403421632 instance=ExtResource("6_85wuu")]
+[node name="AttributeNode9" parent="Content/VBoxContainer2/HBoxContainer" index="1" unique_id=1921189629 instance=ExtResource("6_85wuu")]
+layout_mode = 2
+size_flags_horizontal = 8
+attribute = 9
+
+[node name="AttributeNode7" parent="Content/VBoxContainer2/HBoxContainer" index="2" unique_id=403421632 instance=ExtResource("6_85wuu")]
 layout_mode = 2
 size_flags_horizontal = 8
 attribute = 7
 
-[node name="AttributeNode" parent="Content/VBoxContainer2/HBoxContainer" index="2" unique_id=897811727 instance=ExtResource("6_85wuu")]
+[node name="AttributeNode" parent="Content/VBoxContainer2/HBoxContainer" index="3" unique_id=897811727 instance=ExtResource("6_85wuu")]
 layout_mode = 2
 size_flags_horizontal = 8
 attribute = 8
 
-[node name="AttributeNode2" parent="Content/VBoxContainer2/HBoxContainer" index="3" unique_id=2026209392 instance=ExtResource("6_85wuu")]
+[node name="AttributeNode2" parent="Content/VBoxContainer2/HBoxContainer" index="4" unique_id=2026209392 instance=ExtResource("6_85wuu")]
 layout_mode = 2
 size_flags_horizontal = 8
 
-[node name="AttributeNode3" parent="Content/VBoxContainer2/HBoxContainer" index="4" unique_id=2144575517 instance=ExtResource("6_85wuu")]
+[node name="AttributeNode3" parent="Content/VBoxContainer2/HBoxContainer" index="5" unique_id=2144575517 instance=ExtResource("6_85wuu")]
 layout_mode = 2
 size_flags_horizontal = 8
 attribute = 2
 
-[node name="AttributeNode4" parent="Content/VBoxContainer2/HBoxContainer" index="5" unique_id=896818453 instance=ExtResource("6_85wuu")]
+[node name="AttributeNode4" parent="Content/VBoxContainer2/HBoxContainer" index="6" unique_id=896818453 instance=ExtResource("6_85wuu")]
 layout_mode = 2
 size_flags_horizontal = 8
 attribute = 3
 
-[node name="AttributeNode5" parent="Content/VBoxContainer2/HBoxContainer" index="6" unique_id=996749142 instance=ExtResource("6_85wuu")]
+[node name="AttributeNode5" parent="Content/VBoxContainer2/HBoxContainer" index="7" unique_id=996749142 instance=ExtResource("6_85wuu")]
 layout_mode = 2
 size_flags_horizontal = 8
 attribute = 4
 
-[node name="AttributeNode8" parent="Content/VBoxContainer2/HBoxContainer" index="7" unique_id=1133987895 instance=ExtResource("6_85wuu")]
+[node name="AttributeNode8" parent="Content/VBoxContainer2/HBoxContainer" index="8" unique_id=1133987895 instance=ExtResource("6_85wuu")]
 layout_mode = 2
 size_flags_horizontal = 8
 attribute = 5

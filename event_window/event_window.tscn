@@ -83,6 +83,10 @@ alignment = 1
 layout_mode = 2
 attribute = 6
 
+[node name="AttributeNode9" parent="Header" unique_id=2048738558 instance=ExtResource("4_6nn1j")]
+layout_mode = 2
+attribute = 9
+
 [node name="AttributeNode7" parent="Header" unique_id=1243731058 instance=ExtResource("4_6nn1j")]
 layout_mode = 2
 attribute = 8
