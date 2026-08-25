@@ -71,7 +71,7 @@ func _get_random_race() -> Enums.PONYGIRL_RACES:
 	elif roll < 6:
 		return Enums.PONYGIRL_RACES.ELF
 	else:
-		return Enums.PONYGIRL_RACES.TIEFLING
+		return Enums.PONYGIRL_RACES.DEMONBLOOD
 
 # ======================================================= abilities
 func get_mod_bonus() -> int:
