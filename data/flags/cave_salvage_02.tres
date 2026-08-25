@@ -7,4 +7,5 @@
 script = ExtResource("1_script")
 image = ExtResource("1_a601k")
 description = "You recovered a crate of stolen imperial goods. The guards at the Trading Post might reward you for returning it."
+weight = 3
 metadata/_custom_type_script = "uid://cm8dinv8ax8bq"

@@ -16,7 +16,8 @@ func use() -> void:
 		TARGET.RESTING:
 			PonygirlManager.focused_ponygirl = PonygirlManager.get_random_resting_ponygirl()
 		TARGET.ALL:
-			PonygirlManager.focused_ponygirl = PonygirlManager.ponygirls.pick_random()
+			var all := PonygirlManager.get_all_ponygirls()
+			PonygirlManager.focused_ponygirl = all.pick_random() if not all.is_empty() else null
 
 func requirement_met() -> bool:
 	match target:
@@ -25,6 +26,6 @@ func requirement_met() -> bool:
 		TARGET.RESTING:
 			return !PonygirlManager.get_resting_ponygirls().is_empty()
 		TARGET.ALL:
-			return !PonygirlManager.ponygirls.is_empty()
+			return not PonygirlManager.get_all_ponygirls().is_empty()
 		_:
 			return false

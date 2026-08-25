@@ -3,7 +3,7 @@ extends StoryPage
 @onready var list_container: VBoxContainer = %ListContainer
 @onready var entry_header: Label = %EntryHeader
 @onready var entry_image: TextureRect = %EntryImage
-@onready var entry_description: Label = %EntryDescription
+@onready var entry_description: RichTextLabel = %EntryDescription
 
 @export_dir var wiki_entries_folder := "res://data/wiki_entries/"
 var wiki_entries : Array[WikiEntry] = []

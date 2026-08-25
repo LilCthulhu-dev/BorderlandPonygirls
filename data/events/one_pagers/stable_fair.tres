@@ -14,7 +14,7 @@
 [ext_resource type="Resource" uid="uid://ccqonjmkfn23v" path="res://data/perks/submissive.tres" id="7_sub"]
 [ext_resource type="Resource" uid="uid://bb6t5y2nu83pj" path="res://data/perks/strong.tres" id="8_strong"]
 [ext_resource type="Resource" uid="uid://2vmtjdwwxxth" path="res://data/perks/hardy.tres" id="9_hardy"]
-[ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/wild.tres" id="10_wild"]
+[ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/stubborn.tres" id="10_wild"]
 [ext_resource type="Resource" uid="uid://bgcens45256st" path="res://data/perks/brat.tres" id="11_brat"]
 
 [sub_resource type="Resource" id="Resource_loyal_desc"]

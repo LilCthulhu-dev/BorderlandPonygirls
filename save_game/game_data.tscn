@@ -21,7 +21,15 @@
 [ext_resource type="Resource" uid="uid://bb6t5y2nu83pj" path="res://data/perks/strong.tres" id="11_vnpa2"]
 [ext_resource type="Resource" uid="uid://ccqonjmkfn23v" path="res://data/perks/submissive.tres" id="12_2owb6"]
 [ext_resource type="Resource" uid="uid://f6qtp4a0l7wd" path="res://data/perks/unhappy.tres" id="13_gwnvk"]
-[ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/wild.tres" id="14_gp8wl"]
+[ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/stubborn.tres" id="14_gp8wl"]
+[ext_resource type="Resource" uid="uid://dc5bgdyctx14l" path="res://data/perks/flat.tres" id="15_jmp4y"]
+[ext_resource type="Resource" uid="uid://7epsqb2gepso" path="res://data/perks/heat.tres" id="18_o73vt"]
+[ext_resource type="Resource" uid="uid://c3jrk3kvefk32" path="res://data/perks/mana_milkers.tres" id="21_qs24h"]
+[ext_resource type="Resource" uid="uid://qb7wo1ihhmi7" path="res://data/perks/mana_sight.tres" id="22_umvp0"]
+[ext_resource type="Resource" uid="uid://cseyfgogfgkre" path="res://data/perks/nosy.tres" id="23_b82i6"]
+[ext_resource type="Resource" uid="uid://d2udcsetn5lkt" path="res://data/perks/phase_step.tres" id="24_gyuv6"]
+[ext_resource type="Resource" uid="uid://7ucyok3qhagm" path="res://data/perks/pony_oath.tres" id="25_ssp6q"]
+[ext_resource type="Resource" uid="uid://curjvurl4m1o7" path="res://data/perks/tall.tres" id="29_1bnj3"]
 
 [sub_resource type="Resource" id="Resource_mqmyc"]
 script = ExtResource("3_fd73u")
@@ -134,7 +142,7 @@ metadata/_custom_type_script = "uid://cy0fnw6jwovce"
 
 [sub_resource type="Resource" id="Resource_kc2dl"]
 script = ExtResource("6_efdwm")
-text = "You call {PONYNAME} into your tent, before ordering your men to leave. You order her to lay down on a big bear fur, spread out on the flor, and spread her legs.
+text = "You call {PONYNAME} into your tent, before ordering your men to leave. You order her to lay down on a big bear fur, spread out on the floor, and spread her legs.
 
 She huffs nervously, watching with wide eyes as you undress, and steps up to her. You praise her submission, as you lean down, and sink your shaft into her.
 
@@ -170,4 +178,4 @@ combat_defeat_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_cq4
 training_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_ur0se"), SubResource("Resource_0j7dv"), SubResource("Resource_at000"), SubResource("Resource_hlpe4")])
 teasing_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_nx3u7"), SubResource("Resource_girl5"), SubResource("Resource_mnk8w"), SubResource("Resource_u4d3l")])
 climax_actions = Array[ExtResource("2_qpxo2")]([SubResource("Resource_tkrab"), SubResource("Resource_ps30a"), SubResource("Resource_fdpya"), SubResource("Resource_ckcii")])
-list_of_perks = Array[ExtResource("2_8acbl")]([ExtResource("3_fuc7p"), ExtResource("4_nofhj"), ExtResource("5_0asnj"), ExtResource("6_khn66"), ExtResource("7_ajtu8"), ExtResource("8_pwmmk"), ExtResource("9_tdxlw"), ExtResource("10_6tarp"), ExtResource("11_vnpa2"), ExtResource("12_2owb6"), ExtResource("13_gwnvk"), ExtResource("14_gp8wl")])
+list_of_perks = Array[ExtResource("2_8acbl")]([ExtResource("3_fuc7p"), ExtResource("4_nofhj"), ExtResource("5_0asnj"), ExtResource("6_khn66"), ExtResource("15_jmp4y"), ExtResource("7_ajtu8"), ExtResource("8_pwmmk"), ExtResource("18_o73vt"), ExtResource("9_tdxlw"), ExtResource("10_6tarp"), ExtResource("21_qs24h"), ExtResource("22_umvp0"), ExtResource("23_b82i6"), ExtResource("24_gyuv6"), ExtResource("25_ssp6q"), ExtResource("11_vnpa2"), ExtResource("14_gp8wl"), ExtResource("12_2owb6"), ExtResource("29_1bnj3"), ExtResource("13_gwnvk")])

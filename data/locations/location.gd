@@ -18,16 +18,18 @@ var id: StringName:
 @export var quest_events : Array[Event]
 
 func has_item(item : Item) -> bool:
-	return (
-		not LocationManager.current_location.cheap_items.has(item)
-		or not LocationManager.current_location.expensive_items.has(item)
-	)
+	if item == null:
+		return false
+	for local_item: Item in cheap_items:
+		if local_item != null and local_item.id == item.id:
+			return true
+	for local_item: Item in expensive_items:
+		if local_item != null and local_item.id == item.id:
+			return true
+	return false
 
 func has_shop() -> bool:
-	return (
-		not LocationManager.current_location.cheap_items.is_empty()
-		or not LocationManager.current_location.expensive_items.is_empty()
-	)
+	return not cheap_items.is_empty() or not expensive_items.is_empty()
 
 func has_valid_random_events() -> bool:
 	for event in random_events:

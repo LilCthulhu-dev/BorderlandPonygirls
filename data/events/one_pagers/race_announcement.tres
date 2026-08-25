@@ -58,6 +58,8 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [sub_resource type="Resource" id="Resource_gjll1"]
 script = ExtResource("6_grxs5")
 add_flag = Array[ExtResource("3_vlgk8")]([ExtResource("4_oohyi")])
+required_flag = Array[ExtResource("3_vlgk8")]([ExtResource("5_gjll1")])
+forbidden_flag = Array[ExtResource("3_vlgk8")]([ExtResource("4_oohyi")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [resource]

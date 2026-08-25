@@ -7,4 +7,5 @@
 script = ExtResource("1_script")
 image = ExtResource("1_icon")
 description = "Bring a wain of fodder from the Halfling Village to the Goblin Village stables."
+weight = 5
 metadata/_custom_type_script = "uid://cm8dinv8ax8bq"
