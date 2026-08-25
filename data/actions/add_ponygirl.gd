@@ -3,7 +3,7 @@ class_name AddPonygirl
 
 @export var ponygirl : Ponygirl = preload("res://data/ponygirls/default_pony.tres")
 
-@export_group('Ponygirl Adjustments')
+@export_group('Adjustments')
 @export var force_name = ""
 @export var force_race := Enums.PONYGIRL_RACES.UNKNOWN
 @export var force_hair_color := ""
