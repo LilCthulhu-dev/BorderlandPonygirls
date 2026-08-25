@@ -21,9 +21,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_watch"]
 script = ExtResource("12")
-txt = "A watchman with fish-scales on his boots jerks a thumb inland.
-
-“Second goblin crew last night. Not a local string. They had a dark-haired mare in new tack, gagged. Didn’t stop at the sheds. Took the wilderness road.”"
+txt = "A watchman with fish-scales on his boots jerks a thumb inland.\n\n“Second goblin crew last night. Not a local string. They had a dark-haired mare in new tack, gagged. Didn’t stop at the sheds. Took the wilderness road.”"
 metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_ask"]
