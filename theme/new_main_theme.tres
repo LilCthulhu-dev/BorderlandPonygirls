@@ -116,9 +116,17 @@ content_margin_left = 15.0
 content_margin_top = 15.0
 content_margin_right = 15.0
 content_margin_bottom = 15.0
-bg_color = Color(1, 1, 1, 1)
+bg_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sd5i7"]
+content_margin_left = 5.0
+content_margin_top = 8.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.92156863, 0.92941177, 0.9137255, 1)
+border_color = Color(0.64705884, 0.1882353, 0.1882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m0ov0"]
 bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sqwfb"]
@@ -188,10 +196,12 @@ RichTextLabel/constants/underline_alpha = 100
 RichTextLabel/font_sizes/bold_font_size = 22
 RichTextLabel/font_sizes/mono_font_size = 18
 RichTextLabel/font_sizes/normal_font_size = 18
+TabContainer/colors/font_selected_color = Color(0.03529412, 0.039215688, 0.078431375, 1)
 TabContainer/styles/panel = SubResource("StyleBoxFlat_fjngd")
+TabContainer/styles/tab_selected = SubResource("StyleBoxFlat_sd5i7")
 VBoxContainer/constants/separation = 15
 VScrollBar/constants/padding_left = 0
 VScrollBar/constants/padding_right = 0
-VScrollBar/styles/grabber = SubResource("StyleBoxFlat_sd5i7")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_m0ov0")
 VScrollBar/styles/scroll = SubResource("StyleBoxFlat_sqwfb")
 VSeparator/styles/separator = SubResource("StyleBoxLine_mwvoh")

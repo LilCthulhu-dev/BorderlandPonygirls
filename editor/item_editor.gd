@@ -8,46 +8,40 @@ extends VBoxContainer
 
 const ITEM_FOLDER := "res://data/item/"
 var list_of_items: Array[Item] = []
-var item_paths: Array[String] = []
 var current_item: Item
 var current_item_path := ""
 
 func _ready() -> void:
 	_update_editor()
-	if not item_paths.is_empty():
-		load_item(item_paths[0])
-		item_dropdown.select(0)
-	else:
-		_new_item()
+	_new_item()
 
 func _on_save_btn_pressed() -> void:
 	_save_item()
 	_update_editor()
 
 func _on_new_btn_pressed() -> void:
+	item_dropdown.select(0)
 	_new_item()
-	_update_editor()
 
 func _on_item_dropdown_item_selected(index: int) -> void:
-	load_item(item_paths[index])
+	if index == 0:
+		_new_item()
+	else:
+		load_item(list_of_items[index - 1])
 
 func _update_editor():
 	_load_item_list()
 	_update_dropdown()
-	if not item_paths.is_empty():
-		load_item(item_paths[0])
-		item_dropdown.select(0)
-	else:
-		_new_item()
+	item_dropdown.select(0)
 
 func _update_dropdown() -> void:
 	item_dropdown.clear()
+	item_dropdown.add_item('unknown/new')
 	for item in list_of_items:
 		item_dropdown.add_item(item.title)
 
 func _load_item_list() -> void:
 	list_of_items.clear()
-	item_paths.clear()
 
 	var dir := DirAccess.open(ITEM_FOLDER)
 	if dir == null: return
@@ -58,17 +52,14 @@ func _load_item_list() -> void:
 		if not dir.current_is_dir() and file_name.get_extension() == "tres":
 			var path := ITEM_FOLDER + file_name
 			var item := load(path) as Item
-
-			if item != null:
-				list_of_items.push_back(item)
-				item_paths.push_back(path)
+			if item == null: continue
+			list_of_items.push_back(item)
 		file_name = dir.get_next()
 
 	dir.list_dir_end()
 
-func load_item(path: String) -> void:
-	current_item = load(path) as Item
-	current_item_path = path
+func load_item(item: Item) -> void:
+	current_item = item
 	title_line.text = current_item.title
 	price_spin.value = current_item.price
 	weight_spin.value = current_item.weight
@@ -77,18 +68,14 @@ func load_item(path: String) -> void:
 func _new_item():
 	current_item = Item.new()
 	current_item_path = ""
-	title_line.text = ""
-	price_spin.value = 0
-	weight_spin.value = 1
-	icon_preview.texture = null
+	load_item(current_item)
 
 func _save_item():
-	if current_item == null:
-		return
 	current_item.title = title_line.text
 	current_item.price = int(price_spin.value)
 	current_item.weight = int(weight_spin.value)
 	current_item.icon = icon_preview.texture
-	if current_item_path.is_empty():
-		current_item_path = ITEM_FOLDER + current_item.id + ".tres"
-	ResourceSaver.save(current_item, current_item_path)
+	var path := current_item.resource_path
+	if path.is_empty():
+		path = ITEM_FOLDER + current_item.id + ".tres"
+	ResourceSaver.save(current_item, path)

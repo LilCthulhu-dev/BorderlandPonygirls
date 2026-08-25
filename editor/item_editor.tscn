@@ -15,17 +15,39 @@ script = ExtResource("2_b7ylv")
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="TitleLine" type="LineEdit" parent="." unique_id=999779281]
-unique_name_in_owner = true
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1870979454]
 layout_mode = 2
+columns = 2
 
-[node name="PriceSpin" type="SpinBox" parent="." unique_id=818812050]
-unique_name_in_owner = true
+[node name="Label" type="Label" parent="GridContainer" unique_id=1257687715]
+custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
+text = "Title: "
 
-[node name="WeightSpin" type="SpinBox" parent="." unique_id=1981189813]
+[node name="TitleLine" type="LineEdit" parent="GridContainer" unique_id=999779281]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="GridContainer" unique_id=1641803941]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Price: "
+
+[node name="PriceSpin" type="SpinBox" parent="GridContainer" unique_id=818812050]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="GridContainer" unique_id=1767714209]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Weight: "
+
+[node name="WeightSpin" type="SpinBox" parent="GridContainer" unique_id=1981189813]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="IconPreview" type="TextureRect" parent="." unique_id=594702517]
 unique_name_in_owner = true
@@ -38,14 +60,14 @@ stretch_mode = 5
 [node name="SaveBtn" type="Button" parent="." unique_id=62762741]
 unique_name_in_owner = true
 layout_mode = 2
-text = "New"
+text = "Save"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
 [node name="NewBtn" type="Button" parent="." unique_id=119692595]
 unique_name_in_owner = true
 layout_mode = 2
-text = "Save"
+text = "New"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
