@@ -29,7 +29,7 @@ script = ExtResource("11")
 amount = "+{GOOD_WAGE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 
-[sub_resource type="Resource" id="Resource_extra"]
+[sub_resource type="Resource" id="Resource_pay_extra"]
 script = ExtResource("11")
 amount = "+{MEDIUM_WAGE}"
 metadata/_custom_type_script = "uid://b2kag3ewwrnih"
@@ -92,7 +92,7 @@ ability = 4
 txt = "Squeeze him for more"
 succes_txt = "You mention the buyer-wax and the second crew. He pays extra to make you quiet. The extra is already in the purse."
 fail_txt = "He goes stiff. No extra coin. He will still take her if you hand her over."
-succes_actions = Array[ExtResource("1")]([SubResource("Resource_extra")])
+succes_actions = Array[ExtResource("1")]([SubResource("Resource_pay_extra")])
 metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
 
 [resource]
