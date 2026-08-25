@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://y6wjgpsof7rw"]
+
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="1_3s5i0"]
+[ext_resource type="Script" uid="uid://d17ac53wwgx7m" path="res://editor/perks_editor.gd" id="1_vbpt5"]
+
+[node name="Perks" type="TabBar" unique_id=1865565266]
+script = ExtResource("1_vbpt5")
+metadata/_tab_index = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1826417576]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=911177917]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_right = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer" unique_id=646344574]
+layout_mode = 2
+
+[node name="ItemDropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=602267627]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1495087110]
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1894735971]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Title: "
+
+[node name="TitleLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1254338003]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label2" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=444383739]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Price: "
+
+[node name="PriceSpin" type="SpinBox" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1101483347]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label3" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1607850599]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Weight: "
+
+[node name="WeightSpin" type="SpinBox" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=754306161]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IconFileDialog" type="FileDialog" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2120937073]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Open a File"
+file_mode = 0
+root_subfolder = "res://assets/icons"
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=342798159]
+layout_mode = 2
+
+[node name="IconPreview" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1659343862]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GridContainer2" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1568543225]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/h_separation = 25
+columns = 3
+
+[node name="AddIconBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=54880484]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Icon"
+script = ExtResource("1_3s5i0")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="SaveBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=282890825]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Save"
+script = ExtResource("1_3s5i0")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="NewBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=1367997932]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "New"
+script = ExtResource("1_3s5i0")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"

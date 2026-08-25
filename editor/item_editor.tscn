@@ -4,62 +4,80 @@
 [ext_resource type="Script" uid="uid://ecvk1ets6knn" path="res://editor/item_editor.gd" id="2_b7ylv"]
 [ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="3_03at4"]
 
-[node name="ItemEditor" type="VBoxContainer" unique_id=404111430]
+[node name="Items" type="TabBar" unique_id=973294089]
 offset_right = 424.0
 offset_bottom = 382.0
 size_flags_horizontal = 3
 theme = ExtResource("1_af6am")
 script = ExtResource("2_b7ylv")
 
-[node name="ItemDropdown" type="OptionButton" parent="." unique_id=1444857856]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=824529189]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=2011242312]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_right = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer" unique_id=1047921037]
+layout_mode = 2
+
+[node name="ItemDropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1444857856]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="GridContainer" type="GridContainer" parent="." unique_id=1870979454]
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1870979454]
 layout_mode = 2
 columns = 2
 
-[node name="Label" type="Label" parent="GridContainer" unique_id=1257687715]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1257687715]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 text = "Title: "
 
-[node name="TitleLine" type="LineEdit" parent="GridContainer" unique_id=999779281]
+[node name="TitleLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=999779281]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label2" type="Label" parent="GridContainer" unique_id=1641803941]
+[node name="Label2" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1641803941]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 text = "Price: "
 
-[node name="PriceSpin" type="SpinBox" parent="GridContainer" unique_id=818812050]
+[node name="PriceSpin" type="SpinBox" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=818812050]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label3" type="Label" parent="GridContainer" unique_id=1767714209]
+[node name="Label3" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1767714209]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 text = "Weight: "
 
-[node name="WeightSpin" type="SpinBox" parent="GridContainer" unique_id=1981189813]
+[node name="WeightSpin" type="SpinBox" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=1981189813]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="IconFileDialog" type="FileDialog" parent="." unique_id=2062039109]
+[node name="IconFileDialog" type="FileDialog" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2062039109]
+unique_name_in_owner = true
 oversampling_override = 1.0
 title = "Open a File"
 file_mode = 0
 root_subfolder = "res://assets/icons"
 filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1344428518]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1344428518]
 layout_mode = 2
 
-[node name="IconPreview" type="TextureRect" parent="HBoxContainer" unique_id=594702517]
+[node name="IconPreview" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=594702517]
 unique_name_in_owner = true
 modulate = Color(0, 0, 0, 1)
 custom_minimum_size = Vector2(100, 100)
@@ -68,11 +86,13 @@ size_flags_horizontal = 3
 expand_mode = 1
 stretch_mode = 5
 
-[node name="GridContainer2" type="GridContainer" parent="." unique_id=437167275]
+[node name="GridContainer2" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=437167275]
 layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/h_separation = 25
 columns = 3
 
-[node name="AddIconBtn" type="Button" parent="GridContainer2" unique_id=1805084986]
+[node name="AddIconBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=1805084986]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -80,7 +100,7 @@ text = "Icon"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
-[node name="SaveBtn" type="Button" parent="GridContainer2" unique_id=62762741]
+[node name="SaveBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=62762741]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -88,7 +108,7 @@ text = "Save"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
-[node name="NewBtn" type="Button" parent="GridContainer2" unique_id=119692595]
+[node name="NewBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=119692595]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -96,8 +116,8 @@ text = "New"
 script = ExtResource("3_03at4")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
-[connection signal="item_selected" from="ItemDropdown" to="." method="_on_item_dropdown_item_selected"]
-[connection signal="file_selected" from="IconFileDialog" to="." method="_on_icon_file_dialog_file_selected"]
-[connection signal="pressed" from="GridContainer2/AddIconBtn" to="." method="_on_add_icon_btn_pressed"]
-[connection signal="pressed" from="GridContainer2/SaveBtn" to="." method="_on_save_btn_pressed"]
-[connection signal="pressed" from="GridContainer2/NewBtn" to="." method="_on_new_btn_pressed"]
+[connection signal="item_selected" from="ScrollContainer/MarginContainer/VBoxContainer/ItemDropdown" to="." method="_on_item_dropdown_item_selected"]
+[connection signal="file_selected" from="ScrollContainer/MarginContainer/VBoxContainer/IconFileDialog" to="." method="_on_icon_file_dialog_file_selected"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/AddIconBtn" to="." method="_on_add_icon_btn_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/NewBtn" to="." method="_on_new_btn_pressed"]

@@ -1,11 +1,11 @@
-extends VBoxContainer
+extends TabBar
 
 @onready var item_dropdown: OptionButton = %ItemDropdown
 @onready var title_line: LineEdit = %TitleLine
 @onready var price_spin: SpinBox = %PriceSpin
 @onready var weight_spin: SpinBox = %WeightSpin
 @onready var icon_preview: TextureRect = %IconPreview
-@onready var icon_file_dialog: FileDialog = $IconFileDialog
+@onready var icon_file_dialog: FileDialog = %IconFileDialog
 
 const ITEM_FOLDER := "res://data/item/"
 var list_of_items: Array[Item] = []
