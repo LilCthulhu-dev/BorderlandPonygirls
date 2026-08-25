@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_mcq87")
 bonus = 2
-group = 3
+group = 2
 metadata/_custom_type_script = "uid://08pb1wingorc"
