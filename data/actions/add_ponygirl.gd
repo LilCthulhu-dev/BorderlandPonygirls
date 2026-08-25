@@ -3,6 +3,7 @@ class_name AddPonygirl
 
 @export var ponygirl : Ponygirl = preload("res://data/ponygirls/default_pony.tres")
 
+@export_group('Ponygirl Adjustments')
 @export var force_name = ""
 @export var force_race := Enums.PONYGIRL_RACES.UNKNOWN
 @export var force_hair_color := ""
@@ -18,8 +19,7 @@ class_name AddPonygirl
 var _pending_name: String = Ponygirl.get_random_name()
 
 func use() -> void:
-	var instance: Ponygirl = _get_instance()
-	PonygirlManager.add_ponygirl(instance)
+	PonygirlManager.add_ponygirl(_get_instance())
 
 func requirement_met() -> bool:
 	return PonygirlManager.slots_free()
@@ -31,24 +31,17 @@ func get_result() -> String:
 	return Utils.translate("- Add ponygirl %s to your stable") % _pending_name
 
 func _get_instance() -> Ponygirl:
-	var p : Ponygirl = ponygirl if ponygirl != null else load("res://data/ponygirls/default_pony.tres")
-	p = p.duplicate(true)
-
+	var p : Ponygirl = ponygirl.duplicate(true)
+	p.name = force_name if force_name != "" else _pending_name
 	p.id = ""
-	if force_name != "":
-		p.name =force_name
-	else:
-		p.name = _pending_name
-
 	p._race = force_race
 	p.hair_color = force_hair_color
 	p.eye_color = force_eye_color
 	p.skin_tone = force_skin_tone
 	if force_portrait != null:
 		p.portrait = force_portrait
-
 	p.xp = force_xp
 	p.submission = force_submission
 	p.arousal = force_arousal
-	p.perks = perks
+	p.perks = perks.duplicate()
 	return p
