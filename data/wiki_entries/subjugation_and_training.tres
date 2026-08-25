@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WikiEntry" format=3 uid="uid://ctjdfqwbgt4l5"]
+
+[ext_resource type="Script" uid="uid://bkxhc74auednr" path="res://data/wiki_entries/wiki_entry.gd" id="1_7ailv"]
+
+[resource]
+script = ExtResource("1_7ailv")
+description = "Goblins consider sexual desire, frustration, and denial essential to the subjugation and training of their ponygirls, particularly when combined with the natural aphrodisiac properties of goblin sperm.
+They devote considerable effort to keeping their she-beasts constantly aroused and wanting while preventing them from masturbating. Through a combination of cleverly designed equipment and calculated training methods, the goblin masters become their only source of sexual relief.
+During their first days of captivity, ponygirls are subjected to intense sexual conditioning that produces several almost overwhelming orgasms. Afterwards, however, they are denied release completely for several days. Sexual relief is then gradually reintroduced as a reward for obedience.
+Oral and anal encounters from which the ponygirl receives no climax become a regular occurrence. During these encounters, the she-beast is expected to serve her goblin masters obediently. If she remains submissive and performs her duties well, she may be rewarded with vaginal intercourse and permitted to reach orgasm herself.
+This conditioning creates an intense psychological dependency. Within only a few weeks, it can transform almost any captured woman, regardless of her initial defiance, into a desperately aroused and obedient ponygirl.
+
+— Excerpt from “Ponygirls of the Borderlands: An Essay on Goblins and Their Mounts,” by Scholar Lula of Trisa Academy"
+metadata/_custom_type_script = "uid://bkxhc74auednr"
