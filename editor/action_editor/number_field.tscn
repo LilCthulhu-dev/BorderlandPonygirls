@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c05ewqi1axd1q"]
+
+[ext_resource type="Script" uid="uid://cth27pdjjle1b" path="res://editor/action_editor/number_field.gd" id="1_516mf"]
+
+[node name="NumberField" type="HBoxContainer" unique_id=298929219]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_516mf")
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1089741792]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="NumberBox" type="SpinBox" parent="." unique_id=1100461733]
+unique_name_in_owner = true
+layout_mode = 2
+
+[connection signal="value_changed" from="NumberBox" to="." method="_on_number_box_value_changed"]

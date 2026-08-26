@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://gavwvji6fx0f"]
+
+[ext_resource type="Script" uid="uid://xqt3g2rqlt28" path="res://editor/action_editor/action_field.gd" id="1_dakhu"]
+
+[node name="UnsupportedField" type="HBoxContainer" unique_id=236100278]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dakhu")
+metadata/_custom_type_script = "uid://xqt3g2rqlt28"
+
+[node name="Label" type="Label" parent="." unique_id=568134625]
+layout_mode = 2
+text = "Unsuported Field"
+uppercase = true

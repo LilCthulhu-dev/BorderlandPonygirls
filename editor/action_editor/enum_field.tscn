@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://j0u1bkdv01n3"]
+
+[ext_resource type="Script" uid="uid://d2l7usvs06r64" path="res://editor/action_editor/enum_field.gd" id="1_abgu5"]
+
+[node name="EnumField" type="HBoxContainer" unique_id=1320763896]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_abgu5")
+metadata/_custom_type_script = "uid://xqt3g2rqlt28"
+
+[node name="Label" type="Label" parent="." unique_id=1719758604]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Dropdown" type="OptionButton" parent="." unique_id=1781213975]
+unique_name_in_owner = true
+layout_mode = 2
+
+[connection signal="item_selected" from="Dropdown" to="." method="_on_dropdown_item_selected"]

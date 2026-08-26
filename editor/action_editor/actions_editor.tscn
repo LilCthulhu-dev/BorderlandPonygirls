@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bg7b7lead1d8v"]
 
-[ext_resource type="Script" uid="uid://0me4io5i7qyf" path="res://editor/actions_editor.gd" id="1_tv7h8"]
-[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_ufvww"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_ofq0j"]
+[ext_resource type="Script" uid="uid://0me4io5i7qyf" path="res://editor/action_editor/actions_editor.gd" id="2_h28d2"]
 
 [node name="ActionsEditor" type="FoldableContainer" unique_id=780387642]
 anchors_preset = 15
@@ -9,9 +9,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_ufvww")
+theme = ExtResource("1_ofq0j")
 title = "Actions"
-script = ExtResource("1_tv7h8")
+script = ExtResource("2_h28d2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=926660226]
 custom_minimum_size = Vector2(150, 0)
@@ -31,10 +31,11 @@ unique_name_in_owner = true
 layout_mode = 2
 search_bar_enabled = true
 
-[node name="ActionContent" type="HFlowContainer" parent="HBoxContainer" unique_id=584148049]
+[node name="ActionContent" type="GridContainer" parent="HBoxContainer" unique_id=81401166]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/h_separation = 15
+columns = 3
 
 [connection signal="item_selected" from="HBoxContainer/VBoxContainer/NewAction" to="." method="_on_new_action_item_selected"]

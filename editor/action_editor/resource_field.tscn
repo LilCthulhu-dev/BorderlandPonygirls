@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dgwu1ybiom4pm"]
+
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_nt8ie"]
+[ext_resource type="Script" uid="uid://2lvsy4moujc5" path="res://editor/action_editor/resource_field.gd" id="1_rpseg"]
+
+[node name="ResourceOption" type="HBoxContainer" unique_id=210338590]
+propagate_maximum_size = false
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_nt8ie")
+script = ExtResource("1_rpseg")
+
+[node name="TitleLabel" type="Label" parent="." unique_id=1037686696]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Dropdown" type="OptionButton" parent="." unique_id=1644574169]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="item_selected" from="Dropdown" to="." method="_on_dropdown_item_selected"]

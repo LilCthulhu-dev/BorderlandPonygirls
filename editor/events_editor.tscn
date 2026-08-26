@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ccxr0h6buxpwg" path="res://editor/events_editor.gd" id="1_4dqpe"]
 [ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="1_ddxmx"]
 [ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_vgec0"]
-[ext_resource type="PackedScene" uid="uid://bg7b7lead1d8v" path="res://editor/actions_editor.tscn" id="4_oehsg"]
+[ext_resource type="PackedScene" uid="uid://bg7b7lead1d8v" path="res://editor/action_editor/actions_editor.tscn" id="4_oehsg"]
 
 [node name="Events" type="TabBar" unique_id=2091982552]
 anchors_preset = 15
@@ -159,6 +159,11 @@ script = ExtResource("1_ddxmx")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
 [node name="OpenActions" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" unique_id=775997452 instance=ExtResource("4_oehsg")]
+unique_name_in_owner = true
+layout_mode = 2
+title = "Open Actions"
+
+[node name="CloseActions" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer" unique_id=780387642 instance=ExtResource("4_oehsg")]
 unique_name_in_owner = true
 layout_mode = 2
 title = "Open Actions"

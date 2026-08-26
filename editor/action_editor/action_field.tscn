@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ce15ytgbpqbgj"]
+
+[ext_resource type="Script" uid="uid://xqt3g2rqlt28" path="res://editor/action_editor/action_field.gd" id="1_03j8q"]
+
+[node name="ActionField" type="HBoxContainer" unique_id=1879887782]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+script = ExtResource("1_03j8q")

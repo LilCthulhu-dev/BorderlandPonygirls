@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dj71wynu1bdj1"]
+
+[ext_resource type="Script" uid="uid://crbisc6qoq0s0" path="res://editor/action_editor/boolean_field.gd" id="1_ih81h"]
+
+[node name="BooleanField" type="HBoxContainer" unique_id=1244685687]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ih81h")
+metadata/_custom_type_script = "uid://xqt3g2rqlt28"
+
+[node name="CheckBox" type="CheckBox" parent="." unique_id=261756352]
+unique_name_in_owner = true
+layout_mode = 2
+
+[connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]
