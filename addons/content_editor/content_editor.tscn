@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://b1rmg7548o7lk"]
 
+[ext_resource type="Script" uid="uid://bfka5qpxxjgfj" path="res://addons/content_editor/content_editor.gd" id="1_o5msk"]
+[ext_resource type="PackedScene" uid="uid://dr0uwvb262oms" path="res://addons/content_editor/items/items.tscn" id="2_3hl86"]
+
 [node name="Editor" type="Control" unique_id=1716323595]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +10,26 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_o5msk")
+
+[node name="TabContainer" type="TabContainer" parent="." unique_id=228693552]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 1
+
+[node name="Items" parent="TabContainer" unique_id=986378067 instance=ExtResource("2_3hl86")]
+visible = false
+layout_mode = 2
+
+[node name="Perks" type="TabBar" parent="TabContainer" unique_id=1946907120]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Events" type="TabBar" parent="TabContainer" unique_id=256057463]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
