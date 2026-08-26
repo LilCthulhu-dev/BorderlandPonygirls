@@ -2,7 +2,8 @@ extends Resource
 class_name Event
 
 @export var titel : String
-@export var _id := ""
+@export var sub_folder : String
+@export var _id: StringName
 var id: StringName:
 	get:
 		if _id == "":

@@ -80,6 +80,16 @@ title = "Basics"
 layout_mode = 2
 columns = 2
 
+[node name="Label4" type="Label" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=1664815826]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Subfolder:"
+
+[node name="SubfolderLine" type="LineEdit" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=1456481441]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="Label" type="Label" parent="VBoxContainer/ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=376478398]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2

@@ -1,6 +1,7 @@
 extends TabBar
 
 @onready var main_dropdown: OptionButton = %MainDropdown
+@onready var subfolder_line: LineEdit = %SubfolderLine
 @onready var id_line: LineEdit = %IDLine
 @onready var title_line: LineEdit = %TitleLine
 @onready var description_edit: TextEdit = %DescriptionEdit
@@ -57,9 +58,10 @@ func _load_folder(folder_path: String) -> void:
 
 		elif file_name.get_extension().to_lower() == "tres":
 			var event := load(path) as Event
-
 			if event != null:
-				list.push_back(event)
+				if event.sub_folder.is_empty() and folder_path != FOLDER:
+					event.sub_folder = folder_path.trim_prefix(FOLDER)
+			list.push_back(event)
 
 		file_name = dir.get_next()
 
@@ -76,6 +78,8 @@ func _new():
 
 func _load(event: Event) -> void:
 	current_event = event
+
+	subfolder_line.text = current_event.sub_folder
 	id_line.text = current_event.id
 	title_line.text = current_event.titel
 	description_edit.text = current_event.description
@@ -83,9 +87,18 @@ func _load(event: Event) -> void:
 	open_actions.list_of_actions = current_event.open_actions
 	close_actions.list_of_actions = current_event.close_actions
 
+func _get_new_path() -> String:
+	var folder := FOLDER
+	if not current_event.sub_folder.is_empty():
+		folder = folder.path_join(current_event.sub_folder)
+	folder = folder.path_join(current_event.id)
+	return folder + ".tres"
+
 func _save() -> void:
 	if current_event == null:
 		return
+
+	current_event.sub_folder = subfolder_line.text
 	current_event.id = Utils.string_to_id(id_line.text)
 	current_event.titel = title_line.text.strip_edges()
 	current_event.description = description_edit.text
@@ -98,14 +111,13 @@ func _save() -> void:
 		return
 
 	var old_path := current_event.resource_path
-	var folder := FOLDER.path_join(current_event.id)
-	var new_path := folder.path_join(current_event.id + ".tres")
+	var new_path = _get_new_path()
 
 	if new_path != old_path and FileAccess.file_exists(new_path):
-		push_warning("An event with this ID already exists.")
+		push_warning("An event with this ID already exists in that folder.")
 		return
 
-	DirAccess.make_dir_recursive_absolute(folder)
+	DirAccess.make_dir_recursive_absolute(new_path.get_base_dir())
 	var error := ResourceSaver.save(current_event, new_path)
 	if error != OK:
 		push_error("Could not save event: " + error_string(error))
