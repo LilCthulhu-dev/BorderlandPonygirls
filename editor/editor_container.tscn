@@ -13,9 +13,10 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_41vnh")
-current_tab = 0
+current_tab = 2
 
 [node name="Items" parent="." unique_id=973294089 instance=ExtResource("1_owgj8")]
+visible = false
 layout_mode = 2
 metadata/_tab_index = 0
 
@@ -24,5 +25,4 @@ visible = false
 layout_mode = 2
 
 [node name="Events" parent="." unique_id=2091982552 instance=ExtResource("4_pk827")]
-visible = false
 layout_mode = 2

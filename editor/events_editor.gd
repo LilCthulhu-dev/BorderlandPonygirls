@@ -6,6 +6,7 @@ extends TabBar
 @onready var description_edit: TextEdit = %DescriptionEdit
 @onready var image_rect: TextureRect = %ImageRect
 @onready var img_file_dialog: FileDialog = %ImgFileDialog
+@onready var open_actions: ActionEditor = %OpenActions
 
 const FOLDER :String = "res://data/events/"
 var list: Array[Event] = []
@@ -78,11 +79,11 @@ func _load(event: Event) -> void:
 	title_line.text = current_event.titel
 	description_edit.text = current_event.description
 	image_rect.texture = current_event.img
+	open_actions.list_of_actions = current_event.open_actions
 
 func _save() -> void:
 	if current_event == null:
 		return
-
 	current_event.id = Utils.string_to_id(id_line.text)
 	current_event.titel = title_line.text.strip_edges()
 	current_event.description = description_edit.text

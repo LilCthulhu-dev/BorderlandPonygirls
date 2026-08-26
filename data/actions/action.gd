@@ -6,6 +6,9 @@ class_name Action
 @export var hide_description : = false
 @export var hard_requierment := false
 
+func get_class_name() -> String:
+	return StringName(get_script().get_global_name())
+
 func use() -> void:
 	pass
 
