@@ -2,9 +2,13 @@ extends Resource
 class_name Event
 
 @export var titel : String
+@export var _id := ""
 var id: StringName:
 	get:
-		return resource_path.get_file().get_basename()
+		if _id == "":
+			return resource_path.get_file().get_basename()
+		else:
+			return _id
 @export_multiline var description : String:
 	get:
 		return Utils.translate(description)

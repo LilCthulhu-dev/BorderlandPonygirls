@@ -6,8 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://1tcewdqugdv8" path="res://editor/events_editor.tscn" id="4_pk827"]
 
 [node name="EditorContainer" type="TabContainer" unique_id=697777003]
-offset_right = 321.0
-offset_bottom = 486.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_41vnh")
 current_tab = 0
@@ -21,4 +24,5 @@ visible = false
 layout_mode = 2
 
 [node name="Events" parent="." unique_id=2091982552 instance=ExtResource("4_pk827")]
+visible = false
 layout_mode = 2

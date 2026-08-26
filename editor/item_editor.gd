@@ -42,7 +42,6 @@ func _update():
 	_update_dropdown()
 	item_dropdown.select(0)
 
-
 func _load_list() -> void:
 	list.clear()
 
@@ -67,6 +66,9 @@ func _update_dropdown() -> void:
 	for item in list:
 		item_dropdown.add_item(item.title)
 
+func _new():
+	_load(Item.new())
+
 func _load(item: Item) -> void:
 	current_item = item
 	title_line.text = current_item.title
@@ -74,19 +76,18 @@ func _load(item: Item) -> void:
 	weight_spin.value = current_item.weight
 	icon_preview.texture = current_item.icon
 
-func _new():
-	current_item = Item.new()
-	_load(current_item)
-
 func _save():
+	_save_item()
 	if current_item == null:
 		return
-	if title_line.text.is_empty():
-		return
+
 	current_item.title = title_line.text
 	current_item.price = int(price_spin.value)
 	current_item.weight = int(weight_spin.value)
 	current_item.icon = icon_preview.texture
+
+	if title_line.text.is_empty():
+		return
 	var path := current_item.resource_path
 	if path.is_empty():
 		path = FOLDER + current_item.id + ".tres"
