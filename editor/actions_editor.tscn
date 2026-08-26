@@ -4,8 +4,11 @@
 [ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_ufvww"]
 
 [node name="ActionsEditor" type="FoldableContainer" unique_id=780387642]
-offset_right = 408.0
-offset_bottom = 239.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("1_ufvww")
 title = "Actions"
 script = ExtResource("1_tv7h8")
@@ -15,8 +18,8 @@ custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=1713460590]
+custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
-size_flags_horizontal = 3
 
 [node name="Container" type="VBoxContainer" parent="HBoxContainer/VBoxContainer" unique_id=1850947442]
 unique_name_in_owner = true
@@ -26,10 +29,12 @@ theme_override_constants/separation = 5
 [node name="NewAction" type="OptionButton" parent="HBoxContainer/VBoxContainer" unique_id=1814560673]
 unique_name_in_owner = true
 layout_mode = 2
+search_bar_enabled = true
 
-[node name="ActionContent" type="VBoxContainer" parent="HBoxContainer" unique_id=481572678]
+[node name="ActionContent" type="HFlowContainer" parent="HBoxContainer" unique_id=584148049]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/h_separation = 15
 
 [connection signal="item_selected" from="HBoxContainer/VBoxContainer/NewAction" to="." method="_on_new_action_item_selected"]
