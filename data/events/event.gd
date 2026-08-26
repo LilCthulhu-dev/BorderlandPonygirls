@@ -4,7 +4,7 @@ class_name Event
 @export var titel : String
 var id: StringName:
 	get:
-		return Utils.string_to_id(titel)
+		return resource_path.get_file().get_basename()
 @export_multiline var description : String:
 	get:
 		return Utils.translate(description)

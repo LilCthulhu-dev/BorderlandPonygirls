@@ -3,6 +3,7 @@
 [ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="1_41vnh"]
 [ext_resource type="PackedScene" uid="uid://bdcerv6msbk3d" path="res://editor/item_editor.tscn" id="1_owgj8"]
 [ext_resource type="PackedScene" uid="uid://y6wjgpsof7rw" path="res://editor/perks_editor.tscn" id="3_6a5kd"]
+[ext_resource type="PackedScene" uid="uid://1tcewdqugdv8" path="res://editor/events_editor.tscn" id="4_pk827"]
 
 [node name="EditorContainer" type="TabContainer" unique_id=697777003]
 offset_right = 321.0
@@ -17,4 +18,7 @@ metadata/_tab_index = 0
 
 [node name="Perks" parent="." unique_id=1865565266 instance=ExtResource("3_6a5kd")]
 visible = false
+layout_mode = 2
+
+[node name="Events" parent="." unique_id=2091982552 instance=ExtResource("4_pk827")]
 layout_mode = 2

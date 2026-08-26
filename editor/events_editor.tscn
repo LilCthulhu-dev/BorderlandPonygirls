@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://1tcewdqugdv8"]
+
+[ext_resource type="Script" uid="uid://ccxr0h6buxpwg" path="res://editor/events_editor.gd" id="1_4dqpe"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="1_ddxmx"]
+
+[node name="Events" type="TabBar" unique_id=2091982552]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4dqpe")
+metadata/_tab_index = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=461441910]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer" unique_id=2057082107]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_right = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer" unique_id=790160068]
+layout_mode = 2
+
+[node name="MainDropdown" type="OptionButton" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1096591086]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=645153925]
+layout_mode = 2
+columns = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=376478398]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+text = "Title: "
+
+[node name="TitleLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer" unique_id=513639269]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IconFileDialog" type="FileDialog" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1024029718]
+unique_name_in_owner = true
+oversampling_override = 1.0
+title = "Open a File"
+file_mode = 0
+root_subfolder = "res://assets/icons"
+filters = PackedStringArray("*.png", "*.jpg", "*.jpeg", "*.webp")
+
+[node name="GridContainer2" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=173292032]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/h_separation = 25
+columns = 3
+
+[node name="AddIconBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=436285871]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Icon"
+script = ExtResource("1_ddxmx")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="SaveBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=1307680172]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Save"
+script = ExtResource("1_ddxmx")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="NewBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2" unique_id=1061607942]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "New"
+script = ExtResource("1_ddxmx")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="IconPreview" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=1576508871]
+unique_name_in_owner = true
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+expand_mode = 1
+stretch_mode = 5

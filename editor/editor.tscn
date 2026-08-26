@@ -33,6 +33,3 @@ layout_mode = 2
 
 [node name="EditorContainer2" parent="MarginContainer/HBoxContainer" unique_id=272952406 instance=ExtResource("2_fjngd")]
 layout_mode = 2
-
-[node name="EditorContainer3" parent="MarginContainer/HBoxContainer" unique_id=589097985 instance=ExtResource("2_fjngd")]
-layout_mode = 2
