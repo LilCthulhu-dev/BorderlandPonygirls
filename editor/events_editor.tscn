@@ -64,59 +64,59 @@ text = "New"
 script = ExtResource("1_ddxmx")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
-[node name="FoldableContainer2" type="FoldableContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=568643573]
+[node name="Basics" type="FoldableContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=568643573]
 layout_mode = 2
 title = "Basics"
 
-[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2" unique_id=645153925]
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics" unique_id=645153925]
 layout_mode = 2
 columns = 2
 
-[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=376478398]
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=376478398]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 text = "ID: "
 
-[node name="IDLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=513639269]
+[node name="IDLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=513639269]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label3" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1040501550]
+[node name="Label3" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=1040501550]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 text = "Title: "
 
-[node name="TitleLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1699963136]
+[node name="TitleLine" type="LineEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=1699963136]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label2" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=1493877102]
+[node name="Label2" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=1493877102]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 text = "Description: "
 
-[node name="DescriptionEdit" type="TextEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=767560839]
+[node name="DescriptionEdit" type="TextEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=767560839]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 size_flags_horizontal = 3
 wrap_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer2/GridContainer" unique_id=340571245]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Basics/GridContainer" unique_id=340571245]
 layout_mode = 2
 
-[node name="FoldableContainer" type="FoldableContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2083472863]
+[node name="Image" type="FoldableContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2083472863]
 layout_mode = 2
 folded = true
 title = "Image"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer" unique_id=464046470]
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Image" unique_id=464046470]
 visible = false
 layout_mode = 2
 
-[node name="AddImgBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer/HBoxContainer" unique_id=436285871]
+[node name="AddImgBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/Image/HBoxContainer" unique_id=436285871]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
@@ -124,7 +124,7 @@ text = "New"
 script = ExtResource("1_ddxmx")
 metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
 
-[node name="ImageRect" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer/HBoxContainer" unique_id=1678420769]
+[node name="ImageRect" type="TextureRect" parent="ScrollContainer/MarginContainer/VBoxContainer/Image/HBoxContainer" unique_id=1678420769]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(-1, 200)
 layout_mode = 2
@@ -132,8 +132,53 @@ size_flags_horizontal = 3
 expand_mode = 1
 stretch_mode = 5
 
+[node name="Content" type="FoldableContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=699064442]
+layout_mode = 2
+folded = true
+title = "Content"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Content" unique_id=1099861595]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Content/VBoxContainer" unique_id=2140897381]
+layout_mode = 2
+
+[node name="DefaultBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/Content/VBoxContainer" unique_id=184552358]
+layout_mode = 2
+text = "Add"
+script = ExtResource("1_ddxmx")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="Actions" type="FoldableContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=931105462]
+layout_mode = 2
+title = "Actions"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Actions" unique_id=2013356344]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/Actions/VBoxContainer" unique_id=1082914968]
+layout_mode = 2
+text = "Open"
+
+[node name="OpenContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Actions/VBoxContainer" unique_id=208774623]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer/Actions/VBoxContainer" unique_id=1943850465]
+layout_mode = 2
+text = "End"
+
+[node name="CloseContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/Actions/VBoxContainer" unique_id=1287531564]
+layout_mode = 2
+
+[node name="DefaultBtn" type="Button" parent="ScrollContainer/MarginContainer/VBoxContainer/Actions/VBoxContainer" unique_id=1195924254]
+layout_mode = 2
+text = "Add"
+script = ExtResource("1_ddxmx")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
 [connection signal="file_selected" from="ImgFileDialog" to="." method="_on_img_file_dialog_file_selected"]
 [connection signal="item_selected" from="ScrollContainer/MarginContainer/VBoxContainer/MainDropdown" to="." method="_on_main_dropdown_item_selected"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/SaveBtn" to="." method="_on_save_btn_pressed"]
 [connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/GridContainer2/NewBtn" to="." method="_on_new_btn_pressed"]
-[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/FoldableContainer/HBoxContainer/AddImgBtn" to="." method="_on_add_img_btn_pressed"]
+[connection signal="pressed" from="ScrollContainer/MarginContainer/VBoxContainer/Image/HBoxContainer/AddImgBtn" to="." method="_on_add_img_btn_pressed"]

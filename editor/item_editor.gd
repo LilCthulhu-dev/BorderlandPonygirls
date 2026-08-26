@@ -77,7 +77,7 @@ func _load(item: Item) -> void:
 	icon_preview.texture = current_item.icon
 
 func _save():
-	_save_item()
+	_save()
 	if current_item == null:
 		return
 
