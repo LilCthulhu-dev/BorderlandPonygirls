@@ -19,7 +19,7 @@ func _on_item_dropdown_item_selected(index: int) -> void:
 	if index == 0:
 		_new()
 	else:
-		load_item(list[index - 1])
+		_load(list[index - 1])
 
 func _on_save_btn_pressed() -> void:
 	_save()
@@ -67,7 +67,7 @@ func _update_dropdown() -> void:
 	for item in list:
 		item_dropdown.add_item(item.title)
 
-func load_item(item: Item) -> void:
+func _load(item: Item) -> void:
 	current_item = item
 	title_line.text = current_item.title
 	price_spin.value = current_item.price
@@ -76,7 +76,7 @@ func load_item(item: Item) -> void:
 
 func _new():
 	current_item = Item.new()
-	load_item(current_item)
+	_load(current_item)
 
 func _save():
 	if current_item == null:
