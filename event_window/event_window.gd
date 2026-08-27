@@ -10,7 +10,8 @@ const EVENT_BTN = preload("uid://boeoqj8wswe7u")
 const EVENT_CHECK = preload("uid://dheu6x3a5wmi3")
 const EVENT_TEXT = preload("uid://desp1eu87yxct")
 
-const INFO_BTN = preload("uid://c3424ov14be65")
+const EVENT_INFO = preload("uid://c3424ov14be65")
+const EVENT_CHANGE = preload("uid://d07s2ty62gysc")
 
 const BACK_TO_MAIN_BTN = preload("uid://objbp62gh8w")
 
@@ -45,31 +46,32 @@ func _update_content():
 	content_image.texture = event.img if content_image else null
 
 	Utils.clear_container(content_container)
-
 	_add_content()
 	_add_back_to_main()
 
-func _add_content():
+func _add_content() -> void:
 	for content in event.content:
-		if !content.hard_requierments_met():
+		if not content.hard_requierments_met():
 			continue
 		if content.used:
 			continue
-
 		if content is EventPonySelect:
 			_add_pony_select(content)
-
-		var n = null
-		if content is EventBtn:
-			n = EVENT_BTN.instantiate()
+		elif content is EventBtn:
+			_inst_content(EVENT_BTN, content)
 		elif content is EventCheck:
-			n = EVENT_CHECK.instantiate()
+			_inst_content(EVENT_CHECK, content)
 		elif content is EventInfo:
-			n = INFO_BTN.instantiate()
-		else:
-			n = EVENT_TEXT.instantiate()
-		n.content = content
-		content_container.add_child(n)
+			_inst_content(EVENT_INFO, content)
+		elif content is EventChange:
+			_inst_content(EVENT_CHANGE, content)
+		elif content is EventText:
+			_inst_content(EVENT_TEXT, content)
+
+func _inst_content(element: PackedScene, content: _EventContent):
+	var n = element.instantiate()
+	n.content = content
+	content_container.add_child(n)
 
 func _add_back_to_main():
 	if not (event.content.is_empty() or event.add_back_to_main): return

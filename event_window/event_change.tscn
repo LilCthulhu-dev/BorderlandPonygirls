@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d07s2ty62gysc"]
+
+[ext_resource type="Script" uid="uid://djkv4fbbhcgya" path="res://event_window/event_change.gd" id="1_bubpl"]
+
+[node name="EventChange" type="Button" unique_id=1663300945]
+offset_right = 259.0
+offset_bottom = 52.0
+alignment = 0
+script = ExtResource("1_bubpl")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

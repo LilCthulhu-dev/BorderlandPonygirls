@@ -8,7 +8,6 @@ class_name EventBtn
 
 @export_group('uses')
 @export var single_use = false
-@export var used = false
 
 func soft_requirements_met() -> bool:
 	for action in actions:
