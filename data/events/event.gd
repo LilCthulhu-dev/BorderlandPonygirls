@@ -2,12 +2,20 @@ extends Resource
 class_name Event
 
 @export var titel : String
+@export var _id : StringName
 var id: StringName:
 	get:
+		if _id:
+			return _id
 		return Utils.string_to_id(titel)
-@export_multiline var description : String:
+	set(value):
+		_id = value
+@export_multiline var _description : String
+var description: String:
 	get:
-		return Utils.translate(description)
+		return Utils.translate(_description)
+	set(value):
+		_description = value
 @export var img : Texture2D
 @export var content : Array[_EventContent]
 @export var open_actions : Array[Action]

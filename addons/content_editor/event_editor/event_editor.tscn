@@ -13,6 +13,7 @@ metadata/_tab_index = 0
 
 [node name="SaveDialog" type="EditorFileDialog" parent="." unique_id=23886352]
 unique_name_in_owner = true
+filters = PackedStringArray("*.tres ; Event Resource", "*.tres ; Event Resource")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=690289550]
 layout_mode = 1
@@ -47,6 +48,7 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+disabled = true
 text = "Save"
 
 [node name="SaveAsBtn" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1125061447]
@@ -111,6 +113,21 @@ size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
 base_type = "Texture2D"
 
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Basics/VBoxContainer" unique_id=1515430958]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Basics/VBoxContainer/VBoxContainer" unique_id=976795139]
+layout_mode = 2
+text = "description"
+
+[node name="DescriptionEdit" type="TextEdit" parent="VBoxContainer/Basics/VBoxContainer/VBoxContainer" unique_id=879351190]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+text = "123
+123
+123"
+
 [node name="Content" type="FoldableContainer" parent="VBoxContainer" unique_id=1903129949]
 layout_mode = 2
 folded = true
@@ -127,7 +144,7 @@ folded = true
 title = "Close Actions"
 
 [connection signal="file_selected" from="SaveDialog" to="." method="_on_save_dialog_file_selected"]
-[connection signal="resource_selected" from="VBoxContainer/HBoxContainer/EventPicker" to="." method="_on_event_picker_resource_selected"]
+[connection signal="resource_changed" from="VBoxContainer/HBoxContainer/EventPicker" to="." method="_on_event_picker_resource_changed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer2/SaveBtn" to="." method="_on_save_btn_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer2/SaveAsBtn" to="." method="_on_save_as_btn_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer2/NewBtn" to="." method="_on_new_btn_pressed"]
