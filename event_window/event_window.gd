@@ -9,9 +9,9 @@ extends CanvasLayer
 const EVENT_BTN = preload("uid://boeoqj8wswe7u")
 const EVENT_CHECK = preload("uid://dheu6x3a5wmi3")
 const EVENT_TEXT = preload("uid://desp1eu87yxct")
-const BASIC_EVENT_BTN = preload("uid://c3424ov14be65")
 
 const INFO_BTN = preload("uid://c3424ov14be65")
+
 const BACK_TO_MAIN_BTN = preload("uid://objbp62gh8w")
 
 var event:
@@ -64,7 +64,7 @@ func _add_content():
 			n = EVENT_BTN.instantiate()
 		elif content is EventCheck:
 			n = EVENT_CHECK.instantiate()
-		elif content is InfoBtn:
+		elif content is EventInfo:
 			n = INFO_BTN.instantiate()
 		else:
 			n = EVENT_TEXT.instantiate()

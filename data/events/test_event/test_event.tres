@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_kmr88"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_4ols6"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_fi7v8"]
-[ext_resource type="Script" uid="uid://by8ypobaog261" path="res://data/events/info_btn.gd" id="3_ovx83"]
+[ext_resource type="Script" uid="uid://by8ypobaog261" path="res://data/events/event_info.gd" id="3_ovx83"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="4_fi7v8"]
 [ext_resource type="Script" uid="uid://dc1bca6pcahfr" path="res://data/actions/change_xp.gd" id="5_ovx83"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="6_0yuro"]

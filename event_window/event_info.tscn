@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c3424ov14be65"]
 
-[ext_resource type="Script" uid="uid://bs55855h5bd0l" path="res://event_window/info_btn.gd" id="1_j5com"]
+[ext_resource type="Script" uid="uid://bs55855h5bd0l" path="res://event_window/event_info.gd" id="1_j5com"]
 
 [node name="BasicEventBtn" type="Button" unique_id=149295014]
 offset_right = 346.0

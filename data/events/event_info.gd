@@ -1,5 +1,5 @@
 extends _EventContent
-class_name InfoBtn
+class_name EventInfo
 
 @export var btn_text := ""
 @export var single_use = false
