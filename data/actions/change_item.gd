@@ -5,10 +5,9 @@ class_name ChangeItem
 @export var amount := 0
 
 func use():
-	if item == null or amount == 0:
-		return
-	else:
-		InventoryManager.set_inventory(item, amount)
+	if item == null or amount == 0: return
+	super()
+	InventoryManager.set_inventory(item, amount)
 
 func requirement_met() -> bool:
 	if item == null:

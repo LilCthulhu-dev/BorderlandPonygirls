@@ -5,6 +5,7 @@ class_name ChangeRepute
 
 func use():
 	if amount == 0: return
+	super()
 	AttributesManager.repute += amount
 
 func _get_txt() -> String:

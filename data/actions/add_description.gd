@@ -5,6 +5,7 @@ class_name AddDescription
 @export var rng_text: Array[MultilineText] = []
 
 func get_result() -> String:
+	super()
 	if txt:
 		return  Utils.translate(txt)
 	rng_text.shuffle()

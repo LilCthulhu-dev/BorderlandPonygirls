@@ -13,6 +13,7 @@ enum TARGET {
 var affected_ponygirls: Array[Ponygirl] = []
 
 func use() -> void:
+	super()
 	affected_ponygirls = get_target_ponygirls()
 	for ponygirl in affected_ponygirls:
 		ponygirl.arousal += amount

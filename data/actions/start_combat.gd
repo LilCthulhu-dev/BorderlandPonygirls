@@ -4,6 +4,7 @@ class_name StartCombat
 @export var combat : Combat
 
 func use() -> void:
+	super()
 	CombatManager.current_combat = combat
 	CombatManager.start_combat()
 	SceneManager.change_scene(SceneManager.COMBAT_WINDOW)

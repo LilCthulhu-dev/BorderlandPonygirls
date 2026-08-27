@@ -2,6 +2,7 @@ extends Action
 class_name ForceRandomeEvent
 
 func use() -> void:
+	super()
 	LocationManager.check_for_random_event(100)
 
 func requirement_met() -> bool:

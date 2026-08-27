@@ -8,6 +8,7 @@ class_name FlagAction
 @export var forbidden_flag: Array[Flag]
 
 func use() -> void:
+	super()
 	for flag in add_flag:
 		FlagsManager.add_flag(flag)
 	for flag in remove_flag:

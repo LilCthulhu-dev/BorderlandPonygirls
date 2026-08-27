@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://j00u2djmjib5"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_d0c4c"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_gd8d0"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8_0f5ci"]
+
+[resource]
+script = ExtResource("8_0f5ci")
+titel = "Test2"
+description = "BASIC BLABLA"
+metadata/_custom_type_script = "uid://47s8j4k2usde"

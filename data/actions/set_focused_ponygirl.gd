@@ -4,6 +4,7 @@ class_name SetFocusedPonygirl
 var pony: Ponygirl
 
 func use() -> void:
+	super()
 	if pony != null:
 		PonygirlManager.focused_ponygirl = pony
 
