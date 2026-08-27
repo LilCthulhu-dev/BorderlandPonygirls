@@ -46,17 +46,12 @@ layout_mode = 2
 theme = ExtResource("3_ksy1x")
 autowrap_mode = 2
 
-[node name="LabelDescription" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=958906634]
+[node name="DescriptionLabel" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=517719012]
 unique_name_in_owner = true
 layout_mode = 2
-autowrap_mode = 2
+autowrap_mode = 3
 
-[node name="LabelResults" type="Label" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=2101030372]
-unique_name_in_owner = true
-layout_mode = 2
-autowrap_mode = 2
-
-[node name="ContentContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=343888890]
+[node name="BtnContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer" unique_id=343888890]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3

@@ -3,7 +3,7 @@ extends CanvasLayer
 @onready var info_container: VBoxContainer = %InfoContainer
 
 const INFO_LABEL = preload("uid://cmmq0awmyel50")
-var info_delay := 0.1
+var info_delay := 0.2
 var info_queue: Array[String] = []
 var is_processing_queue := false
 

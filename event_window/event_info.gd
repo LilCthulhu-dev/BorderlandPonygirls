@@ -9,8 +9,8 @@ func _ready() -> void:
 	_add_tooltip()
 
 func _add_tooltip() -> void:
-	var tip_array := TooltipManager.get_tooltips(content.actions)
-	tooltip = "\n".join(tip_array)
+	var tips_array := TooltipManager.get_tooltips(content.actions)
+	tooltip = "\n".join(tips_array)
 	if not tooltip.is_empty():
 		add_questionmark()
 

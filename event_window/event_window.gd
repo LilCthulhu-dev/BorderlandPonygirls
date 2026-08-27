@@ -1,9 +1,8 @@
 extends CanvasLayer
 
 @onready var label_titel: Label = %LabelTitel
-@onready var label_description: Label = %LabelDescription
-@onready var label_results: Label = %LabelResults
-@onready var content_container: VBoxContainer = %ContentContainer
+@onready var description_label: Label = %DescriptionLabel
+@onready var btn_container: VBoxContainer = %BtnContainer
 @onready var content_image: TextureRect = %ContentImage
 
 const EVENT_BTN = preload("uid://boeoqj8wswe7u")
@@ -27,29 +26,13 @@ func _ready() -> void:
 func _update_content():
 	label_titel.text = event.titel
 	label_titel.visible = label_titel.text != ""
-
-	label_description.text = event.description
-	label_description.visible = label_description.text != ""
-
-	label_results.text = ""
-	if !event.open_actions.is_empty():
-		for action in event.open_actions:
-			var result_txt = action.get_result()
-			if result_txt == "": continue
-			if label_results.text != "":
-				label_results.text += "\n"
-			label_results.text += result_txt
-			if action is AddDescription:
-				label_results.text += "\n"
-	label_results.visible = label_results.text != ""
-
+	description_label.text = event.description
 	content_image.texture = event.img if content_image else null
-
-	Utils.clear_container(content_container)
 	_add_content()
 	_add_back_to_main()
 
 func _add_content() -> void:
+	Utils.clear_container(btn_container)
 	for content in event.content:
 		if not content.hard_requierments_met():
 			continue
@@ -71,11 +54,11 @@ func _add_content() -> void:
 func _inst_content(element: PackedScene, content: _EventContent):
 	var n = element.instantiate()
 	n.content = content
-	content_container.add_child(n)
+	btn_container.add_child(n)
 
 func _add_back_to_main():
 	if not (event.content.is_empty() or event.add_back_to_main): return
-	content_container.add_child(BACK_TO_MAIN_BTN.instantiate())
+	btn_container.add_child(BACK_TO_MAIN_BTN.instantiate())
 
 func _add_pony_select(select: EventPonySelect) -> int:
 	var count := 0
@@ -91,6 +74,6 @@ func _add_pony_select(select: EventPonySelect) -> int:
 		ebtn.actions = acts
 		var n := EVENT_BTN.instantiate()
 		n.content = ebtn
-		content_container.add_child(n)
+		btn_container.add_child(n)
 		count += 1
 	return count

@@ -4,7 +4,6 @@ class_name EventInfo
 @export var btn_text := ""
 @export var single_use = false
 @export var end_conversation = false
-
 @export_multiline var description := ""
 @export var actions : Array[Action]
 
