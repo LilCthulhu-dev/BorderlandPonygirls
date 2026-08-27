@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://65oirfxevl6d"]
+
+[ext_resource type="Script" uid="uid://ubwlsmsuxrdp" path="res://addons/content_editor/event_editor/event_editor.gd" id="1_8pf3l"]
+
+[node name="EventEditor" type="TabBar" unique_id=1698381264]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8pf3l")
+metadata/_tab_index = 0
+
+[node name="SaveDialog" type="EditorFileDialog" parent="." unique_id=23886352]
+unique_name_in_owner = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=690289550]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1389005162]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=513034652]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Load Event
+(Drag & Drop)"
+
+[node name="EventPicker" type="EditorResourcePicker" parent="VBoxContainer/HBoxContainer" unique_id=119380373]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+base_type = "Event"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1777120284]
+layout_mode = 2
+
+[node name="SaveBtn" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=710755030]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Save"
+
+[node name="SaveAsBtn" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1125061447]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Save as..."
+
+[node name="NewBtn" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=1376558183]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "New"
+
+[node name="Basics" type="FoldableContainer" parent="VBoxContainer" unique_id=2116412006]
+layout_mode = 2
+title = "Basics"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/Basics" unique_id=1673563162]
+layout_mode = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/Basics/VBoxContainer" unique_id=1764407107]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer3" unique_id=440274065]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "titel"
+
+[node name="TitleLabel" type="LineEdit" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer3" unique_id=976206221]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/Basics/VBoxContainer" unique_id=504656282]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer2" unique_id=1809119687]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "id"
+
+[node name="IdLabel" type="LineEdit" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer2" unique_id=2086297314]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/Basics/VBoxContainer" unique_id=1385109711]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer4" unique_id=17581522]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "img"
+
+[node name="ImagePicker" type="EditorResourcePicker" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer4" unique_id=330622493]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
+base_type = "Texture2D"
+
+[node name="Content" type="FoldableContainer" parent="VBoxContainer" unique_id=1903129949]
+layout_mode = 2
+folded = true
+title = "Content"
+
+[node name="OpenActions" type="FoldableContainer" parent="VBoxContainer" unique_id=866607033]
+layout_mode = 2
+folded = true
+title = "Open Actions"
+
+[node name="CloseActions" type="FoldableContainer" parent="VBoxContainer" unique_id=426891021]
+layout_mode = 2
+folded = true
+title = "Close Actions"
+
+[connection signal="file_selected" from="SaveDialog" to="." method="_on_save_dialog_file_selected"]
+[connection signal="resource_selected" from="VBoxContainer/HBoxContainer/EventPicker" to="." method="_on_event_picker_resource_selected"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/SaveAsBtn" to="." method="_on_save_as_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/NewBtn" to="." method="_on_new_btn_pressed"]

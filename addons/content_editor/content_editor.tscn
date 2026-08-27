@@ -1,15 +1,17 @@
 [gd_scene format=3 uid="uid://b1rmg7548o7lk"]
 
+[ext_resource type="Theme" uid="uid://cvk50ji357rcs" path="res://addons/content_editor/theme/content_editor_theme.tres" id="1_3hl86"]
 [ext_resource type="Script" uid="uid://bfka5qpxxjgfj" path="res://addons/content_editor/content_editor.gd" id="1_o5msk"]
-[ext_resource type="PackedScene" uid="uid://dr0uwvb262oms" path="res://addons/content_editor/items/items.tscn" id="2_3hl86"]
+[ext_resource type="PackedScene" uid="uid://65oirfxevl6d" path="res://addons/content_editor/event_editor/event_editor.tscn" id="3_ak45d"]
 
-[node name="Editor" type="Control" unique_id=1716323595]
+[node name="ContentEditor" type="Control" unique_id=1716323595]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_3hl86")
 script = ExtResource("1_o5msk")
 
 [node name="TabContainer" type="TabContainer" parent="." unique_id=228693552]
@@ -19,17 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-current_tab = 1
+current_tab = 0
 
-[node name="Items" parent="TabContainer" unique_id=986378067 instance=ExtResource("2_3hl86")]
-visible = false
+[node name="EventEditor" parent="TabContainer" unique_id=1698381264 instance=ExtResource("3_ak45d")]
 layout_mode = 2
-
-[node name="Perks" type="TabBar" parent="TabContainer" unique_id=1946907120]
-layout_mode = 2
-metadata/_tab_index = 1
-
-[node name="Events" type="TabBar" parent="TabContainer" unique_id=256057463]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 2

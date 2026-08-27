@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://cvk50ji357rcs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ak45d"]
+content_margin_top = 10.0
+
+[resource]
+FoldableContainer/styles/panel = SubResource("StyleBoxEmpty_ak45d")
