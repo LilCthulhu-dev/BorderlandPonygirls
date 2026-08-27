@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("8_whhgj")
 titel = "Tobias and Lucy"
-description = "“Yes, races,” Tobias exclaims before taking a deep drink of his beer. “Don’t tell me you’ve never been to one! Well, to be fair, the sport is still rather new, but back in the Empire, it’s the hottest thing around.”
+_description = "“Yes, races,” Tobias exclaims before taking a deep drink of his beer. “Don’t tell me you’ve never been to one! Well, to be fair, the sport is still rather new, but back in the Empire, it’s the hottest thing around.”
 
 “People pay good money to watch,” Lucy adds. You still can’t help but feel strange being addressed so casually by a ponygirl. “The racers have to pay an entry fee, but the winner takes home a hefty pouch of coin.”
 

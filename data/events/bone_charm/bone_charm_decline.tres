@@ -8,6 +8,6 @@
 [resource]
 script = ExtResource("3")
 titel = "Bone Charm"
-description = "You leave the charm in the grass. Something in the cave mouth seems to watch you go."
+_description = "You leave the charm in the grass. Something in the cave mouth seems to watch you go."
 img = ExtResource("4")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

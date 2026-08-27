@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("7_5qpgy")
 titel = "Tobias and Lucy"
-description = "Tobias nods, then shrugs. “Yeah, the harness has to be made in a particular way. Makes running easier and helps keep the ponygirl safe - or something like that. Need a specialist outfitter to get it.”
+_description = "Tobias nods, then shrugs. “Yeah, the harness has to be made in a particular way. Makes running easier and helps keep the ponygirl safe - or something like that. Need a specialist outfitter to get it.”
 
 “And it disables the womb tattoo’s inhibitor,” Lucy adds with a chuckle.
 

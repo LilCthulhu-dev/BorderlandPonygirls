@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("3_uvcmw")
 titel = "Halfling Village Derby"
-description = "“No worries, {TITLE},” the racemaster says cheerfully. “These races are becoming incredibly popular. I’m certain there’ll be another one for you to enter soon.”
+_description = "“No worries, {TITLE},” the racemaster says cheerfully. “These races are becoming incredibly popular. I’m certain there’ll be another one for you to enter soon.”
 
 He gives you a friendly nod before returning to his preparations."
 metadata/_custom_type_script = "uid://47s8j4k2usde"

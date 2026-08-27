@@ -31,7 +31,7 @@ metadata/_custom_type_script = "uid://ceventponysel1"
 [resource]
 script = ExtResource("3_ujtvx")
 titel = "Halfling Village Derby"
-description = "You enter the preparation area, only to run straight into Tobias and Lucy - the latter now properly naked and secured in her racing harness.
+_description = "You enter the preparation area, only to run straight into Tobias and Lucy - the latter now properly naked and secured in her racing harness.
 
 “Hey, {TITLE} {NAME}! Good to see you again!” the halfling greets you. Holding Lucy’s reins in one hand, he eagerly shakes yours with the other. “So, you decided to try ponygirl racing? Good for you! But don’t think we’ll go easy on you just because we shared a few beers.”
 

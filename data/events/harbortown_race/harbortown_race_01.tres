@@ -93,7 +93,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("13_nxofj")
 titel = "Harbortown Circuit"
-description = "You arrive at Harbortown’s racetrack to find the old freight yard transformed. Colorful banners hang between the warehouses, temporary stands rise along the course, and a large crowd has gathered to witness the city’s latest sensation."
+_description = "You arrive at Harbortown’s racetrack to find the old freight yard transformed. Colorful banners hang between the warehouses, temporary stands rise along the course, and a large crowd has gathered to witness the city’s latest sensation."
 content = Array[ExtResource("2_pkmrc")]([SubResource("Resource_loak1"), SubResource("Resource_elyge"), SubResource("Resource_78x5n"), SubResource("Resource_ohnjp"), SubResource("Resource_6tbqf"), SubResource("Resource_dfvfa")])
 open_actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_ma5mm")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

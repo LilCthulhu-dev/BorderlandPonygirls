@@ -14,7 +14,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3")
 titel = "Grain Levy"
-description = "The cook shrugs and waves a boy toward the next cart. \"Plenty of hungry roads, {TITLE}. Come back if you change your mind.\""
+_description = "The cook shrugs and waves a boy toward the next cart. \"Plenty of hungry roads, {TITLE}. Come back if you change your mind.\""
 img = ExtResource("4")
 content = Array[ExtResource("2")]([SubResource("Resource_return")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

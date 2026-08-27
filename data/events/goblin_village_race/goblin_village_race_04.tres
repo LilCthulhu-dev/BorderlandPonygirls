@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("3_marwk")
 titel = "Goblin Village Scramble"
-description = "“Changed your mind? Fair enough,” the racemaster says, reaching for his mug. “There’ll be another scramble soon. Come by again when you got enough coin to pay the entry fee.
+_description = "“Changed your mind? Fair enough,” the racemaster says, reaching for his mug. “There’ll be another scramble soon. Come by again when you got enough coin to pay the entry fee.
 
 He laughs and waves the next competitor forward."
 metadata/_custom_type_script = "uid://47s8j4k2usde"

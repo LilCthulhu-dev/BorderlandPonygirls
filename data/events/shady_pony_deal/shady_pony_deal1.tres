@@ -52,7 +52,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("6")
 titel = "Unexpected Deal"
-description = "A shady-looking goblin with an eyepatch approaches you, leading a skittish ponygirl by the reins.
+_description = "A shady-looking goblin with an eyepatch approaches you, leading a skittish ponygirl by the reins.
 
 “Hey, you’re a warband boss, right? I got this mare for a bargain. You interested?”"
 content = Array[ExtResource("1_f80rk")]([SubResource("Resource_mqmyc"), SubResource("Resource_cskxl"), SubResource("Resource_5pobu")])

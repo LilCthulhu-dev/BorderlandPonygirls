@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1")
 titel = "Grain Levy"
-description = "The cook knots the last sack and slaps it onto the cart. \"Harbor mill, blue awning, ask for the night miller. Bring back an empty sack if you want another load.\"
+_description = "The cook knots the last sack and slaps it onto the cart. \"Harbor mill, blue awning, ask for the night miller. Bring back an empty sack if you want another load.\"
 
 Grain dust follows you out of the village."
 img = ExtResource("3_f71yy")

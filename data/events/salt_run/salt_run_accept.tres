@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1")
 titel = "Salt Run"
-description = "The clerk stamps a wax seal and slaps it onto the crate. “Inland road, Goblin Village. Don’t open it. Don’t sell it. Don’t let rain in. Bring the broken seal back if you want to be paid twice.”
+_description = "The clerk stamps a wax seal and slaps it onto the crate. “Inland road, Goblin Village. Don’t open it. Don’t sell it. Don’t let rain in. Bring the broken seal back if you want to be paid twice.”
 
 Two dockhands lash the crate behind your lead mare. The salt smell follows you out of the harbor."
 img = ExtResource("3_vh6ab")

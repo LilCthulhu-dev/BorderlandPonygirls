@@ -7,5 +7,5 @@
 [resource]
 script = ExtResource("3_mvd6v")
 titel = "Cattle Drive"
-description = "“What a shame,” the old farmer says, shaking his head. “But I respect your decision, {TITLE}.”"
+_description = "“What a shame,” the old farmer says, shaking his head. “But I respect your decision, {TITLE}.”"
 metadata/_custom_type_script = "uid://47s8j4k2usde"

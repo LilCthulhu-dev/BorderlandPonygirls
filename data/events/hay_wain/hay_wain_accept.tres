@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1")
 titel = "Hay Wain"
-description = "The farmer lashes the last bundle and slaps the wheel. \"Goblin stables, the long barn. Tell them Halfling second-cut. They'll stop boiling boot-leather for the she-beasts.\"
+_description = "The farmer lashes the last bundle and slaps the wheel. \"Goblin stables, the long barn. Tell them Halfling second-cut. They'll stop boiling boot-leather for the she-beasts.\"
 
 Straw sticks in your lead mare's mane all the way out of the lane."
 img = ExtResource("3_f71yy")

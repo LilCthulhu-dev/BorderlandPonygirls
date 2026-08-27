@@ -83,7 +83,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("8")
 titel = "Traveling Tinker"
-description = "Near the village green a traveling tinker has spread a worn blanket with tools, spare buckles, and pots of leather oil. He eyes your ponygirls’ harness with a professional squint.
+_description = "Near the village green a traveling tinker has spread a worn blanket with tools, spare buckles, and pots of leather oil. He eyes your ponygirls’ harness with a professional squint.
 
 “Good stock,” he says. “Gear’s serviceable - but I can make it sit cleaner. Less chafe, tighter silhouette. Fair price for a warband of your size.”"
 img = ExtResource("11_6w2gu")

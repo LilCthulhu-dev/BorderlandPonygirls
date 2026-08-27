@@ -8,6 +8,6 @@
 [resource]
 script = ExtResource("3")
 titel = "Iron Tithe"
-description = "The elder snorts. “Then someone else will drag it. Don’t complain when your bits start rusting, {TITLE}.”"
+_description = "The elder snorts. “Then someone else will drag it. Don’t complain when your bits start rusting, {TITLE}.”"
 img = ExtResource("4")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

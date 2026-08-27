@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("8")
 titel = "Bone Charm"
-description = "The shaman turns the charm in smoke until the carvings darken. “Cave-mark. Old. Useful.”
+_description = "The shaman turns the charm in smoke until the carvings darken. “Cave-mark. Old. Useful.”
 
 He pays, then flicks ash toward your mares. They stand quieter after that."
 img = ExtResource("9")

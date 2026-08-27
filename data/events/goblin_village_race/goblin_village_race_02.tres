@@ -31,7 +31,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_rmi63")
 titel = "Goblin Village Scramble"
-description = "The goblin racemaster stands behind a scarred wooden table covered in lists, coins, and half-empty mugs. He grins when you ask to enter.
+_description = "The goblin racemaster stands behind a scarred wooden table covered in lists, coins, and half-empty mugs. He grins when you ask to enter.
 
 “Another challenger! Good, good. More racers make for a better scramble.” He leans sideways to inspect your equipment.
 

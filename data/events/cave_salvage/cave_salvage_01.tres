@@ -57,7 +57,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("11_2oir3")
 titel = "Cave Salvage"
-description = "It is getting dark when one of your scouts returns and reports that he has found something.
+_description = "It is getting dark when one of your scouts returns and reports that he has found something.
 
 You gather your best riders, and a few minutes later, you arrive at the entrance to a cave. Debris and blood litter the ground. There has clearly been a fight."
 img = ExtResource("10_srn3e")

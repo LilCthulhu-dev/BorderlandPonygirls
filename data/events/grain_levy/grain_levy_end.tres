@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("7")
 titel = "Grain Levy"
-description = "A harbor miller slits a sack, rolls a kernel between finger and thumb, and nods. \"Goblin grain. Coarse. Honest.\"
+_description = "A harbor miller slits a sack, rolls a kernel between finger and thumb, and nods. \"Goblin grain. Coarse. Honest.\"
 
 He counts coin without looking up. \"Tell the cook we got it dry.\""
 img = ExtResource("8")

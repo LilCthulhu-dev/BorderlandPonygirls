@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("8")
 titel = "Hay Wain"
-description = "A stablehand pries a bundle, sniffs, and grins. \"Halfling hay. Sweet. The mares will stop chewing the rails.\"
+_description = "A stablehand pries a bundle, sniffs, and grins. \"Halfling hay. Sweet. The mares will stop chewing the rails.\"
 
 He pays, then forks a flake into the nearest stall. Your own string crowds the gate, hopeful."
 img = ExtResource("9")

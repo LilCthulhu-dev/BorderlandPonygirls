@@ -31,7 +31,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_h3w47")
 titel = "Pony Panic"
-description = "You simply watch while your men herd {PONYNAME} like a trapped tigger. It takes a good while, but finally she gives up and collapses onto her knees - she is unable to escape you, her bondage, or her new life.
+_description = "You simply watch while your men herd {PONYNAME} like a trapped tigger. It takes a good while, but finally she gives up and collapses onto her knees - she is unable to escape you, her bondage, or her new life.
 
 You step up to her, your stern gaze shattering the last bit of defiance she had. You reach for her reins and pull them tight, until she is forced to look at you."
 content = Array[ExtResource("2_syyaj")]([SubResource("Resource_102ty"), SubResource("Resource_adapm")])

@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("7")
 titel = "Salt Run"
-description = "A village quartermaster pries the crate, sniffs, and grins. “Harbor salt. Good. The cooks will stop threatening to boil boots.”
+_description = "A village quartermaster pries the crate, sniffs, and grins. “Harbor salt. Good. The cooks will stop threatening to boil boots.”
 
 He counts coin into your palm without looking up. “Tell the clerk we got it dry.”"
 img = ExtResource("8")

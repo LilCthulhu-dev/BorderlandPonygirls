@@ -14,7 +14,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3")
 titel = "Hay Wain"
-description = "The farmer wipes his brow and looks past you at the next cart. \"Fodder doesn't wait, {TITLE}. Come back if you grow a conscience for hungry ponies.\""
+_description = "The farmer wipes his brow and looks past you at the next cart. \"Fodder doesn't wait, {TITLE}. Come back if you grow a conscience for hungry ponies.\""
 img = ExtResource("4")
 content = Array[ExtResource("2")]([SubResource("Resource_return")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

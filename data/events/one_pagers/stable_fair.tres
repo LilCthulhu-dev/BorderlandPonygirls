@@ -15,7 +15,7 @@
 [sub_resource type="Resource" id="Resource_ksy1x"]
 script = ExtResource("5_svys2")
 _price = 0
-description = "A skittish green filly, barely broken to the bit. Cheap, but she will test you."
+_description = "A skittish green filly, barely broken to the bit. Cheap, but she will test you."
 force_arousal = 25
 
 [sub_resource type="Resource" id="Resource_green_back"]
@@ -34,7 +34,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_2rxsd"]
 script = ExtResource("5_svys2")
-description = "This one is already flushed and restless in her tack. Average submission, high arousal - she needs a firm hand and regular work."
+_description = "This one is already flushed and restless in her tack. Average submission, high arousal - she needs a firm hand and regular work."
 force_arousal = 75
 metadata/_custom_type_script = "uid://8nf04u8dpc45"
 
@@ -50,7 +50,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_wnlod"]
 script = ExtResource("5_svys2")
-description = "She stamps and rolls her eyes at the crowd. Wild temper, high spirit - hard to control, but she has fire."
+_description = "She stamps and rolls her eyes at the crowd. Wild temper, high spirit - hard to control, but she has fire."
 force_submission = 35
 force_arousal = 25
 perks = Array[ExtResource("6_svys2")]([ExtResource("11_brat")])
@@ -68,7 +68,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_pi3c4"]
 script = ExtResource("5_svys2")
-description = "The auctioneer boasts of her soft mouth and ready obedience. Solid submission, well broken in - a dependable worker."
+_description = "The auctioneer boasts of her soft mouth and ready obedience. Solid submission, well broken in - a dependable worker."
 force_submission = 75
 force_arousal = 25
 perks = Array[ExtResource("6_svys2")]([ExtResource("7_sub")])
@@ -87,7 +87,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 [sub_resource type="Resource" id="Resource_khckk"]
 script = ExtResource("5_svys2")
 _price = 2
-description = "A seasoned puller with thick legs and a hard stare. Expensive, well-trained, and strong."
+_description = "A seasoned puller with thick legs and a hard stare. Expensive, well-trained, and strong."
 force_arousal = 25
 force_xp = 20
 perks = Array[ExtResource("6_svys2")]([ExtResource("8_strong")])
@@ -106,7 +106,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 [sub_resource type="Resource" id="Resource_1c5o1"]
 script = ExtResource("5_svys2")
 _price = 2
-description = "The handler presents a calm, well-bonded mare. High submission, settled nerves - she will settle into your line without fuss."
+_description = "The handler presents a calm, well-bonded mare. High submission, settled nerves - she will settle into your line without fuss."
 force_submission = 75
 force_arousal = 25
 force_xp = 20
@@ -127,7 +127,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("6")
 titel = "Stable Fair"
-description = "A traveling stable fair has set up pens at the edge of the post. Handlers walk trained ponygirls in tight circles so buyers can judge gait, submission, and spirit.
+_description = "A traveling stable fair has set up pens at the edge of the post. Handlers walk trained ponygirls in tight circles so buyers can judge gait, submission, and spirit.
 
 Mares are offered by type - submission, training, and temper - not by famous names. Each visit brings different stock."
 content = Array[ExtResource("2_svys2")]([SubResource("Resource_btn_green"), SubResource("Resource_btn_needy"), SubResource("Resource_btn_wild"), SubResource("Resource_btn_sub"), SubResource("Resource_btn_strong"), SubResource("Resource_mqmyc"), SubResource("Resource_btn_leave")])

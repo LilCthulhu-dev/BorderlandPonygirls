@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("7")
 titel = "Tide Fish"
-description = "A halfling cook pries a barrel, sniffs, and laughs. “Still sea-cold. The village will eat well tonight.”
+_description = "A halfling cook pries a barrel, sniffs, and laughs. “Still sea-cold. The village will eat well tonight.”
 
 She pays without counting twice."
 img = ExtResource("8")

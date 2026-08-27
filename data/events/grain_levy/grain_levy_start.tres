@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Grain Levy"
-description = "A village cook with flour in his ears plants himself in your path.
+_description = "A village cook with flour in his ears plants himself in your path.
 
 \"{TITLE}. Last year's surplus is rotting in the store-hut. Harbor millers will pay for it if it arrives dry. Coin on delivery. Don't let the mares snack the sacks open.\""
 img = ExtResource("10")

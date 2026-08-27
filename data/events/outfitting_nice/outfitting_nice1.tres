@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_lwcuq")
 titel = "Outfitting"
-description = "You bring the girl into the stable. It’s only you, your shaman, and the girl. You order her to strip. Of course she flusters, but you reassure her and give her time. It’s the last few moments of her being a person. There is no need to rush.
+_description = "You bring the girl into the stable. It’s only you, your shaman, and the girl. You order her to strip. Of course she flusters, but you reassure her and give her time. It’s the last few moments of her being a person. There is no need to rush.
 
 She stands naked before you, cheeks flush and trying to hide her shame with her hands. You chuckle, and order her to put her hands away. “You're gonna be a ponygirl and ponygirls don’t wear clothes.”"
 content = Array[ExtResource("2_6d7cx")]([SubResource("Resource_jfgcl")])

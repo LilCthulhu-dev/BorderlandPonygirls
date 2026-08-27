@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1")
 titel = "Iron Tithe"
-description = "The elder raps the wagon once. “Trading Post smiths. They know the mark. Don’t stop for every pretty tack-stall on the way.”
+_description = "The elder raps the wagon once. “Trading Post smiths. They know the mark. Don’t stop for every pretty tack-stall on the way.”
 
 Your mares lean into the traces. The iron sings softly whenever a wheel hits a stone."
 img = ExtResource("3_u8nso")

@@ -88,7 +88,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("11_cj73r")
 titel = "Cave Salvage"
-description = "Your men unload the salvaged goods while you speak with the guard captain and explain what you found.
+_description = "Your men unload the salvaged goods while you speak with the guard captain and explain what you found.
 
 “Again?” she growls, shaking her head. “Smuggling has really been getting out of hand lately. Anyhow, thanks for returning the stolen goods - and for giving me a heads-up.”
 

@@ -61,7 +61,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("9_nq545")
 titel = "Outfitting"
-description = "You order the girl to sit back up, before you fasten the last item to her - a nice metal collar. You fit it around her throat and with an ominous click it seals the transformation.
+_description = "You order the girl to sit back up, before you fasten the last item to her - a nice metal collar. You fit it around her throat and with an ominous click it seals the transformation.
 
 “Now, one last thing,” you say almost solemnly, “you need a new name, then you are done.” You pause, share a glance with the shaman. Then you look back at her. “{PONYNAME} sounds fitting.”
 

@@ -34,7 +34,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("8")
 titel = "Night Dispatch"
-description = "The wax parts clean. Inside: a short hand, no seal-name.
+_description = "The wax parts clean. Inside: a short hand, no seal-name.
 
 The post still honors the protection pact. No raiding parties south of the stream this moon. The millers will pay the levy. The village will keep its horseshoe tax.
 

@@ -99,7 +99,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_rhcrj")
 titel = "Market Sale"
-description = "The market is alive with unusual hustle and bustle. Before long, you discover the reason: a major sale is underway. You might find a real bargain - if you hurry.
+_description = "The market is alive with unusual hustle and bustle. Before long, you discover the reason: a major sale is underway. You might find a real bargain - if you hurry.
 "
 content = Array[ExtResource("2_c1u7w")]([SubResource("Resource_nv1yq"), SubResource("Resource_opyfm"), SubResource("Resource_f8o6y"), SubResource("Resource_03ver")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

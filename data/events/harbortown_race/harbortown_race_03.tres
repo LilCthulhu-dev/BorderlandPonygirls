@@ -26,7 +26,7 @@ metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 [resource]
 script = ExtResource("3_un2lo")
 titel = "Harbortown Circuit"
-description = "The old goblin accepts your payment, counts the coins twice, and records your entry in a thick ledger.
+_description = "The old goblin accepts your payment, counts the coins twice, and records your entry in a thick ledger.
 
 “You’re registered, {TITLE}. Choose your mare and get her ready in the preparation area. An attendant will inspect her equipment and assign you a starting stall.”
 

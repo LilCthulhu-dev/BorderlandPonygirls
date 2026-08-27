@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Tide Fish"
-description = "A fishmonger with scale-flecked arms blocks your path at the docks.
+_description = "A fishmonger with scale-flecked arms blocks your path at the docks.
 
 “{TITLE}. Halfling Village wants a load of tide-fish before it turns. Fast wagon, wet straw, pay on delivery. Your mares look like they can make the road.”"
 img = ExtResource("10")

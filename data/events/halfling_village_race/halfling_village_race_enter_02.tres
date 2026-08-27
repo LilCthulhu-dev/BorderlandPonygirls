@@ -57,7 +57,7 @@ metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 [resource]
 script = ExtResource("3_d43f3")
 titel = "Halfling Village Derby"
-description = "The racemaster happily accepts your payment and adds your name to his list.
+_description = "The racemaster happily accepts your payment and adds your name to his list.
 
 “That settles it, {TITLE}. Choose the mare you want to enter and have her ready at the starting area. One of my helpers will explain the rules and assign you a stall.”
 

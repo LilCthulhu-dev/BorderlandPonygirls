@@ -40,7 +40,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("3_45jgd")
 titel = "Tobias and Lucy"
-description = "You were at the tavern, haggling with the barkeeper over the price of rations, when you noticed an unusual pair sitting at a corner table - a halfling and a young human... mare?
+_description = "You were at the tavern, haggling with the barkeeper over the price of rations, when you noticed an unusual pair sitting at a corner table - a halfling and a young human... mare?
 
 She wore a ponygirl harness and bridle, but none of the usual restraints, and her gag hung loosely beside her face. Stranger still, she was sitting on a bench inside the tavern, casually talking to her master instead of waiting outside in the stable."
 content = Array[ExtResource("2_rxtcn")]([SubResource("Resource_lu3ck"), SubResource("Resource_k0miw")])

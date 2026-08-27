@@ -57,7 +57,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_vbjus")
 titel = "Ponygirl outfitter"
-description = "You ask the owner about gear for ponygirl racing.
+_description = "You ask the owner about gear for ponygirl racing.
 
 “You’re interested in that new fad, {TITLE}?” the shopkeeper asks dismissively. “A waste, if you ask me. The gear is difficult to make, and young riders keep training for the track instead of the grasslands. But what do I know?”
 

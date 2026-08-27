@@ -8,6 +8,6 @@
 [resource]
 script = ExtResource("3")
 titel = "Harvest Cask"
-description = "The farmer sighs into his mug. “Then it’ll sit in the cellar another week, {TITLE}. Wine doesn’t mind waiting. Innkeepers do.”"
+_description = "The farmer sighs into his mug. “Then it’ll sit in the cellar another week, {TITLE}. Wine doesn’t mind waiting. Innkeepers do.”"
 img = ExtResource("4")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

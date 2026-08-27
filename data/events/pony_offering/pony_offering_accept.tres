@@ -61,7 +61,7 @@ metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 [resource]
 script = ExtResource("8")
 titel = "Offering"
-description = "The girl grows all red and flustered with excitement. An hour later all the logistics are taken care of: The family is paid, she has said her farewell, and you bring her back to the stables.
+_description = "The girl grows all red and flustered with excitement. An hour later all the logistics are taken care of: The family is paid, she has said her farewell, and you bring her back to the stables.
 
 Now you only need to prepare her, or leave the task to your shaman.
 

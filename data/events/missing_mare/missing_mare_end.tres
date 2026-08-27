@@ -67,7 +67,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("10")
 titel = "Missing Mare"
-description = "You find her behind a net-shed: bit still in, harness twisted, submission gone. She flinches when you take the lead.
+_description = "You find her behind a net-shed: bit still in, harness twisted, submission gone. She flinches when you take the lead.
 
 The merchant’s sketch matches. You can walk her back to the post for the reward - or put her in your own line and live with the talk."
 img = ExtResource("11")

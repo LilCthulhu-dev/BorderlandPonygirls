@@ -26,7 +26,7 @@ metadata/_custom_type_script = "uid://b2kag3ewwrnih"
 [resource]
 script = ExtResource("3_663uw")
 titel = "Goblin Village Scramble"
-description = "The racemaster accepts your coins and drops them into a battered iron box.
+_description = "The racemaster accepts your coins and drops them into a battered iron box.
 
 “You’re in, {TITLE} {NAME}. Pick your mare and take her to the preparation area. The attendants will inspect her gear and tell you which starting stall is yours.”
 

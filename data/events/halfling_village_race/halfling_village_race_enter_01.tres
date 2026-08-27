@@ -31,7 +31,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("11_qbl3j")
 titel = "Halfling Village Derby"
-description = "The halfling racemaster is busy directing helpers and inspecting long lists when you approach him about entering the race.
+_description = "The halfling racemaster is busy directing helpers and inspecting long lists when you approach him about entering the race.
 
 “Another racer?” he asks with pleasant surprise before nodding eagerly. “Of course, {TITLE}. You have the proper racing gear, I assume?”
 

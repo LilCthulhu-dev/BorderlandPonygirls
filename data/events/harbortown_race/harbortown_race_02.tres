@@ -25,7 +25,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_w1lic")
 titel = "Harbortown Circuit"
-description = "The registration official, an old goblin with eyepatch, barely looks up as you approach his crowded desk.
+_description = "The registration official, an old goblin with eyepatch, barely looks up as you approach his crowded desk.
 
 “Name, warband, and...” He pauses when he recognizes you. “Ah, {TITLE} {NAME}. Here to enter the race, I assume?”
 

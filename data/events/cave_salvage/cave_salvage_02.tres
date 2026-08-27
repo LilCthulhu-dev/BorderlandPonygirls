@@ -72,7 +72,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("11_081s4")
 titel = "Cave Salvage"
-description = "You dismount and take your ponygirl by the reins as your men follow you into the darkness of the cave.
+_description = "You dismount and take your ponygirl by the reins as your men follow you into the darkness of the cave.
 
 The air inside is cold and damp. From somewhere deep below comes the sound of a large creature noisily slurping and crunching its way through a meal.
 

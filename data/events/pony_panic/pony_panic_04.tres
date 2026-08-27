@@ -20,7 +20,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("3_py6u4")
 titel = "Pony Panic"
-description = "You give {PONYNAME} a good while to calm down, almost gently stroking her tits, before you order your men to find an inn with stables - enough drama for one day. A bit of rest should be enough to calm her and the rest of the ponies down.
+_description = "You give {PONYNAME} a good while to calm down, almost gently stroking her tits, before you order your men to find an inn with stables - enough drama for one day. A bit of rest should be enough to calm her and the rest of the ponies down.
 
 Your men seem somewhat displeased, clearly expecting you to punish the rebellious cunt, but the onlookers seem relieved that you have shown mercy."
 open_actions = Array[ExtResource("1_i5nr4")]([SubResource("Resource_nisjn"), SubResource("Resource_0jdp1")])

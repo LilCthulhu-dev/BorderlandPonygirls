@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("8_nytj0")
 titel = "Tobias and Lucy"
-description = "Curiosity gets the better of you, and you walk over to greet the pair. You address the halfling first, hesitating briefly before nodding to the unusual ponygirl.
+_description = "Curiosity gets the better of you, and you walk over to greet the pair. You address the halfling first, hesitating briefly before nodding to the unusual ponygirl.
 
 The pair chuckle at your uncertainty, but return your greeting and invite you to sit down and share a beer with them.
 

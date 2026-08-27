@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Salt Run"
-description = "A dock clerk with ink-black fingers flags you down between the fish stalls.
+_description = "A dock clerk with ink-black fingers flags you down between the fish stalls.
 
 “{TITLE}. I’ve a sealed crate of salt that needs to reach the Goblin Village kitchens before the next feast-day. Pay on delivery. Keep it dry. Don’t let the guards ‘inspect’ half of it into their own pouches.”"
 img = ExtResource("10")

@@ -8,6 +8,6 @@
 [resource]
 script = ExtResource("1")
 titel = "Tide Fish"
-description = "The fishmonger packs the barrels in wet straw and ties them high on your wagon. “Halfling kitchens. Don’t let the sun cook it. They pay if it still smells like the sea.”"
+_description = "The fishmonger packs the barrels in wet straw and ties them high on your wagon. “Halfling kitchens. Don’t let the sun cook it. They pay if it still smells like the sea.”"
 img = ExtResource("3_yy8ie")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

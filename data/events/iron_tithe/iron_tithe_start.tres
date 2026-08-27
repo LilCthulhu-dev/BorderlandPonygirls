@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Iron Tithe"
-description = "A village elder stops you by the smithy, a low wagon of iron bars behind him.
+_description = "A village elder stops you by the smithy, a low wagon of iron bars behind him.
 
 “{TITLE}. The Trading Post wants its tithe in iron, not excuses. Haul this load south. They pay the fee there. We keep the village in tack.”"
 img = ExtResource("10")

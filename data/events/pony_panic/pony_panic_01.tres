@@ -46,7 +46,7 @@ script = ExtResource("5_7nfr3")
 [resource]
 script = ExtResource("3_xfjde")
 titel = "Pony Panic"
-description = "You’re in the middle of a busy road, as suddenly {PONYNAME} begins to buckle and thrash like a furious bull. Her rider is thrown off, but your men react fast and form a ring around her.
+_description = "You’re in the middle of a busy road, as suddenly {PONYNAME} begins to buckle and thrash like a furious bull. Her rider is thrown off, but your men react fast and form a ring around her.
 
 She kicks and screams, fights against her bondage with desperation while tears well up her eyes. You have seen it before: pony panic. The person surfaces, and struggles against her new life as your beast."
 content = Array[ExtResource("2_42mhs")]([SubResource("Resource_7nfr3"), SubResource("Resource_twx8p"), SubResource("Resource_4b7ge")])

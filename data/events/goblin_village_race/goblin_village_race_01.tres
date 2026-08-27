@@ -86,7 +86,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("3_lqno4")
 titel = "Goblin Village Scramble"
-description = "You hear the racetrack long before you see it. Goblins shout, drums pound, and an excited crowd roars whenever a ponygirl passes the crude wooden stands.
+_description = "You hear the racetrack long before you see it. Goblins shout, drums pound, and an excited crowd roars whenever a ponygirl passes the crude wooden stands.
 
 The village has turned an old training ground into its own racing circuit, and almost everyone has come to watch."
 content = Array[ExtResource("2_eda28")]([SubResource("Resource_svp2w"), SubResource("Resource_tbie3"), SubResource("Resource_f46yg"), SubResource("Resource_0hriv"), SubResource("Resource_ds2kd")])

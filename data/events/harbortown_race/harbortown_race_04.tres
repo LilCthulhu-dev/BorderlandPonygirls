@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("3_53ui4")
 titel = "Harbortown Circuit"
-description = "“Suit yourself,” the old goblin says with a shrug. “There’ll be another race soon enough. Harbortown has taken quite a liking to them.”
+_description = "“Suit yourself,” the old goblin says with a shrug. “There’ll be another race soon enough. Harbortown has taken quite a liking to them.”
 
 Before you can answer, he is already calling the next competitor forward."
 metadata/_custom_type_script = "uid://47s8j4k2usde"

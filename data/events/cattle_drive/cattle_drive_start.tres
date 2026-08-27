@@ -61,7 +61,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("10_fibga")
 titel = "Cattle Drive"
-description = "You get talking with an old halfling farmer, and after a few drinks and some friendly conversation, he makes you an interesting offer.
+_description = "You get talking with an old halfling farmer, and after a few drinks and some friendly conversation, he makes you an interesting offer.
 
 “I could use the help of a young {TITLE} like you. See those five hu-cows in the pen over there? I need them driven over to the Trading Post in the south, but the roads have gotten dangerous, and I’m not as young as I used to be. So, what do you say? It’s not the most profitable kind of work, but it’s honest.”"
 content = Array[ExtResource("2_p4gqr")]([SubResource("Resource_xttcn"), SubResource("Resource_cfy53"), SubResource("Resource_spgdg")])

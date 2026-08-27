@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Bone Charm"
-description = "Near a scatter of old bones your scout kicks up a carved charm, still warm from someone’s hand.
+_description = "Near a scatter of old bones your scout kicks up a carved charm, still warm from someone’s hand.
 
 The cave mouth is close. Whatever dropped this might still be watching. A village shaman would pay to read the marks."
 img = ExtResource("10")

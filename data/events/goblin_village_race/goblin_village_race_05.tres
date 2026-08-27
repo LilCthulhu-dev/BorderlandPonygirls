@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://ceventponysel1"
 [resource]
 script = ExtResource("3_sxu30")
 titel = "Goblin Village Scramble"
-description = "The preparation area is crowded with mares, jockeys, and goblin attendants shouting over one another. Harnesses are tightened, saddles adjusted, and last-minute advice exchanged with varying degrees of usefulness.
+_description = "The preparation area is crowded with mares, jockeys, and goblin attendants shouting over one another. Harnesses are tightened, saddles adjusted, and last-minute advice exchanged with varying degrees of usefulness.
 
 Pick the mare you want under you. A goblin attendant inspects her straps with surprising care, gives her a pat on the rump, and attaches your numbered ribbon.
 

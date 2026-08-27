@@ -8,6 +8,6 @@
 [resource]
 script = ExtResource("3")
 titel = "Missing Mare"
-description = "The merchant spits into the dust. “Then I’ll ask the next warband, {TITLE}. Someone always wants coin.”"
+_description = "The merchant spits into the dust. “Then I’ll ask the next warband, {TITLE}. Someone always wants coin.”"
 img = ExtResource("4")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

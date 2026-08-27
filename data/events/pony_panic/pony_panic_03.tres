@@ -31,7 +31,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_fc0np")
 titel = "Pony Panic"
-description = "You approach {PONYNAME} slowly and with open hands. She is huffing into her bit-gag and shifts nervously from foot to foot, but after a few moments you manage to take hold of her reins.
+_description = "You approach {PONYNAME} slowly and with open hands. She is huffing into her bit-gag and shifts nervously from foot to foot, but after a few moments you manage to take hold of her reins.
 
 “Easy, girl,” you murmur while stroking her flank until the panic fades. Finally the anger is gone, and she drops to her knees, leaning her head against you and whimpering."
 content = Array[ExtResource("2_657yl")]([SubResource("Resource_nqjhc"), SubResource("Resource_k0p1p")])

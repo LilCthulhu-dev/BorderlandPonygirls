@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("7")
 titel = "Iron Tithe"
-description = "The post smith checks the village mark, hefts a bar, and nods. “Good iron. We’ll turn it into bits and buckle-tongues before the week is out.”
+_description = "The post smith checks the village mark, hefts a bar, and nods. “Good iron. We’ll turn it into bits and buckle-tongues before the week is out.”
 
 He pays the tithe-fee without haggling. “Tell the elder the next batch can wait until the rains stop.”"
 img = ExtResource("8")

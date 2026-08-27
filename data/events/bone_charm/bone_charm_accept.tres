@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1")
 titel = "Bone Charm"
-description = "You wrap the charm in cloth and tuck it into a saddlebag. The bone is warm, as if it had been held a moment ago.
+_description = "You wrap the charm in cloth and tuck it into a saddlebag. The bone is warm, as if it had been held a moment ago.
 
 The village shaman will want it before dusk-talk starts."
 img = ExtResource("3_1edpr")

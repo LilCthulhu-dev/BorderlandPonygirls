@@ -26,6 +26,6 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("6_qgfxt")
 titel = "Mysterious Cave"
-description = "Your warband marches through the wilderness when one of your scouts returns with news: he has discovered the entrance to a cave. Fresh tracks surround the opening, and bones lie scattered across the ground. Whatever made its lair inside is still there."
+_description = "Your warband marches through the wilderness when one of your scouts returns with news: he has discovered the entrance to a cave. Fresh tracks surround the opening, and bones lie scattered across the ground. Whatever made its lair inside is still there."
 content = Array[ExtResource("2_pmb7g")]([SubResource("Resource_gytls"), SubResource("Resource_3yp26")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

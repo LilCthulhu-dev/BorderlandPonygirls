@@ -32,7 +32,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("2_tn2n0")
 titel = "A Farmer’s Request"
-description = "An old halfling farmer studies your ponygirls for a moment before approaching you.
+_description = "An old halfling farmer studies your ponygirls for a moment before approaching you.
 
 “G’day, young man. That’s a fine stable of mares you’ve got there. I could certainly use a few of them out in the fields. What do you say? Think you could help an old man out for a couple of days?”"
 content = Array[ExtResource("1_a7hfa")]([SubResource("Resource_v0sb3"), SubResource("Resource_lkv00")])

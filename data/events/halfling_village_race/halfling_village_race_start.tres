@@ -86,7 +86,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("11_4v8sr")
 titel = "Halfling Village Derby"
-description = "You arrive at the racetrack to find it packed with excited onlookers, all eager to witness one of those fancy ponygirl races everyone has been talking about."
+_description = "You arrive at the racetrack to find it packed with excited onlookers, all eager to witness one of those fancy ponygirl races everyone has been talking about."
 content = Array[ExtResource("2_rw0fj")]([SubResource("Resource_rusv4"), SubResource("Resource_2u8ah"), SubResource("Resource_7nnse"), SubResource("Resource_m6gfv"), SubResource("Resource_1fkpw"), SubResource("Resource_pxexv")])
 open_actions = Array[ExtResource("1_qfde6")]([SubResource("Resource_ok1ty")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

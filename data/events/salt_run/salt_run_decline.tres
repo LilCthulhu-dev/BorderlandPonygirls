@@ -8,6 +8,6 @@
 [resource]
 script = ExtResource("3")
 titel = "Salt Run"
-description = "The clerk shrugs, already waving the next porter over. “Plenty of hungry carts, {TITLE}. Come back if you change your mind.”"
+_description = "The clerk shrugs, already waving the next porter over. “Plenty of hungry carts, {TITLE}. Come back if you change your mind.”"
 img = ExtResource("4")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

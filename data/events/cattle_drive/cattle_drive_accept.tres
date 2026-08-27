@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("3_mvd6v")
 titel = "Cattle Drive"
-description = "“Good decision, {TITLE}. My men will get the beasts ready, and you’ll be back on the road within the hour,” the old farmer promises. Sure enough, about an hour later, everything is prepared.
+_description = "“Good decision, {TITLE}. My men will get the beasts ready, and you’ll be back on the road within the hour,” the old farmer promises. Sure enough, about an hour later, everything is prepared.
 
 The hu-cows seem slightly confused by the change in their daily routine, but they are far too docile to put up much resistance. Leashes are fastened to their collars, and you assign two of your men to lead them along as your warband sets out."
 metadata/_custom_type_script = "uid://47s8j4k2usde"

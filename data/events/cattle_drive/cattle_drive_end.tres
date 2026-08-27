@@ -28,7 +28,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("6_torkx")
 titel = "Cattle Drive"
-description = "You meet with the farmer’s contact, a stout halfling merchant.
+_description = "You meet with the farmer’s contact, a stout halfling merchant.
 
 “He hired a whole warband to move his cattle? The old man really needs to accept that he’s getting too old for this kind of work. Shame he has no sons to take over the business.”
 

@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://ceventponysel1"
 [resource]
 script = ExtResource("3_vhapx")
 titel = "Harbortown Circuit"
-description = "You enter the preparation area and find it bustling with activity. Jockeys tighten straps, attendants inspect harnesses, and racing mares stretch or shift restlessly beneath the roar of the nearby crowd.
+_description = "You enter the preparation area and find it bustling with activity. Jockeys tighten straps, attendants inspect harnesses, and racing mares stretch or shift restlessly beneath the roar of the nearby crowd.
 
 Pick the mare you want under you. An official examines every buckle and fastening before attaching your numbered ribbon to the harness.
 

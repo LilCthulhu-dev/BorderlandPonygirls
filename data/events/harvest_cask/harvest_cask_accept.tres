@@ -8,6 +8,6 @@
 [resource]
 script = ExtResource("1")
 titel = "Harvest Cask"
-description = "The farmer lashes the cask behind your lead mare and pats the wood. “Harbor inn, the one with the blue awning. Don’t bounce it. Don’t tap it. They pay when the seal is whole.”"
+_description = "The farmer lashes the cask behind your lead mare and pats the wood. “Harbor inn, the one with the blue awning. Don’t bounce it. Don’t tap it. They pay when the seal is whole.”"
 img = ExtResource("3_xs4sa")
 metadata/_custom_type_script = "uid://47s8j4k2usde"

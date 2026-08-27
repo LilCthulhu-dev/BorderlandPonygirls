@@ -28,7 +28,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("8")
 titel = "Night Dispatch"
-description = "A factor with no badge finds you by the warehouse wall. She does not ask to read it. She weighs the packet, then your face, then counts {GOOD_WAGE} into your palm.
+_description = "A factor with no badge finds you by the warehouse wall. She does not ask to read it. She weighs the packet, then your face, then counts {GOOD_WAGE} into your palm.
 
 \"The village will hear a rumor,\" she says. \"Not a letter.\"
 

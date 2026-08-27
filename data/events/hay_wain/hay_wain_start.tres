@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Hay Wain"
-description = "A farmer in a sweat-dark vest flags you down at the field gate, pitchfork still in hand.
+_description = "A farmer in a sweat-dark vest flags you down at the field gate, pitchfork still in hand.
 
 \"{TITLE}. I've a wain of fodder that needs to reach the Goblin Village stables before the next warband eats the last of their straw. Pay when the stablehands sign for it. Keep it dry. Don't let your own mares finish the load on the road.\""
 img = ExtResource("10")

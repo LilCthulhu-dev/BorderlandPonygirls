@@ -140,7 +140,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("3_70w0p")
 titel = "Outfitting"
-description = "The girl stands in the middle of the stable, nervously shifting from foot to foot. She is not fully bound yet, and could try to flee or fight back. Instead she waits, eyes cast down, breathing deliberately.
+_description = "The girl stands in the middle of the stable, nervously shifting from foot to foot. She is not fully bound yet, and could try to flee or fight back. Instead she waits, eyes cast down, breathing deliberately.
 
 It’s a good sign. Seems like she has the right mindset of a proper ponygirl."
 content = Array[ExtResource("2_n5jve")]([SubResource("Resource_qupo4"), SubResource("Resource_yt2fj"), SubResource("Resource_f3ai4"), SubResource("Resource_hhgbk"), SubResource("Resource_am51c")])

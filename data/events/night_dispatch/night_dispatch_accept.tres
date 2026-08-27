@@ -37,7 +37,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("5")
 titel = "Night Dispatch"
-description = "The guard presses the packet into your palm and closes your fingers over the wax. \"Goblin Village. Elder or quartermaster. If the seal is cracked, you were never here.\"
+_description = "The guard presses the packet into your palm and closes your fingers over the wax. \"Goblin Village. Elder or quartermaster. If the seal is cracked, you were never here.\"
 
 The lantern light does not follow you past the gate. The wax is still warm."
 img = ExtResource("6")

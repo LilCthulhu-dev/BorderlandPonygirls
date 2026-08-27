@@ -44,7 +44,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("9_rw3tq")
 titel = "Offering"
-description = "A young woman approaches you, practically trembling with nervous excitement.
+_description = "A young woman approaches you, practically trembling with nervous excitement.
 
 “Excuse me, {TITLE}. You are the leader of this warband, right?” She draws a steadying breath. “I would like to offer myself as a ponygirl. Pay my family a fair price, and I am yours.”"
 content = Array[ExtResource("2_7wsu0")]([SubResource("Resource_74dt0"), SubResource("Resource_owt7r"), SubResource("Resource_pgr8y")])

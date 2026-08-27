@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 [resource]
 script = ExtResource("7")
 titel = "Harvest Cask"
-description = "The innkeep under the blue awning checks the wax, grins, and rolls the cask inside. “Halfling red. The feast will not be dry.”
+_description = "The innkeep under the blue awning checks the wax, grins, and rolls the cask inside. “Halfling red. The feast will not be dry.”
 
 Coin hits the counter before you ask."
 img = ExtResource("8")

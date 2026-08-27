@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Missing Mare"
-description = "A sweating merchant catches your sleeve at the Trading Post stable.
+_description = "A sweating merchant catches your sleeve at the Trading Post stable.
 
 “One of my mares bolted toward Harbor Town. I need a warband that can bring her back - or at least find what’s left of the tack. I’ll pay well if she comes home.”"
 img = ExtResource("10")

@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Harvest Cask"
-description = "A halfling farmer waves you over from a cellar door, a sealed wine cask at his feet.
+_description = "A halfling farmer waves you over from a cellar door, a sealed wine cask at his feet.
 
 “{TITLE}. Harbor feast next week, and their inn is dry. Haul this cask to the house with the blue awning. Pay on delivery if the seal holds.”"
 img = ExtResource("10")

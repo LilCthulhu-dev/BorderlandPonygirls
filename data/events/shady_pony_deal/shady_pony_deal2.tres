@@ -61,6 +61,6 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("15_b3gjr")
 titel = "Unexpected Deal"
-description = "The goblin grins, takes the gold, and leaves you with your new ponygirl. She looks at you pleadingly but is too afraid to speak."
+_description = "The goblin grins, takes the gold, and leaves you with your new ponygirl. She looks at you pleadingly but is too afraid to speak."
 content = Array[ExtResource("1_yipd7")]([SubResource("Resource_ktc0q"), SubResource("Resource_tb6qg")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

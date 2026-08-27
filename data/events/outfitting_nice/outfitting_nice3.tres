@@ -117,7 +117,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 [resource]
 script = ExtResource("12_vmfnw")
 titel = "Outfitting"
-description = "The base outfit is done, and the she-beast begins to realize how little freedom she has left. You can see the slow bubblying panic in her eyes. You take hold of her reins and pet her flanks while reassuring her gently.
+_description = "The base outfit is done, and the she-beast begins to realize how little freedom she has left. You can see the slow bubblying panic in her eyes. You take hold of her reins and pet her flanks while reassuring her gently.
 
 “Easy girl. We are almost done. Now, go on your knees and spread your legs.”
 

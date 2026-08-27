@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1")
 titel = "Missing Mare"
-description = "The merchant presses a cheap sketch into your hand: a dark-haired human mare, bit-scarred, last seen on the harbor road.
+_description = "The merchant presses a cheap sketch into your hand: a dark-haired human mare, bit-scarred, last seen on the harbor road.
 
 “Bring her back and I’ll pay well. Keep her and I’ll make sure every stall on this post hears about it.”"
 img = ExtResource("3_f71yy")
