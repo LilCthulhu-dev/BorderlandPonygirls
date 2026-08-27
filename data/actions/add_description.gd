@@ -5,7 +5,8 @@ class_name AddDescription
 @export var rng_text: Array[MultilineText] = []
 
 func get_result() -> String:
-	super()
+	ModalManager.open_event_result_modal([] as Array[Action], txt)
+
 	if txt:
 		return  Utils.translate(txt)
 	rng_text.shuffle()
