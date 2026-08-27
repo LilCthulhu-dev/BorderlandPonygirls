@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dh4yfq6tpxud5"]
+
+[ext_resource type="Script" uid="uid://botw12xd5wmvi" path="res://info_display/info_label.gd" id="1_xl7so"]
+
+[node name="InfoLabel" type="Label" unique_id=702443562]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "test"
+script = ExtResource("1_xl7so")

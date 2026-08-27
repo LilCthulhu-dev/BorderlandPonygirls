@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://dh4yfq6tpxud5"]
-
-[ext_resource type="Script" uid="uid://botw12xd5wmvi" path="res://info_display/info_display_label.gd" id="1_w68ta"]
-
-[node name="InfoDisplayLabel" type="Label" unique_id=702443562]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "test"
-script = ExtResource("1_w68ta")
