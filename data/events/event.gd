@@ -2,14 +2,9 @@ extends Resource
 class_name Event
 
 @export var titel : String
-@export var _id : StringName
-var id: StringName:
+var id : StringName:
 	get:
-		if _id:
-			return _id
 		return Utils.string_to_id(titel)
-	set(value):
-		_id = value
 @export_multiline var _description : String
 var description: String:
 	get:
