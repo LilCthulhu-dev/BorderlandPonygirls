@@ -84,20 +84,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/Basics/VBoxContainer" unique_id=504656282]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer2" unique_id=1809119687]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "id"
-
-[node name="IdLabel" type="LineEdit" parent="VBoxContainer/Basics/VBoxContainer/HBoxContainer2" unique_id=2086297314]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 3.0
-
 [node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/Basics/VBoxContainer" unique_id=1385109711]
 layout_mode = 2
 
@@ -127,6 +113,7 @@ layout_mode = 2
 text = "123
 123
 123"
+wrap_mode = 1
 
 [node name="Content" type="FoldableContainer" parent="VBoxContainer" unique_id=1903129949]
 layout_mode = 2

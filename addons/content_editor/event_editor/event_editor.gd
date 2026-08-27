@@ -6,7 +6,6 @@ extends TabBar
 @onready var save_btn: Button = %SaveBtn
 @onready var new_btn: Button = %NewBtn
 @onready var title_label: LineEdit = %TitleLabel
-@onready var id_label: LineEdit = %IdLabel
 @onready var image_picker: EditorResourcePicker = %ImagePicker
 @onready var description_edit: TextEdit = %DescriptionEdit
 
@@ -62,7 +61,6 @@ func _load_event(new_event : Event) -> void:
 
 	event_picker.edited_resource = current_event
 	title_label.text = current_event.titel if current_event.titel else ""
-	id_label.text = current_event._id if current_event._id else ""
 	image_picker.edited_resource = current_event.img if current_event.img else null
 	description_edit.text = current_event._description if current_event._description else ""
 
@@ -71,7 +69,6 @@ func _load_event(new_event : Event) -> void:
 
 func _save(path: String) -> void:
 	current_event.titel = title_label.text
-	current_event._id = id_label.text
 	current_event.img = image_picker.edited_resource as Texture2D
 	current_event._description = description_edit.text
 
