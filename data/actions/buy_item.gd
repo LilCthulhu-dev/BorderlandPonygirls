@@ -6,11 +6,10 @@ class_name BuyItem
 @export var price_factor = Enums.PRICE_TIER.NORMAL
 
 func use():
-	if amount == 0:
-		return
-	else:
-		AttributesManager.gold -= _get_price() * amount
-		InventoryManager.set_inventory(item, amount)
+	if amount == 0: return
+	super()
+	AttributesManager.gold -= _get_price() * amount
+	InventoryManager.set_inventory(item, amount)
 
 func requirement_met() -> bool:
 	if AttributesManager.gold < _get_price() * amount:

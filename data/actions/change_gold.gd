@@ -7,10 +7,9 @@ func get_amount() -> int:
 	return int(Utils.translate(amount))
 
 func use():
-	if get_amount() == 0:
-		return
-	else:
-		AttributesManager.gold += get_amount()
+	if get_amount() == 0: return
+	super()
+	AttributesManager.gold += get_amount()
 
 func requirement_met() -> bool:
 	var value := get_amount()

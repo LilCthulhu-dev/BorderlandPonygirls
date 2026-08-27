@@ -31,6 +31,12 @@ func _get_result_text() -> Array[String]:
 			results.push_back(result)
 	return results
 
+func _get_description() -> Action:
+	for action in content.actions:
+		if action is AddDescription:
+			return action
+	return null
+
 func _on_pressed() -> void:
 	if content == null or content.actions.is_empty():
 		LocationManager.current_event = null
@@ -38,9 +44,12 @@ func _on_pressed() -> void:
 		return
 	if content.single_use:
 		content.used = true
-	var result_text := _get_result_text()
-	if not result_text.is_empty():
-		ModalManager.open_event_result_modal(content.actions)
+
+	var description = _get_description()
+	if description:
+		ModalManager.open_event_result_modal(
+			content.actions,
+			description.get_result())
 	else:
 		for action in content.actions:
 			action.use()

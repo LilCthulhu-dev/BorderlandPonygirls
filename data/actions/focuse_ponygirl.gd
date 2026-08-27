@@ -10,6 +10,7 @@ enum TARGET {
 @export var target := TARGET.ACTIVE
 
 func use() -> void:
+	super()
 	match target:
 		TARGET.ACTIVE:
 			PonygirlManager.focused_ponygirl = PonygirlManager.get_random_active_ponygirl()

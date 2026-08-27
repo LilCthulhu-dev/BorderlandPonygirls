@@ -2,6 +2,7 @@ extends Action
 class_name Heal
 
 func use() -> void:
+	super()
 	AttributesManager.current_health = AttributesManager.MAX_HEALTH
 
 func requirement_met() -> bool:

@@ -7,7 +7,9 @@ class_name Action
 @export var hard_requierment := false
 
 func use() -> void:
-	pass
+	var result := get_result().strip_edges()
+	if not result.is_empty():
+		GlobalSignals.add_info.emit(result)
 
 func requirement_met() -> bool:
 	return true

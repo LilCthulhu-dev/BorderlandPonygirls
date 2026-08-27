@@ -19,6 +19,7 @@ class_name AddPonygirl
 var _pending_name: String = Ponygirl.get_random_name()
 
 func use() -> void:
+	super()
 	PonygirlManager.add_ponygirl(_get_instance())
 
 func requirement_met() -> bool:

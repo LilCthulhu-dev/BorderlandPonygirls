@@ -20,12 +20,7 @@ layout_mode = 2
 text = "Results"
 autowrap_mode = 2
 
-[node name="ResultsLabel" type="Label" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=1905910436]
-unique_name_in_owner = true
-layout_mode = 2
-autowrap_mode = 2
-
-[node name="Button" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="3" unique_id=170542084]
+[node name="Button" type="Button" parent="ContentContainer/ScrollContainer/MarginContainer/VBoxContainer" parent_id_path=PackedInt32Array(1220582438) index="2" unique_id=170542084]
 layout_mode = 2
 text = "Accept"
 
