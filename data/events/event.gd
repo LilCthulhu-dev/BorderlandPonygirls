@@ -2,6 +2,8 @@ extends Resource
 class_name Event
 
 @export var titel : String
+@export var add_back_to_main := true
+
 var id: StringName:
 	get:
 		return Utils.string_to_id(titel)

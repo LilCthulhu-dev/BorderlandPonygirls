@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://objbp62gh8w"]
+
+[ext_resource type="Script" uid="uid://can3xeqa3g0sn" path="res://event_window/back_to_main_btn.gd" id="1_q3tq3"]
+
+[node name="BackToMainBtn" type="Button" unique_id=360156222]
+offset_right = 344.0
+offset_bottom = 75.0
+text = "> Back to Main"
+alignment = 0
+script = ExtResource("1_q3tq3")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

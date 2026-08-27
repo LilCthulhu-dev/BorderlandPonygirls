@@ -16,7 +16,7 @@
 
 [sub_resource type="Resource" id="Resource_75en0"]
 script = ExtResource("7_dmaue")
-event_path = "uid://b7mx4huk81b5"
+event_path = "uid://cqovnvajiwf48"
 metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_i6fhe"]

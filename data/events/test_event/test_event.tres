@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cqovnvajiwf48"]
+
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_kmr88"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_4ols6"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_fi7v8"]
+[ext_resource type="Script" uid="uid://by8ypobaog261" path="res://data/events/info_btn.gd" id="3_ovx83"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="4_fi7v8"]
+[ext_resource type="Script" uid="uid://dc1bca6pcahfr" path="res://data/actions/change_xp.gd" id="5_ovx83"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="6_0yuro"]
+
+[sub_resource type="Resource" id="Resource_mqmyc"]
+script = ExtResource("3_ovx83")
+btn_text = "test1"
+description = "TEST1 BLABLA"
+
+[sub_resource type="Resource" id="Resource_4ols6"]
+script = ExtResource("4_fi7v8")
+amount = "200"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_mqsdv"]
+script = ExtResource("5_ovx83")
+amount = 50
+metadata/_custom_type_script = "uid://dc1bca6pcahfr"
+
+[sub_resource type="Resource" id="Resource_ovx83"]
+script = ExtResource("6_0yuro")
+amount = 10
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_872a7"]
+script = ExtResource("3_ovx83")
+btn_text = "test2"
+single_use = true
+end_conversation = true
+description = "TEST2 BLABLA"
+actions = Array[ExtResource("1_kmr88")]([SubResource("Resource_4ols6"), SubResource("Resource_mqsdv"), SubResource("Resource_ovx83")])
+metadata/_custom_type_script = "uid://by8ypobaog261"
+
+[resource]
+script = ExtResource("3_fi7v8")
+titel = "Test"
+description = "BASIC BLABLA"
+content = Array[ExtResource("2_4ols6")]([SubResource("Resource_mqmyc"), SubResource("Resource_872a7")])
+metadata/_custom_type_script = "uid://47s8j4k2usde"

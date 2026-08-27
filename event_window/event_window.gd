@@ -9,6 +9,14 @@ extends CanvasLayer
 const EVENT_BTN = preload("uid://boeoqj8wswe7u")
 const EVENT_CHECK = preload("uid://dheu6x3a5wmi3")
 const EVENT_TEXT = preload("uid://desp1eu87yxct")
+const BASIC_EVENT_BTN = preload("uid://c3424ov14be65")
+
+const INFO_BTN = preload("uid://c3424ov14be65")
+const BACK_TO_MAIN_BTN = preload("uid://objbp62gh8w")
+
+var event:
+	get:
+		return LocationManager.current_event
 
 func _ready() -> void:
 	GameData.game_state = Enums.GAME_STATES.EVENT
@@ -16,15 +24,15 @@ func _ready() -> void:
 	_update_content()
 
 func _update_content():
-	label_titel.text = LocationManager.current_event.titel
+	label_titel.text = event.titel
 	label_titel.visible = label_titel.text != ""
 
-	label_description.text = LocationManager.current_event.description
+	label_description.text = event.description
 	label_description.visible = label_description.text != ""
 
 	label_results.text = ""
-	if !LocationManager.current_event.open_actions.is_empty():
-		for action in LocationManager.current_event.open_actions:
+	if !event.open_actions.is_empty():
+		for action in event.open_actions:
 			var result_txt = action.get_result()
 			if result_txt == "": continue
 			if label_results.text != "":
@@ -34,34 +42,38 @@ func _update_content():
 				label_results.text += "\n"
 	label_results.visible = label_results.text != ""
 
-	content_image.texture = LocationManager.current_event.img if content_image else null
+	content_image.texture = event.img if content_image else null
 
-	for child in content_container.get_children():
-		child.queue_free()
+	Utils.clear_container(content_container)
 
-	var added_content := 0
+	_add_content()
+	_add_back_to_main()
 
-	for content in LocationManager.current_event.content:
-		if !content.hard_requierments_met(): continue
-		if content is EventPonySelect:
-			added_content += _add_pony_select(content)
+func _add_content():
+	for content in event.content:
+		if !content.hard_requierments_met():
 			continue
+		if content.used:
+			continue
+
+		if content is EventPonySelect:
+			_add_pony_select(content)
+
 		var n = null
 		if content is EventBtn:
 			n = EVENT_BTN.instantiate()
 		elif content is EventCheck:
 			n = EVENT_CHECK.instantiate()
+		elif content is InfoBtn:
+			n = INFO_BTN.instantiate()
 		else:
 			n = EVENT_TEXT.instantiate()
 		n.content = content
 		content_container.add_child(n)
-		added_content += 1
 
-	if added_content == 0:
-		var back_button := EVENT_BTN.instantiate()
-		back_button.content = null
-		content_container.add_child(back_button)
-
+func _add_back_to_main():
+	if not (event.content.is_empty() or event.add_back_to_main): return
+	content_container.add_child(BACK_TO_MAIN_BTN.instantiate())
 
 func _add_pony_select(select: EventPonySelect) -> int:
 	var count := 0
