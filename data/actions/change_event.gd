@@ -5,7 +5,7 @@ class_name ChangeEvent
 
 func use():
 	super()
-	LocationManager.current_event = _get_target_event()
+	EventManager.current_event = _get_target_event()
 	if GameData.game_state != Enums.GAME_STATES.EVENT:
 		SceneManager.change_scene(SceneManager.EVENT_WINDOW)
 

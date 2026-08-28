@@ -39,7 +39,7 @@ func _get_description() -> Action:
 
 func _on_pressed() -> void:
 	if content == null or content.actions.is_empty():
-		LocationManager.current_event = null
+		EventManager.current_event = null
 		SceneManager.change_scene(SceneManager.MAIN_WINDOW)
 		return
 	if content.single_use:
