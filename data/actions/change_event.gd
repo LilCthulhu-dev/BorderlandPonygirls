@@ -4,7 +4,7 @@ class_name ChangeEvent
 @export_file("*.tres") var event_path: String
 
 func use():
-	LocationManager.current_event = _get_target_event()
+	EventManager.current_event = _get_target_event()
 	if GameData.game_state != Enums.GAME_STATES.EVENT:
 		SceneManager.change_scene(SceneManager.EVENT_WINDOW)
 

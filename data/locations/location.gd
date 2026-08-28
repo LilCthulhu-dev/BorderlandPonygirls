@@ -35,7 +35,7 @@ func has_valid_random_events() -> bool:
 	for event in random_events:
 		if event == null:
 			continue
-		if LocationManager.recent_random_events.has(event.id):
+		if EventManager.recent_random_events.has(event.id):
 			continue
 		if event.requirements_are_met():
 			return true
@@ -50,7 +50,7 @@ func get_random_event(chance: int = -1) -> Event:
 	for event in random_events:
 		if event == null:
 			continue
-		if LocationManager.recent_random_events.has(event.id):
+		if EventManager.recent_random_events.has(event.id):
 			continue
 		if not event.requirements_are_met():
 			continue

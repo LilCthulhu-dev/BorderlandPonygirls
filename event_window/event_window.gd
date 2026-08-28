@@ -16,15 +16,15 @@ func _ready() -> void:
 	_update_content()
 
 func _update_content():
-	label_titel.text = LocationManager.current_event.titel
+	label_titel.text = EventManager.current_event.titel
 	label_titel.visible = label_titel.text != ""
 
-	label_description.text = LocationManager.current_event.description
+	label_description.text = EventManager.current_event.description
 	label_description.visible = label_description.text != ""
 
 	label_results.text = ""
-	if !LocationManager.current_event.open_actions.is_empty():
-		for action in LocationManager.current_event.open_actions:
+	if !EventManager.current_event.open_actions.is_empty():
+		for action in EventManager.current_event.open_actions:
 			var result_txt = action.get_result()
 			if result_txt == "": continue
 			if label_results.text != "":
@@ -34,14 +34,14 @@ func _update_content():
 				label_results.text += "\n"
 	label_results.visible = label_results.text != ""
 
-	content_image.texture = LocationManager.current_event.img if content_image else null
+	content_image.texture = EventManager.current_event.img if content_image else null
 
 	for child in content_container.get_children():
 		child.queue_free()
 
 	var added_content := 0
 
-	for content in LocationManager.current_event.content:
+	for content in EventManager.current_event.content:
 		if !content.hard_requierments_met(): continue
 		if content is EventPonySelect:
 			added_content += _add_pony_select(content)

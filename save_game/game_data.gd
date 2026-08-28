@@ -69,6 +69,11 @@ var location_manager : LocationManager:
 		save_game.location_manager = value
 	get:
 		return save_game.location_manager
+var event_manager : EventManager:
+	set(value):
+		save_game.event_manager = value
+	get:
+		return save_game.event_manager
 var ponygirl_manager : PonygirlManager:
 	set(value):
 		save_game.ponygirl_manager = value

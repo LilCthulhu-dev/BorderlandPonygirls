@@ -2,5 +2,5 @@ extends Action
 class_name BackToMain
 
 func use():
-	LocationManager.current_event = null
+	EventManager.current_event = null
 	SceneManager.change_scene(SceneManager.MAIN_WINDOW)
