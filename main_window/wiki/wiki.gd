@@ -94,7 +94,7 @@ func _on_wiki_search_text_changed(new_text: String) -> void:
 		if child is not WikiBtn:
 			continue
 		var title: String = child.wiki_entry.titel.to_lower()
-		var translated := Utils.translate(child.wiki_entry.titel).to_lower()
+		var translated: String = Utils.translate(child.wiki_entry.titel).to_lower()
 		var has_fitting_sub_entry := false
 		for sub_entry in child.wiki_entry.sub_entries:
 			if (
