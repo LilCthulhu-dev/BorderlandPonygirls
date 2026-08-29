@@ -11,4 +11,3 @@ func hard_requierments_met() -> bool:
 		if not action.requirement_met() and action.hard_requierment:
 			return false
 	return true
-

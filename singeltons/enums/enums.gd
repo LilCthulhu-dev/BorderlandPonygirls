@@ -27,6 +27,11 @@ enum ABILITIES {
 	TRICKERY,
 	WITS,
 }
+enum PONY_PRICES {
+	CHEAP,
+	NORMAL,
+	EXPENSIVE,
+}
 enum PRICE_TIER {
 	VERY_CHEAP,
 	CHEAP,
@@ -46,16 +51,25 @@ enum GAME_STATES {
 }
 
 # ================================================== helper
+static func get_pony_price(price : Enums.PONY_PRICES):
+	match price:
+		Enums.PONY_PRICES.CHEAP:
+			return GameData.COSTS.ponygirl_cheap
+		Enums.PONY_PRICES.NORMAL:
+			return GameData.COSTS.ponygirl_normal
+		Enums.PONY_PRICES.EXPENSIVE:
+			return GameData.COSTS.ponygirl_expensive
+		_:
+			return 0
+
 static func enum_to_name(enum_dict: Dictionary, value: int) -> String:
 	var key = enum_dict.find_key(value)
 	if key == null:
 		return ""
 	return str(key).capitalize()
 
-
 static func ability_enum_to_name(ability: ABILITIES) -> String:
 	return enum_to_name(ABILITIES, ability)
-
 
 static func attribute_enum_to_name(attribute: ATTRIBUTES) -> String:
 	return enum_to_name(ATTRIBUTES, attribute)

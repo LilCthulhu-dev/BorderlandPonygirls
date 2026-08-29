@@ -13,9 +13,9 @@ const COSTS = {
 	rest = 25,
 	travel = 0.1, # per pixel
 	death = 200,
-	ponygirl_cheap = 60,
-	ponygirl_normal = 80,
-	ponygirl_expensive = 100,
+	ponygirl_cheap = 600,
+	ponygirl_normal = 800,
+	ponygirl_expensive = 1000,
 	training = 300,
 	teasing = 25,
 	climax = 50,
@@ -69,6 +69,11 @@ var location_manager : LocationManager:
 		save_game.location_manager = value
 	get:
 		return save_game.location_manager
+var event_manager : EventManager:
+	set(value):
+		save_game.event_manager = value
+	get:
+		return save_game.event_manager
 var ponygirl_manager : PonygirlManager:
 	set(value):
 		save_game.ponygirl_manager = value

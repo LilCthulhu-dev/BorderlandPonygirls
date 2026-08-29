@@ -48,10 +48,10 @@ Most of the core systems are implemented, and the game is technically playable. 
 Official Pre-Alpha builds are available for:
 
 Windows
-https://mega.nz/file/qkgQgZ7K#oLwRgjxPWYm4W2n04PJ-HiXue1bKuYuQQ-WUGMHvTuc
+https://mega.nz/file/ahgkWbJR#PsnjfP82dmls1TRhn5J8Wvak4cIGBmGNTfWZJdf5su8
 
 Linux
-https://mega.nz/file/a0g3lTpY#AGjEj-bNdCfRFpJpaSVPfmR50G53fP7w4rCRJ0FWA1g
+https://mega.nz/file/u8hXHRIQ#30j9Evm8g9a9HXOKQctiSML5XnMKt0SJqbcJCg-nEbk
 
 Because the game is still in Pre-Alpha, existing save files may become incompatible with future versions.
 

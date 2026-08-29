@@ -1,6 +1,7 @@
 extends Resource
 class_name Action
 
+@export_group('Requierments')
 @export var hide_tooltip := false
 @export var hide_description : = false
 @export var hard_requierment := false
