@@ -42,7 +42,7 @@ func _update_content():
 		if !content.hard_requierments_met(): continue
 		if content is EventPonySelect:
 			_add_pony_select(content)
-		elif content is EventModalInfo:
+		elif content is EventInfo:
 			_spawn_content(EVENT_MODAL_INFO, content)
 		elif content is EventBtn:
 			_spawn_content(EVENT_BTN, content)
