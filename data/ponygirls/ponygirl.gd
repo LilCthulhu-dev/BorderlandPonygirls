@@ -21,19 +21,55 @@ var portrait: Texture2D:
 		_portrait = value
 	get:
 		return get_display_texture()
+
+var initialized = false
+
 @export var xp := 0:
 	set(value):
+		var change = value - xp
+		if change == 0: return
+
 		xp = value
 		_update_normal_perks()
+
+		if !initialized: return
+		if change > 0:
+			GlobalSignals.add_info.emit("%s gained %s XP." % [name, change])
+		else:
+			GlobalSignals.add_info.emit("%s lost %s XP." % [name, abs(change)])
+
 @export var perks :Array[Perk] = []
+
 @export var submission := 50:
 	set(value):
-		submission = clamp(value, 0, 100)
+		var new_value := clampi(value, 0, 100)
+		var change = new_value - submission
+		if change == 0: return
+
+		submission = new_value
 		_update_background_perks()
+
+		if !initialized: return
+		if change > 0:
+			GlobalSignals.add_info.emit("%s gained %s Submission." % [name, change])
+		else:
+			GlobalSignals.add_info.emit("%s lost %s Submission." % [name, abs(change)])
+
 @export var arousal := 0:
 	set(value):
-		arousal = clamp(value, 0, 100)
+		var new_value := clampi(value, 0, 100)
+		var change = new_value - arousal
+		if change == 0: return
+
+		arousal = new_value
 		_update_background_perks()
+
+		if !initialized: return
+		if change > 0:
+			GlobalSignals.add_info.emit("%s gained %s Arousal." % [name, change])
+		else:
+			GlobalSignals.add_info.emit("%s lost %s Arousal." % [name, abs(change)])
+
 @export var active = false
 var level :int:
 	get:
@@ -58,6 +94,7 @@ func init() -> void:
 	if portrait == null and PonygirlManager.PORTRAITS.has(_race):
 		portrait = PonygirlManager.PORTRAITS[_race].pick_random()
 	_update_perks()
+	initialized = true
 
 static func get_random_name() -> String:
 	var first_name = PonygirlManager.FIRST_NAMES.pick_random()

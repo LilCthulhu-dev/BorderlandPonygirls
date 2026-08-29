@@ -12,6 +12,12 @@ func _ready() -> void:
 	GlobalSignals.add_info.connect(_on_add_info)
 
 func _on_add_info(txt: String) -> void:
+	if GameData.game_state == Enums.GAME_STATES.START:
+		return
+	if GameData.game_state == Enums.GAME_STATES.MAIN:
+		return
+	if GameData.game_state == Enums.GAME_STATES.COMBAT:
+		return
 	info_queue.append(txt)
 	if not is_processing_queue:
 		_process_info_queue()

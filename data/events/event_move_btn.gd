@@ -44,10 +44,8 @@ func _use_event():
 
 func _use_combat():
 	CombatManager.current_combat = target_combat
-	if GameData.game_state != Enums.GAME_STATES.COMBAT:
-		SceneManager.change_scene(SceneManager.COMBAT_WINDOW)
-	else:
-		GlobalSignals.update_combat.emit()
+	CombatManager.start_combat()
+	SceneManager.change_scene(SceneManager.COMBAT_WINDOW)
 
 func soft_requirements_met() -> bool:
 	for action in actions:
