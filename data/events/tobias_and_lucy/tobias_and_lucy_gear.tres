@@ -2,21 +2,13 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_q4klb"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_dc45e"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_dc45e"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3_ji5pl"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="3_sysrr"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="7_5qpgy"]
 
-[sub_resource type="Resource" id="Resource_qm0d7"]
-script = ExtResource("3_dc45e")
-event_path = "uid://l3qgv7wr7d7k"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_s66r5"]
-script = ExtResource("3_ji5pl")
-txt = "Leave"
+[sub_resource type="Resource" id="Resource_wd2y1"]
+script = ExtResource("3_sysrr")
 _btn_text = "Leave"
-actions = Array[ExtResource("1_q4klb")]([SubResource("Resource_qm0d7")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://l3qgv7wr7d7k"
 
 [resource]
 script = ExtResource("7_5qpgy")
@@ -28,5 +20,5 @@ description = "Tobias nods, then shrugs. “Yeah, the harness has to be made in 
 “Right, nearly forgot about that.” Tobias gives you a dirty grin. “The gear requires a specific plug and dildo, both pretty substential, and there is magic woven into it to disable the inhibitor. Means the ponygirl can cum during the race. Doesn’t happen every time, but it adds an interesting layer of tactics. You have to stay ahead and keep your mare’s lust under control. Otherwise, she buckles in front of the entire crowd while you watch the other racers overtake you.”
 
 Lucy blushes profusely and avoids eye contact, though she nods in agreement. “It’s rather... intense.”"
-content = Array[ExtResource("2_dc45e")]([SubResource("Resource_s66r5")])
+content = Array[ExtResource("2_dc45e")]([SubResource("Resource_wd2y1")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

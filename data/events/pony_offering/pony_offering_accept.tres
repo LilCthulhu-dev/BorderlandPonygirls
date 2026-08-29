@@ -1,9 +1,8 @@
 [gd_resource type="Resource" script_class="Event" format=3 uid="uid://br6hm7hj10gus"]
 
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="1"]
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_0q0wo"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="2"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_0a7k5"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="3_ceaen"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="4"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="5"]
 [ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="6"]
@@ -13,17 +12,10 @@
 [ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="9_wh41n"]
 [ext_resource type="Resource" uid="uid://cb5lg1c5twolq" path="res://data/ponygirls/default_pony.tres" id="10_o414j"]
 
-[sub_resource type="Resource" id="Resource_16cbu"]
-script = ExtResource("1")
-event_path = "uid://bipt7ieq52q6a"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_emfqr"]
-script = ExtResource("2")
-txt = "Handle the outfitting yourself."
+[sub_resource type="Resource" id="Resource_jjlt7"]
+script = ExtResource("3_ceaen")
 _btn_text = "Handle the outfitting yourself."
-actions = Array[ExtResource("1_0q0wo")]([SubResource("Resource_16cbu")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://bipt7ieq52q6a"
 
 [sub_resource type="Resource" id="Resource_pnsjp"]
 script = ExtResource("4")
@@ -61,6 +53,6 @@ description = "The girl grows all red and flustered with excitement. An hour lat
 Now you only need to prepare her, or leave the task to your shaman.
 
 The ponygirl will gain Arousal through both..."
-content = Array[ExtResource("2_0a7k5")]([SubResource("Resource_emfqr"), SubResource("Resource_0q0wo")])
+content = Array[ExtResource("2_0a7k5")]([SubResource("Resource_jjlt7"), SubResource("Resource_0q0wo")])
 open_actions = Array[ExtResource("1_0q0wo")]([SubResource("Resource_8xjib"), SubResource("Resource_iugqv")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

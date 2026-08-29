@@ -5,9 +5,9 @@
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5_13wqb"]
 [ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="6_6bce0"]
 [ext_resource type="Resource" uid="uid://d0wrpacummuaa" path="res://data/flags/cave_salvage_01.tres" id="6_n4ax0"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_6bce0"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="7_dm3is"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="8_sabvt"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="9_io8vw"]
 [ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="10_srn3e"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="11_2oir3"]
 
@@ -27,16 +27,10 @@ _modal_text = "Your men dismount and begin searching through the debris. Most of
 actions = Array[ExtResource("1_8qhdw")]([SubResource("Resource_aoeo5")])
 metadata/_custom_type_script = "uid://dwjwfrh5b5rjt"
 
-[sub_resource type="Resource" id="Resource_jtq7u"]
-script = ExtResource("9_io8vw")
-event_path = "uid://dotjglyb1aavy"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_872a7"]
-script = ExtResource("8_sabvt")
+[sub_resource type="Resource" id="Resource_8qhdw"]
+script = ExtResource("7_6bce0")
 _btn_text = "Enter the cave."
-actions = Array[ExtResource("1_8qhdw")]([SubResource("Resource_jtq7u")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://dotjglyb1aavy"
 
 [sub_resource type="Resource" id="Resource_0gr2t"]
 script = ExtResource("8_sabvt")
@@ -55,6 +49,6 @@ description = "It is getting dark when one of your scouts returns and reports th
 
 You gather your best riders, and a few minutes later, you arrive at the entrance to a cave. Debris and blood litter the ground. There has clearly been a fight."
 img = ExtResource("10_srn3e")
-content = Array[ExtResource("2_1d5t1")]([SubResource("Resource_u2vlh"), SubResource("Resource_872a7"), SubResource("Resource_0gr2t")])
+content = Array[ExtResource("2_1d5t1")]([SubResource("Resource_u2vlh"), SubResource("Resource_8qhdw"), SubResource("Resource_0gr2t")])
 open_actions = Array[ExtResource("1_8qhdw")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

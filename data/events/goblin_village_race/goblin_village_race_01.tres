@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_lqno4"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5_u0bws"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6_emkm8"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="6_kwfdy"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_kwfdy"]
 [ext_resource type="Resource" uid="uid://dxorkitwvi3mx" path="res://data/flags/entered_first_race.tres" id="7_qpkn5"]
 [ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="8_cw7d1"]
 [ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="9_uf0eq"]
@@ -41,21 +41,16 @@ Their jockeys appear equally sturdy and experienced.
 Few possess any formal racing experience, but goblins have taken to the sport with alarming enthusiasm. Judging by their confident grins, they consider bruises an unavoidable part of the fun."
 metadata/_custom_type_script = "uid://dwjwfrh5b5rjt"
 
-[sub_resource type="Resource" id="Resource_ktihw"]
-script = ExtResource("6_kwfdy")
-event_path = "uid://caosp2co4v404"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
 [sub_resource type="Resource" id="Resource_u0bws"]
 script = ExtResource("10_g4eg8")
 required_flag = Array[ExtResource("6_emkm8")]([ExtResource("9_uf0eq")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_0hriv"]
-script = ExtResource("5_u0bws")
+[sub_resource type="Resource" id="Resource_emkm8"]
+script = ExtResource("7_kwfdy")
 _btn_text = "Enter the race"
-actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_ktihw"), SubResource("Resource_u0bws")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://caosp2co4v404"
+actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_u0bws")])
 
 [sub_resource type="Resource" id="Resource_ds2kd"]
 script = ExtResource("5_u0bws")
@@ -73,6 +68,6 @@ titel = "Goblin Village Scramble"
 description = "You hear the racetrack long before you see it. Goblins shout, drums pound, and an excited crowd roars whenever a ponygirl passes the crude wooden stands.
 
 The village has turned an old training ground into its own racing circuit, and almost everyone has come to watch."
-content = Array[ExtResource("2_eda28")]([SubResource("Resource_an1av"), SubResource("Resource_p4gqr"), SubResource("Resource_iga43"), SubResource("Resource_0hriv"), SubResource("Resource_ds2kd")])
+content = Array[ExtResource("2_eda28")]([SubResource("Resource_an1av"), SubResource("Resource_p4gqr"), SubResource("Resource_iga43"), SubResource("Resource_emkm8"), SubResource("Resource_ds2kd")])
 open_actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_kndiu")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

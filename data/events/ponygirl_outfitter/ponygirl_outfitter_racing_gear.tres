@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8_ahi8v"]
 [ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="8_w85v7"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="9_2t088"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="10_2twek"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="9_w85v7"]
 
 [sub_resource type="Resource" id="Resource_coj7l"]
 script = ExtResource("5_qrynd")
@@ -37,17 +37,10 @@ He measures each of your mares carefully, grumbling whenever one of them fidgets
 True to his word, the racing gear is ready when you come back. The finished harnesses and saddles are surprisingly light, with slender straps, polished fittings, and just enough decoration to catch the crowd’s attention without weighing the mares down."
 actions = Array[ExtResource("1_5n3ud")]([SubResource("Resource_coj7l"), SubResource("Resource_r0def"), SubResource("Resource_nmsqj")])
 
-[sub_resource type="Resource" id="Resource_w85v7"]
-script = ExtResource("9_2t088")
-event_path = "uid://c3qc7ucuap654"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_kg44k"]
-script = ExtResource("10_2twek")
-txt = "Back to shop"
+[sub_resource type="Resource" id="Resource_qrynd"]
+script = ExtResource("9_w85v7")
 _btn_text = "Back to shop"
-actions = Array[ExtResource("1_5n3ud")]([SubResource("Resource_w85v7")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://c3qc7ucuap654"
 
 [resource]
 script = ExtResource("3_vbjus")
@@ -57,5 +50,5 @@ description = "You ask the owner about gear for ponygirl racing.
 “You’re interested in that new fad, {TITLE}?” the shopkeeper asks dismissively. “A waste, if you ask me. The gear is difficult to make, and young riders keep training for the track instead of the grasslands. But what do I know?”
 
 He coughs, then gives you a reluctant nod. “Still, I can make you the saddle and harness. I even have the proper dildos and plugs imported from the south. But it’ll cost you.”"
-content = Array[ExtResource("2_nsns3")]([SubResource("Resource_dsa86"), SubResource("Resource_kg44k")])
+content = Array[ExtResource("2_nsns3")]([SubResource("Resource_dsa86"), SubResource("Resource_qrynd")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

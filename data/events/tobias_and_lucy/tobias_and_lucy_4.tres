@@ -2,33 +2,18 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_h2mrt"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_rrn2g"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_6865v"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_288c8"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="3_iod3e"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8_2l0mv"]
 
-[sub_resource type="Resource" id="Resource_3j1eo"]
-script = ExtResource("3_6865v")
-event_path = "uid://fr7vww3au6hg"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_lu3ck"]
-script = ExtResource("4_288c8")
-txt = "Racing Gear?"
+[sub_resource type="Resource" id="Resource_u1hv0"]
+script = ExtResource("3_iod3e")
 _btn_text = "Racing Gear?"
-actions = Array[ExtResource("1_h2mrt")]([SubResource("Resource_3j1eo")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://fr7vww3au6hg"
 
-[sub_resource type="Resource" id="Resource_0ea8p"]
-script = ExtResource("3_6865v")
-event_path = "uid://l3qgv7wr7d7k"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_s66r5"]
-script = ExtResource("4_288c8")
-txt = "Leave"
+[sub_resource type="Resource" id="Resource_k3x8h"]
+script = ExtResource("3_iod3e")
 _btn_text = "Leave"
-actions = Array[ExtResource("1_h2mrt")]([SubResource("Resource_0ea8p")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://l3qgv7wr7d7k"
 
 [resource]
 script = ExtResource("8_2l0mv")
@@ -38,5 +23,5 @@ description = "You talk a little longer with Tobias and Lucy, and they explain t
 “Oh, and one more thing,” Tobias adds. “There are rules about what equipment is allowed, but to put it simply, you’ll need a proper racing harness and saddle. Otherwise your cunt needs to be fully equipped, naked, and bound, so Lucy will have to strip and be tied for the race. She’s into it, though,” Tobias says with a grin, making Lucy roll her eyes.
 
 “Violence is technically forbidden, in case you were wondering,” she adds, ignoring his dirty grin and returning to the subject. “But things can get pretty rough on the track. Nobody will bat an eye as long as you don’t deliberately hit anyone. So you’d better be prepared for a few bruises if you decide to join in.”"
-content = Array[ExtResource("2_rrn2g")]([SubResource("Resource_lu3ck"), SubResource("Resource_s66r5")])
+content = Array[ExtResource("2_rrn2g")]([SubResource("Resource_u1hv0"), SubResource("Resource_k3x8h")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

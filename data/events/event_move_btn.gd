@@ -8,10 +8,13 @@ var btn_text: String:
 		_btn_text = value
 	get:
 		return Utils.translate(_btn_text)
-@export var target_event: Event:
+@export_file("*.tres") var target_event_path: String:
 	set(value):
-		target_event = value
+		target_event_path = value
 		notify_property_list_changed()
+var target_event: Event:
+	get:
+		return load(target_event_path) as Event
 @export var target_combat: Combat:
 	set(value):
 		target_combat = value
@@ -19,9 +22,9 @@ var btn_text: String:
 @export var actions : Array[Action]
 
 func _validate_property(property: Dictionary) -> void:
-	if property.name == "target_event" and target_combat != null:
+	if property.name == "target_event_path" and target_combat != null:
 		property.usage &= ~PROPERTY_USAGE_EDITOR
-	if property.name == "target_combat" and target_event != null:
+	if property.name == "target_combat" and not target_event_path.is_empty():
 		property.usage &= ~PROPERTY_USAGE_EDITOR
 
 func use():

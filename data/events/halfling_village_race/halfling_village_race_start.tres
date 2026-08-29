@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_rw0fj"]
 [ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="3_qfde6"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5_gm5k8"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="6_1as17"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="7_cioj3"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_qfde6"]
 [ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="8_l8i5q"]
 [ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="9_2xjis"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="10_em653"]
@@ -36,21 +36,16 @@ _btn_text = "Inspect the starting area"
 _modal_text = "A row of hastily constructed starting stalls stands beside the farmhouse. Several halfling organizers hurry about with lists and colored ribbons, doing their best to appear professional despite the occasional argument over rules."
 metadata/_custom_type_script = "uid://dwjwfrh5b5rjt"
 
-[sub_resource type="Resource" id="Resource_dladj"]
-script = ExtResource("6_1as17")
-event_path = "uid://ct21rebgp5bbx"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
 [sub_resource type="Resource" id="Resource_cxp3n"]
 script = ExtResource("10_em653")
 required_flag = Array[ExtResource("7_cioj3")]([ExtResource("9_2xjis")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_1fkpw"]
-script = ExtResource("5_gm5k8")
+[sub_resource type="Resource" id="Resource_rw0fj"]
+script = ExtResource("7_qfde6")
 _btn_text = "Enroll for the race"
-actions = Array[ExtResource("1_qfde6")]([SubResource("Resource_dladj"), SubResource("Resource_cxp3n")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://ct21rebgp5bbx"
+actions = Array[ExtResource("1_qfde6")]([SubResource("Resource_cxp3n")])
 
 [sub_resource type="Resource" id="Resource_pxexv"]
 script = ExtResource("5_gm5k8")
@@ -66,6 +61,6 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 script = ExtResource("11_4v8sr")
 titel = "Halfling Village Derby"
 description = "You arrive at the racetrack to find it packed with excited onlookers, all eager to witness one of those fancy ponygirl races everyone has been talking about."
-content = Array[ExtResource("2_rw0fj")]([SubResource("Resource_tbie3"), SubResource("Resource_0dqrv"), SubResource("Resource_c5djf"), SubResource("Resource_mwvh4"), SubResource("Resource_1fkpw"), SubResource("Resource_pxexv")])
+content = Array[ExtResource("2_rw0fj")]([SubResource("Resource_tbie3"), SubResource("Resource_0dqrv"), SubResource("Resource_c5djf"), SubResource("Resource_mwvh4"), SubResource("Resource_rw0fj"), SubResource("Resource_pxexv")])
 open_actions = Array[ExtResource("1_qfde6")]([SubResource("Resource_ok1ty")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

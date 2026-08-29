@@ -3,21 +3,15 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_54hqr"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_hox5r"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_d43f3"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_m6u78"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4_qtylr"]
 [ext_resource type="Resource" uid="uid://dxorkitwvi3mx" path="res://data/flags/entered_first_race.tres" id="5_86qs2"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="6_86qs2"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="6_m5ng1"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_0ee6a"]
 [ext_resource type="Resource" uid="uid://cfyo12htfl52l" path="res://data/combats/ponygirl_race/halfling_village_race.tres" id="8_ix0dg"]
 [ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="9_4upsj"]
 [ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="10_86qs2"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="10_qtylr"]
 [ext_resource type="Script" uid="uid://db1y7o44s5mya" path="res://data/events/event_pony_select.gd" id="11_pick"]
-
-[sub_resource type="Resource" id="Resource_6b4rs"]
-script = ExtResource("3_m6u78")
-event_path = "uid://civlsbabixdtv"
-metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_b3k5i"]
 script = ExtResource("6_m5ng1")
@@ -25,12 +19,11 @@ forbidden_flag = Array[ExtResource("4_qtylr")]([ExtResource("5_86qs2")])
 hard_requierment = true
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_kntoh"]
-script = ExtResource("7_0ee6a")
-txt = "Get ready for the race"
+[sub_resource type="Resource" id="Resource_m5ng1"]
+script = ExtResource("6_86qs2")
 _btn_text = "Get ready for the race"
-actions = Array[ExtResource("1_54hqr")]([SubResource("Resource_6b4rs"), SubResource("Resource_b3k5i")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://civlsbabixdtv"
+actions = Array[ExtResource("1_54hqr")]([SubResource("Resource_b3k5i")])
 
 [sub_resource type="Resource" id="Resource_iktd0"]
 script = ExtResource("6_m5ng1")
@@ -62,6 +55,6 @@ description = "The racemaster happily accepts your payment and adds your name to
 “That settles it, {TITLE}. Choose the mare you want to enter and have her ready at the starting area. One of my helpers will explain the rules and assign you a stall.”
 
 With that, he gives you an enthusiastic pat on the shoulder and hurries away to deal with the next problem."
-content = Array[ExtResource("2_hox5r")]([SubResource("Resource_kntoh"), SubResource("Resource_5oxw3")])
+content = Array[ExtResource("2_hox5r")]([SubResource("Resource_m5ng1"), SubResource("Resource_5oxw3")])
 open_actions = Array[ExtResource("1_54hqr")]([SubResource("Resource_be1vt")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

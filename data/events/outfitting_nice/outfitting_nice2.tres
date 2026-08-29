@@ -7,12 +7,11 @@
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5_cqq3o"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_nl3oo"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="6_nl3oo"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_cqq3o"]
 [ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="7_nl3oo"]
 [ext_resource type="Resource" uid="uid://d1o18vt8fh57k" path="res://data/flags/outfitting_harness.tres" id="8_qsht7"]
 [ext_resource type="Resource" uid="uid://dq25t5mji4x1v" path="res://data/flags/outfitting_armbinder.tres" id="9_hbt8e"]
 [ext_resource type="Resource" uid="uid://hm48f6ppndlr" path="res://data/flags/outfitting_bridle.tres" id="10_vowx2"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="11_qk68i"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="11_qk68i"]
 
 [sub_resource type="Resource" id="Resource_gahty"]
 script = ExtResource("5_nl3oo")
@@ -100,22 +99,16 @@ Finally you come in front of her again. You take the bit-gag from a nearby table
 "
 actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_4cxsg"), SubResource("Resource_bt6ru")])
 
-[sub_resource type="Resource" id="Resource_2due0"]
-script = ExtResource("11_qk68i")
-event_path = "uid://dkk54n22nu05u"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
 [sub_resource type="Resource" id="Resource_lynee"]
 script = ExtResource("5_nl3oo")
 required_flag = Array[ExtResource("5_cqq3o")]([ExtResource("9_hbt8e"), ExtResource("4_qk68i"), ExtResource("10_vowx2"), ExtResource("8_qsht7")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_am51c"]
-script = ExtResource("7_cqq3o")
-txt = "Next"
+[sub_resource type="Resource" id="Resource_nl3oo"]
+script = ExtResource("11_qk68i")
 _btn_text = "Next"
-actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_2due0"), SubResource("Resource_lynee")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://dkk54n22nu05u"
+actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_lynee")])
 
 [resource]
 script = ExtResource("3_70w0p")
@@ -123,5 +116,5 @@ titel = "Outfitting"
 description = "The girl stands in the middle of the stable, nervously shifting from foot to foot. She is not fully bound yet, and could try to flee or fight back. Instead she waits, eyes cast down, breathing deliberately.
 
 It’s a good sign. Seems like she has the right mindset of a proper ponygirl."
-content = Array[ExtResource("2_n5jve")]([SubResource("Resource_n0yy0"), SubResource("Resource_cqq3o"), SubResource("Resource_qsht7"), SubResource("Resource_hbt8e"), SubResource("Resource_am51c")])
+content = Array[ExtResource("2_n5jve")]([SubResource("Resource_n0yy0"), SubResource("Resource_cqq3o"), SubResource("Resource_qsht7"), SubResource("Resource_hbt8e"), SubResource("Resource_nl3oo")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

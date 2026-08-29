@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_pkmrc"]
 [ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="3_gs3kc"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5_jy5xc"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="6_7xd1p"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_gs3kc"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="7_tmosh"]
 [ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="8_fmgka"]
 [ext_resource type="Resource" uid="uid://dxorkitwvi3mx" path="res://data/flags/entered_first_race.tres" id="9_56bo3"]
@@ -39,21 +39,16 @@ script = ExtResource("3_gs3kc")
 _btn_text = "Inspect the starting area"
 _modal_text = "A row of sturdy starting stalls stands beneath a large painted sign bearing the emblem of Harbortown. Officials in matching blue coats inspect equipment, register competitors, and argue with bookmakers attempting to approach the jockeys."
 
-[sub_resource type="Resource" id="Resource_efmu1"]
-script = ExtResource("6_7xd1p")
-event_path = "uid://bruh4b2frxpll"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
 [sub_resource type="Resource" id="Resource_u0bws"]
 script = ExtResource("10_26lh7")
 required_flag = Array[ExtResource("7_tmosh")]([ExtResource("8_fmgka")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_6tbqf"]
-script = ExtResource("5_jy5xc")
+[sub_resource type="Resource" id="Resource_jy5xc"]
+script = ExtResource("7_gs3kc")
 _btn_text = "Enter the race"
-actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_efmu1"), SubResource("Resource_u0bws")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+target_event_path = "uid://bruh4b2frxpll"
+actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_u0bws")])
 
 [sub_resource type="Resource" id="Resource_dfvfa"]
 script = ExtResource("5_jy5xc")
@@ -69,6 +64,6 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 script = ExtResource("13_nxofj")
 titel = "Harbortown Circuit"
 description = "You arrive at Harbortown’s racetrack to find the old freight yard transformed. Colorful banners hang between the warehouses, temporary stands rise along the course, and a large crowd has gathered to witness the city’s latest sensation."
-content = Array[ExtResource("2_pkmrc")]([SubResource("Resource_gd47x"), SubResource("Resource_pkmrc"), SubResource("Resource_lhalu"), SubResource("Resource_walxc"), SubResource("Resource_6tbqf"), SubResource("Resource_dfvfa")])
+content = Array[ExtResource("2_pkmrc")]([SubResource("Resource_gd47x"), SubResource("Resource_pkmrc"), SubResource("Resource_lhalu"), SubResource("Resource_walxc"), SubResource("Resource_jy5xc"), SubResource("Resource_dfvfa")])
 open_actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_ma5mm")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
