@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c8langrow01sc"]
+
+[ext_resource type="Script" uid="uid://b8langrow01gd" path="res://options/game_options/language_row.gd" id="1_lang"]
+[ext_resource type="Theme" uid="uid://c4wacko7ihktc" path="res://theme/new_main_theme.tres" id="2_theme"]
+[ext_resource type="Script" uid="uid://cl3acnbl3w0eu" path="res://templates/default_btn.gd" id="3_btn"]
+
+[node name="LanguageRow" type="HBoxContainer"]
+offset_right = 365.0
+offset_bottom = 31.0
+theme = ExtResource("2_theme")
+theme_override_constants/separation = 8
+script = ExtResource("1_lang")
+
+[node name="LangLabel" type="Label" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Language"
+
+[node name="LangEnBtn" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "English"
+script = ExtResource("3_btn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[node name="LangDeBtn" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Deutsch"
+script = ExtResource("3_btn")
+metadata/_custom_type_script = "uid://cl3acnbl3w0eu"
+
+[connection signal="pressed" from="LangEnBtn" to="." method="_on_lang_en_pressed"]
+[connection signal="pressed" from="LangDeBtn" to="." method="_on_lang_de_pressed"]

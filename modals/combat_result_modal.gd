@@ -13,18 +13,17 @@ func _ready() -> void:
 	else:
 		AudioManager.play('fail2')
 	if success:
-		header.text = "Success"
-		description.text = action.success_description
+		header.text = Utils.translate("Success")
+		description.text = Utils.translate(action.success_description)
 		description.text += "\n\n"
-		description.text += "- Enemy loses 1 health."
+		description.text += Utils.translate("- Enemy loses 1 health.")
 		CombatManager.action_success()
 	else:
-		header.text = "Failure"
-		description.text = action.fail_description
+		header.text = Utils.translate("Failure")
+		description.text = Utils.translate(action.fail_description)
 		description.text += "\n\n"
-		description.text += "- You lose 1 health."
+		description.text += Utils.translate("- You lose 1 health.")
 		CombatManager.action_failure()
-	description.text = Utils.translate(description.text)
 	super()
 
 func close() -> void:

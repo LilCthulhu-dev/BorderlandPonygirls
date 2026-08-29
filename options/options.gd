@@ -24,6 +24,15 @@ func _ready() -> void:
 	get_tree().paused = true
 	if GameData.game_state != Enums.GAME_STATES.START:
 		GameData.game_state = Enums.GAME_STATES.OPTIONS
+	_refresh_language_ui()
+	if GlobalSignals and not GlobalSignals.language_changed.is_connected(_refresh_language_ui):
+		GlobalSignals.language_changed.connect(_refresh_language_ui)
+
+
+func _refresh_language_ui() -> void:
+	if Utils:
+		Utils.localize_tree(self)
+
 
 func _input(event: InputEvent) -> void:
 	if not event is InputEventKey:
@@ -70,6 +79,8 @@ func _fade_in(menu: Control) -> void:
 
 	menu.modulate = Color("#ffffff00")
 	menu.visible = true
+	if Utils:
+		Utils.localize_tree(menu)
 
 	var tween := create_tween()
 	tween.tween_property(

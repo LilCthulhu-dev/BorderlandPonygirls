@@ -12,3 +12,4 @@ signal travel_suggestion(pos : Vector2)
 signal update_combat
 signal close_options
 signal game_state_changed
+signal language_changed

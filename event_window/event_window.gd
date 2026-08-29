@@ -16,10 +16,10 @@ func _ready() -> void:
 	_update_content()
 
 func _update_content():
-	label_titel.text = EventManager.current_event.titel
+	label_titel.text = Utils.translate(EventManager.current_event.titel)
 	label_titel.visible = label_titel.text != ""
 
-	label_description.text = EventManager.current_event.description
+	label_description.text = Utils.translate(EventManager.current_event.description)
 	label_description.visible = label_description.text != ""
 
 	label_results.text = ""
@@ -67,7 +67,7 @@ func _add_pony_select(select: EventPonySelect) -> int:
 	var count := 0
 	for pony in PonygirlManager.get_active_ponygirls():
 		var ebtn := EventBtn.new()
-		ebtn.txt = select.button_txt % pony.name
+		ebtn.txt = Utils.translate(select.button_txt) % pony.name
 		var focus := SetFocusedPonygirl.new()
 		focus.pony = pony
 		focus.hide_tooltip = true

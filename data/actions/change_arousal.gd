@@ -37,53 +37,37 @@ func get_target_ponygirls() -> Array[Ponygirl]:
 	return target_ponygirls
 
 func _get_txt() -> String:
-	var amount_as_string: Variant = abs(amount) if amount > -100 else "all"
+	var amount_as_string: String = str(abs(amount)) if amount > -100 else Utils.translate("all")
+	var verb_s: String = Utils.translate("gains") if amount > 0 else Utils.translate("loses")
+	var verb_p: String = Utils.translate("gain") if amount > 0 else Utils.translate("lose")
 	match target:
 		TARGET.FOCUSED:
-			return "Selected ponygirl %s %s Arousal" % [
-				_get_singular_verb(),
-				amount_as_string
-			]
+			return Utils.translate("Selected ponygirl %s %s Arousal") % [verb_s, amount_as_string]
 		TARGET.RANDOM:
-			return "A random active ponygirl %s %s Arousal" % [
-				_get_singular_verb(),
-				amount_as_string
-			]
+			return Utils.translate("A random active ponygirl %s %s Arousal") % [verb_s, amount_as_string]
 		TARGET.ACTIVE:
-			return "All active ponygirls %s %s Arousal" % [
-				_get_plural_verb(),
-				amount_as_string
-			]
+			return Utils.translate("All active ponygirls %s %s Arousal") % [verb_p, amount_as_string]
 		TARGET.ALL:
-			return "All ponygirls %s %s Arousal" % [
-				_get_plural_verb(),
-				amount_as_string
-			]
+			return Utils.translate("All ponygirls %s %s Arousal") % [verb_p, amount_as_string]
 	return ""
 
 func get_tooltip() -> String:
 	if hide_tooltip: return ""
-	return Utils.translate(_get_txt())
+	return _get_txt()
 
 func get_result() -> String:
 	if hide_description:
 		return ""
-	var amount_as_string: Variant = abs(amount) if amount > -100 else "all"
+	var amount_as_string: String = str(abs(amount)) if amount > -100 else Utils.translate("all")
+	var verb_s: String = Utils.translate("gains") if amount > 0 else Utils.translate("loses")
 	var text := _get_txt()
 	if target == TARGET.FOCUSED:
-		text = "{PONYNAME} %s %s Arousal" % [
-			_get_singular_verb(),
-			amount_as_string
-		]
+		text = Utils.translate("{PONYNAME} %s %s Arousal") % [verb_s, amount_as_string]
 	elif target == TARGET.RANDOM and not affected_ponygirls.is_empty():
-		text = "%s %s %s Arousal" % [
-			affected_ponygirls[0].name,
-			_get_singular_verb(),
-			amount_as_string
-		]
+		text = Utils.translate("%s %s %s Arousal") % [affected_ponygirls[0].name, verb_s, amount_as_string]
 	if text.is_empty():
 		return ""
-	return Utils.translate("- " + text)
+	return "- " + text
 
 func _get_singular_verb() -> String:
 	return "gains" if amount > 0 else "loses"

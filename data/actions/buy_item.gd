@@ -20,12 +20,15 @@ func requirement_met() -> bool:
 	return true
 
 func _get_txt() -> String:
-	var total_price := _get_price() * amount
-	var txt := ""
-	txt += "Gain %s %s (%s weight)." % [amount, item.title, _get_weight_change()]
+	if amount <= 0 or item == null:
+		return ""
+	var item_name: String = Utils.translate(item.title)
+	var txt: String = Utils.translate("Gain %s %s (%s weight).") % [
+		amount, item_name, _get_weight_change()
+	]
 	txt += "\n"
-	txt += "Lose %s Gold." % total_price
-	return Utils.translate(txt)
+	txt += Utils.translate("Lose %s Gold.") % (_get_price() * amount)
+	return txt
 
 func _get_price() -> int:
 	return round(item.price * InventoryManager.PRICE_FACTOR[price_factor])

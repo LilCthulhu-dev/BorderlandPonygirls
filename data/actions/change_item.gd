@@ -20,10 +20,13 @@ func requirement_met() -> bool:
 func _get_txt() -> String:
 	if item == null:
 		return ""
+	var item_name: String = Utils.translate(item.title)
 	if amount > 0:
-		return Utils.translate("Gain %s %s (%s weight)." % [abs(amount), item.title, _get_weight_change()])
+		return Utils.translate("Gain %s %s (%s weight).") % [
+			abs(amount), item_name, _get_weight_change()
+		]
 	elif amount < 0:
-		return Utils.translate("Lose %s %s." % [abs(amount), item.title])
+		return Utils.translate("Lose %s %s.") % [abs(amount), item_name]
 	else:
 		return ""
 

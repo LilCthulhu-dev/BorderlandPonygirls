@@ -7,19 +7,21 @@ extends HBoxContainer
 @export var slot_number := 0
 
 func _ready() -> void:
+	if GlobalSignals and not GlobalSignals.language_changed.is_connected(_update_slot):
+		GlobalSignals.language_changed.connect(_update_slot)
 	_update_slot()
 
 func _update_slot() -> void:
 	save_btn.visible = slot_number != 0
 	save_btn.disabled = GameData.game_state == Enums.GAME_STATES.START
 	load_btn.disabled = not SaveGame.save_exists(slot_number)
-	var slot_name := "Autosave" if slot_number == 0 else "Slot %s" % slot_number
+	var slot_name: String = Utils.translate("Autosave") if slot_number == 0 else (Utils.translate("Slot %s") % slot_number)
 	if not SaveGame.save_exists(slot_number):
-		name_label.text = "%s\n- Empty -" % slot_name
+		name_label.text = "%s\n%s" % [slot_name, Utils.translate("- Empty -")]
 		return
 	var save_info := SaveGame.load_info(slot_number)
 	if save_info == null:
-		name_label.text = "%s\nInvalid save" % slot_name
+		name_label.text = "%s\n%s" % [slot_name, Utils.translate("Invalid save")]
 		return
 	name_label.text = "%s (%s)\n%s %s" % [
 		slot_name,

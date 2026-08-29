@@ -42,8 +42,17 @@ var last_names: Array[String] = []
 var last_titles: Array[String] = []
 
 func _ready() -> void:
+	if Utils:
+		Utils.localize_tree(self)
+	if GlobalSignals and not GlobalSignals.language_changed.is_connected(_on_language_changed):
+		GlobalSignals.language_changed.connect(_on_language_changed)
 	_roll_name()
 	_roll_title()
+
+
+func _on_language_changed() -> void:
+	if Utils:
+		Utils.localize_tree(self)
 
 func _on_start_game_btn_pressed() -> void:
 	SaveGame.new_game(name_line.text, warband_line.text)

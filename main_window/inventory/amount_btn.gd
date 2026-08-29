@@ -7,7 +7,10 @@ func _ready() -> void:
 	GlobalSignals.update_trade_amount.connect(_on_update_trade_amount)
 	pressed.connect(_on_pressed)
 	button_pressed = InventoryManager.trade_amount == amount
-	text = "Max" if amount == 999 else "x%s" % amount
+	if amount == 999:
+		set_source_text("Max")
+	else:
+		set_source_text("x%s" % amount)
 
 func _on_pressed():
 	InventoryManager.trade_amount = amount

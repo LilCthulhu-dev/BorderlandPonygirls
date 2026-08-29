@@ -7,7 +7,7 @@ var results : Array[String] = []
 
 func _ready() -> void:
 	super()
-	titel_label.text = titel
+	titel_label.text = Utils.translate(titel)
 	for result in results:
 		if results_label.text != "": results_label.text += "\n"
 		results_label.text += result

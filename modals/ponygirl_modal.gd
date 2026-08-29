@@ -24,10 +24,10 @@ func _update() -> void :
 	_update_perks()
 
 func _update_title():
-	titel_label.text = "%s (Level %s %s)" % [
+	titel_label.text = Utils.translate("%s (Level %s %s)") % [
 		ponygirl.name,
 		ponygirl.level,
-		ponygirl.race
+		Utils.translate(str(ponygirl.race)),
 	]
 
 func _update_portrait():
@@ -36,17 +36,17 @@ func _update_portrait():
 	portrait.visible = tex != null
 
 func _update_attributes():
-	attributes_label.text = "XP: %s / Arousal: %s / Submission: %s" % [
+	attributes_label.text = Utils.translate("XP: %s / Arousal: %s / Submission: %s") % [
 		ponygirl.xp,
 		ponygirl.arousal,
 		ponygirl.submission,
 	]
 
 func _update_backgrounds():
-	background_label.text = "Eyes: %s / Hair: %s / Skin: %s" % [
-		ponygirl.eye_color,
-		ponygirl.hair_color,
-		ponygirl.skin_tone,
+	background_label.text = Utils.translate("Eyes: %s / Hair: %s / Skin: %s") % [
+		Utils.translate(str(ponygirl.eye_color)),
+		Utils.translate(str(ponygirl.hair_color)),
+		Utils.translate(str(ponygirl.skin_tone)),
 	]
 
 func _update_perks():
@@ -56,7 +56,7 @@ func _update_perks():
 	for perk in ponygirl.perks:
 		var label: = Label.new()
 		var descriptions: = perk.get_full_description(ponygirl)
-		label.text = "%s: %s" % [perk.name, " / ".join(descriptions)]
+		label.text = "%s: %s" % [Utils.translate(perk.name), " / ".join(descriptions)]
 		label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		perks_container.add_child(label)

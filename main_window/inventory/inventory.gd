@@ -45,7 +45,7 @@ func _add_quest_icons() -> void:
 		quest_item_grid.add_child(icon)
 
 func _update_shop():
-	shop_header.text = LocationManager.current_location.title
+	Utils.set_dynamic_label(shop_header, LocationManager.current_location.title)
 	Utils.clear_container(shop_grid)
 	for item in LocationManager.current_location.cheap_items:
 		_add_item_btn(item)

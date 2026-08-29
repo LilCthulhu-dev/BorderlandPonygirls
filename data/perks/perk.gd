@@ -38,10 +38,10 @@ func get_full_description(ponygirl : Ponygirl) -> Array:
 	var pony_mod_bonus : = ponygirl.get_mod_bonus()
 	if bonus != Enums.ATTRIBUTES.NONE:
 		var attribute_name := Enums.enum_to_name(Enums.ATTRIBUTES, bonus)
-		arr.append("+%s %s" % [pony_mod_bonus, attribute_name])
+		arr.append("+%s %s" % [pony_mod_bonus, Utils.translate(attribute_name)])
 	if malus != Enums.ATTRIBUTES.NONE:
 		var attribute_name := Enums.enum_to_name(Enums.ATTRIBUTES, malus)
-		arr.append("-5 %s" % attribute_name)
+		arr.append("-5 %s" % Utils.translate(attribute_name))
 	if description:
-		arr.push_back(description)
+		arr.push_back(Utils.translate(description))
 	return arr

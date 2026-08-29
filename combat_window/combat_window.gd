@@ -13,7 +13,7 @@ const COMBAT_BTN = preload("uid://81o40hsg8i6j")
 func _ready() -> void:
 	GlobalSignals.update_combat.connect(_update)
 	GameData.game_state = Enums.GAME_STATES.COMBAT
-	enemy_name_label.text = CombatManager.enemy_name
+	enemy_name_label.text = Utils.translate(CombatManager.enemy_name)
 	actions_container.visible = true
 	end_combat_btn.visible = false
 	_update()
@@ -29,7 +29,7 @@ func _update():
 		_normal_scene_update()
 
 func _normal_scene_update():
-	scene_title.text = CombatManager.current_combat.title
+	scene_title.text = Utils.translate(CombatManager.current_combat.title)
 	scene_description.text = ""
 	if CombatManager.current_scene.flavor_lines.size() > 0:
 		CombatManager.current_scene.flavor_lines.shuffle()
@@ -45,14 +45,14 @@ func _normal_scene_update():
 		actions_container.add_child(b)
 
 func _victory_update():
-	scene_title.text = "Victory!"
+	scene_title.text = Utils.translate("Victory!")
 	scene_description.text = CombatManager.get_victory_txt()
 	content_image.texture = CombatManager.current_combat.victory_img
 	actions_container.visible = false
 	end_combat_btn.visible = true
 
 func _defeat_update():
-	scene_title.text = "Defeat!"
+	scene_title.text = Utils.translate("Defeat!")
 	scene_description.text = CombatManager.get_defeat_txt()
 	content_image.texture = CombatManager.current_combat.defeat_img
 	actions_container.visible = false

@@ -18,8 +18,8 @@ func requirement_met() -> bool:
 
 func _get_txt() -> String:
 	if get_amount() > 0:
-		return Utils.translate("Gain %s gold." % abs(get_amount()))
+		return Utils.translate("Gain %s gold.") % abs(get_amount())
 	elif get_amount() < 0:
-		return Utils.translate("Lose %s gold." % abs(get_amount()))
+		return Utils.translate("Lose %s gold.") % abs(get_amount())
 	else:
 		return ""
