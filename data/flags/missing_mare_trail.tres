@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://eca1ew40cu8s"]
+[gd_resource type="Resource" script_class="Flag" format=3 uid="uid://cflagmaretrail1"]
 
 [ext_resource type="Texture2D" uid="uid://f1guc4u3mljh" path="res://assets/icons/horseshoe.png" id="1_icon"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="1_script"]
@@ -6,5 +6,5 @@
 [resource]
 script = ExtResource("1_script")
 image = ExtResource("1_icon")
-description = "A Trading Post merchant hired you to find a mare he claims bolted toward Harbor Town."
+description = "Harbor watch saw a second goblin crew drag the missing mare inland."
 metadata/_custom_type_script = "uid://cm8dinv8ax8bq"

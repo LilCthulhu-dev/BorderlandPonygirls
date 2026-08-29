@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="Combat" format=3 uid="uid://ccommarecamp01"]
+
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="1"]
+[ext_resource type="Script" uid="uid://ct66od486dv7w" path="res://data/combats/combat.gd" id="2"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="3"]
+[ext_resource type="Resource" uid="uid://cscenmare01" path="res://data/combats/missing_mare/missing_mare_01.tres" id="4"]
+[ext_resource type="Resource" uid="uid://cscenmare02" path="res://data/combats/missing_mare/missing_mare_02.tres" id="5"]
+[ext_resource type="Resource" uid="uid://cscenmare03" path="res://data/combats/missing_mare/missing_mare_03.tres" id="6"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="7"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="8"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="9"]
+[ext_resource type="Resource" uid="uid://cflagmareheld01" path="res://data/flags/missing_mare_held.tres" id="10"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="11"]
+[ext_resource type="Texture2D" uid="uid://cimgmmaretalk" path="res://assets/img/frozenhunter/missing_mare_talk.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dbhehe2jm58u3" path="res://assets/img/frozenhunter/missing_mare_camp_defeat.png" id="14"]
+
+[sub_resource type="Resource" id="Resource_vgold"]
+script = ExtResource("7")
+amount = "+{MEDIUM_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_vrep"]
+script = ExtResource("8")
+amount = 1
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
+
+[sub_resource type="Resource" id="Resource_held"]
+script = ExtResource("11")
+add_flag = Array[ExtResource("9")]([ExtResource("10")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_dgold"]
+script = ExtResource("7")
+amount = "-{BAD_WAGE}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[resource]
+script = ExtResource("2")
+title = "Kidnap Camp"
+difficulty_penalty = 0
+scenes = Array[ExtResource("1")]([ExtResource("4"), ExtResource("5"), ExtResource("6")])
+enemy_descriptors = Array[String](["Sneaking", "Cheap", "Mean", "Nervous", "Hired"])
+enemy_names = Array[String](["Slavers", "Kidnappers", "Handlers", "Buyers"])
+victory_actions = Array[ExtResource("3")]([SubResource("Resource_held"), SubResource("Resource_vgold"), SubResource("Resource_vrep")])
+defeat_actions = Array[ExtResource("3")]([SubResource("Resource_dgold")])
+victory_txt = "The camp breaks. You cut the traces and take the lead. The mare does not thank you. She only shakes, bit still in, eyes on the trees.
+
+You have her. What she is - runaway, cargo, or someone who never agreed to the tack - is a question for after the fire dies."
+defeat_txt = "They drive you off the firelight. The mare is still in the traces when you fall back to the road. The trail is not gone. Come back when you can stand."
+victory_img = ExtResource("13")
+defeat_img = ExtResource("14")
+metadata/_custom_type_script = "uid://ct66od486dv7w"
