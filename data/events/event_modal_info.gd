@@ -8,7 +8,6 @@ var btn_text: String:
 	get:
 		return Utils.translate(_btn_text)
 
-@export var single_use = false
 @export_multiline var _modal_text: String
 var modal_text: String:
 	set(value):
@@ -17,4 +16,5 @@ var modal_text: String:
 		return Utils.translate(_modal_text)
 
 @export var actions : Array[Action]
+@export var single_use = false
 var used = false

@@ -1,13 +1,13 @@
 extends DefaultBtn
 
-var content : EventBtn
+var content : EventModalInfo
 
 func _ready() -> void:
 	super()
 	if content == null:
 		queue_free()
 		return
-	text = "> " + content.txt
+	text = "> " + content.btn_text
 	if !content.soft_requirements_met():
 		disabled = true
 	if content.single_use && content.used:
@@ -32,4 +32,4 @@ func _get_result_text() -> Array[String]:
 
 func _on_pressed() -> void:
 	content.used = true
-	ModalManager.open_event_result_modal(content.actions, )
+	ModalManager.open_event_result_modal(content.actions, content.modal_text)
