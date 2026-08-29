@@ -25,6 +25,7 @@ AudioManager="*uid://bllsr017dv3ly"
 SceneManager="*uid://d4n0dv3k16ejg"
 Utils="*uid://ckvbwas3biqbw"
 Settings="*res://singeltons/settings/settings.gd"
+ResultsDisplay="*uid://bm5vrdkwe146c"
 
 [debug]
 
