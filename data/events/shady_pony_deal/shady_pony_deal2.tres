@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2_ktc0q"]
 [ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="5_ds03l"]
 [ext_resource type="Resource" uid="uid://cb5lg1c5twolq" path="res://data/ponygirls/default_pony.tres" id="6_6flpc"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="8_6t8k1"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_info.gd" id="8_6t8k1"]
 [ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="9_ogsu3"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="11_fqc60"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="12_1ddbn"]

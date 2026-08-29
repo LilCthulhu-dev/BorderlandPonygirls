@@ -1,6 +1,6 @@
 extends DefaultBtn
 
-var content : EventInfo
+var content : EventModalInfo
 
 func _ready() -> void:
 	super()

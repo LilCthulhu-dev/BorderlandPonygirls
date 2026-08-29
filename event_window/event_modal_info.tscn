@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://cvv8ckw6e40ou"]
 
-[ext_resource type="Script" uid="uid://b4jlkumj4ey8c" path="res://event_window/event_info.gd" id="1_u2vlh"]
+[ext_resource type="Script" uid="uid://b4jlkumj4ey8c" path="res://event_window/event_modal_info.gd" id="1_u2vlh"]
 
-[node name="EventInfo" type="Button" unique_id=2021887780]
+[node name="EventModalInfo" type="Button" unique_id=2021887780]
 custom_minimum_size = Vector2(0, 50)
 offset_right = 256.0
 offset_bottom = 48.0

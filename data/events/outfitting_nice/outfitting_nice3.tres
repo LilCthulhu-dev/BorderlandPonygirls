@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_ovj0o"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="6_qovyu"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_6rrk2"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="7_qovyu"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_info.gd" id="7_qovyu"]
 [ext_resource type="Resource" uid="uid://caiu0v7elmd13" path="res://data/flags/outfitting_dildos.tres" id="7_wjq8s"]
 [ext_resource type="Resource" uid="uid://cp6bse7x0ootq" path="res://data/flags/outfitting_piercings.tres" id="8_80pvo"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="11_e0152"]

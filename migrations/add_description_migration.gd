@@ -65,7 +65,7 @@ func _migrate_event(event: Event) -> Dictionary:
 			skipped += 1
 			continue
 
-		var event_info := EventInfo.new()
+		var event_info := EventModalInfo.new()
 
 		event_info._btn_text = event_btn.txt
 		event_info._modal_text = add_description.txt

@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_nl3oo"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="6_nl3oo"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_cqq3o"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="7_nl3oo"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_info.gd" id="7_nl3oo"]
 [ext_resource type="Resource" uid="uid://d1o18vt8fh57k" path="res://data/flags/outfitting_harness.tres" id="8_qsht7"]
 [ext_resource type="Resource" uid="uid://dq25t5mji4x1v" path="res://data/flags/outfitting_armbinder.tres" id="9_hbt8e"]
 [ext_resource type="Resource" uid="uid://hm48f6ppndlr" path="res://data/flags/outfitting_bridle.tres" id="10_vowx2"]
