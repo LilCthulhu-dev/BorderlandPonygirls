@@ -10,6 +10,7 @@ const SAVE_INFO_PATH := "user://save_%s_info.tres"
 @export var flags_manager : FlagsManager
 @export var inventory_manager : InventoryManager
 @export var location_manager : LocationManager
+@export var event_manager : EventManager
 @export var ponygirl_manager : PonygirlManager
 @export var save_date := ""
 
@@ -19,19 +20,20 @@ static func new_game(new_boss_name: String, new_boss_title: String) -> void:
 	var start_pony = load("res://data/ponygirls/starter_pony.tres") as Ponygirl
 
 	GameData.save_game = SaveGame.new()
+
 	GameData.attributes_manager = AttributesManager.new()
+	AttributesManager.boss_name = new_boss_name
+	AttributesManager.boss_title = new_boss_title
 	GameData.combat_manager = CombatManager.new()
 	GameData.flags_manager = FlagsManager.new()
 	GameData.inventory_manager = InventoryManager.new()
 	GameData.location_manager = LocationManager.new()
-	GameData.ponygirl_manager = PonygirlManager.new()
-
-	PonygirlManager.init()
-	AttributesManager.boss_name = new_boss_name
-	AttributesManager.boss_title = new_boss_title
-	PonygirlManager.add_ponygirl(start_pony)
 	LocationManager.home_location = home_location
 	LocationManager.current_location = home_location
+	GameData.event_manager = EventManager.new()
+	GameData.ponygirl_manager = PonygirlManager.new()
+	PonygirlManager.init()
+	PonygirlManager.add_ponygirl(start_pony)
 
 
 static func save(slot_number: int = 0) -> void:
@@ -64,6 +66,7 @@ static func load(slot_number: int = 0) -> SaveGame:
 	GameData.flags_manager = save_game.flags_manager
 	GameData.inventory_manager = save_game.inventory_manager
 	GameData.location_manager = save_game.location_manager
+	GameData.event_manager = save_game.event_manager
 	GameData.ponygirl_manager = save_game.ponygirl_manager
 	PonygirlManager.init()
 	return save_game

@@ -4,6 +4,8 @@ class_name EventBtn
 ## English source; localize at display via Utils.translate / DefaultBtn.
 @export var txt := ""
 @export var actions : Array[Action]
+
+@export_group('uses')
 @export var single_use = false
 @export var used = false
 

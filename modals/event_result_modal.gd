@@ -20,7 +20,7 @@ func _ready() -> void:
 		if results_label.text != "":
 			results_label.text += "\n"
 		results_label.text += result_txt
-	
+
 	description_label.visible = description_label.text != ""
 	results_label.visible = results_label.text != ""
 
@@ -29,7 +29,7 @@ func close() -> void:
 		return
 	for action in actions:
 		action.use()
-	if LocationManager.current_event != null:
+	if EventManager.current_event != null:
 		GlobalSignals.update_event.emit()
 	super()
 
