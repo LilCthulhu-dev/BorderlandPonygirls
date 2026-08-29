@@ -31,7 +31,6 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_return_btn"]
 script = ExtResource("9")
-txt = "Return her to the merchant"
 _btn_text = "Return her to the merchant"
 actions = Array[ExtResource("1")]([SubResource("Resource_pay"), SubResource("Resource_rep_good"), SubResource("Resource_clear")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -51,14 +50,12 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 
 [sub_resource type="Resource" id="Resource_keep_btn"]
 script = ExtResource("9")
-txt = "Keep her for your stable"
 _btn_text = "Keep her for your stable"
 actions = Array[ExtResource("1")]([SubResource("Resource_keep_pony"), SubResource("Resource_rep_bad"), SubResource("Resource_clear")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_later"]
 script = ExtResource("9")
-txt = "Not yet"
 _btn_text = "Not yet"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

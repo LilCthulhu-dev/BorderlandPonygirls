@@ -6,10 +6,12 @@ extends CanvasLayer
 @onready var content_container: VBoxContainer = %ContentContainer
 @onready var content_image: TextureRect = %ContentImage
 
-const EVENT_BTN = preload("uid://boeoqj8wswe7u")
-const EVENT_CHECK = preload("uid://dheu6x3a5wmi3")
-const EVENT_TEXT = preload("uid://desp1eu87yxct")
-const EVENT_MODAL_INFO = preload("uid://cvv8ckw6e40ou")
+const EVENT__BTN = preload("uid://boeoqj8wswe7u")
+const EVENT__CHECK = preload("uid://dheu6x3a5wmi3")
+const EVENT__TEXT = preload("uid://desp1eu87yxct")
+const EVENT__MODAL_BTN = preload("uid://cvv8ckw6e40ou")
+const EVENT__MOVE_BTN = preload("uid://b312y4kwwux86")
+const EVENT__RETURN_TO_MAIN_BTN = preload("uid://c27j1lrumf1l6")
 
 func _ready() -> void:
 	GameData.game_state = Enums.GAME_STATES.EVENT
@@ -39,20 +41,22 @@ func _update_content():
 
 	Utils.clear_container(content_container)
 	for content in EventManager.current_event.content:
-		if !content.hard_requierments_met(): continue
-		if content is EventPonySelect:
+		if !content.hard_requierments_met():
+			continue
+		elif content is EventPonySelect:
 			_add_pony_select(content)
 		elif content is EventModalBtn:
-			_spawn_content(EVENT_MODAL_INFO, content)
+			_spawn_content(EVENT__MODAL_BTN, content)
+		elif content is EventMoveBtn:
+			_spawn_content(EVENT__MOVE_BTN, content)
 		elif content is EventBtn:
-			_spawn_content(EVENT_BTN, content)
+			_spawn_content(EVENT__BTN, content)
 		elif content is EventCheck:
-			_spawn_content(EVENT_CHECK, content)
+			_spawn_content(EVENT__CHECK, content)
 		else:
-			_spawn_content(EVENT_TEXT, content)
+			_spawn_content(EVENT__TEXT, content)
 	if content_container.get_child_count() <= 0:
-		var back_button := EVENT_BTN.instantiate()
-		back_button.content = null
+		var back_button := EVENT__RETURN_TO_MAIN_BTN.instantiate()
 		content_container.add_child(back_button)
 
 func _spawn_content(blueprint : PackedScene, content):
@@ -71,12 +75,12 @@ func _add_pony_select(select: EventPonySelect) -> void:
 		var acts: Array[Action] = [focus]
 		acts.append_array(select.actions)
 		ebtn.actions = acts
-		var n := EVENT_BTN.instantiate()
+		var n := EVENT__BTN.instantiate()
 		n.content = ebtn
 		content_container.add_child(n)
 
 func _add_back_to_main_btn():
 	if content_container.get_child_count() > 0: return
-	var back_button := EVENT_BTN.instantiate()
+	var back_button := EVENT__BTN.instantiate()
 	back_button.content = null
 	content_container.add_child(back_button)

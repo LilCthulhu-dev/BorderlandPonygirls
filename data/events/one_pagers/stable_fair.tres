@@ -24,7 +24,6 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_btn_green"]
 script = ExtResource("5")
-txt = "Green filly (cheap)"
 _btn_text = "Green filly (cheap)"
 actions = Array[ExtResource("1_e3upj")]([SubResource("Resource_ksy1x"), SubResource("Resource_green_back")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -41,7 +40,6 @@ metadata/_custom_type_script = "uid://8nf04u8dpc45"
 
 [sub_resource type="Resource" id="Resource_btn_needy"]
 script = ExtResource("5")
-txt = "Needy mare"
 _btn_text = "Needy mare"
 actions = Array[ExtResource("1_e3upj")]([SubResource("Resource_needy_back"), SubResource("Resource_2rxsd")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -60,7 +58,6 @@ metadata/_custom_type_script = "uid://8nf04u8dpc45"
 
 [sub_resource type="Resource" id="Resource_btn_wild"]
 script = ExtResource("5")
-txt = "Wild mare"
 _btn_text = "Wild mare"
 actions = Array[ExtResource("1_e3upj")]([SubResource("Resource_wild_back"), SubResource("Resource_wnlod")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -79,7 +76,6 @@ metadata/_custom_type_script = "uid://8nf04u8dpc45"
 
 [sub_resource type="Resource" id="Resource_btn_sub"]
 script = ExtResource("5")
-txt = "Submissive mare"
 _btn_text = "Submissive mare"
 actions = Array[ExtResource("1_e3upj")]([SubResource("Resource_sub_back"), SubResource("Resource_pi3c4")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -99,7 +95,6 @@ metadata/_custom_type_script = "uid://8nf04u8dpc45"
 
 [sub_resource type="Resource" id="Resource_btn_strong"]
 script = ExtResource("5")
-txt = "Trained, Strong mare (expensive)"
 _btn_text = "Trained, Strong mare (expensive)"
 actions = Array[ExtResource("1_e3upj")]([SubResource("Resource_strong_back"), SubResource("Resource_khckk")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -120,14 +115,12 @@ metadata/_custom_type_script = "uid://8nf04u8dpc45"
 
 [sub_resource type="Resource" id="Resource_mqmyc"]
 script = ExtResource("5")
-txt = "Trained, Submissive mare (expensive)"
 _btn_text = "Trained, Submissive mare (expensive)"
 actions = Array[ExtResource("1_e3upj")]([SubResource("Resource_nx3u7"), SubResource("Resource_1c5o1")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_btn_leave"]
 script = ExtResource("5")
-txt = "Leave the fair"
 _btn_text = "Leave the fair"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

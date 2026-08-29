@@ -6,7 +6,7 @@ class_name ChangeEvent
 func use():
 	EventManager.current_event = _get_target_event()
 	if GameData.game_state != Enums.GAME_STATES.EVENT:
-		SceneManager.change_scene(SceneManager.EVENT_WINDOW)
+		SceneManager.change_scene(SceneManager.EVENT__WINDOW)
 
 func requirement_met() -> bool:
 	var target_event := _get_target_event()

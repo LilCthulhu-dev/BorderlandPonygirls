@@ -14,7 +14,6 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_7nfr3"]
 script = ExtResource("3_42mhs")
-txt = "Whip her into submission"
 _btn_text = "Whip her into submission"
 actions = Array[ExtResource("1_ie7op")]([SubResource("Resource_xymmp")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -26,7 +25,6 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_twx8p"]
 script = ExtResource("3_42mhs")
-txt = "Calm her with words"
 _btn_text = "Calm her with words"
 actions = Array[ExtResource("1_ie7op")]([SubResource("Resource_72he3")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -38,7 +36,6 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_4b7ge"]
 script = ExtResource("3_42mhs")
-txt = "Let her exhaust herself"
 _btn_text = "Let her exhaust herself"
 actions = Array[ExtResource("1_ie7op")]([SubResource("Resource_fmbxr")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"

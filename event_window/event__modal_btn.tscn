@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cvv8ckw6e40ou"]
 
-[ext_resource type="Script" uid="uid://b4jlkumj4ey8c" path="res://event_window/event__modal_btn.gd" id="1_u2vlh"]
+[ext_resource type="Script" uid="uid://b4jlkumj4ey8c" path="res://EVENT__WINDOW/event__modal_btn.gd" id="1_u2vlh"]
 
 [node name="EventModalBtn" type="Button" unique_id=2021887780]
 custom_minimum_size = Vector2(0, 50)

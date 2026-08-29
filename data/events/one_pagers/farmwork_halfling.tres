@@ -15,7 +15,6 @@ metadata/_custom_type_script = "uid://bnjeril1f2cy8"
 
 [sub_resource type="Resource" id="Resource_v0sb3"]
 script = ExtResource("3_mqfwi")
-txt = "Accept"
 _btn_text = "Accept"
 actions = Array[ExtResource("1_tn2n0")]([SubResource("Resource_ice6s")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
@@ -26,7 +25,6 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_lkv00"]
 script = ExtResource("3_mqfwi")
-txt = "Decline"
 _btn_text = "Decline"
 actions = Array[ExtResource("1_tn2n0")]([SubResource("Resource_5tkrx")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"

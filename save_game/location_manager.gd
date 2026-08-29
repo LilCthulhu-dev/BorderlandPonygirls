@@ -57,5 +57,5 @@ static func check_for_random_event(chance: int = -1) -> bool:
 	while EventManager.recent_random_events.size() > 2:
 		EventManager.recent_random_events.pop_front()
 	EventManager.current_event = event
-	SceneManager.change_scene(SceneManager.EVENT_WINDOW)
+	SceneManager.change_scene(SceneManager.EVENT__WINDOW)
 	return true

@@ -71,7 +71,6 @@ metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
 
 [sub_resource type="Resource" id="Resource_btn_leave"]
 script = ExtResource("5")
-txt = "Move on"
 _btn_text = "Move on"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
