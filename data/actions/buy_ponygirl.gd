@@ -2,7 +2,6 @@ extends AddPonygirl
 class_name BuyPonygirl
 
 @export var _price := Enums.PONY_PRICES.NORMAL
-@export_multiline var description := ""
 var price:
 	set(value):
 		_price = value
@@ -30,7 +29,4 @@ func get_result() -> String:
 		"- Lose %s gold." % price,
 		"- Add ponygirl %s to your stable." % _get_name()
 	]
-	if not description.is_empty():
-		txt.push_front("")
-		txt.push_front(description)
 	return "\n".join(txt)
