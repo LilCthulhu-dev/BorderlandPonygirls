@@ -2,38 +2,43 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_an1av"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_p4gqr"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="3_4cljs"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="7_g7y6v"]
-[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_ibf5f"]
+[ext_resource type="Script" uid="uid://bhikhif1mmeq" path="res://data/events/event_switch_content_btn.gd" id="7_ibf5f"]
 [ext_resource type="Resource" uid="uid://b203pyrjeby4o" path="res://data/flags/cattle_drive_01.tres" id="8_ig8t0"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="9_bik6g"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="10_fibga"]
 
-[sub_resource type="Resource" id="Resource_ksy1x"]
-script = ExtResource("3_4cljs")
+[sub_resource type="Resource" id="Resource_4cljs"]
+script = ExtResource("7_ibf5f")
 _btn_text = "Inspect the Hu-Cows"
-_modal_text = "Hu-cows are not your speciality, but you give the beasts a once over. They remind you of your own she-beasts: tall-folk, stripped naked and tied up with armbinders and hoofboots.
+_new_content_text = "Hu-cows are not your speciality, but you give the beasts a once over. They remind you of your own she-beasts: tall-folk, stripped naked and tied up with armbinders and hoofboots.
 
 But they have really large tit and their nipples are visibly erect and wet, as their intensely sensitive breasts are basically overflowing with milk.
 
 Their eyes are dazed and numb, their cunts dripping wet, and they keep wandering aimlessly. A side effect from the drugs the farmers use to get them lactating and able to digest hay."
-metadata/_custom_type_script = "uid://dwjwfrh5b5rjt"
+single_use = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
 
-[sub_resource type="Resource" id="Resource_781yv"]
+[sub_resource type="Resource" id="Resource_7ynj1"]
 script = ExtResource("9_bik6g")
 add_flag = Array[ExtResource("7_g7y6v")]([ExtResource("8_ig8t0")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_4cljs"]
+[sub_resource type="Resource" id="Resource_43yjr"]
 script = ExtResource("7_ibf5f")
 _btn_text = "Accept"
-target_event_path = "uid://bqse6fwhkacs4"
-actions = Array[ExtResource("1_an1av")]([SubResource("Resource_781yv")])
+_new_content_text = "“Good decision, {TITLE}. My men will get the beasts ready, and you’ll be back on the road within the hour,” the old farmer promises. Sure enough, about an hour later, everything is prepared.
 
-[sub_resource type="Resource" id="Resource_an1av"]
+The hu-cows seem slightly confused by the change in their daily routine, but they are far too docile to put up much resistance. Leashes are fastened to their collars, and you assign two of your men to lead them along as your warband sets out."
+actions = Array[ExtResource("1_an1av")]([SubResource("Resource_7ynj1")])
+end_conversation = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
+
+[sub_resource type="Resource" id="Resource_1x874"]
 script = ExtResource("7_ibf5f")
 _btn_text = "Decline"
-target_event_path = "uid://copt0ph0bycmr"
+_new_content_text = "“What a shame,” the old farmer says, shaking his head. “But I respect your decision, {TITLE}.”"
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
 
 [sub_resource type="Resource" id="Resource_mnepf"]
 script = ExtResource("9_bik6g")
@@ -46,6 +51,6 @@ titel = "Cattle Drive"
 description = "You get talking with an old halfling farmer, and after a few drinks and some friendly conversation, he makes you an interesting offer.
 
 “I could use the help of a young {TITLE} like you. See those five hu-cows in the pen over there? I need them driven over to the Trading Post in the south, but the roads have gotten dangerous, and I’m not as young as I used to be. So, what do you say? It’s not the most profitable kind of work, but it’s honest.”"
-content = Array[ExtResource("2_p4gqr")]([SubResource("Resource_ksy1x"), SubResource("Resource_4cljs"), SubResource("Resource_an1av"), null])
+content = Array[ExtResource("2_p4gqr")]([SubResource("Resource_4cljs"), SubResource("Resource_43yjr"), SubResource("Resource_1x874")])
 open_actions = Array[ExtResource("1_an1av")]([SubResource("Resource_mnepf")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
