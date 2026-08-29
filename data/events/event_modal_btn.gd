@@ -1,5 +1,5 @@
 extends _EventContent
-class_name EventModalInfo
+class_name EventModalBtn
 
 @export var _btn_text: String
 var btn_text: String:

@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_8qhdw"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_1d5t1"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5_13wqb"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_info.gd" id="6_6bce0"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="6_6bce0"]
 [ext_resource type="Resource" uid="uid://d0wrpacummuaa" path="res://data/flags/cave_salvage_01.tres" id="6_n4ax0"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="7_dm3is"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="8_sabvt"]

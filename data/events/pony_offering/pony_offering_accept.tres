@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="5"]
 [ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="6"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="7"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_info.gd" id="7_jjlt7"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="7_jjlt7"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8"]
 [ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="9_wh41n"]
 [ext_resource type="Resource" uid="uid://cb5lg1c5twolq" path="res://data/ponygirls/default_pony.tres" id="10_o414j"]

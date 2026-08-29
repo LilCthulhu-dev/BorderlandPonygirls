@@ -4,6 +4,14 @@ class_name EventBtn
 @export var txt := "":
 	get:
 		return Utils.translate(txt)
+
+@export var _btn_text: String
+var btn_text: String:
+	set(value):
+		_btn_text = value
+	get:
+		return Utils.translate(_btn_text)
+
 @export var actions : Array[Action]
 
 @export_group('uses')

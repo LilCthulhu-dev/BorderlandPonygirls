@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6_j7dgf"]
 [ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="7_qjuik"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8_ahi8v"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_info.gd" id="8_w85v7"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="8_w85v7"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="9_2t088"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="10_2twek"]
 
