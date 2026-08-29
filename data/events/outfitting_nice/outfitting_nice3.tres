@@ -2,24 +2,16 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_qovyu"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_pnsjp"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3_8xjib"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_pnsjp"]
 [ext_resource type="Resource" uid="uid://bvvoxsch0suvl" path="res://data/flags/outfitting_tattoo.tres" id="4_yb073"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5_8xjib"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_ovj0o"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="6_qovyu"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_6rrk2"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="7_qovyu"]
 [ext_resource type="Resource" uid="uid://caiu0v7elmd13" path="res://data/flags/outfitting_dildos.tres" id="7_wjq8s"]
 [ext_resource type="Resource" uid="uid://cp6bse7x0ootq" path="res://data/flags/outfitting_piercings.tres" id="8_80pvo"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="11_e0152"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="12_vmfnw"]
-
-[sub_resource type="Resource" id="Resource_a12vk"]
-script = ExtResource("3_8xjib")
-txt = "Your shaman uses the magic wand, and the womb tattoo appears on the girl's belly. She begins to moan, twitching under mounting want, and her pussy begins to drip.
-
-It’s like a branding, and allows you control over the cunt’s lust. Her libido will go up and she will no longer be able to orgasm without explicit permission."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_dn7as"]
 script = ExtResource("5_ovj0o")
@@ -34,21 +26,13 @@ target = 0
 hide_tooltip = true
 metadata/_custom_type_script = "uid://batgxym44h4w3"
 
-[sub_resource type="Resource" id="Resource_jl541"]
-script = ExtResource("7_6rrk2")
-txt = "Womb Tattoo"
-actions = Array[ExtResource("1_qovyu")]([SubResource("Resource_a12vk"), SubResource("Resource_dn7as"), SubResource("Resource_aybht")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_pnsjp"]
+script = ExtResource("7_qovyu")
+_btn_text = "Womb Tattoo"
+_modal_text = "Your shaman uses the magic wand, and the womb tattoo appears on the girl's belly. She begins to moan, twitching under mounting want, and her pussy begins to drip.
 
-[sub_resource type="Resource" id="Resource_80pvo"]
-script = ExtResource("3_8xjib")
-txt = "You take a small dildo, though for the girl it must seem giant, and rub it with goblin cum for lube. She watches with wide eyes as you get behind her. You give her a playful smack, then push the dildo into her quivering cunt, making her moan helplessly.
-
-Next is the tail. The shaman has prepared it for you. You spread the girl's buttcheeks, put the plug up against her rear, and push. She buckles and moans in both pain and lust, and a moment later her hungry ass swallows the plug.
-
-Another playful smack, and you pull the crotchstrap between her legs, making sure those toys stay where they belong.
-"
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+It’s like a branding, and allows you control over the cunt’s lust. Her libido will go up and she will no longer be able to orgasm without explicit permission."
+actions = Array[ExtResource("1_qovyu")]([SubResource("Resource_dn7as"), SubResource("Resource_aybht")])
 
 [sub_resource type="Resource" id="Resource_qovyu"]
 script = ExtResource("5_ovj0o")
@@ -63,21 +47,16 @@ target = 0
 hide_tooltip = true
 metadata/_custom_type_script = "uid://batgxym44h4w3"
 
-[sub_resource type="Resource" id="Resource_wjq8s"]
-script = ExtResource("7_6rrk2")
-txt = "Dildos"
-actions = Array[ExtResource("1_qovyu")]([SubResource("Resource_80pvo"), SubResource("Resource_qovyu"), SubResource("Resource_jgbb3")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
 [sub_resource type="Resource" id="Resource_8xjib"]
-script = ExtResource("3_8xjib")
-txt = "You order the shivering ponygirl to sit back up. She watches nervously while you open a tiny box. Inside is a pair of piercings rings made of moon-silver. Her eyes go wide, as she realizes where they would go and how much it would hurt.
+script = ExtResource("7_qovyu")
+_btn_text = "Dildos"
+_modal_text = "You take a small dildo, though for the girl it must seem giant, and rub it with goblin cum for lube. She watches with wide eyes as you get behind her. You give her a playful smack, then push the dildo into her quivering cunt, making her moan helplessly.
 
-You chuckle and let the shaman speak his magic words, before you simply take the two rings, and hold them up against her nipples. There is a flash of light, a gasp of surprise, and when you look again the rings are now nicely dangling from the girls now much bigger breasts.
+Next is the tail. The shaman has prepared it for you. You spread the girl's buttcheeks, put the plug up against her rear, and push. She buckles and moans in both pain and lust, and a moment later her hungry ass swallows the plug.
 
-You give her orbs a squeeze and she moans, deeply surprised by how good it feels.
+Another playful smack, and you pull the crotchstrap between her legs, making sure those toys stay where they belong.
 "
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+actions = Array[ExtResource("1_qovyu")]([SubResource("Resource_qovyu"), SubResource("Resource_jgbb3")])
 
 [sub_resource type="Resource" id="Resource_iugqv"]
 script = ExtResource("5_ovj0o")
@@ -92,11 +71,16 @@ target = 0
 hide_tooltip = true
 metadata/_custom_type_script = "uid://batgxym44h4w3"
 
-[sub_resource type="Resource" id="Resource_pnsjp"]
-script = ExtResource("7_6rrk2")
-txt = "Piercings"
-actions = Array[ExtResource("1_qovyu")]([SubResource("Resource_8xjib"), SubResource("Resource_iugqv"), SubResource("Resource_wn16g")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_ovj0o"]
+script = ExtResource("7_qovyu")
+_btn_text = "Piercings"
+_modal_text = "You order the shivering ponygirl to sit back up. She watches nervously while you open a tiny box. Inside is a pair of piercings rings made of moon-silver. Her eyes go wide, as she realizes where they would go and how much it would hurt.
+
+You chuckle and let the shaman speak his magic words, before you simply take the two rings, and hold them up against her nipples. There is a flash of light, a gasp of surprise, and when you look again the rings are now nicely dangling from the girls now much bigger breasts.
+
+You give her orbs a squeeze and she moans, deeply surprised by how good it feels.
+"
+actions = Array[ExtResource("1_qovyu")]([SubResource("Resource_iugqv"), SubResource("Resource_wn16g")])
 
 [sub_resource type="Resource" id="Resource_nk3v6"]
 script = ExtResource("11_e0152")
@@ -122,5 +106,5 @@ description = "The base outfit is done, and the she-beast begins to realize how 
 “Easy girl. We are almost done. Now, go on your knees and spread your legs.”
 
 Her eyes go wide, she tries to say something but the gag reduces it to garbled nonsense. She huffs, but after another moment she drops clumsily to her knees, bends over, and spreads her legs."
-content = Array[ExtResource("2_pnsjp")]([SubResource("Resource_jl541"), SubResource("Resource_wjq8s"), SubResource("Resource_pnsjp"), SubResource("Resource_flkly")])
+content = Array[ExtResource("2_pnsjp")]([SubResource("Resource_pnsjp"), SubResource("Resource_8xjib"), SubResource("Resource_ovj0o"), SubResource("Resource_flkly")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

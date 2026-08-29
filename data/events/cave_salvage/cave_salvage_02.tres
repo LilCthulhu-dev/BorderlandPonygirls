@@ -8,9 +8,8 @@
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6_jasdj"]
 [ext_resource type="Resource" uid="uid://dotjglyb1i4ff" path="res://data/flags/cave_salvage_02.tres" id="7_qbxqp"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8_2n0tw"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="9_kasgf"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="9_xtgw8"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="10_i6dqv"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="9_yokwc"]
 [ext_resource type="Texture2D" uid="uid://btp003vx4cmr3" path="res://assets/img/frozenhunter/cave_salvage.png" id="10_mlicy"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="11_081s4"]
 
@@ -42,27 +41,22 @@ fail_txt = "Your men do their best to work quietly, but suddenly, the sounds fro
 You order them to halt. A moment later, a hulking land-squid bursts from the tunnel and into the light of your torches, screeching as its tentacles lash out at your men."
 metadata/_custom_type_script = "uid://b7vmcwnbxge0e"
 
-[sub_resource type="Resource" id="Resource_pn22d"]
-script = ExtResource("10_i6dqv")
-txt = "You signal your men to remain quiet and slowly lead them deeper into the tunnel. The sickening sounds of something large feeding grow louder with every step.
+[sub_resource type="Resource" id="Resource_w80cg"]
+script = ExtResource("4_i6dqv")
+combat = ExtResource("3_kasgf")
+metadata/_custom_type_script = "uid://bnjeril1f2cy8"
+
+[sub_resource type="Resource" id="Resource_kasgf"]
+script = ExtResource("9_yokwc")
+_btn_text = "Attack the beast."
+_modal_text = "You signal your men to remain quiet and slowly lead them deeper into the tunnel. The sickening sounds of something large feeding grow louder with every step.
 
 Eventually, you spot the creature ahead: a giant land-squid squatting in the middle of the tunnel, chewing on the carcass of a dead goblin.
 
 You hold your breath, wondering whether you truly want to challenge it. Then one of your she-beasts lets out a terrified whine.
 
 The land-squid looks up. Now you have to fight."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
-
-[sub_resource type="Resource" id="Resource_w80cg"]
-script = ExtResource("4_i6dqv")
-combat = ExtResource("3_kasgf")
-metadata/_custom_type_script = "uid://bnjeril1f2cy8"
-
-[sub_resource type="Resource" id="Resource_2q2b3"]
-script = ExtResource("9_xtgw8")
-txt = "Attack the beast."
-actions = Array[ExtResource("1_2yvm8")]([SubResource("Resource_pn22d"), SubResource("Resource_w80cg")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+actions = Array[ExtResource("1_2yvm8")]([SubResource("Resource_w80cg")])
 
 [sub_resource type="Resource" id="Resource_nm15e"]
 script = ExtResource("9_xtgw8")
@@ -78,5 +72,5 @@ The air inside is cold and damp. From somewhere deep below comes the sound of a 
 
 You weigh your options, unsure whether venturing deeper is worth the risk. Then you notice another mostly intact crate lying just inside the nearest tunnel."
 img = ExtResource("10_mlicy")
-content = Array[ExtResource("2_yokwc")]([SubResource("Resource_tkrab"), SubResource("Resource_2q2b3"), SubResource("Resource_nm15e")])
+content = Array[ExtResource("2_yokwc")]([SubResource("Resource_tkrab"), SubResource("Resource_kasgf"), SubResource("Resource_nm15e")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

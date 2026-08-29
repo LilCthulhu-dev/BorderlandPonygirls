@@ -12,7 +12,7 @@
 [ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="9_4upsj"]
 [ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="10_86qs2"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="10_qtylr"]
-[ext_resource type="Script" uid="uid://ceventponysel1" path="res://data/events/event_pony_select.gd" id="11_pick"]
+[ext_resource type="Script" uid="uid://db1y7o44s5mya" path="res://data/events/event_pony_select.gd" id="11_pick"]
 
 [sub_resource type="Resource" id="Resource_6b4rs"]
 script = ExtResource("3_m6u78")
@@ -31,11 +31,6 @@ txt = "Get ready for the race"
 actions = Array[ExtResource("1_54hqr")]([SubResource("Resource_6b4rs"), SubResource("Resource_b3k5i")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
-[sub_resource type="Resource" id="Resource_616mq"]
-script = ExtResource("9_4upsj")
-combat = ExtResource("8_ix0dg")
-metadata/_custom_type_script = "uid://bnjeril1f2cy8"
-
 [sub_resource type="Resource" id="Resource_iktd0"]
 script = ExtResource("6_m5ng1")
 remove_flag = Array[ExtResource("4_qtylr")]([ExtResource("10_86qs2")])
@@ -43,9 +38,13 @@ required_flag = Array[ExtResource("4_qtylr")]([ExtResource("5_86qs2")])
 hard_requierment = true
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
+[sub_resource type="Resource" id="Resource_616mq"]
+script = ExtResource("9_4upsj")
+combat = ExtResource("8_ix0dg")
+metadata/_custom_type_script = "uid://bnjeril1f2cy8"
+
 [sub_resource type="Resource" id="Resource_5oxw3"]
 script = ExtResource("11_pick")
-button_txt = "Race with %s"
 actions = Array[ExtResource("1_54hqr")]([SubResource("Resource_iktd0"), SubResource("Resource_616mq")])
 metadata/_custom_type_script = "uid://ceventponysel1"
 

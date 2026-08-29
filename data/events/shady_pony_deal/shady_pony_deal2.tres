@@ -2,19 +2,13 @@
 
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="1_yipd7"]
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="2_ktc0q"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3_ds03l"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_q3ihl"]
 [ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="5_ds03l"]
 [ext_resource type="Resource" uid="uid://cb5lg1c5twolq" path="res://data/ponygirls/default_pony.tres" id="6_6flpc"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="8_6t8k1"]
 [ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="9_ogsu3"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="11_fqc60"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="12_1ddbn"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="13_bfuw7"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="15_b3gjr"]
-
-[sub_resource type="Resource" id="Resource_xybms"]
-script = ExtResource("3_ds03l")
-txt = "She looks helpless and miserable but makes no attempt to resist. You add her to your stable."
 
 [sub_resource type="Resource" id="Resource_c5gay"]
 script = ExtResource("9_ogsu3")
@@ -30,17 +24,11 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 script = ExtResource("12_1ddbn")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
-[sub_resource type="Resource" id="Resource_ktc0q"]
-script = ExtResource("13_bfuw7")
-txt = "Add her to your stable."
-actions = Array[ExtResource("2_ktc0q")]([SubResource("Resource_xybms"), SubResource("Resource_c5gay"), SubResource("Resource_noxkn"), SubResource("Resource_pwvun")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
-[sub_resource type="Resource" id="Resource_6flpc"]
-script = ExtResource("3_ds03l")
-txt = "She looks shocked as you undo her bindings and remove the gag. Just as you suspected, she had been kidnapped and forced into slavery.
-
-She thanks you profusely for setting her free and promises to tell everyone what a good man you are."
+[sub_resource type="Resource" id="Resource_q3ihl"]
+script = ExtResource("8_6t8k1")
+_btn_text = "Add her to your stable."
+_modal_text = "She looks helpless and miserable but makes no attempt to resist. You add her to your stable."
+actions = Array[ExtResource("2_ktc0q")]([SubResource("Resource_c5gay"), SubResource("Resource_noxkn"), SubResource("Resource_pwvun")])
 
 [sub_resource type="Resource" id="Resource_ltrtu"]
 script = ExtResource("11_fqc60")
@@ -52,15 +40,17 @@ metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 script = ExtResource("12_1ddbn")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
-[sub_resource type="Resource" id="Resource_tb6qg"]
-script = ExtResource("13_bfuw7")
-txt = "Let her go."
-actions = Array[ExtResource("2_ktc0q")]([SubResource("Resource_6flpc"), SubResource("Resource_ltrtu"), SubResource("Resource_gxoki")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_ds03l"]
+script = ExtResource("8_6t8k1")
+_btn_text = "Let her go."
+_modal_text = "She looks shocked as you undo her bindings and remove the gag. Just as you suspected, she had been kidnapped and forced into slavery.
+
+She thanks you profusely for setting her free and promises to tell everyone what a good man you are."
+actions = Array[ExtResource("2_ktc0q")]([SubResource("Resource_ltrtu"), SubResource("Resource_gxoki")])
 
 [resource]
 script = ExtResource("15_b3gjr")
 titel = "Unexpected Deal"
 description = "The goblin grins, takes the gold, and leaves you with your new ponygirl. She looks at you pleadingly but is too afraid to speak."
-content = Array[ExtResource("1_yipd7")]([SubResource("Resource_ktc0q"), SubResource("Resource_tb6qg")])
+content = Array[ExtResource("1_yipd7")]([SubResource("Resource_q3ihl"), SubResource("Resource_ds03l")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

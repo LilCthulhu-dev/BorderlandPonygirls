@@ -4,12 +4,11 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_0q0wo"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="2"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_0a7k5"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="4"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="5"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="5_b0aiv"]
 [ext_resource type="Script" uid="uid://dpu27o7lu670x" path="res://data/actions/add_ponygirl.gd" id="6"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="7"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="7_jjlt7"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8"]
 [ext_resource type="Script" uid="uid://08pb1wingorc" path="res://data/perks/perk.gd" id="9_wh41n"]
 [ext_resource type="Resource" uid="uid://cb5lg1c5twolq" path="res://data/ponygirls/default_pony.tres" id="10_o414j"]
@@ -25,12 +24,6 @@ txt = "Handle the outfitting yourself."
 actions = Array[ExtResource("1_0q0wo")]([SubResource("Resource_16cbu")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
-[sub_resource type="Resource" id="Resource_kx5gk"]
-script = ExtResource("3")
-txt = "You leave the outfitting to your shaman. About an hour later, a tightly bound and visibly needy ponygirl awaits you in the stable.
-"
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
-
 [sub_resource type="Resource" id="Resource_pnsjp"]
 script = ExtResource("4")
 amount = 14
@@ -42,11 +35,12 @@ metadata/_custom_type_script = "uid://batgxym44h4w3"
 script = ExtResource("5")
 metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
-[sub_resource type="Resource" id="Resource_21vu6"]
-script = ExtResource("2")
-txt = "Let the shaman handle the outfitting."
-actions = Array[ExtResource("1_0q0wo")]([SubResource("Resource_kx5gk"), SubResource("Resource_pnsjp"), SubResource("Resource_f0f2f")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_0q0wo"]
+script = ExtResource("7_jjlt7")
+_btn_text = "Let the shaman handle the outfitting."
+_modal_text = "You leave the outfitting to your shaman. About an hour later, a tightly bound and visibly needy ponygirl awaits you in the stable.
+"
+actions = Array[ExtResource("1_0q0wo")]([SubResource("Resource_pnsjp"), SubResource("Resource_f0f2f")])
 
 [sub_resource type="Resource" id="Resource_8xjib"]
 script = ExtResource("6")
@@ -66,6 +60,6 @@ description = "The girl grows all red and flustered with excitement. An hour lat
 Now you only need to prepare her, or leave the task to your shaman.
 
 The ponygirl will gain Arousal through both..."
-content = Array[ExtResource("2_0a7k5")]([SubResource("Resource_emfqr"), SubResource("Resource_21vu6")])
+content = Array[ExtResource("2_0a7k5")]([SubResource("Resource_emfqr"), SubResource("Resource_0q0wo")])
 open_actions = Array[ExtResource("1_0q0wo")]([SubResource("Resource_8xjib"), SubResource("Resource_iugqv")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

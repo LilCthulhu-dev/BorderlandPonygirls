@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_j6cmw"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="3_6w0qh"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="5"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6"]
@@ -12,18 +11,12 @@
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
 [ext_resource type="Texture2D" uid="uid://cmwowqe86ua5p" path="res://assets/img/frozenhunter/salt_run.png" id="10"]
 
-[sub_resource type="Resource" id="Resource_inspect_txt"]
-script = ExtResource("3")
-txt = "The crate is cheap pine, waxed at every seam. A harbor stamp marks it as kitchen salt for inland cooks - not the fine white stuff the empire hoards.
+[sub_resource type="Resource" id="Resource_j6cmw"]
+script = ExtResource("3_6w0qh")
+_btn_text = "Inspect the crate"
+_modal_text = "The crate is cheap pine, waxed at every seam. A harbor stamp marks it as kitchen salt for inland cooks - not the fine white stuff the empire hoards.
 
 Your mare snorts at the dry smell. If you split it on the road you could sell handfuls at every campfire. The clerk would also know."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
-
-[sub_resource type="Resource" id="Resource_inspect"]
-script = ExtResource("4")
-txt = "Inspect the crate"
-actions = Array[ExtResource("1")]([SubResource("Resource_inspect_txt")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_to_accept"]
 script = ExtResource("5")
@@ -64,6 +57,6 @@ description = "A dock clerk with ink-black fingers flags you down between the fi
 
 “{TITLE}. I’ve a sealed crate of salt that needs to reach the Goblin Village kitchens before the next feast-day. Pay on delivery. Keep it dry. Don’t let the guards ‘inspect’ half of it into their own pouches.”"
 img = ExtResource("10")
-content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_accept"), SubResource("Resource_decline")])
+content = Array[ExtResource("2")]([SubResource("Resource_j6cmw"), SubResource("Resource_accept"), SubResource("Resource_decline")])
 open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -2,8 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_mo28n"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_info.gd" id="3_apixd"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="5"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6"]
@@ -12,18 +11,12 @@
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
 [ext_resource type="Texture2D" uid="uid://cadushsnrgtvk" path="res://assets/img/frozenhunter/hay_wain.png" id="10"]
 
-[sub_resource type="Resource" id="Resource_inspect_txt"]
-script = ExtResource("3")
-txt = "The hay is good second-cut, tied tight, still green at the heart. Your mares have already pricked their ears.
+[sub_resource type="Resource" id="Resource_mo28n"]
+script = ExtResource("3_apixd")
+_btn_text = "Inspect the wain"
+_modal_text = "The hay is good second-cut, tied tight, still green at the heart. Your mares have already pricked their ears.
 
 If you cut a few bundles loose they would travel happier. The farmer would also know, and the village stables would notice the short load."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
-
-[sub_resource type="Resource" id="Resource_inspect"]
-script = ExtResource("4")
-txt = "Inspect the wain"
-actions = Array[ExtResource("1")]([SubResource("Resource_inspect_txt")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_to_accept"]
 script = ExtResource("5")
@@ -64,6 +57,6 @@ description = "A farmer in a sweat-dark vest flags you down at the field gate, p
 
 \"{TITLE}. I've a wain of fodder that needs to reach the Goblin Village stables before the next warband eats the last of their straw. Pay when the stablehands sign for it. Keep it dry. Don't let your own mares finish the load on the road.\""
 img = ExtResource("10")
-content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_accept"), SubResource("Resource_decline")])
+content = Array[ExtResource("2")]([SubResource("Resource_mo28n"), SubResource("Resource_accept"), SubResource("Resource_decline")])
 open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
