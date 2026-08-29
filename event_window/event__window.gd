@@ -12,6 +12,7 @@ const EVENT__TEXT = preload("uid://desp1eu87yxct")
 const EVENT__MODAL_BTN = preload("uid://cvv8ckw6e40ou")
 const EVENT__MOVE_BTN = preload("uid://b312y4kwwux86")
 const EVENT__RETURN_TO_MAIN_BTN = preload("uid://c27j1lrumf1l6")
+const EVENT__SWITCH_CONTENT_BTN = preload("uid://g263eaqprilm")
 
 func _ready() -> void:
 	GameData.game_state = Enums.GAME_STATES.EVENT
@@ -45,6 +46,8 @@ func _update_content():
 			continue
 		elif content is EventPonySelect:
 			_add_pony_select(content)
+		elif content is EventSwitchContentBtn:
+			_spawn_content(EVENT__SWITCH_CONTENT_BTN, content)
 		elif content is EventModalBtn:
 			_spawn_content(EVENT__MODAL_BTN, content)
 		elif content is EventMoveBtn:

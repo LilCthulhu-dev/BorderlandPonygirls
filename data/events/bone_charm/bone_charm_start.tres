@@ -2,36 +2,41 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
-[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="3_456fm"]
+[ext_resource type="Script" uid="uid://bhikhif1mmeq" path="res://data/events/event_switch_content_btn.gd" id="3_e8pnr"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6"]
 [ext_resource type="Resource" uid="uid://d0wron3t5t00a" path="res://data/flags/bone_charm_01.tres" id="7"]
-[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_kkaws"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
 [ext_resource type="Texture2D" uid="uid://b6yeudhiravxp" path="res://assets/img/frozenhunter/bone_charm.png" id="10"]
 
-[sub_resource type="Resource" id="Resource_u2vlh"]
-script = ExtResource("3_456fm")
+[sub_resource type="Resource" id="Resource_jh00y"]
+script = ExtResource("3_e8pnr")
 _btn_text = "Study the charm"
-_modal_text = "The charm is a knuckle-bone carved with a spiral and a tiny horseshoe. It does not belong to any living warband you know.Village shamans pay for cave-marks. They also get angry if you sell them at the wrong stall."
-metadata/_custom_type_script = "uid://dwjwfrh5b5rjt"
+_new_content_text = "The charm is a knuckle-bone carved with a spiral and a tiny horseshoe. It does not belong to any living warband you know.Village shamans pay for cave-marks. They also get angry if you sell them at the wrong stall."
+single_use = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
 
-[sub_resource type="Resource" id="Resource_1x874"]
+[sub_resource type="Resource" id="Resource_7ynj1"]
 script = ExtResource("8")
 add_flag = Array[ExtResource("6")]([ExtResource("7")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_43yjr"]
-script = ExtResource("7_kkaws")
+[sub_resource type="Resource" id="Resource_1x874"]
+script = ExtResource("3_e8pnr")
 _btn_text = "Take it to the shaman"
-target_event_path = "uid://dotjf4edi0x3y"
-actions = Array[ExtResource("1")]([SubResource("Resource_1x874")])
-metadata/_custom_type_script = "uid://dpkgbelbgvth6"
+_new_content_text = "You wrap the charm in cloth and tuck it into a saddlebag. The bone is warm, as if it had been held a moment ago.
 
-[sub_resource type="Resource" id="Resource_4sxut"]
-script = ExtResource("7_kkaws")
+The village shaman will want it before dusk-talk starts."
+actions = Array[ExtResource("1")]([SubResource("Resource_7ynj1")])
+end_conversation = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
+
+[sub_resource type="Resource" id="Resource_43yjr"]
+script = ExtResource("3_e8pnr")
 _btn_text = "Leave it"
-target_event_path = "res://data/events/bone_charm/bone_charm_decline.tres"
+_new_content_text = "You leave the charm in the grass. Something in the cave mouth seems to watch you go."
+end_conversation = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
 
 [sub_resource type="Resource" id="Resource_gate"]
 script = ExtResource("8")
@@ -45,6 +50,6 @@ description = "Near a scatter of old bones your scout kicks up a carved charm, s
 
 The cave mouth is close. Whatever dropped this might still be watching. A village shaman would pay to read the marks."
 img = ExtResource("10")
-content = Array[ExtResource("2")]([SubResource("Resource_u2vlh"), SubResource("Resource_43yjr"), SubResource("Resource_4sxut")])
+content = Array[ExtResource("2")]([SubResource("Resource_jh00y"), SubResource("Resource_1x874"), SubResource("Resource_43yjr")])
 open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"
