@@ -3,12 +3,12 @@ extends Modal
 @onready var titel_label: Label = %TitelLabel
 @onready var description_label: Label = %DescriptionLabel
 @onready var results_label: Label = %ResultsLabel
-var extra_text : = ""
+var description : = ""
 var actions : Array[Action]
 
 func _ready() -> void:
 	super()
-	description_label.text = extra_text
+	description_label.text = description
 	for action in actions:
 		var result_txt = action.get_result()
 		if result_txt == "": continue
@@ -20,7 +20,7 @@ func _ready() -> void:
 		if results_label.text != "":
 			results_label.text += "\n"
 		results_label.text += result_txt
-	
+
 	description_label.visible = description_label.text != ""
 	results_label.visible = results_label.text != ""
 
