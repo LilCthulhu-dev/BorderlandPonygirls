@@ -29,7 +29,7 @@ func close() -> void:
 		return
 	for action in actions:
 		action.use()
-	if LocationManager.current_event != null:
+	if EventManager.current_event != null:
 		GlobalSignals.update_event.emit()
 	super()
 
