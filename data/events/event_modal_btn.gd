@@ -16,5 +16,3 @@ var modal_text: String:
 		return Utils.translate(_modal_text)
 
 @export var actions : Array[Action]
-@export var single_use = false
-var used = false

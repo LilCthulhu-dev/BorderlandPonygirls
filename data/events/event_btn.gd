@@ -10,10 +10,6 @@ var btn_text: String:
 
 @export var actions : Array[Action]
 
-@export_group('uses')
-@export var single_use = false
-@export var used = false
-
 func soft_requirements_met() -> bool:
 	for action in actions:
 		if not action.requirement_met():

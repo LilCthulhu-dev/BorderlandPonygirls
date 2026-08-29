@@ -16,5 +16,3 @@ var new_content_text:
 
 @export var actions : Array[Action]
 @export var end_conversation = false
-@export var single_use = false
-var used = false

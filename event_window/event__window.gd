@@ -44,6 +44,8 @@ func _update_content():
 	for content in EventManager.current_event.content:
 		if !content.hard_requierments_met():
 			continue
+		if content.single_use && content.used:
+			continue
 		elif content is EventPonySelect:
 			_add_pony_select(content)
 		elif content is EventSwitchContentBtn:

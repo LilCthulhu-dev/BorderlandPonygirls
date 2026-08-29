@@ -5,7 +5,6 @@ class_name EventCheck
 @export var modifier := 0
 @export var succes_actions: Array[Action]
 @export var fail_actions: Array[Action]
-var used = false
 
 @export var txt := "":
 	get:
