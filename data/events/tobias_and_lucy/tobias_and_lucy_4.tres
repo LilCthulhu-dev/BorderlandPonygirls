@@ -14,6 +14,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_lu3ck"]
 script = ExtResource("4_288c8")
 txt = "Racing Gear?"
+_btn_text = "Racing Gear?"
 actions = Array[ExtResource("1_h2mrt")]([SubResource("Resource_3j1eo")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
@@ -25,6 +26,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_s66r5"]
 script = ExtResource("4_288c8")
 txt = "Leave"
+_btn_text = "Leave"
 actions = Array[ExtResource("1_h2mrt")]([SubResource("Resource_0ea8p")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

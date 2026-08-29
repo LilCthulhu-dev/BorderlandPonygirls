@@ -8,7 +8,7 @@ func _ready() -> void:
 		text = "> Return to Main"
 		disabled = false
 	else:
-		text = "> " + content.txt
+		text = "> " + content.btn_text
 		if !content.soft_requirements_met():
 			disabled = true
 		if content.single_use && content.used:

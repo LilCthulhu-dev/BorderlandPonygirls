@@ -15,6 +15,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_wf3nh"]
 script = ExtResource("4_a15lo")
 txt = "Enter the preparation area"
+_btn_text = "Enter the preparation area"
 actions = Array[ExtResource("1_igymm")]([SubResource("Resource_sp35b")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

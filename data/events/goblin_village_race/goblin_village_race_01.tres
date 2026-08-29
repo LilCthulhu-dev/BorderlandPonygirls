@@ -54,12 +54,14 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [sub_resource type="Resource" id="Resource_0hriv"]
 script = ExtResource("5_u0bws")
 txt = "Enter the race"
+_btn_text = "Enter the race"
 actions = Array[ExtResource("1_f0xq1")]([SubResource("Resource_ktihw"), SubResource("Resource_u0bws")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_ds2kd"]
 script = ExtResource("5_u0bws")
 txt = "Leave"
+_btn_text = "Leave"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_kndiu"]

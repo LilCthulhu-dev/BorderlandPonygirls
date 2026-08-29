@@ -20,6 +20,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_owt7r"]
 script = ExtResource("4_ilrj4")
 txt = "Accept"
+_btn_text = "Accept"
 actions = Array[ExtResource("1_ydr5t")]([SubResource("Resource_ukw7e")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
@@ -31,6 +32,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_pgr8y"]
 script = ExtResource("4_ilrj4")
 txt = "Deny"
+_btn_text = "Deny"
 actions = Array[ExtResource("1_ydr5t")]([SubResource("Resource_bc6de")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

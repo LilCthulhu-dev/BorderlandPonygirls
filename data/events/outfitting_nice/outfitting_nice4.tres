@@ -55,6 +55,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [sub_resource type="Resource" id="Resource_5jfom"]
 script = ExtResource("6_kj11q")
 txt = "Back to Main"
+_btn_text = "Back to Main"
 actions = Array[ExtResource("1_ajbkw")]([SubResource("Resource_w686w"), SubResource("Resource_gwlau"), SubResource("Resource_npo4k"), SubResource("Resource_23hgn"), SubResource("Resource_a5u37"), SubResource("Resource_i7qai"), SubResource("Resource_algvs"), SubResource("Resource_wnaew")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

@@ -14,6 +14,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_nqjhc"]
 script = ExtResource("4_nqjhc")
 txt = "Let it slide"
+_btn_text = "Let it slide"
 actions = Array[ExtResource("1_b3oik")]([SubResource("Resource_qyh01")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
@@ -25,6 +26,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_k0p1p"]
 script = ExtResource("4_nqjhc")
 txt = "Punish her"
+_btn_text = "Punish her"
 actions = Array[ExtResource("1_b3oik")]([SubResource("Resource_dqyld")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

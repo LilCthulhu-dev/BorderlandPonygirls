@@ -23,12 +23,14 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [sub_resource type="Resource" id="Resource_lu3ck"]
 script = ExtResource("7_0vik8")
 txt = "Say hello"
+_btn_text = "Say hello"
 actions = Array[ExtResource("1_33bho")]([SubResource("Resource_rdqxi"), SubResource("Resource_qw2up")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_k0miw"]
 script = ExtResource("7_0vik8")
 txt = "Ignore and leave"
+_btn_text = "Ignore and leave"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_mm5oj"]

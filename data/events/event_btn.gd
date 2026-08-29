@@ -1,10 +1,6 @@
 extends _EventContent
 class_name EventBtn
 
-@export var txt := "":
-	get:
-		return Utils.translate(txt)
-
 @export var _btn_text: String
 var btn_text: String:
 	set(value):

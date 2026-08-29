@@ -14,6 +14,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_s66r5"]
 script = ExtResource("3_ji5pl")
 txt = "Leave"
+_btn_text = "Leave"
 actions = Array[ExtResource("1_q4klb")]([SubResource("Resource_qm0d7")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

@@ -9,6 +9,7 @@
 [sub_resource type="Resource" id="Resource_return"]
 script = ExtResource("1")
 txt = "Return"
+_btn_text = "Return"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]

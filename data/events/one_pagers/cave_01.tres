@@ -15,12 +15,14 @@ metadata/_custom_type_script = "uid://bnjeril1f2cy8"
 [sub_resource type="Resource" id="Resource_gytls"]
 script = ExtResource("5_eyev1")
 txt = "Investigate the Cave (Start Combat)"
+_btn_text = "Investigate the Cave (Start Combat)"
 actions = Array[ExtResource("1_yxhpi")]([SubResource("Resource_rdule")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_3yp26"]
 script = ExtResource("5_eyev1")
 txt = "Ignore it"
+_btn_text = "Ignore it"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]

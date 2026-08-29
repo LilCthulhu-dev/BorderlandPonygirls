@@ -35,6 +35,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 [sub_resource type="Resource" id="Resource_0k4vp"]
 script = ExtResource("9_6pk6w")
 txt = "Continue."
+_btn_text = "Continue."
 actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_2thkh"), SubResource("Resource_llgf3"), SubResource("Resource_qxr2l")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
@@ -56,6 +57,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 [sub_resource type="Resource" id="Resource_r687m"]
 script = ExtResource("9_6pk6w")
 txt = "Continue."
+_btn_text = "Continue."
 actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_dx1qd"), SubResource("Resource_n67lb"), SubResource("Resource_wg2h7")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
@@ -77,6 +79,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 [sub_resource type="Resource" id="Resource_3gffg"]
 script = ExtResource("9_6pk6w")
 txt = "Continue."
+_btn_text = "Continue."
 actions = Array[ExtResource("1_w4e4u")]([SubResource("Resource_s2a0r"), SubResource("Resource_oof3e"), SubResource("Resource_8rfyy")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

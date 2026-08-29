@@ -14,6 +14,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_jfgcl"]
 script = ExtResource("4_16cbu")
 txt = "Next"
+_btn_text = "Next"
 actions = Array[ExtResource("1_w1ioj")]([SubResource("Resource_2ugw7")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

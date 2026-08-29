@@ -14,12 +14,14 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_djj5w"]
 script = ExtResource("4_2rrc2")
 txt = "Pay the entry fee"
+_btn_text = "Pay the entry fee"
 actions = Array[ExtResource("1_106s6")]([SubResource("Resource_jhnx8")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_xm42m"]
 script = ExtResource("4_2rrc2")
 txt = "Leave"
+_btn_text = "Leave"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]

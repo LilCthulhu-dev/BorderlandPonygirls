@@ -35,12 +35,14 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_cskxl"]
 script = ExtResource("4")
 txt = "Accept"
+_btn_text = "Accept"
 actions = Array[ExtResource("2_hlxsl")]([SubResource("Resource_6wf88"), SubResource("Resource_ds03l")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_5pobu"]
 script = ExtResource("4")
 txt = "Decline"
+_btn_text = "Decline"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_shady_once"]

@@ -32,6 +32,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [sub_resource type="Resource" id="Resource_accept"]
 script = ExtResource("4")
 txt = "Accept"
+_btn_text = "Accept"
 actions = Array[ExtResource("1")]([SubResource("Resource_to_accept"), SubResource("Resource_add_flag")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
@@ -43,6 +44,7 @@ metadata/_custom_type_script = "uid://low1eg5crao3"
 [sub_resource type="Resource" id="Resource_decline"]
 script = ExtResource("4")
 txt = "Decline"
+_btn_text = "Decline"
 actions = Array[ExtResource("1")]([SubResource("Resource_to_decline")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
