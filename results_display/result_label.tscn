@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dct0clbth1pfa"]
+
+[ext_resource type="FontFile" uid="uid://ep1ivek4dvad" path="res://assets/fonts/Baby Doll.otf" id="1_awi7r"]
+[ext_resource type="Script" uid="uid://bnltdn3sbi6yp" path="res://results_display/result_label.gd" id="2_jo37v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ce4ka"]
+content_margin_left = 10.0
+content_margin_top = 4.0
+content_margin_right = 15.0
+content_margin_bottom = 3.0
+bg_color = Color(0.45882353, 0.14117648, 0.21960784, 1)
+
+[node name="ResultLabel" type="Label" unique_id=945823909]
+size_flags_horizontal = 8
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("1_awi7r")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ce4ka")
+text = "Test 123"
+script = ExtResource("2_jo37v")

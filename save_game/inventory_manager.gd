@@ -41,6 +41,13 @@ static var trade_amount: int:
 # ================================================== helper
 static func set_inventory(item: Item, amount: int) -> void:
 	var id := item.id
+	if amount > 0:
+		var txt := "You gained %s %s." % [amount, item.title]
+		GlobalSignals.add_info.emit(txt)
+	elif amount < 0:
+		var txt := "You lost %s %s." % [abs(amount), item.title]
+		GlobalSignals.add_info.emit(txt)
+
 	if inventory.has(id):
 		inventory[id].amount += amount
 	else:

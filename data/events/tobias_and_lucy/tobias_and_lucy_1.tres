@@ -3,32 +3,27 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_33bho"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_rxtcn"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_45jgd"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_k0miw"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="4_rdqxi"]
 [ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="5_qw2up"]
 [ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="6_rdqxi"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="6_wt7a3"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_0vik8"]
-
-[sub_resource type="Resource" id="Resource_rdqxi"]
-script = ExtResource("3_k0miw")
-event_path = "uid://d200mp1thkv1x"
-metadata/_custom_type_script = "uid://low1eg5crao3"
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_rdqxi"]
 
 [sub_resource type="Resource" id="Resource_qw2up"]
 script = ExtResource("6_wt7a3")
 add_flag = Array[ExtResource("4_rdqxi")]([ExtResource("5_qw2up"), ExtResource("6_rdqxi")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_lu3ck"]
-script = ExtResource("7_0vik8")
-txt = "Say hello"
-actions = Array[ExtResource("1_33bho")]([SubResource("Resource_rdqxi"), SubResource("Resource_qw2up")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_wt7a3"]
+script = ExtResource("7_rdqxi")
+_btn_text = "Say hello"
+target_event_path = "uid://d200mp1thkv1x"
+actions = Array[ExtResource("1_33bho")]([SubResource("Resource_qw2up")])
 
 [sub_resource type="Resource" id="Resource_k0miw"]
 script = ExtResource("7_0vik8")
-txt = "Ignore and leave"
+_btn_text = "Ignore and leave"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_mm5oj"]
@@ -43,6 +38,6 @@ titel = "Tobias and Lucy"
 description = "You were at the tavern, haggling with the barkeeper over the price of rations, when you noticed an unusual pair sitting at a corner table - a halfling and a young human... mare?
 
 She wore a ponygirl harness and bridle, but none of the usual restraints, and her gag hung loosely beside her face. Stranger still, she was sitting on a bench inside the tavern, casually talking to her master instead of waiting outside in the stable."
-content = Array[ExtResource("2_rxtcn")]([SubResource("Resource_lu3ck"), SubResource("Resource_k0miw")])
+content = Array[ExtResource("2_rxtcn")]([SubResource("Resource_wt7a3"), SubResource("Resource_k0miw")])
 open_actions = Array[ExtResource("1_33bho")]([SubResource("Resource_mm5oj")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

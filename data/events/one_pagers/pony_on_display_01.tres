@@ -8,7 +8,7 @@
 
 [sub_resource type="Resource" id="Resource_lry71"]
 script = ExtResource("5_ol0yb")
-txt = "Next"
+_btn_text = "Next"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_017jh"]

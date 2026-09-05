@@ -188,6 +188,7 @@ static func add_ponygirl(pony: Ponygirl) -> void:
 		new_pony.active = slot < MAX_ACTIVE
 		ponygirls[slot] = new_pony
 		focused_ponygirl = new_pony
+		GlobalSignals.add_info.emit("Ponygirl %s has been added to stable" % new_pony.name)
 		return
 	push_warning("PonygirlManager.add_ponygirl: no free slots")
 

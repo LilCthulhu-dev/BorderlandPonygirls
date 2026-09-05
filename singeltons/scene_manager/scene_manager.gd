@@ -4,7 +4,7 @@ extends CanvasLayer
 
 const START_MENU = preload("uid://grvg54i0pqei")
 const MAIN_WINDOW = preload("res://main_window/main_window.tscn")
-const EVENT_WINDOW = preload("res://event_window/event_window.tscn")
+const EVENT__WINDOW = preload("uid://dtc5bf8lca3ta")
 const COMBAT_WINDOW = preload("uid://q2vd1if8ju13")
 
 var fade_time := 0.2

@@ -14,6 +14,13 @@ func remove() -> void:
 		t.queue_free()
 	tooltips.clear()
 
+func get_tooltips_from_actions(actions : Array[Action]):
+	var arr : Array[String]
+	for action in actions:
+		if action.get_tooltip() == "": continue
+		arr.push_back(action.get_tooltip())
+	return "\n".join(arr)
+
 func get_tooltips(actions : Array[Action]) -> Array[String]:
 	var arr : Array[String]
 	for action in actions:

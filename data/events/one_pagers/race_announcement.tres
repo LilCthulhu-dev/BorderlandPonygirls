@@ -52,7 +52,7 @@ metadata/_custom_type_script = "uid://ccm3riyfg6rfl"
 
 [sub_resource type="Resource" id="Resource_blc0r"]
 script = ExtResource("9_oohyi")
-txt = "Back to Main"
+_btn_text = "Back to Main"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_gjll1"]

@@ -8,6 +8,7 @@
 [sub_resource type="Resource" id="Resource_qsvk6"]
 script = ExtResource("3_6a2f5")
 txt = "Leave"
+_btn_text = "Leave"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]

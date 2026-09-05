@@ -16,8 +16,10 @@ static var current_event: Event:
 			return
 		if GameData.event_manager._current_event != null:
 			GameData.event_manager._current_event.close()
-		GameData.event_manager._current_event = value
-		if GameData.event_manager._current_event != null:
+		if value == null:
+			GameData.event_manager._current_event = null
+		else:
+			GameData.event_manager._current_event = value.duplicate(true)
 			GameData.event_manager._current_event.open()
 			GlobalSignals.update_event.emit()
 	get:

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bm5vrdkwe146c"]
+
+[ext_resource type="Script" uid="uid://ckh6w0uycs4jf" path="res://results_display/results_display.gd" id="1_p7pyl"]
+
+[node name="ResultsDisplay" type="CanvasLayer" unique_id=600014328]
+layer = 50
+script = ExtResource("1_p7pyl")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1015780288]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="Resultcontainer" type="VBoxContainer" parent="MarginContainer" unique_id=1479854565]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+alignment = 2

@@ -3,21 +3,15 @@
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="1_a7hfa"]
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_tn2n0"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="2_tn2n0"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="3_50vr7"]
 [ext_resource type="Resource" uid="uid://ctspr37v025ef" path="res://data/combats/farmwork/farmwork.tres" id="3_fvv4n"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3_mqfwi"]
-[ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="4_c4jit"]
 [ext_resource type="Script" uid="uid://b0g16xoo4jggg" path="res://data/actions/back_to_main.gd" id="4_cybtl"]
 
-[sub_resource type="Resource" id="Resource_ice6s"]
-script = ExtResource("4_c4jit")
-combat = ExtResource("3_fvv4n")
-metadata/_custom_type_script = "uid://bnjeril1f2cy8"
-
-[sub_resource type="Resource" id="Resource_v0sb3"]
-script = ExtResource("3_mqfwi")
-txt = "Accept"
-actions = Array[ExtResource("1_tn2n0")]([SubResource("Resource_ice6s")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_4qeh7"]
+script = ExtResource("3_50vr7")
+_btn_text = "Accept"
+target_combat = ExtResource("3_fvv4n")
 
 [sub_resource type="Resource" id="Resource_5tkrx"]
 script = ExtResource("4_cybtl")
@@ -25,7 +19,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 
 [sub_resource type="Resource" id="Resource_lkv00"]
 script = ExtResource("3_mqfwi")
-txt = "Decline"
+_btn_text = "Decline"
 actions = Array[ExtResource("1_tn2n0")]([SubResource("Resource_5tkrx")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
@@ -35,5 +29,5 @@ titel = "A Farmer’s Request"
 description = "An old halfling farmer studies your ponygirls for a moment before approaching you.
 
 “G’day, young man. That’s a fine stable of mares you’ve got there. I could certainly use a few of them out in the fields. What do you say? Think you could help an old man out for a couple of days?”"
-content = Array[ExtResource("1_a7hfa")]([SubResource("Resource_v0sb3"), SubResource("Resource_lkv00")])
+content = Array[ExtResource("1_a7hfa")]([SubResource("Resource_4qeh7"), SubResource("Resource_lkv00")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

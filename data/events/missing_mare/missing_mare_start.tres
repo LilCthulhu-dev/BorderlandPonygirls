@@ -2,55 +2,36 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_yxct2"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="5"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="3_kesi6"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6"]
 [ext_resource type="Resource" uid="uid://eca1ew40cu8s" path="res://data/flags/missing_mare_01.tres" id="7"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_rq47m"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
 [ext_resource type="Texture2D" uid="uid://b7yp1n4asbypw" path="res://assets/img/frozenhunter/missing_mare.png" id="10"]
 
-[sub_resource type="Resource" id="Resource_inspect_txt"]
-script = ExtResource("3")
-txt = "He describes a human mare, dark hair, cheap tack, one torn blinder. She slipped her lead on the harbor road after a thunderstorm.
+[sub_resource type="Resource" id="Resource_yxct2"]
+script = ExtResource("3_kesi6")
+_btn_text = "Ask for details"
+_modal_text = "He describes a human mare, dark hair, cheap tack, one torn blinder. She slipped her lead on the harbor road after a thunderstorm.
 
 Harbor watch sometimes corrals runaways behind the net-sheds until someone pays the fine - or until a warband claims them."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
-
-[sub_resource type="Resource" id="Resource_inspect"]
-script = ExtResource("4")
-txt = "Ask for details"
-actions = Array[ExtResource("1")]([SubResource("Resource_inspect_txt")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
-[sub_resource type="Resource" id="Resource_to_accept"]
-script = ExtResource("5")
-event_path = "res://data/events/missing_mare/missing_mare_accept.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_add_flag"]
 script = ExtResource("8")
 add_flag = Array[ExtResource("6")]([ExtResource("7")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_accept"]
-script = ExtResource("4")
-txt = "Accept"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_accept"), SubResource("Resource_add_flag")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_kesi6"]
+script = ExtResource("7_rq47m")
+_btn_text = "Accept"
+target_event_path = "res://data/events/missing_mare/missing_mare_accept.tres"
+actions = Array[ExtResource("1")]([SubResource("Resource_add_flag")])
 
-[sub_resource type="Resource" id="Resource_to_decline"]
-script = ExtResource("5")
-event_path = "res://data/events/missing_mare/missing_mare_decline.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_decline"]
-script = ExtResource("4")
-txt = "Decline"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_decline")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_25q6d"]
+script = ExtResource("7_rq47m")
+_btn_text = "Decline"
+target_event_path = "res://data/events/missing_mare/missing_mare_decline.tres"
 
 [sub_resource type="Resource" id="Resource_gate"]
 script = ExtResource("8")
@@ -64,6 +45,6 @@ description = "A sweating merchant catches your sleeve at the Trading Post stabl
 
 “One of my mares bolted toward Harbor Town. I need a warband that can bring her back - or at least find what’s left of the tack. I’ll pay well if she comes home.”"
 img = ExtResource("10")
-content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_accept"), SubResource("Resource_decline")])
+content = Array[ExtResource("2")]([SubResource("Resource_yxct2"), SubResource("Resource_kesi6"), SubResource("Resource_25q6d")])
 open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

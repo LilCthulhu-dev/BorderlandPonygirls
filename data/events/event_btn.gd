@@ -1,14 +1,14 @@
 extends _EventContent
 class_name EventBtn
 
-@export var txt := "":
+@export var _btn_text: String
+var btn_text: String:
+	set(value):
+		_btn_text = value
 	get:
-		return Utils.translate(txt)
-@export var actions : Array[Action]
+		return Utils.translate(_btn_text)
 
-@export_group('uses')
-@export var single_use = false
-@export var used = false
+@export var actions : Array[Action]
 
 func soft_requirements_met() -> bool:
 	for action in actions:

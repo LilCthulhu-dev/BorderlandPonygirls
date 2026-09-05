@@ -28,9 +28,9 @@ func open_game_over_modal():
 func open_loaction_result_modal(results : Array[String]):
 	return await _open_modal(LOCATION_RESULT_MODAL, {"results": results})
 
-func open_event_result_modal(actions : Array[Action], extra_text := "") -> Modal:
+func open_event_result_modal(actions : Array[Action], description := "") -> Modal:
 	return await _open_modal(EVENT_RESULT_MODAL, {
-		"extra_text": extra_text,
+		"description": description,
 		"actions": actions})
 
 func open_combat_result_modal(action : CombatAction) -> Modal:

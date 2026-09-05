@@ -2,21 +2,14 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_igymm"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_aa0wh"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="3_4v8j1"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_un2lo"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_v43td"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_a15lo"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="5_8d66s"]
 
-[sub_resource type="Resource" id="Resource_sp35b"]
-script = ExtResource("3_v43td")
-event_path = "uid://bl0d74vj8is42"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_wf3nh"]
-script = ExtResource("4_a15lo")
-txt = "Enter the preparation area"
-actions = Array[ExtResource("1_igymm")]([SubResource("Resource_sp35b")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_ar3ug"]
+script = ExtResource("3_4v8j1")
+_btn_text = "Enter the preparation area"
+target_event_path = "uid://bl0d74vj8is42"
 
 [sub_resource type="Resource" id="Resource_rbtsg"]
 script = ExtResource("5_8d66s")
@@ -31,6 +24,6 @@ description = "The old goblin accepts your payment, counts the coins twice, and 
 “You’re registered, {TITLE}. Choose your mare and get her ready in the preparation area. An attendant will inspect her equipment and assign you a starting stall.”
 
 He hands you a numbered ribbon before immediately turning his attention to the next racer."
-content = Array[ExtResource("2_aa0wh")]([SubResource("Resource_wf3nh")])
+content = Array[ExtResource("2_aa0wh")]([SubResource("Resource_ar3ug")])
 open_actions = Array[ExtResource("1_igymm")]([SubResource("Resource_rbtsg")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

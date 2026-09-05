@@ -2,55 +2,36 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_4n46p"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="5"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="3_f5vvo"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6"]
 [ext_resource type="Resource" uid="uid://d0wrqh8536kua" path="res://data/flags/night_dispatch_01.tres" id="7"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="7_k8bkg"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
 [ext_resource type="Texture2D" uid="uid://bnrjya8ab0cbb" path="res://assets/img/frozenhunter/night_dispatch.png" id="10"]
 
-[sub_resource type="Resource" id="Resource_inspect_txt"]
-script = ExtResource("3")
-txt = "The packet is thick leather, wax still faintly warm, no mark you are meant to read. It would fetch a rumor-price in Harbor if you were stupid.
+[sub_resource type="Resource" id="Resource_4n46p"]
+script = ExtResource("3_f5vvo")
+_btn_text = "Inspect the packet"
+_modal_text = "The packet is thick leather, wax still faintly warm, no mark you are meant to read. It would fetch a rumor-price in Harbor if you were stupid.
 
 The guard's eyes stay on your hands. Opening it on the road would be a good way to stop being welcome at the post."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
-
-[sub_resource type="Resource" id="Resource_inspect"]
-script = ExtResource("4")
-txt = "Inspect the packet"
-actions = Array[ExtResource("1")]([SubResource("Resource_inspect_txt")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
-[sub_resource type="Resource" id="Resource_to_accept"]
-script = ExtResource("5")
-event_path = "res://data/events/night_dispatch/night_dispatch_accept.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
 
 [sub_resource type="Resource" id="Resource_add_flag"]
 script = ExtResource("8")
 add_flag = Array[ExtResource("6")]([ExtResource("7")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_accept"]
-script = ExtResource("4")
-txt = "Accept"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_accept"), SubResource("Resource_add_flag")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_f5vvo"]
+script = ExtResource("7_k8bkg")
+_btn_text = "Accept"
+target_event_path = "res://data/events/night_dispatch/night_dispatch_accept.tres"
+actions = Array[ExtResource("1")]([SubResource("Resource_add_flag")])
 
-[sub_resource type="Resource" id="Resource_to_decline"]
-script = ExtResource("5")
-event_path = "res://data/events/night_dispatch/night_dispatch_decline.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_decline"]
-script = ExtResource("4")
-txt = "Decline"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_decline")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_bykej"]
+script = ExtResource("7_k8bkg")
+_btn_text = "Decline"
+target_event_path = "res://data/events/night_dispatch/night_dispatch_decline.tres"
 
 [sub_resource type="Resource" id="Resource_gate"]
 script = ExtResource("8")
@@ -64,6 +45,6 @@ description = "A post guard with a lantern on her belt stops you at the palisade
 
 \"{TITLE}. Sealed packet for the Goblin Village. Night road. Do not open it. Do not break the seal. The village elder will pay you.\""
 img = ExtResource("10")
-content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_accept"), SubResource("Resource_decline")])
+content = Array[ExtResource("2")]([SubResource("Resource_4n46p"), SubResource("Resource_f5vvo"), SubResource("Resource_bykej")])
 open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

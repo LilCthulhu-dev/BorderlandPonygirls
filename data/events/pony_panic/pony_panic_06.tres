@@ -3,30 +3,17 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_66muk"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_syyaj"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_h3w47"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="3_xymmp"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4_72he3"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="3_syyaj"]
 
-[sub_resource type="Resource" id="Resource_iup2k"]
-script = ExtResource("3_xymmp")
-event_path = "uid://c6417sg4jmh1o"
-metadata/_custom_type_script = "uid://low1eg5crao3"
+[sub_resource type="Resource" id="Resource_h3w47"]
+script = ExtResource("3_syyaj")
+_btn_text = "Let it slide"
+target_event_path = "uid://c6417sg4jmh1o"
 
-[sub_resource type="Resource" id="Resource_102ty"]
-script = ExtResource("4_72he3")
-txt = "Let it slide"
-actions = Array[ExtResource("1_66muk")]([SubResource("Resource_iup2k")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
-[sub_resource type="Resource" id="Resource_wfxkt"]
-script = ExtResource("3_xymmp")
-event_path = "uid://bb5r4xcvh77y5"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_adapm"]
-script = ExtResource("4_72he3")
-txt = "Punish her"
-actions = Array[ExtResource("1_66muk")]([SubResource("Resource_wfxkt")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_xymmp"]
+script = ExtResource("3_syyaj")
+_btn_text = "Punish her"
+target_event_path = "uid://bb5r4xcvh77y5"
 
 [resource]
 script = ExtResource("3_h3w47")
@@ -34,5 +21,5 @@ titel = "Pony Panic"
 description = "You simply watch while your men herd {PONYNAME} like a trapped tigger. It takes a good while, but finally she gives up and collapses onto her knees - she is unable to escape you, her bondage, or her new life.
 
 You step up to her, your stern gaze shattering the last bit of defiance she had. You reach for her reins and pull them tight, until she is forced to look at you."
-content = Array[ExtResource("2_syyaj")]([SubResource("Resource_102ty"), SubResource("Resource_adapm")])
+content = Array[ExtResource("2_syyaj")]([SubResource("Resource_h3w47"), SubResource("Resource_xymmp")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

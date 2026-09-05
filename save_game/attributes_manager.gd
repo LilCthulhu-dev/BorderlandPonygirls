@@ -17,30 +17,67 @@ static var boss_title : String:
 		GlobalSignals.update_attribute.emit()
 	get:
 		return GameData.attributes_manager._boss_title
+
 static var boss_name : String:
 	set(new_value):
 		GameData.attributes_manager._boss_name = new_value
 		GlobalSignals.update_attribute.emit()
 	get:
 		return GameData.attributes_manager._boss_name
+
 static var gold : int:
 	set(new_value):
+		var old_value = GameData.attributes_manager._gold
+		if old_value == new_value: return
+
+		if new_value > old_value:
+			var txt := "You gained %s Gold." % (new_value - old_value)
+			GlobalSignals.add_info.emit(txt)
+		elif new_value < old_value:
+			var txt := "You lost %s Gold." % (old_value - new_value)
+			GlobalSignals.add_info.emit(txt)
+
 		GameData.attributes_manager._gold = new_value
 		GlobalSignals.update_attribute.emit()
+
 		if GameData.attributes_manager._gold < 0:
 			ModalManager.open_game_over_modal()
 	get:
 		if GameData.TESTING:
 			return 99999
 		return GameData.attributes_manager._gold
+
 static var repute : int:
 	set(value):
+		var old_value = GameData.attributes_manager._repute
+		var new_value := clampi(value, 0, 100)
+		if old_value == new_value: return
+
+		if new_value > old_value:
+			var txt := "You gained %s Repute." % (new_value - old_value)
+			GlobalSignals.add_info.emit(txt)
+		elif new_value < old_value:
+			var txt := "You lost %s Repute." % (old_value - new_value)
+			GlobalSignals.add_info.emit(txt)
+
 		GameData.attributes_manager._repute = clampi(value, 0, 100)
 		GlobalSignals.update_attribute.emit()
 	get:
 		return GameData.attributes_manager._repute
+
 static var current_health :int:
 	set(value):
+		var old_value = GameData.attributes_manager._current_health
+		var new_value := clampi(value, 0, MAX_HEALTH)
+		if old_value == new_value: return
+
+		if new_value > old_value:
+			var txt := "You recovered %s Health." % (new_value - old_value)
+			GlobalSignals.add_info.emit(txt)
+		elif new_value < old_value:
+			var txt := "You lost %s Health." % (old_value - new_value)
+			GlobalSignals.add_info.emit(txt)
+
 		GameData.attributes_manager._current_health = clampi(value, 0, MAX_HEALTH)
 		GlobalSignals.update_attribute.emit()
 	get:
@@ -49,15 +86,19 @@ static var current_health :int:
 static var sway : int:
 	get:
 		return get_attribute_value(Enums.ATTRIBUTES.SWAY)
+
 static var command : int:
 	get:
 		return get_attribute_value(Enums.ATTRIBUTES.COMMAND)
+
 static var trickery : int:
 	get:
 		return get_attribute_value(Enums.ATTRIBUTES.TRICKERY)
+
 static var muscle : int:
 	get:
 		return get_attribute_value(Enums.ATTRIBUTES.MUSCLE)
+
 static var wits : int:
 	get:
 		return get_attribute_value(Enums.ATTRIBUTES.WITS)

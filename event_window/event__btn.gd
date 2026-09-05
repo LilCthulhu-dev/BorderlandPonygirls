@@ -5,20 +5,17 @@ var content : EventBtn
 func _ready() -> void:
 	super()
 	if content == null:
-		text = "> Return to Main"
-		disabled = false
-	else:
-		text = "> " + content.txt
-		if !content.soft_requirements_met():
-			disabled = true
-		if content.single_use && content.used:
-			disabled = true
-		_prep_tooltip()
+		queue_free()
+		return
+	text = "> " + content.btn_text
+	if !content.soft_requirements_met():
+		disabled = true
+	if content.single_use && content.used:
+		disabled = true
+	_prep_tooltip()
 
 func _prep_tooltip() -> void:
-	if content == null: return
-	var tip_array := TooltipManager.get_tooltips(content.actions)
-	tooltip = "\n".join(tip_array)
+	tooltip = TooltipManager.get_tooltips_from_actions(content.actions)
 	if not tooltip.is_empty():
 		add_questionmark()
 

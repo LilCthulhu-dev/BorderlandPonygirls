@@ -1,38 +1,26 @@
-[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestdispac01"]
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjf57it0x3y"]
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="4"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="4_jyt6u"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="5"]
 [ext_resource type="Texture2D" uid="uid://bnrjya8ab0cbb" path="res://assets/img/frozenhunter/night_dispatch.png" id="6"]
 
 [sub_resource type="Resource" id="Resource_ride"]
 script = ExtResource("3")
-txt = "Night road"
+_btn_text = "Night road"
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
-[sub_resource type="Resource" id="Resource_to_break"]
-script = ExtResource("4")
-event_path = "res://data/events/night_dispatch/night_dispatch_broken.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
+[sub_resource type="Resource" id="Resource_8fwx3"]
+script = ExtResource("4_jyt6u")
+_btn_text = "Break the seal"
+target_event_path = "res://data/events/night_dispatch/night_dispatch_broken.tres"
 
-[sub_resource type="Resource" id="Resource_break"]
-script = ExtResource("3")
-txt = "Break the seal"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_break")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
-[sub_resource type="Resource" id="Resource_to_sell"]
-script = ExtResource("4")
-event_path = "res://data/events/night_dispatch/night_dispatch_sell.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_sell"]
-script = ExtResource("3")
-txt = "Find a buyer"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_sell")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_3xxse"]
+script = ExtResource("4_jyt6u")
+_btn_text = "Find a buyer"
+target_event_path = "res://data/events/night_dispatch/night_dispatch_sell.tres"
 
 [resource]
 script = ExtResource("5")
@@ -41,5 +29,5 @@ description = "The guard presses the packet into your palm and closes your finge
 
 The lantern light does not follow you past the gate. The wax is still warm."
 img = ExtResource("6")
-content = Array[ExtResource("2")]([SubResource("Resource_ride"), SubResource("Resource_break"), SubResource("Resource_sell")])
+content = Array[ExtResource("2")]([SubResource("Resource_ride"), SubResource("Resource_8fwx3"), SubResource("Resource_3xxse")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -3,24 +3,15 @@
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_ujcte"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_n5jve"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_70w0p"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_n0yy0"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3_nohvm"]
 [ext_resource type="Resource" uid="uid://c467ye5kn63rl" path="res://data/flags/outfitting_boots.tres" id="4_qk68i"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5_cqq3o"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5_nl3oo"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="6_nl3oo"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="7_cqq3o"]
+[ext_resource type="Script" uid="uid://dwjwfrh5b5rjt" path="res://data/events/event_modal_btn.gd" id="7_nl3oo"]
 [ext_resource type="Resource" uid="uid://d1o18vt8fh57k" path="res://data/flags/outfitting_harness.tres" id="8_qsht7"]
 [ext_resource type="Resource" uid="uid://dq25t5mji4x1v" path="res://data/flags/outfitting_armbinder.tres" id="9_hbt8e"]
 [ext_resource type="Resource" uid="uid://hm48f6ppndlr" path="res://data/flags/outfitting_bridle.tres" id="10_vowx2"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="11_qk68i"]
-
-[sub_resource type="Resource" id="Resource_nohvm"]
-script = ExtResource("3_nohvm")
-txt = "You order her to sit down on a nearby chair, while you fetch the ponyboots - the most important part of the uniform! You work the heavy, black leather up her legs until just below her knees and tighten the laces until they sit perfectly tight.
-
-Your shaman applies a few sprinkles of a magic potion to shrink the material to perfectly fit the new girl’s foot size. The boots will always be her size, always fit just right, so long you apply more of the potion every couple weeks."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="11_qk68i"]
 
 [sub_resource type="Resource" id="Resource_gahty"]
 script = ExtResource("5_nl3oo")
@@ -35,18 +26,13 @@ target = 0
 hide_tooltip = true
 metadata/_custom_type_script = "uid://batgxym44h4w3"
 
-[sub_resource type="Resource" id="Resource_qupo4"]
-script = ExtResource("7_cqq3o")
-txt = "Boots"
-actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_nohvm"), SubResource("Resource_gahty"), SubResource("Resource_7yptl")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_n0yy0"]
+script = ExtResource("7_nl3oo")
+_btn_text = "Boots"
+_modal_text = "You order her to sit down on a nearby chair, while you fetch the ponyboots - the most important part of the uniform! You work the heavy, black leather up her legs until just below her knees and tighten the laces until they sit perfectly tight.
 
-[sub_resource type="Resource" id="Resource_4adml"]
-script = ExtResource("3_nohvm")
-txt = "You fetch the harness. You order the girl to kneel, and then you begin to wrap it around her torso. It’s basically a web of black leather straps, with extra support for her tits, and metal rings to connect carts, leashes, saddles, bags or other equipment.
-
-You make sure it all sits tight except for the crotchstrap - that one will become important later. For now you give the horny little beast just a friendly clap to her cunt and leave it as is."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+Your shaman applies a few sprinkles of a magic potion to shrink the material to perfectly fit the new girl’s foot size. The boots will always be her size, always fit just right, so long you apply more of the potion every couple weeks."
+actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_gahty"), SubResource("Resource_7yptl")])
 
 [sub_resource type="Resource" id="Resource_k33yw"]
 script = ExtResource("5_nl3oo")
@@ -61,19 +47,13 @@ target = 0
 hide_tooltip = true
 metadata/_custom_type_script = "uid://batgxym44h4w3"
 
-[sub_resource type="Resource" id="Resource_yt2fj"]
-script = ExtResource("7_cqq3o")
-txt = "Harness"
-actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_4adml"), SubResource("Resource_k33yw"), SubResource("Resource_0jh02")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_cqq3o"]
+script = ExtResource("7_nl3oo")
+_btn_text = "Harness"
+_modal_text = "You fetch the harness. You order the girl to kneel, and then you begin to wrap it around her torso. It’s basically a web of black leather straps, with extra support for her tits, and metal rings to connect carts, leashes, saddles, bags or other equipment.
 
-[sub_resource type="Resource" id="Resource_r038c"]
-script = ExtResource("3_nohvm")
-txt = "There are dozens of ways to bind a ponygirls arms, but with this fresh mare you decide to stick to something simple. You order her to put her arms behind her back, grabbing with her hands onto the opposite elbow.
-
-You make sure her forearms are neatly together, before you wrap it in cloth, and then another layer of leather, which you pull tight and strap into place. However, you are not done yet. You fasten cuffs to her upper arms and connect them with leather straps, until there is no chance for her to get her arms out again.
-"
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+You make sure it all sits tight except for the crotchstrap - that one will become important later. For now you give the horny little beast just a friendly clap to her cunt and leave it as is."
+actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_k33yw"), SubResource("Resource_0jh02")])
 
 [sub_resource type="Resource" id="Resource_amyi3"]
 script = ExtResource("5_nl3oo")
@@ -88,19 +68,14 @@ target = 0
 hide_tooltip = true
 metadata/_custom_type_script = "uid://batgxym44h4w3"
 
-[sub_resource type="Resource" id="Resource_f3ai4"]
-script = ExtResource("7_cqq3o")
-txt = "Armbinder"
-actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_r038c"), SubResource("Resource_amyi3"), SubResource("Resource_l457m")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_qsht7"]
+script = ExtResource("7_nl3oo")
+_btn_text = "Armbinder"
+_modal_text = "There are dozens of ways to bind a ponygirls arms, but with this fresh mare you decide to stick to something simple. You order her to put her arms behind her back, grabbing with her hands onto the opposite elbow.
 
-[sub_resource type="Resource" id="Resource_5whxu"]
-script = ExtResource("3_nohvm")
-txt = "You order the girl to kneel, before you get the headharness. You tie her hair into a high ponytail, before you work the web of leather straps around her head. It takes a little while and you can feel her shiver under your fingers.
-
-Finally you come in front of her again. You take the bit-gag from a nearby table, and push it deep into her mouth. She struggles a bit, involuntarily flinching away from you, but you hold her in place, fastening the gag in place, reducing her ability to speak drastically.
+You make sure her forearms are neatly together, before you wrap it in cloth, and then another layer of leather, which you pull tight and strap into place. However, you are not done yet. You fasten cuffs to her upper arms and connect them with leather straps, until there is no chance for her to get her arms out again.
 "
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_amyi3"), SubResource("Resource_l457m")])
 
 [sub_resource type="Resource" id="Resource_4cxsg"]
 script = ExtResource("5_nl3oo")
@@ -115,27 +90,25 @@ target = 0
 hide_tooltip = true
 metadata/_custom_type_script = "uid://batgxym44h4w3"
 
-[sub_resource type="Resource" id="Resource_hhgbk"]
-script = ExtResource("7_cqq3o")
-txt = "Bridle"
-actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_5whxu"), SubResource("Resource_4cxsg"), SubResource("Resource_bt6ru")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_hbt8e"]
+script = ExtResource("7_nl3oo")
+_btn_text = "Bridle"
+_modal_text = "You order the girl to kneel, before you get the headharness. You tie her hair into a high ponytail, before you work the web of leather straps around her head. It takes a little while and you can feel her shiver under your fingers.
 
-[sub_resource type="Resource" id="Resource_2due0"]
-script = ExtResource("11_qk68i")
-event_path = "uid://dkk54n22nu05u"
-metadata/_custom_type_script = "uid://low1eg5crao3"
+Finally you come in front of her again. You take the bit-gag from a nearby table, and push it deep into her mouth. She struggles a bit, involuntarily flinching away from you, but you hold her in place, fastening the gag in place, reducing her ability to speak drastically.
+"
+actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_4cxsg"), SubResource("Resource_bt6ru")])
 
 [sub_resource type="Resource" id="Resource_lynee"]
 script = ExtResource("5_nl3oo")
 required_flag = Array[ExtResource("5_cqq3o")]([ExtResource("9_hbt8e"), ExtResource("4_qk68i"), ExtResource("10_vowx2"), ExtResource("8_qsht7")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_am51c"]
-script = ExtResource("7_cqq3o")
-txt = "Next"
-actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_2due0"), SubResource("Resource_lynee")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_nl3oo"]
+script = ExtResource("11_qk68i")
+_btn_text = "Next"
+target_event_path = "uid://dkk54n22nu05u"
+actions = Array[ExtResource("1_ujcte")]([SubResource("Resource_lynee")])
 
 [resource]
 script = ExtResource("3_70w0p")
@@ -143,5 +116,5 @@ titel = "Outfitting"
 description = "The girl stands in the middle of the stable, nervously shifting from foot to foot. She is not fully bound yet, and could try to flee or fight back. Instead she waits, eyes cast down, breathing deliberately.
 
 It’s a good sign. Seems like she has the right mindset of a proper ponygirl."
-content = Array[ExtResource("2_n5jve")]([SubResource("Resource_qupo4"), SubResource("Resource_yt2fj"), SubResource("Resource_f3ai4"), SubResource("Resource_hhgbk"), SubResource("Resource_am51c")])
+content = Array[ExtResource("2_n5jve")]([SubResource("Resource_n0yy0"), SubResource("Resource_cqq3o"), SubResource("Resource_qsht7"), SubResource("Resource_hbt8e"), SubResource("Resource_nl3oo")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

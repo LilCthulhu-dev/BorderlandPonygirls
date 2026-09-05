@@ -2,55 +2,43 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
-[ext_resource type="Script" uid="uid://cjt27rj7fiwsv" path="res://data/actions/add_description.gd" id="3"]
-[ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="3_1s6ym"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="4"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="5"]
+[ext_resource type="Script" uid="uid://bhikhif1mmeq" path="res://data/events/event_switch_content_btn.gd" id="3_jo8wf"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="6"]
 [ext_resource type="Resource" uid="uid://d0wrtqpyhx5ea" path="res://data/flags/grain_levy_01.tres" id="7"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="8"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="9"]
 [ext_resource type="Texture2D" uid="uid://ckg3uqw6ae6va" path="res://assets/img/frozenhunter/grain_levy.png" id="10"]
 
-[sub_resource type="Resource" id="Resource_inspect_txt"]
-script = ExtResource("3")
-txt = "The sacks are last year's surplus: dry, a little dusty, still good. A torn stitch would leak a trail any hungry camp could follow.
+[sub_resource type="Resource" id="Resource_mqmyc"]
+script = ExtResource("3_jo8wf")
+_btn_text = "Inspect the sacks"
+_new_content_text = "The sacks are last year's surplus: dry, a little dusty, still good. A torn stitch would leak a trail any hungry camp could follow.
 
 Your lead mare already has her nose in the seam. If you let her, half the levy will be gone before the harbor gates."
-metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
+single_use = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
 
-[sub_resource type="Resource" id="Resource_inspect"]
-script = ExtResource("4")
-txt = "Inspect the sacks"
-actions = Array[ExtResource("1")]([SubResource("Resource_inspect_txt")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
-[sub_resource type="Resource" id="Resource_to_accept"]
-script = ExtResource("5")
-event_path = "res://data/events/grain_levy/grain_levy_accept.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_add_flag"]
+[sub_resource type="Resource" id="Resource_te0br"]
 script = ExtResource("8")
 add_flag = Array[ExtResource("6")]([ExtResource("7")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
-[sub_resource type="Resource" id="Resource_accept"]
-script = ExtResource("4")
-txt = "Accept"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_accept"), SubResource("Resource_add_flag")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_0gr2t"]
+script = ExtResource("3_jo8wf")
+_btn_text = "Accept"
+_new_content_text = "The cook knots the last sack and slaps it onto the cart. \"Harbor mill, blue awning, ask for the night miller. Bring back an empty sack if you want another load.\"
 
-[sub_resource type="Resource" id="Resource_to_decline"]
-script = ExtResource("5")
-event_path = "res://data/events/grain_levy/grain_levy_decline.tres"
-metadata/_custom_type_script = "uid://low1eg5crao3"
+Grain dust follows you out of the village."
+actions = Array[ExtResource("1")]([SubResource("Resource_te0br")])
+end_conversation = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
 
-[sub_resource type="Resource" id="Resource_decline"]
-script = ExtResource("4")
-txt = "Decline"
-actions = Array[ExtResource("1")]([SubResource("Resource_to_decline")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_nx3u7"]
+script = ExtResource("3_jo8wf")
+_btn_text = "Decline"
+_new_content_text = "The cook shrugs and waves a boy toward the next cart. \"Plenty of hungry roads, {TITLE}. Come back if you change your mind.\""
+end_conversation = true
+metadata/_custom_type_script = "uid://bhikhif1mmeq"
 
 [sub_resource type="Resource" id="Resource_gate"]
 script = ExtResource("8")
@@ -64,6 +52,6 @@ description = "A village cook with flour in his ears plants himself in your path
 
 \"{TITLE}. Last year's surplus is rotting in the store-hut. Harbor millers will pay for it if it arrives dry. Coin on delivery. Don't let the mares snack the sacks open.\""
 img = ExtResource("10")
-content = Array[ExtResource("2")]([SubResource("Resource_inspect"), SubResource("Resource_accept"), SubResource("Resource_decline")])
+content = Array[ExtResource("2")]([SubResource("Resource_mqmyc"), SubResource("Resource_0gr2t"), SubResource("Resource_nx3u7")])
 open_actions = Array[ExtResource("1")]([SubResource("Resource_gate")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

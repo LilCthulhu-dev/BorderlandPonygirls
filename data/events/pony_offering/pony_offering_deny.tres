@@ -13,6 +13,7 @@ metadata/_custom_type_script = "uid://b0g16xoo4jggg"
 [sub_resource type="Resource" id="Resource_x2t0o"]
 script = ExtResource("4_vxg5c")
 txt = "Back to Main"
+_btn_text = "Back to Main"
 actions = Array[ExtResource("1_5puq6")]([SubResource("Resource_78ph0")])
 metadata/_custom_type_script = "uid://0o5ru8obqsel"
 

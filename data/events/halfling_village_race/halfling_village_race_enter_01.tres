@@ -2,31 +2,18 @@
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_2g7a0"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_phmbt"]
-[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="5_bmyh6"]
-[ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="6_d4rin"]
+[ext_resource type="Script" uid="uid://dpkgbelbgvth6" path="res://data/events/event_move_btn.gd" id="3_hof6x"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="11_qbl3j"]
 
-[sub_resource type="Resource" id="Resource_lduju"]
-script = ExtResource("6_d4rin")
-event_path = "uid://ba1amq1kpg783"
-metadata/_custom_type_script = "uid://low1eg5crao3"
+[sub_resource type="Resource" id="Resource_fsvla"]
+script = ExtResource("3_hof6x")
+_btn_text = "Pay the entry fee"
+target_event_path = "uid://ba1amq1kpg783"
 
-[sub_resource type="Resource" id="Resource_ngfq3"]
-script = ExtResource("5_bmyh6")
-txt = "Pay the entry fee"
-actions = Array[ExtResource("1_2g7a0")]([SubResource("Resource_lduju")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
-
-[sub_resource type="Resource" id="Resource_0kdok"]
-script = ExtResource("6_d4rin")
-event_path = "uid://dfb11lp8lhd48"
-metadata/_custom_type_script = "uid://low1eg5crao3"
-
-[sub_resource type="Resource" id="Resource_fi32d"]
-script = ExtResource("5_bmyh6")
-txt = "Leave"
-actions = Array[ExtResource("1_2g7a0")]([SubResource("Resource_0kdok")])
-metadata/_custom_type_script = "uid://0o5ru8obqsel"
+[sub_resource type="Resource" id="Resource_be1vt"]
+script = ExtResource("3_hof6x")
+_btn_text = "Leave"
+target_event_path = "uid://dfb11lp8lhd48"
 
 [resource]
 script = ExtResource("11_qbl3j")
@@ -36,5 +23,5 @@ description = "The halfling racemaster is busy directing helpers and inspecting 
 “Another racer?” he asks with pleasant surprise before nodding eagerly. “Of course, {TITLE}. You have the proper racing gear, I assume?”
 
 You confirm that you do, and he keeps nodding. “Excellent! Then you only need to pay the entry fee, and we’ll get you registered.”"
-content = Array[ExtResource("2_phmbt")]([SubResource("Resource_ngfq3"), SubResource("Resource_fi32d")])
+content = Array[ExtResource("2_phmbt")]([SubResource("Resource_fsvla"), SubResource("Resource_be1vt")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

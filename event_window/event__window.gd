@@ -6,9 +6,13 @@ extends CanvasLayer
 @onready var content_container: VBoxContainer = %ContentContainer
 @onready var content_image: TextureRect = %ContentImage
 
-const EVENT_BTN = preload("uid://boeoqj8wswe7u")
-const EVENT_CHECK = preload("uid://dheu6x3a5wmi3")
-const EVENT_TEXT = preload("uid://desp1eu87yxct")
+const EVENT__BTN = preload("uid://boeoqj8wswe7u")
+const EVENT__CHECK = preload("uid://dheu6x3a5wmi3")
+const EVENT__TEXT = preload("uid://desp1eu87yxct")
+const EVENT__MODAL_BTN = preload("uid://cvv8ckw6e40ou")
+const EVENT__MOVE_BTN = preload("uid://b312y4kwwux86")
+const EVENT__RETURN_TO_MAIN_BTN = preload("uid://c27j1lrumf1l6")
+const EVENT__SWITCH_CONTENT_BTN = preload("uid://g263eaqprilm")
 
 func _ready() -> void:
 	GameData.game_state = Enums.GAME_STATES.EVENT
@@ -36,35 +40,36 @@ func _update_content():
 
 	content_image.texture = EventManager.current_event.img if content_image else null
 
-	for child in content_container.get_children():
-		child.queue_free()
-
-	var added_content := 0
-
+	Utils.clear_container(content_container)
 	for content in EventManager.current_event.content:
-		if !content.hard_requierments_met(): continue
-		if content is EventPonySelect:
-			added_content += _add_pony_select(content)
+		if !content.hard_requierments_met():
 			continue
-		var n = null
-		if content is EventBtn:
-			n = EVENT_BTN.instantiate()
+		if content.single_use && content.used:
+			continue
+		elif content is EventPonySelect:
+			_add_pony_select(content)
+		elif content is EventSwitchContentBtn:
+			_spawn_content(EVENT__SWITCH_CONTENT_BTN, content)
+		elif content is EventModalBtn:
+			_spawn_content(EVENT__MODAL_BTN, content)
+		elif content is EventMoveBtn:
+			_spawn_content(EVENT__MOVE_BTN, content)
+		elif content is EventBtn:
+			_spawn_content(EVENT__BTN, content)
 		elif content is EventCheck:
-			n = EVENT_CHECK.instantiate()
+			_spawn_content(EVENT__CHECK, content)
 		else:
-			n = EVENT_TEXT.instantiate()
-		n.content = content
-		content_container.add_child(n)
-		added_content += 1
-
-	if added_content == 0:
-		var back_button := EVENT_BTN.instantiate()
-		back_button.content = null
+			_spawn_content(EVENT__TEXT, content)
+	if content_container.get_child_count() <= 0:
+		var back_button := EVENT__RETURN_TO_MAIN_BTN.instantiate()
 		content_container.add_child(back_button)
 
+func _spawn_content(blueprint : PackedScene, content):
+	var inst = blueprint.instantiate()
+	inst.content = content
+	content_container.add_child(inst)
 
-func _add_pony_select(select: EventPonySelect) -> int:
-	var count := 0
+func _add_pony_select(select: EventPonySelect) -> void:
 	for pony in PonygirlManager.get_active_ponygirls():
 		var ebtn := EventBtn.new()
 		ebtn.txt = select.button_txt % pony.name
@@ -75,8 +80,12 @@ func _add_pony_select(select: EventPonySelect) -> int:
 		var acts: Array[Action] = [focus]
 		acts.append_array(select.actions)
 		ebtn.actions = acts
-		var n := EVENT_BTN.instantiate()
+		var n := EVENT__BTN.instantiate()
 		n.content = ebtn
 		content_container.add_child(n)
-		count += 1
-	return count
+
+func _add_back_to_main_btn():
+	if content_container.get_child_count() > 0: return
+	var back_button := EVENT__BTN.instantiate()
+	back_button.content = null
+	content_container.add_child(back_button)
